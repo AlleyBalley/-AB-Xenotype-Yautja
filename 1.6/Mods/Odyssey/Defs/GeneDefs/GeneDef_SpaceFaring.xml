@@ -10,7 +10,7 @@
 		<displayCategory>ABYautjaCategory</displayCategory>
 		<displayOrderInCategory>975</displayOrderInCategory>
 		<statOffsets>
-			<PilotingAbility>0.35</PilotingAbility>
+			<PilotingAbility>1.35</PilotingAbility>
 		</statOffsets>
 		<biostatCpx>1</biostatCpx>
 		<biostatMet>-1</biostatMet>
@@ -20,4 +20,5 @@
 			</li>
 		</modExtensions>
 	</GeneDef>
+
 </Defs>
