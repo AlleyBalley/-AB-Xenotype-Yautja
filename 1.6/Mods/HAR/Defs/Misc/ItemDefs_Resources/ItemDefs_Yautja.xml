@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="LeatherBase">
+    <defName>ABYautja_Leather</defName>
+    <label>Yautja leather</label>
+    <description>Tanned, dried, scraped Yautja skin. While quite tough, it is a poor insulator.</description>
+    <graphicData>
+      <color>(114,128,79)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>4.2</MarketValue>
+      <StuffPower_Armor_Sharp>1.12</StuffPower_Armor_Sharp>
+      <StuffPower_Insulation_Cold>10</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>12</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(114,128,79)</color>
+      <commonality>0.025</commonality>
+      <statFactors>
+        <MaxHitPoints>1.5</MaxHitPoints>
+      </statFactors>
+    </stuffProps>
+  </ThingDef>
+</Defs>

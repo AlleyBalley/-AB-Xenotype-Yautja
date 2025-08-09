@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<GeneDef>
+		<defName>ABYautja_Ambush</defName>
+		<label>predatory ambush</label>
+		<displayCategory>ABYautjaCategory</displayCategory>
+		<description>Carriers of this gene can make giant leaps at prey.</description>
+		<iconPath>UI/Icons/Genes/Gene_LongJumpLegs</iconPath>
+		<biostatCpx>2</biostatCpx>
+		<biostatMet>-2</biostatMet>
+		<canGenerateInGeneSet>true</canGenerateInGeneSet>
+		<symbolPack>
+			<wholeNameSymbols>
+				<li>
+					<symbol>jumper</symbol>
+				</li>
+				<li>
+					<symbol>leaper</symbol>
+				</li>
+				<li>
+					<symbol>bouncer</symbol>
+				</li>
+			</wholeNameSymbols>
+			<prefixSymbols>
+				<li>
+					<symbol>jump</symbol>
+				</li>
+				<li>
+					<symbol>leap</symbol>
+				</li>
+				<li>
+					<symbol>vault</symbol>
+				</li>
+				<li>
+					<symbol>long</symbol>
+				</li>
+				<li>
+					<symbol>fly</symbol>
+				</li>
+				<li>
+					<symbol>hop</symbol>
+				</li>
+			</prefixSymbols>
+		</symbolPack>
+		<abilities>
+			<li>ABYautja_Ambush</li>
+		</abilities>
+		<descriptionHyperlinks>
+			<AbilityDef>ABYautja_Ambush</AbilityDef>
+		</descriptionHyperlinks>
+		<selectionWeight>1</selectionWeight>
+		<modExtensions>
+			<li Class="VEF.Genes.GeneExtension">
+				<backgroundPathEndogenes>UI/Icons/Genes/Yautja_Endogene_Background</backgroundPathEndogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+</Defs>

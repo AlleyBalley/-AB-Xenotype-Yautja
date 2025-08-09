@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/XenotypeDef[defName="ABStandardYautja"]/genes</xpath>
+				<value>
+					<li>ABYautjaExtra_Terrestrial</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/XenotypeDef[defName="ABSwordYautja"]/genes</xpath>
+				<value>
+					<li>ABYautjaExtra_Terrestrial</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/XenotypeDef[defName="ABShieldYautja"]/genes</xpath>
+				<value>
+					<li>ABYautjaExtra_Terrestrial</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/XenotypeDef[defName="ABGrendelKingYautja"]/genes</xpath>
+				<value>
+					<li>ABYautjaExtra_Terrestrial</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/XenotypeDef[defName="ABScoutYautja"]/genes</xpath>
+				<value>
+					<li>ABYautjaExtra_Terrestrial</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<!--Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Armour Expanded</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/AlienRace.ThingDef_AlienRace[@Name="ABYautja_Race"]/alienRace/raceRestriction/whiteApparelList</xpath>
+			<value>
+				<li>VAE_Apparel_QuiltedVest</li>
+				<li>VAE_Apparel_PlateShoulderpads</li>
+				<li>VAE_Headgear_StoneWarMask</li>
+				<li>VAE_Apparel_Shield_Riot</li>
+			</value>
+		</match>
+	</Operation-->
+</Patch>

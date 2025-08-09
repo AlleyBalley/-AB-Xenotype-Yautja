@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/PawnKindDef[@Name="ABYautjaBase"]/race</xpath>
+				<value>
+					<race>ABAlien_Yautja</race>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/PawnKindDef[@Name="BaseYautjaPawnKind"]/race</xpath>
+				<value>
+					<race>ABAlien_Yautja</race>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

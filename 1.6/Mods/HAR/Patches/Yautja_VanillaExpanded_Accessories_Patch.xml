@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<!--Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Apparel Expanded — Accessories</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/AlienRace.ThingDef_AlienRace[@Name="ABYautja_Race"]/alienRace/raceRestriction/whiteApparelList</xpath>
+			<value>
+				<li>VAEA_Apparel_Backpack</li>
+				<li>VAEA_Apparel_BattleBanner</li>
+				<li>VAEA_Apparel_MedicBag</li>
+				<li>VAEA_Apparel_Quiver</li>
+				<li>VAEA_Apparel_ToolBelt</li>
+				<li>VAEA_Apparel_AmmoPack</li>
+				<li>VAEA_Apparel_ExplosiveBelt</li>
+				<li>VAEA_Apparel_RangedShieldBelt</li>
+				<li>VAEA_Apparel_RessurectorBelt</li>
+				<li>VAEA_Apparel_MiniTurretPack</li>
+			</value>
+		</match>
+	</Operation-->
+</Patch>

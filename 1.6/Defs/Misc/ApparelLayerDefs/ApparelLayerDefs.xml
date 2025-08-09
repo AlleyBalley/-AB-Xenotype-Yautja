@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ApparelLayerDef>
+    <defName>OverSkin</defName>
+    <label>overskin</label>
+    <drawOrder>50</drawOrder>
+  </ApparelLayerDef>
+</Defs>

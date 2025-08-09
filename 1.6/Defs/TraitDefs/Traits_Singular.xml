@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<TraitDef>
+		<defName>ABYautjaWarriorsMindset</defName>
+		<allowOnHostileSpawn>true</allowOnHostileSpawn>
+			<degreeDatas>
+				<li>
+					<label>Warrior's Mindset</label>
+					<description>{PAWN_nameDef} has a strong mind. {PAWN_pronoun} respects those who show signs of their hunt.</description>
+				</li>
+			</degreeDatas>
+		<conflictingTraits>
+		<li>BodyPurist</li>
+		</conflictingTraits>
+	</TraitDef>
+</Defs>

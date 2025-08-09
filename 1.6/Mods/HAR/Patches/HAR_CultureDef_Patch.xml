@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence" MayRequire="Ludeon.RimWorld.Ideology">
+		<operations>
+			<li Class="PatchOperationremove">
+				<xpath>/Defs/CultureDef[defName="ABYautja_Culture"]/styleItemTags/li[2]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/CultureDef[defName="ABBadBlood_Culture"]/styleItemTags/li[1]</xpath>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<!--Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Det's Xenotypees - Venators</li>
+				</mods>
+				<match Class="PatchOperationAdd">
+					<xpath>/Defs/AlienRace.ThingDef_AlienRace[@Name="ABYautja_Race"]/alienRace/raceRestriction/whiteApparelList</xpath>
+					<value>
+						<li>DV_Apparel_HunterVisage</li>
+					</value>
+				</match>
+			</li>
+		</operations>
+	</Operation-->
+</Patch>

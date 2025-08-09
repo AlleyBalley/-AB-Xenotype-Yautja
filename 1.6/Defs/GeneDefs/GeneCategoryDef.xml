@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<GeneCategoryDef>
+		<defName>ABYautjaCategory</defName>
+		<label>Yautja</label>
+		<displayPriorityInXenotype>3678</displayPriorityInXenotype>
+	</GeneCategoryDef>
+	<GeneCategoryDef>
+		<defName>ABYautjaHairCategory</defName>
+		<label>Yautja Hair Colors</label>
+		<displayPriorityInXenotype>3679</displayPriorityInXenotype>
+	</GeneCategoryDef>
+	<GeneCategoryDef>
+		<defName>ABYautjaSkinCategory</defName>
+		<label>Yautja Skin Colors</label>
+		<displayPriorityInXenotype>3680</displayPriorityInXenotype>
+	</GeneCategoryDef>
+</Defs>

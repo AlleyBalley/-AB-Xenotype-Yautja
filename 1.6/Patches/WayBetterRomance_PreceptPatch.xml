@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Way Better Romance</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/FactionDef[@Name="ABYautjaFactionBase"]/disallowedPrecepts</xpath>
+			<value>
+				<li MayRequire="Ludeon.RimWorld.Ideology">LoverCount_Male_MaxOne</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">LoverCount_Male_MaxTwo</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">LoverCount_Female_MaxTwo</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">LoverCount_Male_MaxThree</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">LoverCount_Female_MaxThree</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">LoverCount_Male_MaxFour</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">LoverCount_Female_MaxFour</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">LoverCount_Female_Unlimited</li>
+			</value>
+		</match>
+	</Operation>
+</Patch>

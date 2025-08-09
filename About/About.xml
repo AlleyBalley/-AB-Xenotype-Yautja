@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>[AB] Xenotype: Yautja</name>
+  <author>AlleyBalley</author>
+  <supportedVersions>
+	<li>1.6</li>
+  </supportedVersions>
+  <packageId>biotechrace.yautja.alleyballey</packageId>
+  <description>
+Yautja are a race of extra-terrestrial aliens that seek to hunt the most powerful creatures they can kill. The more trouble, the more fame and glory. Humans are one of their favorite hunts. will you escape them or join them?
+
+HAR compatibility!
+
+  </description>
+<modDependencies>
+	<li>
+		<packageId>oskarpotocki.vanillafactionsexpanded.core</packageId>
+		<displayName>Vanilla Expanded Framework</displayName>
+		<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2023507013</steamWorkshopUrl>
+	</li>
+	<li>
+		<packageId>redmattis.betterprerequisites</packageId>
+		<displayName>Big and Small - Framework</displayName>
+		<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2925432336</steamWorkshopUrl>
+	</li>
+	<li>
+		<packageId>ebsg.framework</packageId>
+		<displayName>EBSG Framework</displayName>
+		<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3112549163</steamWorkshopUrl>
+	</li>
+	<li>
+		<packageId>prkr.genetools</packageId>
+		<displayName>Gene Tools - Forked</displayName>
+		<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=839005762</steamWorkshopUrl>
+	</li>
+	<li>
+		<packageId>Ludeon.RimWorld.Biotech</packageId>
+		<displayName>Biotech</displayName>
+	</li>
+</modDependencies>
+  <loadAfter>
+    <li>Ludeon.RimWorld</li>
+	<li>Ludeon.Rimworld.Ideology</li>
+    <li>Ludeon.RimWorld.Biotech</li>
+	<li>Ludeon.Rimworld.Odyssey</li>
+    <li>brrainz.harmony</li>
+	<li>redmattis.betterprerequisites</li>
+	<li>oskarpotocki.vanillafactionsexpanded.core</li>
+	<li>vanillaexpanded.skills</li>
+	<li>ebsg.framework</li>
+	<li>prkr.genetools</li>
+	<li>erdelf.humanoidalienraces</li>
+	<li>niz.xenomorphtype</li>
+	<li>divineDerivative.Romance</li>
+	<li>mlie.rationalromance</li>
+	<li>mlie.rationalromance2</li>
+	<li>butterfish.hairmoddingplus</li>
+	<li>automatic.gradienthair</li>
+	<li>void.gradienthairpack1</li>
+	<li>parapluman.localgradienthairinvisiblebaldpawnfix</li>
+	<li>nals.facialanimation</li>
+	<li>nals.facialanimationexperimentals</li>
+	<li>vanillaexpanded.vtexe.facialanims</li>
+  </loadAfter>
+</ModMetaData>

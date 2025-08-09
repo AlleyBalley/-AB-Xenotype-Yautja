@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!--Yautja Ideology Rulepack-->
+	<RulePackDef>
+		<defName>NamerYautjaIdeology</defName>
+		<include>
+			<li>NamerIdeoGlobal</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>globalAdjective(p=15)->Tribal</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+<!--Yautja Leader Rulepack-->
+	<RulePackDef>
+		<defName>LeaderTitleMaker_ABYautja</defName>
+		<include>
+			<li>LeaderTitleMaker_GlobalStructure</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>memeLeaderNoun(priority=1)->[cultureLeaderNoun]</li>
+				<!--  ignore all meme nouns, tribals always use a culture noun  -->
+				<li>cultureLeaderTitle->[cultureLeaderAdjective] [cultureLeaderNoun]</li>
+				<li>cultureLeaderAdjective->great</li>
+				<li>cultureLeaderAdjective->high</li>
+				<li>cultureLeaderAdjective->first</li>
+				<li>cultureLeaderAdjective->grand</li>
+				<li>cultureLeaderNoun->huntmaster</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+<!--Yautja Ideology Bad Blood Rulepack-->
+	<RulePackDef>
+		<defName>NamerYautjaIdeologyBadBlood</defName>
+		<include>
+			<li>NamerIdeoGlobal</li>
+			<li>CultureSpacer</li>
+		</include>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>LeaderTitleMaker_ABYautjaBadBlood</defName>
+		<include>
+			<li>LeaderTitleMaker_GlobalStructure</li>
+		</include>
+		<rulePack>
+		  <rulesStrings>
+			<li>memeLeaderNoun(priority=1)->[cultureLeaderNoun]</li> <!-- ignore all meme nouns, pirates always use a culture noun -->
+			
+			<li>cultureLeaderTitle->[cultureLeaderAdjective] [cultureLeaderNoun]</li>
+
+			<li>cultureLeaderAdjective->big</li>
+			<li>cultureLeaderAdjective->top</li>
+			<li>cultureLeaderAdjective->full</li>
+
+			<li>cultureLeaderNoun->boss</li>
+			<li>cultureLeaderNoun->thug</li>
+			<li>cultureLeaderNoun->cheese</li>
+			<li>cultureLeaderNoun->gun</li>
+			<li>cultureLeaderNoun->dog</li>
+		  </rulesStrings>
+		</rulePack>
+	</RulePackDef>
+</Defs>

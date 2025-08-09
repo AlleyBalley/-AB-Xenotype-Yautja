@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!--Base-->
+	<GeneDef Name="ABYautjaFrameBase" Abstract="True">
+		<displayCategory>ABYautjaCategory</displayCategory>
+		<displayOrderInCategory>950</displayOrderInCategory>
+		<selectionWeight>1</selectionWeight>
+		<exclusionTags>
+			<li MayRequire="redmattis.betterprerequisites">BS_BodySizeHuge</li>
+			<li>BodySize</li>
+		</exclusionTags>
+		<canGenerateInGeneSet>true</canGenerateInGeneSet>
+		<damageFactors>
+			<AcidBurn>0.85</AcidBurn>
+			<VEF_SecondaryAcidBurn>0.85</VEF_SecondaryAcidBurn>
+		</damageFactors>
+		<modExtensions>
+			<li Class="VEF.Genes.GeneExtension">
+				<backgroundPathEndogenes>UI/Icons/Genes/Yautja_Endogene_Background</backgroundPathEndogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+<!--Berserk-->
+	<GeneDef ParentName="ABYautjaFrameBase">
+		<defName>ABBerserkYautjaFrame</defName>
+		<label>Berserk Yautja Frame</label>
+		<description>Carriers of this gene grow to 8 or 8.5 feet.</description>
+		<iconPath>UI/Icons/Genes/BS_Frames/BerserkYautja</iconPath>
+		<biostatCpx>3</biostatCpx>
+		<biostatMet>-2</biostatMet>
+		<statOffsets>
+			<SM_BodySizeOffset MayRequire="redmattis.betterprerequisites">0.45</SM_BodySizeOffset>
+		</statOffsets>
+		<statFactors>
+				<CarryingCapacity>2.6</CarryingCapacity>
+				<VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">6</VEF_MassCarryCapacity>
+		</statFactors>
+	</GeneDef>
+<!--Grendel-->	
+	<GeneDef ParentName="ABYautjaFrameBase">
+		<defName>ABGrendelKingYautjaFrame</defName>
+		<label>Grendel Yautja Frame</label>
+		<description>Carriers of this gene grow to 10 feet.</description>
+		<iconPath>UI/Icons/Genes/BS_Frames/GrendelYautja</iconPath>
+		<biostatCpx>3</biostatCpx>
+		<biostatMet>-3</biostatMet>
+		<exclusionTags>
+			<li MayRequire="redmattis.betterprerequisites">BS_BodySizeHuge</li>
+			<li>BodySize</li>
+		</exclusionTags>
+		<statOffsets>
+			<SM_BodySizeOffset MayRequire="redmattis.betterprerequisites">0.7</SM_BodySizeOffset>
+		</statOffsets>
+		<statFactors>
+				<MoveSpeed>2</MoveSpeed>
+				<CarryingCapacity>3</CarryingCapacity>
+				<VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">7.5</VEF_MassCarryCapacity>
+		</statFactors>
+	</GeneDef>
+</Defs>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+		<!--Berserk Yautja Frame-->
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/GeneDef[defName="ABBerserkYautjaFrame"]/statOffsets</xpath>
+				<value>
+					<ComfyTemperatureMax>68</ComfyTemperatureMax>
+					<SM_RaidWealthOffset MayRequire="redmattis.betterprerequisites">1850</SM_RaidWealthOffset>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/GeneDef[defName="ABBerserkYautjaFrame"]/statFactors</xpath>
+				<value>
+					<LifespanFactor>4.5</LifespanFactor>
+					<ImmunityGainSpeed>1.25</ImmunityGainSpeed>
+				</value>
+			</li>
+
+		<!--Grendel Yautja Frame-->	
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/GeneDef[defName="ABGrendelKingYautjaFrame"]/statOffsets</xpath>
+				<value>
+					<ComfyTemperatureMax>68</ComfyTemperatureMax>
+					<SM_RaidWealthOffset MayRequire="redmattis.betterprerequisites">2000</SM_RaidWealthOffset>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/GeneDef[defName="ABGrendelKingYautjaFrame"]/statFactors</xpath>
+				<value>
+					<LifespanFactor>4.5</LifespanFactor>
+					<ImmunityGainSpeed>1.25</ImmunityGainSpeed>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

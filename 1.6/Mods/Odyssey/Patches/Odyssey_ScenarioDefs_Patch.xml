@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Humanoid Alien Races</li>
+				</mods>
+				<match Class="PatchOperationInsert">
+					<xpath>/Defs/ScenarioDef[defName="ABYautjaHuntingScouts"]/scenario/parts/li[2]</xpath>
+					<order>Append</order>
+					<value>
+						<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+							<def>ConfigPage_ConfigureStartingPawns</def>
+							<pawnCount>3</pawnCount>
+							<pawnChoiceCount>6</pawnChoiceCount>
+						</li>
+					</value>
+				</match>
+				<nomatch Class="PatchOperationInsert">
+					<xpath>/Defs/ScenarioDef[defName="ABYautjaHuntingScouts"]/scenario/parts/li[2]/def</xpath>
+					<order>Prepend</order>
+					<value>
+						<pawnChoiceCount>3</pawnChoiceCount>
+					</value>
+				</nomatch>
+			</li>
+			
+			<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Humanoid Alien Races</li>
+					</mods>
+				<nomatch Class="PatchOperationInsert">
+					<xpath>/Defs/ScenarioDef[defName="ABYautjaHuntingScouts"]/scenario/parts/li[2]/overrideKinds/li/pawnKind</xpath>
+					<order>Append</order>
+					<value>
+						<xenotype>ABStandardYautja</xenotype>
+					</value>
+				</nomatch>
+			</li>
+				
+			<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Humanoid Alien Races</li>
+					</mods>
+				<nomatch Class="PatchOperationInsert">
+					<xpath>/Defs/ScenarioDef[defName="ABYautjaHuntingScouts"]/scenario/parts/li[2]/overrideKinds</xpath>
+					<order>Append</order>
+					<value>
+						<xenotypeCounts>
+							<li>
+								<count>3</count>
+								<xenotype>ABStandardYautja</xenotype>
+								<description>yautja</description>
+								<allowedDevelopmentalStages>Adult, Child</allowedDevelopmentalStages>
+							</li>
+						</xenotypeCounts>
+					</value>
+				</nomatch>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

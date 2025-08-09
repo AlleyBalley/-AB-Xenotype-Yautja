@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!--Warrior's Mindset-->
+	<GeneDef>
+		<defName>ABYautjaWarriorsMindset</defName>
+		<label>Warrior's Mindset</label>
+		<labelShortAdj>warrior</labelShortAdj>
+		<description>Your mind is strong and fierce. You respect those who show signs of their hunt.</description>
+		<iconPath>UI/Icons/Genes/GeneIcon_WarriorMindset</iconPath>
+		<displayCategory>ABYautjaCategory</displayCategory>
+		<displayOrderInCategory>975</displayOrderInCategory>
+		<statFactors>
+			<MentalBreakThreshold>1.325</MentalBreakThreshold>
+		</statFactors>
+		<biostatCpx>2</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<forcedTraits>
+			<li>
+				<def>ABYautjaWarriorsMindset</def>
+			</li>
+		</forcedTraits>
+		<modExtensions>
+			<li Class="VEF.Genes.GeneExtension">
+				<backgroundPathEndogenes>UI/Icons/Genes/Yautja_Endogene_Background</backgroundPathEndogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+<!--Menacing Apperance-->
+	<GeneDef>
+		<defName>ABYautjaMenacingApperance</defName>
+		<label>Menacing Apperance</label>
+		<labelShortAdj>menacing</labelShortAdj>
+		<description>Your apperance is grizzled and frightening.</description>
+		<iconPath>UI/Icons/Genes/GeneIcon_MenacingApperance</iconPath>
+		<displayCategory>ABYautjaCategory</displayCategory>
+		<displayOrderInCategory>975</displayOrderInCategory>
+		<statOffsets>
+			<SocialImpact>-0.5</SocialImpact>
+			<TradePriceImprovement>-0.5</TradePriceImprovement>
+			<NegotiationAbility>-0.5</NegotiationAbility>
+		</statOffsets>
+		<statFactors>
+			<SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">1.5</SuppressionPower>
+		</statFactors>
+		<biostatCpx>2</biostatCpx>
+		<biostatMet>1</biostatMet>
+		<modExtensions>
+			<li Class="VEF.Genes.GeneExtension">
+				<backgroundPathEndogenes>UI/Icons/Genes/Yautja_Endogene_Background</backgroundPathEndogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+<!--Hunter's Keen Senses-->
+	<GeneDef>
+		<defName>ABYautjaKeenSenses</defName>
+		<label>Hunter's Keen Senses</label>
+		<labelShortAdj>keen</labelShortAdj>
+		<description>Those that carry this gene find themselves able to react quicker in combat situations and have better ability to hunt.</description>
+		<iconPath>UI/Icons/Genes/GeneIcon_KeenSenses</iconPath>
+		<displayCategory>ABYautjaCategory</displayCategory>
+		<displayOrderInCategory>975</displayOrderInCategory>
+		<statOffsets>
+			<MeleeDodgeChance>1.25</MeleeDodgeChance>
+			<MeleeHitChance>1.125</MeleeHitChance>
+		</statOffsets>
+		<statFactors>
+			<HuntingStealth>0.85</HuntingStealth>
+		</statFactors>
+		<biostatCpx>2</biostatCpx>
+		<biostatMet>2</biostatMet>
+		<modExtensions>
+			<li Class="VEF.Genes.GeneExtension">
+				<backgroundPathEndogenes>UI/Icons/Genes/Yautja_Endogene_Background</backgroundPathEndogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+ <!--Sharp Shooter-->
+	<GeneDef>
+		<defName>ABYautjaSharpShooter</defName>
+		<label>Sharp Shooter</label>
+		<labelShortAdj>Accurate</labelShortAdj>
+		<description>You have a natural talent with guns and other ranged weaponry. It's easier for you to find your mark.</description>
+		<iconPath>UI/Icons/Genes/GeneIcon_Sharp_Shooter</iconPath>
+		<displayCategory>ABYautjaCategory</displayCategory>
+		<displayOrderInCategory>975</displayOrderInCategory>
+		<customEffectDescriptions MayRequire="ebsg.framework">
+			<li>Shooting +3</li>
+			<li>Melee +2</li>
+		</customEffectDescriptions>
+		<modExtensions MayRequire="ebsg.framework">
+			<li Class="EBSGFramework.EBSGExtension">
+				<skillChanges>
+					<li>
+						<skill>Shooting</skill>
+						<skillChange>3</skillChange>
+					</li>
+				</skillChanges>
+			</li>
+			<li Class="EBSGFramework.EBSGExtension">
+				<skillChanges>
+					<li>
+						<skill>Melee</skill>
+						<skillChange>2</skillChange>
+					</li>
+				</skillChanges>
+			</li>
+			<li Class="VEF.Genes.GeneExtension">
+				<backgroundPathEndogenes>UI/Icons/Genes/Yautja_Endogene_Background</backgroundPathEndogenes>
+			</li>
+		</modExtensions>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+	</GeneDef>
+<!--Alien Intelligence-->
+	<GeneDef>
+		<defName>ABYautjaAdvancedTechnologically</defName>
+		<label>Alien Intelligence</label>
+		<labelShortAdj>intelligent</labelShortAdj>
+		<description>A type III-minus civilization on the anti-Kardashev scale, meaning they can manipulate genes and genetic code. They are also capable of using molecules and molecular bonds to create new advanced materials.</description>
+		<iconPath>UI/Icons/Genes/GeneIcon_AdvancedTechnologically</iconPath>
+		<displayCategory>ABYautjaCategory</displayCategory>
+		<displayOrderInCategory>975</displayOrderInCategory>
+		<customEffectDescriptions MayRequire="ebsg.framework">
+			<li>Intellectual +3</li>
+			<li>Intellectual passion +1</li>
+		</customEffectDescriptions>
+		<statOffsets>
+			<ResearchSpeed>0.15</ResearchSpeed>
+			<HackingSpeed>0.15</HackingSpeed>
+			<GlobalLearningFactor>0.5</GlobalLearningFactor>
+		</statOffsets>
+		<modExtensions MayRequire="ebsg.framework">
+			<li Class="EBSGFramework.EBSGExtension">
+				<skillChanges>
+					<li>
+						<skill>Intellectual</skill>
+						<skillChange>3</skillChange>
+						<passionChange>1</passionChange>
+					</li>
+				</skillChanges>
+			</li>
+			<li Class="VEF.Genes.GeneExtension">
+				<backgroundPathEndogenes>UI/Icons/Genes/Yautja_Endogene_Background</backgroundPathEndogenes>
+			</li>
+		</modExtensions>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>2</biostatMet>
+	</GeneDef>
+<!--Toe Toed-->
+   <GeneDef>
+    <defName>ABYautjaTwoToed</defName>
+    <label>Two Toed</label>
+    <labelShortAdj>two-toed</labelShortAdj>
+    <description>Instead of having the average 5 toes you have two large toes.</description>
+    <iconPath>UI/Icons/Genes/GeneIcon_Twotoed</iconPath>
+    <displayCategory>ABYautjaCategory</displayCategory>
+    <displayOrderInCategory>975</displayOrderInCategory>
+	<capMods>
+		<li>
+			<capacity>Moving</capacity>
+			<postFactor>0.8</postFactor>
+		</li>
+	</capMods>
+	<biostatCpx>1</biostatCpx>
+    <biostatMet>1</biostatMet>
+	<modExtensions>
+			<li Class="VEF.Genes.GeneExtension">
+				<backgroundPathEndogenes>UI/Icons/Genes/Yautja_Endogene_Background</backgroundPathEndogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+<!--Seasonal Breeding-->
+	<GeneDef ParentName="FertilityBase">
+		<defName>ABYautja_BreedingSeason</defName>
+		<label>Seasonal Breeding</label>
+		<labelShortAdj>heat</labelShortAdj>
+		<description>Carriers of this gene have reduced fertility outside of the summer months.</description>
+		<iconPath>UI/Icons/Genes/Gene_BreedingSeason</iconPath>
+		<displayCategory>ABYautjaCategory</displayCategory>
+		<displayOrderInCategory>975</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>1</biostatMet>
+		<conditionalStatAffecters MayRequire="ebsg.framework">	
+			<li Class="EBSGFramework.ConditionalStatAffecter_Season">
+				<label>Seasonal Heat</label>
+				<statFactors>
+					<Fertility>3</Fertility>
+				</statFactors>
+				<seasons>
+					<li>Summer</li>
+				</seasons>
+			</li>
+			<li Class="EBSGFramework.ConditionalStatAffecter_Season">
+				<label>Seasonal Infertility</label>
+				<statFactors>
+					<Fertility>0.1</Fertility>
+				</statFactors>
+				<seasons>
+					<li>Spring</li>
+					<li>Winter</li>
+					<li>Fall</li>
+				</seasons>
+			</li>
+		</conditionalStatAffecters>
+		<modExtensions>
+			<li Class="VEF.Genes.GeneExtension">
+				<backgroundPathEndogenes>UI/Icons/Genes/Yautja_Endogene_Background</backgroundPathEndogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+</Defs>

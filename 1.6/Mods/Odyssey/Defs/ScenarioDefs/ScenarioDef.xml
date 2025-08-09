@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ScenarioDef ParentName="ScenarioBase">
+		<defName>ABYautjaHuntingScouts</defName>
+		<label>Hunting Scouts</label>
+		<description>The clan has tasked you with scouting out a new hunting ground. You are to take a yautja ship and traverse the planet seeking a suitible prey.</description>
+		<scenario>
+			<summary>A crew of three Blooded Yautja scout for a suitable hunting location. Reminiscent of classic.</summary>
+			<playerFaction>
+				<factionDef>ABYautja_PlayerBlooded</factionDef>
+			</playerFaction>
+			<parts Inherit="False">
+			<!-- Layers -->
+				<li Class="ScenPart_PlanetLayer">
+					<def>PlanetLayerFixed</def>
+					<tag>Orbit</tag>
+					<layer>Orbit</layer>
+					<settingsDef>Orbit</settingsDef>
+					<hide>true</hide>
+					<connections>
+						<Surface>
+							<zoomMode>ZoomIn</zoomMode>
+						</Surface>
+					</connections>
+				</li>
+			<!-- Config pages -->
+				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes">
+					<def>ConfigurePawnsXenotypes</def>
+					<customSummary>Start with just yautja.</customSummary>
+					<overrideKinds>
+						<li>
+							<pawnKind>Colonist_ABYautja_Blooded</pawnKind>
+						</li>
+					</overrideKinds>
+				</li>
+			<!--Scene Parts-->
+				<li Class="ScenPart_ForcedMap">
+				  <def>ForcedMap</def>
+				  <mapGenerator>OrbitalRelay</mapGenerator>
+				  <layerDef>Orbit</layerDef>
+				</li>
+
+				<!-- Player starting stuff spawn method-->
+				<li Class="ScenPart_PlayerPawnsArriveMethod">
+				  <def>PlayerPawnsArriveMethod</def>
+				  <method>Gravship</method>
+				</li>
+
+				<!-- Starting research -->
+				<li Class="ScenPart_StartingResearch">
+				  <def>StartingResearch</def>
+				  <project>BasicGravtech</project>
+				</li>
+				<li Class="ScenPart_StartingResearch">
+				  <def>StartingResearch</def>
+				  <project>BiofuelRefining</project>
+				</li>
+
+				<!-- Player starting things -->
+				<li Class="ScenPart_StartingThing_Defined">
+				  <def>StartingThing_Defined</def>
+				  <thingDef>Chemfuel</thingDef>
+				  <count>100</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+				  <def>StartingThing_Defined</def>
+				  <thingDef>WoodLog</thingDef>
+				  <count>250</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+				  <def>StartingThing_Defined</def>
+				  <thingDef>MealSurvivalPack</thingDef>
+				  <count>60</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+				  <def>StartingThing_Defined</def>
+				  <thingDef>MedicineIndustrial</thingDef>
+				  <count>40</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+				  <def>StartingThing_Defined</def>
+				  <thingDef>ComponentIndustrial</thingDef>
+				  <count>40</count>
+				</li>
+				<!--<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>ABYautja_Gun_Hunting_Bow</thingDef>
+					<stuff>WoodLog</stuff>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>ABYautja_Melee_BladedMaul</thingDef>
+					<stuff>Steel</stuff>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>ABYautja_Gun_Blaster</thingDef>
+				</li>-->
+				<li Class="ScenPart_StartingThing_Defined">
+				  <def>StartingThing_Defined</def>
+				  <thingDef>Steel</thingDef>
+				  <count>350</count>
+				</li>
+
+				<!-- Scatter some things near player start -->
+				<li Class="ScenPart_ScatterThingsAnywhere">
+				  <def>ScatterThingsNearPlayerStart</def>
+				  <thingDef>Silver</thingDef>
+				  <count>300</count>
+				  <allowRoofed>false</allowRoofed>
+				</li>
+				<li Class="ScenPart_ScatterThingsAnywhere">
+				  <def>ScatterThingsNearPlayerStart</def>
+				  <thingDef>Steel</thingDef>
+				  <count>500</count>
+				  <allowRoofed>false</allowRoofed>
+				</li>
+				<li Class="ScenPart_ScatterThingsAnywhere">
+				  <def>ScatterThingsNearPlayerStart</def>
+				  <thingDef>GravlitePanel</thingDef>
+				  <count>400</count>
+				  <allowRoofed>false</allowRoofed>
+				</li>
+				<!-- Game start dialog -->
+				<li Class="ScenPart_GameStartDialog">
+				  <def>GameStartDialog</def>
+				  <text>You are on a mission to find new hunting grounds for your clan. Use your gravship to explore the planet below and investigate for suitable prey. \n\nTo launch the gravship, select the pilot console, then select the launch command.\n\nOn the world map, select ‘view planet' to choose a landing spot on the planet.</text>
+				  <closeSound>GameStartSting</closeSound>
+				</li>
+				
+			</parts>
+		</scenario>
+	</ScenarioDef>
+
+</Defs>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/GeneDef[defName="ABYautjaSharpShooter"]</xpath>
+		<value>
+			<statFactors>
+				<ShootingAccuracyPawn>1.10</ShootingAccuracyPawn>
+			</statFactors>
+			<statOffsets>
+				<AimingDelayFactor>-0.25</AimingDelayFactor>
+			</statOffsets>
+		</value>
+	</Operation>
+</Patch>

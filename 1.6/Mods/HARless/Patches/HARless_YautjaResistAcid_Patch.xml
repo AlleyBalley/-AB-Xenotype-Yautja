@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Alpha Genes</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/GeneDef[defName="ABYautjaFrame"]/damageFactors</xpath>
+			<value>
+				<AG_AcidSpit>0.85</AG_AcidSpit>
+			</value>
+		</match>
+	</Operation>
+</Patch>

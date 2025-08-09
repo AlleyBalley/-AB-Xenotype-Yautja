@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <PawnKindDef Abstract="True" Name="BaseYautjaPawnKind">
+	<race>Human</race>
+    <combatPower>40</combatPower>
+	<initialWillRange>3~5</initialWillRange>
+	<initialResistanceRange>17~27</initialResistanceRange>
+    <isFighter>true</isFighter>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <forceNormalGearQuality>true</forceNormalGearQuality>
+	<lifeStages>
+      <li>
+        <bodyGraphicData>
+          <drawSize>0.75</drawSize>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <drawSize>1</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+	<xenotypeSet>
+		<xenotypeChances>
+			<ABStandardYautja>0.75</ABStandardYautja>
+			<ABBerserkYautja>0.09</ABBerserkYautja>
+			<ABScoutYautja>0.05</ABScoutYautja>
+			<ABSwordYautja>0.05</ABSwordYautja>
+			<ABShieldYautja>0.05</ABShieldYautja>
+			<ABGrendelKingYautja>0.01</ABGrendelKingYautja>
+		</xenotypeChances>
+	</xenotypeSet>
+    <backstoryFiltersOverride Inherit="false">
+      <li>
+        <categories>
+          <li>ABYautja_Standard</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BaseYautjaPawnKind">
+    <defName>Colonist_ABYautja</defName>
+    <label>Yautja colonist</label>
+    <defaultFactionType>ABYautja_PlayerColony</defaultFactionType>
+    <apparelTags>
+		<!--<li>YautjaGreaves</li>
+		<li>YautjaWebbing</li>-->
+    </apparelTags>
+    <apparelMoney>
+      <min>10000</min>
+      <max>10000</max>
+    </apparelMoney>
+    <backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="BaseYautjaPawnKind">
+    <defName>Colonist_ABYautja_Unblooded</defName>
+    <label>Yautja colonist</label>
+    <defaultFactionType>ABYautja_PlayerUnblooded</defaultFactionType>
+    <backstoryFiltersOverride Inherit="false">
+      <li>
+        <categories>
+          <li>ABYautja_Unblooded</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+    <apparelTags>
+		<!--<li>YautjaLightArmour</li>
+		<li>YautjaWebbing</li>-->
+		<li>Neolithic</li>
+    </apparelTags>
+    <apparelMoney>
+      <min>1000</min>
+      <max>1000</max>
+    </apparelMoney>
+    <backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="BaseYautjaPawnKind">
+    <defName>Colonist_ABYautja_Blooded</defName>
+    <label>Yautja colonist</label>
+    <defaultFactionType>ABYautja_PlayerBlooded</defaultFactionType>
+    <backstoryFiltersOverride Inherit="false">
+      <li>
+        <categories>
+          <li>ABYautja_Blooded</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+    <apparelTags>
+		<!--<li>YautjaLightArmour</li>
+		<li>YautjaArmour</li>
+		<li>YautjaWebbing</li>-->
+    </apparelTags>
+    <apparelMoney>
+      <min>10000</min>
+      <max>10000</max>
+    </apparelMoney>
+    <backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="BaseYautjaPawnKind">
+    <defName>Colonist_ABYautja_BadBlooded</defName>
+    <label>Bad blood colonist</label>
+    <defaultFactionType>ABYautja_PlayerColony</defaultFactionType>
+    <backstoryFiltersOverride Inherit="false">
+      <li>
+        <categories>
+          <li>ABYautja_BadBlood</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+    <apparelTags>
+		<!--<li>YautjaGreaves</li>
+		<li>YautjaWebbing</li>-->
+    </apparelTags>
+    <apparelMoney>
+      <min>1000</min>
+      <max>1000</max>
+    </apparelMoney>
+    <backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+  </PawnKindDef>
+  
+</Defs>

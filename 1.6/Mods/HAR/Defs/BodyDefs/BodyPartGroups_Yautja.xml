@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <BodyPartGroupDef>
+    <defName>ABYautja_Mandibles</defName>
+    <label>mandibles</label>
+    <listOrder>196</listOrder>
+  </BodyPartGroupDef>
+
+  <BodyPartGroupDef>
+    <defName>ABYautja_LeftArm</defName>
+    <label>left arm </label>
+    <listOrder>91</listOrder>
+  </BodyPartGroupDef>
+  
+  <BodyPartGroupDef>
+    <defName>ABYautja_RightArm</defName>
+    <label>right arm</label>
+    <listOrder>92</listOrder>
+  </BodyPartGroupDef>
+</Defs>

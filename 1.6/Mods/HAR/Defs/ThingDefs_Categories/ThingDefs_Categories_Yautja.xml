@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingCategoryDef>
+    <defName>ABCorpses_Yautja</defName>
+    <label>yautja corpses</label>
+      <parent>CorpsesHumanlike</parent>
+    </ThingCategoryDef>
+</Defs>

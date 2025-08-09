@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="FilthBlood">
+		<defName>ABYautja_FilthBlood</defName>
+		<label>yautja blood</label>
+		<graphicData>
+			<color>(60, 209, 15, 180)</color>
+		</graphicData>
+	</ThingDef>
+</Defs>

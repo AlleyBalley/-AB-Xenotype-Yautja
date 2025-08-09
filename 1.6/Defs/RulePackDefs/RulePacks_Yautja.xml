@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!--Yautja Utility Rulepack-->
+  <RulePackDef>
+    <defName>NamerUtility_ABYautja</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>WordYautji(p=3)->[SylG]'[SylE]-[SylG]</li>
+        <li>WordYautji(p=2)->[SylG]'[SylG][SylE]-[SylG]</li>
+      </rulesStrings>
+      <rulesFiles>
+        <li>ABNameYautjaUnisexA->NameBanks/ABYautja_UnisexA</li>
+        <li>ABNameYautjaUnisexB->NameBanks/ABYautja_UnisexB</li>
+		
+		<li>ABNameYautjaFemEnd->NameBanks/ABYautja_FemEnd</li>
+        <li>ABNameYautjaMascEnd->NameBanks/ABYautja_MascEnd</li>
+		<li>ABNameYautjaUnisexEnd->NameBanks/ABYautja_UnisexEnd</li>
+		
+		<li>ABNameYautjaAdj->NameBanks/ABYautja_Adj</li>
+        <li>ABNameYautjaUnisexNick->NameBanks/ABYautja_Nick</li>
+		
+        <li>SylE->WordParts/Syllables_English</li>
+        <li>SylG->WordParts/Syllables_Galician</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+<!--Yautja Faction Rulepack-->
+	<RulePackDef>
+		<defName>NamerFaction_ABYautja</defName>
+		<include>
+		  <li>ABNamerYautjaBases</li>
+		</include>
+		<rulePack>
+		  <rulesStrings>
+			<li>name->[ABYautja_Clans] [ABBaseNames]</li>
+		  </rulesStrings>
+		  <rulesRaw>
+			<li Class="Rule_File">
+				<keyword>ABYautja_Clans</keyword>
+				<path>NameBanks/ABYautja_Clans</path>
+			</li>
+		  </rulesRaw>
+		</rulePack>
+	</RulePackDef>
+<!--Yautja Jungle Clan Rulepack-->	
+	<RulePackDef>
+		<defName>ABNamerYautjaJungleClan</defName>
+		<include>
+		  <li>ABNamerYautjaBases</li>
+		</include>
+		<rulePack>
+		  <rulesStrings>
+			<li>name->[ABYautja_JungleClan] [ABBaseNames]</li>
+		  </rulesStrings>
+		  <rulesRaw>
+			<li Class="Rule_File">
+				<keyword>ABYautja_JungleClan</keyword>
+				<path>NameBanks/ABYautja_Clan_Jungle</path>
+			</li>
+		  </rulesRaw>
+		</rulePack>
+	</RulePackDef>
+<!--Yautja Bad Blood Clan Rulepack-->	
+	<RulePackDef>
+		<defName>ABNamerYautjaBadBloodClan</defName>
+		<include>
+		  <li>ABNamerYautjaBases</li>
+		</include>
+		<rulePack>
+		  <rulesStrings>
+			<li>name->[ABYautja_BadBloodClan] [ABBaseNames]</li>
+		  </rulesStrings>
+		  <rulesRaw>
+			<li Class="Rule_File">
+				<keyword>ABYautja_BadBloodClan</keyword>
+				<path>NameBanks/ABYautja_Clan_BadBlood</path>
+			</li>
+		  </rulesRaw>
+		</rulePack>
+	</RulePackDef>
+<!--Yautja Base Rulepack-->	
+	<RulePackDef>
+		<defName>ABNamerYautjaBases</defName>
+		<rulePack>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>ABBaseNames</keyword>
+					<path>NameBanks/ABYautja_BaseNames</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+<!--Yautja Male Rulepack-->
+	<RulePackDef>
+		<defName>ABNamerPerson_Yautja_Unisex</defName>
+		<include>
+		  <li>NamerUtility_ABYautja</li>
+		  <li>TribalWordUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[ABUnisexfirstname] [ABUnisexlastname]</li>
+				<li>name->[ABUnisexfirstname] '[nickname]' [ABUnisexlastname]</li>
+				
+				<li>ABUnisexfirstname(p=2)->[ABNameYautjaUnisexA][ABNameYautjaUnisexB]</li>
+				<li>ABUnisexfirstname(p=2)->[ABNameYautjaUnisexA][ABNameYautjaUnisexB]</li>
+				<li>ABUnisexfirstname(p=3)->[ABNameYautjaUnisexA][ABNameYautjaUnisexB][AbNameYautjaUnisexEnd]</li>
+				<li>ABUnisexfirstname(p=2)->[ABNameYautjaUnisexA][ABNameYautjaUnisexB][ABNameYautjaUnisexB]</li>
+				<li>ABUnisexfirstname(p=3)->[ABNameYautjaUnisexA][ABNameYautjaUnisexB][ABNameYautjaUnisexB][AbNameYautjaUnisexEnd]</li>
+				<li>ABUnisexfirstname(p=3)->[ABNameYautjaUnisexA][AbNameYautjaUnisexEnd]</li>
+				
+				<li>ABUnisexlastname(p=3)->[WordYautji]</li>
+				<li>ABUnisexlastname(p=2)->[WordYautji]</li>
+				
+				<li>nickname(p=8)->[ABNameYautjaUnisexNick]</li>
+				<li>nickname(p=8)->[ABNameYautjaAdj] [ABNameYautjaUnisexNick]</li>
+				<li>nicktname(p=3)->[ConceptBadass]</li>
+				<li>nicktname(p=2)->[PersonBadass]</li>
+				<li>nicktname(p=2)->[AnimalBadass]</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+<!--Yautja Male Rulepack-->
+	<RulePackDef>
+		<defName>ABNamerPerson_Yautja_Male</defName>
+		<include>
+		  <li>NamerUtility_ABYautja</li>
+		  <li>TribalWordUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[ABMalefirstname] [ABUnisexlastname]</li>
+				<li>name->[ABMalefirstname] '[nickname]' [ABUnisexlastname]</li>
+				
+				<li>ABMalefirstname(p=2)->[ABNameYautjaUnisexA][ABNameYautjaUnisexB]</li>
+				<li>ABMalefirstname(p=5)->[ABNameYautjaUnisexA][ABNameYautjaUnisexB][AbNameYautjaMascEnd]</li>
+				<li>ABMalefirstname(p=5)->[ABNameYautjaUnisexA][AbNameYautjaMascEnd]</li>
+				<li>ABMalefirstname(p=2)->[ABNameYautjaUnisexA][ABNameYautjaUnisexB]</li>
+				<li>ABMalefirstname(p=3)->[ABNameYautjaUnisexA][ABNameYautjaUnisexB][AbNameYautjaUnisexEnd]</li>
+				<li>ABMalefirstname(p=2)->[ABNameYautjaUnisexA][ABNameYautjaUnisexB][ABNameYautjaUnisexB]</li>
+				<li>ABMalefirstname(p=5)->[ABNameYautjaUnisexA][ABNameYautjaUnisexB][ABNameYautjaUnisexB][AbNameYautjaMascEnd]</li>
+				<li>ABMalefirstname(p=3)->[ABNameYautjaUnisexA][ABNameYautjaUnisexB][ABNameYautjaUnisexB][AbNameYautjaUnisexEnd]</li>
+				<li>ABMalefirstname(p=3)->[ABNameYautjaUnisexA][AbNameYautjaUnisexEnd]</li>
+				
+				<li>ABUnisexlastname(p=3)->[WordYautji]</li>
+				<li>ABUnisexlastname(p=2)->[WordYautji]</li>
+				
+				<li>nickname(p=8)->[ABNameYautjaUnisexNick]</li>
+				<li>nickname(p=8)->[ABNameYautjaAdj] [ABNameYautjaUnisexNick]</li>
+				<li>nicktname(p=3)->[ConceptBadass]</li>
+				<li>nicktname(p=2)->[PersonBadass]</li>
+				<li>nicktname(p=2)->[AnimalBadass]</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+<!--Yautja Female Rulepack-->
+	<RulePackDef>
+		<defName>ABNamerPerson_Yautja_Female</defName>
+		<include>
+		  <li>NamerUtility_ABYautja</li>
+		  <li>TribalWordUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[ABFemalefirstname] [ABUnisexlastname]</li>
+				<li>name->[ABFemalefirstname] '[nickname]' [ABUnisexlastname]</li>
+
+				<li>ABFemalefirstname(p=2)->[ABNameYautjaUnisexA][ABNameYautjaUnisexB]</li>
+				<li>ABFemalefirstname(p=5)->[ABNameYautjaUnisexA][ABNameYautjaUnisexB][AbNameYautjaFemEnd]</li>
+				<li>ABFemalefirstname(p=5)->[ABNameYautjaUnisexA][AbNameYautjaFemEnd]</li>
+				<li>ABFemalefirstname(p=2)->[ABNameYautjaUnisexA][ABNameYautjaUnisexB]</li>
+				<li>ABFemalefirstname(p=3)->[ABNameYautjaUnisexA][ABNameYautjaUnisexB][AbNameYautjaUnisexEnd]</li>
+				<li>ABFemalefirstname(p=2)->[ABNameYautjaUnisexA][ABNameYautjaUnisexB][ABNameYautjaUnisexB]</li>
+				<li>ABFemalefirstname(p=5)->[ABNameYautjaUnisexA][ABNameYautjaUnisexB][ABNameYautjaUnisexB][AbNameYautjaFemEnd]</li>
+				<li>ABFemalefirstname(p=3)->[ABNameYautjaUnisexA][ABNameYautjaUnisexB][ABNameYautjaUnisexB][AbNameYautjaUnisexEnd]</li>
+				<li>ABFemalefirstname(p=3)->[ABNameYautjaUnisexA][AbNameYautjaUnisexEnd]</li>
+				
+				<li>ABUnisexlastname(p=3)->[WordYautji]</li>
+				<li>ABUnisexlastname(p=2)->[WordYautji]</li>
+				
+				<li>nickname(p=8)->[ABNameYautjaUnisexNick]</li>
+				<li>nickname(p=8)->[ABNameYautjaAdj] [ABNameYautjaUnisexNick]</li>
+				<li>nicktname(p=3)->[ConceptBadass]</li>
+				<li>nicktname(p=2)->[PersonBadass]</li>
+				<li>nicktname(p=2)->[AnimalBadass]</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+</Defs>

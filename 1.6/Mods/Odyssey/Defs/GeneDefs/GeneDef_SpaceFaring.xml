@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!--Space Faring-->
+	<GeneDef MayRequire="Ludeon.Rimworld.Odyssey">
+		<defName>ABYautjaExtra_Terrestrial</defName>
+		<label>Space Faring</label>
+		<labelShortAdj>alien</labelShortAdj>
+		<description>Space is all you've known, as you were born into an age where traversal of it was free and easy. Piloting ships is second nature to you.</description>
+		<iconPath>UI/Icons/Genes/GeneIcon_ABET</iconPath>
+		<displayCategory>ABYautjaCategory</displayCategory>
+		<displayOrderInCategory>975</displayOrderInCategory>
+		<statOffsets>
+			<PilotingAbility>0.35</PilotingAbility>
+		</statOffsets>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<modExtensions>
+			<li Class="VEF.Genes.GeneExtension">
+				<backgroundPathEndogenes>UI/Icons/Genes/Yautja_Endogene_Background</backgroundPathEndogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+</Defs>

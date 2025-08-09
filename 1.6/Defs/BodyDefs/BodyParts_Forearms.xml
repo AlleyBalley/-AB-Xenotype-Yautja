@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+  <BodyPartDef>
+    <defName>ABYautja_RightForearm</defName>
+    <label>right forearm</label>
+    <hitPoints>25</hitPoints>
+    <frostbiteVulnerability>0</frostbiteVulnerability>
+    <skinCovered>true</skinCovered>
+	<canScarify>true</canScarify>
+    <tags>
+		<li>ManipulationLimbSegment</li>
+    </tags>
+  </BodyPartDef>
+  
+  <BodyPartDef>
+    <defName>ABYautja_LeftForearm</defName>
+    <label>left forearm</label>
+    <hitPoints>25</hitPoints>
+    <frostbiteVulnerability>0</frostbiteVulnerability>
+    <skinCovered>true</skinCovered>
+	<canScarify>true</canScarify>
+    <tags>
+		<li>ManipulationLimbSegment</li>
+    </tags>
+  </BodyPartDef>
+</Defs>

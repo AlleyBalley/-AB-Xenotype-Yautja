@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThoughtDef>
+    <defName>ABYautja_AteCorpse</defName>
+    <showBubble>true</showBubble>
+    <icon>Things/Mote/ThoughtSymbol/Food</icon>
+    <durationDays>1</durationDays>
+    <stages>
+      <li>
+        <label>ate corpse</label>
+        <description>I had to eat the flesh of a dead creature without even butchering or cooking it.</description>
+        <baseMoodEffect>-2</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+	<ThoughtDef>
+		<defName>ABAteYautjaMeatDirect</defName>
+		<showBubble>true</showBubble>
+		<icon>Things/Mote/ThoughtSymbol/Food</icon>
+		<durationDays>1</durationDays>
+		<nullifyingTraits>
+			<li>Cannibal</li>
+		</nullifyingTraits>
+		<stages>
+			<li>
+				<label>raw cannibalism</label>
+				<description>I ate the meat of another hunter, raw. I bring shame to my clan.</description>
+				<baseMoodEffect>-20</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>ABAteYautjaMeatAsIngredient</defName>
+		<showBubble>true</showBubble>
+		<icon>Things/Mote/ThoughtSymbol/Food</icon>
+		<durationDays>1</durationDays>
+		<nullifyingTraits>
+			<li>Cannibal</li>
+		</nullifyingTraits>
+		<stages>
+			<li>
+				<label>cooked cannibalism</label>
+				<description>I ate a meal made from the meat of another Yautja. This is horrible.</description>
+				<baseMoodEffect>-15</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+  <ThoughtDef>
+    <defName>ABAteYautjaMeatDirectCannibal</defName>
+		<showBubble>true</showBubble>
+		<icon>Things/Mote/ThoughtSymbol/Food</icon>
+		<durationDays>1</durationDays>
+    <requiredTraits>
+      <li>Cannibal</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>raw cannibalism</label>
+        <description>I ate the meat of another hunter, raw. I feel its strength in my body.</description>
+        <baseMoodEffect>20</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+	<ThoughtDef>
+    <defName>ABAteYautjaMeatAsIngredientCannibal</defName>
+		<showBubble>true</showBubble>
+		<icon>Things/Mote/ThoughtSymbol/Food</icon>
+		<durationDays>1</durationDays>
+    <requiredTraits>
+      <li>Cannibal</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>cooked cannibalism</label>
+        <description>I ate a meal made from the flesh of another Yautja.</description>
+        <baseMoodEffect>15</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+	  <!--=========== Yautja Butchering Yautja ============-->	
+
+	<ThoughtDef>
+		<defName>ABButcheredYautjaCorpse</defName>
+		<durationDays>6</durationDays>
+		<stackLimit>10</stackLimit>
+		<stackedEffectMultiplier>0.75</stackedEffectMultiplier>
+		<nullifyingTraits>
+			<li>Psychopath</li>
+			<li>Bloodlust</li>
+			<li>Cannibal</li>
+		</nullifyingTraits>
+		<stages>
+			<li>
+				<label>I butchered a Yautja</label>
+				<description>I butchered a fellow Hunter like an animal. They deserved better.</description>
+				<baseMoodEffect>-7</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>ABKnowButcheredYautjaCorpse</defName>
+		<durationDays>6</durationDays>
+		<stackLimit>1</stackLimit>
+		<nullifyingTraits>
+			<li>Psychopath</li>
+			<li>Bloodlust</li>
+			<li>Cannibal</li>
+		</nullifyingTraits>
+		<stages>
+			<li>
+				<label>we butchered a Yautja</label>
+				<description>We butchered another Yautja like an animal. They deserved better.</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+</Defs>

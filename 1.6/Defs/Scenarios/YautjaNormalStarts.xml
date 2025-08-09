@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+<!--Unblooded Yautja Hunters-->
+	<ScenarioDef ParentName="ScenarioBase">
+		<defName>ABYautjaScenarioUnblooded</defName>
+		<label>Unblooded Yautja hunters</label>
+		<description>The five of you are sent to an unknown planet as Pups. You have to build everything from scratch and face the competition of the other Hunters. The Elders expect you to return to your clan as true Hunters.</description>
+		<scenario>
+			<summary>Five Unblooded Yautja attempt to survive a hunt to earn their blood status. Difficult.</summary>
+			<playerFaction>
+				<factionDef>ABYautja_PlayerUnblooded</factionDef>
+			</playerFaction>
+			<parts Inherit="False">
+			<!-- Config pages -->
+					<li Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes">
+						<def>ConfigurePawnsXenotypes</def>
+						<customSummary>Start with just yautja.</customSummary>
+						<overrideKinds>
+							<li>
+								<pawnKind>Colonist_ABYautja_Unblooded</pawnKind>
+							</li>
+						</overrideKinds>
+					</li>
+			<!--Scene Parts-->
+				<li Class="ScenPart_PlayerPawnsArriveMethod">
+					<def>PlayerPawnsArriveMethod</def>
+					<method>DropPods</method>
+					<visible>false</visible>
+				</li>
+				<li Class="ScenPart_ForcedHediff">
+					<def>ForcedHediff</def>
+					<chance>0.5</chance>
+					<context>PlayerStarter</context>
+					<hediff>Malnutrition</hediff>
+					<severityRange>0.09166667~0.297</severityRange>
+				</li>
+				<li Class="ScenPart_SetNeedLevel">
+					<def>SetNeedLevel</def>
+					<chance>1</chance>
+					<context>PlayerStarter</context>
+					<need>Food</need>
+					<levelRange>0~0.1</levelRange>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Silver</thingDef>
+					<count>200</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MealSurvivalPack</thingDef>
+					<count>25</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MedicineIndustrial</thingDef>
+					<count>15</count>
+				</li>
+				<!--<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>ABYautja_Gun_Hunting_Bow</thingDef>
+					<stuff>WoodLog</stuff>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MeleeWeapon_Spear</thingDef>
+					<stuff>WoodLog</stuff>
+				</li>-->
+				<li Class="ScenPart_ScatterThingsNearPlayerStart">
+					<def>ScatterThingsNearPlayerStart</def>
+					<thingDef>Steel</thingDef>
+					<count>300</count>
+				</li>
+				<li Class="ScenPart_GameStartDialog">
+					<def>GameStartDialog</def>
+					<text>Your clan sent you in drop pods with the bare minimum. To become Hunters you have to hunt, survive and return to your clan... \n\nOr die trying.</text>
+					<closeSound>GameStartSting</closeSound>
+				</li>
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<thingDef>ShipChunk</thingDef>
+					<count>10</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<thingDef>Steel</thingDef>
+					<count>720</count>
+				</li>
+			</parts>
+		</scenario>
+	</ScenarioDef>
+<!--Blooded Yautja Hunters-->
+	<ScenarioDef ParentName="ScenarioBase">
+		<defName>ABYautjaScenarioBlooded</defName>
+		<label>Blooded Yautja hunters</label>
+		<description>After decades of hunting, your Pack decided to go and claim new hunting grounds for the Glory of the Clan.</description>
+		<scenario>
+			<summary>Five Blooded Yautja attempt to build their own clan clan. Difficult.</summary>
+			<playerFaction>
+				<factionDef>ABYautja_PlayerBlooded</factionDef>
+			</playerFaction>
+			<parts Inherit="False">
+			<!-- Config pages -->
+				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes">
+					<def>ConfigurePawnsXenotypes</def>
+					<customSummary>Start with just yautja.</customSummary>
+					<overrideKinds>
+						<li>
+							<pawnKind>Colonist_ABYautja_Blooded</pawnKind>
+						</li>
+					</overrideKinds>
+				</li>
+			<!--Scene Parts-->
+				<li Class="ScenPart_PlayerPawnsArriveMethod">
+					<def>PlayerPawnsArriveMethod</def>
+					<method>DropPods</method>
+					<visible>false</visible>
+				</li>
+				<li Class="ScenPart_ForcedHediff">
+					<def>ForcedHediff</def>
+					<chance>0.5</chance>
+					<context>PlayerStarter</context>
+					<hediff>Malnutrition</hediff>
+					<severityRange>0.09166667~0.297</severityRange>
+				</li>
+				<li Class="ScenPart_SetNeedLevel">
+					<def>SetNeedLevel</def>
+					<chance>1</chance>
+					<context>PlayerStarter</context>
+					<need>Food</need>
+					<levelRange>0~0.1</levelRange>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Silver</thingDef>
+					<count>500</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MealSurvivalPack</thingDef>
+					<count>30</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MedicineIndustrial</thingDef>
+					<count>20</count>
+				</li>
+				<!--<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>ABYautja_Gun_Hunting_Bow</thingDef>
+					<stuff>WoodLog</stuff>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>ABYautja_Melee_BladedMaul</thingDef>
+					<stuff>Steel</stuff>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>ABYautja_Gun_Blaster</thingDef>
+				</li>-->
+				<li Class="ScenPart_ScatterThingsNearPlayerStart">
+					<def>ScatterThingsNearPlayerStart</def>
+					<thingDef>Steel</thingDef>
+					<count>500</count>
+				</li>
+				<li Class="ScenPart_GameStartDialog">
+					<def>GameStartDialog</def>
+					<text>You land in the middle of the unknown. Time to make your Clan proud and find worthy preys.</text>
+					<closeSound>GameStartSting</closeSound>
+				</li>
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<thingDef>ShipChunk</thingDef>
+					<count>10</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<thingDef>Steel</thingDef>
+					<count>720</count>
+				</li>
+			</parts>
+		</scenario>
+	</ScenarioDef>
+<!--Lone Bad Blood-->
+	<ScenarioDef ParentName="ScenarioBase">
+		<defName>ABYautjaScenarioLongExile</defName>
+		<label>Lone Exile</label>
+		<description>You have broken the code of honor and have been cast out from any clan. You have been titled a Bad Blood, those you called your brothers and sisters will now hunt you.</description>
+			<scenario>
+				<summary>Naked, alone, and utterly unprepared. Can you survive? Extremely difficult and unfair.</summary>
+				<playerFaction>
+					<factionDef>ABYautja_PlayerBadBlood</factionDef>
+				</playerFaction>
+				<parts>
+			<!--  Config pages  -->
+					<li Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes">
+						<def>ConfigurePawnsXenotypes</def>
+						<customSummary>Start with a yautja.</customSummary>
+						<overrideKinds>
+							<li>
+								<pawnKind>Colonist_ABYautja_BadBlooded</pawnKind>
+							</li>
+						</overrideKinds>
+					</li>
+				<!--Scene Parts-->
+					<!--  Player starting stuff spawn method -->
+					<li Class="ScenPart_PlayerPawnsArriveMethod">
+					<def>PlayerPawnsArriveMethod</def>
+					<visible>false</visible>
+					<method>DropPods</method>
+					</li>
+					<!--  Player starting stuff spawn method -->
+					<li Class="ScenPart_Naked">
+					<def>Naked</def>
+					<context>PlayerStarter</context>
+					</li>
+					<!--  Player pawns start with no possessions eg. extra drugs.  -->
+					<li Class="ScenPart_NoPossessions">
+					<def>NoPossessions</def>
+					</li>
+					<li Class="ScenPart_ForcedHediff">
+						<def>ForcedHediff</def>
+						<chance>1</chance>
+						<context>PlayerStarter</context>
+						<hediff>Sterilized</hediff>
+						<severityRange>0.9~1</severityRange>
+					</li>
+					<!--Vanilla Faction Extended, Faction disposition-->
+					<li Class="VEF.Factions.ScenPart_ForcedFactionGoodwill">
+						<factionDef>ABYautjaClan</factionDef>
+						<alwaysHostile>True</alwaysHostile>
+						<affectStartingGoodwill>True</affectStartingGoodwill>
+						<startingGoodwillRange>-50~-25</startingGoodwillRange>
+						<affectNaturalGoodwill>True</affectNaturalGoodwill>
+						<naturalGoodwillRange>-100~-85</naturalGoodwillRange>
+						<def>VFEC_ForcedFactionGoodwill</def>
+					</li>
+					<li Class="VEF.Factions.ScenPart_ForcedFactionGoodwill">
+						<factionDef>ABYautjaBerserkClan</factionDef>
+						<alwaysHostile>True</alwaysHostile>
+						<affectStartingGoodwill>True</affectStartingGoodwill>
+						<startingGoodwillRange>-50~-25</startingGoodwillRange>
+						<affectNaturalGoodwill>True</affectNaturalGoodwill>
+						<naturalGoodwillRange>-100~-85</naturalGoodwillRange>
+						<def>VFEC_ForcedFactionGoodwill</def>
+					</li>
+					<li Class="VEF.Factions.ScenPart_ForcedFactionGoodwill">
+						<factionDef>ABYautjaBadBloodClan</factionDef>
+						<affectHiddenFactions>True</affectHiddenFactions>
+						<affectStartingGoodwill>True</affectStartingGoodwill>
+						<startingGoodwillRange>20~75</startingGoodwillRange>
+						<affectNaturalGoodwill>True</affectNaturalGoodwill>
+						<naturalGoodwillRange>0~30</naturalGoodwillRange>
+						<def>VFEC_ForcedFactionGoodwill</def>
+					</li>
+					<!--  Game start dialog  -->
+					<li Class="ScenPart_GameStartDialog">
+					<def>GameStartDialog</def>
+					<text>You have broken the code of honor and have been cast out from any clan. You have been titled a Bad Blood, those you called your brothers and sisters will now hunt you.\n\nYou are totally naked with no preparation, no supplies, and no tools, can you survive?</text>
+					<closeSound>GameStartSting</closeSound>
+					</li>
+				</parts>
+			</scenario>
+	</ScenarioDef>
+</Defs>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!--Standard-->
+	<GeneDef ParentName="ABYautjaFrameBase">
+		<defName>ABYautjaFrame</defName>
+		<label>Yautja Frame</label>
+		<description>Carriers of this gene grow to 7 or 7.5 feet and can live for 2000 years.</description>
+		<iconPath>UI/Icons/Genes/BS_Frames/Yautja</iconPath>
+		<biostatCpx>3</biostatCpx>
+		<biostatMet>-2</biostatMet>
+		<statOffsets>
+			<ComfyTemperatureMax>68</ComfyTemperatureMax>
+			<SM_RaidWealthOffset MayRequire="redmattis.betterprerequisites">1750</SM_RaidWealthOffset>
+			<SM_BodySizeOffset MayRequire="redmattis.betterprerequisites">0.25</SM_BodySizeOffset>
+		</statOffsets>
+		<statFactors>
+			<MoveSpeed>2.5</MoveSpeed>
+			<LifespanFactor>4.5</LifespanFactor>
+			<ImmunityGainSpeed>1.25</ImmunityGainSpeed>
+			<CarryingCapacity>2.3</CarryingCapacity>
+			<VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">5.5</VEF_MassCarryCapacity>
+		</statFactors>
+	</GeneDef>
+</Defs>

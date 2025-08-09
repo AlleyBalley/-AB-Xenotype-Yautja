@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+		<!--Upper Mandibles-->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/GeneDef[defName="ABYautjaUpperMandibles"]/label</xpath>
+				<value>
+					<label>yautja upper mandible</label>
+				</value>
+			</li>
+		<!--Lower Mandibles-->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/GeneDef[defName="ABYautjaLowerMandibles"]/label</xpath>
+				<value>
+					<label>yautja upper mandible</label>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

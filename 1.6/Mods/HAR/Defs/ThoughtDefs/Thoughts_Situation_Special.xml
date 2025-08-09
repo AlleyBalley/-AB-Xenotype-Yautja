@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+ <ThoughtDef>
+    <defName>ABDisfigured</defName>
+    <thoughtClass>Thought_SituationalSocial</thoughtClass>
+    <workerClass>ThoughtWorker_Disfigured</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>scarred</label>
+        <baseOpinionOffset>5</baseOpinionOffset>
+      </li>
+    </stages>
+  </ThoughtDef>
+</Defs>

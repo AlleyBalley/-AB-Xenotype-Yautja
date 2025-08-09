@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/HediffDef[defName="ABYautjaCrest"]</xpath>
+				<value>
+					<comps>
+						<li Class="HediffCompProperties_VerbGiver">
+							<tools>
+								<li>
+									<label>head crest</label>
+									<capacities>
+										<li>Blunt</li>
+									</capacities>
+									<power>8</power>
+									<cooldownTime>1.8</cooldownTime>
+								</li>
+							</tools>
+						</li>
+					</comps>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/HediffDef[defName="ABYautjaLeatherySkin"]</xpath>
+				<value>
+					<stages>
+						<li>
+							<minSeverity>0</minSeverity>
+							<statOffsets>
+								<ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+								<ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+							</statOffsets>
+						</li>
+					</stages>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/HediffDef[defName="ABYautjaSuperiorUpperMandibles"]</xpath>
+				<value>
+					<comps>
+						<li Class="HediffCompProperties_VerbGiver">
+							<tools>
+								<li>
+									<label>superior upper mandibles</label>
+									<capacities>
+										<li>Bite</li>
+									</capacities>
+									<power>15</power>
+									<armorPenetration>0.02</armorPenetration>
+									<cooldownTime>2.2</cooldownTime>
+									<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+								</li>
+							</tools>
+						</li>
+					</comps>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/HediffDef[defName="ABYautjaUpperMandibles"]</xpath>
+				<value>
+					<comps>
+						<li Class="HediffCompProperties_VerbGiver">
+							<tools>
+								<li>
+									<label>upper mandibles</label>
+									<capacities>
+										<li>Bite</li>
+									</capacities>
+									<power>15</power>
+									<armorPenetration>0.02</armorPenetration>
+									<cooldownTime>2.2</cooldownTime>
+									<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+								</li>
+							</tools>
+						</li>
+					</comps>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/HediffDef[defName="ABYautjaSuperiorLowerMandibles"]</xpath>
+				<value>
+					<comps>
+						<li Class="HediffCompProperties_VerbGiver">
+							<tools>
+								<li>
+									<label>superior lower mandibles</label>
+									<capacities>
+										<li>Bite</li>
+									</capacities>
+									<power>15</power>
+									<armorPenetration>0.02</armorPenetration>
+									<cooldownTime>2.2</cooldownTime>
+									<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+								</li>
+							</tools>
+						</li>
+					</comps>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/HediffDef[defName="ABYautjaLowerMandibles"]</xpath>
+				<value>
+					<comps>
+						<li Class="HediffCompProperties_VerbGiver">
+							<tools>
+								<li>
+									<label>lower mandibles</label>
+									<capacities>
+										<li>Bite</li>
+									</capacities>
+									<power>15</power>
+									<armorPenetration>0.02</armorPenetration>
+									<cooldownTime>2.2</cooldownTime>
+									<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+								</li>
+							</tools>
+						</li>
+					</comps>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/HediffDef[defName="HBYautjaLowerMandible"]</xpath>
+				<value>
+					<comps>
+						<li Class="HediffCompProperties_VerbGiver">
+							<tools>
+								<li>
+									<label>lower mandibles</label>
+									<capacities>
+										<li>Bite</li>
+									</capacities>
+									<power>15</power>
+									<armorPenetration>0.02</armorPenetration>
+									<cooldownTime>2.2</cooldownTime>
+									<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+								</li>
+							</tools>
+						</li>
+					</comps>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<loadFolders>
+	<v1.6>
+		<li IfModActive="Ludeon.Rimworld.Ideology">1.6/Mods/Ideology</li>
+		<li IfModActive="Ludeon.Rimworld.Odyssey">1.6/Mods/Odyssey</li>
+		<!--li IfModActive="niz.xenomorphtype">1.6/Mods/Alien-Rimworld</li-->
+		<li IfModActive="erdelf.humanoidalienraces">1.6/Mods/HAR</li>
+		<li IfModNotActive="erdelf.humanoidalienraces">1.6/Mods/HARless</li>
+		<!--<li IfModActive="nals.facialanimation">1.6/Mods/Facial Animation</li>-->
+		<li>Common</li>
+		<li>1.6</li>
+	</v1.6>
+</loadFolders>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<SoundDef>
+		<defName>Pawn_Yautja_Call</defName>
+		<context>MapOnly</context>
+			<subSounds>
+				<li>
+					<grains>
+						<li Class="AudioGrain_Folder">
+							<clipPath>Pawn/Humanlike/Yautja/Call</clipPath>
+						</li>
+					</grains>
+				<volumeRange>20</volumeRange>
+				<pitchRange>0.85~1.25</pitchRange>
+				<sustainLoop>False</sustainLoop>
+				</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>Pawn_Yautja_Death</defName>
+		<context>MapOnly</context>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipPath>Pawn/Humanlike/Yautja/Death</clipPath>
+					</li>
+				</grains>
+				<volumeRange>20</volumeRange>
+				<pitchRange>0.95~1.05</pitchRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>Pawn_Yautja_Wounded</defName>
+		<context>MapOnly</context>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipPath>Pawn/Humanlike/Yautja/Wounded</clipPath>
+					</li>
+				</grains>
+				<volumeRange>20</volumeRange>
+				<pitchRange>0.95~1.05</pitchRange>
+				<sustainLoop>False</sustainLoop>
+				<repeatMode>NeverTwice</repeatMode>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+</Defs>

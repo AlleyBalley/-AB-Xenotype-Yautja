@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <CultureDef>
+    <defName>ABYautja_Culture</defName>
+    <label>yautjan</label>
+    <description>An ancient culture common among yautja clans.</description>
+    <pawnNameMaker>NamerPersonCorunan</pawnNameMaker>
+    <ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerYautjaIdeology</ideoNameMaker>
+    <deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerDeityCorunan</deityNameMaker>
+    <deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">DeityTypeMakerCorunan</deityTypeMaker>
+    <festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalCorunan</festivalNameMaker>
+    <leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">LeaderTitleMaker_ABYautja</leaderTitleMaker>
+    <allowedPlaceTags>
+      <li>OriginTribal</li>
+    </allowedPlaceTags>
+    <iconPath>World/WorldObjects/Expanding/Village</iconPath>
+    <preferredWeaponClasses>
+      <noble>Neolithic</noble>
+      <despised>Ultratech</despised>
+    </preferredWeaponClasses>
+    <thingStyleCategories>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <category>Totemic</category>
+        <priority>2</priority>
+      </li>
+    </thingStyleCategories>
+    <styleItemTags>
+		<li>
+			<tag>Yautja</tag>
+			<baseWeight>1</baseWeight>
+			<weightFactor>1</weightFactor>
+		</li>
+		  <li>
+			<tag>Bald</tag>
+			<baseWeight>1</baseWeight>
+			<weightFactor>1</weightFactor>
+		</li>
+		<li>
+			<tag>NoBeard</tag>
+			<baseWeight>10</baseWeight>
+			<weightFactor>1</weightFactor>
+		</li>
+		<li>
+			<tag>TattooFaceTribal</tag>
+			<baseWeight>0.4</baseWeight>
+			<weightFactor>1</weightFactor>
+		</li>
+		<li>
+			<tag>TattooBodyTribal</tag>
+			<baseWeight>0.4</baseWeight>
+			<weightFactor>1</weightFactor>
+		</li>
+		<li>
+			<tag>NoTattoo</tag>
+			<baseWeight>1</baseWeight>
+			<weightFactor>1</weightFactor>
+		</li>
+    </styleItemTags>
+  </CultureDef>
+
+  <CultureDef>
+    <defName>ABBadBlood_Culture</defName>
+    <label>bad blood</label>
+    <description>A broad category describing the styles and practices of many bad blood groups.</description>
+    <ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerYautjaIdeologyBadBlood</ideoNameMaker>
+    <deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerDeityKriminul</deityNameMaker>
+    <deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">DeityTypeMakerKriminul</deityTypeMaker>
+    <leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">LeaderTitleMaker_ABYautjaBadBlood</leaderTitleMaker>
+    <festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalKriminul</festivalNameMaker>
+    <allowedPlaceTags>
+      <li>OriginSpacer</li>
+    </allowedPlaceTags>
+    <iconPath>World/WorldObjects/Expanding/PirateOutpost</iconPath>
+    <thingStyleCategories>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <category>Spikecore</category>
+        <priority>2</priority>
+      </li>
+    </thingStyleCategories>
+    <styleItemTags>
+		<li>
+			<tag>Yautja</tag>
+			<baseWeight>1</baseWeight>
+			<weightFactor>1</weightFactor>
+		</li>
+		<li>
+			<tag>Bald</tag>
+			<baseWeight>1</baseWeight>
+			<weightFactor>1</weightFactor>
+		</li>
+		<li>
+			<tag>NoBeard</tag>
+			<baseWeight>10</baseWeight>
+			<weightFactor>1</weightFactor>
+		</li>
+		<li>
+			<tag>NoTattoo</tag>
+			<baseWeight>1</baseWeight>
+			<weightFactor>1</weightFactor>
+		</li>
+		<li>
+			<tag>TattooFacePunk</tag>
+			<baseWeight>0.4</baseWeight>
+			<weightFactor>1</weightFactor>
+		</li>
+		<li>
+			<tag>TattooBodyPunk</tag>
+			<baseWeight>0.4</baseWeight>
+			<weightFactor>1</weightFactor>
+		</li>
+    </styleItemTags>
+  </CultureDef>
+</Defs>

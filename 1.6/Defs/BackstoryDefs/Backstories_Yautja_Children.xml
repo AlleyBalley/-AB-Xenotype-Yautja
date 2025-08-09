@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <BackstoryDef>
+    <defName>ABYautja_Unblooded</defName>
+	<identifier>ABYautja_Unblooded</identifier>
+    <title>Unblooded yautja</title>
+    <titleShort>Unblooded</titleShort>
+    <baseDesc>[PAWN_nameDef] was an Unblooded, one of the unrefined hunters of the future. Unblooded yautja are young predators who haven't completed basic training. They are, or are close to, physically mature adults.</baseDesc>
+	<slot>Childhood</slot>
+	<disallowedTraits>
+		<Wimp>0</Wimp>
+    </disallowedTraits>
+    <skillGains>
+        <Shooting>2</Shooting>
+        <Melee>2</Melee>
+        <Cooking>1</Cooking>
+        <Plants>1</Plants>
+        <Animals>1</Animals>
+        <Medicine>1</Medicine>
+    </skillGains>
+    <spawnCategories>
+      <li>ABYautja_Standard</li>
+      <li>ABYautja_Unblooded</li>
+      <li>ABYautja_BadBlood</li>
+      <li>ABYautja_Blooded</li>
+      <li>ABYautja_Adult</li>
+      <li>ABYautja_Hunter</li>
+      <li>ABYautja_YoungBlood</li>
+      <li>ABYautja_Unblooded</li>
+      <li>ABYautja_Ancient</li>
+      <li>ABYautja_Elder</li>
+      <li>ABYautja_Elite</li>
+    </spawnCategories>
+	<shuffleable>True</shuffleable>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>ABYautja_Unblooded_GutterPup</defName>
+	<identifier>ABYautja_Unblooded_GutterPup</identifier>
+    <title>Unblooded Gutter Pup</title>
+    <titleShort>Gutter Pup</titleShort>
+    <baseDesc>[PAWN_nameDef] was part of the trash of the yautja race. Growing up in the low pits is no easy task. [PAWN_pronoun] had to toughen [PAWN_objective]self and learn to survive on nothing. [PAWN_pronoun] learned to get the most out of nothing, moving during the night so as not to be caught.</baseDesc>
+	<slot>Childhood</slot>
+	<forcedTraits>
+		<Tough>0</Tough>
+		<Undergrounder>0</Undergrounder>
+	</forcedTraits>	
+	<disallowedTraits>
+		<Immunity>-1</Immunity>	
+    </disallowedTraits>
+	<skillGains>
+        <Melee>2</Melee>
+        <Cooking>2</Cooking>
+        <Crafting>3</Crafting>
+        <Medicine>1</Medicine>
+    </skillGains>
+    <spawnCategories>
+      <li>ABYautja_Standard</li>
+      <li>ABYautja_Unblooded</li>
+      <li>ABYautja_BadBlood</li>
+      <li>ABYautja_Blooded</li>
+      <li>ABYautja_Adult</li>
+      <li>ABYautja_Hunter</li>
+      <li>ABYautja_YoungBlood</li>
+      <li>ABYautja_Ancient</li>
+      <li>ABYautja_Elder</li>
+      <li>ABYautja_Elite</li>
+    </spawnCategories>
+	<shuffleable>True</shuffleable>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>ABYautja_Unblooded_Highborn</defName>
+	<identifier>ABYautja_Unblooded_Highborn</identifier>
+    <title>Unblooded Yautja Highborn</title>
+    <titleShort>Unblooded Highborn</titleShort>
+    <baseDesc>[PAWN_nameDef] was the child of one of the most prolific hunters of the Clan. [PAWN_possessive] mother raised [PAWN_objective] with the hope that [PAWN_pronoun] would become the next Clan Leader.</baseDesc>
+	<slot>Childhood</slot>
+    <skillGains>
+		<Shooting>3</Shooting>
+		<Social>4</Social>
+        <Intellectual>3</Intellectual>
+    </skillGains>
+    <spawnCategories>
+      <li>ABYautja_Standard</li>
+      <li>ABYautja_Unblooded</li>
+      <li>ABYautja_BadBlood</li>
+      <li>ABYautja_Blooded</li>
+      <li>ABYautja_Adult</li>
+      <li>ABYautja_Hunter</li>
+      <li>ABYautja_YoungBlood</li>
+      <li>ABYautja_Ancient</li>
+      <li>ABYautja_Elder</li>
+      <li>ABYautja_Elite</li>
+    </spawnCategories>
+	<shuffleable>True</shuffleable>
+  </BackstoryDef>
+</Defs>

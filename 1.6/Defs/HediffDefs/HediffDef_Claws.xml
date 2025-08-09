@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+	<HediffDef ParentName="ImplantHediffBase">
+		<defName>ABYautjaClaws</defName>
+		<label>yautja claws</label>
+		<labelNoun>claws</labelNoun>
+		<description>small pointed claws protruding from the fingers</description>
+		<countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
+		<hediffClass>HediffWithComps</hediffClass>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>yautja claws</label>
+						<capacities>
+							<li>Scratch</li>
+						</capacities>
+						<power>5</power>
+						<armorPenetration>0.05</armorPenetration>
+						<cooldownTime>3</cooldownTime>
+					</li>
+				</tools>
+			</li>
+		</comps>
+		<addedPartProps>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+	</HediffDef>
+</Defs>

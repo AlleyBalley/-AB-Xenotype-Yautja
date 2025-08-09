@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+		<!--Berserk Yautja Frame-->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/GeneDef[defName="ABBerserkYautjaFrame"]/biostatMet</xpath>
+				<value>
+					<biostatMet>1</biostatMet>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/GeneDef[defName="ABBerserkYautjaFrame"]/biostatCpx</xpath>
+				<value>
+					<biostatCpx>-1</biostatCpx>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/GeneDef[defName="ABBerserkYautjaFrame"]/statOffsets/SM_BodySizeOffset</xpath>
+				<value>
+					<SM_BodySizeOffset MayRequire="redmattis.betterprerequisites">0.2</SM_BodySizeOffset>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/GeneDef[defName="ABBerserkYautjaFrame"]/statFactors/CarryingCapacity</xpath>
+				<value>
+					<CarryingCapacity>1.5</CarryingCapacity>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/GeneDef[defName="ABBerserkYautjaFrame"]/statFactors/VEF_MassCarryCapacity</xpath>
+				<value>
+					<VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">1.5</VEF_MassCarryCapacity>
+				</value>
+			</li>
+
+		<!--Grendel Yautja Frame-->	
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/GeneDef[defName="ABGrendelKingYautjaFrame"]/biostatMet</xpath>
+				<value>
+					<biostatMet>1</biostatMet>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/GeneDef[defName="ABGrendelKingYautjaFrame"]/biostatCpx</xpath>
+				<value>
+					<biostatCpx>-1</biostatCpx>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/GeneDef[defName="ABGrendelKingYautjaFrame"]/statOffsets/SM_BodySizeOffset</xpath>
+				<value>
+					<SM_BodySizeOffset MayRequire="redmattis.betterprerequisites">0.5</SM_BodySizeOffset>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/GeneDef[defName="ABGrendelKingYautjaFrame"]/statFactors/CarryingCapacity</xpath>
+				<value>
+					<CarryingCapacity>2</CarryingCapacity>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/GeneDef[defName="ABGrendelKingYautjaFrame"]/statFactors/VEF_MassCarryCapacity</xpath>
+				<value>
+					<VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">2</VEF_MassCarryCapacity>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

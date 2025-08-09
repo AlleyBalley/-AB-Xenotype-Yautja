@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+  <BodyPartDef>
+    <defName>ABYautja_UpperMandibles</defName>
+    <label>upper mandible</label>
+    <hitPoints>8</hitPoints>
+    <frostbiteVulnerability>0</frostbiteVulnerability>
+    <pawnGeneratorCanAmputate>true</pawnGeneratorCanAmputate>
+    <skinCovered>true</skinCovered>
+    <tags>
+      <li>EatingSource</li>
+      <li>TalkingSource</li>
+    </tags>
+  </BodyPartDef>
+  
+  <BodyPartDef>
+    <defName>ABYautja_LowerMandibles</defName>
+    <label>lower mandible</label>
+    <hitPoints>8</hitPoints>
+    <frostbiteVulnerability>0</frostbiteVulnerability>
+    <pawnGeneratorCanAmputate>true</pawnGeneratorCanAmputate>
+    <skinCovered>true</skinCovered>
+    <tags>
+      <li>EatingSource</li>
+      <li>TalkingSource</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>ABYautja_Mouth</defName>
+    <label>mouth</label>
+    <hitPoints>20</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>true</skinCovered>
+    <tags>
+      <li>EatingSource</li>
+      <li>TalkingSource</li>
+      <li>ManipulationLimbCore</li>
+    </tags>
+  </BodyPartDef>
+</Defs>

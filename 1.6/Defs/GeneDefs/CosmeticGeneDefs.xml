@@ -1,0 +1,952 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!--Blood-->
+	<GeneDef>
+		<defName>ABYautja_GreenBlood</defName>
+		<label>yautja blood</label>
+		<labelShortAdj>green blooded</labelShortAdj>
+		<displayCategory>ABYautjaCategory</displayCategory>
+		<biostatCpx>0</biostatCpx>
+		<biostatMet>0</biostatMet>
+		<iconPath>UI/Icons/Genes/Gene_GreenBlood</iconPath>
+		<iconColor>(55, 55, 55)</iconColor>
+		<displayOrderInCategory>7902</displayOrderInCategory>
+		<customEffectDescriptions MayRequire="ebsg.framework">
+			<li>Carriers of this gene have neon green blood.</li>
+		</customEffectDescriptions>
+		<exclusionTags>
+			<li>AG_BloodType</li>
+			<li>BloodType</li>
+			<li>Blood</li>
+		</exclusionTags>
+		<modExtensions MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+			<li Class="VEF.Genes.GeneExtension">
+				<backgroundPathEndogenes>UI/Icons/Genes/Yautja_Endogene_Background</backgroundPathEndogenes>
+				<customBloodThingDef>ABYautja_FilthBlood</customBloodThingDef>
+				<customBloodIcon>UI/Icons/Medical/ABYautjaBlood</customBloodIcon>
+				<customBloodEffect>Damage_HitABYautja</customBloodEffect>
+				<customWoundsFromFleshtype>ABYautja_GreenWounds</customWoundsFromFleshtype>
+			</li>
+		</modExtensions>
+	</GeneDef>
+<!--Voice-->
+	<GeneDef ParentName="GeneVoiceBase">
+		<defName>ABYautjaRoarVoice</defName>
+		<label>Predator Voice</label>
+		<description>Carriers have an reptile-like roaring voice.</description>
+		<iconPath>UI/Icons/Genes/Gene_YautjaRoar</iconPath>
+		<displayOrderInCategory>9100</displayOrderInCategory>
+		<soundCall>Pawn_Yautja_Call</soundCall>
+		<soundDeath>Pawn_Yautja_Death</soundDeath>
+		<soundWounded>Pawn_Yautja_Wounded</soundWounded>
+		<displayCategory>ABYautjaCategory</displayCategory>
+		<modExtensions>
+			<li Class="VEF.Genes.GeneExtension">
+				<backgroundPathEndogenes>UI/Icons/Genes/Yautja_Endogene_Background</backgroundPathEndogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+<!--Hair Styles-->
+	<GeneDef ParentName="GeneHairStyleBase" Name="YautjaHairStyleBase" Abstract="True">
+		<displayCategory>ABYautjaCategory</displayCategory>
+		<displayOrderInCategory>50</displayOrderInCategory>
+		<prerequisite>ABYautjaHead</prerequisite>
+		<modExtensions>
+			<li Class="VEF.Genes.GeneExtension">
+				<backgroundPathEndogenes>UI/Icons/Genes/Yautja_Endogene_Background</backgroundPathEndogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+	<GeneDef ParentName="YautjaHairStyleBase">
+		<defName>ABYautjaHair_Tendril</defName>
+		<label>Tendril Hair</label>
+		<labelShortAdj>dred</labelShortAdj>
+		<displayCategory>ABYautjaCategory</displayCategory>
+		<description>Carriers of this gene grow tendrils that resemble dreads from the back their head.</description>
+		<iconPath>UI/Icons/Genes/Gene_TendrilHair</iconPath>
+		<hairTagFilter>
+			<whitelist>true</whitelist>
+			<tags>
+				<li>Yautja</li>
+			</tags>
+		</hairTagFilter>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>Yautja</symbol>
+				</li>
+				<li>
+					<symbol>Predator</symbol>
+				</li>
+				<li>
+					<symbol>Dred</symbol>
+				</li>
+				<li>
+					<symbol>Tendril</symbol>
+				</li>
+			</prefixSymbols>
+		</symbolPack>
+	</GeneDef>
+	<GeneDef ParentName="YautjaHairStyleBase">
+		<defName>ABYautjaBald</defName>
+		<label>Bald</label>
+		<labelShortAdj>bald</labelShortAdj>
+		<displayCategory>ABYautjaCategory</displayCategory>
+		<description>Carriers of this gene do not grow hair from their head.</description>
+		<iconPath>UI/Icons/Genes/Gene_Bald</iconPath>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>Yautja</symbol>
+				</li>
+				<li>
+					<symbol>Predator</symbol>
+				</li>
+				<li>
+					<symbol>Dred</symbol>
+				</li>
+				<li>
+					<symbol>Tendril</symbol>
+				</li>
+			</prefixSymbols>
+		</symbolPack>
+	</GeneDef>
+<!--Hair Colors-->
+	<GeneDef Name="ABYautjaHairOverrideBase" ParentName="GeneHairColorBase" Abstract="True">
+		<selectionWeight>0</selectionWeight>
+		<displayCategory>ABYautjaHairCategory</displayCategory>
+		<modExtensions>
+			<li Class="EBSGFramework.EBSGExtension">
+				<hideInGeneTabWhenInactive>True</hideInGeneTabWhenInactive>
+			</li>
+			<li Class="VEF.Genes.GeneExtension">
+				<backgroundPathEndogenes>UI/Icons/Genes/Yautja_Endogene_Background</backgroundPathEndogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaHairOverrideBase">
+		<defName>YautjaHair_Lumber</defName>
+		<label>Lumber Hair</label>
+		<hairColorOverride>(25, 11, 4)</hairColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaHairOverrideBase">
+		<defName>YautjaHair_Chocolate</defName>
+		<label>Chocolate Hair</label>
+		<hairColorOverride>(56, 28, 14)</hairColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaHairOverrideBase">
+		<defName>YautjaHair_Hickory</defName>
+		<label>Hickory Hair</label>
+		<hairColorOverride>(39, 22, 12)</hairColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaHairOverrideBase">
+		<defName>YautjaHair_Squirrel</defName>
+		<label>Squirrel Hair</label>
+		<hairColorOverride>(47, 31, 11)</hairColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaHairOverrideBase">
+		<defName>YautjaHair_Bark</defName>
+		<label>Bark Hair</label>
+		<hairColorOverride>(30, 19, 5)</hairColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaHairOverrideBase">
+		<defName>YautjaHair_Mulberry</defName>
+		<label>Mulberry Hair</label>
+		<hairColorOverride>(35, 7, 14)</hairColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaHairOverrideBase">
+		<defName>YautjaHair_Pomegranate</defName>
+		<label>Pomegranate Hair</label>
+		<hairColorOverride>(51, 17, 26)</hairColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaHairOverrideBase">
+		<defName>YautjaHair_Gore</defName>
+		<label>Gore Hair</label>
+		<hairColorOverride>(54, 15, 11)</hairColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaHairOverrideBase">
+		<defName>YautjaHair_Paste</defName>
+		<label>paste Hair</label>
+		<hairColorOverride>(221, 219, 206)</hairColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaHairOverrideBase">
+		<defName>YautjaHair_Bone</defName>
+		<label>Bone Hair</label>
+		<hairColorOverride>(162, 159, 144)</hairColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaHairOverrideBase">
+		<defName>YautjaHair_Gloom</defName>
+		<label>Gloom Hair</label>
+		<hairColorOverride>(171, 170, 164)</hairColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaHairOverrideBase">
+		<defName>YautjaHair_EssexGreen</defName>
+		<label>Essex Green Hair</label>
+		<hairColorOverride>(14, 20, 13)</hairColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaHairOverrideBase">
+		<defName>YautjaHair_Smog</defName>
+		<label>Smog Hair</label>
+		<hairColorOverride>(22, 24, 22)</hairColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaHairOverrideBase">
+		<defName>YautjaHair_Cavern</defName>
+		<label>Cavern Hair</label>
+		<hairColorOverride>(33, 35, 33)</hairColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaHairOverrideBase">
+		<defName>YautjaHair_Charcoal</defName>
+		<label>Charcoal Hair</label>
+		<hairColorOverride>(13, 13, 13)</hairColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaHairOverrideBase">
+		<defName>YautjaHair_Space</defName>
+		<label>Space Hair</label>
+		<hairColorOverride>(3, 3, 15)</hairColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaHairOverrideBase">
+		<defName>YautjaHair_Midnight</defName>
+		<label>Midnight Hair</label>
+		<hairColorOverride>(9, 8, 34)</hairColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaHairOverrideBase">
+		<defName>YautjaHair_Bubble</defName>
+		<label>Bubble Hair</label>
+		<hairColorOverride>(129, 140, 149)</hairColorOverride>
+	</GeneDef>
+<!--Skin Colors-->
+	<GeneDef Name="ABYautjaSkinOverrideBase" ParentName="GeneSkinColorOverride" Abstract="True">
+		<displayOrderInCategory>99</displayOrderInCategory>
+		<selectionWeight>0</selectionWeight>
+		<canGenerateInGeneSet>true</canGenerateInGeneSet>
+		<passOnDirectly>true</passOnDirectly>
+		<exclusionTags>
+		<li>SkinColor</li>
+		<li>SkinColorOverride</li>
+		</exclusionTags>
+		<displayCategory>ABYautjaSkinCategory</displayCategory>
+		<modExtensions>
+			<li Class="EBSGFramework.EBSGExtension">
+				<hideInGeneTabWhenInactive>True</hideInGeneTabWhenInactive>
+			</li>
+			<li Class="VEF.Genes.GeneExtension">
+				<backgroundPathEndogenes>UI/Icons/Genes/Yautja_Endogene_Background</backgroundPathEndogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Graphite</defName>
+		<label>Graphite Skin</label>
+		<skinColorOverride>(54, 52, 51)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Smoke</defName>
+		<label>Smoke Skin</label>
+		<skinColorOverride>(71, 68, 67)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Gloom</defName>
+		<label>Gloom Skin</label>
+		<skinColorOverride>(145, 142, 141)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Dust</defName>
+		<label>Dust Skin</label>
+		<skinColorOverride>(182, 178, 176)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Cloud</defName>
+		<label>Cloud Skin</label>
+		<skinColorOverride>(218, 212, 210)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Silver</defName>
+		<label>Silver Skin</label>
+		<skinColorOverride>(161, 166, 181)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Flint</defName>
+		<label>Flint Skin</label>
+		<skinColorOverride>(134, 142, 160)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Scale</defName>
+		<label>Scale Skin</label>
+		<skinColorOverride>(125, 140, 179)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Jean</defName>
+		<label>Jean Skin</label>
+		<skinColorOverride>(91, 101, 128)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Mermaid</defName>
+		<label>Mermaid Skin</label>
+		<skinColorOverride>(81, 99, 147)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Independence</defName>
+		<label>Independence Skin</label>
+		<skinColorOverride>(53, 58, 73)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Denim</defName>
+		<label>Denim Skin</label>
+		<skinColorOverride>(42, 51, 73)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Sea</defName>
+		<label>Sea Skin</label>
+		<skinColorOverride>(39, 53, 91)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Pewter</defName>
+		<label>Pewter Skin</label>
+		<skinColorOverride>(157, 178, 196)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Coin</defName>
+		<label>Coin Skin</label>
+		<skinColorOverride>(136, 160, 181)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Cornflower</defName>
+		<label>Cornflower Skin</label>
+		<skinColorOverride>(130, 178, 218)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Steel</defName>
+		<label>Steel Skin</label>
+		<skinColorOverride>(81, 122, 155)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Sky</defName>
+		<label>Sky Skin</label>
+		<skinColorOverride>(69, 132, 184)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_GreyAegean</defName>
+		<label>Grey Aegean Skin</label>
+		<skinColorOverride>(58, 87, 110)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Aegean</defName>
+		<label>Aegean Skin</label>
+		<skinColorOverride>(33, 58, 78)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Grave</defName>
+		<label>Grave Skin</label>
+		<skinColorOverride>(156, 184, 188)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Waterlogged</defName>
+		<label>Waterlogged Skin</label>
+		<skinColorOverride>(130, 158, 162)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Kitchen</defName>
+		<label>Kitchen Skin</label>
+		<skinColorOverride>(141, 181, 188)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Maya</defName>
+		<label>Maya Skin</label>
+		<skinColorOverride>(120, 185, 196)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Tort</defName>
+		<label>Tort Skin</label>
+		<skinColorOverride>(95, 137, 144)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_ExplorerBlue</defName>
+		<label>Explorer Blue Skin</label>
+		<skinColorOverride>(85, 164, 177)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_TempeStar</defName>
+		<label>Tempe Star Skin</label>
+		<skinColorOverride>(69, 101, 106)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Peacock</defName>
+		<label>Peacock Skin</label>
+		<skinColorOverride>(39, 69, 74)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_GrandRapids</defName>
+		<label>Grand Rapids Skin</label>
+		<skinColorOverride>(54, 113, 123)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Hammock</defName>
+		<label>Hammock Skin</label>
+		<skinColorOverride>(134, 157, 155)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_MorningGreen</defName>
+		<label>Morning Green Skin</label>
+		<skinColorOverride>(140, 182, 178)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Turkish</defName>
+		<label>Turkish Skin</label>
+		<skinColorOverride>(110, 142, 138)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Aqua</defName>
+		<label>Aqua Skin</label>
+		<skinColorOverride>(101, 169, 161)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_GreenMallard</defName>
+		<label>Green Mallard Skin</label>
+		<skinColorOverride>(71, 96, 94)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Westhaven</defName>
+		<label>Westhaven Skin</label>
+		<skinColorOverride>(41, 69, 66)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_BlueSurf</defName>
+		<label>Blue Surf Skin</label>
+		<skinColorOverride>(132, 157, 152)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_SilicateGreen</defName>
+		<label>Silicate Green Skin</label>
+		<skinColorOverride>(135, 177, 168)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_AloeVera</defName>
+		<label>Aloe Vera Skin</label>
+		<skinColorOverride>(102, 132, 125)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Seafoam</defName>
+		<label>Seafoam Skin</label>
+		<skinColorOverride>(96, 155, 142)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_ForestGreenery</defName>
+		<label>Forest Greenery Skin</label>
+		<skinColorOverride>(63, 98, 90)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_KorainandoGreen</defName>
+		<label>Korainando Green Skin</label>
+		<skinColorOverride>(32, 57, 51)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_PlantainGreen</defName>
+		<label>Plantain Green Skin</label>
+		<skinColorOverride>(54, 100, 89)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Wintessa</defName>
+		<label>Wintessa Skin</label>
+		<skinColorOverride>(139, 162, 150)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_CoventGarden</defName>
+		<label>CoventGarden Skin</label>
+		<skinColorOverride>(135, 176, 155)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Burleigh</defName>
+		<label>Burleigh Skin</label>
+		<skinColorOverride>(90, 117, 103)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Jungle</defName>
+		<label>Jungle Skin</label>
+		<skinColorOverride>(97, 145, 121)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Hunter</defName>
+		<label>Hunter Skin</label>
+		<skinColorOverride>(65, 91, 78)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_MushiaoGreen</defName>
+		<label>Mushiao Green Skin</label>
+		<skinColorOverride>(42, 67, 55)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Emerald</defName>
+		<label>Emerald Skin</label>
+		<skinColorOverride>(58, 96, 77)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_BalsamFir</defName>
+		<label>Balsam Fir Skin</label>
+		<skinColorOverride>(144, 157, 147)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_LilyPad</defName>
+		<label>Lily Pad Skin</label>
+		<skinColorOverride>(127, 140, 131)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Swanndri</defName>
+		<label>Swanndri Skin</label>
+		<skinColorOverride>(98, 120, 104)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Shamrock</defName>
+		<label>Shamrock Skin</label>
+		<skinColorOverride>(94, 135, 105)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Pine</defName>
+		<label>Pine Skin</label>
+		<skinColorOverride>(59, 79, 64)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Moss</defName>
+		<label>Moss Skin</label>
+		<skinColorOverride>(35, 52, 40)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Forest</defName>
+		<label>Forest Skin</label>
+		<skinColorOverride>(51, 83, 59)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Drizzle</defName>
+		<label>Drizzle Skin</label>
+		<skinColorOverride>(160, 176, 157)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_GreenClay</defName>
+		<label>Green Clay Skin</label>
+		<skinColorOverride>(136, 152, 133)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Pistachio</defName>
+		<label>Pistachio Skin</label>
+		<skinColorOverride>(160, 186, 155)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Chlorosis</defName>
+		<label>Chlorosis Skin</label>
+		<skinColorOverride>(115, 135, 111)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Pear</defName>
+		<label>Pear Skin</label>
+		<skinColorOverride>(121, 164, 114)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Sage</defName>
+		<label>Sage Skin</label>
+		<skinColorOverride>(82, 105, 78)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Fern</defName>
+		<label>Fern Skin</label>
+		<skinColorOverride>(55, 81, 50)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Jade</defName>
+		<label>Jade Skin</label>
+		<skinColorOverride>(73, 111, 67)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_SycamoreStand</defName>
+		<label>Sycamore Stand Skin</label>
+		<skinColorOverride>(150, 159, 142)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Drab</defName>
+		<label>Drab Skin</label>
+		<skinColorOverride>(128, 138, 120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_FreshSod</defName>
+		<label>Fresh Sod Skin</label>
+		<skinColorOverride>(144, 164, 128)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_WildAxolotl</defName>
+		<label>Wild Axolotl Skin</label>
+		<skinColorOverride>(101, 117, 88)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Pickle</defName>
+		<label>Pickle Skin</label>
+		<skinColorOverride>(62, 76, 51)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Basil</defName>
+		<label>Basil Skin</label>
+		<skinColorOverride>(48, 62, 36)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Seaweed</defName>
+		<label>Seaweed Skin</label>
+		<skinColorOverride>(60, 79, 45)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Artichoke</defName>
+		<label>Artichoke Skin</label>
+		<skinColorOverride>(150, 154, 138)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Rejuvenation</defName>
+		<label>Rejuvenation Skin</label>
+		<skinColorOverride>(160, 169, 130)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_KoiPond</defName>
+		<label>Koi Pond Skin</label>
+		<skinColorOverride>(122, 130, 97)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_PalmLeaf</defName>
+		<label>Palm Leaf Skin</label>
+		<skinColorOverride>(141, 155, 96)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Monstera</defName>
+		<label>Monstera Skin</label>
+		<skinColorOverride>(99, 106, 76)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Juniper</defName>
+		<label>Juniper Skin</label>
+		<skinColorOverride>(67, 74, 44)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Crocodile</defName>
+		<label>Crocodile Skin</label>
+		<skinColorOverride>(98, 108, 65)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Oyster</defName>
+		<label>Oyster Skin</label>
+		<skinColorOverride>(159, 157, 122)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Mink</defName>
+		<label>Mink Skin</label>
+		<skinColorOverride>(132, 131, 115)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Beige</defName>
+		<label>Beige Skin</label>
+		<skinColorOverride>(149, 146, 94)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_HazelWood</defName>
+		<label>Hazel Wood Skin</label>
+		<skinColorOverride>(120, 118, 80)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Olive</defName>
+		<label>Olive Skin</label>
+		<skinColorOverride>(135, 132, 74)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_EasternBamboo</defName>
+		<label>Eastern Bamboo Skin</label>
+		<skinColorOverride>(93, 91, 62)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_LisbonBrown</defName>
+		<label>Lisbon Brown Skin</label>
+		<skinColorOverride>(61, 59, 32)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_ReptileRevenge</defName>
+		<label>Reptile Revenge Skin</label>
+		<skinColorOverride>(93, 91, 48)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Tortilla</defName>
+		<label>Tortilla Skin</label>
+		<skinColorOverride>(147, 140, 120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Ash</defName>
+		<label>Ash Skin</label>
+		<skinColorOverride>(111, 110, 105)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Shadow</defName>
+		<label>Shadow Skin</label>
+		<skinColorOverride>(89, 88, 84)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Flaxen</defName>
+		<label>Flaxen Skin</label>
+		<skinColorOverride>(130, 117, 79)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_IvyTopiary</defName>
+		<label>Ivy Topiary Skin</label>
+		<skinColorOverride>(103, 96, 77)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Sepia</defName>
+		<label>Sepia Skin</label>
+		<skinColorOverride>(111, 98, 61)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_BlackishBrown</defName>
+		<label>Blackish Brown Skin</label>
+		<skinColorOverride>(64, 59, 45)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_CocoaBrown</defName>
+		<label>Cocoa Brown Skin</label>
+		<skinColorOverride>(47, 41, 24)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Madras</defName>
+		<label>Madras Skin</label>
+		<skinColorOverride>(71, 61, 34)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Sand</defName>
+		<label>Sand Skin</label>
+		<skinColorOverride>(140, 130, 120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Almond</defName>
+		<label>Almond Skin</label>
+		<skinColorOverride>(174, 152, 129)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Khaki</defName>
+		<label>Khaki Skin</label>
+		<skinColorOverride>(135, 117, 98)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Makara</defName>
+		<label>Makara Skin</label>
+		<skinColorOverride>(106, 94, 80)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Tan</defName>
+		<label>Tan Skin</label>
+		<skinColorOverride>(111, 94, 75)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_PeppercornRent</defName>
+		<label>Peppercorn Rent Skin</label>
+		<skinColorOverride>(79, 69, 58)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Bear</defName>
+		<label>Bear Skin</label>
+		<skinColorOverride>(67, 51, 33)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Espresso</defName>
+		<label>Espresso Skin</label>
+		<skinColorOverride>(84, 67, 49)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_MilkBrownieDough</defName>
+		<label>Milk Brownie Dough Skin</label>
+		<skinColorOverride>(144, 111, 95)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_BradfordBrown</defName>
+		<label>Bradford Brown Skin</label>
+		<skinColorOverride>(132, 113, 105)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Squid</defName>
+		<label>Squid Skin</label>
+		<skinColorOverride>(132, 100, 85)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_BargeboardBrown</defName>
+		<label>Bargeboard Brown Skin</label>
+		<skinColorOverride>(101, 83, 74)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_MoroccanHenna</defName>
+		<label>Moroccan Hena Skin</label>
+		<skinColorOverride>(110, 80, 65)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_BrownBeauty</defName>
+		<label>Brown Beauty Skin</label>
+		<skinColorOverride>(74, 58, 49)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Penny</defName>
+		<label>Penny Skin</label>
+		<skinColorOverride>(61, 38, 27)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Rust</defName>
+		<label>Rust Skin</label>
+		<skinColorOverride>(78, 52, 39)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Salmon</defName>
+		<label>Salmon Skin</label>
+		<skinColorOverride>(139, 140, 128)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_CafeOle</defName>
+		<label>Cafe Ole Skin</label>
+		<skinColorOverride>(157, 129, 123)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Redwood</defName>
+		<label>Redwood Skin</label>
+		<skinColorOverride>(135, 92, 82)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_TerraceBrown</defName>
+		<label>Terrace Brown Skin</label>
+		<skinColorOverride>(115, 83, 75)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_FireRoasted</defName>
+		<label>Fire Roasted Skin</label>
+		<skinColorOverride>(118, 72, 61)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Mahogany</defName>
+		<label>Mahogany Skin</label>
+		<skinColorOverride>(95, 53, 43)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Pecan</defName>
+		<label>Pecan Skin</label>
+		<skinColorOverride>(69, 44, 38)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_DarkSienna</defName>
+		<label>Dark Sienna Skin</label>
+		<skinColorOverride>(59, 27, 19)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Syrup</defName>
+		<label>Syrup Skin</label>
+		<skinColorOverride>(69, 35, 27)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Gum</defName>
+		<label>Gum Skin</label>
+		<skinColorOverride>(198, 108, 112)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_HorizonGlow</defName>
+		<label>Horizon Glow Skin</label>
+		<skinColorOverride>(174, 113, 106)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_ClayRidge</defName>
+		<label>ClayRidge Skin</label>
+		<skinColorOverride>(147, 106, 101)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Coral</defName>
+		<label>Coral Skin</label>
+		<skinColorOverride>(154, 78, 69)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_RockyMountain</defName>
+		<label>Rocky Mountain Skin</label>
+		<skinColorOverride>(118, 68, 62)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Fireside</defName>
+		<label>Fireside Skin</label>
+		<skinColorOverride>(111, 74, 69)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Carmine</defName>
+		<label>Carmine Skin</label>
+		<skinColorOverride>(118, 54, 46)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_SealBrown</defName>
+		<label>Seal Brown Skin</label>
+		<skinColorOverride>(67, 36, 33)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Currant</defName>
+		<label>Currant Skin</label>
+		<skinColorOverride>(49, 21, 18)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Wine</defName>
+		<label>Wine Skin</label>
+		<skinColorOverride>(78, 32, 27)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_BurntTile</defName>
+		<label>Burnt Tile Skin</label>
+		<skinColorOverride>(117, 70, 69)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Lipstick</defName>
+		<label>Lipstick Skin</label>
+		<skinColorOverride>(123, 57, 55)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_ArrestingAubunr</defName>
+		<label>Arresting Auburn Skin</label>
+		<skinColorOverride>(89, 50, 49)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Berry</defName>
+		<label>Berry Skin</label>
+		<skinColorOverride>(96, 39, 37)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Merlot</defName>
+		<label>Merlot Skin</label>
+		<skinColorOverride>(61, 33, 32)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Jam</defName>
+		<label>Jam Skin</label>
+		<skinColorOverride>(46, 15, 14)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Raspberry</defName>
+		<label>Raspberry Skin</label>
+		<skinColorOverride>(66, 25, 23)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Sandstone</defName>
+		<label>Sandstone Skin</label>
+		<skinColorOverride>(132, 91, 60)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Bronze</defName>
+		<label>Bronze Skin</label>
+		<skinColorOverride>(120, 76, 43)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Clay</defName>
+		<label>Clay Skin</label>
+		<skinColorOverride>(83, 48, 22)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_ClayPlay</defName>
+		<label>Clay Play Skin</label>
+		<skinColorOverride>(118, 69, 52)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Brick</defName>
+		<label>Brick Skin</label>
+		<skinColorOverride>(100, 50, 32)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABYautjaSkinOverrideBase">
+		<defName>YautjaSkin_Amber</defName>
+		<label>Amber Skin</label>
+		<skinColorOverride>(69, 37, 25)</skinColorOverride>
+	</GeneDef>
+</Defs>

@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<FactionDef Abstract="True" Name="ABYautjaFactionBase" ParentName="FactionBase">
+		<factionNameMaker>NamerFaction_ABYautja</factionNameMaker>
+		<settlementNameMaker>ABNamerYautjaJungleClan</settlementNameMaker>
+		<settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
+		<factionIconPath>UI/Icons/Icon_Yautja</factionIconPath>
+		<maxConfigurableAtWorldCreation IgnoreIfNoMatchingField="True">25</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority IgnoreIfNoMatchingField="True">11</configurationListOrderPriority>
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+		</requiredMemes>
+		<allowedMemes IgnoreIfNoMatchingField="True">
+			<li MayRequire="Ludeon.RimWorld.Ideology">MaleSupremacy</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">FleshPurity</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology,Ludeon.RimWorld.Odessey">Shipborn</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology,sarg.alphamemes">AM_CombatProwess_Melee</li>
+		</allowedMemes>
+		<disallowedPrecepts>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Disapproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Horrible</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Abhorrent</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">AnimalVenerated</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">KillingInnocentAnimals_Abhorrent</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">KillingInnocentAnimals_Horrible</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">KillingInnocentAnimals_Disapproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Lovin_Prohibited</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Lovin_Horrible</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Lovin_SpouseOnly_Strict</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Lovin_SpouseOnly_Moderate</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Lovin_SpouseOnly_Mild</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">MeatEating_Abhorrent</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">MeatEating_Horrible</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">MeatEating_Disapproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">SpouseCount_Female_Unlimited</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">SpouseCount_Female_MaxFour</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">SpouseCount_Male_MaxFour</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">SpouseCount_Female_MaxThree</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">SpouseCount_Male_MaxThree</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">SpouseCount_Female_MaxTwo</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">SpouseCount_Male_MaxTwo</li>
+		</disallowedPrecepts>
+		<structureMemeWeights IgnoreIfNoMatchingField="True">
+			<Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">10</Structure_Ideological>
+			<Structure_Archist MayRequire="Ludeon.RimWorld.Ideology">5</Structure_Archist>
+		</structureMemeWeights>
+		<allowedCultures IgnoreIfNoMatchingField="True">
+			<li MayRequire="Ludeon.RimWorld.Ideology">ABYautja_Culture</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">ABBadBlood_Culture</li>
+		</allowedCultures>
+	</FactionDef>
+<!--Jungle Hunter Clan-->
+	<FactionDef ParentName="ABYautjaFactionBase">
+		<defName>ABYautjaClan</defName>
+		<label>Jungle Hunter Clan</label>
+		<pawnSingular>Hunter Yautja</pawnSingular>
+		<pawnsPlural>Hunter Yautja</pawnsPlural>
+		<description>The Yautja Clans are a coalition of extra terrestrial aliens with a fondness for hunting. hey are ruthless hunters, fighting with honor for glory. Those that disobey their strict code of honor are cast out as Bad Bloods. Their quest for glory is endless and inoxerable. Few survive their bloodlust.</description>
+		<listOrderPriority>20</listOrderPriority>
+		<earliestRaidDays>75</earliestRaidDays>
+		<settlementGenerationWeight>1</settlementGenerationWeight>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<basicMemberKind>ABYautja_Unblooded</basicMemberKind>
+		<canMakeRandomly>true</canMakeRandomly>
+		<canSiege>false</canSiege>
+		<canStageAttacks>true</canStageAttacks>
+		<leaderTitle>Hunter Clan Elder</leaderTitle>
+		<canMakeRandomly>true</canMakeRandomly>
+		<techLevel>Spacer</techLevel>
+		<colorSpectrum>
+			<li>(83, 142, 74</li>
+			<li>(54,179,27)</li>
+			<li>(153, 234, 44)</li>
+		</colorSpectrum>
+		<xenotypeSet>
+			<xenotypeChances>
+				<ABStandardYautja>0.85</ABStandardYautja>
+				<ABScoutYautja>0.05</ABScoutYautja>
+				<ABSwordYautja>0.05</ABSwordYautja>
+				<ABShieldYautja>0.04</ABShieldYautja>
+				<ABGrendelKingYautja>0.01</ABGrendelKingYautja>
+			</xenotypeChances>
+		</xenotypeSet>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Offworld</li>
+					<li>Pirate</li>
+					<li>Tribal</li>
+					<li>Outlander</li>
+					<li>ABYautja_Standard</li>
+					<li>ABYautja_Adult</li>
+					<li>ABYautja_Hunter</li>
+					<li>ABYautja_YoungBlood</li>
+					<li>ABYautja_Unblooded</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+		<visitorTraderKinds>
+			<li>ABYautja_TraderVisitors</li>
+		</visitorTraderKinds>
+		<caravanTraderKinds>
+			<li>ABYautja_GeneralGoods</li>
+			<li>ABYautja_CombatGoods</li>
+			<li>ABYautja_ExoticGoods</li>
+		</caravanTraderKinds>
+		<baseTraderKinds>
+			<li>ABBase_Yautja_Standard</li>
+		</baseTraderKinds>
+		<allowedArrivalTemperatureRange>
+			<min>-50</min>
+			<max>35</max>
+		</allowedArrivalTemperatureRange>
+		<maxPawnCostPerTotalPointsCurve>
+			<points>
+				<li>(0,35)</li>
+				<li>(70, 50)</li>
+				<li>(700, 100)</li>
+				<li>(1300, 150)</li>
+				<li>(100000, 10000)</li>
+			</points>
+		</maxPawnCostPerTotalPointsCurve>
+		<pawnGroupMakers>
+			<li>
+				<kindDef>Combat</kindDef>
+				<options>
+					<ABYautja_Unblooded>9</ABYautja_Unblooded>
+					<ABYautja_YoungBlood>12</ABYautja_YoungBlood>
+					<ABYautja_Blooded>7</ABYautja_Blooded>
+					<ABYautja_Elite>3</ABYautja_Elite>
+					<ABYautja_Elder>1</ABYautja_Elder>
+					<ABYautja_Leader>1.5</ABYautja_Leader>
+				</options>
+			</li>	
+			<li>
+				<kindDef>Peaceful</kindDef>
+				<options>
+					<ABYautja_Civilian>10</ABYautja_Civilian>
+					<ABYautja_Unblooded>13</ABYautja_Unblooded>
+					<ABYautja_YoungBlood>10</ABYautja_YoungBlood>
+					<ABYautja_Blooded>8</ABYautja_Blooded>
+					<ABYautja_Elite>4</ABYautja_Elite>
+					<ABYautja_Elder>2</ABYautja_Elder>
+					<ABYautja_Ancient>1</ABYautja_Ancient>
+					<ABYautja_Leader>1.5</ABYautja_Leader>
+				</options>
+			</li>
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<Trader_ABYautja>1</Trader_ABYautja>
+				</traders>
+				<carriers>
+					<Muffalo>2</Muffalo>
+					<Dromedary>2</Dromedary>
+				</carriers>
+				<guards>
+					<ABYautja_Unblooded>13</ABYautja_Unblooded>
+					<ABYautja_YoungBlood>10</ABYautja_YoungBlood>
+					<ABYautja_Blooded>10</ABYautja_Blooded>
+					<ABYautja_Ancient>1</ABYautja_Ancient>
+				</guards>
+			</li>
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<ABYautja_Civilian>7</ABYautja_Civilian>
+					<ABYautja_Unblooded>14</ABYautja_Unblooded>
+					<ABYautja_YoungBlood>10</ABYautja_YoungBlood>
+					<ABYautja_Blooded>8</ABYautja_Blooded>
+					<ABYautja_Elite>3</ABYautja_Elite>
+					<ABYautja_Elder>7</ABYautja_Elder>
+					<ABYautja_Ancient>6</ABYautja_Ancient>
+					<ABYautja_Leader>15</ABYautja_Leader>
+				</options>
+			</li>
+		</pawnGroupMakers>
+	</FactionDef>
+<!--Berserk Clan-->
+	<FactionDef ParentName="ABYautjaFactionBase">
+		<defName>ABYautjaBerserkClan</defName>
+		<label>Berserk Clan</label>
+		<pawnSingular>Berserk Yautja</pawnSingular>
+		<pawnsPlural>Berserk Yautja</pawnsPlural>
+		<description>Berserk Clans are comprised mainly of Super Yautja. These Berserk Clans are sometimes in opposition with Hunter Clans. While Berserk Clans can sometimes disagree with the Hunter Clans they still follow the code of honor.</description>
+		<listOrderPriority>20</listOrderPriority>
+		<earliestRaidDays>75</earliestRaidDays>
+		<settlementGenerationWeight>1</settlementGenerationWeight>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<basicMemberKind>ABYautja_Unblooded</basicMemberKind>
+		<canMakeRandomly>true</canMakeRandomly>
+		<canSiege>false</canSiege>
+		<canStageAttacks>true</canStageAttacks>
+		<leaderTitle>Berserk Clan Elder</leaderTitle>
+		<canMakeRandomly>true</canMakeRandomly>
+		<techLevel>Spacer</techLevel>
+		<colorSpectrum>
+			<li>(167, 10, 10</li>
+			<li>(125,71,57)</li>
+			<li>(90, 80, 79)</li>
+		</colorSpectrum>
+		<xenotypeSet>
+			<xenotypeChances>				
+				<ABBerserkYautja>0.90</ABBerserkYautja>
+				<ABSwordYautja>0.05</ABSwordYautja>
+				<ABShieldYautja>0.04</ABShieldYautja>
+				<ABGrendelKingYautja>0.01</ABGrendelKingYautja>
+			</xenotypeChances>
+		</xenotypeSet>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Offworld</li>
+					<li>Pirate</li>
+					<li>Tribal</li>
+					<li>Outlander</li>
+					<li>ABYautja_BadBlood</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+		<visitorTraderKinds>
+			<li>ABYautja_TraderVisitors</li>
+		</visitorTraderKinds>
+		<caravanTraderKinds>
+			<li>ABYautja_GeneralGoods</li>
+			<li>ABYautja_CombatGoods</li>
+			<li>ABYautja_ExoticGoods</li>
+		</caravanTraderKinds>
+		<baseTraderKinds>
+			<li>ABBase_Yautja_Standard</li>
+		</baseTraderKinds>
+		<allowedArrivalTemperatureRange>
+			<min>-50</min>
+			<max>35</max>
+		</allowedArrivalTemperatureRange>
+		<maxPawnCostPerTotalPointsCurve>
+			<points>
+				<li>(0,35)</li>
+				<li>(70, 50)</li>
+				<li>(700, 100)</li>
+				<li>(1300, 150)</li>
+				<li>(100000, 10000)</li>
+			</points>
+		</maxPawnCostPerTotalPointsCurve>
+		<pawnGroupMakers>
+			<li>
+				<kindDef>Combat</kindDef>
+				<options>
+					<ABYautja_Unblooded>9</ABYautja_Unblooded>
+					<ABYautja_YoungBlood>12</ABYautja_YoungBlood>
+					<ABYautja_Blooded>7</ABYautja_Blooded>
+					<ABYautja_Elite>3</ABYautja_Elite>
+					<ABYautja_Elder>1</ABYautja_Elder>
+					<ABYautja_BerserkLeader>1.5</ABYautja_BerserkLeader>
+				</options>
+			</li>	
+			<li>
+				<kindDef>Peaceful</kindDef>
+				<options>
+					<ABYautja_Civilian>10</ABYautja_Civilian>
+					<ABYautja_Unblooded>13</ABYautja_Unblooded>
+					<ABYautja_YoungBlood>10</ABYautja_YoungBlood>
+					<ABYautja_Blooded>8</ABYautja_Blooded>
+					<ABYautja_Elite>4</ABYautja_Elite>
+					<ABYautja_Elder>2</ABYautja_Elder>
+					<ABYautja_Ancient>1</ABYautja_Ancient>
+					<ABYautja_BerserkLeader>1.5</ABYautja_BerserkLeader>
+				</options>
+			</li>
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<Trader_ABYautja>1</Trader_ABYautja>
+				</traders>
+				<carriers>
+					<Muffalo>2</Muffalo>
+					<Dromedary>2</Dromedary>
+				</carriers>
+				<guards>
+					<ABYautja_Unblooded>13</ABYautja_Unblooded>
+					<ABYautja_YoungBlood>10</ABYautja_YoungBlood>
+					<ABYautja_Blooded>10</ABYautja_Blooded>
+					<ABYautja_Ancient>1</ABYautja_Ancient>
+				</guards>
+			</li>
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<ABYautja_Civilian>7</ABYautja_Civilian>
+					<ABYautja_Unblooded>14</ABYautja_Unblooded>
+					<ABYautja_YoungBlood>10</ABYautja_YoungBlood>
+					<ABYautja_Blooded>8</ABYautja_Blooded>
+					<ABYautja_Elite>3</ABYautja_Elite>
+					<ABYautja_Elder>7</ABYautja_Elder>
+					<ABYautja_Ancient>6</ABYautja_Ancient>
+					<ABYautja_BerserkLeader>15</ABYautja_BerserkLeader>
+				</options>
+			</li>
+		</pawnGroupMakers>
+	</FactionDef>
+<!--Bad Blood-->
+	<FactionDef ParentName="ABYautjaFactionBase">
+		<defName>ABYautjaBadBloodClan</defName>
+		<label>BadBloods Clan</label>
+		<pawnSingular>BadBlood Yautja</pawnSingular>
+		<pawnsPlural>BadBlood Yautja</pawnsPlural>
+		<description>The Bad Bloods are traitors, pariah and, worst of all, dishonored members of the Yautja society. They are banned from their parents clan and hunted out of spite. They live in chaos with no rules or lord except the will to live and to hunt. They do not obey to any code of Honor known to yautja society and their existence is considered an insult to the Clans.</description>
+		<listOrderPriority>20</listOrderPriority>
+		<earliestRaidDays>75</earliestRaidDays>
+		<settlementGenerationWeight>1</settlementGenerationWeight>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<basicMemberKind>ABYautja_YoungBlood</basicMemberKind>
+		<canMakeRandomly>true</canMakeRandomly>
+		<canSiege>false</canSiege>
+		<canStageAttacks>true</canStageAttacks>
+		<leaderTitle>BadBlood Elder</leaderTitle>
+		<settlementNameMaker>ABNamerYautjaBadBloodClan</settlementNameMaker>
+		<canMakeRandomly>true</canMakeRandomly>
+		<techLevel>Spacer</techLevel>
+		<colorSpectrum>
+			<li>(1, 1, 1)</li>
+		</colorSpectrum>
+		<factionIconPath>UI/Icons/Icon_YautjaB</factionIconPath>
+		<permanentEnemy>true</permanentEnemy>
+		<xenotypeSet>
+			<xenotypeChances>
+				<ABStandardYautja>0.75</ABStandardYautja>
+				<ABBerserkYautja>0.10</ABBerserkYautja>
+				<ABScoutYautja>0.05</ABScoutYautja>
+				<ABSwordYautja>0.05</ABSwordYautja>
+				<ABShieldYautja>0.05</ABShieldYautja>
+			</xenotypeChances>
+		</xenotypeSet>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Offworld</li>
+					<li>Pirate</li>
+					<li>Tribal</li>
+					<li>Outlander</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+		<allowedArrivalTemperatureRange>
+			<min>-50</min>
+			<max>35</max>
+		</allowedArrivalTemperatureRange>
+		<maxPawnCostPerTotalPointsCurve>
+			<points>
+				<li>(0,35)</li>
+				<li>(70, 50)</li>
+				<li>(700, 100)</li>
+				<li>(1300, 150)</li>
+				<li>(100000, 10000)</li>
+			</points>
+		</maxPawnCostPerTotalPointsCurve>
+		<pawnGroupMakers>
+			<li>
+				<kindDef>Combat</kindDef>
+				<options>
+					<ABYautja_Unblooded>9</ABYautja_Unblooded>
+					<ABYautja_YoungBlood>12</ABYautja_YoungBlood>
+					<ABYautja_Blooded>7</ABYautja_Blooded>
+					<ABYautja_Elite>3</ABYautja_Elite>
+					<ABYautja_Elder>1</ABYautja_Elder>
+					<ABYautja_BadBloodLeader>1.5</ABYautja_BadBloodLeader>
+				</options>
+			</li>	
+			<li>
+				<kindDef>Peaceful</kindDef>
+				<options>
+					<ABYautja_Civilian>10</ABYautja_Civilian>
+					<ABYautja_Slaves>12</ABYautja_Slaves>
+					<ABYautja_Ancient>1</ABYautja_Ancient>
+				</options>
+			</li>
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<ABYautja_Civilian>7</ABYautja_Civilian>
+					<ABYautja_Unblooded>14</ABYautja_Unblooded>
+					<ABYautja_YoungBlood>10</ABYautja_YoungBlood>
+					<ABYautja_Blooded>8</ABYautja_Blooded>
+					<ABYautja_Elite>3</ABYautja_Elite>
+					<ABYautja_Elder>7</ABYautja_Elder>
+					<ABYautja_Ancient>6</ABYautja_Ancient>
+					<ABYautja_BadBloodLeader>15</ABYautja_BadBloodLeader>
+				</options>
+			</li>
+		</pawnGroupMakers>
+	</FactionDef>	
+</Defs>

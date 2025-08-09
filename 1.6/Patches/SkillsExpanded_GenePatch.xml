@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Skills Expanded</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/GeneDef[defName="ABYautjaAdvancedTechnologically"]/statOffsets</xpath>
+			<value>
+				<VSE_WeaponCreationSpeed>0.15</VSE_WeaponCreationSpeed>
+				<VSE_ComponentCraftingSpeed>0.15</VSE_ComponentCraftingSpeed>
+				<VSE_RepairSpeed>0.2</VSE_RepairSpeed>
+			</value>
+		</match>
+	</Operation>
+</Patch>

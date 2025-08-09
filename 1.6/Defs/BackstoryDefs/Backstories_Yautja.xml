@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <BackstoryDef>
+    <defName>ABYautja_YoungBlood</defName>
+	<identifier>ABYautja_YoungBlood</identifier>
+    <title>Yautja Young blood</title>
+    <titleShort>Young blood</titleShort>
+    <description>[PAWN_nameDef] is a Young adult yautja who is yet to be seen as a true hunter in the eyes of [PAWN_possessive] clanmates. These hunters are competent enough to overpower a skilled human fighter, however their skill against a Xenomorph varies. Once they kill one, yautja mark themselves with Xenomorph blood, completing their initiation into Adulthood.</description>
+	<slot>Adulthood</slot>
+	<skillGains>
+			<Melee>2</Melee>
+			<Crafting>2</Crafting>
+    </skillGains>
+    <spawnCategories>
+      <li>ABYautja_Standard</li>
+      <li>ABYautja_Adult</li>
+      <li>ABYautja_Hunter</li>
+      <li>ABYautja_YoungBlood</li>
+      <li>ABYautja_Unblooded</li>
+    </spawnCategories>
+	<shuffleable>True</shuffleable>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>ABYautja_Blooded</defName>
+	<identifier>ABYautja_Blooded</identifier>
+    <title>Blooded Yautja Hunter</title>
+    <titleShort>Blooded Hunter</titleShort>
+    <description>[PAWN_nameDef] is Blooded. These yautja have successfully killed their first Xenomorph. Once a yautja is blooded, their clan will begin to take notice of them.</description>
+    <slot>Adulthood</slot>
+    <skillGains>
+        <Shooting>4</Shooting>
+        <Melee>4</Melee>
+        <Social>-1</Social>
+    </skillGains>
+    <spawnCategories>
+      <li>ABYautja_Standard</li>
+      <li>ABYautja_Adult</li>
+      <li>ABYautja_Hunter</li>
+      <li>ABYautja_Blooded</li>
+    </spawnCategories>
+	<shuffleable>True</shuffleable>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>ABYautja_Elite</defName>
+	<identifier>ABYautja_Blooded</identifier>
+    <title>Elite Yautja Hunter</title>
+    <titleShort>Elite Hunter</titleShort>
+    <description>[PAWN_nameDef] is a yautja Elite, these encompass the more dangerous of the yautja race. They have the skill to take on several Xenomorphs at once, including large, dangerous castes such as Praetorians, Predaliens and even Queens. Elites seem to take on some of the more nuanced, lengthy, and taxing problems and missions in the yautja world.</description>
+    <slot>Adulthood</slot>
+    <skillGains>
+        <Shooting>7</Shooting>
+        <Melee>6</Melee>
+        <Social>-4</Social>
+    </skillGains>
+    <spawnCategories>
+      <li>ABYautja_Standard</li>
+      <li>ABYautja_Adult</li>
+      <li>ABYautja_Hunter</li>
+      <li>ABYautja_Elite</li>
+      <li>ABYautja_Blooded</li>
+    </spawnCategories>
+	<shuffleable>False</shuffleable>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>ABYautja_Elder</defName>
+	<identifier>ABYautja_Elder</identifier>
+    <title>Yautja Elder</title>
+    <titleShort>Elder</titleShort>
+    <description>[PAWN_nameDef] is a yautja Elder, these are yautja warriors who have distinguished themselves in battle or by their leadership. It can be assumed that they are skilled in the way of the yautja hunter. They have notably more dreadlocks, and small horns on the top of their heads.</description>
+    <slot>Adulthood</slot>
+    <skillGains>
+        <Shooting>5</Shooting>
+        <Melee>4</Melee>
+        <Social>3</Social>
+    </skillGains>
+    <spawnCategories>
+      <li>ABYautja_Standard</li>
+      <li>ABYautja_Adult</li>
+      <li>ABYautja_Hunter</li>
+      <li>ABYautja_Elder</li>
+      <li>ABYautja_Blooded</li>
+    </spawnCategories>
+	<shuffleable>True</shuffleable>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>ABYautja_Ancient</defName>
+	<identifier>ABYautja_Ancient</identifier>
+    <title>Yautja Ancient</title>
+    <titleShort>Ancient</titleShort>
+    <description>[PAWN_nameDef] is an Ancient, these yautja differ from an Elder in not only age, but status. Though too old to participate (still considerably more formidable than humans) in Hunts or battles, Ancients are referred to for counsel and wisdom gathered from their many years of life.</description>
+    <slot>Adulthood</slot>
+    <skillGains>
+        <Shooting>6</Shooting>
+        <Melee>5</Melee>
+        <Social>1</Social>
+    </skillGains>
+    <spawnCategories>
+      <li>ABYautja_Standard</li>
+      <li>ABYautja_Adult</li>
+      <li>ABYautja_Ancient</li>
+      <li>ABYautja_Blooded</li>
+    </spawnCategories>
+	<shuffleable>True</shuffleable>
+  </BackstoryDef>
+  
+  <BackstoryDef>
+    <defName>ABYautja_Houndmaster</defName>
+	<identifier>ABYautja_Houndmaster</identifier>
+    <title>Houndmaster</title>
+    <titleShort>Houndmaster</titleShort>
+	<description>[PAWN_nameDef] spent [PAWN_possessive] Blooded life keeping and training animals. Instead of relying solely on [PAWN_possessive] gear, [PAWN_nameDef] prefers to hunt [PAWN_possessive] prey alongside [PAWN_possessive] pets.</description>
+    <slot>Adulthood</slot>
+    <skillGains>
+        <Shooting>4</Shooting>
+        <Animals>6</Animals>
+		<Plants>2</Plants>
+    </skillGains>
+    <spawnCategories>
+      <li>ABYautja_Standard</li>
+      <li>ABYautja_Adult</li>
+      <li>ABYautja_Hunter</li>
+      <li>ABYautja_Elder</li>
+      <li>ABYautja_Blooded</li>
+    </spawnCategories>
+	<shuffleable>True</shuffleable>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>ABYautja_PitChampion</defName>
+	<identifier>ABYautja_PitChampion</identifier>
+    <title>Pit Fighter</title>
+    <titleShort>Fighter</titleShort>
+    <description>In yautja culture, you can either be chosen for a hunt or challenge someone for their place in a pit fight. [PAWN_nameDef] always fought [PAWN_possessive] way to the hunts. [PAWN_pronoun] may not have been the smartest, but [PAWN_pronoun] never lost in the pit.</description>
+    <slot>Adulthood</slot>
+    <workDisables>
+		<li>Intellectual</li>
+	</workDisables>
+	<forcedTraits>
+			<Brawler>0</Brawler>
+			<Tough>0</Tough>
+	</forcedTraits>	
+    <skillGains>
+        <Melee>9</Melee>
+    </skillGains>
+    <spawnCategories>
+      <li>ABYautja_Standard</li>
+      <li>ABYautja_Adult</li>
+      <li>ABYautja_Hunter</li>
+      <li>ABYautja_Elder</li>
+      <li>ABYautja_Blooded</li>
+    </spawnCategories>
+	<shuffleable>True</shuffleable>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>ABYautja_ETA</defName>
+	<identifier>ABYautja_ETA</identifier>
+    <title>Eta</title>
+    <titleShort>Eta</titleShort>
+    <description>The untouchables of the yautja. Mostly they are the lame or the crippled, who are unable, or too cowardly, to join the hunt. Instead, they serve as slaves and do menial jobs for the hunters. They are ridiculed and humiliated on a daily basis by the other yautja.</description>
+    <slot>Adulthood</slot>
+    <workDisables>
+		<li>Violent</li>
+	</workDisables>
+	<forcedTraits>
+			<Wimp>0</Wimp>
+	</forcedTraits>
+    <skillGains>
+		<Crafting>2</Crafting>
+		<Mining>4</Mining>
+		<Plants>3</Plants>
+		<Artistic>2</Artistic>
+    </skillGains>
+    <spawnCategories>
+      <li>ABYautja_Standard</li>
+      <li>ABYautja_Adult</li>
+      <li>ABYautja_Hunter</li>
+      <li>ABYautja_Elder</li>
+      <li>ABYautja_Blooded</li>
+    </spawnCategories>
+	<shuffleable>True</shuffleable>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>ABYautja_BlackSmith</defName>
+	<identifier>ABYautja_BlackSmith</identifier>
+    <title>Blacksmith</title>
+    <titleShort>Smith</titleShort>
+    <description>Hunters are nothing without their tools. [PAWN_nameDef] is one of the rare yautja who creates those tools. [PAWN_pronoun] takes pride in [PAWN_possessive] work and the other Hunters respect [PAWN_objective] for [PAWN_possessive] craft.</description>
+    <slot>Adulthood</slot>
+	<forcedTraits>
+			<Neurotic>1</Neurotic>
+	</forcedTraits>
+    <skillGains>
+        <Shooting>3</Shooting>
+        <Crafting>5</Crafting>
+        <Intellectual>3</Intellectual>
+        <Artistic>1</Artistic>
+    </skillGains>
+    <spawnCategories>
+      <li>ABYautja_Standard</li>
+      <li>ABYautja_Adult</li>
+      <li>ABYautja_Hunter</li>
+      <li>ABYautja_Elder</li>
+      <li>ABYautja_Blooded</li>
+    </spawnCategories>
+	<shuffleable>True</shuffleable>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>ABYautja_Widow</defName>
+	<identifier>ABYautja_Widow</identifier>
+    <title>Widow</title>
+    <titleShort>Widow</titleShort>
+	<description>[PAWN_nameDef] lost [PAWN_possessive] mate. [PAWN_pronoun] chose the best partner, raised [PAWN_possessive] mate's Suckling. All [PAWN_pronoun] got for it was pain. The grief process was long and arduous. Many yautja lose their minds. [PAWN_nameDef] swore vengeance and now hunts as brutally, if not more so, than the other Hunters.</description>
+    <slot>Adulthood</slot>
+	<forcedTraits>
+			<Bloodlust>0</Bloodlust>
+			<Neurotic>1</Neurotic>
+	</forcedTraits>
+    <skillGains>
+        <Shooting>6</Shooting>
+		<Melee>6</Melee>
+        <Crafting>5</Crafting>
+        <Artistic>4</Artistic>
+    </skillGains>
+    <spawnCategories>
+      <li>ABYautja_Standard</li>
+      <li>ABYautja_Adult</li>
+      <li>ABYautja_Hunter</li>
+      <li>ABYautja_Elder</li>
+      <li>ABYautja_Blooded</li>
+    </spawnCategories>
+	<shuffleable>False</shuffleable>
+  </BackstoryDef>
+
+ <BackstoryDef>
+    <defName>ABYautja_Survivor</defName>
+	<identifier>ABYautja_Survivor</identifier>
+    <title>Blooded Survivor</title>
+    <titleShort>Survivor</titleShort>
+	<description>[PAWN_nameDef] was sent to a distant planet with [PAWN_possessive] clan members for a hunt, but after the ship crash landed, [PAWN_pronoun] was the only yautja left alive and had to find a way to survive until [PAWN_pronoun] could get the ship's communications system back up and running.</description>
+    <slot>Adulthood</slot>
+	<forcedTraits>
+			<Industriousness>1</Industriousness>
+			<Neurotic>1</Neurotic>
+	</forcedTraits>
+    <skillGains>
+        <Cooking>3</Cooking>
+        <Crafting>3</Crafting>
+        <Intellectual>2</Intellectual>
+        <Medicine>2</Medicine>
+    </skillGains>
+    <spawnCategories>
+      <li>ABYautja_Standard</li>
+      <li>ABYautja_Adult</li>
+      <li>ABYautja_Hunter</li>
+      <li>ABYautja_Elder</li>
+      <li>ABYautja_Blooded</li>
+    </spawnCategories>
+	<shuffleable>True</shuffleable>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>ABYautja_BadBloodA</defName>
+	<identifier>ABYautja_BadBloodA</identifier>
+    <title>Bad Blood</title>
+    <titleShort>Bad Blood</titleShort>
+    <description>[PAWN_nameDef] is a true Bad Blood and is seen as a more hostile and "mentally unstable" yautja. This sadistic hunter still uses skills taught to [PAWN_possessive] by their brothers, but uses them dishonorably and purely for their own personal gain, there can be no forgiveness according to yautja tradition. Other yautja are encouraged to eliminate the outcast on sight.</description>
+    <slot>Adulthood</slot>
+	<forcedTraits>
+			<Bloodlust>0</Bloodlust>
+			<Neurotic>1</Neurotic>
+			<Nerves>1</Nerves>
+	</forcedTraits>	
+    <skillGains>
+        <Shooting>4</Shooting>
+        <Melee>6</Melee>
+        <Social>-5</Social>
+    </skillGains>
+    <spawnCategories>
+      <li>ABYautja_BadBlood</li>
+    </spawnCategories>
+	<shuffleable>True</shuffleable>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>ABYautja_BadBloodB</defName>
+	<identifier>ABYautja_BadBloodB</identifier>
+    <title>Exile</title>
+    <titleShort>Exile</titleShort>
+    <description>[PAWN_nameDef] is an Exiled, although less hostile and "mentally unstable" than those yautja usually considered Bad Bloods. [PAWN_pronoun] brought dishonor to his people and fled before accepting punishment, there can be no forgiveness according to yautja tradition. Other yautja are encouraged to eliminate the outcast on sight.</description>
+    <slot>Adulthood</slot>
+	<forcedTraits>
+			<Cannibal>0</Cannibal>
+			<Bloodlust>0</Bloodlust>
+	</forcedTraits>
+    <skillGains>
+        <Shooting>4</Shooting>
+        <Melee>4</Melee>
+        <Cooking>1</Cooking>
+        <Crafting>1</Crafting>
+        <Social>-2</Social>
+    </skillGains>
+    <spawnCategories>
+      <li>ABYautja_BadBlood</li>
+    </spawnCategories>
+	<shuffleable>True</shuffleable>
+  </BackstoryDef>
+
+</Defs>

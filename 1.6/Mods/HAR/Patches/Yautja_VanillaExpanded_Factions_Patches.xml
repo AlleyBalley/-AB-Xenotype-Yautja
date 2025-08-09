@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<!--Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Vanilla Factions Expanded - Classical</li>
+				</mods>
+				<match Class="PatchOperationAdd">
+					<xpath>/Defs/AlienRace.ThingDef_AlienRace[@Name="ABYautja_Race"]/alienRace/raceRestriction/whiteApparelList</xpath>
+					<value>
+						<li>VFEC_Toga</li>
+						<li>VFEC_Shield_Heavy</li>
+					</value>
+				</match>
+			</li>
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Vanilla Factions Expanded - Deserters</li>
+				</mods>
+				<match Class="PatchOperationAdd">
+					<xpath>/Defs/AlienRace.ThingDef_AlienRace[@Name="ABYautja_Race"]/alienRace/raceRestriction/whiteApparelList</xpath>
+					<value>
+						<li>VFED_Apparel_BombPack</li>
+						<li>VFED_Apparel_InvisibilityEngulfer</li>
+						<li>VFED_DeserterDeclassifier</li>
+					</value>
+				</match>
+			</li>
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Vanilla Factions Expanded - Empire</li>
+				</mods>
+				<match Class="PatchOperationAdd">
+					<xpath>/Defs/AlienRace.ThingDef_AlienRace[@Name="ABYautja_Race"]/alienRace/raceRestriction/whiteApparelList</xpath>
+					<value>
+						<li>VFE_Apparel_StellicRobe</li>
+					</value>
+				</match>
+			</li>
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Vanilla Factions Expanded - Medieval 2</li>
+				</mods>
+				<match Class="PatchOperationAdd">
+					<xpath>/Defs/AlienRace.ThingDef_AlienRace[@Name="ABYautja_Race"]/alienRace/raceRestriction/whiteApparelList</xpath>
+					<value>
+						<li>VFEM2_Apparel_PlagueMask</li>
+						<li>VFEM2_Apparel_TorchBelt</li>
+						<li>VFEM2_Apparel_KingsRobes</li>
+						<li>VFEM2_Apparel_Tabard</li>
+						<li>VFEM2_Apparel_Mantle</li>
+						<li>VFEM2_Shield_Heater</li>
+						<li>VFEM2_Shield_Round</li>
+					</value>
+				</match>
+			</li>
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Vanilla Factions Expanded - Settlers</li>
+				</mods>
+				<match Class="PatchOperationAdd">
+					<xpath>/Defs/AlienRace.ThingDef_AlienRace[@Name="ABYautja_Race"]/alienRace/raceRestriction/whiteApparelList</xpath>
+					<value>
+						<li>VFES_Headgear_Bandana</li>
+						<li>Apparel_Vest</li>
+					</value>
+				</match>
+			</li>
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Vanilla Factions Expanded - Tribals</li>
+				</mods>
+				<match Class="PatchOperationAdd">
+					<xpath>/Defs/AlienRace.ThingDef_AlienRace[@Name="ABYautja_Race"]/alienRace/raceRestriction/whiteApparelList</xpath>
+					<value>
+						<li>VFET_Apparel_TribalLight</li>
+						<li>VFET_Apparel_TribalWar</li>
+					</value>
+				</match>
+			</li>
+		</operations>
+	</Operation-->
+</Patch>

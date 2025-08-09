@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!--Standard-->
+  <XenotypeDef>
+    <defName>ABStandardYautja</defName>
+    <label>Yautja</label>
+	<description>Yautja are extra terrestrial hunters that hail from the planet Yautja Prime. They are prolific killers with a fondness for the art of hunting, basing their entire society around it. Those who do not respect the honor and tradition of the hunt are banished.</description>
+    <descriptionShort>Yautja are extra terrestrials with an intense skill and fondness for hunting.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/Yautja</iconPath>
+	<inheritable>true</inheritable>
+    <displayPriority>-3605</displayPriority>
+	<nameMaker>ABNamerPerson_Yautja_Unisex</nameMaker>
+    <chanceToUseNameMaker>5</chanceToUseNameMaker>
+    <genes>
+	<!--Vanilla Genes-->
+		<li>DarkVision</li>
+		<li>Nearsighted</li>
+		<li>Body_Thin</li>
+		<li>Body_Fat</li>
+		<li>Body_Hulk</li>
+		<li>Body_Standard</li>
+	<!--Yautja Genes-->
+		<li>ABYautjaAdvancedTechnologically</li>
+		<li>ABYautja_BreedingSeason</li>
+		<li>ABYautjaUpperMandibles</li>
+		<li>ABYautjaLowerMandibles</li>
+		<li>ABYautjaRoarVoice</li>
+		<li>ABYautja_Ambush</li>
+    </genes>
+	</XenotypeDef>
+<!--Berserk-->
+  <XenotypeDef>
+    <defName>ABBerserkYautja</defName>
+    <label>Super Yautja</label>
+	<description>Yautja are extra terrestrial hunters that hail from the planet Yautja Prime. They are prolific killers with a fondness for the art of hunting, basing their entire society around it. Those who do not respect the honor and tradition of the hunt are banished.</description>
+    <descriptionShort>Yautja are extra terrestrials with an intense skill and fondness for hunting.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/Yautja</iconPath>
+	<inheritable>true</inheritable>
+    <displayPriority>-3606</displayPriority>
+	<nameMaker>ABNamerPerson_Yautja_Unisex</nameMaker>
+    <chanceToUseNameMaker>5</chanceToUseNameMaker>
+    <genes>
+	<!--Vanilla Genes-->
+		<li>DarkVision</li>
+		<li>Nearsighted</li>
+		<li>Body_Fat</li>
+		<li>Body_Hulk</li>
+		<li>Body_Standard</li>
+	<!--Yautja Genes-->
+		<li>ABYautjaAdvancedTechnologically</li>
+		<li>ABYautja_BreedingSeason</li>
+		<li>ABYautjaUpperMandibles</li>
+		<li>ABYautjaLowerMandibles</li>
+		<li>ABYautjaRoarVoice</li>
+		<li>ABBerserkYautjaFrame</li>
+		<li>ABYautja_Ambush</li>
+    </genes>
+	</XenotypeDef>
+<!--Sword-->
+  <XenotypeDef>
+    <defName>ABSwordYautja</defName>
+    <label>Sword Yautja</label>
+	<description>Yautja are extra terrestrial hunters that hail from the planet Yautja Prime. They are prolific killers with a fondness for the art of hunting, basing their entire society around it. Those who do not respect the honor and tradition of the hunt are banished.</description>
+    <descriptionShort>Yautja are extra terrestrials with an intense skill and fondness for hunting.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/SwordYautja</iconPath>
+	<inheritable>true</inheritable>
+    <displayPriority>-3607</displayPriority>
+	<nameMaker>ABNamerPerson_Yautja_Unisex</nameMaker>
+    <chanceToUseNameMaker>5</chanceToUseNameMaker>
+    <genes>
+	<!--Vanilla Genes-->
+		<li>DarkVision</li>
+		<li>Nearsighted</li>
+		<li>MoveSpeed_Quick</li>
+		<li>Body_Thin</li>
+		<li>Body_Standard</li>
+	<!--Yautja Genes-->
+		<li>ABYautjaAdvancedTechnologically</li>
+		<li>ABYautja_BreedingSeason</li>
+		<li>ABYautjaLowerMandibles</li>
+		<li>ABYautjaRoarVoice</li>
+		<li>ABBerserkYautjaFrame</li>
+		<li>ABYautja_Ambush</li>
+    </genes>
+	</XenotypeDef>
+<!--Shield-->
+  <XenotypeDef>
+    <defName>ABShieldYautja</defName>
+    <label>Shield Yautja</label>
+	<description>Yautja are extra terrestrial hunters that hail from the planet Yautja Prime. They are prolific killers with a fondness for the art of hunting, basing their entire society around it. Those who do not respect the honor and tradition of the hunt are banished.</description>
+    <descriptionShort>Yautja are extra terrestrials with an intense skill and fondness for hunting.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/Yautja</iconPath>
+	<inheritable>true</inheritable>
+    <displayPriority>-3608</displayPriority>
+	<nameMaker>ABNamerPerson_Yautja_Unisex</nameMaker>
+    <chanceToUseNameMaker>5</chanceToUseNameMaker>
+    <genes>
+	<!--Vanilla Genes-->
+		<li>DarkVision</li>
+		<li>Body_Fat</li>
+		<li>Body_Hulk</li>
+	<!--Yautja Genes-->
+		<li>ABYautjaAdvancedTechnologically</li>
+		<li>ABYautjaTwoToed</li>
+		<li>ABYautja_BreedingSeason</li>
+		<li>ABYautjaUpperMandibles</li>
+		<li>ABYautjaLowerMandibles</li>
+		<li>ABYautjaRoarVoice</li>
+		<li>ABGrendelKingYautjaFrame</li>
+		<li>ABYautja_Ambush</li>
+    </genes>
+	</XenotypeDef>
+<!--Scout-->
+  <XenotypeDef>
+    <defName>ABScoutYautja</defName>
+    <label>Scout Yautja</label>
+	<description>Yautja are extra terrestrial hunters that hail from the planet Yautja Prime. They are prolific killers with a fondness for the art of hunting, basing their entire society around it. Those who do not respect the honor and tradition of the hunt are banished.</description>
+    <descriptionShort>Yautja are extra terrestrials with an intense skill and fondness for hunting.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/ScoutYautja</iconPath>
+	<inheritable>true</inheritable>
+    <displayPriority>-36078</displayPriority>
+	<nameMaker>ABNamerPerson_Yautja_Unisex</nameMaker>
+    <chanceToUseNameMaker>5</chanceToUseNameMaker>
+    <genes>
+	<!--Vanilla Genes-->
+		<li>DarkVision</li>
+		<li>Nearsighted</li>
+		<li>Body_Fat</li>
+		<li>Body_Hulk</li>
+		<li>Body_Standard</li>
+	<!--Yautja Genes-->
+		<li>ABYautjaAdvancedTechnologically</li>
+		<li>ABYautja_BreedingSeason</li>
+		<li>ABYautjaLowerMandibles</li>
+		<li>ABYautjaSuperiorLowerMandibles</li>
+		<li>ABYautjaRoarVoice</li>
+		<li>ABYautja_Ambush</li>
+    </genes>
+	</XenotypeDef>
+<!--Grendel-->
+  <XenotypeDef>
+    <defName>ABGrendelKingYautja</defName>
+    <label>Grendel Yautja</label>
+	<description>Yautja are extra terrestrial hunters that hail from the planet Yautja Prime. They are prolific killers with a fondness for the art of hunting, basing their entire society around it. Those who do not respect the honor and tradition of the hunt are banished.</description>
+    <descriptionShort>Yautja are extra terrestrials with an intense skill and fondness for hunting.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/GrendelYautja</iconPath>
+	<inheritable>true</inheritable>
+    <displayPriority>-36078</displayPriority>
+	<nameMaker>ABNamerPerson_Yautja_Unisex</nameMaker>
+    <chanceToUseNameMaker>5</chanceToUseNameMaker>
+    <genes>
+	<!--Vanilla Genes-->
+		<li>DarkVision</li>
+		<li>Nearsighted</li>
+		<li>Body_Fat</li>
+		<li>Body_Hulk</li>
+		<li>Body_Standard</li>
+	<!--Yautja Genes-->
+		<li>ABYautjaAdvancedTechnologically</li>
+		<li>ABYautja_BreedingSeason</li>
+		<li>ABYautjaUpperMandibles</li>
+		<li>ABYautjaLowerMandibles</li>
+		<li>ABYautjaSuperiorUpperMandibles</li>
+		<li>ABYautjaSuperiorLowerMandibles</li>
+		<li>ABYautjaRoarVoice</li>
+		<li>ABGrendelKingYautjaFrame</li>
+		<li>ABYautja_Ambush</li>
+    </genes>
+	</XenotypeDef>
+</Defs>

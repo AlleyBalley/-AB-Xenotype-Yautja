@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<HairDef>
+		<defName>ABYautjaBald</defName>
+		<label>Yautja Bald</label>
+		<styleGender>Any</styleGender>
+		<texPath>Things/Pawn/Humanlike/Hairs/YautjaBald</texPath>
+		<category>YautjaBALD</category>
+		<styleTags>
+		  <li>YautjaBALD</li>
+		</styleTags>
+	</HairDef>
+</Defs>

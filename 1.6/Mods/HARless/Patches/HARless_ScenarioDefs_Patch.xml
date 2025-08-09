@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+		<!--Unblooded Yautja hunters-->
+			<li Class="PatchOperationInsert">
+				<xpath>/Defs/ScenarioDef[defName="ABYautjaScenarioUnblooded"]/scenario/parts/li[1]/def</xpath>
+				<order>Prepend</order>
+				<value>
+					<pawnChoiceCount>5</pawnChoiceCount>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationInsert">
+				<xpath>/Defs/ScenarioDef[defName="ABYautjaScenarioUnblooded"]/scenario/parts/li[1]/overrideKinds/li/pawnKind</xpath>
+				<order>Append</order>
+				<value>
+					<xenotype>ABStandardYautja</xenotype>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationInsert">
+				<xpath>/Defs/ScenarioDef[defName="ABYautjaScenarioUnblooded"]/scenario/parts/li[1]/overrideKinds</xpath>
+				<order>Append</order>
+				<value>
+					<xenotypeCounts>
+						<li>
+							<count>5</count>
+							<xenotype>ABStandardYautja</xenotype>
+							<description>yautja</description>
+							<allowedDevelopmentalStages>Adult, Child</allowedDevelopmentalStages>
+						</li>
+					</xenotypeCounts>
+				</value>
+			</li>
+			
+		<!--Blooded Yautja hunters-->
+			<li Class="PatchOperationInsert">
+				<xpath>/Defs/ScenarioDef[defName="ABYautjaScenarioUnblooded"]/scenario/parts/li[1]/def</xpath>
+				<order>Prepend</order>
+				<value>
+					<pawnChoiceCount>4</pawnChoiceCount>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationInsert">
+				<xpath>/Defs/ScenarioDef[defName="ABYautjaScenarioBlooded"]/scenario/parts/li[1]/overrideKinds/li/pawnKind</xpath>
+				<order>Append</order>
+				<value>
+					<xenotype>ABStandardYautja</xenotype>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationInsert">
+				<xpath>/Defs/ScenarioDef[defName="ABYautjaScenarioBlooded"]/scenario/parts/li[1]/overrideKinds</xpath>
+				<order>Append</order>
+				<value>
+					<xenotypeCounts>
+						<li>
+							<count>4</count>
+							<xenotype>ABStandardYautja</xenotype>
+							<description>yautja</description>
+							<allowedDevelopmentalStages>Adult, Child</allowedDevelopmentalStages>
+						</li>
+					</xenotypeCounts>
+				</value>
+			</li>
+			
+		<!--Lone Exile-->
+			<li Class="PatchOperationInsert">
+				<xpath>/Defs/ScenarioDef[defName="ABYautjaScenarioLongExile"]/scenario/parts/li[1]/def</xpath>
+				<order>Prepend</order>
+				<value>
+					<pawnChoiceCount>1</pawnChoiceCount>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationInsert">
+				<xpath>/Defs/ScenarioDef[defName="ABYautjaScenarioLongExile"]/scenario/parts/li[1]/overrideKinds/li/pawnKind</xpath>
+				<order>Append</order>
+				<value>
+					<xenotype>ABStandardYautja</xenotype>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationInsert">
+				<xpath>/Defs/ScenarioDef[defName="ABYautjaScenarioLongExile"]/scenario/parts/li[1]/overrideKinds</xpath>
+				<order>Append</order>
+				<value>
+					<xenotypeCounts>
+						<li>
+							<count>1</count>
+							<xenotype>ABStandardYautja</xenotype>
+							<description>yautja</description>
+							<allowedDevelopmentalStages>Adult</allowedDevelopmentalStages>
+						</li>
+					</xenotypeCounts>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

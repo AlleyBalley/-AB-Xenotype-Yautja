@@ -1,0 +1,496 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+<!--Ringed Long Dreds-->
+	<HairDef>
+		<defName>ABYautjaAlbinoRingedLongDreds</defName>
+		<label>Albino Yautja Gold Ringed Long Dreds</label>
+		<styleGender>Any</styleGender>
+		<texPath>Things/Pawn/Humanlike/Hairs/YautjaTendrilAlbinoRingedHair</texPath>
+		<category>Yautja</category>
+		<styleTags>
+		  <li>Yautja</li>
+		</styleTags>
+	</HairDef>
+	<HairDef>
+		<defName>ABYautjaAlbinoSilverRingedLongDreds</defName>
+		<label>Albino Yautja Silver Ringed Long Dreds</label>
+		<styleGender>Any</styleGender>
+		<texPath>Things/Pawn/Humanlike/Hairs/SILVER_YautjaTendrilAlbinoRingedHair</texPath>
+		<category>Yautja</category>
+		<styleTags>
+		  <li>Yautja</li>
+		</styleTags>
+	</HairDef>
+	<HairDef>
+		<defName>ABYautjaRingedLongDreds</defName>
+		<label>Yautja Gold Ringed Long Dreds</label>
+		<styleGender>Any</styleGender>
+		<texPath>Things/Pawn/Humanlike/Hairs/YautjaTendrilRingedHair</texPath>
+		<category>Yautja</category>
+		<styleTags>
+		  <li>Yautja</li>
+		</styleTags>
+	</HairDef>
+	<HairDef>
+		<defName>ABYautjaSilverRingedLongDreds</defName>
+		<label>Yautja Silver Ringed Long Dreds</label>
+		<styleGender>Any</styleGender>
+		<texPath>Things/Pawn/Humanlike/Hairs/SILVER_YautjaTendrilRingedHair</texPath>
+		<category>Yautja</category>
+		<styleTags>
+		  <li>Yautja</li>
+		</styleTags>
+	</HairDef>
+<!--Long Dreds-->
+	<HairDef>
+		<defName>ABYautjaAlbinoLongDreds</defName>
+		<label>Albino Yautja Long Dreds</label>
+		<styleGender>Any</styleGender>
+		<texPath>Things/Pawn/Humanlike/Hairs/YautjaTendrilAlbinoHair</texPath>
+		<category>Yautja</category>
+		<styleTags>
+		  <li>Yautja</li>
+		</styleTags>
+	</HairDef>
+	<HairDef>
+		<defName>ABYautjaLongDreds</defName>
+		<label>Yautja Long Dreds</label>
+		<styleGender>Any</styleGender>
+		<texPath>Things/Pawn/Humanlike/Hairs/YautjaTendrilHair</texPath>
+		<category>Yautja</category>
+		<styleTags>
+		  <li>Yautja</li>
+		</styleTags>
+	</HairDef>
+<!--Ringed Short Dreds-->
+	<HairDef>
+		<defName>ABYautjaAlbinoRingedShortDreds</defName>
+		<label>Albino Yautja Gold Ringed Short Dreds</label>
+		<styleGender>Any</styleGender>
+		<texPath>Things/Pawn/Humanlike/Hairs/YautjaShortTendrilAlbinoRingedHair</texPath>
+		<category>Yautja</category>
+		<styleTags>
+		  <li>Yautja</li>
+		</styleTags>
+	</HairDef>
+    <HairDef>
+		<defName>ABYautjaAlbinoSilverRingedShortDreds</defName>
+		<label>Albino Yautja Silver Ringed Short Dreds</label>
+		<styleGender>Any</styleGender>
+		<texPath>Things/Pawn/Humanlike/Hairs/SILVER_YautjaShortTendrilAlbinoRingedHair</texPath>
+		<category>Yautja</category>
+		<styleTags>
+		  <li>Yautja</li>
+		</styleTags>
+	</HairDef>
+	<HairDef>
+		<defName>ABYautjaRingedShortDreds</defName>
+		<label>Yautja Gold Ringed Short Dreds</label>
+		<styleGender>Any</styleGender>
+		<texPath>Things/Pawn/Humanlike/Hairs/YautjaShortTendrilRingedHair</texPath>
+		<category>Yautja</category>
+		<styleTags>
+		  <li>Yautja</li>
+		</styleTags>
+	</HairDef>
+	<HairDef>
+		<defName>ABYautjaSilverRingedShortDreds</defName>
+		<label>Yautja Silver Ringed Short Dreds</label>
+		<styleGender>Any</styleGender>
+		<texPath>Things/Pawn/Humanlike/Hairs/SILVER_YautjaShortTendrilRingedHair</texPath>
+		<category>Yautja</category>
+		<styleTags>
+		  <li>Yautja</li>
+		</styleTags>
+	</HairDef>
+<!--Short Dreds-->
+	<HairDef>
+		<defName>ABYautjaAlbinoShortDreds</defName>
+		<label>Albino Yautja Short Dreds</label>
+		<styleGender>Any</styleGender>
+		<texPath>Things/Pawn/Humanlike/Hairs/YautjaShortTendrilAlbinoHair</texPath>
+		<category>Yautja</category>
+		<styleTags>
+		  <li>Yautja</li>
+		</styleTags>
+	</HairDef>
+	<HairDef>
+		<defName>ABYautjaShortDreds</defName>
+		<label>Yautja Short Dreds</label>
+		<styleGender>Any</styleGender>
+		<texPath>Things/Pawn/Humanlike/Hairs/YautjaShortTendrilHair</texPath>
+		<category>Yautja</category>
+		<styleTags>
+		  <li>Yautja</li>
+		</styleTags>
+	</HairDef>
+<!--Ringed Long Half-Up-->
+	<HairDef>
+		<defName>ABYautjaRingedLongHalfUp</defName>
+		<label>Yautja Long Gold Ringed Half-Up</label>
+		<styleGender>Any</styleGender>
+		<texPath>Things/Pawn/Humanlike/Hairs/YautjaLongHalfUpRingedHair</texPath>
+		<category>Yautja</category>
+		<styleTags>
+		  <li>Yautja</li>
+		</styleTags>
+	</HairDef>
+	<HairDef>
+		<defName>ABYautjaSilverRingedLongHalfUp</defName>
+		<label>Yautja Long Silver Ringed Half-Up</label>
+		<styleGender>Any</styleGender>
+		<texPath>Things/Pawn/Humanlike/Hairs/SILVER_YautjaLongHalfUpRingedHair</texPath>
+		<category>Yautja</category>
+		<styleTags>
+		  <li>Yautja</li>
+		</styleTags>
+	</HairDef>
+	<HairDef>
+		<defName>ABYautjaAlbinoRingedLongHalfUp</defName>
+		<label>Albino Yautja Long Gold Ringed Half-Up</label>
+		<styleGender>Any</styleGender>
+		<texPath>Things/Pawn/Humanlike/Hairs/YautjaLongHalfUpRingedAlbinoHair</texPath>
+		<category>Yautja</category>
+		<styleTags>
+		  <li>Yautja</li>
+		</styleTags>
+	</HairDef>
+	<HairDef>
+		<defName>ABYautjaAlbinoSilverRingedLongHalfUp</defName>
+		<label>Albino Yautja Long Silver Ringed Half-Up</label>
+		<styleGender>Any</styleGender>
+		<texPath>Things/Pawn/Humanlike/Hairs/SILVER_YautjaLongHalfUpRingedAlbinoHair</texPath>
+		<category>Yautja</category>
+		<styleTags>
+		  <li>Yautja</li>
+		</styleTags>
+	</HairDef>
+<!--Long Half-Up-->
+	<HairDef>
+		<defName>ABYautjaLongHalfUp</defName>
+		<label>Yautja Long Half-Up</label>
+		<styleGender>Any</styleGender>
+		<texPath>Things/Pawn/Humanlike/Hairs/YautjaLongHalfUpHair</texPath>
+		<category>Yautja</category>
+		<styleTags>
+		  <li>Yautja</li>
+		</styleTags>
+	</HairDef>
+	<HairDef>
+		<defName>ABYautjaLongSilverHalfUp</defName>
+		<label>Yautja Long Silver Half-Up</label>
+		<styleGender>Any</styleGender>
+		<texPath>Things/Pawn/Humanlike/Hairs/SILVER_YautjaLongHalfUpHair</texPath>
+		<category>Yautja</category>
+		<styleTags>
+		  <li>Yautja</li>
+		</styleTags>
+	</HairDef>
+	<HairDef>
+		<defName>ABYautjaAlbinoLongHalfUp</defName>
+		<label>Albino Yautja Long Half-Up</label>
+		<styleGender>Any</styleGender>
+		<texPath>Things/Pawn/Humanlike/Hairs/YautjaLongHalfUpAlbinoHair</texPath>
+		<category>Yautja</category>
+		<styleTags>
+		  <li>Yautja</li>
+		</styleTags>
+	</HairDef>
+	<HairDef>
+		<defName>ABYautjaAlbinoLongSilverHalfUp</defName>
+		<label>Albino Yautja Long Silver Half-Up</label>
+		<styleGender>Any</styleGender>
+		<texPath>Things/Pawn/Humanlike/Hairs/SILVER_YautjaLongHalfUpAlbinoHair</texPath>
+		<category>Yautja</category>
+		<styleTags>
+		  <li>Yautja</li>
+		</styleTags>
+	</HairDef>
+<!--Short Half-Up-->
+	<HairDef>
+		<defName>ABYautjaShortHalfUp</defName>
+		<label>Yautja Short Half-Up</label>
+		<styleGender>Any</styleGender>
+		<texPath>Things/Pawn/Humanlike/Hairs/YautjaShortHalfUpHair</texPath>
+		<category>Yautja</category>
+		<styleTags>
+		  <li>Yautja</li>
+		</styleTags>
+	</HairDef>
+	<HairDef>
+		<defName>ABYautjaShortSilverHalfUp</defName>
+		<label>Yautja Short Silver Half-Up</label>
+		<styleGender>Any</styleGender>
+		<texPath>Things/Pawn/Humanlike/Hairs/SILVER_YautjaShortHalfUpHair</texPath>
+		<category>Yautja</category>
+		<styleTags>
+		  <li>Yautja</li>
+		</styleTags>
+	</HairDef>  
+	<HairDef>
+		<defName>ABYautjaAlbinoShortHalfUp</defName>
+		<label>Albino Yautja Short Half-Up</label>
+		<styleGender>Any</styleGender>
+		<texPath>Things/Pawn/Humanlike/Hairs/YautjaShortHalfUpAlbinoHair</texPath>
+		<category>Yautja</category>
+		<styleTags>
+		  <li>Yautja</li>
+		</styleTags>
+	</HairDef>
+	<HairDef>
+		<defName>ABYautjaAlbinoShortSilverHalfUp</defName>
+		<label>Albino Yautja Short Silver Half-Up</label>
+		<styleGender>Any</styleGender>
+		<texPath>Things/Pawn/Humanlike/Hairs/SILVER_YautjaShortHalfUpAlbinoHair</texPath>
+		<category>Yautja</category>
+		<styleTags>
+		  <li>Yautja</li>
+		</styleTags>
+	</HairDef>
+<!--Ringed Short Half-Up-->
+	<HairDef>
+		<defName>ABYautjaRingedShortHalfUp</defName>
+		<label>Yautja Short Gold Ringed Half-Up</label>
+		<styleGender>Any</styleGender>
+		<texPath>Things/Pawn/Humanlike/Hairs/YautjaShortHalfUpRingedHair</texPath>
+		<category>Yautja</category>
+		<styleTags>
+		  <li>Yautja</li>
+		</styleTags>
+	</HairDef>
+	<HairDef>
+		<defName>ABYautjaSilverRingedShortHalfUp</defName>
+		<label>Yautja Short Silver Ringed Half-Up</label>
+		<styleGender>Any</styleGender>
+		<texPath>Things/Pawn/Humanlike/Hairs/SILVER_YautjaShortHalfUpRingedHair</texPath>
+		<category>Yautja</category>
+		<styleTags>
+		  <li>Yautja</li>
+		</styleTags>
+	</HairDef>
+	<HairDef>
+		<defName>ABYautjaAlbinoRingedShortHalfUp</defName>
+		<label>Albino Yautja Short Gold Ringed Half-Up</label>
+		<styleGender>Any</styleGender>
+		<texPath>Things/Pawn/Humanlike/Hairs/YautjaShortHalfUpRingedAlbinoHair</texPath>
+		<category>Yautja</category>
+		<styleTags>
+		  <li>Yautja</li>
+		</styleTags>
+	</HairDef>
+	<HairDef>
+		<defName>ABYautjaAlbinoSilverRingedShortHalfUp</defName>
+		<label>Albino Yautja Short Silver Ringed Half-Up</label>
+		<styleGender>Any</styleGender>
+		<texPath>Things/Pawn/Humanlike/Hairs/SILVER_YautjaShortHalfUpRingedAlbinoHair</texPath>
+		<category>Yautja</category>
+		<styleTags>
+		  <li>Yautja</li>
+		</styleTags>
+	</HairDef>
+<!--Long Ringed Ponytail-->
+	<HairDef>
+		<defName>ABYautjaRingedLongPonytail</defName>
+		<label>Yautja Long Gold Ringed Ponytail</label>
+		<styleGender>Any</styleGender>
+		<texPath>Things/Pawn/Humanlike/Hairs/YautjaRingedLongPonytailHair</texPath>
+		<category>Yautja</category>
+		<styleTags>
+		  <li>Yautja</li>
+		</styleTags>
+	</HairDef>
+	<HairDef>
+		<defName>ABYautjaSilverRingedLongPonytail</defName>
+		<label>Yautja Long Silver Ringed Ponytail</label>
+		<styleGender>Any</styleGender>
+		<texPath>Things/Pawn/Humanlike/Hairs/SILVER_YautjaRingedLongPonytailHair</texPath>
+		<category>Yautja</category>
+		<styleTags>
+		  <li>Yautja</li>
+		</styleTags>
+	</HairDef>  
+	<HairDef>
+		<defName>ABYautjaAlbinoRingedLongPonytail</defName>
+		<label>Albino Yautja Long Gold Ringed Ponytail</label>
+		<styleGender>Any</styleGender>
+		<texPath>Things/Pawn/Humanlike/Hairs/YautjaRingedLongPonytailAlbinoHair</texPath>
+		<category>Yautja</category>
+		<styleTags>
+		  <li>Yautja</li>
+		</styleTags>
+	</HairDef>
+	<HairDef>
+		<defName>ABYautjaAlbinoSilverRingedLongPonytail</defName>
+		<label>Albino Yautja Long Silver Ringed Ponytail</label>
+		<styleGender>Any</styleGender>
+		<texPath>Things/Pawn/Humanlike/Hairs/SILVER_YautjaRingedLongPonytailAlbinoHair</texPath>
+		<category>Yautja</category>
+		<styleTags>
+		  <li>Yautja</li>
+		</styleTags>
+	</HairDef>
+<!--Long Ponytail-->
+	<HairDef>
+		<defName>ABYautjaLongPonytail</defName>
+		<label>Yautja Long Gold Ponytail</label>
+		<styleGender>Any</styleGender>
+		<texPath>Things/Pawn/Humanlike/Hairs/YautjaLongPonytailHair</texPath>
+		<category>Yautja</category>
+		<styleTags>
+		  <li>Yautja</li>
+		</styleTags>
+	</HairDef>
+	<HairDef>
+		<defName>ABYautjaLongSilverPonytail</defName>
+		<label>Yautja Long Silver Ponytail</label>
+		<styleGender>Any</styleGender>
+		<texPath>Things/Pawn/Humanlike/Hairs/SILVER_YautjaLongPonytailHair</texPath>
+		<category>Yautja</category>
+		<styleTags>
+		  <li>Yautja</li>
+		</styleTags>
+	</HairDef>
+	<HairDef>
+		<defName>ABYautjaAlbinoLongPonytail</defName>
+		<label>Albino Yautja Long Gold Ponytail</label>
+		<styleGender>Any</styleGender>
+		<texPath>Things/Pawn/Humanlike/Hairs/YautjaLongPonytailAlbinoHair</texPath>
+		<category>Yautja</category>
+		<styleTags>
+		  <li>Yautja</li>
+		</styleTags>
+	</HairDef>
+	<HairDef>
+		<defName>ABYautjaAlbinoLongSilverPonytail</defName>
+		<label>Albino Yautja Long Silver Ponytail</label>
+		<styleGender>Any</styleGender>
+		<texPath>Things/Pawn/Humanlike/Hairs/SILVER_YautjaLongPonytailAlbinoHair</texPath>
+		<category>Yautja</category>
+		<styleTags>
+		  <li>Yautja</li>
+		</styleTags>
+	</HairDef>
+<!--Short Ringed Ponytail-->
+	<HairDef>
+		<defName>ABYautjaRingedShortPonytail</defName>
+		<label>Yautja Short Gold Ringed Ponytail</label>
+		<styleGender>Any</styleGender>
+		<texPath>Things/Pawn/Humanlike/Hairs/YautjaRingedShortPonytailHair</texPath>
+		<category>Yautja</category>
+		<styleTags>
+		  <li>Yautja</li>
+		</styleTags>
+	</HairDef>
+	<HairDef>
+		<defName>ABYautjaSilverRingedShortPonytail</defName>
+		<label>Yautja Short Silver Ringed Ponytail</label>
+		<styleGender>Any</styleGender>
+		<texPath>Things/Pawn/Humanlike/Hairs/SILVER_YautjaRingedShortPonytailHair</texPath>
+		<category>Yautja</category>
+		<styleTags>
+		  <li>Yautja</li>
+		</styleTags>
+	</HairDef>
+	<HairDef>
+		<defName>ABYautjaAlbinoRingedShortPonytail</defName>
+		<label>Albino Yautja Short Gold Ringed Ponytail</label>
+		<styleGender>Any</styleGender>
+		<texPath>Things/Pawn/Humanlike/Hairs/YautjaRingedShortPonytailAlbinoHair</texPath>
+		<category>Yautja</category>
+		<styleTags>
+		  <li>Yautja</li>
+		</styleTags>
+	</HairDef>
+	<HairDef>
+		<defName>ABYautjaAlbinoSilverRingedShortPonytail</defName>
+		<label>Albino Yautja Short Silver Ringed Ponytail</label>
+		<styleGender>Any</styleGender>
+		<texPath>Things/Pawn/Humanlike/Hairs/SILVER_YautjaRingedShortPonytailAlbinoHair</texPath>
+		<category>Yautja</category>
+		<styleTags>
+		  <li>Yautja</li>
+		</styleTags>
+	</HairDef>
+<!--Short Ponytail-->
+	<HairDef>
+		<defName>ABYautjaShortPonytail</defName>
+		<label>Yautja Short Gold Ponytail</label>
+		<styleGender>Any</styleGender>
+		<texPath>Things/Pawn/Humanlike/Hairs/YautjaShortPonytailHair</texPath>
+		<category>Yautja</category>
+		<styleTags>
+		  <li>Yautja</li>
+		</styleTags>
+	</HairDef>
+	<HairDef>
+		<defName>ABYautjaShortSilverPonytail</defName>
+		<label>Yautja Short Silver Ponytail</label>
+		<styleGender>Any</styleGender>
+		<texPath>Things/Pawn/Humanlike/Hairs/SILVER_YautjaShortPonytailHair</texPath>
+		<category>Yautja</category>
+		<styleTags>
+		  <li>Yautja</li>
+		</styleTags>
+	</HairDef>
+	<HairDef>
+		<defName>ABYautjaAlbinoShortPonytail</defName>
+		<label>Albino Yautja Short Gold Ponytail</label>
+		<styleGender>Any</styleGender>
+		<texPath>Things/Pawn/Humanlike/Hairs/YautjaShortPonytailAlbinoHair</texPath>
+		<category>Yautja</category>
+		<styleTags>
+		  <li>Yautja</li>
+		</styleTags>
+	</HairDef>
+	<HairDef>
+		<defName>ABYautjaAlbinoShortSilverPonytail</defName>
+		<label>Albino Yautja Short Silver Ponytail</label>
+		<styleGender>Any</styleGender>
+		<texPath>Things/Pawn/Humanlike/Hairs/SILVER_YautjaShortPonytailAlbinoHair</texPath>
+		<category>Yautja</category>
+		<styleTags>
+		  <li>Yautja</li>
+		</styleTags>
+	</HairDef>  
+<!--Bun-->
+	<HairDef>
+		<defName>ABYautjaBun</defName>
+		<label>Yautja Gold Bun</label>
+		<styleGender>Any</styleGender>
+		<texPath>Things/Pawn/Humanlike/Hairs/YautjaBunHair</texPath>
+		<category>Yautja</category>
+		<styleTags>
+		  <li>Yautja</li>
+		</styleTags>
+	</HairDef>
+	<HairDef>
+		<defName>ABYautjaSilverBun</defName>
+		<label>Yautja Silver Bun</label>
+		<styleGender>Any</styleGender>
+		<texPath>Things/Pawn/Humanlike/Hairs/SILVER_YautjaBunHair</texPath>
+		<category>Yautja</category>
+		<styleTags>
+		  <li>Yautja</li>
+		</styleTags>
+	</HairDef>
+	<HairDef>
+		<defName>ABYautjaAlbinoBun</defName>
+		<label>Albino Yautja Gold Bun</label>
+		<styleGender>Any</styleGender>
+		<texPath>Things/Pawn/Humanlike/Hairs/YautjaAlbinoBunHair</texPath>
+		<category>Yautja</category>
+		<styleTags>
+		  <li>Yautja</li>
+		</styleTags>
+	</HairDef>
+	<HairDef>
+		<defName>ABYautjaAlbinoSilverBun</defName>
+		<label>Albino Yautja Silver Bun</label>
+		<styleGender>Any</styleGender>
+		<texPath>Things/Pawn/Humanlike/Hairs/SILVER_YautjaAlbinoBunHair</texPath>
+		<category>Yautja</category>
+		<styleTags>
+		  <li>Yautja</li>
+		</styleTags>
+	</HairDef>
+</Defs>

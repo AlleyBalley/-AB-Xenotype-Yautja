@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/GeneDef[defName="ABYautjaBald"]</xpath>
+			<value>
+				<hairTagFilter>
+			<whitelist>true</whitelist>
+			<tags>
+				<li>YautjaBALD</li>
+			</tags>
+		</hairTagFilter>
+			</value>
+	</Operation>
+</Patch>

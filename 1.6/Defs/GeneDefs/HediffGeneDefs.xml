@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!--Head-->	
+	<GeneDef ParentName="GeneJawBase">
+		<defName>ABYautjaHead</defName>
+		<label>crested head</label>
+		<labelShortAdj>crested head</labelShortAdj>
+		<description>A head that grows a crest off the back of the scalp.</description>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>0</biostatMet>
+		<neverGrayHair>false</neverGrayHair>
+		<displayOrderInCategory>400</displayOrderInCategory>
+		<iconPath>UI/Icons/Genes/GeneIcon_ABYautjaHead</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<minMelanin>2</minMelanin>
+		<missingGeneRomanceChanceFactor>0.75</missingGeneRomanceChanceFactor>
+		<displayCategory>ABYautjaCategory</displayCategory>
+		<customEffectDescriptions>
+			<li>When unarmed may headbutt with their crest, causing blunt damage</li>
+		</customEffectDescriptions>
+		<exclusionTags>
+			<li>AG_Heads</li>
+			<li>Outland_Heads</li>
+			<li>Heads</li>
+			<li>Head</li>
+			<li>Crest</li>
+			<li>Eye</li>
+			<li>Eyes</li>
+			<li>EyeColor</li>
+			<li>EyeColors</li>
+			<li>EyesColor</li>
+			<li>EyesColors</li>
+		</exclusionTags>
+		<forcedHeadTypes>
+			<li>ABYautjaHeadGeneYG_Albino</li>
+			<li>ABYautjaHeadGeneYG_Decorated</li>
+			<li>ABYautjaHeadGeneYG_Speckled</li>
+			<li>ABYautjaHeadGeneYG_Striped</li>
+			<li>ABYautjaHeadGeneY_Albino</li>
+			<li>ABYautjaHeadGeneY_Decorated</li>
+			<li>ABYautjaHeadGeneY_Speckled</li>
+			<li>ABYautjaHeadGeneY_Striped</li>
+			<li>ABYautjaHeadGeneYO_Albino</li>
+			<li>ABYautjaHeadGeneYO_Decorated</li>
+			<li>ABYautjaHeadGeneYO_Speckled</li>
+			<li>ABYautjaHeadGeneYO_Striped</li>
+			<li>ABYautjaHeadGeneO_Albino</li>
+			<li>ABYautjaHeadGeneO_Decorated</li>
+			<li>ABYautjaHeadGeneO_Speckled</li>
+			<li>ABYautjaHeadGeneO_Striped</li>
+			<li>ABYautjaHeadGeneR_Albino</li>
+			<li>ABYautjaHeadGeneR_Decorated</li>
+			<li>ABYautjaHeadGeneR_Speckled</li>
+			<li>ABYautjaHeadGeneR_Striped</li>
+		</forcedHeadTypes>
+		<beardTagFilter>
+		  <whitelist>true</whitelist>
+		  <tags>
+			<li>NoBeard</li>
+		  </tags>
+		</beardTagFilter>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>crest</symbol>
+				</li>
+				<li>
+					<symbol>predator</symbol>
+				</li>
+				<li>
+					<symbol>yautja</symbol>
+				</li>
+			</prefixSymbols>
+		</symbolPack>
+		<modExtensions MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+			<li Class="VEF.Genes.GeneExtension">
+				<backgroundPathEndogenes>UI/Icons/Genes/Yautja_Endogene_Background</backgroundPathEndogenes>
+				<hediffsToBodyParts>
+					<li>
+						<hediff>ABYautjaCrest</hediff>
+						<bodyparts>
+							<li>Head</li>
+						</bodyparts>
+					</li>
+				</hediffsToBodyParts>
+			</li>
+		</modExtensions>
+  </GeneDef>
+<!-- Skin-->
+	<GeneDef>
+		<defName>ABYautjaLeatherySkin</defName>
+		<label>leathery skin</label>
+		<labelShortAdj>leathery skin</labelShortAdj>
+		<description>The skin is thick and leathery, forming a hearty barrier between you and the outside world. The small scales that pepper the skin aid you in damage resistance.</description>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<customEffectDescriptions>
+			<li>Armor against Blunt x40%</li>
+			<li>Armor against Sharp x20%</li>
+		</customEffectDescriptions>
+		<displayCategory>ABYautjaCategory</displayCategory>
+		<displayOrderInCategory>401</displayOrderInCategory>
+		<fur>ABYautja_LeatherySkin</fur>
+		<skinIsHairColor>false</skinIsHairColor>
+		<tattoosVisible>true</tattoosVisible>
+		<missingGeneRomanceChanceFactor>1</missingGeneRomanceChanceFactor>
+		<iconPath>UI/Icons/Genes/GeneIcon_YautjaLeatherySkin</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<beardTagFilter>
+			<whitelist>true</whitelist>
+			<tags>
+				<li>NoBeard</li>
+			</tags>
+		</beardTagFilter>
+		<exclusionTags>
+			<li>Body</li>
+			<li>Bodies</li>
+			<li>AG_Bodies</li>
+			<li>Skin</li>
+			<li>Fur</li>
+			<li>Scale</li>
+			<li>Scales</li>
+		</exclusionTags>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_Fur</nodeClass>
+				<workerClass>PawnRenderNodeWorker_Fur</workerClass>
+				<baseLayer>5</baseLayer>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<colorType>Skin</colorType>
+				<parentTagDef>Body</parentTagDef>
+			</li>
+		</renderNodeProperties>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>scale</symbol>
+				</li>
+				<li>
+					<symbol>leather</symbol>
+				</li>
+				<li>
+					<symbol>yautja</symbol>
+				</li>
+			</prefixSymbols>
+		</symbolPack>
+		<painFactor>-0.25</painFactor>
+		<statOffsets>
+		<Flammability>-0.1</Flammability>
+		</statOffsets>
+		<statFactors>
+			<PainShockThreshold>1.15</PainShockThreshold>
+		</statFactors>
+		<modExtensions MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+			<li Class="VEF.Genes.GeneExtension">
+				<backgroundPathEndogenes>UI/Icons/Genes/Yautja_Endogene_Background</backgroundPathEndogenes>
+				<useSkinColorForFur>true</useSkinColorForFur>
+				<hediffToWholeBody>ABYautjaLeatherySkin</hediffToWholeBody>
+			</li>
+		</modExtensions>
+	</GeneDef>	
+<!--Claws-->
+	<GeneDef ParentName="GeneHandsBase">
+		<defName>ABYautjaClaws</defName>
+		<label>yautja claws</label>
+		<description>Those who possess this gene have small pointed claws protruding from their fingers. These claws minorly inhibit dexterity in exchange for, well, having claws (and their benefits.)</description>
+		<iconPath>UI/Icons/Genes/GeneIcon_YautjaClaws</iconPath>
+		<displayCategory>ABYautjaCategory</displayCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<customEffectDescriptions>
+			<li>Unarmed melee attacks inflict sharp damage.</li>
+		</customEffectDescriptions>
+	<modExtensions MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+			<li Class="VEF.Genes.GeneExtension">
+				<backgroundPathEndogenes>UI/Icons/Genes/Yautja_Endogene_Background</backgroundPathEndogenes>
+				<hediffsToBodyParts>
+					<li>
+						<hediff>ABYautjaClaws</hediff>
+						<bodyparts>
+							<li>Hand</li>
+							<li>Hand</li>
+						</bodyparts>
+					</li>
+				</hediffsToBodyParts>
+			</li>
+		</modExtensions>
+	</GeneDef>
+<!--Mandibles-->
+    <GeneDef Name="ABYautjaMandibles_Base" Abstract="True">
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<endogeneCategory>Headbone</endogeneCategory>
+		<displayCategory>ABYautjaCategory</displayCategory>
+		<displayOrderInCategory>110</displayOrderInCategory>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<randomChosen>false</randomChosen>
+		<customEffectDescriptions>
+			<li>Eating Speed x3%</li>
+			<li>When unarmed may bite with mandibles</li>
+		</customEffectDescriptions>
+	</GeneDef>
+    <GeneDef ParentName="ABYautjaMandibles_Base">
+        <defName>ABYautjaUpperMandibles</defName>
+        <label>Yautja Upper Mandibles</label>
+        <description>A finger-like digit that sprouts from the cheekbone and possesses a sharp tooth.</description>
+        <iconPath>UI/Icons/Genes/GeneIcon_YautjaUpperMandibles</iconPath>
+        <renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPath>Things/Pawn/Humanlike/HeadAttachments/UpperMandibles/YautjaUpperMandibles</texPath>
+				<parentTagDef>Head</parentTagDef>
+				<color>(255, 255, 255)</color>
+				<visibleFacing>
+					<li>East</li>
+					<li>South</li>
+					<li>West</li>
+				</visibleFacing>
+				<baseLayer>56</baseLayer>
+			</li>
+        </renderNodeProperties>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>mandible</symbol>
+				</li>
+				<li>
+					<symbol>mandibles</symbol>
+				</li>
+				<li>
+					<symbol>saber</symbol>
+				</li>
+				<li>
+					<symbol>sabers</symbol>
+				</li>
+			</prefixSymbols>
+		</symbolPack>	
+		<modExtensions MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+			<li Class="VEF.Genes.GeneExtension">
+				<backgroundPathEndogenes>UI/Icons/Genes/Yautja_Endogene_Background</backgroundPathEndogenes>
+				<hediffsToBodyParts>
+					<li>
+						<hediff>ABYautjaUpperMandibles</hediff>
+						<bodyparts>
+							<li>Jaw</li>
+						</bodyparts>
+					</li>
+				</hediffsToBodyParts>
+			</li>
+		</modExtensions>	
+    </GeneDef>
+	
+	    <GeneDef ParentName="ABYautjaMandibles_Base">
+        <defName>ABYautjaLowerMandibles</defName>
+        <label>Yautja Lower Mandibles</label>
+        <description>A finger-like digit that sprouts from the jawline and possesses a sharp tooth.</description>
+        <iconPath>UI/Icons/Genes/GeneIcon_YautjaLowerMandibles</iconPath>
+        <renderNodeProperties>
+			<li>
+				<texPath>Things/Pawn/Humanlike/HeadAttachments/LowerMandibles/YautjaLowerMandibles</texPath>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<parentTagDef>Head</parentTagDef>
+				<color>(255, 255, 255)</color>
+				<visibleFacing>
+					<li>East</li>
+					<li>South</li>
+					<li>West</li>
+				</visibleFacing>
+				<baseLayer>55</baseLayer>
+			</li>
+        </renderNodeProperties>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>mandible</symbol>
+				</li>
+				<li>
+					<symbol>tusk</symbol>
+				</li>
+			</prefixSymbols>
+		</symbolPack>	
+		<modExtensions MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+			<li Class="VEF.Genes.GeneExtension">
+				<backgroundPathEndogenes>UI/Icons/Genes/Yautja_Endogene_Background</backgroundPathEndogenes>
+				<hediffsToBodyParts>
+					<li>
+						<hediff>ABYautjaLowerMandibles</hediff>
+						<bodyparts>
+							<li>Jaw</li>
+						</bodyparts>
+					</li>
+				</hediffsToBodyParts>
+			</li>
+		</modExtensions>	
+    </GeneDef>
+	
+	<GeneDef ParentName="ABYautjaMandibles_Base">
+        <defName>ABYautjaSuperiorUpperMandibles</defName>
+        <label>Yautja Superior Upper Mandibles</label>
+        <description>A finger-like digit that sprouts from the outer cheekbone and possesses a sharp tooth.</description>
+        <iconPath>UI/Icons/Genes/GeneIcon_YautjaSuperiorUpperMandibles</iconPath>
+        <renderNodeProperties>
+			<li>
+				<texPath>Things/Pawn/Humanlike/HeadAttachments/Superior_UpperMandibles/Superior_YautjaUpperMandibles</texPath>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<parentTagDef>Head</parentTagDef>
+				<color>(255, 255, 255)</color>
+				<visibleFacing>
+					<li>East</li>
+					<li>South</li>
+					<li>West</li>
+				</visibleFacing>
+				<baseLayer>58</baseLayer>
+			</li>
+        </renderNodeProperties>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>mandible</symbol>
+				</li>
+				<li>
+					<symbol>saber</symbol>
+				</li>
+			</prefixSymbols>
+		</symbolPack>	
+		<modExtensions MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+			<li Class="VEF.Genes.GeneExtension">
+				<backgroundPathEndogenes>UI/Icons/Genes/Yautja_Endogene_Background</backgroundPathEndogenes>
+				<hediffsToBodyParts>
+					<li>
+						<hediff>ABYautjaSuperiorUpperMandibles</hediff>
+						<bodyparts>
+							<li>Jaw</li>
+						</bodyparts>
+					</li>
+				</hediffsToBodyParts>
+			</li>
+		</modExtensions>	
+    </GeneDef>
+	
+	<GeneDef ParentName="ABYautjaMandibles_Base">
+        <defName>ABYautjaSuperiorLowerMandibles</defName>
+        <label>Yautja Superior Lower Mandibles</label>
+        <description>A finger-like digit that sprouts from the outer jawline and possesses a sharp tooth.</description>
+        <iconPath>UI/Icons/Genes/GeneIcon_YautjaSuperiorLowerMandibles</iconPath>
+        <renderNodeProperties>
+			<li>
+				<texPath>Things/Pawn/Humanlike/HeadAttachments/Superior_LowerMandibles/Superior_YautjaLowerMandibles</texPath>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<parentTagDef>Head</parentTagDef>
+				<color>(255, 255, 255)</color>
+				<visibleFacing>
+					<li>East</li>
+					<li>South</li>
+					<li>West</li>
+				</visibleFacing>
+				<baseLayer>57</baseLayer>
+			</li>
+        </renderNodeProperties>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>mandible</symbol>
+				</li>
+				<li>
+					<symbol>tusk</symbol>
+				</li>
+			</prefixSymbols>
+		</symbolPack>	
+		<modExtensions MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+			<li Class="VEF.Genes.GeneExtension">
+				<backgroundPathEndogenes>UI/Icons/Genes/Yautja_Endogene_Background</backgroundPathEndogenes>
+				<hediffsToBodyParts>
+					<li>
+						<hediff>ABYautjaSuperiorLowerMandibles</hediff>
+						<bodyparts>
+							<li>Jaw</li>
+						</bodyparts>
+					</li>
+				</hediffsToBodyParts>
+			</li>
+		</modExtensions>	
+    </GeneDef>
+</Defs>

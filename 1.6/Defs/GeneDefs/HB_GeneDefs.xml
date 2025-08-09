@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <GeneDef ParentName="ABYautjaMandibles_Base">
+        <defName>HBBiohazardMandibles</defName>
+        <label>Biohazard Mandibles</label>
+        <description>A finger-like digit that sprouts from the cheekbone and possesses a sharp tooth. This array appears in a set of three with a mandible anchored to each cheekbone and a single, larger mandible placed in the center of the jawbone.</description>
+        <iconPath>UI/Icons/Genes/HBBiohazardMandiblesIcon</iconPath>
+        <renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPath>Things/Pawn/Humanlike/HeadAttachments/ComboMandibles/HBBiohazardMandibles</texPath>
+				<parentTagDef>Head</parentTagDef>
+				<color>(255, 255, 255)</color>
+				<visibleFacing>
+					<li>East</li>
+					<li>South</li>
+					<li>West</li>
+				</visibleFacing>
+				<baseLayer>56</baseLayer>
+			</li>
+        </renderNodeProperties>
+		<exclusionTags>
+		<!-- No clipping with regular upper, regular lower, superior upper, superior lower -->
+			<li>HBSpotlightMandible</li> <!-- Uses same lower mandible -->
+			<li></li>
+			<li></li>
+		</exclusionTags>
+
+		<modExtensions MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+			<li Class="VEF.Genes.GeneExtension">
+				<backgroundPathEndogenes>UI/Icons/Genes/Yautja_Endogene_Background</backgroundPathEndogenes>
+				<hediffsToBodyParts>
+					<li>
+						<hediff>HBYautjaComboMandibles</hediff>
+						<bodyparts>
+							<li>Jaw</li>
+						</bodyparts>
+					</li>
+				</hediffsToBodyParts>
+			</li>
+		</modExtensions>
+    </GeneDef>
+
+<!-- =======================================================SCOOPTOOTH============================================================ -->
+
+    <GeneDef ParentName="ABYautjaMandibles_Base">
+        <defName>HBSpotlightMandible</defName>
+        <label>Spotlight Mandible</label>
+        <description>A finger-like digit that usually sprouts from the cheekbone, possessing a sharp tooth. This lonely apprendage is anchored to the jawbone. While it certainly is large and pointy, it admittedly looks kind of silly by itself. One is the loneliest number, after all.</description>
+        <iconPath>UI/Icons/Genes/HBSpotlightMandibleIcon</iconPath>
+        <renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPath>Things/Pawn/Humanlike/HeadAttachments/SpotlightMandible/HBSpotlightMandible</texPath>
+				<parentTagDef>Head</parentTagDef>
+				<color>(255, 255, 255)</color>
+				<visibleFacing>
+					<li>East</li>
+					<li>South</li>
+					<li>West</li>
+				</visibleFacing>
+				<baseLayer>54</baseLayer>
+			</li>
+        </renderNodeProperties>
+		<exclusionTags>
+		<!-- No clipping with regular upper, regular lower, superior upper, superior lower -->
+			<li>HBBiohazardMandibles</li> <!-- Uses same lower mandible -->
+			<li></li>
+			<li></li>
+		</exclusionTags>
+
+		<modExtensions MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+			<li Class="VEF.Genes.GeneExtension">
+				<backgroundPathEndogenes>UI/Icons/Genes/Yautja_Endogene_Background</backgroundPathEndogenes>
+				<hediffsToBodyParts>
+					<li>
+						<hediff>HBYautjaLowerMandible</hediff>
+						<bodyparts>
+							<li>Jaw</li>
+						</bodyparts>
+					</li>
+				</hediffsToBodyParts>
+			</li>
+		</modExtensions>
+	</GeneDef>
+</Defs>

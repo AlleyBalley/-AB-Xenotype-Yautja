@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<FactionDef Abstract="True" Name="ABYautjaPlayerFactionBase" ParentName="FactionBase">
+		<isPlayer>true</isPlayer>
+		<techLevel>Ultra</techLevel>
+		<pawnsPlural>Yautja</pawnsPlural>
+		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+		<colorSpectrum>
+			<li>(13, 58, 32)</li>
+			<li>(83, 142, 74</li>
+			<li>(153, 234, 44)</li>
+		</colorSpectrum>
+		<maxPawnCostPerTotalPointsCurve>
+			<points>
+				<li>(0,35)</li>
+				<li>(70, 50)</li>
+				<li>(700, 100)</li>
+				<li>(1300, 150)</li>
+				<li>(100000, 10000)</li>
+			</points>
+		</maxPawnCostPerTotalPointsCurve>
+		<allowedCultures IgnoreIfNoMatchingField="True">
+			<li MayRequire="Ludeon.RimWorld.Ideology">ABYautja_Culture</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">ABBadBlood_Culture</li>
+		</allowedCultures>
+		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+		<factionIconPath>UI/Icons/Icon_YautjaPlayer</factionIconPath>
+	</FactionDef>
+	<FactionDef ParentName="ABYautjaPlayerFactionBase">
+		<defName>ABYautja_PlayerColony</defName>
+		<label>Yautja Colony</label>
+		<description>Yautja Colony Start.</description>
+		<basicMemberKind>Colonist_ABYautja</basicMemberKind>
+		<pawnsPlural>Yautja</pawnsPlural>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Offworld</li>
+					<li>Pirate</li>
+					<li>Tribal</li>
+					<li>Outlander</li>
+					<li>ABYautja_Standard</li>
+					<li>ABYautja_Adult</li>
+					<li>ABYautja_Hunter</li>
+					<li>ABYautja_YoungBlood</li>
+					<li>ABYautja_Unblooded</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+		<startingResearchTags>
+			<li>ClassicStart</li>
+			<!--<li>YautjaStart</li>-->
+		</startingResearchTags>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Synthread</li>
+				<li>Leather_Light</li>
+				<li>Leather_Plain</li>
+				<li>Leather_Bear</li>
+				<li>Steel</li>
+			</thingDefs>
+		</apparelStuffFilter>
+		<pawnGroupMakers>
+			<li>
+				<kindDef>Peaceful</kindDef>
+				<commonality>100</commonality>
+				<options>
+					<Colonist_ABYautja>100</Colonist_ABYautja>
+				</options>
+			</li>
+		</pawnGroupMakers>
+	</FactionDef>
+	
+	<FactionDef ParentName="ABYautjaPlayerFactionBase">
+		<defName>ABYautja_PlayerUnblooded</defName>
+		<label>Yautja Unblooded</label>
+		<description>Considered ready for your first autonomous hunt, you are sent on an unknown world to make your first hunts and come back to your clan by your own mean. Death before dishonor.</description>
+		<basicMemberKind>Colonist_ABYautja_Unblooded</basicMemberKind>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Pirate</li>
+					<li>Outlander</li>
+					<li>Offworlder</li>
+					<li>Tribal</li>
+					<li>ABYautja_Unblooded</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+		<startingResearchTags>
+			<li>ClassicStart</li>
+			<!--<li>YautjaUnbloodedStart</li>-->
+		</startingResearchTags>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Leather_Light</li>
+				<li>Leather_Plain</li>
+				<li>Leather_Bear</li>
+			</thingDefs>
+		</apparelStuffFilter>
+		<pawnGroupMakers>
+			<li>
+				<kindDef>Peaceful</kindDef>
+				<commonality>100</commonality>
+				<options>
+					<Colonist_ABYautja_Unblooded>100</Colonist_ABYautja_Unblooded>
+				</options>
+			</li>
+		</pawnGroupMakers>
+	</FactionDef>
+	
+	<FactionDef ParentName="ABYautjaPlayerFactionBase">
+		<defName>ABYautja_PlayerBlooded</defName>
+		<label>Yautja Blooded</label>
+		<description>On a scouting mission to find new hunting grounds, something disastrous happened to your ship and you are possibly the only 5 survivors. Without a choice, you landed in unknown territory and have to face new dangers while you try to make your way back to your Clan.</description>
+		<basicMemberKind>Colonist_ABYautja_Blooded</basicMemberKind>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Pirate</li>
+					<li>Outlander</li>
+					<li>Offworlder</li>
+					<li>Tribal</li>
+					<li>ABYautja_Blooded</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+		<startingResearchTags>
+			<li>ClassicStart</li>
+			<!--<li>YautjaBloodedStart</li>-->
+		</startingResearchTags>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Synthread</li>
+				<li>Leather_Light</li>
+				<li>Leather_Plain</li>
+				<li>Leather_Bear</li>
+			</thingDefs>
+		</apparelStuffFilter>
+		<pawnGroupMakers>
+			<li>
+				<kindDef>Peaceful</kindDef>
+				<commonality>100</commonality>
+				<options>
+					<Colonist_ABYautja_Blooded>100</Colonist_ABYautja_Blooded>
+				</options>
+			</li>
+		</pawnGroupMakers>
+	</FactionDef>
+	
+	<FactionDef ParentName="ABYautjaPlayerFactionBase">
+		<defName>ABYautja_PlayerBadBlood</defName>
+		<label>Yautja Bad Blood</label>
+		<description>You have broken the code of honor and have been cast out from any clan. You have been titled a Bad Blood, those you called your brothers and sisters will now hunt you.</description>
+		<techLevel>Neolithic</techLevel>
+		<basicMemberKind>Colonist_ABYautja_BadBlooded</basicMemberKind>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Pirate</li>
+					<li>Outlander</li>
+					<li>Offworlder</li>
+					<li>Tribal</li>
+					<li>ABYautja_Standard</li>
+					<li>ABYautja_Adult</li>
+					<li>ABYautja_Hunter</li>				
+					<li>ABYautja_BadBlood</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+		<startingResearchTags>
+			<li>ClassicStart</li>
+			<!--<li>YautjaBloodedStart</li>-->
+		</startingResearchTags>
+		<apparelStuffFilter>
+			<thingDefs>
+			<li>Steel</li>
+			<li>Synthread</li>
+			<li>Leather_Light</li>
+			<li>Leather_Plain</li>
+			<li>Leather_Bear</li>
+			</thingDefs>
+		</apparelStuffFilter>
+		<colorSpectrum>
+			<li>(0, 0, 0)</li>
+		</colorSpectrum>
+		<pawnGroupMakers>
+			<li>
+				<kindDef>Peaceful</kindDef>
+				<commonality>100</commonality>
+				<options>
+					<Colonist_ABYautja_BadBlooded>100</Colonist_ABYautja_BadBlooded>
+				</options>
+			</li>
+		</pawnGroupMakers>
+		<factionIconPath>UI/Icons/Icon_YautjaB</factionIconPath>
+	</FactionDef>
+
+</Defs>

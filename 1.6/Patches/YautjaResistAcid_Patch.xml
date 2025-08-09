@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Alpha Genes</li>
+				</mods>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/GeneDef[defName="ABBerserkYautjaFrame"]/damageFactors</xpath>
+						<value>
+							<AG_AcidSpit>0.85</AG_AcidSpit>
+						</value>
+					</match>
+			</li>
+			
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Alpha Genes</li>
+				</mods>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/GeneDef[defName="ABGrendelKingYautjaFrame"]/damageFactors</xpath>
+						<value>
+							<AG_AcidSpit>0.85</AG_AcidSpit>
+						</value>
+					</match>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

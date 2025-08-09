@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <FurDef>
+    <defName>ABYautja_LeatherySkin</defName>
+    <noGraphic>true</noGraphic>
+    <bodyTypeGraphicPaths>
+		<Male>Things/Pawn/Humanlike/Yautja/Bodies/Naked_Male</Male>
+		<Female>Things/Pawn/Humanlike/Yautja/Bodies/Naked_Female</Female>
+		<Hulk>Things/Pawn/Humanlike/Yautja/Bodies/Naked_Hulk</Hulk>
+		<Fat>Things/Pawn/Humanlike/Yautja/Bodies/Naked_Fat</Fat>
+		<Thin>Things/Pawn/Humanlike/Yautja/Bodies/Naked_Thin</Thin>
+		<Child>Things/Pawn/Humanlike/Yautja/Bodies/Naked_Child</Child>
+		<Baby>Things/Pawn/Humanlike/Yautja/Bodies/Naked_Child</Baby><!-- Always covered by swaddled graphic -->
+    </bodyTypeGraphicPaths>
+  </FurDef>
+</Defs>
