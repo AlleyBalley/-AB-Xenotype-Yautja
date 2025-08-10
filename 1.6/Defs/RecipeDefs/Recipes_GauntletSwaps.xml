@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!--Tribal-->
+	<RecipeDef ParentName="HandSwappingBase">
+		<defName>ABYautja_SwapLTribalWristbladeDualR</defName>
+		<label>swap left-handed hunter tribal wristblade handedness</label>
+		<description>Swap a left-handed tribal dual wristblade to be right-handed.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ABYautja_Equipment_TribalGauntlet_LDual</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<ABYautja_Equipment_TribalGauntlet_RDual>1</ABYautja_Equipment_TribalGauntlet_RDual>
+		</products>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="HandSwappingBase">
+		<defName>ABYautja_SwapRTribalWristbladeDualL</defName>
+		<label>swap right-handed hunter tribal wristblade handedness</label>
+		<description>Swap a right-handed tribal dual wristblade to be left-handed.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ABYautja_Equipment_TribalGauntlet_RDual</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<ABYautja_Equipment_TribalGauntlet_LDual>1</ABYautja_Equipment_TribalGauntlet_LDual>
+		</products>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="HandSwappingBase">
+		<defName>ABYautja_SwapLTribalWristbladeSingleR</defName>
+		<label>swap left-handed hunter tribal single wristblade handedness</label>
+		<description>Swap a left-handed tribal single wristblade to be right-handed.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ABYautja_Equipment_TribalGauntlet_LSingle</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<ABYautja_Equipment_TribalGauntlet_RSingle>1</ABYautja_Equipment_TribalGauntlet_RSingle>
+		</products>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="HandSwappingBase">
+		<defName>ABYautja_SwapRTribalWristbladeSingleL</defName>
+		<label>swap right-handed hunter tribal single wristblade handedness</label>
+		<description>Swap a right-handed tribal single wristblade to be left-handed.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ABYautja_Equipment_TribalGauntlet_RSingle</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<ABYautja_Equipment_TribalGauntlet_LSingle>1</ABYautja_Equipment_TribalGauntlet_LSingle>
+		</products>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="HandSwappingBase">
+		<defName>ABYautja_SwapLTribalWristbladeLongR</defName>
+		<label>swap left-handed hunter tribal long wristblade handedness</label>
+		<description>Swap a left-handed tribal long wristblade to be right-handed.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ABYautja_Equipment_TribalGauntlet_LLong</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<ABYautja_Equipment_TribalGauntlet_RLong>1</ABYautja_Equipment_TribalGauntlet_RLong>
+		</products>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="HandSwappingBase">
+		<defName>ABYautja_SwapRTribalWristbladeLongL</defName>
+		<label>swap right-handed hunter tribal long wristblade handedness</label>
+		<description>Swap a right-handed tribal long wristblade to be left-handed.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ABYautja_Equipment_TribalGauntlet_RLong</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<ABYautja_Equipment_TribalGauntlet_LLong>1</ABYautja_Equipment_TribalGauntlet_LLong>
+		</products>
+	</RecipeDef>
+	
+	<!--Tech-->
+	<RecipeDef ParentName="HandSwappingBase">
+		<defName>ABYautja_SwapLTechWristbladeDualR</defName>
+		<label>swap left-handed hunter tech wristblade handedness</label>
+		<description>Swap a left-handed tech dual wristblade to be right-handed.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ABYautja_Equipment_TechGauntlet_LDual</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<ABYautja_Equipment_TechGauntlet_RDual>1</ABYautja_Equipment_TechGauntlet_RDual>
+		</products>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="HandSwappingBase">
+		<defName>ABYautja_SwapRTechWristbladeDualL</defName>
+		<label>swap right-handed hunter tech wristblade handedness</label>
+		<description>Swap a right-handed tech dual wristblade to be left-handed.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ABYautja_Equipment_TechGauntlet_RDual</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<ABYautja_Equipment_TechGauntlet_LDual>1</ABYautja_Equipment_TechGauntlet_LDual>
+		</products>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="HandSwappingBase">
+		<defName>ABYautja_SwapLTechWristbladeSingleR</defName>
+		<label>swap left-handed hunter tech single wristblade handedness</label>
+		<description>Swap a left-handed tech single wristblade to be right-handed.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ABYautja_Equipment_TechGauntlet_LSingle</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<ABYautja_Equipment_TechGauntlet_RSingle>1</ABYautja_Equipment_TechGauntlet_RSingle>
+		</products>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="HandSwappingBase">
+		<defName>ABYautja_SwapRTechWristbladeSingleL</defName>
+		<label>swap right-handed hunter tech single wristblade handedness</label>
+		<description>Swap a right-handed tech single wristblade to be left-handed.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ABYautja_Equipment_TechGauntlet_RSingle</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<ABYautja_Equipment_TechGauntlet_LSingle>1</ABYautja_Equipment_TechGauntlet_LSingle>
+		</products>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="HandSwappingBase">
+		<defName>ABYautja_SwapLTechWristbladeLongR</defName>
+		<label>swap left-handed hunter tech long wristblade handedness</label>
+		<description>Swap a left-handed tech long wristblade to be right-handed.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ABYautja_Equipment_TechGauntlet_LLong</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<ABYautja_Equipment_TechGauntlet_RLong>1</ABYautja_Equipment_TechGauntlet_RLong>
+		</products>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="HandSwappingBase">
+		<defName>ABYautja_SwapRTechWristbladeLongL</defName>
+		<label>swap right-handed hunter tech long wristblade handedness</label>
+		<description>Swap a right-handed tech long wristblade to be left-handed.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ABYautja_Equipment_TechGauntlet_RLong</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<ABYautja_Equipment_TechGauntlet_LLong>1</ABYautja_Equipment_TechGauntlet_LLong>
+		</products>
+	</RecipeDef>
+</Defs>

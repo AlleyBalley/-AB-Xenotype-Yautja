@@ -1,0 +1,499 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!--Tribal Left Hands-->
+	<RecipeDef ParentName="SurgeryInstallImplantBase">
+		<defName>ABYautja_InstallLeftTribalSingleWristblade</defName>
+		<label>install left-handed tribal single wristblade gauntlet</label>
+		<description>Install tribal gauntlet with a single wristblade attachment to the left wrist.</description>
+		<jobString>installing gauntlet.</jobString>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_Equipment_TribalGauntlet_LSingle</ThingDef>
+			<HediffDef>TribalSingleWristbladeGauntlet</HediffDef>
+		</descriptionHyperlinks>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ABYautja_Equipment_TribalGauntlet_LSingle</li>
+					</thingDefs>
+				</filter>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ABYautja_Equipment_TribalGauntlet_LSingle</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>ABYautja_LeftForearm</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>TribalSingleWristbladeGauntlet</addsHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryRemoveImplantBase">
+		<defName>ABYautja_RemoveLeftTribalSingleWristblade</defName>
+		<label>remove left-handed tribal single wristblade gauntlet</label>
+		<description>Remove left-handed tribal single wristblade gauntlet.</description>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_Equipment_TribalGauntlet_LSingle</ThingDef>
+			<HediffDef>TribalSingleWristbladeGauntlet</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Removing gauntlet.</jobString>
+		<removesHediff>TribalSingleWristbladeGauntlet</removesHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryInstallImplantBase">
+		<defName>ABYautja_InstallLeftTribalDualWristblade</defName>
+		<label>install left-handed tribal dual wristblade gauntlet</label>
+		<description>Install a tribal gauntlet with a dual wristblade attachment to the left wrist.</description>
+		<jobString>installing wristblade.</jobString>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_Equipment_TribalGauntlet_LDual</ThingDef>
+			<HediffDef>TribalDualWristbladeGauntlet</HediffDef>
+		</descriptionHyperlinks>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ABYautja_Equipment_TribalGauntlet_LDual</li>
+					</thingDefs>
+				</filter>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ABYautja_Equipment_TribalGauntlet_LDual</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>ABYautja_LeftForearm</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>TribalDualWristbladeGauntlet</addsHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryRemoveImplantBase">
+		<defName>ABYautja_RemoveLeftTribalDualWristblade</defName>
+		<label>remove left-handed tribal dual wristblade gauntlet</label>
+		<description>Remove left-handed tribal dual wristblade gauntlet.</description>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_Equipment_TribalGauntlet_LDual</ThingDef>
+			<HediffDef>TribalDualWristbladeGauntlet</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Removing gauntlet.</jobString>
+		<removesHediff>TribalDualWristbladeGauntlet</removesHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryInstallImplantBase">
+		<defName>ABYautja_InstallLeftTribalLongWristblade</defName>
+		<label>install left-handed tribal long wristblade gauntlet</label>
+		<description>Install a tribal gauntlet with a long wristblade attachment to the left wrist.</description>
+		<jobString>installing wristblade.</jobString>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_Equipment_TribalGauntlet_LLong</ThingDef>
+			<HediffDef>TribalSingleWristbladeGauntlet</HediffDef>
+		</descriptionHyperlinks>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ABYautja_Equipment_TribalGauntlet_LLong</li>
+					</thingDefs>
+				</filter>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ABYautja_Equipment_TribalGauntlet_LLong</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>ABYautja_LeftForearm</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>TribalLongWristbladeGauntlet</addsHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryRemoveImplantBase">
+		<defName>ABYautja_RemoveLeftTribalLongWristblade</defName>
+		<label>remove left-handed tribal long wristblade gauntlet</label>
+		<description>Remove left-handed tribal long wristblade gauntlet.</description>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_Equipment_TribalGauntlet_LLong</ThingDef>
+			<HediffDef>TribalLongWristbladeGauntlet</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Removing gauntlet.</jobString>
+		<removesHediff>TribalLongWristbladeGauntlet</removesHediff>
+	</RecipeDef>
+	
+<!--Tribal Right Hands-->
+	<RecipeDef ParentName="SurgeryInstallImplantBase">
+		<defName>ABYautja_InstallRightTribalSingleWristblade</defName>
+		<label>install right-handed tribal single wristblade gauntlet</label>
+		<description>Install tribal gauntlet with a single wristblade attachment to the right wrist.</description>
+		<jobString>installing gauntlet.</jobString>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_Equipment_TribalGauntlet_RSingle</ThingDef>
+			<HediffDef>TribalSingleWristbladeGauntlet</HediffDef>
+		</descriptionHyperlinks>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ABYautja_Equipment_TribalGauntlet_RSingle</li>
+					</thingDefs>
+				</filter>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ABYautja_Equipment_TribalGauntlet_RSingle</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>ABYautja_RightForearm</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>TribalSingleWristbladeGauntlet</addsHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryRemoveImplantBase">
+		<defName>ABYautja_RemoveRightTribalSingleWristblade</defName>
+		<label>remove right-handed tribal single wristblade gauntlet</label>
+		<description>Remove right-handed tribal single wristblade gauntlet.</description>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_Equipment_TribalGauntlet_RSingle</ThingDef>
+			<HediffDef>TribalSingleWristbladeGauntlet</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Removing gauntlet.</jobString>
+		<removesHediff>TribalSingleWristbladeGauntlet</removesHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryInstallImplantBase">
+		<defName>ABYautja_InstallRightTribalDualWristblade</defName>
+		<label>install right-handed tribal dual wristblade gauntlet</label>
+		<description>Install a tribal gauntlet with a dual wristblade attachment to the right wrist.</description>
+		<jobString>installing wristblade.</jobString>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_Equipment_TribalGauntlet_RDual</ThingDef>
+			<HediffDef>TribalDualWristbladeGauntlet</HediffDef>
+		</descriptionHyperlinks>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ABYautja_Equipment_TribalGauntlet_RDual</li>
+					</thingDefs>
+				</filter>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ABYautja_Equipment_TribalGauntlet_RDual</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>ABYautja_RightForearm</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>TribalDualWristbladeGauntlet</addsHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryRemoveImplantBase">
+		<defName>ABYautja_RemoveRightTribalDualWristblade</defName>
+		<label>remove right-handed tribal dual wristblade gauntlet</label>
+		<description>Remove right-handed tribal dual wristblade gauntlet.</description>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_Equipment_TribalGauntlet_RDual</ThingDef>
+			<HediffDef>TribalDualWristbladeGauntlet</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Removing gauntlet.</jobString>
+		<removesHediff>TribalDualWristbladeGauntlet</removesHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryInstallImplantBase">
+		<defName>ABYautja_InstallRightTribalLongWristblade</defName>
+		<label>install right-handed tribal long wristblade gauntlet</label>
+		<description>Install a tribal gauntlet with a long wristblade attachment to the right wrist.</description>
+		<jobString>installing wristblade.</jobString>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_Equipment_TribalGauntlet_RLong</ThingDef>
+			<HediffDef>TribalSingleWristbladeGauntlet</HediffDef>
+		</descriptionHyperlinks>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ABYautja_Equipment_TribalGauntlet_RLong</li>
+					</thingDefs>
+				</filter>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ABYautja_Equipment_TribalGauntlet_RLong</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>ABYautja_RightForearm</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>TribalLongWristbladeGauntlet</addsHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryRemoveImplantBase">
+		<defName>ABYautja_RemoveRightTribalLongWristblade</defName>
+		<label>remove right-handed tribal long wristblade gauntlet</label>
+		<description>Remove right-handed tribal long wristblade gauntlet.</description>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_Equipment_TribalGauntlet_RLong</ThingDef>
+			<HediffDef>TribalLongWristbladeGauntlet</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Removing gauntlet.</jobString>
+		<removesHediff>TribalLongWristbladeGauntlet</removesHediff>
+	</RecipeDef>
+	
+<!--Tech Left Hands-->
+	<RecipeDef ParentName="SurgeryInstallImplantBase">
+		<defName>ABYautja_InstallLeftTechSingleWristblade</defName>
+		<label>install left-handed tech single wristblade gauntlet</label>
+		<description>Install tech gauntlet with a single wristblade attachment to the left wrist.</description>
+		<jobString>installing gauntlet.</jobString>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_Equipment_TechGauntlet_LSingle</ThingDef>
+			<HediffDef>TechSingleWristbladeGauntlet</HediffDef>
+		</descriptionHyperlinks>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ABYautja_Equipment_TechGauntlet_LSingle</li>
+					</thingDefs>
+				</filter>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ABYautja_Equipment_TechGauntlet_LSingle</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>ABYautja_LeftForearm</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>TechSingleWristbladeGauntlet</addsHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryRemoveImplantBase">
+		<defName>ABYautja_RemoveLeftTechSingleWristblade</defName>
+		<label>remove left-handed tech single wristblade gauntlet</label>
+		<description>Remove left-handed tech single wristblade gauntlet.</description>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_Equipment_TechGauntlet_LSingle</ThingDef>
+			<HediffDef>TechSingleWristbladeGauntlet</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Removing gauntlet.</jobString>
+		<removesHediff>TechSingleWristbladeGauntlet</removesHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryInstallImplantBase">
+		<defName>ABYautja_InstallLeftTechDualWristblade</defName>
+		<label>install left-handed tech dual wristblade gauntlet</label>
+		<description>Install a tech gauntlet with a dual wristblade attachment to the left wrist.</description>
+		<jobString>installing wristblade.</jobString>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_Equipment_TechGauntlet_LDual</ThingDef>
+			<HediffDef>TechDualWristbladeGauntlet</HediffDef>
+		</descriptionHyperlinks>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ABYautja_Equipment_TechGauntlet_LDual</li>
+					</thingDefs>
+				</filter>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ABYautja_Equipment_TechGauntlet_LDual</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>ABYautja_LeftForearm</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>TechDualWristbladeGauntlet</addsHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryRemoveImplantBase">
+		<defName>ABYautja_RemoveLeftTechDualWristblade</defName>
+		<label>remove left-handed tech dual wristblade gauntlet</label>
+		<description>Remove left-handed tech dual wristblade gauntlet.</description>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_Equipment_TechGauntlet_LDual</ThingDef>
+			<HediffDef>TechDualWristbladeGauntlet</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Removing gauntlet.</jobString>
+		<removesHediff>TechDualWristbladeGauntlet</removesHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryInstallImplantBase">
+		<defName>ABYautja_InstallLeftTechLongWristblade</defName>
+		<label>install left-handed tech long wristblade gauntlet</label>
+		<description>Install a tech gauntlet with a long wristblade attachment to the left wrist.</description>
+		<jobString>installing wristblade.</jobString>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_Equipment_TechGauntlet_LLong</ThingDef>
+			<HediffDef>TechSingleWristbladeGauntlet</HediffDef>
+		</descriptionHyperlinks>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ABYautja_Equipment_TechGauntlet_LLong</li>
+					</thingDefs>
+				</filter>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ABYautja_Equipment_TechGauntlet_LLong</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>ABYautja_LeftForearm</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>TechLongWristbladeGauntlet</addsHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryRemoveImplantBase">
+		<defName>ABYautja_RemoveLeftTechLongWristblade</defName>
+		<label>remove left-handed tech long wristblade gauntlet</label>
+		<description>Remove left-handed tech long wristblade gauntlet.</description>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_Equipment_TechGauntlet_LLong</ThingDef>
+			<HediffDef>TechLongWristbladeGauntlet</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Removing gauntlet.</jobString>
+		<removesHediff>TechLongWristbladeGauntlet</removesHediff>
+	</RecipeDef>
+	
+<!--Tech Right Hands-->
+	<RecipeDef ParentName="SurgeryInstallImplantBase">
+		<defName>ABYautja_InstallRightTechSingleWristblade</defName>
+		<label>install right-handed tech single wristblade gauntlet</label>
+		<description>Install tech gauntlet with a single wristblade attachment to the right wrist.</description>
+		<jobString>installing gauntlet.</jobString>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_Equipment_TechGauntlet_RSingle</ThingDef>
+			<HediffDef>TechSingleWristbladeGauntlet</HediffDef>
+		</descriptionHyperlinks>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ABYautja_Equipment_TechGauntlet_RSingle</li>
+					</thingDefs>
+				</filter>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ABYautja_Equipment_TechGauntlet_RSingle</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>ABYautja_RightForearm</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>TechSingleWristbladeGauntlet</addsHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryRemoveImplantBase">
+		<defName>ABYautja_RemoveRightTechSingleWristblade</defName>
+		<label>remove right-handed tech single wristblade gauntlet</label>
+		<description>Remove right-handed tech single wristblade gauntlet.</description>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_Equipment_TechGauntlet_RSingle</ThingDef>
+			<HediffDef>TechSingleWristbladeGauntlet</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Removing gauntlet.</jobString>
+		<removesHediff>TechSingleWristbladeGauntlet</removesHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryInstallImplantBase">
+		<defName>ABYautja_InstallRightTechDualWristblade</defName>
+		<label>install right-handed tech dual wristblade gauntlet</label>
+		<description>Install a tech gauntlet with a dual wristblade attachment to the right wrist.</description>
+		<jobString>installing wristblade.</jobString>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_Equipment_TechGauntlet_RDual</ThingDef>
+			<HediffDef>TechDualWristbladeGauntlet</HediffDef>
+		</descriptionHyperlinks>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ABYautja_Equipment_TechGauntlet_RDual</li>
+					</thingDefs>
+				</filter>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ABYautja_Equipment_TechGauntlet_RDual</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>ABYautja_RightForearm</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>TechDualWristbladeGauntlet</addsHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryRemoveImplantBase">
+		<defName>ABYautja_RemoveRightTechDualWristblade</defName>
+		<label>remove right-handed tech dual wristblade gauntlet</label>
+		<description>Remove right-handed tech dual wristblade gauntlet.</description>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_Equipment_TechGauntlet_RDual</ThingDef>
+			<HediffDef>TechDualWristbladeGauntlet</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Removing gauntlet.</jobString>
+		<removesHediff>TechDualWristbladeGauntlet</removesHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryInstallImplantBase">
+		<defName>ABYautja_InstallRightTechLongWristblade</defName>
+		<label>install right-handed tech long wristblade gauntlet</label>
+		<description>Install a tech gauntlet with a long wristblade attachment to the right wrist.</description>
+		<jobString>installing wristblade.</jobString>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_Equipment_TechGauntlet_RLong</ThingDef>
+			<HediffDef>TechSingleWristbladeGauntlet</HediffDef>
+		</descriptionHyperlinks>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ABYautja_Equipment_TechGauntlet_RLong</li>
+					</thingDefs>
+				</filter>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ABYautja_Equipment_TechGauntlet_RLong</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>ABYautja_RightForearm</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>TechLongWristbladeGauntlet</addsHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryRemoveImplantBase">
+		<defName>ABYautja_RemoveRightTechLongWristblade</defName>
+		<label>remove right-handed tech long wristblade gauntlet</label>
+		<description>Remove right-handed tech long wristblade gauntlet.</description>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_Equipment_TechGauntlet_RLong</ThingDef>
+			<HediffDef>TechLongWristbladeGauntlet</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Removing gauntlet.</jobString>
+		<removesHediff>TechLongWristbladeGauntlet</removesHediff>
+	</RecipeDef>
+</Defs>
