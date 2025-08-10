@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded — Deserters</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName="ABYautja_Utility_CloakingBelt"]/comps</xpath>
+			<value>
+				<li>
+					<compClass>VFED.CompInvisibilityEngulfer</compClass>
+				</li>
+			</value>
+		</match>
+	</Operation>
+</Patch>

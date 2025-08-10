@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<operations>
+		
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/ResearchProjectDef[defName = "Electricity"]/tags</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/ResearchProjectDef[defName = "Electricity"]/tags</xpath>
+					<value>
+						<li>YautjaStart</li>
+						<li>YautjaBloodedStart</li>
+					</value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/ResearchProjectDef[defName = "Electricity"]</xpath>
+					<value>
+						<tags>
+							<li>YautjaStart</li>
+							<li>YautjaBloodedStart</li>
+						</tags>
+					</value>
+				</nomatch>
+			</li>
+			
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/ResearchProjectDef[defName = "Batteries"]/tags</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/ResearchProjectDef[defName = "Batteries"]/tags</xpath>
+					<value>
+						<li>YautjaStart</li>
+						<li>YautjaBloodedStart</li>
+					</value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/ResearchProjectDef[defName = "Batteries"]</xpath>
+					<value>
+						<tags>
+							<li>YautjaStart</li>
+							<li>YautjaBloodedStart</li>
+						</tags>
+					</value>
+				</nomatch>
+			</li>
+			
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/ResearchProjectDef[defName = "BiofuelRefining"]/tags</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/ResearchProjectDef[defName = "BiofuelRefining"]/tags</xpath>
+					<value>
+						<li>YautjaStart</li>
+						<li>YautjaBloodedStart</li>
+					</value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/ResearchProjectDef[defName = "BiofuelRefining"]</xpath>
+					<value>
+						<tags>
+							<li>YautjaStart</li>
+							<li>YautjaBloodedStart</li>
+						</tags>
+					</value>
+				</nomatch>
+			</li>
+			
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/ResearchProjectDef[defName = "SolarPanels"]/tags</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/ResearchProjectDef[defName = "SolarPanels"]/tags</xpath>
+					<value>
+						<li>YautjaStart</li>
+						<li>YautjaBloodedStart</li>
+					</value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/ResearchProjectDef[defName = "SolarPanels"]</xpath>
+					<value>
+						<tags>
+							<li>YautjaStart</li>
+							<li>YautjaBloodedStart</li>
+						</tags>
+					</value>
+				</nomatch>
+			</li>
+		</operations>	
+	</Operation>
+</Patch>
