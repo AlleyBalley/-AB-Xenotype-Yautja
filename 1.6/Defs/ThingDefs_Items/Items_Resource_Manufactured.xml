@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>ABYautja_Wristblade</defName>
+		<label>wristblade</label>
+		<description>A sharp blade ready to be attached to a gauntlet.</description>
+		<graphicData>
+			<texPath>Things/Item/Yautja/Wristblade</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<stackLimit>50</stackLimit>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>0.5</Mass>
+			<Flammability>0</Flammability>
+		</statBases>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+	</ThingDef>
+  
+	<ThingDef ParentName="ResourceBase">
+		<defName>ABYautja_LongWristblade</defName>
+		<label>long wristblade</label>
+		<description>A long, sharp blade ready to be attached to a gauntlet.</description>
+		<graphicData>
+			<texPath>Things/Item/Yautja/LongWristblade</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<stackLimit>50</stackLimit>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>0.6</Mass>
+			<Flammability>0</Flammability>
+		</statBases>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+	</ThingDef>
+  
+	<ThingDef ParentName="ResourceBase">
+		<defName>ABYautja_CloakingDevice</defName>
+		<label>shifter</label>
+		<description>A small metallic orb the size of a marbel. This module holds the power to apply a cloak of invisibility to the user.</description>
+		<graphicData>
+			<texPath>Things/Item/Yautja/Shifter</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<stackLimit>50</stackLimit>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Mass>0.3</Mass>
+			<Flammability>0</Flammability>
+		</statBases>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+	</ThingDef>
+  
+	<ThingDef ParentName="ResourceBase">
+		<defName>ComponentYautja</defName>
+		<label>yautja component</label>
+		<description>An miniature chip filled with advanced mechanical capabilities. This component was created by the yautja and can only be used in their crafts.</description>
+		<graphicData>
+			<texPath>Things/Item/Yautja/ComponentYautja</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<stackLimit>50</stackLimit>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<statBases>
+			<MaxHitPoints>90</MaxHitPoints>
+			<MarketValue>750</MarketValue>
+			<Mass>0.75</Mass>
+			<Flammability>0.4</Flammability>
+			<DeteriorationRate>2.0</DeteriorationRate>
+		</statBases>
+		<intricate>true</intricate>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+		<tradeTags>
+			<li>ExoticMisc</li>
+		</tradeTags>
+		<allowedArchonexusCount>6</allowedArchonexusCount>
+	</ThingDef>
+</Defs>
