@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<WorkGiverDef>
+		<defName>ABYautja_DoBillsYautjaMachining</defName>
+		<label>Fabricate Yautja Resources</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Crafting</workType>
+		<priorityInType>45</priorityInType>
+		<fixedBillGiverDefs>
+			<li>ABYautja_TableMachining</li>
+		</fixedBillGiverDefs>
+		<verb>Fabricate Resources</verb>
+		<gerund>Fabricating Resources at</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+
+
+</Defs>

@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="ABBenchBase">
+		<defName>ABYautja_TableMachining</defName>
+		<label>Yautja machining table</label>
+		<description>A Yautja work station for assembling or breaking down machinery like components, armour, guns and ammunition, or dead mechanoids.</description>
+		<thingClass>Building_WorkTable</thingClass>
+		<graphicData>
+			<texPath>Things/Buildings/Yautja/TableMachining</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+		<costList>
+			<Steel>150</Steel>
+			<Plasteel>10</Plasteel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+		</costList>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>false</useHitPoints>
+		<statBases>
+			<WorkToBuild>3000</WorkToBuild>
+			<WorkTableWorkSpeedFactor>0.5</WorkTableWorkSpeedFactor>
+			<MaxHitPoints>180</MaxHitPoints>
+			<Cleanliness>-2</Cleanliness>
+		</statBases>
+		<size>(3,2)</size>
+		<pathCost>70</pathCost>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+		<recipes>
+			<li>ButcherCorpseMechanoid</li>
+		</recipes>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>true</shortCircuitInRain>
+				<basePowerConsumption>350</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>5</glowRadius>
+				<glowColor>(73,123,138,0)</glowColor>
+			</li>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+				<li>ToolCabinet</li>
+				</linkableFacilities>
+			</li>
+		</comps>
+		<designationHotKey>Misc1</designationHotKey>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+			<li>PlaceWorker_ReportWorkSpeedPenalties</li>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+		</placeWorkers>
+		<building>
+			<buildingTags>
+				<li>Production</li>
+			</buildingTags>
+			<workTableRoomRole>Workshop</workTableRoomRole>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
+		<constructEffect>ConstructMetal</constructEffect>
+		<researchPrerequisites>
+			<li>ABYautja_Tech_T1</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+</Defs>

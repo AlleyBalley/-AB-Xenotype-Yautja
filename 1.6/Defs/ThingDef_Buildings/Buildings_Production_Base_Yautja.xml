@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef Name="ABBenchBase" ParentName="BenchBase" Abstract="True">
+		<altitudeLayer>FloorEmplacement</altitudeLayer>
+		<scatterableOnMapGen>false</scatterableOnMapGen>
+		<useHitPoints>false</useHitPoints>
+		<designationCategory>Production</designationCategory>
+		<passability>Standable</passability>
+		<hasInteractionCell>True</hasInteractionCell>
+		<castEdgeShadows>false</castEdgeShadows>
+		<staticSunShadowHeight>0.00</staticSunShadowHeight>
+		<statBases>
+			<Mass>40.0</Mass>
+		</statBases>
+	</ThingDef>
+</Defs>
