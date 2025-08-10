@@ -47,6 +47,7 @@
     <apparelTags>
 		<!--<li>YautjaGreaves</li>
 		<li>YautjaWebbing</li>-->
+		<li>Neolithic</li>
     </apparelTags>
     <apparelMoney>
       <min>10000</min>
@@ -67,8 +68,8 @@
       </li>
     </backstoryFiltersOverride>
     <apparelTags>
-		<!--<li>YautjaLightArmour</li>
-		<li>YautjaWebbing</li>-->
+		<li>YautjaLightArmour</li>
+		<!--li>YautjaWebbing</li>-->
 		<li>Neolithic</li>
     </apparelTags>
     <apparelMoney>
@@ -90,9 +91,10 @@
       </li>
     </backstoryFiltersOverride>
     <apparelTags>
-		<!--<li>YautjaLightArmour</li>
+		<li>YautjaLightArmour</li>
 		<li>YautjaArmour</li>
-		<li>YautjaWebbing</li>-->
+		<!--li>YautjaWebbing</li>-->
+		<li>Neolithic</li>
     </apparelTags>
     <apparelMoney>
       <min>10000</min>
@@ -115,6 +117,7 @@
     <apparelTags>
 		<!--<li>YautjaGreaves</li>
 		<li>YautjaWebbing</li>-->
+		<li>Neolithic</li>
     </apparelTags>
     <apparelMoney>
       <min>1000</min>
@@ -122,5 +125,4 @@
     </apparelMoney>
     <backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
   </PawnKindDef>
-  
 </Defs>
