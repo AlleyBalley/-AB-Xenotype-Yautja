@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingCategoryDef>
+		<defName>ABYautja_Weapons</defName>
+		<label>Yautja Weapons</label>
+		<parent>Weapons</parent>
+	</ThingCategoryDef>
+	
+	<ThingCategoryDef>
+		<defName>ABYautja_RangedWeapons</defName>
+		<label>Yautja Ranged Weapons</label>
+		<parent>ABYautja_Weapons</parent>
+	</ThingCategoryDef>
+	
+	<ThingCategoryDef>
+		<defName>ABYautja_MeleeWeapons</defName>
+		<label>Yautja Melee Weapons</label>
+		<parent>ABYautja_Weapons</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>ABYautja_Apparel</defName>
+		<label>Yautja apparel</label>
+		<parent>Apparel</parent>
+	</ThingCategoryDef>
+	
+	<ThingCategoryDef>
+		<defName>ABYautja_NobleApparel</defName>
+		<label>Yautja nobile apparel</label>
+		<parent>ABYautja_Apparel</parent>
+	</ThingCategoryDef>
+	
+	<ThingCategoryDef>
+		<defName>ABYautja_Headgear</defName>
+		<label>Yautja headgear</label>
+		<parent>ABYautja_Apparel</parent>
+	</ThingCategoryDef>
+	
+	<ThingCategoryDef>
+		<defName>ABYautja_Armor</defName>
+		<label>Yautja Armor</label>
+		<parent>ApparelArmor</parent>
+	</ThingCategoryDef>
+	
+	<ThingCategoryDef>
+		<defName>ABYautja_NobleArmor</defName>
+		<label>Yautja nobile armor</label>
+		<parent>ABYautja_Armor</parent>
+	</ThingCategoryDef>
+	
+    <ThingCategoryDef>
+        <defName>ABYautja_ArmorHeadgear</defName>
+        <label>Yautja headgear</label>
+		<parent>ABYautja_Armor</parent>
+    </ThingCategoryDef>
+	
+	<ThingCategoryDef>
+		<defName>ABYautja_NobleArmorHeadgear</defName>
+		<label>Yautja nobile headgear</label>
+		<parent>ABYautja_ArmorHeadgear</parent>
+	</ThingCategoryDef>
+	  	
+	<ThingCategoryDef>
+		<defName>ABYautja_Equipment</defName>
+		<label>Yautja Equipment</label>
+		<parent>ABYautja_Armor</parent>
+	</ThingCategoryDef>
+
+</Defs>
