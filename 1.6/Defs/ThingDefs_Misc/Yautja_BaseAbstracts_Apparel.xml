@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!--Base-->
+	<ThingDef Name="ABYautja_Apparel_NoQuality_Base" Abstract="True">
+		<thingClass>Apparel</thingClass>
+		<category>Item</category>
+		<drawerType>MapMeshOnly</drawerType>
+		<selectable>True</selectable>
+		<pathCost>14</pathCost>
+		<useHitPoints>True</useHitPoints>
+		<techLevel>Neolithic</techLevel>
+		<graphicData>
+		<onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+		</graphicData>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<DeteriorationRate>2</DeteriorationRate>
+			<Beauty>-3</Beauty>
+		</statBases>
+		<recipeMaker>
+			<recipeUsers>
+				<li>ABYautja_TableMachining</li>
+			</recipeUsers>
+		</recipeMaker>
+		<altitudeLayer>Item</altitudeLayer>
+		<alwaysHaulable>True</alwaysHaulable>
+		<tickerType>Never</tickerType>
+		<burnableByRecipe>true</burnableByRecipe>
+		<smeltable>true</smeltable>
+		<rotatable>false</rotatable>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+			<li>
+				<compClass>CompColorable</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="ABYautja_Apparel_NoQuality_Base" Name="ABYautja_Apparel_Base" Abstract="True">
+	<comps>
+		<li>
+			<compClass>CompQuality</compClass>
+		</li>
+		<li Class="CompProperties_Styleable"/>
+	</comps>
+	</ThingDef>
+
+<!--Apparel-->
+	<ThingDef ParentName="ABYautja_Apparel_Base" Name="ABYautja_ApparelMakeable_Base" Abstract="True">
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Tailor</effectWorking>
+			<soundWorking>Recipe_Tailor</soundWorking>
+			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+			<recipeUsers>
+				<li>ElectricTailoringBench</li>
+				<li>HandTailoringBench</li>
+				<li>ABYautja_TableMachining</li>
+			</recipeUsers>
+			<defaultIngredientFilter>
+				<categories>
+					<li>Root</li>
+				</categories>
+				<disallowedThingDefs>
+					<li>Gold</li>
+					<li>Silver</li>
+					<li>Jade</li>
+					<li>Uranium</li>
+					<li MayRequire="Ludeon.RimWorld.Anomaly">Bioferrite</li>
+					<li MayRequire="Ludeon.RimWorld.Odyssey">Obsidian</li>
+				</disallowedThingDefs>
+			</defaultIngredientFilter>
+		</recipeMaker>
+		<tradeTags>
+				<li>ABYautjaClothing</li>
+		</tradeTags>
+	</ThingDef>
+
+<!--Armor-->
+	<ThingDef ParentName="ABYautja_Apparel_Base" Name="ABYautja_ArmorMakeable_Base" Abstract="True">
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Machining</soundWorking>
+			<recipeUsers>
+				<li>ABYautja_TableMachining</li>
+			</recipeUsers>
+			<defaultIngredientFilter>
+			<categories>
+				<li>Root</li>
+			</categories>
+				<disallowedThingDefs>
+					<li>Gold</li>
+					<li>Silver</li>
+					<li>Jade</li>
+					<li MayRequire="Ludeon.RimWorld.Anomaly">Bioferrite</li>
+					<li MayRequire="Ludeon.RimWorld.Odyssey">Obsidian</li>
+				</disallowedThingDefs>
+			</defaultIngredientFilter>
+		</recipeMaker>
+		<tradeTags>
+				<li>ABYautjaArmor</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="ABYautja_ArmorMakeable_Base" Name="ABYautja_ArmorBiocoded_Base" Abstract="True">
+		<comps>
+			<li Class="CompProperties_Biocodable"/>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="ABYautja_ArmorBiocoded_Base" Name="ABYautja_NobleArmorMakeable_Base" Abstract="True">
+		<thingCategories>
+			<li>ABYautja_NobleArmor</li>
+		</thingCategories>
+		<tradeTags>
+				<li>ABYautjaNobleArmor</li>
+		</tradeTags>
+	</ThingDef>
+
+<!--Helmet-->
+	<ThingDef ParentName="ABYautja_ArmorMakeable_Base" Name="ABYautja_HelmetMakeable_Base" Abstract="True">
+		<thingCategories>
+			<li>ABYautja_ArmorHeadgear</li>
+		</thingCategories>
+		<apparel>
+			<parentTagDef>ApparelHead</parentTagDef>
+		</apparel>
+		<tradeTags>
+				<li>ABYautjaHeadgear</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="ABYautja_HelmetMakeable_Base" Name="ABYautja_HelmetBiocoded_Base" Abstract="True">
+		<comps>
+			<li Class="CompProperties_Biocodable"/>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="ABYautja_HelmetBiocoded_Base" Name="ABYautja_NobleHelmetMakeable_Base" Abstract="True">
+		<thingCategories>
+			<li>ABYautja_NobleArmorHeadgear</li>
+		</thingCategories>
+		<apparel>
+			<parentTagDef>ApparelHead</parentTagDef>
+		</apparel>
+		<tradeTags>
+				<li>ABYautjaNobleHeadgear</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="ABYautja_HelmetBiocoded_Base" Name="ABYautja_BioMaskBase" Abstract="True">
+		<apparel>
+			<renderSkipFlags>
+				<li>None</li>
+			</renderSkipFlags>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<drawData>
+				<dataNorth>
+					<layer>-3</layer>
+				</dataNorth>
+			</drawData>
+		</apparel>
+	</ThingDef>
+
+<!--Utility/Equipment-->
+	<ThingDef ParentName="ABYautja_Apparel_NoQuality_Base" Name="ABYautja_Utility_Base" Abstract="True">
+		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<scoreOffset>20</scoreOffset>
+			<careIfWornByCorpse>false</careIfWornByCorpse>
+			<careIfDamaged>false</careIfDamaged>
+			<ignoredByNonViolent>true</ignoredByNonViolent>
+			<wearPerDay>0</wearPerDay>
+			<tags>
+				<li>ABYautja_Equipment</li>
+			</tags>
+			<layers>
+				<li>OverSkin</li>
+			</layers>
+		</apparel>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<tradeNeverStack>true</tradeNeverStack>
+		<smeltable>false</smeltable>
+		<burnableByRecipe>false</burnableByRecipe>
+		<drawGUIOverlay>false</drawGUIOverlay>
+		<thingCategories>
+			<li>ABYautja_Equipment</li>
+		</thingCategories>
+		<tradeTags>
+				<li>ABYautjaEquipment</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="ABYautja_Utility_Base" Name="ABYautja_UtilityBiocoded_Base" Abstract="True">
+		<comps>
+			<li Class="CompProperties_Biocodable"/>
+		</comps>
+	</ThingDef>
+</Defs>

@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+		
+<!--Masks-->
+		<ThingDef ParentName="ABYautja_BioMaskBase">
+			<defName>ABYautja_Armor_BioMaskLight</defName>
+			<label>Yautja Light Bio Mask</label>
+			<description>A lighter variant of the standard Yautja bio mask. The helmet offers less protection than the standard variant while still incorporating a respirator to avoid inhaling toxic compounds. The helmet is also equipped with more advanced targeting system and vision enhancing utilities.</description>
+			<graphicData>
+			<texPath>Things/Pawn/Humanlike/Yautja/Apparel/Yautja_Light_Armor_Helmet/Yautja_LightArmor_Helmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			</graphicData>
+			<statBases>
+				<Mass>0.25</Mass>
+				<MarketValue>750</MarketValue>
+				<MaxHitPoints>200</MaxHitPoints>
+				<WorkToMake>25000</WorkToMake>
+				<ArmorRating_Sharp>0.7</ArmorRating_Sharp>
+				<ArmorRating_Blunt>0.20</ArmorRating_Blunt>
+				<ArmorRating_Heat>0.4</ArmorRating_Heat>
+				<Insulation_Heat>3</Insulation_Heat>
+				<Insulation_Cold>10</Insulation_Cold>
+			</statBases>
+			<equippedStatOffsets>
+				<ShootingAccuracyPawn>0.35</ShootingAccuracyPawn>
+				<PsychicSensitivity>-0.10</PsychicSensitivity>
+				<ToxicEnvironmentResistance>0.55</ToxicEnvironmentResistance>
+				<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.35</VacuumResistance>
+			</equippedStatOffsets>
+			<costList>
+				<Plasteel>30</Plasteel>
+				<Uranium>15</Uranium>
+				<ComponentSpacer>1</ComponentSpacer>
+			</costList>
+			<recipeMaker>
+				<researchPrerequisite>ABYautja_Tech_T2</researchPrerequisite>
+				<skillRequirements>
+					<Crafting>6</Crafting>
+				</skillRequirements>
+			</recipeMaker>
+			<apparel>
+				<wornGraphicPath>Things/Pawn/Humanlike/Yautja/Apparel/Yautja_Light_Armor_Helmet/Yautja_LightArmor_Helmet</wornGraphicPath>
+				<tags>
+					<li>YautjaLightHelmet</li>
+					<li>YautjaLightArmor</li>
+					<li>YautjaHelmet</li>
+				</tags>
+			</apparel>
+		</ThingDef>
+
+		<ThingDef ParentName="ABYautja_BioMaskBase">
+			<defName>ABYautja_Armor_BioMask</defName>
+			<label>Yautja Bio Mask</label>
+			<description>Arguably the most iconic piece of equipment in the Yautja arsenal, the bio mask is part functional Armor and part ritualistic object. It offers protection from harm in combat as well as a respirator to avoid inhaling toxic compounds. The helmet is also equipped with a targeting system and vision enhancing utilities.</description>
+			<graphicData>
+			<texPath>Things/Pawn/Humanlike/Yautja/Apparel/Yautja_Armor_Helmet/Yautja_HunterArmor_Helmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			</graphicData>
+			<statBases>
+				<Mass>0.25</Mass>
+				<MarketValue>1000</MarketValue>
+				<MaxHitPoints>525</MaxHitPoints>
+				<WorkToMake>25000</WorkToMake>
+				<ArmorRating_Sharp>1.1</ArmorRating_Sharp>
+				<ArmorRating_Blunt>0.40</ArmorRating_Blunt>
+				<ArmorRating_Heat>0.8</ArmorRating_Heat>
+				<Insulation_Heat>3</Insulation_Heat>
+				<Insulation_Cold>5</Insulation_Cold>
+			</statBases>
+			<equippedStatOffsets>
+				<ShootingAccuracyPawn>0.15</ShootingAccuracyPawn>
+				<PsychicSensitivity>-0.10</PsychicSensitivity>
+				<ToxicEnvironmentResistance>0.4</ToxicEnvironmentResistance>
+				<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.45</VacuumResistance>
+			</equippedStatOffsets>
+			<costList>
+				<Plasteel>30</Plasteel>
+				<Uranium>15</Uranium>
+				<ComponentSpacer>1</ComponentSpacer>
+			</costList>
+			<recipeMaker>
+				<researchPrerequisite>ABYautja_Tech_T2</researchPrerequisite>
+				<skillRequirements>
+					<Crafting>6</Crafting>
+				</skillRequirements>
+			</recipeMaker>
+			<apparel>
+				<wornGraphicPath>Things/Pawn/Humanlike/Yautja/Apparel/Yautja_Armor_Helmet/Yautja_HunterArmor_Helmet</wornGraphicPath>
+				<tags>
+					<li>YautjaHelmet</li>
+					<li>YautjaArmor</li>
+				</tags>
+			</apparel>
+		</ThingDef>
+
+		<ThingDef ParentName="ABYautja_BioMaskBase">
+			<defName>ABYautja_Armor_BioMaskElite</defName>
+			<label>Elite Yautja Bio Mask</label>
+			<description>Worked with patience and care. This bio mask serves as a status symbol for the elite hunter. With augmented targeting capabilities, a new, more comfortable interior design and a quieter respirator, the new and improved Elite Bio Mask serves elite hunters well in the field.</description>
+			<graphicData>
+			<texPath>Things/Pawn/Humanlike/Yautja/Apparel/Yautja_Elite_Armor_Helmet/Yautja_EliteArmor_Helmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			</graphicData>
+			<statBases>
+				<Mass>1</Mass>
+				<MarketValue>3500</MarketValue>
+				<MaxHitPoints>750</MaxHitPoints>
+				<WorkToMake>27500</WorkToMake>
+				<ArmorRating_Sharp>1.1</ArmorRating_Sharp>
+				<ArmorRating_Blunt>0.75</ArmorRating_Blunt>
+				<ArmorRating_Heat>0.9</ArmorRating_Heat>
+				<Insulation_Heat>7</Insulation_Heat>
+				<Insulation_Cold>7</Insulation_Cold>
+			</statBases>
+			<equippedStatOffsets>
+				<ShootingAccuracyPawn>0.25</ShootingAccuracyPawn>
+				<PsychicSensitivity>-0.15</PsychicSensitivity>
+				<ToxicEnvironmentResistance>0.6</ToxicEnvironmentResistance>
+				<SocialImpact>0.05</SocialImpact>
+				<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.5</VacuumResistance>
+			</equippedStatOffsets>
+			<costList>
+				<Plasteel>40</Plasteel>
+				<Uranium>10</Uranium>
+				<ComponentSpacer>2</ComponentSpacer>
+			</costList>
+			<recipeMaker>
+				<researchPrerequisite>ABYautja_Tech_T3</researchPrerequisite>
+				<skillRequirements>
+					<Crafting>9</Crafting>
+				</skillRequirements>
+			</recipeMaker>
+			<apparel>
+				<wornGraphicPath>Things/Pawn/Humanlike/Yautja/Apparel/Yautja_Elite_Armor_Helmet/Yautja_EliteArmor_Helmet</wornGraphicPath>
+				<tags>
+					<li>YautjaEliteHelmet</li>
+					<li>YautjaEliteArmor</li>
+					<li>YautjaSpecialArmor</li>
+				</tags>
+			</apparel>
+		</ThingDef>
+
+		<ThingDef ParentName="ABYautja_BioMaskBase">
+			<defName>ABYautja_Armor_BioMaskFalconer</defName>
+			<label>Falconer Yautja Bio Mask</label>
+			<description>Worked with patience and care. Falconer bio masks serves as a status symbol for the elite hunter. With augmented targeting capabilities, a new, more comfortable interior design and a quieter respirator, the new and improved Falconer Bio Mask serves elite hunters well in the field.</description>
+			<graphicData>
+			<texPath>Things/Pawn/Humanlike/Yautja/Apparel/Yautja_Armor_Helmet_Falconer/Yautja_HunterArmor_Helmet_Falconer</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			</graphicData>
+			<statBases>
+				<Mass>1</Mass>
+				<MarketValue>5000</MarketValue>
+				<MaxHitPoints>850</MaxHitPoints>
+				<WorkToMake>40000</WorkToMake>
+				<ArmorRating_Sharp>1.15</ArmorRating_Sharp>
+				<ArmorRating_Blunt>0.8</ArmorRating_Blunt>
+				<ArmorRating_Heat>1</ArmorRating_Heat>
+				<Insulation_Heat>10</Insulation_Heat>
+				<Insulation_Cold>10</Insulation_Cold>
+			</statBases>
+			<equippedStatOffsets>
+				<ShootingAccuracyPawn>0.35</ShootingAccuracyPawn>
+				<PsychicSensitivity>0.10</PsychicSensitivity>
+				<ToxicEnvironmentResistance>0.6</ToxicEnvironmentResistance>
+				<SocialImpact>0.075</SocialImpact>
+				<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.5</VacuumResistance>
+			</equippedStatOffsets>
+			<costList>
+				<Plasteel>40</Plasteel>
+				<Uranium>10</Uranium>
+				<ComponentSpacer>2</ComponentSpacer>
+			</costList>
+			<recipeMaker>
+				<researchPrerequisite>ABYautja_Tech_T3</researchPrerequisite>
+				<skillRequirements>
+					<Crafting>9</Crafting>
+				</skillRequirements>
+			</recipeMaker>
+			<apparel>
+				<wornGraphicPath>Things/Pawn/Humanlike/Yautja/Apparel/Yautja_Armor_Helmet_Falconer/Yautja_HunterArmor_Helmet_Falconer</wornGraphicPath>
+				<tags>
+					<li>YautjaEliteHelmet</li>
+					<li>YautjaEliteArmor</li>
+					<li>YautjaSpecialArmor</li>
+				</tags>
+			</apparel>
+		</ThingDef>
+		
+		<!-- Not done yet!
+		<ThingDef ParentName="ABYautja_NobleHelmetMakeable_Base">
+			<defName>ABYautja_Armor_BioMaskOrnate</defName>
+			<label>Ornate Yautja Bio Mask</label>
+			<description>The expertly crafted bio mask of Yautja Clan Leader. Often customised by the leader themselves. All the same capabilities as the bio mask with the air of respect a leader commands.</description>
+			<graphicData>
+			<texPath>Things/Pawn/Humanlike/Yautja/Apparel/Yautja_Leader_Armor_Helmet/Yautja_LeaderArmor_Helmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			</graphicData>
+			<statBases>
+				<Mass>1</Mass>
+				<MarketValue>8000</MarketValue>
+				<MaxHitPoints>1000</MaxHitPoints>
+				<WorkToMake>75000</WorkToMake>
+				<ArmorRating_Sharp>1.3</ArmorRating_Sharp>
+				<ArmorRating_Blunt>0.9</ArmorRating_Blunt>
+				<ArmorRating_Heat>1.2</ArmorRating_Heat>
+				<Insulation_Heat>13</Insulation_Heat>
+				<Insulation_Cold>13</Insulation_Cold>
+			</statBases>
+			<equippedStatOffsets>
+				<ShootingAccuracyPawn>0.15</ShootingAccuracyPawn>
+				<PsychicSensitivity>-0.10</PsychicSensitivity>
+				<ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
+				<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.6</VacuumResistance>
+				<SocialImpact>0.15</SocialImpact>
+				<NegotiationAbility>0.15</NegotiationAbility>
+				<TradePriceImprovement>0.15</TradePriceImprovement>
+			</equippedStatOffsets>
+			<costList>
+				<Plasteel>40</Plasteel>
+				<Gold>5</Gold>
+				<ComponentSpacer>1</ComponentSpacer>
+			</costList>
+			<recipeMaker>
+				<researchPrerequisite>ABYautja_Tech_T3</researchPrerequisite>
+				<skillRequirements>
+					<Crafting>8</Crafting>
+				</skillRequirements>
+			</recipeMaker>
+			<apparel>
+				<wornGraphicPath>Things/Pawn/Humanlike/Yautja/Apparel/Yautja_Leader_Armor_Helmet/Yautja_LeaderArmor_Helmet</wornGraphicPath>
+				<tags>
+					<li>YautjaOrnateHelmet</li>
+					<li>YautjaOrnateArmor</li>
+					<li>YautjaSpecialArmor</li>
+				</tags>
+				<renderSkipFlags>
+					<li>None</li>
+				</renderSkipFlags>
+				<bodyPartGroups>
+					<li>FullHead</li>
+				</bodyPartGroups>
+				<layers>
+					<li>Overhead</li>
+				</layers>
+				<drawData>
+					<dataNorth>
+						<layer>-3</layer>
+					</dataNorth>
+				</drawData>
+			</apparel>
+		</ThingDef>
+		-->
+</Defs>
