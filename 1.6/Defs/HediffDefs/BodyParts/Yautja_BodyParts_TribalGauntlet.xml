@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!--Tribal-->
+	<!--Dual Blades-->
+	<ThingDef ParentName="ABYautja_TribalGauntlet_Base">
+		<defName>ABYautja_Equipment_TribalGauntlet_LDual</defName>
+		<label>Left-Handed Hunter Tribal Dual Wristblades</label>
+		<graphicData>
+			<texPath>Things/Item/Yautja/Gauntlets/Yautja_LH_GauntletDualTribal</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costList>
+			<ABYautja_Wristblade>2</ABYautja_Wristblade>
+			<Steel>20</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+	</ThingDef>
+	
+	<ThingDef ParentName="ABYautja_TribalGauntlet_Base">
+		<defName>ABYautja_Equipment_TribalGauntlet_RDual</defName>
+		<label>Right-Handed Hunter Tribal Dual Wristblades</label>
+		<graphicData>
+			<texPath>Things/Item/Yautja/Gauntlets/Yautja_RH_GauntletDualTribal</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costList>
+			<ABYautja_Wristblade>2</ABYautja_Wristblade>
+			<Steel>20</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+	</ThingDef>
+	
+
+	<!--Single Blade-->
+	<ThingDef ParentName="ABYautja_TribalGauntlet_Base">
+		<defName>ABYautja_Equipment_TribalGauntlet_LSingle</defName>
+		<label>Left-Handed Hunter Tribal Single Wristblade</label>
+		<graphicData>
+			<texPath>Things/Item/Yautja/Gauntlets/Yautja_LH_GauntletSingleTribal</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costList>
+			<ABYautja_Wristblade>1</ABYautja_Wristblade>
+			<Steel>20</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+	</ThingDef>
+	
+	<ThingDef ParentName="ABYautja_TribalGauntlet_Base">
+		<defName>ABYautja_Equipment_TribalGauntlet_RSingle</defName>
+		<label>Right-Handed Hunter Tribal Single Wristblade</label>
+		<graphicData>
+			<texPath>Things/Item/Yautja/Gauntlets/Yautja_RH_GauntletSingleTribal</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costList>
+			<ABYautja_Wristblade>1</ABYautja_Wristblade>
+			<Steel>20</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+	</ThingDef>
+	
+	<!--Long Blade-->
+	<ThingDef ParentName="ABYautja_TribalGauntlet_Base">
+		<defName>ABYautja_Equipment_TribalGauntlet_LLong</defName>
+		<label>Left-Handed Hunter Tribal Long Wristblade</label>
+		<graphicData>
+			<texPath>Things/Item/Yautja/Gauntlets/Yautja_LH_GauntletLongTribal</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costList>
+			<ABYautja_LongWristblade>1</ABYautja_LongWristblade>
+			<Steel>20</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+	</ThingDef>
+	
+	<ThingDef ParentName="ABYautja_TribalGauntlet_Base">
+		<defName>ABYautja_Equipment_TribalGauntlet_RLong</defName>
+		<label>Right-Handed Hunter Tribal Long Wristblade</label>
+		<graphicData>
+			<texPath>Things/Item/Yautja/Gauntlets/Yautja_RH_GauntletLongTribal</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costList>
+			<ABYautja_LongWristblade>1</ABYautja_LongWristblade>
+			<Steel>20</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+	</ThingDef>
+</Defs>

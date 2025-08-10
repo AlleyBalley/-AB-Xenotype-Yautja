@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<HediffDef Name="ABSpecialBadHediff" Abstract="True">
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.8, 0.8, 0.35)</defaultLabelColor>
+		<isBad>true</isBad>
+		<makesAlert>false</makesAlert>
+		<description>.</description>
+		<makesSickThought>false</makesSickThought>
+		<maxSeverity>1.0</maxSeverity>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
+	</HediffDef>
+
+	<HediffDef>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defName>ABHediff_PinnedCombistaff</defName>
+		<label>pinned</label>
+		<description>pinned</description>
+		<labelNoun>horrified</labelNoun>
+		<maxSeverity>1</maxSeverity>
+		<stages>
+			<li>
+				<partEfficiencyOffset>-0.8</partEfficiencyOffset>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_SelfHeal">
+				<healAmount>0.005</healAmount>
+			</li>
+		</comps>
+	</HediffDef>
+	
+	<HediffDef Name="ABSpecialGoodHediff" Abstract="True">
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.5, 0.5, 0.9)</defaultLabelColor>
+		<description>.</description>
+		<isBad>false</isBad>
+		<makesAlert>false</makesAlert>
+		<makesSickThought>false</makesSickThought>
+	</HediffDef>
+
+	<HediffDef ParentName="ABSpecialBadHediff">
+		<hediffClass>HediffWithComps</hediffClass>
+		<defName>ABHediff_Pinned</defName>
+		<label>pinned</label>
+		<description>pinned</description>
+		<labelNoun>horrified</labelNoun>
+		<maxSeverity>1</maxSeverity>
+		<stages>
+			<li>
+				<partEfficiencyOffset>-0.8</partEfficiencyOffset>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_SelfHeal">
+				<healAmount>0.005</healAmount>
+			</li>
+		</comps>
+	</HediffDef>
+</Defs>

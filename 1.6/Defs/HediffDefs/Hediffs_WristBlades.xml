@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!--Bases-->
+	<HediffDef ParentName="ABSpecialGoodHediff" Name="ABYautja_DualWristBlade_Hediff" Abstract="True">
+		<hediffClass>HediffWithComps</hediffClass>
+		<description>a pair of two wristblades attached to a gunatlet</description>
+		<labelNoun>bladed</labelNoun>
+		<initialSeverity>1</initialSeverity>
+		<maxSeverity>1</maxSeverity>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>wristblade</label>
+						<capacities>
+							<li>Cut</li>
+							<li>Stab</li>
+						</capacities>
+						<power>20</power>
+						<cooldownTime>1.8</cooldownTime>
+						<chanceFactor>0.75</chanceFactor>
+					</li>
+					<li>
+						<label>wristblade point</label>
+						<capacities>
+							<li>Stab</li>
+						</capacities>
+						<power>16</power>
+						<cooldownTime>1.6</cooldownTime>
+					</li>
+					<li>
+						<label>wristblade edge</label>
+						<capacities>
+							<li>Cut</li>
+						</capacities>
+						<power>16</power>
+						<cooldownTime>1.5</cooldownTime>
+					</li>
+				</tools>
+			</li>
+		</comps>
+	</HediffDef>
+	
+	<HediffDef ParentName="ABSpecialGoodHediff" Name="ABYautja_LongWristBlade_Hediff" Abstract="True">
+		<hediffClass>HediffWithComps</hediffClass>
+		<description>a single long wristblades attached to a gunatlet</description>
+		<labelNoun>bladed</labelNoun>
+		<initialSeverity>1</initialSeverity>
+		<maxSeverity>1</maxSeverity>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>wristblade</label>
+						<capacities>
+							<li>Cut</li>
+							<li>Stab</li>
+						</capacities>
+						<power>28</power>
+						<cooldownTime>2.8</cooldownTime>
+						<chanceFactor>0.75</chanceFactor>
+					</li>
+					<li>
+						<label>wristblade point</label>
+						<capacities>
+							<li>Stab</li>
+						</capacities>
+						<power>25</power>
+						<cooldownTime>2.6</cooldownTime>
+					</li>
+					<li>
+						<label>wristblade edge</label>
+						<capacities>
+							<li>Cut</li>
+						</capacities>
+						<power>23</power>
+						<cooldownTime>2.3</cooldownTime>
+					</li>
+				</tools>
+			</li>
+		</comps>
+	</HediffDef>
+	
+	<HediffDef ParentName="ABSpecialGoodHediff" Name="ABYautja_SingleWristBlade_Hediff" Abstract="True">
+		<hediffClass>HediffWithComps</hediffClass>
+		<description>a single wristblades attached to a gunatlet</description>
+		<labelNoun>bladed</labelNoun>
+		<initialSeverity>1</initialSeverity>
+		<maxSeverity>1</maxSeverity>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>wristblade</label>
+						<capacities>
+							<li>Cut</li>
+							<li>Stab</li>
+						</capacities>
+						<power>15</power>
+						<cooldownTime>1.4</cooldownTime>
+						<chanceFactor>0.75</chanceFactor>
+					</li>
+					<li>
+						<label>wristblade point</label>
+						<capacities>
+							<li>Stab</li>
+						</capacities>
+						<power>12</power>
+						<cooldownTime>1.2</cooldownTime>
+					</li>
+					<li>
+						<label>wristblade edge</label>
+						<capacities>
+							<li>Cut</li>
+						</capacities>
+						<power>15</power>
+						<cooldownTime>1.5</cooldownTime>
+					</li>
+				</tools>
+			</li>
+		</comps>
+	</HediffDef>
+	
+<!--Tribal-->
+	<HediffDef ParentName="ABYautja_DualWristBlade_Hediff">
+		<defName>TribalDualWristbladeGauntlet</defName>
+		<label>Tribal Dual Wristblade Gauntlet</label>
+		<stages>
+			<li>
+				<minSeverity>1</minSeverity>
+				<statOffsets>
+					<ArmorRating_Blunt>0.01</ArmorRating_Blunt>
+					<ArmorRating_Sharp>0.01</ArmorRating_Sharp>
+					<ArmorRating_Heat>0.01</ArmorRating_Heat>
+					<WorkSpeedGlobal>-0.05</WorkSpeedGlobal>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<HediffDef ParentName="ABYautja_LongWristBlade_Hediff">
+		<defName>TribalLongWristbladeGauntlet</defName>
+		<label>Tribal Long Wristblade Gauntlet</label>
+		<stages>
+			<li>
+				<minSeverity>1</minSeverity>
+				<statOffsets>
+					<ArmorRating_Blunt>0.01</ArmorRating_Blunt>
+					<ArmorRating_Sharp>0.01</ArmorRating_Sharp>
+					<ArmorRating_Heat>0.01</ArmorRating_Heat>
+					<WorkSpeedGlobal>-0.05</WorkSpeedGlobal>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<HediffDef ParentName="ABYautja_SingleWristBlade_Hediff">
+		<defName>TribalSingleWristbladeGauntlet</defName>
+		<label>Tribal Single Wristblade Gauntlet</label>
+		<stages>
+			<li>
+				<minSeverity>1</minSeverity>
+				<statOffsets>
+					<ArmorRating_Blunt>0.01</ArmorRating_Blunt>
+					<ArmorRating_Sharp>0.01</ArmorRating_Sharp>
+					<ArmorRating_Heat>0.01</ArmorRating_Heat>
+					<WorkSpeedGlobal>-0.05</WorkSpeedGlobal>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	
+<!--Tech-->
+	<HediffDef ParentName="ABYautja_DualWristBlade_Hediff">
+		<defName>TechDualWristbladeGauntlet</defName>
+		<label>Tech Dual Wristblade Gauntlet</label>
+		<stages>
+			<li>
+				<minSeverity>1</minSeverity>
+				<statOffsets>
+					<ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+					<ArmorRating_Sharp>0.05</ArmorRating_Sharp>
+					<ArmorRating_Heat>0.05</ArmorRating_Heat>
+				</statOffsets>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_DisappearsOnDeath" />
+			<li Class="VEF.AnimalBehaviours.HediffCompProperties_Exploder">
+				<explosionForce>3</explosionForce>
+				<damageDef>ABSuperBomb</damageDef>
+			</li>
+		</comps>
+	</HediffDef>
+	
+	<HediffDef ParentName="ABYautja_LongWristBlade_Hediff">
+		<defName>TechLongWristbladeGauntlet</defName>
+		<label>Tech Long Wristblade Gauntlet</label>
+		<stages>
+			<li>
+				<minSeverity>1</minSeverity>
+				<statOffsets>
+					<ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+					<ArmorRating_Sharp>0.05</ArmorRating_Sharp>
+					<ArmorRating_Heat>0.05</ArmorRating_Heat>
+				</statOffsets>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_DisappearsOnDeath" />
+			<li Class="VEF.AnimalBehaviours.HediffCompProperties_Exploder">
+				<explosionForce>3</explosionForce>
+				<damageDef>ABSuperBomb</damageDef>
+			</li>
+		</comps>
+	</HediffDef>
+	
+	<HediffDef ParentName="ABYautja_SingleWristBlade_Hediff">
+		<defName>TechSingleWristbladeGauntlet</defName>
+		<label>Tech Single Wristblade Gauntlet</label>
+		<stages>
+			<li>
+				<minSeverity>1</minSeverity>
+				<statOffsets>
+					<ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+					<ArmorRating_Sharp>0.05</ArmorRating_Sharp>
+					<ArmorRating_Heat>0.05</ArmorRating_Heat>
+				</statOffsets>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_DisappearsOnDeath" />
+			<li Class="VEF.AnimalBehaviours.HediffCompProperties_Exploder">
+				<explosionForce>3</explosionForce>
+				<damageDef>ABSuperBomb</damageDef>
+			</li>
+		</comps>
+	</HediffDef>
+</Defs>
