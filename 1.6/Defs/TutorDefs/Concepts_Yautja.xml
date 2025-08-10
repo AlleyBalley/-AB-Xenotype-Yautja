@@ -1,0 +1,58 @@
+<Defs>
+
+	<ConceptDef>
+		<defName>ABConcept_Gauntlet</defName>
+		<label>Yautja Gauntlet</label>
+		<needsOpportunity>True</needsOpportunity>
+		<priority>50</priority>
+		<helpText>Basic Equipment taken into the field by almost all Yautja when hunting.\n\nThe most basic version of the gauntlet only contains a Wristblade and Self Destruct Device. The gauntlet can only be removed by the wearer.\n\nIt can be upgraded via reseach to also contain the Self Destruct and Cloaking the Device.</helpText>
+	</ConceptDef>  
+  
+	<ConceptDef>
+		<defName>ABConcept_Wistblade</defName>
+		<label>Yautja Gauntlet - Wristblade</label>
+		<needsOpportunity>True</needsOpportunity>
+		<priority>50</priority>
+		<helpText>One of the most Iconic peices of Yautja equipment, it is rare indeed to see a hunter without one.\n\nWhile the Hunter Gauntlet is equipped, the wearer gains an extra melee attack.</helpText>
+	</ConceptDef>  
+  
+	<ConceptDef>
+		<defName>ABConcept_SelfDestruct</defName>
+		<label>Yautja Gauntlet - Self Destruct</label>
+		<needsOpportunity>True</needsOpportunity>
+		<priority>50</priority>
+		<helpText>Yautja will go to extreme lengths to prevent their technology being scavenged by 'lesser' races, this device is one of the most extreme solutions. This device will moitor their heart rate and if it drops to zero, kaboom.</helpText>
+	</ConceptDef>  
+ 
+	<ConceptDef>
+		<defName>ABConcept_Cloak</defName>
+		<label>Yautja Gauntlet - Cloaking Device</label>
+		<needsOpportunity>True</needsOpportunity>
+		<priority>50</priority>
+		<helpText>One of the most well known and coveted peices of Yautja technology, Active Optical Camouflage bends light around the user rendering them invisible.\n\nHowever it can be disrupted by the wearer taking or dealing damage.</helpText>
+	</ConceptDef>  
+  
+	<ConceptDef>
+		<defName>ABConcept_Plasmacaster</defName>
+		<label>Yautja Plasmacaster</label>
+		<needsOpportunity>True</needsOpportunity>
+		<priority>50</priority>
+		<helpText>Another iconic peice of Yautja technology the plasmacaster offers a hands free ranged weapon.\n\nWhen active it will automaticlly target enemies in range, prioritizing the wearers target.</helpText>
+	</ConceptDef>  
+  
+	<ConceptDef>
+		<defName>ABConcept_SmartDisk</defName>
+		<label>Yautja Smart Disk</label>
+		<needsOpportunity>True</needsOpportunity>
+		<priority>50</priority>
+		<helpText>The Smart Disc, also known as the Smart Weapon, Cutting Disk or simply the Disc, is a primarily thrown Yautja weapon.\n\nIt is an extremely sharp circular cutting device that is typically thrown like a discus. It also features a hand grip for use as a melee slashing weapon</helpText>
+	</ConceptDef>  
+  
+	<ConceptDef>
+		<defName>ABConcept_CombiStaff</defName>
+		<label>Yautja Combistaff</label>
+		<needsOpportunity>True</needsOpportunity>
+		<priority>50</priority>
+		<helpText>Combistaffs are Yautja Melee weapons that can be thrown at a target.</helpText>
+	</ConceptDef>  
+ </Defs>  
