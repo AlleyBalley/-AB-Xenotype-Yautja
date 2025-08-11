@@ -1,10 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+
 	<AbilityDef>
 		<defName>ABYautja_Ambush</defName>
 		<label>Ambush</label>
 		<description>Jump to a nearby location.</description>
 		<iconPath>UI/Abilities/Longjump</iconPath>
 		<cooldownTicksRange>100</cooldownTicksRange>
+		<writeCombatLog>True</writeCombatLog>
 		<hostile>false</hostile>
 		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
 		<verbProperties>
@@ -23,7 +26,44 @@
 				<canTargetBuildings>false</canTargetBuildings>
 			</targetParams>
 		</verbProperties>
+		<aiCanUse>true</aiCanUse>
 		<jobDef>CastJump</jobDef>
 		<aiCanUse>true</aiCanUse>
+	</AbilityDef>
+	
+	<AbilityDef>
+		<defName>ABYautja_Cloaking</defName>
+		<label>invisibility cloak</label>
+		<description>Use the shifter's ability to temporarily hide your corporeal form.</description>
+		<iconPath>UI/Abilities/RevenantInvisibility</iconPath>
+		<cooldownTicksRange>5000</cooldownTicksRange>
+		<writeCombatLog>True</writeCombatLog>
+		<hostile>false</hostile>
+		<targetRequired>false</targetRequired>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<statBases>
+			<Ability_Duration>30</Ability_Duration>
+		</statBases>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<label>cloak</label>
+			<drawAimPie>false</drawAimPie>
+			<requireLineOfSight>false</requireLineOfSight>
+			<nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+			<violent>false</violent>
+			<warmupTime>0.8</warmupTime>
+			<range>20</range>
+			<targetable>false</targetable>
+			<targetParams>
+				<canTargetSelf>True</canTargetSelf>
+			</targetParams>
+		</verbProperties>
+		<aiCanUse>true</aiCanUse>
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>ABYautja_Invisibility</hediffDef>
+			</li>
+		</comps>
 	</AbilityDef>
 </Defs>
