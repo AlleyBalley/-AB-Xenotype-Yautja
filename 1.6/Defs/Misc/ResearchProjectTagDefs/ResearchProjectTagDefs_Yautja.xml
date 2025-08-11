@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ResearchProjectTagDef>
+		<defName>YautjaStart</defName>
+	</ResearchProjectTagDef>
+	<ResearchProjectTagDef>
+		<defName>YautjaUnbloodedStart</defName>
+	</ResearchProjectTagDef>
+  <ResearchProjectTagDef>
+		<defName>YautjaBloodedStart</defName>
+	</ResearchProjectTagDef>
+
+</Defs>
