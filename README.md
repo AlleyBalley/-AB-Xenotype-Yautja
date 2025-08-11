@@ -20,7 +20,6 @@ Yautja Voice Samples 2 (https://www.youtube.com/watch?v=DDsjiZbgWa0)
 Yautja Voice Samples 3 (https://www.youtube.com/watch?v=jh9Y0sJn0S4)
 XML ~ Ogliss, acide_bob, Me
 Cleaning Armor XML ~ Sick6Nightmare
-Balancing ~ Me, acide_bob, Temmy, Cortanakya
 Original Art ~ Rebel Rot
 Art ~ Me, HannahBug
 
