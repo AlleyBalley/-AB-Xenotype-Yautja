@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BodyPartBase" Name="ABYautja_BodyPartGauntlet_Base" Abstract="True">
+	<recipeMaker>
+		<unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
+	</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="ABYautja_BodyPartGauntlet_Base" Name="ABYautja_TribalGauntlet_Base" Abstract="True">
+		<description>This wrist mounted blade is the ancestor of the most basic piece of equipment a Hunter carries. They come in infinite variations. These primitive versions have fixed claws which do get in the way of non combat activities.</description>
+		<techLevel>Neolithic</techLevel>
+		<statBases>
+			<MarketValue>1000</MarketValue>
+			<MaxHitPoints>250</MaxHitPoints>
+			<Flammability>0.05</Flammability>
+			<WorkToMake>7500</WorkToMake>
+			<Beauty>-3</Beauty>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Mass>0.15</Mass>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>ABYautja_Tech_T1</researchPrerequisite>
+			<recipeUsers>
+				<li>CraftingSpot</li>
+				<li>ABYautja_TableMachining</li>
+			</recipeUsers>
+		</recipeMaker>
+		<techHediffsTags>
+			<li>YautjaTribalEquipment</li>
+		</techHediffsTags>
+		<tradeTags>
+			<li>YautjaTribalEquipment</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="ABYautja_BodyPartGauntlet_Base" Name="ABYautja_TechGauntlet_Base" Abstract="True">
+		<description>This wrist mounted gauntlet is the most basic piece of equipment a Hunter carries. They come in infinite variations.</description>
+		<techLevel>Industrial</techLevel>
+		<statBases>
+			<MarketValue>4500</MarketValue>
+			<MaxHitPoints>500</MaxHitPoints>
+			<Flammability>0.05</Flammability>
+			<WorkToMake>7500</WorkToMake>
+			<Beauty>-3</Beauty>
+			<DeteriorationRate>0</DeteriorationRate>
+			<WorkToMake>25000</WorkToMake>
+			<Mass>0.45</Mass>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>ABYautja_Tech_Melee_T1</researchPrerequisite>
+			<recipeUsers>
+				<li>ABYautja_TableMachining</li>
+			</recipeUsers>
+		</recipeMaker>
+		<techHediffsTags>
+			<li>YautjaEquipment</li>
+		</techHediffsTags>
+		<tradeTags>
+			<li>YautjaEquipment</li>
+		</tradeTags>
+	</ThingDef>
+</Defs>

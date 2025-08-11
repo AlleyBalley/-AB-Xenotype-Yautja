@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+	<HediffDef ParentName="ImplantHediffBase">
+		<defName>ABYautjaClaws</defName>
+		<label>yautja claws</label>
+		<labelNoun>claws</labelNoun>
+		<description>small pointed claws protruding from the fingers</description>
+		<countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
+		<hediffClass>HediffWithComps</hediffClass>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>yautja claws</label>
+						<capacities>
+							<li>Scratch</li>
+						</capacities>
+						<power>5</power>
+						<armorPenetration>0.05</armorPenetration>
+						<cooldownTime>3</cooldownTime>
+					</li>
+				</tools>
+			</li>
+		</comps>
+		<addedPartProps>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+	</HediffDef>
+	
+	<HediffDef ParentName="ImplantHediffBase">
+		<defName>ABYautjaCrest</defName>
+		<label>head crest</label>
+		<labelNoun>crest</labelNoun>
+		<description>A crest that grows off the back of the scalp</description>
+		<countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
+		<hediffClass>HediffWithComps</hediffClass>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+	</HediffDef>
+	
+	<HediffDef>
+		<defName>ABYautjaLeatherySkin</defName>
+		<label>leathery skin</label>
+		<description>The skin is thick and leathery, forming a hearty barrier between you and the outside world. The small scales that pepper the skin aid you in damage resistance.</description>
+		<countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
+		<hediffClass>HediffWithComps</hediffClass>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+	</HediffDef>
+	
+<!--Teeth-->
+	<HediffDef Name="ABYautjaMandibleBase" ParentName="ImplantHediffBase" Abstract="true">
+		<countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
+		<hediffClass>HediffWithComps</hediffClass>
+		<countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<priceImpact>false</priceImpact>
+	</HediffDef>
+
+	<HediffDef ParentName="ABYautjaMandibleBase">
+		<defName>ABYautjaUpperMandibles</defName>
+		<label>yautja upper mandibles</label>
+		<labelNoun>mandibles</labelNoun>
+		<description>A finger-like digit that sprouts from the cheekbone and possesses a sharp tooth.</description>
+	</HediffDef>
+	
+	<HediffDef ParentName="ABYautjaMandibleBase">
+		<defName>ABYautjaSuperiorUpperMandibles</defName>
+		<label>yautja superior upper mandibles</label>
+		<labelNoun>mandibles</labelNoun>
+		<description>A finger-like digit that sprouts from the outer cheekbone and possesses a sharp tooth.</description>
+	</HediffDef>
+	
+	<HediffDef ParentName="ABYautjaMandibleBase">
+		<defName>ABYautjaLowerMandibles</defName>
+		<label>yautja lower mandibles</label>
+		<labelNoun>mandibles</labelNoun>
+		<description>A finger-like digit that sprouts from the jawline and possesses a sharp tooth.</description>
+	</HediffDef>
+	
+	<HediffDef ParentName="ABYautjaMandibleBase">
+		<defName>HBYautjaLowerMandible</defName>
+		<label>yautja lower mandible</label>
+		<labelNoun>mandibles</labelNoun>
+		<description>A finger-like digit that sprouts from the center of the chin and possesses a sharp tooth.</description>
+	</HediffDef>
+	
+	<HediffDef ParentName="ABYautjaMandibleBase">
+		<defName>ABYautjaSuperiorLowerMandibles</defName>
+		<label>yautja superior lower mandibles</label>
+		<labelNoun>mandibles</labelNoun>
+		<description>A finger-like digit that sprouts from the outer jawline and possesses a sharp tooth.</description>
+	</HediffDef>
+	
+	<HediffDef ParentName="ABYautjaMandibleBase">
+		<defName>HBYautjaComboMandibles</defName>
+		<label>yautja paired mandibles</label>
+		<labelNoun>mandibles</labelNoun>
+		<description>An array of finger-like digits that sprout from the face and possess a sharp tooth. While many arrangements of mandibles are modular, these are locked as a specific layout.</description>
+	</HediffDef>
+</Defs>
