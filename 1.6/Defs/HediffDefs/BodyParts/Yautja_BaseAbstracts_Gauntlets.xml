@@ -60,4 +60,8 @@
 			<li>YautjaEquipment</li>
 		</tradeTags>
 	</ThingDef>
+	
+	<ThingDef ParentName="ABYautja_TechGauntlet_Base" Name="ABYautja_CloakingGauntlet_Base" Abstract="True">
+		<description>This wrist mounted gauntlet is the most basic piece of equipment a Hunter carries. They come in infinite variations./n/nThis one has been fitted with a cloaking upgrade.</description>
+	</ThingDef>
 </Defs>
