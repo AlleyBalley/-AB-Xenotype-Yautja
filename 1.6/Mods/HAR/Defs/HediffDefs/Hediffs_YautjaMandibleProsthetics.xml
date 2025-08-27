@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>ABYautja_SimpleProstheticMandible</defName>
+		<label>prosthetic mandible</label>
+		<labelNoun>a prosthetic mandible</labelNoun>
+		<description>An installed prosthetic mandible. While it lacks a neural interface, its complex arrangement of internal joints allows it to mimic natural movement quite convincingly. Still, it is inferior to a real mandible.</description>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_SimpleProstheticMandible</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>ABYautja_SimpleProstheticMandible</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>0.85</partEfficiency>
+		</addedPartProps>
+	</HediffDef>
+	
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>ABYautja_BionicMandible</defName>
+		<label>bionic mandible</label>
+		<labelNoun>a bionic mandible</labelNoun>
+		<description>An installed bionic mandible. Silenced mini-servos give great strength, while the biogel nerve-link gives exquisite control. A lattice-dust healing system allows it to recover from damage. It is better than a biological mandible in almost every way.</description>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_BionicMandible</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>ABYautja_BionicMandible</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.25</partEfficiency>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+	</HediffDef>
+	
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>ABYautja_ArchotechMandible</defName>
+		<label>archotech mandible</label>
+		<labelNoun>an archotech mandible</labelNoun>
+		<description>An installed archotech mandible. It looks and feels like natural flesh, but it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. Its internal workings are a mystery to all human minds.</description>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_ArchotechMandible</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>ABYautja_ArchotechMandible</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.5</partEfficiency>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+	</HediffDef>
+</Defs>

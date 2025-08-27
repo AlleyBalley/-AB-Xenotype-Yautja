@@ -6,6 +6,7 @@
 				<xpath>/Defs/XenotypeDef[defName="ABStandardYautja"]/genes</xpath>
 				<value>
 					<li>ABYautjaSharpShooter</li>
+					<li>ABYautjaAlienRace</li>
 					<li>ABYautjaWarriorsMindset</li>
 					<li>ABYautjaMenacingApperance</li>
 					<li>ABYautjaKeenSenses</li>
@@ -187,6 +188,7 @@
 				<xpath>/Defs/XenotypeDef[defName="ABBerserkYautja"]/genes</xpath>
 				<value>
 					<li>ABYautjaSharpShooter</li>
+					<li>ABYautjaAlienRace</li>
 					<li>ABYautjaWarriorsMindset</li>
 					<li>ABYautjaMenacingApperance</li>
 					<li>ABYautjaKeenSenses</li>
@@ -367,6 +369,7 @@
 				<xpath>/Defs/XenotypeDef[defName="ABSwordYautja"]/genes</xpath>
 				<value>
 					<li>ABYautjaSharpShooter</li>
+					<li>ABYautjaAlienRace</li>
 					<li>ABYautjaWarriorsMindset</li>
 					<li>ABYautjaMenacingApperance</li>
 					<li>ABYautjaKeenSenses</li>
@@ -547,6 +550,7 @@
 				<xpath>/Defs/XenotypeDef[defName="ABShieldYautja"]/genes</xpath>
 				<value>
 					<li>ABYautjaSharpShooter</li>
+					<li>ABYautjaAlienRace</li>
 					<li>ABYautjaWarriorsMindset</li>
 					<li>ABYautjaMenacingApperance</li>
 					<li>ABYautjaKeenSenses</li>
@@ -727,6 +731,7 @@
 				<xpath>/Defs/XenotypeDef[defName="ABGrendelKingYautja"]/genes</xpath>
 				<value>
 					<li>ABYautjaSharpShooter</li>
+					<li>ABYautjaAlienRace</li>
 					<li>ABYautjaWarriorsMindset</li>
 					<li>ABYautjaMenacingApperance</li>
 					<li>ABYautjaKeenSenses</li>
@@ -907,6 +912,7 @@
 				<xpath>/Defs/XenotypeDef[defName="ABScoutYautja"]/genes</xpath>
 				<value>
 					<li>ABYautjaSharpShooter</li>
+					<li>ABYautjaAlienRace</li>
 					<li>ABYautjaWarriorsMindset</li>
 					<li>ABYautjaMenacingApperance</li>
 					<li>ABYautjaKeenSenses</li>

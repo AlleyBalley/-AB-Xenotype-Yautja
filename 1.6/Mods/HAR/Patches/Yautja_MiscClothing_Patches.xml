@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-	<!--Operation Class="PatchOperationSequence">
+	<Operation Class="PatchOperationSequence">
 		<operations>
 			<li Class="PatchOperationFindMod">
 				<mods>
@@ -14,5 +14,5 @@
 				</match>
 			</li>
 		</operations>
-	</Operation-->
+	</Operation>
 </Patch>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence" MayRequire="Ludeon.RimWorld.Ideology">
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/FactionDef[@Name="ABYautjaFactionBase"]/disallowedPrecepts</xpath>
+				<value>
+					<li>HAR_AlienDating_Honorable</li>
+					<li>HAR_AlienRaces_Exalted</li>
+					<li>HAR_AlienRaces_Respected</li>
+					<li>HAR_AlienSlavery_Abhorrent</li>
+					<li>HAR_AlienSlavery_Horrible</li>
+					<li>HAR_AlienSlavery_Disapproved</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/FactionDef[@Name="ABYautjaFactionBase"]/allowedMemes</xpath>
+				<value>
+					<li>HAR_Xenophobia</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/FactionDef[@Name="ABYautjaTechFactionBase"]/allowedMemes</xpath>
+				<value>
+					<li>HAR_Xenophobia</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

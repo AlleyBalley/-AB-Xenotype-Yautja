@@ -7,7 +7,7 @@
 		<scenario>
 			<summary>A crew of three Blooded Yautja scout for a suitable hunting location. Reminiscent of classic.</summary>
 			<playerFaction>
-				<factionDef>ABYautja_PlayerBlooded</factionDef>
+				<factionDef>ABYautjaGravshipCrew</factionDef>
 			</playerFaction>
 			<parts Inherit="False">
 			<!-- Layers -->
@@ -29,10 +29,11 @@
 					<customSummary>Start with just yautja.</customSummary>
 					<overrideKinds>
 						<li>
-							<pawnKind>Colonist_ABYautja_Blooded</pawnKind>
+							<pawnKind>Colonist_ABYautja_Blooded_ODYSSEY</pawnKind>
 						</li>
 					</overrideKinds>
 				</li>
+				
 			<!--Scene Parts-->
 				<li Class="ScenPart_ForcedMap">
 				  <def>ForcedMap</def>
@@ -82,7 +83,7 @@
 				  <thingDef>ComponentIndustrial</thingDef>
 				  <count>40</count>
 				</li>
-				<!--<li Class="ScenPart_StartingThing_Defined">
+				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
 					<thingDef>ABYautja_Gun_Hunting_Bow</thingDef>
 					<stuff>WoodLog</stuff>
@@ -95,7 +96,7 @@
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
 					<thingDef>ABYautja_Gun_Blaster</thingDef>
-				</li>-->
+				</li>
 				<li Class="ScenPart_StartingThing_Defined">
 				  <def>StartingThing_Defined</def>
 				  <thingDef>Steel</thingDef>
@@ -127,7 +128,6 @@
 				  <text>You are on a mission to find new hunting grounds for your clan. Use your gravship to explore the planet below and investigate for suitable prey. \n\nTo launch the gravship, select the pilot console, then select the launch command.\n\nOn the world map, select ‘view planet' to choose a landing spot on the planet.</text>
 				  <closeSound>GameStartSting</closeSound>
 				</li>
-				
 			</parts>
 		</scenario>
 	</ScenarioDef>

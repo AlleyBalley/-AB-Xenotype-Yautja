@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <TraitDef>
+        <defName>ABYautja_NotXenophobic</defName>
+        <commonality>0.2</commonality>
+        <degreeDatas>
+            <li>
+                <label>Egalitarianist</label>
+                <description>[PAWN_nameDef] believes that all life is equal. [PAWN_pronoun] doesn't believe that any race is above or below them.</description>
+				<disallowedMentalStates>
+					<li>Berserk</li>
+					<li>MurderousRage</li>
+					<li>SadisticRage</li>
+				</disallowedMentalStates>
+            </li>
+        </degreeDatas>
+		<conflictingTraits>
+			<li>HAR_Xenophobia</li>
+			<li>Greedy</li>
+			<li>Jealous</li>
+		</conflictingTraits>
+		<exclusionTags>
+			<li>ABYautjaRacist</li>
+		</exclusionTags>
+    </TraitDef>
+</Defs>

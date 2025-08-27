@@ -2,10 +2,10 @@
 <Patch>
 	<Operation Class="PatchOperationSequence">
 		<operations>
-		<!--Upper Mandibles-->
 			<li Class="PatchOperationRemove">
-				<xpath>/Defs/GeneDef[@Name="ABYautjaMandibles_Base"]/customEffectDescriptions/li[2]</xpath>
+				<xpath>/Defs/GeneDef[@Name="ABYautjaMandibles_Base"]/customEffectDescriptions</xpath>
 			</li>
+		<!--Upper Mandibles-->
 			<li Class="PatchOperationReplace">
 				<xpath>/Defs/GeneDef[defName="ABYautjaUpperMandibles"]/modExtensions/li/hediffsToBodyParts/li/bodyparts/li</xpath>
 				<value>
@@ -29,6 +29,19 @@
 				<xpath>/Defs/GeneDef[defName="ABYautjaLowerMandibles"]/modExtensions/li/hediffsToBodyParts/li/bodyparts</xpath>
 				<value>
 					<li>ABYautja_LowerMandibles</li>
+				</value>
+			</li>
+		<!--Combo Mandibles-->
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/GeneDef[defName="HBBiohazardMandibles"]/modExtensions/li/hediffsToBodyParts</xpath>
+				<value>
+					<li>
+						<hediff>HBYautjaComboMandibles</hediff>
+						<bodyparts>
+							<li>ABYautja_UpperMandibles</li>
+							<li>ABYautja_UpperMandibles</li>
+						</bodyparts>
+					</li>
 				</value>
 			</li>
 		</operations>

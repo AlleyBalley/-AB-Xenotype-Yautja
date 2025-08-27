@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Bone/limb yautja mandible -->
+	<RecipeDef MayRequire="erdelf.humanoidalienraces">
+		<recipeUsers>
+			<li>Human</li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">CreepJoiner</li>
+			<li>ABAlien_Yautja</li>
+		</recipeUsers>
+		<surgerySuccessChanceFactor>1.1</surgerySuccessChanceFactor>
+		<deathOnFailedSurgeryChance>0.01</deathOnFailedSurgeryChance>
+		<workAmount>3000</workAmount>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<defName>RepairYautjaMandible</defName>
+		<label>repair yautja mandible (10 med - no herb)</label>
+		<description>Repair yautja mandible</description>
+		<workerClass>Recipe_InstallNaturalBodyPart</workerClass>
+		<jobString>Repairing yautja mandible</jobString>
+		<appliedOnFixedBodyParts>
+			<li>ABYautja_UpperMandibles</li>
+			<li>ABYautja_LowerMandibles</li>
+		</appliedOnFixedBodyParts>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<disallowedThingDefs>
+				<li>MedicineHerbal</li>
+			</disallowedThingDefs>
+		</fixedIngredientFilter>
+	</RecipeDef>
+</Defs>

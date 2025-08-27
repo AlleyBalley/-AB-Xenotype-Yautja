@@ -2,42 +2,66 @@
 
 <Defs>
 
-  <BodyPartDef>
-    <defName>ABYautja_UpperMandibles</defName>
-    <label>upper mandible</label>
-    <hitPoints>8</hitPoints>
-    <frostbiteVulnerability>0</frostbiteVulnerability>
-    <pawnGeneratorCanAmputate>true</pawnGeneratorCanAmputate>
-    <skinCovered>true</skinCovered>
-    <tags>
-      <li>EatingSource</li>
-      <li>TalkingSource</li>
-    </tags>
-  </BodyPartDef>
-  
-  <BodyPartDef>
-    <defName>ABYautja_LowerMandibles</defName>
-    <label>lower mandible</label>
-    <hitPoints>8</hitPoints>
-    <frostbiteVulnerability>0</frostbiteVulnerability>
-    <pawnGeneratorCanAmputate>true</pawnGeneratorCanAmputate>
-    <skinCovered>true</skinCovered>
-    <tags>
-      <li>EatingSource</li>
-      <li>TalkingSource</li>
-    </tags>
-  </BodyPartDef>
+	<BodyPartDef Name="ABYautjaMandible_BodyPartBase" Abstract="True">
+		<hitPoints>8</hitPoints>
+		<frostbiteVulnerability>8</frostbiteVulnerability>
+		<pawnGeneratorCanAmputate>true</pawnGeneratorCanAmputate>
+		<canScarify>true</canScarify>
+		<skinCovered>true</skinCovered>
+		<canBeVacuumBurnt>false</canBeVacuumBurnt>
+		<beautyRelated>true</beautyRelated>
+		<tags>
+			<li>EatingSource</li>
+			<li>TalkingSource</li>
+		</tags>
+	</BodyPartDef>
 
-  <BodyPartDef>
-    <defName>ABYautja_Mouth</defName>
-    <label>mouth</label>
-    <hitPoints>20</hitPoints>
-    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
-    <skinCovered>true</skinCovered>
-    <tags>
-      <li>EatingSource</li>
-      <li>TalkingSource</li>
-      <li>ManipulationLimbCore</li>
-    </tags>
-  </BodyPartDef>
+	<BodyPartDef ParentName="ABYautjaMandible_BodyPartBase">
+		<defName>ABYautja_UpperMandibles</defName>
+		<label>upper mandible</label>
+	</BodyPartDef>
+  
+	<BodyPartDef ParentName="ABYautjaMandible_BodyPartBase">
+		<defName>ABYautja_LowerMandibles</defName>
+		<label>lower mandible</label>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>ABYautja_Mouth</defName>
+		<label>mouth</label>
+		<hitPoints>20</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<bleedRate>0</bleedRate>
+		<tags>
+			<li>EatingSource</li>
+			<li>TalkingSource</li>
+		</tags>
+	</BodyPartDef>
+	
+	<BodyPartDef>
+		<defName>ABYautja_Nose</defName>
+		<label>nostrils</label>
+		<hitPoints>10</hitPoints>
+		<frostbiteVulnerability>0</frostbiteVulnerability>
+		<skinCovered>true</skinCovered>
+		<solid>true</solid>
+		<bleedRate>0</bleedRate>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+	</BodyPartDef>
+	
+	<BodyPartDef>
+		<defName>ABYautja_Crest</defName>
+		<label>crest</label>
+		<hitPoints>30</hitPoints>
+		<skinCovered>true</skinCovered>
+		<destroyableByDamage>false</destroyableByDamage>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<canScarify>true</canScarify>
+		<canSuggestAmputation>false</canSuggestAmputation>
+		<bleedRate>2</bleedRate>
+		<executionPartPriority>500</executionPartPriority>
+		<beautyRelated>true</beautyRelated>
+	</BodyPartDef>
 </Defs>

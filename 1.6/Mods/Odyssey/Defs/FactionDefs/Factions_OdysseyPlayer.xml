@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <FactionDef ParentName="ABYautja_PlayerBlooded">
+    <defName>ABYautjaGravshipCrew</defName>
+    <label>yautja gravship crew</label>
+    <description>On a scouting mission to find new hunting grounds, whilst living in a Gravship.</description>
+    <basicMemberKind>Colonist_ABYautja_Blooded_ODYSSEY</basicMemberKind>
+    <factionIconPath>World/WorldObjects/Expanding/Town</factionIconPath>
+    <startingTechprintsResearchTags>
+      <li>ClassicStartTechprints</li>
+    </startingTechprintsResearchTags>
+    <apparelStuffFilter Inherit="False">
+      <thingDefs>
+        <li>Cloth</li>
+      </thingDefs>
+    </apparelStuffFilter>
+	<pawnGroupMakers Inherit="False">
+		<li>
+			<kindDef>Peaceful</kindDef>
+			<commonality>100</commonality>
+			<options>
+				<Colonist_ABYautja_Blooded_ODYSSEY>100</Colonist_ABYautja_Blooded_ODYSSEY>
+			</options>
+		</li>
+	</pawnGroupMakers>
+  </FactionDef>
+</Defs>

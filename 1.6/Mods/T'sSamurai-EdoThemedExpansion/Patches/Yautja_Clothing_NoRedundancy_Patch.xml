@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence" MayRequire="erdelf.humanoidalienraces">
+		<operations>
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Edo Themed Expansion/T's Samurai Faction redundancy patch</li>
+				</mods>
+				<match Class="PatchOperationAdd" MayRequire="trickity.samurai.faction">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="ABYautja_Race"]/alienRace/raceRestriction/whiteApparelList</xpath>
+					<value>
+						<li>TSFApparel_Headband</li>
+						<li>TSFApparel_StrawCoat</li>
+						<li>TSFApparel_SashimonoBanner</li>
+						<li>TSFApparel_SmokeBomb</li>
+						<li>TSFApparel_Gi</li>
+						<li>TSFApparel_KidGi</li>
+						<li>TSFApparel_NinjaTools</li>
+						<li>TSFApparel_KidKamon</li>
+						<li>TSFApparel_Yukata</li>
+						<li>TSFApparel_AshigaruArmor</li>
+						<li>TSFApparel_SamuraiArmor</li>
+					</value>
+				</match>
+				<nomatch Class="PatchOperationAdd" MayRequire="trickity.samurai.faction">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="ABYautja_Race"]/alienRace/raceRestriction/whiteApparelList</xpath>
+					<value>
+						<li>TSFApparel_Headband</li>
+						<li>TSFApparel_StrawCoat</li>
+						<li>TSFApparel_SashimonoBanner</li>
+						<li>TSFApparel_SmokeBomb</li>
+						<li>TSFApparel_Gi</li>
+						<li>TSFApparel_KidGi</li>
+						<li>TSFApparel_NinjaTools</li>
+						<li>TSFApparel_Kimono</li>
+						<li>TSFApparel_KidKamon</li>
+						<li>TSFApparel_Yukata</li>
+						<li>TSFApparel_HaoriJacket</li>
+						<li>TSFApparel_AshigaruArmor</li>
+						<li>TSFApparel_SamuraiArmor</li>
+					</value>
+				</nomatch>
+			</li>
+			
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Edo Themed Expansion/T's Samurai Faction redundancy patch</li>
+				</mods>
+				<match Class="PatchOperationAdd" MayRequire="heis.edo.themed.expansion">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="ABYautja_Race"]/alienRace/raceRestriction/whiteApparelList</xpath>
+					<value>
+						<li>HSApparel_Hitaiate</li>
+						<li>HSApparel_Menpo</li>
+						<li>HSApparel_SamuraiFaceGuard</li>
+						<li>HSApparel_Hachimaki</li>
+						<li>HSApparel_HannyaMask</li>
+						<li>HSApparel_ChildKimono</li>
+						<li>HSApparel_ChildStrawcloak</li>
+						<li>HSApparel_Strawcloak</li>
+						<li>HSApparel_Hakama</li>
+						<li>HSApparel_Kataginu</li>
+						<li>HSApparel_Do</li>
+						<li>HSApparel_Hanten</li>
+						<li>HSApparel_Tatami</li>
+						<li>HS_Edo_Cloak</li>
+						<li>HS_Tenbinbo</li>
+						<li>HS_Straw_Backpack</li>
+					</value>
+				</match>
+				<nomatch Class="PatchOperationAdd" MayRequire="heis.edo.themed.expansion">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="ABYautja_Race"]/alienRace/raceRestriction/whiteApparelList</xpath>
+					<value>
+						<li>HSApparel_Hitaiate</li>
+						<li>HSApparel_Menpo</li>
+						<li>HSApparel_SamuraiFaceGuard</li>
+						<li>HSApparel_Hachimaki</li>
+						<li>HSApparel_HannyaMask</li>
+						<li>HSApparel_ChildKimono</li>
+						<li>HSApparel_ChildStrawcloak</li>
+						<li>HSApparel_Kimono</li>
+						<li>HSApparel_Strawcloak</li>
+						<li>HSApparel_Hakama</li>
+						<li>HSApparel_Kataginu</li>
+						<li>HSApparel_Do</li>
+						<li>HSApparel_Hanten</li>
+						<li>HSApparel_Haori</li>
+						<li>HSApparel_Tatami</li>
+						<li>HS_Edo_Cloak</li>
+						<li>HS_Tenbinbo</li>
+						<li>HS_Straw_Backpack</li>
+					</value>
+				</nomatch>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="VEF.PatchOperationToggableSequence" MayRequire="erdelf.humanoidalienraces">
+		<enabled>False</enabled>
+		<mods>
+			<li>Edo Themed Expansion/T's Samurai Faction redundancy patch</li>
+		</mods>
+		<label>Yautja's Edo Expansion Clothes apparel whitelist adder (USE IN OPOSITION WITH CLOTHES REMOVER OF CHOICE):</label>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="ABYautja_Race"]/alienRace/raceRestriction/whiteApparelList</xpath>
+				<value>
+					<li>HSApparel_Kimono</li>
+					<li>HSApparel_Haori</li>
+				</value>
+			</li>
+		</operations>
+	</Operation> 
+	
+	<Operation Class="VEF.PatchOperationToggableSequence" MayRequire="erdelf.humanoidalienraces">
+		<enabled>True</enabled>
+		<mods>
+			<li>Edo Themed Expansion/T's Samurai Faction redundancy patch</li>
+		</mods>
+		<label>Yautja's T's Samurai Clothes apparel whitelist adder (USE IN OPOSITION WITH CLOTHES REMOVER OF CHOICE):</label>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="ABYautja_Race"]/alienRace/raceRestriction/whiteApparelList</xpath>
+				<value>
+					<li>TSFApparel_Kimono</li>
+					<li>TSFApparel_HaoriJacket</li>
+				</value>
+			</li>
+		</operations>
+	</Operation> 
+</Patch>

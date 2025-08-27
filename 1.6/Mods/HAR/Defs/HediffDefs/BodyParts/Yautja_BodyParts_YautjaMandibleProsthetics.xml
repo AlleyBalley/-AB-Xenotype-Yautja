@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BodyPartProstheticMakeableBase">
+		<defName>ABYautja_SimpleProstheticMandible</defName>
+		<label>prosthetic mandible</label>
+		<description>An installed prosthetic mandible. While it lacks a neural interface, its complex arrangement of internal joints allows it to mimic natural movement quite convincingly. Still, it is inferior to a real mandible.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallABYautja_SimpleProstheticMandible</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Steel>15</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<Mass>0.4</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Simple</li>
+		</techHediffsTags>
+	</ThingDef>
+
+	<ThingDef ParentName="BodyPartBionicBase">
+		<defName>ABYautja_BionicMandible</defName>
+		<label>bionic mandible</label>
+		<description>An installed bionic mandible. Silenced mini-servos give great strength, while the biogel nerve-link gives exquisite control. A lattice-dust healing system allows it to recover from damage. It is better than a biological mandible in almost every way.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallABYautja_BionicMandible</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Plasteel>5</Plasteel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+		</costList>
+		<thingSetMakerTags>
+			<li>RewardStandardMidFreq</li>
+		</thingSetMakerTags>
+		<statBases>
+			<Mass>0.4</Mass>
+		</statBases>
+	</ThingDef>
+	
+	<ThingDef ParentName="BodyPartArchotechBase">
+		<defName>ABYautja_ArchotechMandible</defName>
+		<label>archotech mandible</label>
+		<description>An installed archotech mandible. It looks and feels like natural flesh, but it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. Its internal workings are a mystery to all human minds.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallABYautja_ArchotechMandible</RecipeDef>
+		</descriptionHyperlinks>
+		<thingSetMakerTags>
+			<li>RewardStandardCore</li>
+		</thingSetMakerTags>
+		<statBases>
+			<MarketValue>2000</MarketValue>
+			<Mass>0.6</Mass>
+		</statBases>
+	</ThingDef>
+</Defs>

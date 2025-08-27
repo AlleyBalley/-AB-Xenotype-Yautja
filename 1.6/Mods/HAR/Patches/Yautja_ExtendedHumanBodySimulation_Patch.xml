@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<operations>
+		<!-- Add Intestine after Stomach -->
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Extended Human Body Simulation</li>
+				</mods>
+				<match Class="PatchOperationInsert">
+					<xpath>Defs/BodyDef[defName="ABYautja_Biped"]/corePart/parts/li[def = "Stomach"]</xpath>
+					<order>Prepend</order>
+					<value>		
+						<li>
+							<def>Intestine</def>
+							<coverage>0</coverage>
+							<depth>Inside</depth>
+							<groups>
+								<li>Torso</li>
+							</groups>
+						</li>
+					</value>
+				</match>
+			</li>
+			
+		<!-- Add Spleen before Liver -->
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Extended Human Body Simulation</li>
+				</mods>
+				<match Class="PatchOperationInsert">
+					<xpath>Defs/BodyDef[defName="ABYautja_Biped"]/corePart/parts/li[def = "Liver"]</xpath>
+					<order>Prepend</order>
+					<value>		
+						<li>
+							<def>Spleen</def>
+							<coverage>0.015</coverage>
+							<depth>Inside</depth>
+							<groups>
+								<li>Torso</li>
+							</groups>
+						</li>
+					</value>
+				</match>
+			</li>
+			
+		<!-- Add Left and Right Lobes to Liver -->
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Extended Human Body Simulation</li>
+				</mods>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/BodyDef[defName="ABYautja_Biped"]/corePart/parts/li[def = "Liver"]</xpath>
+					<value>		
+						<parts>
+							<li>
+								<def>LobeLiver</def>
+								<customLabel>left lobe of liver</customLabel>
+								<coverage>0.33</coverage>
+								<groups>
+									<li>Torso</li>
+								</groups>
+							</li>
+							<li>
+								<def>LobeLiver</def>
+								<customLabel>right lobe of liver</customLabel>
+								<coverage>0.33</coverage>
+								<groups>
+									<li>Torso</li>
+								</groups>
+							</li>
+						</parts>
+					</value>
+				</match>
+			</li>
+
+		<!-- Add Reward Centre and Thalamus to Brain -->
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Extended Human Body Simulation</li>
+				</mods>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/BodyDef[defName="ABYautja_Biped"]/corePart/parts/li[def = "Neck"]/parts/li[def = "Head"]/parts/li[def = "Skull"]/parts/li[def = "Brain"]</xpath>
+					<value>		
+						<parts>
+							<li>
+								<def>RewardCentre</def>
+								<coverage>0</coverage>
+								<groups>
+									<li>UpperHead</li>
+									<li>FullHead</li>
+								</groups>
+							</li>
+							<li>
+								<def>Thalamus</def>
+								<coverage>0</coverage>
+								<groups>
+									<li>UpperHead</li>
+									<li>FullHead</li>
+								</groups>
+							</li>
+						</parts>
+					</value>
+				</match>
+			</li>
+
+		<!-- Add Ulna to Left Arm -->
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Extended Human Body Simulation</li>
+				</mods>
+				<match Class="PatchOperationInsert">
+					<xpath>Defs/BodyDef[defName="ABYautja_Biped"]/corePart/parts/li[def = "Shoulder" and customLabel = "left shoulder"]/parts/li[def = "Arm"]/parts/li[def = "ABYautja_LeftForearm"]/parts/li[def = "Radius"]</xpath>
+					<value>		
+						<li>
+							<def>Ulna</def>
+							<customLabel>left ulna</customLabel>
+							<coverage>0.05</coverage>
+							<depth>Inside</depth>
+							<groups>
+								<li>Arms</li>
+								<li>ABYautja_Forearm</li>
+							</groups>
+						</li>
+					</value>
+				</match>
+			</li>
+
+		<!-- Add Ulna to Right Arm -->
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Extended Human Body Simulation</li>
+				</mods>
+				<match Class="PatchOperationInsert">
+					<xpath>Defs/BodyDef[defName="ABYautja_Biped"]/corePart/parts/li[def = "Shoulder" and customLabel = "right shoulder"]/parts/li[def = "Arm"]/parts/li[def = "ABYautja_RightForearm"]/parts/li[def = "Radius"]</xpath>
+					<value>		
+						<li>
+							<def>Ulna</def>
+							<customLabel>right ulna</customLabel>
+							<coverage>0.05</coverage>
+							<depth>Inside</depth>
+							<groups>
+								<li>Arms</li>
+								<li>ABYautja_Forearm</li>
+							</groups>
+						</li>
+					</value>
+				</match>
+			</li>
+
+		<!-- Add Patella to Left Leg -->
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Extended Human Body Simulation</li>
+				</mods>
+				<match Class="PatchOperationInsert">
+					<xpath>Defs/BodyDef[defName="ABYautja_Biped"]/corePart/parts/li[def = "Leg" and customLabel = "left leg"]/parts/li[def = "Femur"]</xpath>
+					<order>Append</order>
+					<value>		
+						<li>
+							<def>Patella</def>
+							<customLabel>left patella</customLabel>
+							<coverage>0.03</coverage>
+							<depth>Inside</depth>
+							<groups>
+								<li>Legs</li>
+							</groups>
+						</li>
+					</value>
+				</match>
+			</li>
+			
+		<!-- Add Fibula to Left Leg -->
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Extended Human Body Simulation</li>
+				</mods>
+				<match Class="PatchOperationInsert">
+					<xpath>Defs/BodyDef[defName="ABYautja_Biped"]/corePart/parts/li[def = "Leg" and customLabel = "left leg"]/parts/li[def = "Tibia"]</xpath>
+					<order>Append</order>
+					<value>		
+						<li>
+							<def>Fibula</def>
+							<customLabel>left fibula</customLabel>
+							<coverage>0.05</coverage>
+							<depth>Inside</depth>
+							<groups>
+								<li>Legs</li>
+							</groups>
+						</li>
+					</value>
+				</match>
+			</li>
+			
+		<!-- Add Patella to Right Leg -->
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Extended Human Body Simulation</li>
+				</mods>
+				<match Class="PatchOperationInsert">
+					<xpath>Defs/BodyDef[defName="ABYautja_Biped"]/corePart/parts/li[def = "Leg" and customLabel = "right leg"]/parts/li[def = "Femur"]</xpath>
+					<order>Append</order>
+					<value>		
+						<li>
+							<def>Patella</def>
+							<customLabel>right patella</customLabel>
+							<coverage>0.03</coverage>
+							<depth>Inside</depth>
+							<groups>
+								<li>Legs</li>
+							</groups>
+						</li>
+					</value>
+				</match>
+			</li>
+			
+		<!-- Add Fibula to Right Leg -->
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Extended Human Body Simulation</li>
+				</mods>
+				<match Class="PatchOperationInsert">
+					<xpath>Defs/BodyDef[defName="ABYautja_Biped"]/corePart/parts/li[def = "Leg" and customLabel = "right leg"]/parts/li[def = "Tibia"]</xpath>
+					<order>Append</order>
+					<value>		
+						<li>
+							<def>Fibula</def>
+							<customLabel>right fibula</customLabel>
+							<coverage>0.05</coverage>
+							<depth>Inside</depth>
+							<groups>
+								<li>Legs</li>
+							</groups>
+						</li>
+					</value>
+				</match>
+			</li>
+		</operations>	
+	</Operation>
+</Patch>

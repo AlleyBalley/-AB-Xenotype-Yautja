@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
+		<defName>InstallABYautja_SimpleProstheticMandible</defName>
+		<label>install prosthetic mandible</label>
+		<description>Install a prosthetic mandible.</description>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_SimpleProstheticMandible</ThingDef>
+			<HediffDef>ABYautja_SimpleProstheticMandible</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing prosthetic mandible.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ABYautja_SimpleProstheticMandible</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ABYautja_SimpleProstheticMandible</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>ABYautja_UpperMandibles</li>
+			<li>ABYautja_LowerMandibles</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>ABYautja_SimpleProstheticMandible</addsHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+		<defName>InstallABYautja_BionicMandible</defName>
+		<label>install bionic mandible</label>
+		<description>Install a bionic mandible.</description>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_BionicMandible</ThingDef>
+			<HediffDef>ABYautja_BionicMandible</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing bionic mandible.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ABYautja_BionicMandible</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ABYautja_BionicMandible</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>ABYautja_UpperMandibles</li>
+			<li>ABYautja_LowerMandibles</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>ABYautja_BionicMandible</addsHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+		<defName>InstallABYautja_ArchotechMandible</defName>
+		<label>install archotech mandible</label>
+		<description>Install an archotech mandible.</description>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_ArchotechMandible</ThingDef>
+			<HediffDef>ABYautja_ArchotechMandible</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing archotech mandible.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ABYautja_ArchotechMandible</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ABYautja_ArchotechMandible</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>ABYautja_UpperMandibles</li>
+			<li>ABYautja_LowerMandibles</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>ABYautja_ArchotechMandible</addsHediff>
+	</RecipeDef>
+</Defs>

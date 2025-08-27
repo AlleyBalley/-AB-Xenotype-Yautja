@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<GeneDef Name="ABYautjaGeneXenophobic" Abstract="True">
+		<displayCategory>ABYautjaCategory</displayCategory>
+		<displayOrderInCategory>975</displayOrderInCategory>
+		<biostatCpx>0</biostatCpx>
+		<exclusionTags>
+			<li>ABYautjaRacist</li>
+		</exclusionTags>
+		<modExtensions>
+			<li Class="VEF.Genes.GeneExtension">
+				<backgroundPathEndogenes>UI/Icons/Genes/Yautja_Endogene_Background</backgroundPathEndogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+	
+	<GeneDef ParentName="ABYautjaGeneXenophobic">
+		<defName>ABYautjaSuperiorRace</defName>
+		<label>Superior Race</label>
+		<labelShortAdj>superior</labelShortAdj>
+		<description>Your culture teaches that you are the superior species and all others are beneath you.</description>
+		<iconPath>UI/Icons/Genes/HAR/GeneIcon_SuperiorRace</iconPath>
+		<biostatMet>+1</biostatMet>
+		<forcedTraits>
+			<li>
+				<def>HAR_Xenophobia</def>
+				<degree>1</degree>
+			</li>
+		</forcedTraits>
+		<suppressedTraits>
+			<li>
+				<def>HAR_Xenophobia</def>
+				<degree>-1</degree>
+			</li>
+			<li>
+				<def>ABYautja_NotXenophobic</def>
+			</li>
+		</suppressedTraits>
+	</GeneDef>
+	
+	<GeneDef ParentName="ABYautjaGeneXenophobic">
+		<defName>ABYautjaNoOneSpecial</defName>
+		<label>Noboody Special</label>
+		<labelShortAdj>Nobody</labelShortAdj>
+		<description>Your culture teaches that you are no better than any other, you are equal to all those around you.</description>
+		<iconPath>UI/Icons/Genes/HAR/GeneIcon_NoOneSpecial</iconPath>
+		<biostatMet>0</biostatMet>
+		<forcedTraits>
+			<li>
+				<def>ABYautja_NotXenophobic</def>
+			</li>
+		</forcedTraits>
+		<suppressedTraits>
+			<li>
+				<def>HAR_Xenophobia</def>
+				<degree>-1</degree>
+			</li>
+			<li>
+				<def>HAR_Xenophobia</def>
+				<degree>1</degree>
+			</li>
+		</suppressedTraits>
+	</GeneDef>
+	
+	<GeneDef ParentName="ABYautjaGeneXenophobic">
+		<defName>ABYautjaNotWorthy</defName>
+		<label>Not Worthy</label>
+		<labelShortAdj>Worthless</labelShortAdj>
+		<description>Your culture teaches that you are the lowest of the low. All other races are better than what you are.</description>
+		<iconPath>UI/Icons/Genes/HAR/GeneIcon_NotWorthy</iconPath>
+		<biostatMet>+1</biostatMet>
+		<forcedTraits>
+			<li>
+				<def>HAR_Xenophobia</def>
+				<degree>-1</degree>
+			</li>
+		</forcedTraits>
+		<suppressedTraits>
+			<li>
+				<def>ABYautja_NotXenophobic</def>
+			</li>
+			<li>
+				<def>HAR_Xenophobia</def>
+				<degree>1</degree>
+			</li>
+		</suppressedTraits>
+	</GeneDef>
+</Defs>

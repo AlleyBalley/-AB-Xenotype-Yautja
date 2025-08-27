@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef ParentName="BaseYautjaPawnKind">
+		<defName>Colonist_ABYautja_Blooded_ODYSSEY</defName>
+		<label>blooded Yautja space-colonist</label>
+		<defaultFactionType>ABYautja_PlayerBlooded</defaultFactionType>
+		<backstoryFiltersOverride Inherit="false">
+			<li>
+				<categories>
+					<li>ABYautja_Blooded</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<apparelTags Inherit="False">
+			<li>Vacsuit</li>
+			<li>YautjaHelmet</li>
+			<li>YautjaEliteHelmet</li>
+			<li>YautjaOrnateHelmet</li>
+			<li>YautjaWebbing</li>
+		</apparelTags>
+		<ignoreApparelAllowChance>true</ignoreApparelAllowChance>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<specificApparelRequirements>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<requiredTag>Vacsuit</requiredTag>
+			</li>
+		</specificApparelRequirements>
+		<apparelMoney>
+			<min>10000</min>
+			<max>10000</max>
+		</apparelMoney>
+		<techHediffsChance>0.03</techHediffsChance>
+		<techHediffsMoney>50~800</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+			<li>Simple</li>
+			<li>ImplantEmpireCommon</li>
+			<li>YautjaTribalEquipment</li>
+		</techHediffsTags>
+		<techHediffsDisallowTags>
+			<li>PainCauser</li>
+		</techHediffsDisallowTags>
+		<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+	</PawnKindDef>
+</Defs>

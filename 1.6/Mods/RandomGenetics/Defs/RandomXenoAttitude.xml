@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<GeneDef ParentName="HALI_RandomGeneticsBase" MayRequire="erdelf.humanoidalienraces">
+		<defName>ABYautjaXenoAttitude</defName>
+		<label>random attitude towards xenos</label>
+		<displayCategory>ABYautjaCategory</displayCategory>
+		<displayOrderInCategory>975</displayOrderInCategory>
+		<biostatCpx>0</biostatCpx>
+		<description>Carriers of this gene will either be xenophobes or egalitarianist.</description>
+		<iconPath>UI/Icons/Genes/RG_RandomIcon</iconPath>
+		<exclusionTags>
+			<li>ABYautjaRacist</li>
+		</exclusionTags>
+		<modExtensions>
+			<li Class="HALI_RandomGenetics.Multi_Rand_List">
+				<geneList>
+					<li>
+						<genesAndWeight>
+							<li>
+								<genes>
+									<li>ABYautjaNoOneSpecial</li>
+								</genes>
+								<weight>1</weight>
+							</li>
+							<li>
+								<genes>
+									<li>ABYautjaSuperiorRace</li>
+								</genes>
+								<weight>3</weight>
+							</li>
+						</genesAndWeight>
+					</li>
+				</geneList>
+			</li>
+			<li Class="VEF.Genes.GeneExtension">
+				<backgroundPathEndogenes>UI/Icons/Genes/Yautja_Endogene_Background</backgroundPathEndogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+</Defs>

@@ -13,7 +13,7 @@
 			<li Class="PatchOperationReplace">
 				<xpath>/Defs/GeneDef[defName="ABYautjaLowerMandibles"]/label</xpath>
 				<value>
-					<label>yautja upper mandible</label>
+					<label>yautja lower mandible</label>
 				</value>
 			</li>
 		</operations>
