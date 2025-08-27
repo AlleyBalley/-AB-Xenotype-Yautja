@@ -1,13 +1,16 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+
 	<FactionDef Abstract="True" Name="ABYautjaPlayerFactionBase" ParentName="FactionBase">
 		<isPlayer>true</isPlayer>
 		<techLevel>Ultra</techLevel>
 		<pawnsPlural>Yautja</pawnsPlural>
-		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+		<factionNameMaker>ABNamerYautjaPlayerClan</factionNameMaker>
+		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+		<playerInitialSettlementNameMaker>ABNamerYautjaPlayerClan</playerInitialSettlementNameMaker>
 		<colorSpectrum>
 			<li>(13, 58, 32)</li>
-			<li>(83, 142, 74</li>
+			<li>(83, 142, 74)</li>
 			<li>(153, 234, 44)</li>
 		</colorSpectrum>
 		<maxPawnCostPerTotalPointsCurve>
@@ -26,12 +29,12 @@
 		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
 		<factionIconPath>UI/Icons/Icon_YautjaPlayer</factionIconPath>
 	</FactionDef>
+	
 	<FactionDef ParentName="ABYautjaPlayerFactionBase">
 		<defName>ABYautja_PlayerColony</defName>
 		<label>Yautja Colony</label>
 		<description>Yautja Colony Start.</description>
 		<basicMemberKind>Colonist_ABYautja</basicMemberKind>
-		<pawnsPlural>Yautja</pawnsPlural>
 		<backstoryFilters>
 			<li>
 				<categories>
@@ -49,7 +52,7 @@
 		</backstoryFilters>
 		<startingResearchTags>
 			<li>ClassicStart</li>
-			<!--<li>YautjaStart</li>-->
+			<li>YautjaStart</li>
 		</startingResearchTags>
 		<apparelStuffFilter>
 			<thingDefs>
@@ -89,7 +92,7 @@
 		</backstoryFilters>
 		<startingResearchTags>
 			<li>ClassicStart</li>
-			<!--<li>YautjaUnbloodedStart</li>-->
+			<li>YautjaUnbloodedStart</li>
 		</startingResearchTags>
 		<apparelStuffFilter>
 			<thingDefs>
@@ -109,7 +112,7 @@
 		</pawnGroupMakers>
 	</FactionDef>
 	
-	<FactionDef ParentName="ABYautjaPlayerFactionBase">
+	<FactionDef ParentName="ABYautjaPlayerFactionBase" Name="ABYautja_PlayerBlooded">
 		<defName>ABYautja_PlayerBlooded</defName>
 		<label>Yautja Blooded</label>
 		<description>On a scouting mission to find new hunting grounds, something disastrous happened to your ship and you are possibly the only 5 survivors. Without a choice, you landed in unknown territory and have to face new dangers while you try to make your way back to your Clan.</description>
@@ -127,7 +130,7 @@
 		</backstoryFilters>
 		<startingResearchTags>
 			<li>ClassicStart</li>
-			<!--<li>YautjaBloodedStart</li>-->
+			<li>YautjaBloodedStart</li>
 		</startingResearchTags>
 		<apparelStuffFilter>
 			<thingDefs>
@@ -154,6 +157,8 @@
 		<description>You have broken the code of honor and have been cast out from any clan. You have been titled a Bad Blood, those you called your brothers and sisters will now hunt you.</description>
 		<techLevel>Neolithic</techLevel>
 		<basicMemberKind>Colonist_ABYautja_BadBlooded</basicMemberKind>
+		<factionNameMaker>ABNamerYautjaBadBloodClan</factionNameMaker>
+		<playerInitialSettlementNameMaker>ABNamerYautjaBadBloodClan</playerInitialSettlementNameMaker>
 		<backstoryFilters>
 			<li>
 				<categories>
@@ -170,7 +175,7 @@
 		</backstoryFilters>
 		<startingResearchTags>
 			<li>ClassicStart</li>
-			<!--<li>YautjaBloodedStart</li>-->
+			<li>YautjaBloodedStart</li>
 		</startingResearchTags>
 		<apparelStuffFilter>
 			<thingDefs>
@@ -195,5 +200,4 @@
 		</pawnGroupMakers>
 		<factionIconPath>UI/Icons/Icon_YautjaB</factionIconPath>
 	</FactionDef>
-
 </Defs>
