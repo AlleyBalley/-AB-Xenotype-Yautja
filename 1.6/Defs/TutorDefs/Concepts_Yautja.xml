@@ -1,0 +1,51 @@
+<Defs>
+
+	<ConceptDef ParentName="NotedOpportunisticBase">
+		<defName>ABConcept_Ranged</defName>
+		<label>Yautja Ranged Weaponry</label>
+		<helpText>Yautja have many styles of combat weaponry, especially when it comes to using range to their advantage. All yautja ranged weaponry can only be created at the yautja machining table, except for the yautja hunting bow which can be made at a crafting spot or a smithy.
+		/n/nThe yautja hunting bow.</helpText>
+	</ConceptDef>  
+  
+	<ConceptDef ParentName="NotedOpportunisticBase">
+		<defName>ABConcept_Melee</defName>
+		<label>Yautja Melee Weaponry</label>
+		<helpText>Yautja have many styles of combat weaponry. Some weaponry is easier to create, while others are more complicated. Tier 1 weapons can be crafted at a crafting spot and a yautja machining table. Tier 2 weapons can only be crafted at the yautja machining table.</helpText>
+	</ConceptDef>  
+
+	<ConceptDef ParentName="NotedOpportunisticBase">
+		<defName>ABConcept_WristBlades</defName>
+		<label>Yautja wrist blades</label>
+		<helpText>Wrist blades are one of the required ingredients to craft a yautja's gauntlet. There are two different ways to craft these crucial blades.
+		/n/nTribal yautja can shape wrist blades out of mechanoid chunks or slag chunks at a crafting spot.
+		/n/nYautja capable of making the yautja machining table can simply make them out of steel for much less material and effort.</helpText>
+	</ConceptDef>
+
+	<ConceptDef ParentName="NotedOpportunisticBase">
+		<defName>ABConcept_Gauntlet</defName>
+		<label>Yautja Gauntlets</label>
+		<helpText>Yautja gauntlets, or wristblades, are the most common piece of equipment used by the yautja. They come in two different tech levels: tribal and tech.
+		/nTribal gauntlets can be made at crafting spots, or the yautja machining table, using either one wristblade, two wristblades, or a long wristblade. Tribal wristblades can't retract thus having a debuff to work speed. These more primitive wristblades also lack the yautja's signature ability to combust on death.
+		/nTech gauntlets can be made at a yautja machining table using either one wristblade, two wristblades, or a long wristblade. These gauntlets come fully equipped with a self-destruct module.
+		/n/nAll gauntlets are installed by a surgical procedure.</helpText>
+	</ConceptDef>  
+ 
+	<ConceptDef ParentName="NotedOpportunisticBase">
+		<defName>ABConcept_YautjaComponents</defName>
+		<label>Yautja Components</label>
+		<helpText>Yautja are very protective of their technology. This has led them to developing their own type of component to stop others from simply recreating their technology.
+		/n/nYautja components are created at the yautja machining bench out of an advanced component, 5 steel, 10 plasteel, and a single gold.</helpText>
+	</ConceptDef>  
+ 
+	<ConceptDef ParentName="NotedOpportunisticBase">
+		<defName>ABConcept_Cloak</defName>
+		<label>Shifter</label>
+		<helpText>Yautja can choose to upgrade their gauntlets with a shifter. A advanced device that allows the user to hide their corporeal form for short bursts. The shifter can be crafted at a yautja machining table.</helpText>
+	</ConceptDef>  
+  
+	<ConceptDef ParentName="NotedOpportunisticBase">
+		<defName>ABConcept_Plasmacaster</defName>
+		<label>Yautja Shoulder Plasmacaster</label>
+		<helpText>Another iconic peice of Yautja technology the plasmacaster offers a hands free ranged weapon.\n\nWhen active it will automaticlly target enemies in range, prioritizing the wearers target. The plasmacaster also offers a manual target override system.</helpText>
+	</ConceptDef>  
+ </Defs>  

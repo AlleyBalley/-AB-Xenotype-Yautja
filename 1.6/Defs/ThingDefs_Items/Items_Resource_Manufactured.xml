@@ -11,8 +11,10 @@
 		</graphicData>
 		<soundInteract>Metal_Drop</soundInteract>
 		<soundDrop>Standard_Drop</soundDrop>
+		<healthAffectsPrice>false</healthAffectsPrice>
 		<stackLimit>50</stackLimit>
 		<statBases>
+			<MarketValue>250</MarketValue>
 			<MaxHitPoints>100</MaxHitPoints>
 			<Mass>0.5</Mass>
 			<Flammability>0</Flammability>

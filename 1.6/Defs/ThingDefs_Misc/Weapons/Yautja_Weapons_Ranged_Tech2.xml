@@ -357,8 +357,7 @@
 		<description>The burner is an assault-like weapon. It fires hot plasma in fast streams. Unblooded yautja are often given this weapon by older members to use on hunts.</description>
 		<graphicData>
 			<texPath>Things/Equipment/Ranged/Yautja_Burner</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>1.5</drawSize>			
+			<graphicClass>Graphic_Single</graphicClass>			
 		</graphicData>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<recipeMaker>

@@ -25,7 +25,7 @@
 				<ShootingAccuracyPawn>0.35</ShootingAccuracyPawn>
 				<PsychicSensitivity>-0.10</PsychicSensitivity>
 				<ToxicEnvironmentResistance>0.55</ToxicEnvironmentResistance>
-				<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.35</VacuumResistance>
+				<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.55</VacuumResistance>
 			</equippedStatOffsets>
 			<costList>
 				<Plasteel>30</Plasteel>
@@ -71,7 +71,7 @@
 				<ShootingAccuracyPawn>0.15</ShootingAccuracyPawn>
 				<PsychicSensitivity>-0.10</PsychicSensitivity>
 				<ToxicEnvironmentResistance>0.4</ToxicEnvironmentResistance>
-				<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.45</VacuumResistance>
+				<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.7</VacuumResistance>
 			</equippedStatOffsets>
 			<costList>
 				<Plasteel>30</Plasteel>
@@ -117,7 +117,7 @@
 				<PsychicSensitivity>-0.15</PsychicSensitivity>
 				<ToxicEnvironmentResistance>0.6</ToxicEnvironmentResistance>
 				<SocialImpact>0.05</SocialImpact>
-				<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.5</VacuumResistance>
+				<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.75</VacuumResistance>
 			</equippedStatOffsets>
 			<costList>
 				<Plasteel>40</Plasteel>
@@ -164,7 +164,7 @@
 				<PsychicSensitivity>0.10</PsychicSensitivity>
 				<ToxicEnvironmentResistance>0.6</ToxicEnvironmentResistance>
 				<SocialImpact>0.075</SocialImpact>
-				<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.5</VacuumResistance>
+				<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.75</VacuumResistance>
 			</equippedStatOffsets>
 			<costList>
 				<Plasteel>40</Plasteel>
@@ -187,7 +187,6 @@
 			</apparel>
 		</ThingDef>
 		
-		<!-- Not done yet!
 		<ThingDef ParentName="ABYautja_NobleHelmetMakeable_Base">
 			<defName>ABYautja_Armor_BioMaskOrnate</defName>
 			<label>Ornate Yautja Bio Mask</label>
@@ -211,7 +210,7 @@
 				<ShootingAccuracyPawn>0.15</ShootingAccuracyPawn>
 				<PsychicSensitivity>-0.10</PsychicSensitivity>
 				<ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
-				<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.6</VacuumResistance>
+				<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.8</VacuumResistance>
 				<SocialImpact>0.15</SocialImpact>
 				<NegotiationAbility>0.15</NegotiationAbility>
 				<TradePriceImprovement>0.15</TradePriceImprovement>
@@ -228,11 +227,19 @@
 				</skillRequirements>
 			</recipeMaker>
 			<apparel>
+				<countsAsClothingForNudity>false</countsAsClothingForNudity>
 				<wornGraphicPath>Things/Pawn/Humanlike/Yautja/Apparel/Yautja_Leader_Armor_Helmet/Yautja_LeaderArmor_Helmet</wornGraphicPath>
 				<tags>
 					<li>YautjaOrnateHelmet</li>
 					<li>YautjaOrnateArmor</li>
 					<li>YautjaSpecialArmor</li>
+					<li>Royal</li>
+					<li>RoyalTier2</li>
+					<li>RoyalTier3</li>
+					<li>RoyalTier4</li>
+					<li>RoyalTier5</li>
+					<li>RoyalTier6</li>
+					<li>RoyalTier7</li>
 				</tags>
 				<renderSkipFlags>
 					<li>None</li>
@@ -250,5 +257,4 @@
 				</drawData>
 			</apparel>
 		</ThingDef>
-		-->
 </Defs>

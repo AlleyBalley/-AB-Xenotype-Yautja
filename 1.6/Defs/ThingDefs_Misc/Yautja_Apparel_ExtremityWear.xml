@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+		
+	<!--Gloves-->
+		<ThingDef ParentName="ABYautja_Extremitywear_Base">
+			<defName>ABYautja_Armor_Gloves</defName>
+			<label>Yautja Gloves</label>
+			<description>A pair of leather fingerless gloves.</description>
+			<graphicData>
+				<texPath>Things/Equipment/Yautja_Gloves</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+			</graphicData>
+			<statBases>
+				<MarketValue>750</MarketValue>
+				<MaxHitPoints>200</MaxHitPoints>
+				<WorkToMake>7500</WorkToMake>
+				<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+				<ArmorRating_Blunt>0.5</ArmorRating_Blunt>
+				<ArmorRating_Heat>0.6</ArmorRating_Heat>
+				<Insulation_Heat>1</Insulation_Heat>
+				<Insulation_Cold>2</Insulation_Cold>
+				<Mass>1.5</Mass>
+			</statBases>
+			<stuffCategories>
+				<li>Leathery</li>
+			</stuffCategories>
+			<costStuffCount>30</costStuffCount>
+			<equippedStatOffsets>
+				<WorkSpeedGlobal>-0.01</WorkSpeedGlobal>
+			</equippedStatOffsets>
+			<recipeMaker>
+				<researchPrerequisite>ABYautja_Tech_T1</researchPrerequisite>
+				<skillRequirements>
+					<Crafting>4</Crafting>
+				</skillRequirements>
+			</recipeMaker>
+			<apparel>
+				<countsAsClothingForNudity>false</countsAsClothingForNudity>
+				<bodyPartGroups>
+					<li>Hands</li>
+				</bodyPartGroups>
+				<layers>
+					<li>Middle</li>
+				</layers>
+				<tags>
+					<li>YautjaArmor</li>
+					<li>YautjaLightArmor</li>
+					<li>YautjaNormalArmor</li>
+					<li>YautjaHeavyArmor</li>
+					<li>YautjaEliteArmor</li>
+					<li>YautjaOrnateArmor</li>
+				</tags>
+			</apparel>
+		</ThingDef>
+		
+	<!--Sandals-->
+		<ThingDef ParentName="ABYautja_Extremitywear_Base">
+			<defName>ABYautja_Armor_Sandals</defName>
+			<label>Yautja Sandals</label>
+			<description>A pair of snug fitting sandals coupled with a set of metallic shin guards.</description>
+			<graphicData>
+				<texPath>Things/Equipment/Yautja_Sandals</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+			</graphicData>
+			<statBases>
+				<MarketValue>500</MarketValue>
+				<MaxHitPoints>150</MaxHitPoints>
+				<WorkToMake>7500</WorkToMake>
+				<ArmorRating_Sharp>0.3</ArmorRating_Sharp>
+				<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+				<ArmorRating_Heat>0.1</ArmorRating_Heat>
+				<Insulation_Heat>2</Insulation_Heat>
+				<Insulation_Cold>1</Insulation_Cold>
+				<Mass>2</Mass>
+			</statBases>
+			<equippedStatOffsets>
+				<MoveSpeed>-0.01</MoveSpeed>
+			</equippedStatOffsets>
+			<stuffCategories>
+				<li>Leathery</li>
+			</stuffCategories>
+			<costStuffCount>15</costStuffCount>
+			<costList>
+				<Steel>20</Steel>
+				<Plasteel>5</Plasteel>
+			</costList>
+			<recipeMaker>
+				<researchPrerequisite>ABYautja_Tech_T1</researchPrerequisite>
+				<skillRequirements>
+					<Crafting>4</Crafting>
+				</skillRequirements>
+			</recipeMaker>
+			<apparel>
+				<countsAsClothingForNudity>false</countsAsClothingForNudity>
+				<bodyPartGroups>
+					<li>Feet</li>
+				</bodyPartGroups>
+				<layers>
+					<li>Middle</li>
+				</layers>
+				<tags>
+					<li>YautjaArmor</li>
+					<li>YautjaLightArmor</li>
+					<li>YautjaNormalArmor</li>
+					<li>YautjaEliteArmor</li>
+					<li>YautjaOrnateArmor</li>
+				</tags>
+			</apparel>
+		</ThingDef>
+		
+	<!--Boots-->
+		<ThingDef ParentName="ABYautja_Extremitywear_Base">
+			<defName>ABYautja_Armor_Boots</defName>
+			<label>Yautja Boots</label>
+			<description>A pair of open-toed shoes that the yautja refer to as boots. While these shoes cover more than the sandals, the non flexible portions of the foot are more protected with leather and plates.</description>
+			<graphicData>
+				<texPath>Things/Equipment/Yautja_Boots</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+			</graphicData>
+			<statBases>
+				<MarketValue>1000</MarketValue>
+				<MaxHitPoints>300</MaxHitPoints>
+				<WorkToMake>10000</WorkToMake>
+				<ArmorRating_Sharp>0.7</ArmorRating_Sharp>
+				<ArmorRating_Blunt>0.55</ArmorRating_Blunt>
+				<ArmorRating_Heat>0.7</ArmorRating_Heat>
+				<Insulation_Heat>4</Insulation_Heat>
+				<Insulation_Cold>2</Insulation_Cold>
+				<Mass>2</Mass>
+			</statBases>
+			<equippedStatOffsets>
+				<MoveSpeed>-0.025</MoveSpeed>
+			</equippedStatOffsets>
+			<stuffCategories>
+				<li>Leathery</li>
+			</stuffCategories>
+			<costStuffCount>10</costStuffCount>
+			<costList>
+				<Steel>50</Steel>
+				<Plasteel>25</Plasteel>
+				<ComponentYautja>1</ComponentYautja>
+			</costList>
+			<recipeMaker>
+				<researchPrerequisite>ABYautja_Tech_T2</researchPrerequisite>
+				<skillRequirements>
+					<Crafting>8</Crafting>
+				</skillRequirements>
+			</recipeMaker>
+			<apparel>
+				<countsAsClothingForNudity>false</countsAsClothingForNudity>
+				<bodyPartGroups>
+					<li>Feet</li>
+				</bodyPartGroups>
+				<layers>
+					<li>Middle</li>
+				</layers>
+				<tags>
+					<li>YautjaArmor</li>
+					<li>YautjaLightArmor</li>
+					<li>YautjaNormalArmor</li>
+					<li>YautjaHeavyArmor</li>
+					<li>YautjaEliteArmor</li>
+					<li>YautjaOrnateArmor</li>
+				</tags>
+			</apparel>
+		</ThingDef>
+</Defs>

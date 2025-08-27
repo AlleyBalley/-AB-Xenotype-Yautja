@@ -295,9 +295,9 @@
 				<li>YautjaRanged</li>
 		</weaponTags>
 		<recipeMaker>
-			<researchPrerequisite>ABYautja_Tech_Ranged_T2</researchPrerequisite>
+			<researchPrerequisite>ABYautja_Tech_Ranged_T1</researchPrerequisite>
 			<skillRequirements>
-			<Crafting>4</Crafting>
+				<Crafting>4</Crafting>
 			</skillRequirements>
 		</recipeMaker>
 		<verbs>

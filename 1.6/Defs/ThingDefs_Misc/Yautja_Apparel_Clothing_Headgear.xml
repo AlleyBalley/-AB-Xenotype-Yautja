@@ -27,12 +27,17 @@
 			<WoodLog>30</WoodLog>
 		</costList>
 		<recipeMaker>
+			<recipeUsers>
+				<li>CraftingSpot</li>
+			</recipeUsers>
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
 			<researchPrerequisite>ABYautja_Tech_T1</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>6</Crafting>
 			</skillRequirements>
 		</recipeMaker>
 		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
 			<renderSkipFlags>
 				<li>None</li>
 			</renderSkipFlags>
@@ -52,6 +57,9 @@
 				</dataNorth>
 			</drawData>
 		</apparel>
+		<thingCategories Inherit="False">
+			<li>ABYautja_Headgear</li>
+		</thingCategories>
 	</ThingDef>
 
 </Defs>

@@ -11,7 +11,7 @@
 		<useHitPoints>True</useHitPoints>
 		<techLevel>Neolithic</techLevel>
 		<graphicData>
-		<onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+			<onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
 		</graphicData>
 		<drawGUIOverlay>true</drawGUIOverlay>
 		<statBases>
@@ -75,6 +75,9 @@
 				</disallowedThingDefs>
 			</defaultIngredientFilter>
 		</recipeMaker>
+		<thingCategories>
+			<li>ABYautja_Apparel</li>
+		</thingCategories>
 		<tradeTags>
 				<li>ABYautjaClothing</li>
 		</tradeTags>
@@ -87,6 +90,7 @@
 			<workSkill>Crafting</workSkill>
 			<effectWorking>Smith</effectWorking>
 			<soundWorking>Recipe_Machining</soundWorking>
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
 			<recipeUsers>
 				<li>ABYautja_TableMachining</li>
 			</recipeUsers>
@@ -103,6 +107,9 @@
 				</disallowedThingDefs>
 			</defaultIngredientFilter>
 		</recipeMaker>
+		<thingCategories Inherit="False">
+			<li>ABYautja_Armor</li>
+		</thingCategories>
 		<tradeTags>
 				<li>ABYautjaArmor</li>
 		</tradeTags>
@@ -114,24 +121,38 @@
 		</comps>
 	</ThingDef>
 	
+	<ThingDef ParentName="ABYautja_ArmorBiocoded_Base" Name="ABYautja_Extremitywear_Base" Abstract="True">
+		<thingCategories Inherit="False">
+			<li>ABYautja_Apparel</li>
+		</thingCategories>
+		<comps Inherit="False">
+			<li Class="CompProperties_Biocodable"/>
+			<li Class="CompProperties_Styleable"/>
+			<li Class="CompProperties_Forbiddable"/>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+	
 	<ThingDef ParentName="ABYautja_ArmorBiocoded_Base" Name="ABYautja_NobleArmorMakeable_Base" Abstract="True">
-		<thingCategories>
+		<thingCategories Inherit="False">
 			<li>ABYautja_NobleArmor</li>
 		</thingCategories>
-		<tradeTags>
+		<tradeTags Inherit="False">
 				<li>ABYautjaNobleArmor</li>
 		</tradeTags>
 	</ThingDef>
 
 <!--Helmet-->
 	<ThingDef ParentName="ABYautja_ArmorMakeable_Base" Name="ABYautja_HelmetMakeable_Base" Abstract="True">
-		<thingCategories>
+		<thingCategories Inherit="False">
 			<li>ABYautja_ArmorHeadgear</li>
 		</thingCategories>
 		<apparel>
 			<parentTagDef>ApparelHead</parentTagDef>
 		</apparel>
-		<tradeTags>
+		<tradeTags Inherit="False">
 				<li>ABYautjaHeadgear</li>
 		</tradeTags>
 	</ThingDef>
@@ -143,7 +164,7 @@
 	</ThingDef>
 	
 	<ThingDef ParentName="ABYautja_HelmetBiocoded_Base" Name="ABYautja_NobleHelmetMakeable_Base" Abstract="True">
-		<thingCategories>
+		<thingCategories Inherit="False">
 			<li>ABYautja_NobleArmorHeadgear</li>
 		</thingCategories>
 		<apparel>
@@ -156,6 +177,7 @@
 	
 	<ThingDef ParentName="ABYautja_HelmetBiocoded_Base" Name="ABYautja_BioMaskBase" Abstract="True">
 		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
 			<renderSkipFlags>
 				<li>None</li>
 			</renderSkipFlags>
@@ -194,12 +216,15 @@
 		<smeltable>false</smeltable>
 		<burnableByRecipe>false</burnableByRecipe>
 		<drawGUIOverlay>false</drawGUIOverlay>
-		<thingCategories>
+		<thingCategories Inherit="False">
 			<li>ABYautja_Equipment</li>
 		</thingCategories>
 		<tradeTags>
 				<li>ABYautjaEquipment</li>
 		</tradeTags>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+		</recipeMaker>
 	</ThingDef>
 	
 	<ThingDef ParentName="ABYautja_Utility_Base" Name="ABYautja_UtilityBiocoded_Base" Abstract="True">

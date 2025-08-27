@@ -2,15 +2,26 @@
 <Defs>
 	<TraitDef>
 		<defName>ABYautjaWarriorsMindset</defName>
+		<commonality>0</commonality>
 		<allowOnHostileSpawn>true</allowOnHostileSpawn>
 			<degreeDatas>
 				<li>
 					<label>Warrior's Mindset</label>
 					<description>{PAWN_nameDef} has a strong mind. {PAWN_pronoun} respects those who show signs of their hunt.</description>
+					<marketValueFactorOffset>0.02</marketValueFactorOffset>
 				</li>
 			</degreeDatas>
-		<conflictingTraits>
-		<li>BodyPurist</li>
-		</conflictingTraits>
+	</TraitDef>
+	
+	<TraitDef>
+		<defName>ABYautjaAlien</defName>
+		<commonality>0</commonality>
+		<allowOnHostileSpawn>true</allowOnHostileSpawn>
+			<degreeDatas>
+				<li>
+					<label>Alien</label>
+					<description>{PAWN_nameDef} is an alien. Why should {PAWN_pronoun} care about human affairs?</description>
+				</li>
+			</degreeDatas>
 	</TraitDef>
 </Defs>

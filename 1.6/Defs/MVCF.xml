@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <MVCF.ModDef>
+        <defName>ABYautja</defName>
+        <label>AB Yautja</label>
+        <description>Xenotype Yautja Plasmacaster</description>
+        <ActivateFeatures>
+            <li>Drawing</li>
+            <li>ApparelVerbs</li>
+            <li>IndependentFire</li>
+            <li>IntegratedToggle</li>
+        </ActivateFeatures>
+    </MVCF.ModDef>
+</Defs>

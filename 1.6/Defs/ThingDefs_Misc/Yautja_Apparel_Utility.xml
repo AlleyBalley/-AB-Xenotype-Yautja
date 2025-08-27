@@ -2,9 +2,9 @@
 <Defs>
 	
 	<ThingDef ParentName="ABYautja_UtilityBiocoded_Base">
-		<defName>ABYautja_Utility_CloakingBelt</defName>
-		<label>Cloaker</label>
-		<description>A non-descript belt fastened around the waste containing a yautja device known as a shifter. With a cloaker one can hide their presence for a short time. Attacking while in a cloaked state will reveal the wearer.</description>
+		<defName>ABYautja_Utility_Belt</defName>
+		<label>Yautja Belt</label>
+		<description>A non-descript belt fastened around the waste able to withstand and protect against slight damages.</description>
 		<graphicData>
 			<texPath>Things/Equipment/Yautja_Cloaker</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -14,6 +14,9 @@
 			<MaxHitPoints>300</MaxHitPoints>
 			<WorkToMake>25000</WorkToMake>
 			<Flammability>0.4</Flammability>
+			<ArmorRating_Blunt>0.02</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.02</ArmorRating_Sharp>
+			<ArmorRating_Heat>0.02</ArmorRating_Heat>
 			<EquipDelay>2</EquipDelay>
 			<Mass>0.3</Mass>
 		</statBases>
@@ -48,9 +51,6 @@
 			</layers>
 			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
 		</apparel>
-		<comps>
-			<li Class="VEF.Apparels.CompProperties_Camouflage"> </li>
-		</comps>
 	</ThingDef>
 	
 	<ThingDef ParentName="ABYautja_UtilityBiocoded_Base">
@@ -66,7 +66,7 @@
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
-				<label>Plasmacaster</label>
+				<label>Targetting System</label>
 				<defaultProjectile>ABBullet_Plasma</defaultProjectile>
 				<warmupTime>2.5</warmupTime>
 				<range>23</range>
@@ -74,6 +74,7 @@
 				<soundCast>ABShot_ShoulderCannon</soundCast>
 				<soundCastTail>GunTail_Light</soundCastTail>
 				<muzzleFlashScale>8</muzzleFlashScale>
+				<commandIcon>UI/Icons/Genes/GeneIcon_Sharp_Shooter</commandIcon>
 			</li>
 		</verbs>
 		<tickerType>Normal</tickerType>
@@ -81,10 +82,14 @@
 			<li Class="MVCF.Comps.CompProperties_VerbGiver">
 				<verbProps>
 					<li>
-						<label>Plasmacaster</label>
-						<visualLabel>mini-turret gun</visualLabel>
-						<description>A high-energy canon mounted to the shoulder.</description>
+						<label>Targeting System</label>
+						<visualLabel>Targeting system</visualLabel>
+						<description>Use the manual targetting system.</description>
 						<canBeToggled>true</canBeToggled>
+						<separateToggle>true</separateToggle>
+						<toggleLabel>Plasma caster</toggleLabel>
+						<toggleDescription>A high-energy canon mounted to the shoulder.</toggleDescription>
+						<toggleIconPath>Things/Equipment/Yautja_ShoulderCannon</toggleIconPath>
 						<comps>
 							<li Class="MVCF.VerbComps.VerbCompProperties_Turret">
 								<compClass>MVCF.VerbComps.VerbComp_Turret</compClass>
@@ -189,7 +194,7 @@
 		</statBases>
 		<equippedStatOffsets>
 			<MoveSpeed>-0.03</MoveSpeed>
-			<WorkSpeedGlobal>-0.15</WorkSpeedGlobal>
+			<WorkSpeedGlobal>-0.05</WorkSpeedGlobal>
 		</equippedStatOffsets>
 		<costList>
 			<Plasteel>40</Plasteel>

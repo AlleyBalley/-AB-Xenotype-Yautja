@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<SoundDef>
+		<defName>ABShot_ShoulderCannon</defName>  
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>  
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Weapons/Ranged/Predator_Shoulder_Cannon_Shot</clipPath>
+					</li>
+				</grains>      
+				<volumeRange>
+					<min>35</min>        
+					<max>35</max>
+				</volumeRange>      
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+</Defs>
