@@ -12,8 +12,17 @@
 		<scenarioCanAdd>false</scenarioCanAdd>
 		<countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
 	</HediffDef>
-
-	<HediffDef>
+	
+	<HediffDef Name="ABSpecialGoodHediff" Abstract="True">
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.5, 0.5, 0.9)</defaultLabelColor>
+		<description>.</description>
+		<isBad>false</isBad>
+		<makesAlert>false</makesAlert>
+		<makesSickThought>false</makesSickThought>
+	</HediffDef>
+	
+	<HediffDef ParentName="ABSpecialBadHediff">
 		<hediffClass>HediffWithComps</hediffClass>
 		<defName>ABHediff_PinnedCombistaff</defName>
 		<label>pinned</label>
@@ -30,15 +39,6 @@
 				<healAmount>0.005</healAmount>
 			</li>
 		</comps>
-	</HediffDef>
-	
-	<HediffDef Name="ABSpecialGoodHediff" Abstract="True">
-		<hediffClass>HediffWithComps</hediffClass>
-		<defaultLabelColor>(0.5, 0.5, 0.9)</defaultLabelColor>
-		<description>.</description>
-		<isBad>false</isBad>
-		<makesAlert>false</makesAlert>
-		<makesSickThought>false</makesSickThought>
 	</HediffDef>
 
 	<HediffDef ParentName="ABSpecialBadHediff">
@@ -60,21 +60,18 @@
 		</comps>
 	</HediffDef>
 	
-	<HediffDef ParentName="ImplantHediffBase">
+	<HediffDef>
+		<hediffClass>HediffWithComps</hediffClass>
 		<defName>ABYautja_Invisibility</defName>
-		<label>shifter</label>
-		<description>An installed shifter that allows the user to temporarily cloak themselves in invisibility.</description>
-		<abilities>
-			<li>ABYautja_Cloaking</li>
-		</abilities>
-		<addedPartProps>
-			<solid>true</solid>
-		</addedPartProps>
+		<label>cloaking field</label>
+		<description>A temporary visual affect that makes the user appear invisible to others.</description>
+		<isBad>false</isBad>
 		<comps>
 			<li Class="HediffCompProperties_Invisibility">
-				<visibleToPlayer>false</visibleToPlayer>
-				<fadeDurationTicks>35</fadeDurationTicks>
-				<recoverFromDisruptedTicks>100</recoverFromDisruptedTicks>
+				<visibleToPlayer>true</visibleToPlayer>
+			</li>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>True</showRemainingTime>
 			</li>
 			<li Class="HediffCompProperties_DisappearsOnDeath"/>
 		</comps>

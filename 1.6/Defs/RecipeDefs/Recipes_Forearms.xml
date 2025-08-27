@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RecipeDef ParentName="SurgeryInstallWoodenPartBase">
+		<defName>InstallWoodenForearm</defName>
+		<label>install wooden forearm</label>
+		<description>Install a wooden forearm.</description>
+		<descriptionHyperlinks>
+			<ThingDef>WoodLog</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Installing wooden forearm.</jobString>
+		<appliedOnFixedBodyParts>
+			<li>ABYautja_RightForearm</li>
+			<li>ABYautja_LeftForearm</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>ABYautja_WoodenForearm</addsHediff>
+		<uiIconThing>WoodLog</uiIconThing>
+	</RecipeDef>
+
+	<RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
+		<defName>InstallABYautja_SimpleProstheticForearm</defName>
+		<label>install prosthetic forearm</label>
+		<description>Install a prosthetic forearm.</description>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_SimpleProstheticForearm</ThingDef>
+			<HediffDef>ABYautja_SimpleProstheticForearm</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing prosthetic forearm.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ABYautja_SimpleProstheticForearm</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ABYautja_SimpleProstheticForearm</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>ABYautja_RightForearm</li>
+			<li>ABYautja_LeftForearm</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>ABYautja_SimpleProstheticForearm</addsHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+		<defName>InstallABYautja_BionicForearm</defName>
+		<label>install bionic forearm</label>
+		<description>Install a bionic forearm.</description>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_BionicForearm</ThingDef>
+			<HediffDef>ABYautja_BionicForearm</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing bionic forearm.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ABYautja_BionicForearm</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ABYautja_BionicForearm</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>ABYautja_RightForearm</li>
+			<li>ABYautja_LeftForearm</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>ABYautja_BionicForearm</addsHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+		<defName>InstallABYautja_ArchotechForearm</defName>
+		<label>install archotech forearm</label>
+		<description>Install an archotech forearm.</description>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_ArchotechForearm</ThingDef>
+			<HediffDef>ABYautja_ArchotechForearm</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing archotech forearm.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ABYautja_ArchotechForearm</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ABYautja_ArchotechForearm</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>ABYautja_RightForearm</li>
+			<li>ABYautja_LeftForearm</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>ABYautja_ArchotechForearm</addsHediff>
+	</RecipeDef>
+</Defs>

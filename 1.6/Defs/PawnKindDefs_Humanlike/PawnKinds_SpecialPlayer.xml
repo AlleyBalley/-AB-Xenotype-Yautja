@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef ParentName="BaseYautjaPawnKind">
+		<defName>Colonist_ABYautja_Naked</defName>
+		<label>barren Yautja</label>
+		<defaultFactionType>ABYautja_PlayerColony</defaultFactionType>
+		<chemicalAddictionChance>0</chemicalAddictionChance>
+		<apparelMoney>
+			<min>0</min>
+			<max>0</max>
+		</apparelMoney>
+		<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="BaseYautjaPawnKind" MayRequire="OskarPotocki.VanillaFactionsExpanded.MedievalModule">
+		<defName>Colonist_ABYautja_Medieval</defName>
+		<label>medeival Yautja</label>
+		<defaultFactionType>VFEM_PlayerKingdom</defaultFactionType>
+		<chemicalAddictionChance>0.05</chemicalAddictionChance>
+		<apparelMoney>
+			<min>200</min>
+			<max>350</max>
+		</apparelMoney>
+		<apparelTags>
+			<li>MedievalBasic</li>
+			<li>Neolithic</li>
+		</apparelTags>
+		<techHediffsMoney>
+			<min>50</min>
+			<max>100</max>
+		</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+		</techHediffsTags>
+		<techHediffsChance>0.02</techHediffsChance>
+		<backstoryCryptosleepCommonality>0.5</backstoryCryptosleepCommonality>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="BaseYautjaPawnKind" MayRequire="OskarPotocki.VanillaFactionsExpanded.SettlersModule">
+		<defName>Colonist_ABYautja_Settler</defName>
+		<label>settler Yautja</label>
+		<defaultFactionType>VFES_PlayerSettlement</defaultFactionType>
+		<chemicalAddictionChance>0.1</chemicalAddictionChance>
+		<apparelMoney>
+			<min>100</min>
+			<max>200</max>
+		</apparelMoney>
+		<gearHealthRange>
+			<min>0.2</min>
+			<max>0.6</max>
+		</gearHealthRange>
+		<itemQuality>Poor</itemQuality>
+		<apparelTags>
+			<li>IndustrialBasic</li>
+			<li>Outlander</li>
+		</apparelTags>
+		<techHediffsMoney>
+			<min>50</min>
+			<max>100</max>
+		</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+		</techHediffsTags>
+		<techHediffsChance>0.06</techHediffsChance>
+		<backstoryCryptosleepCommonality>0.5</backstoryCryptosleepCommonality>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="BaseYautjaPawnKind" MayRequire="OskarPotocki.VFE.Vikings">
+		<defName>Colonist_ABYautja_Viking</defName>
+		<label>viking Yautja</label>
+		<defaultFactionType>VFEV_PlayerClan</defaultFactionType>
+		<chemicalAddictionChance>0.05</chemicalAddictionChance>
+		<apparelMoney>
+			<min>250</min>
+			<max>750</max>
+		</apparelMoney>
+		<apparelTags>
+			<li>Apparel_Viking</li>
+			<li>Neolithic</li>
+		</apparelTags>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<techHediffsMoney>
+			<min>50</min>
+			<max>100</max>
+		</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+		</techHediffsTags>
+		<techHediffsChance>0.02</techHediffsChance>
+		<backstoryCryptosleepCommonality>0.5</backstoryCryptosleepCommonality>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="BaseYautjaPawnKind" MayRequire="OskarPotocki.VFE.Pirates">
+		<defName>Colonist_ABYautja_Pirate</defName>
+		<label>pirate Yautja</label>
+		<defaultFactionType>VFEP_PlayerPirate</defaultFactionType>
+		<chemicalAddictionChance>0.06</chemicalAddictionChance>
+		<apparelMoney>
+			<min>400</min>
+			<max>1000</max>
+		</apparelMoney>
+		<gearHealthRange>
+			<min>0.7</min>
+			<max>2.3</max>
+		</gearHealthRange>
+		<apparelTags>
+			<li>IndustrialBasic</li>
+			<li>IndustrialAdvanced</li>
+			<li>IndustrialMilitaryBasic</li>
+			<li>IndustrialMilitaryAdvanced</li>
+		</apparelTags>
+		<apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
+		<techHediffsMoney>
+			<min>100</min>
+			<max>800</max>
+		</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+			<li>Simple</li>
+			<li>ImplantEmpireCommon</li>
+		</techHediffsTags>
+		<techHediffsChance>0.04</techHediffsChance>
+		<backstoryCryptosleepCommonality>0.5</backstoryCryptosleepCommonality>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="BaseYautjaPawnKind" MayRequire="OskarPotocki.VFE.Classical">
+		<defName>Colonist_ABYautja_Classical</defName>
+		<label>classical Yautja</label>
+		<defaultFactionType>VFEC_NewEmpire</defaultFactionType>
+		<chemicalAddictionChance>0.05</chemicalAddictionChance>
+		<apparelMoney>
+			<min>200</min>
+			<max>300</max>
+		</apparelMoney>
+		<gearHealthRange>
+			<min>0.7</min>
+			<max>2.3</max>
+		</gearHealthRange>
+		<apparelTags>
+			<li>Classical</li>
+			<li>MedievalBasic</li>
+		</apparelTags>
+		<techHediffsMoney>
+			<min>50</min>
+			<max>100</max>
+		</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+		</techHediffsTags>
+		<techHediffsChance>0.02</techHediffsChance>
+		<backstoryCryptosleepCommonality>0.5</backstoryCryptosleepCommonality>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="BaseYautjaPawnKind" MayRequire="Trickity.Samurai.Faction">
+		<defName>Colonist_ABYautja_Ronin</defName>
+		<label>samurai Yautja</label>
+		<defaultFactionType>TSF_PlayerRonin</defaultFactionType>
+		<chemicalAddictionChance>0.05</chemicalAddictionChance>
+		<apparelMoney>
+			<min>250</min>
+			<max>600</max>
+		</apparelMoney>
+		<gearHealthRange>
+			<min>0.7</min>
+			<max>2.3</max>
+		</gearHealthRange>
+		<apparelTags>
+			<li>Classical</li>
+			<li>Apparel_SamuraiBasic</li>
+		</apparelTags>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<techHediffsMoney>
+			<min>50</min>
+			<max>100</max>
+		</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+		</techHediffsTags>
+		<techHediffsChance>0.02</techHediffsChance>
+		<backstoryCryptosleepCommonality>0.5</backstoryCryptosleepCommonality>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="BaseYautjaPawnKind" MayRequire="Heis.Edo.Themed.Expansion">
+		<defName>Colonist_ABYautja_Edo</defName>
+		<label>edo Yautja</label>
+		<defaultFactionType>HS_PlayerEdoClan</defaultFactionType>
+		<chemicalAddictionChance>0.05</chemicalAddictionChance>
+		<apparelMoney>
+			<min>500</min>
+			<max>1200</max>
+		</apparelMoney>
+		<gearHealthRange>
+			<min>0.7</min>
+			<max>2.3</max>
+		</gearHealthRange>
+		<apparelTags>
+			<li>Classical</li>
+			<li>HSApparel_EdoClanBase</li>
+		</apparelTags>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<techHediffsMoney>
+			<min>50</min>
+			<max>100</max>
+		</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+		</techHediffsTags>
+		<techHediffsChance>0.02</techHediffsChance>
+		<backstoryCryptosleepCommonality>0.5</backstoryCryptosleepCommonality>
+	</PawnKindDef>
+</Defs>

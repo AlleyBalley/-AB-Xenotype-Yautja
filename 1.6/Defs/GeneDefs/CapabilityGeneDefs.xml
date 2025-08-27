@@ -32,9 +32,9 @@
 		<iconPath>UI/Icons/Genes/GeneIcon_WarriorMindset</iconPath>
 		<displayCategory>ABYautjaCategory</displayCategory>
 		<displayOrderInCategory>975</displayOrderInCategory>
-		<statFactors>
-			<MentalBreakThreshold>1.325</MentalBreakThreshold>
-		</statFactors>
+		<statOffsets>
+			<MentalBreakThreshold>-0.325</MentalBreakThreshold>
+		</statOffsets>
 		<biostatCpx>2</biostatCpx>
 		<biostatMet>-1</biostatMet>
 		<forcedTraits>
@@ -83,7 +83,7 @@
 		<displayCategory>ABYautjaCategory</displayCategory>
 		<displayOrderInCategory>975</displayOrderInCategory>
 		<statOffsets>
-			<MeleeDodgeChance>1.25</MeleeDodgeChance>
+			<MeleeDodgeChance>2.05</MeleeDodgeChance>
 			<MeleeHitChance>1.125</MeleeHitChance>
 		</statOffsets>
 		<statFactors>
@@ -231,5 +231,4 @@
 			</li>
 		</modExtensions>
 	</GeneDef>
-
 </Defs>

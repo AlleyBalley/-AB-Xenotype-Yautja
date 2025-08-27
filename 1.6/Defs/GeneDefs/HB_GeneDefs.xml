@@ -27,7 +27,6 @@
 			<li></li>
 			<li></li>
 		</exclusionTags>
-
 		<modExtensions MayRequire="oskarpotocki.vanillafactionsexpanded.core">
 			<li Class="VEF.Genes.GeneExtension">
 				<backgroundPathEndogenes>UI/Icons/Genes/Yautja_Endogene_Background</backgroundPathEndogenes>
@@ -71,7 +70,6 @@
 			<li></li>
 			<li></li>
 		</exclusionTags>
-
 		<modExtensions MayRequire="oskarpotocki.vanillafactionsexpanded.core">
 			<li Class="VEF.Genes.GeneExtension">
 				<backgroundPathEndogenes>UI/Icons/Genes/Yautja_Endogene_Background</backgroundPathEndogenes>

@@ -3,7 +3,7 @@
 
   <BodyPartGroupDef>
     <defName>ABYautja_Forearm</defName>
-    <label>forearm</label>
+    <label>forearms</label>
     <listOrder>83</listOrder>
   </BodyPartGroupDef>
 </Defs>

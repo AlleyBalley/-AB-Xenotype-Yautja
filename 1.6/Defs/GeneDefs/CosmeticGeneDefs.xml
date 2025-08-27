@@ -23,7 +23,7 @@
 			<li Class="VEF.Genes.GeneExtension">
 				<backgroundPathEndogenes>UI/Icons/Genes/Yautja_Endogene_Background</backgroundPathEndogenes>
 				<customBloodThingDef>ABYautja_FilthBlood</customBloodThingDef>
-				<customBloodIcon>UI/Icons/Medical/ABYautjaBlood</customBloodIcon>
+				<customBloodIcon>UI/Icons/Medical/Yautja_Bleeding</customBloodIcon>
 				<customBloodEffect>Damage_HitABYautja</customBloodEffect>
 				<customWoundsFromFleshtype>ABYautja_GreenWounds</customWoundsFromFleshtype>
 			</li>

@@ -15,10 +15,6 @@
 	<!--Vanilla Genes-->
 		<li>DarkVision</li>
 		<li>Nearsighted</li>
-		<li>Body_Thin</li>
-		<li>Body_Fat</li>
-		<li>Body_Hulk</li>
-		<li>Body_Standard</li>
 	<!--Yautja Genes-->
 		<li>ABYautjaAdvancedTechnologically</li>
 		<li>ABYautja_BreedingSeason</li>
@@ -125,9 +121,6 @@
 	<!--Vanilla Genes-->
 		<li>DarkVision</li>
 		<li>Nearsighted</li>
-		<li>Body_Fat</li>
-		<li>Body_Hulk</li>
-		<li>Body_Standard</li>
 	<!--Yautja Genes-->
 		<li>ABYautjaAdvancedTechnologically</li>
 		<li>ABYautja_BreedingSeason</li>

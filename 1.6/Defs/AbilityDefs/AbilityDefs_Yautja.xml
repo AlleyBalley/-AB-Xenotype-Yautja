@@ -35,23 +35,23 @@
 		<defName>ABYautja_Cloaking</defName>
 		<label>invisibility cloak</label>
 		<description>Use the shifter's ability to temporarily hide your corporeal form.</description>
-		<iconPath>UI/Abilities/RevenantInvisibility</iconPath>
-		<cooldownTicksRange>5000</cooldownTicksRange>
+		<iconPath>UI/Abilities/Yautja_Invisibility</iconPath>
+		<cooldownTicksRange>1250</cooldownTicksRange>
+		<!-- 30 Minutes  -->
 		<writeCombatLog>True</writeCombatLog>
-		<hostile>false</hostile>
+		<hotKey>Misc12</hotKey>
 		<targetRequired>false</targetRequired>
 		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
 		<statBases>
-			<Ability_Duration>30</Ability_Duration>
+			<Ability_Duration>20</Ability_Duration>
 		</statBases>
 		<verbProperties>
 			<verbClass>Verb_CastAbility</verbClass>
-			<label>cloak</label>
 			<drawAimPie>false</drawAimPie>
 			<requireLineOfSight>false</requireLineOfSight>
 			<nonInterruptingSelfCast>true</nonInterruptingSelfCast>
 			<violent>false</violent>
-			<warmupTime>0.8</warmupTime>
+			<warmupTime>1</warmupTime>
 			<range>20</range>
 			<targetable>false</targetable>
 			<targetParams>
@@ -63,6 +63,9 @@
 			<li Class="CompProperties_AbilityGiveHediff">
 				<compClass>CompAbilityEffect_GiveHediff</compClass>
 				<hediffDef>ABYautja_Invisibility</hediffDef>
+			</li>
+			<li Class="CompProperties_AbilityFleckOnTarget">
+				<fleckDef>PsycastPsychicEffect</fleckDef>
 			</li>
 		</comps>
 	</AbilityDef>

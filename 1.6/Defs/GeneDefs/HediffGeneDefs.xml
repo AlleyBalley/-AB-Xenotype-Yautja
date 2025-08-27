@@ -196,9 +196,11 @@
 		<iconColor>(0.75, 0.75, 0.75)</iconColor>
 		<randomChosen>false</randomChosen>
 		<customEffectDescriptions>
-			<li>Eating Speed x3%</li>
 			<li>When unarmed may bite with mandibles</li>
 		</customEffectDescriptions>
+		<statFactors>
+			<EatingSpeed>1.03</EatingSpeed>
+		</statFactors>
 	</GeneDef>
     <GeneDef ParentName="ABYautjaMandibles_Base">
         <defName>ABYautjaUpperMandibles</defName>

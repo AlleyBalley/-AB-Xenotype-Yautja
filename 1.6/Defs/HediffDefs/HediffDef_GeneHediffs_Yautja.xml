@@ -28,6 +28,7 @@
 			</li>
 		</comps>
 		<addedPartProps>
+			<solid>true</solid>
 			<betterThanNatural>true</betterThanNatural>
 		</addedPartProps>
 	</HediffDef>
@@ -42,6 +43,10 @@
 		<scenarioCanAdd>false</scenarioCanAdd>
 		<maxSeverity>1.0</maxSeverity>
 		<isBad>false</isBad>
+		<addedPartProps>
+			<solid>true</solid>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
 	</HediffDef>
 	
 	<HediffDef>
@@ -53,6 +58,10 @@
 		<scenarioCanAdd>false</scenarioCanAdd>
 		<maxSeverity>1.0</maxSeverity>
 		<isBad>false</isBad>
+		<addedPartProps>
+			<solid>true</solid>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
 	</HediffDef>
 	
 <!--Teeth-->
@@ -64,6 +73,11 @@
 		<maxSeverity>1.0</maxSeverity>
 		<isBad>false</isBad>
 		<priceImpact>false</priceImpact>
+		<addedPartProps>
+			<solid>true</solid>
+			<betterThanNatural>true</betterThanNatural>
+			<partEfficiency>1.03</partEfficiency>
+		</addedPartProps>
 	</HediffDef>
 
 	<HediffDef ParentName="ABYautjaMandibleBase">
@@ -90,7 +104,7 @@
 	<HediffDef ParentName="ABYautjaMandibleBase">
 		<defName>HBYautjaLowerMandible</defName>
 		<label>yautja lower mandible</label>
-		<labelNoun>mandibles</labelNoun>
+		<labelNoun>mandible</labelNoun>
 		<description>A finger-like digit that sprouts from the center of the chin and possesses a sharp tooth.</description>
 	</HediffDef>
 	
