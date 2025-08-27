@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Alpha Memes</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/FactionDef[@Name="ABYautjaFactionBase"]/disallowedPrecepts</xpath>
+			<value>
+				<li MayRequire="Ludeon.RimWorld.Ideology">AM_CombatProwess_Reduced</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">AM_Disfigurement_Disliked</li>
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Alpha Memes</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/FactionDef[@Name="ABYautjaFactionBase"]/allowedMemes</xpath>
+			<value>
+				<li MayRequire="Ludeon.RimWorld.Ideology">AM_Gladiator</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">AM_Bulwark</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">AM_Sharpshooter</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">AM_Sadist</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">AM_BiologicalDefilers</li>
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Alpha Memes</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/FactionDef[@Name="ABYautjaTechFactionBase"]/allowedMemes</xpath>
+			<value>
+				<li MayRequire="Ludeon.RimWorld.Ideology">AM_Gladiator</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">AM_Bulwark</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">AM_Sharpshooter</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">AM_Sadist</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">AM_BiologicalDefilers</li>
+			</value>
+		</match>
+	</Operation>
+</Patch>

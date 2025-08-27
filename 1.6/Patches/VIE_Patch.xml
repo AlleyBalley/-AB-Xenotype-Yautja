@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Ideology Expanded - Memes and Structures</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/FactionDef[@Name="ABYautjaFactionBase"]/disallowedPrecepts</xpath>
+			<value>
+				<li MayRequire="Ludeon.RimWorld.Ideology">VME_Death_Troubling</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">VME_Elders_Despised</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">VME_Raiding_Abhorrent</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">VME_Scars_Disgusting</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">VME_Slavery_Forbidden</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">VME_Violence_Abhorrent</li>
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Ideology Expanded - Memes and Structures</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/FactionDef[@Name="ABYautjaFactionBase"]/allowedMemes</xpath>
+			<value>
+				<li MayRequire="Ludeon.RimWorld.Ideology">VME_ViolentConversion</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">VME_Elders</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">VME_BloodCourt</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">VME_Nationalist</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">VME_Bushido</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">VME_GodEmperor</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">VFEA_Isolationist</li>
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Ideology Expanded - Memes and Structures</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/FactionDef[@Name="ABYautjaTechFactionBase"]/allowedMemes</xpath>
+			<value>
+				<li MayRequire="Ludeon.RimWorld.Ideology">VME_Progressive</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">VME_Scrapper</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">VME_ViolentConversion</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">VME_Elders</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">VME_BloodCourt</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">VME_Nationalist</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">VME_Bushido</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">VME_GodEmperor</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">VFEA_Isolationist</li>
+			</value>
+		</match>
+	</Operation>
+</Patch>

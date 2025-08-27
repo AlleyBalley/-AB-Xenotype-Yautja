@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<operations>
+
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThoughtDef[defName="AteHumanlikeMeatAsIngredient"]/nullifyingTraits</xpath>
+				<value>
+					<li>ABYautjaAlien</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThoughtDef[defName="AteHumanlikeMeatAsIngredient"]/nullifyingTraits</xpath>
+				<value>
+					<li>ABYautjaAlien</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThoughtDef[defName="AteRawHumanlikeMeat"]/nullifyingTraits</xpath>
+				<value>
+					<li>ABYautjaAlien</li>
+				</value>
+			</li>
+
+		<li Class="PatchOperationConditional" MayRequire="Ludeon.Rimworld.Anomaly">
+				<xpath>Defs/ThoughtDef[defName="AteHumanlikeMeatDirectCannibal"]/nullifyingTraits</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/ThoughtDef[defName="AteHumanlikeMeatDirectCannibal"]</xpath>
+					<value>
+						<nullifyingTraits />
+					</value>
+				</nomatch>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThoughtDef[defName="AteHumanlikeMeatDirectCannibal"]/nullifyingTraits</xpath>
+				<value>
+					<li>ABYautjaAlien</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationConditional" MayRequire="Ludeon.Rimworld.Anomaly">
+				<xpath>Defs/ThoughtDef[defName="AteHumanlikeMeatAsIngredientCannibal"]/nullifyingTraits</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/ThoughtDef[defName="AteHumanlikeMeatAsIngredientCannibal"]</xpath>
+					<value>
+						<nullifyingTraits />
+					</value>
+				</nomatch>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThoughtDef[defName="AteHumanlikeMeatAsIngredientCannibal"]/nullifyingTraits</xpath>
+				<value>
+					<li>ABYautjaAlien</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThoughtDef[defName="ButcheredHumanlikeCorpse"]/nullifyingTraits</xpath>
+				<value>
+					<li>ABYautjaAlien</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThoughtDef[defName="KnowButcheredHumanlikeCorpse"]/nullifyingTraits</xpath>
+				<value>
+					<li>ABYautjaAlien</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThoughtDef[defName="HumanLeatherApparelSad"]/nullifyingTraits</xpath>
+				<value>
+					<li>ABYautjaAlien</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationSequence" MayRequire="Ludeon.Rimworld.Ideology">
+		<operations>
+			<!--Abhorrent-->
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThoughtDef[defName="AteHumanMeat_Abhorrent"]/nullifyingTraits</xpath>
+				<value>
+					<li>ABYautjaAlien</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThoughtDef[defName="ButcheredHuman_Abhorrent"]/nullifyingTraits</xpath>
+				<value>
+					<li>ABYautjaAlien</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThoughtDef[defName="ButcheredHuman_Know_Abhorrent"]/nullifyingTraits</xpath>
+				<value>
+					<li>ABYautjaAlien</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThoughtDef[defName="ButcheredHuman_Know_Abhorrent_Opinion"]/nullifyingTraits</xpath>
+				<value>
+					<li>ABYautjaAlien</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThoughtDef[defName="AteHumanMeat_Know_Abhorrent"]/nullifyingTraits</xpath>
+				<value>
+					<li>ABYautjaAlien</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThoughtDef[defName="HumanLeatherApparel_Abhorrent"]/nullifyingTraits</xpath>
+				<value>
+					<li>ABYautjaAlien</li>
+				</value>
+			</li>
+			
+		<!--Horrible-->	
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThoughtDef[defName="AteHumanMeat_Horrible"]/nullifyingTraits</xpath>
+				<value>
+					<li>ABYautjaAlien</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThoughtDef[defName="ButcheredHuman_Horrible"]/nullifyingTraits</xpath>
+				<value>
+					<li>ABYautjaAlien</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThoughtDef[defName="ButcheredHuman_Know_Horrible"]/nullifyingTraits</xpath>
+				<value>
+					<li>ABYautjaAlien</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThoughtDef[defName="ButcheredHuman_Know_Horrible_Opinion"]/nullifyingTraits</xpath>
+				<value>
+					<li>ABYautjaAlien</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThoughtDef[defName="AteHumanMeat_Know_Horrible"]/nullifyingTraits</xpath>
+				<value>
+					<li>ABYautjaAlien</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThoughtDef[defName="HumanLeatherApparel_Horrible"]/nullifyingTraits</xpath>
+				<value>
+					<li>ABYautjaAlien</li>
+				</value>
+			</li>
+			
+		<!--Dissapproved-->
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThoughtDef[defName="AteHumanMeat_Disapproved"]/nullifyingTraits</xpath>
+				<value>
+					<li>ABYautjaAlien</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThoughtDef[defName="ButcheredHuman_Disapproved"]/nullifyingTraits</xpath>
+				<value>
+					<li>ABYautjaAlien</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThoughtDef[defName="ButcheredHuman_Know_Disapproved"]/nullifyingTraits</xpath>
+				<value>
+					<li>ABYautjaAlien</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThoughtDef[defName="ButcheredHuman_Know_Disapproved_Opinion"]/nullifyingTraits</xpath>
+				<value>
+					<li>ABYautjaAlien</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThoughtDef[defName="AteHumanMeat_Know_Disapproved"]/nullifyingTraits</xpath>
+				<value>
+					<li>ABYautjaAlien</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThoughtDef[defName="HumanLeatherApparel_Disapproved"]/nullifyingTraits</xpath>
+				<value>
+					<li>ABYautjaAlien</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

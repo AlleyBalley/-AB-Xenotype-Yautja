@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationConditional" MayRequire="Ludeon.Rimworld.Anomaly">
+				<xpath>Defs/ThoughtDef[defName="Chimera"]/nullifyingTraits</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/ThoughtDef[defName="Chimera"]</xpath>
+					<value>
+						<nullifyingTraits />
+					</value>
+				</nomatch>
+			</li>
+
+			<li Class="PatchOperationAdd" MayRequire="Ludeon.Rimworld.Anomaly">
+				<xpath>*/ThoughtDef[defName="Chimera"]/nullifyingTraits</xpath>
+				<value>
+					<li>ABYautjaWarriorsMindset</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd" MayRequire="Ludeon.Rimworld.Anomaly">
+				<xpath>*/ThoughtDef[defName="WearingDreadLeather"]/nullifyingTraits</xpath>
+				<value>
+					<li>ABYautjaWarriorsMindset</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/ThoughtDef[defName="Disfigured"]/nullifyingTraits</xpath>
+				<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/ThoughtDef[defName="Disfigured"]</xpath>
+					<value>
+						<nullifyingTraits />
+					</value>
+				</nomatch>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThoughtDef[defName="Disfigured"]/nullifyingTraits</xpath>
+				<value>
+					<li>ABYautjaWarriorsMindset</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>
