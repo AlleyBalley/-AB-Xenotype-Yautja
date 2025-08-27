@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>ABYautja_WoodenForearm</defName>
+		<label>wooden forearm</label>
+		<labelNoun>a wooden forearm</labelNoun>
+		<description>An installed wooden forearm complete with a wooden hand. Better than a stump, but not by much.</description>
+		<priceImpact>false</priceImpact>
+		<descriptionHyperlinks>
+			<ThingDef>WoodLog</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>WoodLog</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>0.6</partEfficiency>
+		</addedPartProps>
+	</HediffDef>
+
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>ABYautja_SimpleProstheticForearm</defName>
+		<label>prosthetic forearm</label>
+		<labelNoun>a prosthetic forearm</labelNoun>
+		<description>An installed prosthetic forearm. While it lacks a neural interface, its complex arrangement of internal joints allows it to mimic natural movement quite convincingly. Still, it is inferior to a real forearm.</description>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_SimpleProstheticForearm</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>ABYautja_SimpleProstheticForearm</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>0.85</partEfficiency>
+		</addedPartProps>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>fist</label>
+						<capacities>
+							<li>Blunt</li>
+						</capacities>
+						<power>8.2</power>
+						<!--  Same as natural fist  -->
+						<cooldownTime>2</cooldownTime>
+					</li>
+				</tools>
+			</li>
+		</comps>
+	</HediffDef>
+	
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>ABYautja_BionicForearm</defName>
+		<label>bionic forearm</label>
+		<labelNoun>a bionic forearm</labelNoun>
+		<description>An installed bionic forearm. Silenced mini-servos give great strength, while the biogel nerve-link gives exquisite control. A lattice-dust healing system allows it to recover from damage. It is better than a biological forearm in almost every way.</description>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_BionicForearm</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>ABYautja_BionicForearm</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.25</partEfficiency>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>fist</label>
+						<capacities>
+							<li>Blunt</li>
+						</capacities>
+						<power>12</power>
+						<cooldownTime>2</cooldownTime>
+						<soundMeleeHit>MeleeHit_BionicPunch</soundMeleeHit>
+						<soundMeleeMiss>MeleeMiss_BionicPunch</soundMeleeMiss>
+					</li>
+				</tools>
+			</li>
+		</comps>
+	</HediffDef>
+	
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>ABYautja_ArchotechForearm</defName>
+		<label>archotech forearm</label>
+		<labelNoun>an archotech forearm</labelNoun>
+		<description>An installed archotech forearm. It looks and feels like natural flesh, but it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. Its internal workings are a mystery to all human minds.</description>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_ArchotechForearm</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>ABYautja_ArchotechForearm</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.5</partEfficiency>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>fist</label>
+						<capacities>
+							<li>Blunt</li>
+						</capacities>
+						<power>14</power>
+						<cooldownTime>2</cooldownTime>
+						<soundMeleeHit>MeleeHit_BionicPunch</soundMeleeHit>
+						<soundMeleeMiss>MeleeMiss_BionicPunch</soundMeleeMiss>
+					</li>
+				</tools>
+			</li>
+		</comps>
+	</HediffDef>
+</Defs>
