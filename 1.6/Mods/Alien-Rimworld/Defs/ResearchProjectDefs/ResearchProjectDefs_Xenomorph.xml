@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ResearchProjectDef>
+		<tab>ABYautja_ResearchTab</tab>
+		<defName>ABYautja__Tech_Common_XenomorphCrafting</defName>
+		<label>Xenomorph Carapace Sculpting</label>
+		<description>Allows you to create basic Weapons and Armours out of parts of Xenomorphs</description>
+		<baseCost>1500</baseCost>
+		<techLevel>Neolithic</techLevel> 
+		<researchViewX>0</researchViewX>
+		<researchViewY>0</researchViewY>
+	</ResearchProjectDef>
+	
+</Defs>

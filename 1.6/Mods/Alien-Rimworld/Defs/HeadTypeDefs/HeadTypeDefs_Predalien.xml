@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<HeadTypeDef ParentName="AverageBase">
+		<defName>ABPredalien_Head</defName>
+		<narrow>false</narrow>
+		<randomChosen>false</randomChosen>
+		<gender>None</gender>
+		<graphicPath>Things/Pawn/Humanlike/Predalien/Heads/Predalien</graphicPath>
+	</HeadTypeDef>
+</Defs>

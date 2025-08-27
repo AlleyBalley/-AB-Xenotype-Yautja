@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="XMT_Starbeast_AlienRace"]/alienRace/raceRestriction/blackGeneList</xpath>
+		<value>
+			<li>ABYautjaHair_Tendril</li>
+			<li>ABYautjaHead</li>
+		</value>
+	</Operation>
+</Patch>

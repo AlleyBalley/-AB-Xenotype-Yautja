@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--Needs thingdef Xenomorph Tail Spike
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>ABMeleeWeapon_XenoSpear</defName>
+		<label>xenomorph-tail spear</label>
+		<description>A primitive spear made with the tail of a Xenomorph, making its tip immune to the acidic effects of the Xenomorph blood.</description>
+		<graphicData>
+			<texPath>Things/Equipment/Melee/Xeno_Spear</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.75</drawSize>	
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<techLevel>Neolithic</techLevel>
+		<weaponTags>
+			<li>Xeno_Spear</li>
+		</weaponTags>
+		<costStuffCount>60</costStuffCount>
+		<statBases>
+			<ABAcidResistance>1</ABAcidResistance>
+			<WorkToMake>12000</WorkToMake>
+			<Mass>2</Mass>
+		</statBases>
+		<equippedAngleOffset>-25</equippedAngleOffset>
+		<stuffCategories>
+			<li>Woody</li>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costList>			
+			<ABXenomorph_TailSpike>1</ABXenomorph_TailSpike>
+		</costList>
+		<tools>
+			<li>
+				<label>shaft</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+					<li>Scratch</li>
+				</capacities>
+				<power>24</power>
+				<armorPenetration>0.250</armorPenetration>
+				<cooldownTime>2.8</cooldownTime>
+			</li>
+		</tools>
+		<recipeMaker>
+			<recipeUsers>
+				<li>ElectricSmithy</li>
+				<li>FueledSmithy</li>
+				<li>CraftingSpot</li>
+			</recipeUsers>
+			<researchPrerequisite>ABTech_Common_XenomorphCrafting</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+	</ThingDef>
+	-->
+
+</Defs>

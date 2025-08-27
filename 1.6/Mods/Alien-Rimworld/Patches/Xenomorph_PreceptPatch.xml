@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/FactionDef[@Name="ABYautjaFactionBase"]/disallowedPrecepts</xpath>
+		<value>
+				<li MayRequire="Ludeon.RimWorld.Ideology">XMT_Biomorph_Abhorrent</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">XMT_Biomorph_Disapproved</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">XMT_Biomorph_Study</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">XMT_Biomorph_Worship</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">XMT_Parasite_Abhorrent</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">XMT_Parasite_Reincarnation</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">XMT_Parasite_Revered</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">XMT_Parasite_Animal</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">XMT_Parasite_Guilty</li>
+		</value>
+	</Operation>
+</Patch>

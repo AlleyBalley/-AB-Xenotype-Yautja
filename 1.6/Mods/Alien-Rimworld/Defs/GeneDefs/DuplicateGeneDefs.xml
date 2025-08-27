@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <GeneDef ParentName="ABYautjaMandibles_Base">
+		<geneClass>Xenomorphtype.XenomorphGene</geneClass>
+        <defName>ABYautjaUpperMandibles_Duplicate</defName>
+        <label>Predalien Upper Mandibles</label>
+        <description>A finger-like digit that sprouts from the cheekbone and possesses a sharp tooth.</description>
+        <iconPath>UI/Icons/Genes/GeneIcon_YautjaUpperMandibles</iconPath>
+        <renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPath>Things/Pawn/Humanlike/HeadAttachments/UpperMandibles/YautjaUpperMandibles</texPath>
+				<parentTagDef>Head</parentTagDef>
+				<color>(255, 255, 255)</color>
+				<visibleFacing>
+					<li>East</li>
+					<li>South</li>
+					<li>West</li>
+				</visibleFacing>
+				<baseLayer>56</baseLayer>
+			</li>
+        </renderNodeProperties>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>mandible</symbol>
+				</li>
+				<li>
+					<symbol>mandibles</symbol>
+				</li>
+				<li>
+					<symbol>saber</symbol>
+				</li>
+				<li>
+					<symbol>sabers</symbol>
+				</li>
+			</prefixSymbols>
+		</symbolPack>	
+		<modExtensions MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+			<li Class="VEF.Genes.GeneExtension">
+				<backgroundPathEndogenes>UI/Icons/Genes/Yautja_Endogene_Background</backgroundPathEndogenes>
+				<hediffsToBodyParts>
+					<li>
+						<hediff>ABYautjaUpperMandibles</hediff>
+						<bodyparts>
+							<li>Jaw</li>
+						</bodyparts>
+					</li>
+				</hediffsToBodyParts>
+			</li>
+		</modExtensions>	
+    </GeneDef>
+	
+	<GeneDef ParentName="ABYautjaMandibles_Base">
+		<geneClass>Xenomorphtype.XenomorphGene</geneClass>
+        <defName>ABYautjaLowerMandibles_Duplicate</defName>
+        <label>Predalien Lower Mandibles</label>
+        <description>A finger-like digit that sprouts from the jawline and possesses a sharp tooth.</description>
+        <iconPath>UI/Icons/Genes/GeneIcon_YautjaLowerMandibles</iconPath>
+        <renderNodeProperties>
+			<li>
+				<texPath>Things/Pawn/Humanlike/HeadAttachments/LowerMandibles/YautjaLowerMandibles</texPath>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<parentTagDef>Head</parentTagDef>
+				<color>(255, 255, 255)</color>
+				<visibleFacing>
+					<li>East</li>
+					<li>South</li>
+					<li>West</li>
+				</visibleFacing>
+				<baseLayer>55</baseLayer>
+			</li>
+        </renderNodeProperties>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>mandible</symbol>
+				</li>
+				<li>
+					<symbol>tusk</symbol>
+				</li>
+			</prefixSymbols>
+		</symbolPack>	
+		<modExtensions MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+			<li Class="VEF.Genes.GeneExtension">
+				<backgroundPathEndogenes>UI/Icons/Genes/Yautja_Endogene_Background</backgroundPathEndogenes>
+				<hediffsToBodyParts>
+					<li>
+						<hediff>ABYautjaLowerMandibles</hediff>
+						<bodyparts>
+							<li>Jaw</li>
+						</bodyparts>
+					</li>
+				</hediffsToBodyParts>
+			</li>
+		</modExtensions>	
+    </GeneDef>
+	
+	<GeneDef ParentName="ABYautjaMandibles_Base">
+		<geneClass>Xenomorphtype.XenomorphGene</geneClass>
+        <defName>HBBiohazardMandibles_Duplicate</defName>
+        <label>Predalien Biohazard Mandibles</label>
+        <description>A finger-like digit that sprouts from the cheekbone and possesses a sharp tooth. This array appears in a set of three with a mandible anchored to each cheekbone and a single, larger mandible placed in the center of the jawbone.</description>
+        <iconPath>UI/Icons/Genes/HBBiohazardMandiblesIcon</iconPath>
+        <renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPath>Things/Pawn/Humanlike/HeadAttachments/ComboMandibles/HBBiohazardMandibles</texPath>
+				<parentTagDef>Head</parentTagDef>
+				<color>(255, 255, 255)</color>
+				<visibleFacing>
+					<li>East</li>
+					<li>South</li>
+					<li>West</li>
+				</visibleFacing>
+				<baseLayer>56</baseLayer>
+			</li>
+        </renderNodeProperties>
+		<exclusionTags>
+		<!-- No clipping with regular upper, regular lower, superior upper, superior lower -->
+			<li>HBSpotlightMandible_Duplicate</li> <!-- Uses same lower mandible -->
+			<li></li>
+			<li></li>
+		</exclusionTags>
+		<modExtensions MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+			<li Class="VEF.Genes.GeneExtension">
+				<backgroundPathEndogenes>UI/Icons/Genes/Yautja_Endogene_Background</backgroundPathEndogenes>
+				<hediffsToBodyParts>
+					<li>
+						<hediff>HBYautjaComboMandibles</hediff>
+						<bodyparts>
+							<li>Jaw</li>
+						</bodyparts>
+					</li>
+				</hediffsToBodyParts>
+			</li>
+		</modExtensions>
+    </GeneDef>
+</Defs>
