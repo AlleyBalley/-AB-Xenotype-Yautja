@@ -1,5 +1,28 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+<!--Alien Race-->
+	<GeneDef>
+		<defName>ABYautjaAlienRace</defName>
+		<label>Alien Race</label>
+		<labelShortAdj>alien</labelShortAdj>
+		<description>You are an alien. Why should you care about human affairs?</description>
+		<iconPath>UI/Icons/Genes/GeneIcon_AlienRace</iconPath>
+		<displayCategory>ABYautjaCategory</displayCategory>
+		<displayOrderInCategory>975</displayOrderInCategory>
+		<biostatCpx>0</biostatCpx>
+		<biostatMet>1</biostatMet>
+		<forcedTraits>
+			<li>
+				<def>ABYautjaAlien</def>
+			</li>
+		</forcedTraits>
+		<modExtensions>
+			<li Class="VEF.Genes.GeneExtension">
+				<backgroundPathEndogenes>UI/Icons/Genes/Yautja_Endogene_Background</backgroundPathEndogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
 <!--Warrior's Mindset-->
 	<GeneDef>
 		<defName>ABYautjaWarriorsMindset</defName>
@@ -208,4 +231,5 @@
 			</li>
 		</modExtensions>
 	</GeneDef>
+
 </Defs>
