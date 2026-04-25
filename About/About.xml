@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ModMetaData>
+	<ModMetaData>
 
 		<name>[AB] Xenotype: Yautja</name>
 		<author>AlleyBalley</author>
@@ -11,6 +11,8 @@
 			Yautja are a race of extra-terrestrial aliens that seek to hunt the most powerful creatures they can kill. The more trouble, the more fame and glory. Humans are one of their favorite hunts. will you escape them or join them?
 
 			HAR compatibility!
+			
+			No longer requires Gene Tools - Forked!
 		</description>
 		<modDependencies>
 			<li>
@@ -33,11 +35,6 @@
 				<displayName>EBSG Framework</displayName>
 				<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3112549163</steamWorkshopUrl>
 			</li>
-			<li>
-				<packageId>prkr.genetools</packageId>
-				<displayName>Gene Tools - Forked</displayName>
-				<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=839005762</steamWorkshopUrl>
-			</li>
 		</modDependencies>
 		<loadAfter>
 		<!--Base game-->
@@ -54,8 +51,7 @@
 			<li>prkr.genetools</li>
 			<li>erdelf.humanoidalienraces</li>
 			<li>butterfish.hairmoddingplus</li>
-			<li>nals.facialanimation</li>
-			<li>helicade.randomgeneticsfw</li>
+			<!--li>nals.facialanimation</li-->
 			<li>DogLuggage.ColorGeneratorOptionsInterpolated</li>
 		<!--Romance-->
 			<li>divineDerivative.Romance</li>
@@ -69,12 +65,38 @@
 			<li>nals.facialanimationexperimentals</li>
 			<li>vanillaexpanded.vtexe.facialanims</li>
 			<li>ogliss.mythos.extendedhumanbodysimulation</li>
+			<li>IssacZhuang.MuzzleFlash</li>
+			<li>mlie.showmeyourhands</li>
+			<li>vanillaexpanded.vappe</li>
+			<li>kidapparelexpanded.goblins4lyfe</li>
+			<li>etrt.tribalapparel</li>
+			<li>bb.vae.gloves.and.boots</li>
+			<li>catlover366.bootsandgloves</li>
+			<li>River.Tribal.Mittens</li>
+			<li>River.Tribal.Shoes</li>
+			<li>RGBmods.Misc.Stimming</li>
+			<li>sihv.rombones</li>
+			<li>k4g.core</li>
+			<li>cyanobot.toddlers</li>
+			<li>sarg.alphamechs</li>
+			<li>aoba.warcasket</li>
+			<li>dankpyon.medieval.overhaul</li>
+			<li>pphhyy.BarbariansMOSubmod</li>
+			<li>zal.mobarbarians</li>
+			<li>DankPyon.Medieval.Overhaul.House.Roxmont</li>
+			<li>ferny.ProgressionEducation</li>
+			<li>mrkociak.yabembionicmodularity</li>
+			<li>vanillaexpanded.vfesecurity</li>
+			<li>reel.turretpipeline</li>
 		<!--Memes/precepts-->
 			<li>vanillaexpanded.vmemese</li>
 			<li>sarg.alphamemes</li>
 		<!--Factions/Xenotypes-->
 			<li>niz.xenomorphtype</li>
 			<li>det.venators</li>
+			<li>det.avaloi</li>
+			<li>det.boglegs</li>
+			<li>det.halffoot</li>
 			<li>heis.edo.themed.expansion</li>
 			<li>trickity.samurai.faction</li>
 			<li>heis.edo.themed.expansion.redundancy.patch</li>
@@ -85,5 +107,6 @@
 			<li>oskarpotocki.vfe.pirates</li>
 			<li>oskarpotocki.vanillafactionsexpanded.settlersmodule</li>
 			<li>oskarpotocki.vfe.tribals</li>
+			<li>sarg.alphagenes</li>
 		</loadAfter>
 	</ModMetaData>
