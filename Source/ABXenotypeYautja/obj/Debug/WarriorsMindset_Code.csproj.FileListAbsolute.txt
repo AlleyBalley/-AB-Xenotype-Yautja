@@ -1,0 +1,4 @@
+C:\SteamLibrary\steamapps\common\RimWorld\Mods\Mod Sources\WarriorsMindset_Code\obj\Debug\WarriorsMindset_Code.csproj.AssemblyReference.cache
+C:\SteamLibrary\steamapps\common\RimWorld\Mods\Mod Sources\WarriorsMindset_Code\obj\Debug\WarriorsMindset_Code.csproj.CoreCompileInputs.cache
+C:\SteamLibrary\steamapps\common\RimWorld\Mods\[AB] Xenotype; Yautja\1.6\Assemblies\WarriorsMindset_Code.dll
+C:\SteamLibrary\steamapps\common\RimWorld\Mods\Mod Sources\WarriorsMindset_Code\obj\Debug\WarriorsMindset_Code.dll

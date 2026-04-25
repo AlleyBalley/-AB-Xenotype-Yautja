@@ -1,0 +1,7 @@
+C:\Users\Allis\Pictures\Rimmers\[AB] Xenotype; Yautja\1.6\Assemblies\WarriorsMindset_Code.dll
+C:\Users\Allis\Pictures\Rimmers\Mod Sources\WarriorsMindset_Code\obj\Debug\ABXenotypeYautja.csproj.AssemblyReference.cache
+C:\Users\Allis\Pictures\Rimmers\Mod Sources\WarriorsMindset_Code\obj\Debug\ABXenotypeYautja.csproj.CoreCompileInputs.cache
+C:\Users\Allis\Pictures\Rimmers\Mod Sources\WarriorsMindset_Code\obj\Debug\WarriorsMindset_Code.dll
+C:\Users\Allis\Pictures\Rimmers\Mod Sources\ABXenotypeYautja\obj\Debug\ABXenotypeYautja.csproj.AssemblyReference.cache
+C:\Users\Allis\Pictures\Rimmers\Mod Sources\ABXenotypeYautja\obj\Debug\ABXenotypeYautja.csproj.CoreCompileInputs.cache
+C:\Users\Allis\Pictures\Rimmers\Mod Sources\ABXenotypeYautja\obj\Debug\WarriorsMindset_Code.dll
