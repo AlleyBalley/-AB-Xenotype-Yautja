@@ -3,20 +3,52 @@
 
 	<WorkGiverDef>
 		<defName>ABYautja_DoBillsYautjaMachining</defName>
-		<label>Fabricate Yautja Resources</label>
+		<label>fabricate yautja resources</label>
 		<giverClass>WorkGiver_DoBill</giverClass>
 		<workType>Crafting</workType>
 		<priorityInType>45</priorityInType>
 		<fixedBillGiverDefs>
 			<li>ABYautja_TableMachining</li>
 		</fixedBillGiverDefs>
-		<verb>Fabricate Resources</verb>
-		<gerund>Fabricating Resources at</gerund>
+		<verb>fabricate resources</verb>
+		<gerund>fabricating resources at</gerund>
 		<requiredCapacities>
 			<li>Manipulation</li>
 		</requiredCapacities>
 		<prioritizeSustains>true</prioritizeSustains>
 	</WorkGiverDef>
 
-
+	<WorkGiverDef>
+		<defName>ABYautja_DoBillsYautjaTinkering</defName>
+		<label>tinkering yautja tech</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Crafting</workType>
+		<priorityInType>40</priorityInType>
+		<fixedBillGiverDefs>
+			<li>ABYautja_TinkeringTable</li>
+		</fixedBillGiverDefs>
+		<verb>tinkering with tech</verb>
+		<gerund>tinkering with tech at</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+	
+	<!--WorkGiverDef>
+		<defName>ABYautja_DoBillsYautjaTrophy</defName>
+		<label>Improvising Yautja Tech</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Crafting</workType>
+		<priorityInType>45</priorityInType>
+		<fixedBillGiverDefs>
+			<li>ABYautja_TrophyTable</li>
+		</fixedBillGiverDefs>
+		<verb>Improvising</verb>
+		<gerund>Improvising at</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef-->
 </Defs>

@@ -4,7 +4,7 @@
 	<!--Gloves-->
 		<ThingDef ParentName="ABYautja_Extremitywear_Base">
 			<defName>ABYautja_Armor_Gloves</defName>
-			<label>Yautja Gloves</label>
+			<label>predator gloves</label>
 			<description>A pair of leather fingerless gloves.</description>
 			<graphicData>
 				<texPath>Things/Equipment/Yautja_Gloves</texPath>
@@ -26,22 +26,20 @@
 			</stuffCategories>
 			<costStuffCount>30</costStuffCount>
 			<equippedStatOffsets>
-				<WorkSpeedGlobal>-0.01</WorkSpeedGlobal>
+				<WorkSpeedGlobal>-0.005</WorkSpeedGlobal>
 			</equippedStatOffsets>
 			<recipeMaker>
-				<researchPrerequisite>ABYautja_Tech_T1</researchPrerequisite>
+				<researchPrerequisite>ABYautja_Tech_T2</researchPrerequisite>
 				<skillRequirements>
 					<Crafting>4</Crafting>
 				</skillRequirements>
 			</recipeMaker>
 			<apparel>
 				<countsAsClothingForNudity>false</countsAsClothingForNudity>
+				<developmentalStageFilter>Child,Adult</developmentalStageFilter>
 				<bodyPartGroups>
 					<li>Hands</li>
 				</bodyPartGroups>
-				<layers>
-					<li>Middle</li>
-				</layers>
 				<tags>
 					<li>YautjaArmor</li>
 					<li>YautjaLightArmor</li>
@@ -56,11 +54,12 @@
 	<!--Sandals-->
 		<ThingDef ParentName="ABYautja_Extremitywear_Base">
 			<defName>ABYautja_Armor_Sandals</defName>
-			<label>Yautja Sandals</label>
+			<label>predator sandals</label>
 			<description>A pair of snug fitting sandals coupled with a set of metallic shin guards.</description>
 			<graphicData>
 				<texPath>Things/Equipment/Yautja_Sandals</texPath>
 				<graphicClass>Graphic_Single</graphicClass>
+				<shaderType>CutoutComplex</shaderType>
 			</graphicData>
 			<statBases>
 				<MarketValue>500</MarketValue>
@@ -74,7 +73,7 @@
 				<Mass>2</Mass>
 			</statBases>
 			<equippedStatOffsets>
-				<MoveSpeed>-0.01</MoveSpeed>
+				<MoveSpeed>0.02</MoveSpeed>
 			</equippedStatOffsets>
 			<stuffCategories>
 				<li>Leathery</li>
@@ -85,19 +84,17 @@
 				<Plasteel>5</Plasteel>
 			</costList>
 			<recipeMaker>
-				<researchPrerequisite>ABYautja_Tech_T1</researchPrerequisite>
+				<researchPrerequisite>ABYautja_Tech_T2</researchPrerequisite>
 				<skillRequirements>
 					<Crafting>4</Crafting>
 				</skillRequirements>
 			</recipeMaker>
 			<apparel>
 				<countsAsClothingForNudity>false</countsAsClothingForNudity>
+				<developmentalStageFilter>Child,Adult</developmentalStageFilter>
 				<bodyPartGroups>
 					<li>Feet</li>
 				</bodyPartGroups>
-				<layers>
-					<li>Middle</li>
-				</layers>
 				<tags>
 					<li>YautjaArmor</li>
 					<li>YautjaLightArmor</li>
@@ -106,16 +103,20 @@
 					<li>YautjaOrnateArmor</li>
 				</tags>
 			</apparel>
+			<researchPrerequisites>
+				<li>Smithing</li>
+			</researchPrerequisites>
 		</ThingDef>
 		
 	<!--Boots-->
 		<ThingDef ParentName="ABYautja_Extremitywear_Base">
 			<defName>ABYautja_Armor_Boots</defName>
-			<label>Yautja Boots</label>
+			<label>predator boots</label>
 			<description>A pair of open-toed shoes that the yautja refer to as boots. While these shoes cover more than the sandals, the non flexible portions of the foot are more protected with leather and plates.</description>
 			<graphicData>
 				<texPath>Things/Equipment/Yautja_Boots</texPath>
 				<graphicClass>Graphic_Single</graphicClass>
+				<shaderType>CutoutComplex</shaderType>
 			</graphicData>
 			<statBases>
 				<MarketValue>1000</MarketValue>
@@ -129,7 +130,7 @@
 				<Mass>2</Mass>
 			</statBases>
 			<equippedStatOffsets>
-				<MoveSpeed>-0.025</MoveSpeed>
+				<MoveSpeed>0.05</MoveSpeed>
 			</equippedStatOffsets>
 			<stuffCategories>
 				<li>Leathery</li>
@@ -141,7 +142,7 @@
 				<ComponentYautja>1</ComponentYautja>
 			</costList>
 			<recipeMaker>
-				<researchPrerequisite>ABYautja_Tech_T2</researchPrerequisite>
+				<researchPrerequisite>ABYautja_Tech_T3</researchPrerequisite>
 				<skillRequirements>
 					<Crafting>8</Crafting>
 				</skillRequirements>
@@ -151,9 +152,6 @@
 				<bodyPartGroups>
 					<li>Feet</li>
 				</bodyPartGroups>
-				<layers>
-					<li>Middle</li>
-				</layers>
 				<tags>
 					<li>YautjaArmor</li>
 					<li>YautjaLightArmor</li>
@@ -163,5 +161,9 @@
 					<li>YautjaOrnateArmor</li>
 				</tags>
 			</apparel>
+			<researchPrerequisites>
+				<li>Smithing</li>
+				<li>ComplexClothing</li>
+			</researchPrerequisites>
 		</ThingDef>
 </Defs>

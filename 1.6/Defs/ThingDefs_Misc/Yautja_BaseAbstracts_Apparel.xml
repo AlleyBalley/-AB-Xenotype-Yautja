@@ -25,6 +25,9 @@
 				<li>ABYautja_TableMachining</li>
 			</recipeUsers>
 		</recipeMaker>
+		<apparel>
+			<canBeDesiredForIdeo>true</canBeDesiredForIdeo>
+		</apparel>
 		<altitudeLayer>Item</altitudeLayer>
 		<alwaysHaulable>True</alwaysHaulable>
 		<tickerType>Never</tickerType>
@@ -79,7 +82,7 @@
 			<li>ABYautja_Apparel</li>
 		</thingCategories>
 		<tradeTags>
-				<li>ABYautjaClothing</li>
+			<li>ABYautjaClothing</li>
 		</tradeTags>
 	</ThingDef>
 
@@ -107,31 +110,22 @@
 				</disallowedThingDefs>
 			</defaultIngredientFilter>
 		</recipeMaker>
+		<costStuffCount>100</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
 		<thingCategories Inherit="False">
 			<li>ABYautja_Armor</li>
 		</thingCategories>
 		<tradeTags>
-				<li>ABYautjaArmor</li>
+			<li>ABYautjaArmor</li>
 		</tradeTags>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
 	</ThingDef>
 	
 	<ThingDef ParentName="ABYautja_ArmorMakeable_Base" Name="ABYautja_ArmorBiocoded_Base" Abstract="True">
 		<comps>
 			<li Class="CompProperties_Biocodable"/>
-		</comps>
-	</ThingDef>
-	
-	<ThingDef ParentName="ABYautja_ArmorBiocoded_Base" Name="ABYautja_Extremitywear_Base" Abstract="True">
-		<thingCategories Inherit="False">
-			<li>ABYautja_Apparel</li>
-		</thingCategories>
-		<comps Inherit="False">
-			<li Class="CompProperties_Biocodable"/>
-			<li Class="CompProperties_Styleable"/>
-			<li Class="CompProperties_Forbiddable"/>
-			<li>
-				<compClass>CompQuality</compClass>
-			</li>
 		</comps>
 	</ThingDef>
 	
@@ -144,6 +138,18 @@
 		</tradeTags>
 	</ThingDef>
 
+	<ThingDef ParentName="ABYautja_ArmorBiocoded_Base" Name="ABYautja_Extremitywear_Base" Abstract="True">
+		<thingCategories Inherit="False">
+			<li>ABYautja_Apparel</li>
+		</thingCategories>
+		<apparel>
+			<layers Inherit="False">
+				<li>Middle</li>
+			</layers>
+		</apparel>
+		<costStuffCount Inherit="False">50</costStuffCount>
+	</ThingDef>
+	
 <!--Helmet-->
 	<ThingDef ParentName="ABYautja_ArmorMakeable_Base" Name="ABYautja_HelmetMakeable_Base" Abstract="True">
 		<thingCategories Inherit="False">
@@ -207,9 +213,6 @@
 			<tags>
 				<li>ABYautja_Equipment</li>
 			</tags>
-			<layers>
-				<li>OverSkin</li>
-			</layers>
 		</apparel>
 		<resourceReadoutPriority>Middle</resourceReadoutPriority>
 		<tradeNeverStack>true</tradeNeverStack>
@@ -222,9 +225,27 @@
 		<tradeTags>
 				<li>ABYautjaEquipment</li>
 		</tradeTags>
+		<costStuffCount>100</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
 		<recipeMaker>
 			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Machining</soundWorking>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
 		</recipeMaker>
+		<comps Inherit="False">
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Styleable"/>
+		</comps>
 	</ThingDef>
 	
 	<ThingDef ParentName="ABYautja_Utility_Base" Name="ABYautja_UtilityBiocoded_Base" Abstract="True">
@@ -232,4 +253,132 @@
 			<li Class="CompProperties_Biocodable"/>
 		</comps>
 	</ThingDef>
+	
+	<ThingDef ParentName="ABYautja_UtilityBiocoded_Base" Name="ABYautja_ShoulderTurret_Base" Abstract="True">
+		<tickerType>Normal</tickerType>
+		<techLevel>Industrial</techLevel>
+		<recipeMaker>
+			<researchPrerequisite>ABYautja_Tech_Tracking</researchPrerequisite>
+		</recipeMaker>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.03</MoveSpeed>
+			<WorkSpeedGlobal>-0.02</WorkSpeedGlobal>
+		</equippedStatOffsets>
+		<apparel>
+			<wornGraphicPath>Things/Equipment/Shoulder_Guns/Yautja_ShoulderCannon</wornGraphicPath>
+			<careIfWornByCorpse>false</careIfWornByCorpse>
+			<careIfDamaged>false</careIfDamaged>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<bodyPartGroups>
+				<li>Shoulders</li>
+			</bodyPartGroups>
+			<layers Inherit="False">
+				<li>Belt</li>
+			</layers>
+			<tags>
+				<li>ABYautja_Equipment</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<wornGraphicData>
+				<renderUtilityAsPack>true</renderUtilityAsPack>
+				<north>
+					<offset>(0,-0.01)</offset>
+					<hulk>
+						<offset>(0.15,0.01)</offset>
+					</hulk>
+					<fat>
+						<offset>(0.1,0.01)</offset>
+					</fat>
+					<female>
+						<offset>(0.05,0)</offset>
+					</female>
+					<male>
+						<offset>(0.038,0.01)</offset>
+					</male>
+					<thin>
+						<offset>(0.05,0)</offset>
+					</thin>
+				</north>
+				<south>
+					<offset>(-0.05,0.15)</offset>
+					<female>
+						<offset>(-0.03,-0.15)</offset>
+					</female>
+					<hulk>
+						<offset>(-0.08,-0.05)</offset>
+					</hulk>
+					<fat>
+						<offset>(-0.065,-0.15)</offset>
+					</fat>
+					<thin>
+						<offset>(-0.03,-0.2)</offset>
+					</thin>
+					<male>
+						<offset>(-0.03,-0.1)</offset>
+					</male>
+				</south>
+				<east>
+					<offset>(-0.33,0.13)</offset>
+					<female>
+						<offset>(-0.05,-0.03)</offset>
+					</female>
+					<hulk>
+						<offset>(-0.2,-0.0)</offset>
+					</hulk>
+					<fat>
+						<offset>(-0.12,-0.0)</offset>
+					</fat>
+					<thin>
+						<offset>(-0.03,-0.1)</offset>
+					</thin>
+					<male>
+						<offset>(-0.09,-0.035)</offset>
+					</male>
+				</east>
+				<male>
+					<scale>(0.75,0.75)</scale>
+				</male>
+				<female>
+					<scale>(0.75,0.75)</scale>
+				</female>
+				<thin>
+					<scale>(0.7,0.7)</scale>
+				</thin>
+				<hulk>
+					<scale>(0.9,0.9)</scale>
+				</hulk>
+				<fat>
+					<scale>(0.9,0.9)</scale>
+				</fat>
+			</wornGraphicData>
+		</apparel>
+	</ThingDef>
+
+<!--Shield-->
+	<ThingDef Name="ABYautja_Shield_Base" ParentName="ABYautja_BaseMeleeWeapon_Blunt_Quality" Abstract="True">
+        <techLevel>Medieval</techLevel>
+        <thingCategories Inherit="False">
+            <li>ABYautja_Equipment</li>
+        </thingCategories>
+		<thingClass>VEF.Apparels.Apparel_Shield</thingClass>
+		<apparel>
+			<bodyPartGroups>
+				<li>LeftHand</li>
+			</bodyPartGroups>
+			<layers>
+				<li>VFEC_OuterShell</li>
+			</layers>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<canBeDesiredForIdeo>true</canBeDesiredForIdeo>
+		</apparel>
+        <comps>
+            <li>
+                <compClass>CompColorable</compClass>
+            </li>
+			<li Class="CompProperties_Biocodable"/>
+        </comps>
+        <equippedAngleOffset>-30</equippedAngleOffset>
+    </ThingDef>
 </Defs>
