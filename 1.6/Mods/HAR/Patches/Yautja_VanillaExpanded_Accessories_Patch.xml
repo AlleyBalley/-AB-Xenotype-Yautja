@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
+
 	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Vanilla Apparel Expanded — Accessories</li>
 		</mods>
 		<match Class="PatchOperationAdd">
-			<xpath>/Defs/AlienRace.ThingDef_AlienRace[@Name="ABYautja_Race"]/alienRace/raceRestriction/whiteApparelList</xpath>
+			<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="ABYautja_Race"]/alienRace/raceRestriction/whiteApparelList</xpath>
 			<value>
 				<li>VAEA_Apparel_Backpack</li>
 				<li>VAEA_Apparel_BattleBanner</li>

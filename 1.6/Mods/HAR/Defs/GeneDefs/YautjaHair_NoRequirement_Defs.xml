@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<GeneDef ParentName="YautjaHairStyleBase" Name="YautjaHairStyleBase_NoRequirement" Abstract="True">
+		<prerequisite Inherit="False" />
+	</GeneDef>
+	
+	<GeneDef ParentName="YautjaHairStyleBase_NoRequirement">
+		<defName>ABYautjaHair_Tendril_NoRequirement</defName>
+		<label>Tendril Hair</label>
+		<labelShortAdj>dread</labelShortAdj>
+		<displayCategory>ABYautjaCategory</displayCategory>
+		<description>Carriers of this gene grow tendrils that resemble dreads from the back their head.</description>
+		<iconPath>UI/Icons/Genes/Hair/Gene_TendrilHair</iconPath>
+		<hairTagFilter>
+			<whitelist>true</whitelist>
+			<tags>
+				<li>Yautja</li>
+			</tags>
+		</hairTagFilter>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>Yautja</symbol>
+				</li>
+				<li>
+					<symbol>Predator</symbol>
+				</li>
+				<li>
+					<symbol>Dred</symbol>
+				</li>
+				<li>
+					<symbol>Tendril</symbol>
+				</li>
+			</prefixSymbols>
+		</symbolPack>
+	</GeneDef>
+	
+	<GeneDef ParentName="YautjaHairStyleBase_NoRequirement">
+		<defName>ABYautjaBald_NoRequirement</defName>
+		<label>Bald</label>
+		<labelShortAdj>bald</labelShortAdj>
+		<displayCategory>ABYautjaCategory</displayCategory>
+		<description>Carriers of this gene do not grow hair from their head.</description>
+		<iconPath>UI/Icons/Genes/Hair/Gene_Bald</iconPath>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>Yautja</symbol>
+				</li>
+				<li>
+					<symbol>Predator</symbol>
+				</li>
+				<li>
+					<symbol>Dred</symbol>
+				</li>
+				<li>
+					<symbol>Tendril</symbol>
+				</li>
+			</prefixSymbols>
+		</symbolPack>
+	</GeneDef>
+</Defs>

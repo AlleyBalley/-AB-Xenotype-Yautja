@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<GeneDef>
+		<defName>ABYautja_LivingYautja</defName>
+		<geneClass>EBSGFramework.Gene_EvolvingGene</geneClass>
+		<label>Living Yautja</label>
+		<labelShortAdj>living</labelShortAdj>
+		<description>A healthy and alive yautja.</description>
+		<displayCategory>ABYautjaCategory</displayCategory>
+		<biostatCpx>0</biostatCpx>
+		<biostatMet>0</biostatMet>
+		<iconPath>UI/Icons/Genes/HeadGenes/CrestedHead/GeneIcon_ABYautjaHead</iconPath>
+		<iconColor>0.90,0.90,0.90</iconColor>
+		<displayOrderInCategory>7902</displayOrderInCategory>
+		<exclusionTags>
+			<li>Yautja_LifeState</li>
+		</exclusionTags>
+		<modExtensions>
+			<li Class="VEF.Genes.GeneExtension">
+				<backgroundPathEndogenes>UI/Icons/Genes/Yautja_Endogene_Background</backgroundPathEndogenes>
+				<hideGene>true</hideGene>
+				<disableGeneExtraction>true</disableGeneExtraction>
+			</li>
+			<li Class="EBSGFramework.EBSGExtension">
+				<geneticEvolutions>
+					<li>
+						<result>ABYautja_GhoulishYautja</result>
+						<messageType>TaskCompletion</messageType>
+						<hasAllOfHediff>
+							<Ghoul />
+						</hasAllOfHediff>
+					</li>
+				</geneticEvolutions>
+            </li>
+		</modExtensions>
+	</GeneDef>
+	
+	<GeneDef>
+		<defName>ABYautja_GhoulishYautja</defName>
+		<label>Ghoulish Yautja</label>
+		<labelShortAdj>ghoulish</labelShortAdj>
+		<description>When yautja turn into ghouls their eyes turn black.</description>
+		<displayCategory>ABYautjaCategory</displayCategory>
+		<biostatCpx>0</biostatCpx>
+		<biostatMet>0</biostatMet>
+		<iconPath>UI/Icons/Genes/HeadGenes/CrestedHead/Gene_GhoulishYautja</iconPath>
+		<iconColor>0.90,0.90,0.90</iconColor>
+		<displayOrderInCategory>7902</displayOrderInCategory>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPath>Things/Pawn/Humanlike/HeadAttachments/Ghoul/YautjaGhoul</texPath>
+				<overrideMeshSize>(1, 1)</overrideMeshSize>
+				<parentTagDef>Head</parentTagDef>
+				<rotDrawMode>Fresh,Rotting</rotDrawMode>
+				<colorType>Skin</colorType>
+				<visibleFacing>
+					<li>East</li>
+					<li>South</li>
+					<li>West</li>
+				</visibleFacing>
+				<baseLayer>50</baseLayer>
+			</li>
+		</renderNodeProperties>
+		<exclusionTags>
+			<li>Yautja_LifeState</li>
+		</exclusionTags>
+		<modExtensions>
+			<li Class="VEF.Genes.GeneExtension">
+				<backgroundPathEndogenes>UI/Icons/Genes/Yautja_Endogene_Background</backgroundPathEndogenes>
+				<hideGene>true</hideGene>
+				<disableGeneExtraction>true</disableGeneExtraction>
+			</li>
+		</modExtensions>
+	</GeneDef>
+</Defs>

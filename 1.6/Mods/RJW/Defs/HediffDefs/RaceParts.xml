@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<rjw.RacePartDef>
+		<defName>YautjaPenis</defName>
+		<hediffName>YautjaPenis</hediffName>
+	</rjw.RacePartDef>
+	
+	<rjw.RaceGroupDef>
+		<defName>Yautja_RJWGroup</defName>
+		<raceNames>
+			<li>ABAlien_Yautja</li>
+		</raceNames>
+		
+		<femaleBreasts>
+			<li>Breasts</li>
+		</femaleBreasts>
+		
+		<femaleGenitals>
+			<li>Vagina</li>
+		</femaleGenitals>
+		
+		<maleBreasts>
+			<li>FeaturelessChest</li>
+		</maleBreasts>
+		
+		<maleGenitals>
+			<li>YautjaPenis</li>
+		</maleGenitals>
+		
+		<anuses>
+			<li>Anus</li>
+		</anuses>
+		
+		<tags>
+			<li>Skin</li>
+			<li>Scales</li>
+		</tags>
+		<hasSexNeed>true</hasSexNeed>
+		<hasFertility>true</hasFertility>
+		<hasPregnancy>true</hasPregnancy>
+	</rjw.RaceGroupDef>
+
+</Defs>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Humanoid Alien Races</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="ABYautja_Race"]/alienRace/raceRestriction/whiteApparelList</xpath>
+			<value>
+				<li>Hololock</li>
+				<li>PrisonerChains</li>
+			</value>
+		</match>
+	</Operation>
+</Patch>

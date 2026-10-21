@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Vanilla Apparel Expanded</li>
+				</mods>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="ABYautja_Race"]/alienRace/raceRestriction/whiteApparelList</xpath>
+					<value>
+						<li>VAE_Footwear_Boots</li>
+						<li>VAE_Footwear_Shoes</li>
+						<li>VAE_Handwear_Gloves</li>
+						<li>VAE_Apparel_Shorts</li>
+						<li>VAE_Apparel_Skirt</li>
+						<li>VAE_Apparel_SuitJacket</li>
+						<li>VAE_Apparel_Trousers</li>
+						<li>VAE_Apparel_Jeans</li>
+						<li>VAE_Apparel_MilitaryJacket</li>
+						<li>VAE_Apparel_BuildersJacket</li>
+						<li>VAE_Apparel_LabCoat</li>
+						<li>VAE_Apparel_TankTop</li>
+						<li>VAE_Apparel_Tunic</li>
+						<li>VAE_Apparel_Apron</li>
+						<li>VAE_Apparel_PeltCoat</li>
+						<li>VAE_Apparel_TribalPoncho</li>
+						<li>VAE_Apparel_TribalKilt</li>
+						<li>VAE_Headgear_Scarf</li>
+						<li>VAE_Headgear_SurgicalMask</li>
+						<li>VAE_Headgear_Sunglasses</li>
+						<li>VAE_Headgear_Glasses</li>
+					</value>
+				</match>
+			</li>
+			
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>VAE - More Gloves and Boots</li>
+				</mods>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="ABYautja_Race"]/alienRace/raceRestriction/whiteApparelList</xpath>
+					<value>
+						<li>VAE_Footwear_TrooperBoots</li>
+						<li>VAE_Footwear_Work_Boots</li>
+						<li>VAE_Sneakers</li>
+						<li>VAE_Handwear_TrooperGloves</li>
+						<li>VAE_Handwear_Tac_Gloves</li>
+					</value>
+				</match>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

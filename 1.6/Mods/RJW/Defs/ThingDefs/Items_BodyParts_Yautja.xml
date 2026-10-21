@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+	<ThingDef ParentName="rjw_BodyPartNaturalBaseGenMale">
+		<defName>YautjaPenis</defName>
+		<label>yautja penis</label>
+		<description>A yautja penis.</description>
+		<statBases>
+			<MarketValue>275</MarketValue>
+			<Mass>0.16</Mass>
+		</statBases>
+	</ThingDef>
+</Defs>

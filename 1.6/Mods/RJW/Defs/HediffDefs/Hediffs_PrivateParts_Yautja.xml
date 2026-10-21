@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<rjw.HediffDef_SexPart ParentName="NaturalPrivatePartPenis">
+		<defName>YautjaPenis</defName>
+		<label>yautja penis</label>
+		<labelNoun>a yautja penis</labelNoun>
+		<description>A sheathable penis with a flat tip covered in skin. Presents entirely flat when not erect. Testicles present seperated and above to penis.</description>
+		<descriptionHyperlinks>
+			<ThingDef>YautjaPenis</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>YautjaPenis</spawnThingOnRemoved>
+		<partTags>
+			<li>Sheathed</li>
+			<li>Internal</li>
+		</partTags>
+	</rjw.HediffDef_SexPart>
+</Defs>

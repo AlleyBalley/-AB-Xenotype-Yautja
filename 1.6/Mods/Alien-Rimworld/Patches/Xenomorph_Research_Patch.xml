@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<!--Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Anomaly</li>
+		</mods>
+		<nomatch Class="PatchOperationReplace">
+			<xpath>Defs/ResearchProjectDef[defName="ABYautja_Material_Xenomorph"]/researchViewY</xpath>
+			<value>
+				<researchViewY>7</researchViewY>
+			</value>
+		</nomatch>
+	</Operation-->
+</Patch>

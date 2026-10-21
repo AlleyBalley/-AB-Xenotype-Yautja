@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Medieval Overhaul</li>
+				</mods>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="ABYautja_Race"]/alienRace/raceRestriction/whiteApparelList</xpath>
+					<value>
+					<!--Attachments-->
+						<li>DankPyon_Apparel_DirewolfPelt</li>
+						<li>DankPyon_Apparel_HyenaPelt</li>
+						<li>DankPyon_Apparel_LindwurmCloak</li>
+						<li>DankPyon_Apparel_FurCloak</li>
+						<li>DankPyon_Apparel_BonePlating</li>
+						<li>DankPyon_Apparel_AdditionalFurPadding</li>
+						<li>DankPyon_Apparel_RunesAndSigils</li>
+					<!--ChainArmor-->
+						<li>DankPyon_Apparel_Hauberk</li>
+					<!--Footwear-->
+						<li>DankPyon_Footwear_BootsLeather</li>
+						<li>DankPyon_Footwear_BootsSplinted</li>
+						<li>DankPyon_Footwear_BootsPlate</li>
+					<!--Handwear-->
+						<li>DankPyon_Handwear_GlovesLeather</li>
+						<li>DankPyon_Handwear_GlovesSplinted</li>
+						<li>DankPyon_Handwear_GlovesPlate</li>
+					<!--Jewelry-->
+						<li>DankPyon_Necklace_Citrine</li>
+						<li>DankPyon_Necklace_Jade</li>
+						<li>DankPyon_Necklace_Amber</li>
+						<li>DankPyon_Necklace_Onyx</li>
+						<li>DankPyon_Necklace_Emerald</li>
+						<li>DankPyon_Necklace_Sapphire</li>
+						<li>DankPyon_Necklace_Ruby</li>
+						<li>DankPyon_Ring_Citrine</li>
+						<li>DankPyon_Ring_Jade</li>
+						<li>DankPyon_Ring_Amber</li>
+						<li>DankPyon_Ring_Onyx</li>
+						<li>DankPyon_Ring_Emerald</li>
+						<li>DankPyon_Ring_Sapphire</li>
+						<li>DankPyon_Ring_Ruby</li>
+					<!--Light Armor-->
+						<li>DankPyon_Apparel_Sackcloth</li>
+						<li>DankPyon_Apparel_Leather_Tunic</li>
+						<li>DankPyon_Apparel_Padded_Surcoat</li>
+						<li>Dankpyon_Apparel_Gambeson</li>
+						<li>DankPyon_Apparel_Light_Lamellar</li>
+					<!--Magic-->
+						<li>DankPyon_Ring_Holding</li>
+						<li>DankPyon_Ring_Haste</li>
+						<li>DankPyon_Ring_Tending</li>
+						<li>DankPyon_Ring_Research</li>
+						<li>DankPyon_Ring_StunImmunity</li>
+					<!--Pants-->
+						<li>DankPyon_Apparel_Hose</li>
+						<li>DankPyon_Apparel_Trousers</li>
+						<li>DankPyon_Apparel_ChaussesPadded</li>
+						<li>DankPyon_Apparel_ChaussesSplinted</li>
+					<!--Utility-->
+						<li>DankPyon_Apparel_Quiver</li>
+						<li>DankPyon_Apparel_FlashPotBelt</li>
+						<li>DankPyon_Apparel_FirePotBelt</li>
+						<li>DankPyon_Apparel_SmokePotBelt</li>
+						<li>DankPyon_Apparel_AcidFlaskBelt</li>
+					<!--Headgear-->
+						<li>DankPyon_Headgear_RedBandana</li>
+						<li>DankPyon_Headgear_ZweihandersHat</li>
+						<li>DankPyon_Headgear_ZweihanderHelm</li>
+						<li>DankPyon_Headgear_ZweihanderHelmAmboise</li>
+						<li>DankPyon_Headgear_ZweihanderHelmSoren</li>
+						<li>DankPyon_Headgear_ZweihanderHelmOswin</li>
+						<li>DankPyon_Headgear_ZweihanderHelmHesse</li>
+					</value>
+				</match>
+			</li>
+			
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Medieval Overhaul : Hornetkeeping</li>
+				</mods>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="ABYautja_Race"]/alienRace/raceRestriction/whiteApparelList</xpath>
+					<value>
+						<li>SV_Apparel_DeathstingerJar</li>
+					</value>
+				</match>
+			</li>
+			
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Medieval Overhaul: Barbarians</li>
+				</mods>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="ABYautja_Race"]/alienRace/raceRestriction/whiteApparelList</xpath>
+					<value>
+						<li>pphhyy_Barbarian_BarbTribal</li>
+						<li>pphhyy_Barbarian_LeatherShirt</li>
+						<li>pphhyy_Barbarian_RustedChain</li>
+						<li>pphhyy_Barbarian_BarbLeatherCoat</li>
+						<li>pphhyy_Barbarian_BarbLeatherCoatII</li>
+						<li>pphhyy_Barbarian_Mail</li>
+						<li>pphhyy_Barbarian_MailII</li>
+						<li>pphhyy_Barbarian_Scale</li>
+						<li>pphhyy_Barbarian_ScaleII</li>
+						<li>pphhyy_Barbarian_BoneArmor</li>
+						<li>pphhyy_Barbarian_BoneArmorII</li>
+						<li>pphhyy_Barbarian_BoneArmorIII</li>
+						<li>pphhyy_Barbarians_ChosenAntler</li>
+						<li>pphhyy_Barbarians_ChosenAntlerII</li>
+						<li>pphhyy_Barbarians_ChosenAntlerIII</li>
+						<li>pphhyy_Barbarian_ChosenMail</li>
+						<li>pphhyy_Barbarian_ChosenMailII</li>
+						<li>pphhyy_Barbarian_ChosenScale</li>
+						<li>pphhyy_Barbarian_ChosenScaleII</li>
+						<li>pphhyy_Barbarians_ChosenSpike</li>
+						<li>pphhyy_Barbarians_ChosenSpikeII</li>
+						<li>pphhyy_Barbarians_ChosenSpikeIII</li>
+						<li>pphhyy_Barbarian_BearHeaddress</li>
+						<li>pphhyy_Barbarian_BearHeaddressII</li>
+						<li>pphhyy_Barbarians_WarlordHelm</li>
+						<li>pphhyy_Barbarians_WarlordHelmII</li>
+						<li>pphhyy_Barbarians_WarlordHelmIII</li>
+						<li>pphhyy_Barbarians_SpikedCap</li>
+						<li>pphhyy_Barbarians_SpikedCapII</li>
+						<li>pphhyy_Barbarian_WarlordArmor</li>
+						<li>pphhyy_Barbarian_WarlordArmorII</li>
+					</value>
+				</match>
+			</li>
+			
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Medieval Overhaul: Barbarians (Continued)</li>
+				</mods>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="ABYautja_Race"]/alienRace/raceRestriction/whiteApparelList</xpath>
+					<value>
+						<li>pphhyy_Barbarian_BarbTribal</li>
+						<li>pphhyy_Barbarian_LeatherShirt</li>
+						<li>pphhyy_Barbarian_RustedChain</li>
+						<li>pphhyy_Barbarian_BarbLeatherCoat</li>
+						<li>pphhyy_Barbarian_BarbLeatherCoatII</li>
+						<li>pphhyy_Barbarian_Mail</li>
+						<li>pphhyy_Barbarian_MailII</li>
+						<li>pphhyy_Barbarian_Scale</li>
+						<li>pphhyy_Barbarian_ScaleII</li>
+						<li>pphhyy_Barbarian_BoneArmor</li>
+						<li>pphhyy_Barbarian_BoneArmorII</li>
+						<li>pphhyy_Barbarian_BoneArmorIII</li>
+						<li>pphhyy_Barbarians_ChosenAntler</li>
+						<li>pphhyy_Barbarians_ChosenAntlerII</li>
+						<li>pphhyy_Barbarians_ChosenAntlerIII</li>
+						<li>pphhyy_Barbarian_ChosenMail</li>
+						<li>pphhyy_Barbarian_ChosenMailII</li>
+						<li>pphhyy_Barbarian_ChosenScale</li>
+						<li>pphhyy_Barbarian_ChosenScaleII</li>
+						<li>pphhyy_Barbarians_ChosenSpike</li>
+						<li>pphhyy_Barbarians_ChosenSpikeII</li>
+						<li>pphhyy_Barbarians_ChosenSpikeIII</li>
+						<li>pphhyy_Barbarian_BearHeaddress</li>
+						<li>pphhyy_Barbarian_BearHeaddressII</li>
+						<li>pphhyy_Barbarians_WarlordHelm</li>
+						<li>pphhyy_Barbarians_WarlordHelmII</li>
+						<li>pphhyy_Barbarians_WarlordHelmIII</li>
+						<li>pphhyy_Barbarians_SpikedCap</li>
+						<li>pphhyy_Barbarians_SpikedCapII</li>
+						<li>pphhyy_Barbarian_WarlordArmor</li>
+						<li>pphhyy_Barbarian_WarlordArmorII</li>
+					</value>
+				</match>
+			</li>
+			
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Medieval Overhaul: House Roxmont</li>
+				</mods>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="ABYautja_Race"]/alienRace/raceRestriction/whiteApparelList</xpath>
+					<value>
+						<li>DankPyon_Headgear_ZweihanderHelmRoxmont</li>
+						<li>DankPyon_Headgear_HeraldicGreatHelmRoxmont</li>
+					</value>
+				</match>
+			</li>
+			
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Medieval Overhaul: House Ignivar</li>
+				</mods>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="ABYautja_Race"]/alienRace/raceRestriction/whiteApparelList</xpath>
+					<value>
+						<li>Ignivar_Robe</li>
+						<li>Ignivar_Scarf</li>
+						<li>Ignivar_Toolbelt</li>
+						<li>Ignivar_Mail</li>
+						<li>Ignivar_Kettle</li>
+						<li>Ignivar_Kettle_Face</li>
+					</value>
+				</match>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

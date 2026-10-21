@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/PawnKindDef[@Name="ABYautja_Ancient"]/minGenerationAge</xpath>
+				<value>
+					<minGenerationAge>1000</minGenerationAge>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/PawnKindDef[@Name="ABYautja_Ancient"]/maxGenerationAge</xpath>
+				<value>
+					<maxGenerationAge>2050</maxGenerationAge>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/PawnKindDef[@Name="ABYautja_YoungBlood"]/minGenerationAge</xpath>
+				<value>
+					<minGenerationAge>30</minGenerationAge>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/PawnKindDef[@Name="ABYautja_YoungBlood"]/maxGenerationAge</xpath>
+				<value>
+					<maxGenerationAge>85</maxGenerationAge>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/PawnKindDef[@Name="ABYautja_Unblooded"]/minGenerationAge</xpath>
+				<value>
+					<minGenerationAge>100</minGenerationAge>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/PawnKindDef[@Name="ABYautja_Unblooded"]/maxGenerationAge</xpath>
+				<value>
+					<maxGenerationAge>150</maxGenerationAge>
+				</value>
+			</li>
+			
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/PawnKindDef[@Name="ABYautja_Blooded"]/minGenerationAge</xpath>
+				<value>
+					<minGenerationAge>200</minGenerationAge>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/PawnKindDef[@Name="ABYautja_Blooded"]/maxGenerationAge</xpath>
+				<value>
+					<maxGenerationAge>500</maxGenerationAge>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/PawnKindDef[@Name="ABYautja_Elite"]/minGenerationAge</xpath>
+				<value>
+					<minGenerationAge>400</minGenerationAge>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/PawnKindDef[@Name="ABYautja_Elite"]/maxGenerationAge</xpath>
+				<value>
+					<maxGenerationAge>750</maxGenerationAge>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/PawnKindDef[@Name="ABYautja_Elder"]/minGenerationAge</xpath>
+				<value>
+					<minGenerationAge>1000</minGenerationAge>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/PawnKindDef[@Name="ABYautja_Elder"]/maxGenerationAge</xpath>
+				<value>
+					<maxGenerationAge>1750</maxGenerationAge>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/PawnKindDef[@Name="ABYautjaLeaderBase"]/minGenerationAge</xpath>
+				<value>
+					<minGenerationAge>500</minGenerationAge>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/PawnKindDef[@Name="ABYautjaLeaderBase"]/maxGenerationAge</xpath>
+				<value>
+					<maxGenerationAge>1500</maxGenerationAge>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

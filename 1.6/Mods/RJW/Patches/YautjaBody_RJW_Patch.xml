@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Humanoid Alien Races</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/BodyDef[defName="ABYautja_Biped"]/corePart/parts</xpath>
+			<value>
+				<li>
+					<def>Chest</def>
+					<coverage>0.02</coverage>
+					<height>Top</height>
+					<depth>Outside</depth>
+					<groups>
+						<li>Torso</li>
+						<li>ChestBPG</li>
+					</groups>
+				</li>
+				<li>
+					<def>Genitals</def>
+					<coverage>0.005</coverage>
+					<height>Bottom</height>
+					<depth>Outside</depth>
+					<groups>
+						<li>Torso</li>
+						<li>GenitalsBPG</li>
+					</groups>
+				</li>
+				<li>
+					<def>Anus</def>
+					<coverage>0.001</coverage>
+					<height>Bottom</height>
+					<depth>Outside</depth>
+					<groups>
+						<li>Torso</li>
+						<li>AnusBPG</li>
+					</groups>
+				</li>
+			</value>
+		</match>
+	</Operation>
+
+</Patch>

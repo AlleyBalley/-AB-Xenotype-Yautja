@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<!--Bolt Gun-->
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Nice Hands Retexture</li>
+				</mods>
+				<match Class="PatchOperationReplace">
+					<xpath>Defs/WHands.ClutterHandsTDef[defName="ClutterHandsSettings_ABXenotypeYautja"]/WeaponCompLoader/li[7]/MainHand</xpath>
+					<value>
+						<MainHand>(-0.311, 0.300, -0.050)</MainHand>
+					</value>
+				</match>
+			</li>
+				
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Nice Hands Retexture</li>
+				</mods>
+				<match Class="PatchOperationReplace">
+					<xpath>Defs/WHands.ClutterHandsTDef[defName="ClutterHandsSettings_ABXenotypeYautja"]/WeaponCompLoader/li[7]/SecHand</xpath>
+					<value>
+						<SecHand>(0.253, -0.100, 0.069)</SecHand>
+					</value>
+				</match>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

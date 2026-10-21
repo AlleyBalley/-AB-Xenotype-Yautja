@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<HediffDef Name="ABYautjaMandibleMandiblesBase" ParentName="ABYautjaMandibleBase" Abstract="true">
+		<stages Inherit="False"/>
+	</HediffDef>
+
+	<HediffDef ParentName="ABYautjaMandibleMandiblesBase">
+		<defName>ABYautjaMandibleUpperMandible</defName>
+		<label>yautja upper mandible</label>
+		<labelNoun>mandible</labelNoun>
+		<description>A finger-like digit that sprouts from the cheekbone and possesses a sharp tooth.</description>
+	</HediffDef>
+	
+	<HediffDef ParentName="ABYautjaMandibleMandiblesBase">
+		<defName>ABYautjaMandibleLowerMandibles</defName>
+		<label>yautja lower mandible</label>
+		<labelNoun>mandible</labelNoun>
+		<description>A finger-like digit that sprouts from the jawline and possesses a sharp tooth.</description>
+	</HediffDef>
+	
+	<HediffDef ParentName="ABYautjaMandibleMandiblesBase">
+		<defName>HBYautjaCenterMandibles</defName>
+		<label>yautja center mandible</label>
+		<labelNoun>mandible</labelNoun>
+		<description>An single finger-like digits that sprout from the chin and possess a sharp tooth.</description>
+	</HediffDef>
+</Defs>

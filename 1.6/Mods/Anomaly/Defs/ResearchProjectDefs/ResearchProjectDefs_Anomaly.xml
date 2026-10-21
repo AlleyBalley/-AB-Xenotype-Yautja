@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--ResearchProjectDef>
+		<tab>ABYautja_ResearchTab</tab>
+		<defName>ABYautja_Material_Anomaly</defName>
+		<label>Anomaly Material Harvesting</label>
+		<description>Allows you to create improvised Yautja tech out of entity-parts.</description>
+		<baseCost>250</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<prerequisites>
+			<li>ABYautja_Tech_Improvised</li>
+		</prerequisites>
+		<researchViewX>2</researchViewX>
+		<researchViewY>5</researchViewY>
+	</ResearchProjectDef-->
+</Defs>

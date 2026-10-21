@@ -2,18 +2,23 @@
 <Defs>
 
   <!-- Bone/limb yautja mandible -->
-	<RecipeDef MayRequire="erdelf.humanoidalienraces">
+	<RecipeDef MayRequire="erdelf.humanoidalienraces" ParentName="SurgeryFlesh">
+		<!--DE Surgeries parent says...-->
+		<isViolation>false</isViolation>
+		<uiIconPath>UI/Icons/DESurgical</uiIconPath>
 		<recipeUsers>
 			<li>Human</li>
 			<li MayRequire="Ludeon.RimWorld.Anomaly">CreepJoiner</li>
 			<li>ABAlien_Yautja</li>
 		</recipeUsers>
+		<!--DE Surgeries "normal" difficulty says...-->
 		<surgerySuccessChanceFactor>1.1</surgerySuccessChanceFactor>
 		<deathOnFailedSurgeryChance>0.01</deathOnFailedSurgeryChance>
 		<workAmount>3000</workAmount>
 		<skillRequirements>
 			<Medicine>8</Medicine>
 		</skillRequirements>
+		<!--Actual surgery-->
 		<defName>RepairYautjaMandible</defName>
 		<label>repair yautja mandible (10 med - no herb)</label>
 		<description>Repair yautja mandible</description>

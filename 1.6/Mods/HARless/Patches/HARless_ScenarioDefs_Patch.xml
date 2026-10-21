@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
+
 	<Operation Class="PatchOperationSequence">
 		<operations>
 		<!--Unblooded Yautja hunters-->
 			<li Class="PatchOperationInsert">
-				<xpath>/Defs/ScenarioDef[defName="ABYautjaScenarioUnblooded"]/scenario/parts/li[1]/def</xpath>
+				<xpath>Defs/ScenarioDef[defName="ABYautjaScenarioUnblooded"]/scenario/parts/li[1]/def</xpath>
 				<order>Prepend</order>
 				<value>
 					<pawnChoiceCount>5</pawnChoiceCount>
@@ -12,7 +13,7 @@
 			</li>
 			
 			<li Class="PatchOperationInsert">
-				<xpath>/Defs/ScenarioDef[defName="ABYautjaScenarioUnblooded"]/scenario/parts/li[1]/overrideKinds/li/pawnKind</xpath>
+				<xpath>Defs/ScenarioDef[defName="ABYautjaScenarioUnblooded"]/scenario/parts/li[1]/overrideKinds/li/pawnKind</xpath>
 				<order>Append</order>
 				<value>
 					<xenotype>ABStandardYautja</xenotype>
@@ -20,7 +21,7 @@
 			</li>
 			
 			<li Class="PatchOperationInsert">
-				<xpath>/Defs/ScenarioDef[defName="ABYautjaScenarioUnblooded"]/scenario/parts/li[1]/overrideKinds</xpath>
+				<xpath>Defs/ScenarioDef[defName="ABYautjaScenarioUnblooded"]/scenario/parts/li[1]/overrideKinds</xpath>
 				<order>Append</order>
 				<value>
 					<xenotypeCounts>
@@ -36,7 +37,7 @@
 			
 		<!--Blooded Yautja hunters-->
 			<li Class="PatchOperationInsert">
-				<xpath>/Defs/ScenarioDef[defName="ABYautjaScenarioUnblooded"]/scenario/parts/li[1]/def</xpath>
+				<xpath>Defs/ScenarioDef[defName="ABYautjaScenarioUnblooded"]/scenario/parts/li[1]/def</xpath>
 				<order>Prepend</order>
 				<value>
 					<pawnChoiceCount>4</pawnChoiceCount>
@@ -44,7 +45,7 @@
 			</li>
 			
 			<li Class="PatchOperationInsert">
-				<xpath>/Defs/ScenarioDef[defName="ABYautjaScenarioBlooded"]/scenario/parts/li[1]/overrideKinds/li/pawnKind</xpath>
+				<xpath>Defs/ScenarioDef[defName="ABYautjaScenarioBlooded"]/scenario/parts/li[1]/overrideKinds/li/pawnKind</xpath>
 				<order>Append</order>
 				<value>
 					<xenotype>ABStandardYautja</xenotype>
@@ -52,7 +53,7 @@
 			</li>
 			
 			<li Class="PatchOperationInsert">
-				<xpath>/Defs/ScenarioDef[defName="ABYautjaScenarioBlooded"]/scenario/parts/li[1]/overrideKinds</xpath>
+				<xpath>Defs/ScenarioDef[defName="ABYautjaScenarioBlooded"]/scenario/parts/li[1]/overrideKinds</xpath>
 				<order>Append</order>
 				<value>
 					<xenotypeCounts>
@@ -68,7 +69,7 @@
 			
 		<!--Lone Exile-->
 			<li Class="PatchOperationInsert">
-				<xpath>/Defs/ScenarioDef[defName="ABYautjaScenarioLongExile"]/scenario/parts/li[1]/def</xpath>
+				<xpath>Defs/ScenarioDef[defName="ABYautjaScenarioLongExile"]/scenario/parts/li[1]/def</xpath>
 				<order>Prepend</order>
 				<value>
 					<pawnChoiceCount>1</pawnChoiceCount>
@@ -76,7 +77,7 @@
 			</li>
 			
 			<li Class="PatchOperationInsert">
-				<xpath>/Defs/ScenarioDef[defName="ABYautjaScenarioLongExile"]/scenario/parts/li[1]/overrideKinds/li/pawnKind</xpath>
+				<xpath>Defs/ScenarioDef[defName="ABYautjaScenarioLongExile"]/scenario/parts/li[1]/overrideKinds/li/pawnKind</xpath>
 				<order>Append</order>
 				<value>
 					<xenotype>ABStandardYautja</xenotype>
@@ -84,7 +85,7 @@
 			</li>
 			
 			<li Class="PatchOperationInsert">
-				<xpath>/Defs/ScenarioDef[defName="ABYautjaScenarioLongExile"]/scenario/parts/li[1]/overrideKinds</xpath>
+				<xpath>Defs/ScenarioDef[defName="ABYautjaScenarioLongExile"]/scenario/parts/li[1]/overrideKinds</xpath>
 				<order>Append</order>
 				<value>
 					<xenotypeCounts>

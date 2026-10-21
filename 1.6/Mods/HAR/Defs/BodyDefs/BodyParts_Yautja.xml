@@ -13,6 +13,7 @@
 		<tags>
 			<li>EatingSource</li>
 			<li>TalkingSource</li>
+			<li>Mirrored</li>
 		</tags>
 	</BodyPartDef>
 
@@ -30,6 +31,8 @@
 		<defName>ABYautja_Mouth</defName>
 		<label>mouth</label>
 		<hitPoints>20</hitPoints>
+		<destroyableByDamage>false</destroyableByDamage>
+		<canSuggestAmputation>false</canSuggestAmputation>
 		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
 		<skinCovered>false</skinCovered>
 		<solid>true</solid>
@@ -44,7 +47,9 @@
 		<defName>ABYautja_Nose</defName>
 		<label>nostrils</label>
 		<hitPoints>10</hitPoints>
+		<destroyableByDamage>false</destroyableByDamage>
 		<frostbiteVulnerability>0</frostbiteVulnerability>
+		<canSuggestAmputation>false</canSuggestAmputation>
 		<skinCovered>true</skinCovered>
 		<solid>true</solid>
 		<bleedRate>0</bleedRate>

@@ -8,6 +8,9 @@
 		<category>YautjaBALD</category>
 		<styleTags>
 		  <li>YautjaBALD</li>
+		  <li>Yautjan</li>
+		  <li>Yautja_CurledHorn</li>
 		</styleTags>
+		<requiredGene>ABYautjaBald</requiredGene>
 	</HairDef>
 </Defs>

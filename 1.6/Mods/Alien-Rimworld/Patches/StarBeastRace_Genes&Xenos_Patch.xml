@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="XMT_Starbeast_AlienRace"]/alienRace/raceRestriction/blackGeneList</xpath>
+				<value>
+					<li>ABYautjaHair_Tendril</li>
+					<li>ABYautjaCurledHorns_Hair_Tendril</li>
+					<li>ABYautjaMalformedHair_Tendril</li>
+					<li>ABYautjaFeralHair_Tendril</li>
+					<li>ABYautjaBald</li>
+					<li>ABYautjaHair_Tendril_NoRequirement</li>
+					<li>ABYautjaBald_NoRequirement</li>
+					<li>ABYautja_VisibleHumanSkull</li>
+					<li>ABYautja_VisibleYautjaSkull</li>
+					<li>ABYautja_VisibleYautjaSkull_Clover</li>
+					<li>ABYautja_VisibleYautjaSkull_Malformed</li>
+					<li>ABYautja_VisibleYautjaSkull_Feral</li>
+					<li>ABYautja_CloverCrest</li>
+					<li>ABYautja_SuperPredator_Crest</li>
+					<li>ABYautja_ForeheadTendrils</li>
+					<li>ABYautja_ForeheadTendrils_RemovedAtMaturity</li>
+					<li>ABYautjaHead</li>
+					<li>ABYautjaCloverHead</li>
+					<li>ABYautjaMalformedHead</li>
+					<li>ABYautjaFeralHead</li>
+					<li>ABYautjaTranslucentHead</li>
+					<li>ABYautjaTranslucentCurledHornHead</li>
+					<li>ABYautjaTranslucentCloverHead</li>
+					<li>ABYautjaTranslucentMalformedHead</li>
+					<li>ABYautjaTranslucentFeralHead</li>
+					<li>ABYautja_CurledHorns</li>
+					<li>ABHuman_TranslucentLines_Average</li>
+					<li>ABHuman_TranslucentLines_Narrow</li>
+					<li>ABYautja_TranslucentLines_Head</li>
+					<li>ABYautja_TranslucentLines_HeadClover</li>
+					<li>ABYautja_TranslucentLines_HeadMalformed</li>
+					<li>ABYautja_TranslucentLines_HeadFeral</li>
+					<li>ABYautja_Pattern</li>
+					<li>ABYautja_Clover_Pattern</li>
+					<li>ABYautja_Malformed_Pattern</li>
+					<li>ABYautja_Feral_Pattern</li>
+					<li MayRequire="Ludeon.Rimworld.Anomaly">ABYautja_GhoulishYautja</li>
+					<li MayRequire="Ludeon.Rimworld.Anomaly">ABYautja_LivingYautja</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="XMT_Starbeast_AlienRace"]/alienRace/raceRestriction/whiteXenotypeList</xpath>
+				<value>
+					<li>ABStandardYautja</li>
+					<li>ABBerserkYautja</li>
+					<li>ABSwordYautja</li>
+					<li>ABShieldYautja</li>
+					<li>ABScoutYautja</li>
+					<li>ABMalformedYautja</li>
+					<li>ABFeralYautja</li>
+					<li>ABTranslucentYautja</li>
+					<li>ABGrendelKingYautja</li>
+					<li>XMTPredalien</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

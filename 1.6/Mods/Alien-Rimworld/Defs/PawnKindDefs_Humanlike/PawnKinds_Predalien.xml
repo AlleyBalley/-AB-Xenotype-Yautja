@@ -24,6 +24,11 @@
 			  </categories>
 			</li>
 		</backstoryFiltersOverride>
+		<xenotypeSet Inherit="False">
+			<xenotypeChances>
+				<XMTPredalien>1</XMTPredalien>
+			</xenotypeChances>
+		</xenotypeSet>
 	</PawnKindDef>
 	
 	<PawnKindDef ParentName="BaseStarbeast">
@@ -49,5 +54,10 @@
 			  </categories>
 			</li>
 		</backstoryFiltersOverride>
+		<xenotypeSet Inherit="False">
+			<xenotypeChances>
+				<XMTPredalien>1</XMTPredalien>
+			</xenotypeChances>
+		</xenotypeSet>
 	</PawnKindDef>
 </Defs>

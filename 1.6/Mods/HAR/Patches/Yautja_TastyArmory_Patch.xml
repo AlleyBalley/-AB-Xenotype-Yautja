@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Tasty Armory - Core</li>
+				</mods>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="ABYautja_Race"]/alienRace/raceRestriction/whiteApparelList</xpath>
+					<value>
+						<li>TA_ArrowBag</li>
+						<li>TA_Bag</li>
+						<li>TA_CrossbowmanBelt</li>
+						<li>TA_Quiver</li>
+						<li>TA_SwordScabbard</li>
+						<li>TA_LamellarVestMetal</li>
+						<li>TA_LamellarVestLeather</li>
+						<li>TA_MailleVest</li>
+						<!--li>capelet</li-->
+						<li>cloak</li>
+						<li>TA_CloakClosed</li>
+						<li>TA_CloakSemi</li>
+						<li>TA_CloakOpen</li>
+						<li>TA_KidCloak</li>
+						<li>TA_PeasantTunic</li>
+						<li>TA_KidDress</li>
+						<li MayRequire="CETeam.CombatExtended">TA_BasketPack</li>
+						<li MayRequire="CETeam.CombatExtended">TA_SnapSack</li>
+					</value>
+				</match>
+			</li>
+			
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Tasty Armory - Fire and Steel</li>
+				</mods>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="ABYautja_Race"]/alienRace/raceRestriction/whiteApparelList</xpath>
+					<value>
+						<li>TA_Bazubands</li>
+						<li>TA_Gauntlets</li>
+						<li>TA_HussarWings</li>
+						<li>TA_MusketeerBandolier</li>
+						<li>TA_RapierBaldrick</li>
+						<li>TA_RapierSash</li>
+						<li>TA_HussarSaberScabbard</li>
+						<li>TM_SashBelt</li>
+						<li>TA_TallBoots</li>
+						<li>TA_TallGloves</li>
+						<li>TA_BuffCoat</li>
+						<li>TA_BuffVest</li>
+						<li>TA_Cuirass</li>
+						<li>TA_Gorget</li>
+						<li>TA_Krug</li>
+						<li>TA_PaddedVest</li>
+						<li>TA_CassockClosed</li>
+						<li>TA_CassockShoulder</li>
+						<li>TA_Doublet</li>
+						<li>TA_DoubletVest</li>
+						<li>TA_LongcoatClosed</li>
+						<li>TA_LongcoatOpen</li>
+						<li>TA_ShirtSashBelt</li>
+						<li>TA_ShirtSashBeltWhite</li>
+						<li MayRequire="CETeam.CombatExtended">TA_HussarShield</li>
+						<li MayRequire="CETeam.CombatExtended">TA_Kalkan</li>
+						<li MayRequire="CETeam.CombatExtended">TA_Rodela</li>
+					</value>
+				</match>
+			</li>
+			
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Tasty Armory - High Medieval</li>
+				</mods>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="ABYautja_Race"]/alienRace/raceRestriction/whiteApparelList</xpath>
+					<value>
+						<li>TA_Aketon</li>
+						<li>TA_CoatOfPlates</li>
+						<li>TA_Dress</li>
+						<li>TA_Surcoat</li>
+						<li>TA_MailleHoses</li>
+						<li>TA_MailleMittens</li>
+						<li MayRequire="CETeam.CombatExtended">TA_HeaterShield</li>
+						<li MayRequire="CETeam.CombatExtended">TA_KiteShield</li>
+						<li MayRequire="CETeam.CombatExtended">TA_RoundShield</li>
+					</value>
+				</match>
+			</li>
+			
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Tasty Armory - In Shining Armor</li>
+				</mods>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="ABYautja_Race"]/alienRace/raceRestriction/whiteApparelList</xpath>
+					<value>
+						<li>TA_BrigandineVest</li>
+						<li>TA_PlateCuirass</li>
+						<li>TA_ArmingDoublet</li>
+						<li>TA_FancyFurCoat</li>
+						<li>TA_Jupon</li>
+						<li MayRequire="CETeam.CombatExtended">TA_BucklerShield</li>
+						<li MayRequire="CETeam.CombatExtended">TA_HeaterShield</li>
+						<li MayRequire="CETeam.CombatExtended">TA_PaviseShield</li>
+					</value>
+				</match>
+			</li>
+			
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Tasty Armory - Sengoku</li>
+				</mods>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="ABYautja_Race"]/alienRace/raceRestriction/whiteApparelList</xpath>
+					<value>
+						<li>TA_CartridgeBox</li>
+						<li>TA_KatanaBelt</li>
+						<li>TA_Obi</li>
+						<li>TA_RiceBundle</li>
+						<li>TA_SashimonoBanner</li>
+						<li>TA_YumiQuiver</li>
+						<li>TA_ArmoredSleeves</li>
+						<li>TA_AshigaruChestpiece</li>
+						<li>TA_SamuraiPants</li>
+						<li>TA_SamuraiShoulderPlates</li>
+						<li>TA_Kimono</li>
+						<li>TA_Yukata</li>
+						<li>TA_SamuraiBoots</li>
+						<li>TA_SamuraiGloves</li>
+					</value>
+				</match>
+			</li>
+			
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Tasty Armory - Steppe Warriors</li>
+				</mods>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="ABYautja_Race"]/alienRace/raceRestriction/whiteApparelList</xpath>
+					<value>
+						<li>TA_BowAndArrowQuivers</li>
+						<li>TA_RidingBoots</li>
+						<li>TA_SteppeSaberScabbard</li>
+						<li>TA_KaftanCommoner</li>
+						<li>TA_KaftanNoble</li>
+						<li MayRequire="CETeam.CombatExtended">TA_Apparel_RattanShield</li>
+					</value>
+				</match>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

@@ -1,15 +1,382 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
+
 	<Operation Class="PatchOperationSequence">
 		<operations>
 			<li Class="PatchOperationFindMod">
 				<mods>
-					<li>Det's Xenotypees - Venators</li>
+					<li>[FM] Apparels and Weapons Fixes</li>
 				</mods>
 				<match Class="PatchOperationAdd">
-					<xpath>/Defs/AlienRace.ThingDef_AlienRace[@Name="ABYautja_Race"]/alienRace/raceRestriction/whiteApparelList</xpath>
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="ABYautja_Race"]/alienRace/raceRestriction/whiteApparelList</xpath>
+					<value>
+						<li MayRequire="VanillaExpanded.VAPPE">VAE_Headgear_GasMask</li>
+						<li MayRequire="VanillaExpanded.VARME">AF_Headgear_NightVisionGoggles</li>
+						<li MayRequire="VanillaExpanded.VARME">AF_Headgear_BallisticGoggles</li>
+					</value>
+				</match>
+			</li>
+		
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Det's Xenotypes - Venators</li>
+				</mods>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="ABYautja_Race"]/alienRace/raceRestriction/whiteApparelList</xpath>
 					<value>
 						<li>DV_Apparel_HunterVisage</li>
+					</value>
+				</match>
+			</li>
+			
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Det's Xenotypes - Avaloi</li>
+				</mods>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="ABYautja_Race"]/alienRace/raceRestriction/whiteApparelList</xpath>
+					<value>
+						<li>DV_Headgear_AvaloiGlasses</li>
+					</value>
+				</match>
+			</li>
+			
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Det's Xenotypes - Boglegs</li>
+				</mods>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="ABYautja_Race"]/alienRace/raceRestriction/whiteApparelList</xpath>
+					<value>
+						<li>DV_Handwear_KnuckleDusters</li>
+					</value>
+				</match>
+			</li>
+			
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Det's Xenotypes - Half-foot</li>
+				</mods>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="ABYautja_Race"]/alienRace/raceRestriction/whiteApparelList</xpath>
+					<value>
+						<li>DV_Apparel_ServiceHeadset</li>
+					</value>
+				</match>
+			</li>
+			
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>ETRT: Tribal Apparel (continued)</li>
+				</mods>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="ABYautja_Race"]/alienRace/raceRestriction/whiteApparelList</xpath>
+					<value>
+						<li>Apparel_FSFurCoat</li>
+						<li>Apparel_FSDesertRobe</li>
+					</value>
+				</match>
+			</li>
+			
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Cat's Boots and Gloves</li>
+				</mods>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="ABYautja_Race"]/alienRace/raceRestriction/whiteApparelList</xpath>
+					<value>
+						<li MayRequire="Ludeon.Rimworld.Royalty">CAT_Footwear_EltexBoots</li>
+						<li>CAT_Footwear_ReconBoots</li>
+						<li>CAT_Footwear_HeavyMarineBoots</li>
+						<li MayRequire="det.spacerarsenal">CAT_Footwear_EnsignBoots</li>
+						<li MayRequire="detvisor.impactweaponryreloaded">CAT_Footwear_CrusaderBoots</li>
+						<li>CAT_Footwear_FlakBoots</li>
+						<li>CAT_Footwear_RiotBoots</li>
+						<li MayRequire="Ludeon.Rimworld.Odyssey">CAT_Footwear_VacsuitBoots</li>
+						<li MayRequire="Ludeon.Rimworld.Royalty">CAT_Handwear_EltexGloves</li>
+						<li>CAT_Handwear_ReconGloves</li>
+						<li>CAT_Handwear_HeavyMarineGloves</li>
+						<li MayRequire="det.spacerarsenal">CAT_Handwear_EnsignGloves</li>
+						<li MayRequire="detvisor.impactweaponryreloaded">CAT_Handwear_CrusaderGloves</li>
+						<li>CAT_Handwear_FlakGloves</li>
+						<li>CAT_Handwear_RiotGloves</li>
+						<li MayRequire="Ludeon.Rimworld.Odyssey">CAT_Handwear_VacsuitGloves</li>
+					</value>
+				</match>
+			</li>
+			
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Kid Apparel Expanded</li>
+				</mods>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="ABYautja_Race"]/alienRace/raceRestriction/whiteApparelList</xpath>
+					<value>
+						<li>Apparel_KidDuster</li>
+						<li>Apparel_KidJacket</li>
+						<li>Apparel_KidFlakVest</li>
+						<li>Apparel_KidFlakPants</li>
+						<li>Apparel_KidFlakJacket</li>
+						<li>Apparel_KidWarMask</li>
+					</value>
+				</match>
+			</li>
+			
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>River's Tribal Mittens</li>
+				</mods>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="ABYautja_Race"]/alienRace/raceRestriction/whiteApparelList</xpath>
+					<value>
+						<li>River_Tribal_mittens</li>
+					</value>
+				</match>
+			</li>
+			
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>River's Tribal Shoes</li>
+				</mods>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="ABYautja_Race"]/alienRace/raceRestriction/whiteApparelList</xpath>
+					<value>
+						<li>River_Tribal_sandals</li>
+						<li>River_Tribal_moccasins</li>
+						<li>River_Tribal_mukluks</li>
+					</value>
+				</match>
+			</li>
+			
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>RGBmods Stimming Toys</li>
+				</mods>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="ABYautja_Race"]/alienRace/raceRestriction/whiteApparelList</xpath>
+					<value>
+						<li>RGBmods_FidgetSpinner</li>
+						<li>RGBmods_FidgetCube</li>
+						<li>RGBmods_FidgetSquishy</li>
+						<li>RGBmods_FidgetDice</li>
+						<li>RGBmods_FidgetMagnets</li>
+						<li>RGBmods_FidgetGears</li>
+						<li>RGBmods_FidgetConsole</li>
+					</value>
+				</match>
+			</li>
+			
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Toddlers</li>
+				</mods>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="ABYautja_Race"]/alienRace/raceRestriction/whiteApparelList</xpath>
+					<value>
+						<li>Apparel_BabyOnesie</li>
+						<li>Apparel_BabyTribal</li>
+					</value>
+				</match>
+			</li>
+			
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Glowstick Belt</li>
+				</mods>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="ABYautja_Race"]/alienRace/raceRestriction/whiteApparelList</xpath>
+					<value>
+						<li>OCARINA_Apparel_GlowstickPack</li>
+					</value>
+				</match>
+			</li>
+			
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Alpha Genes</li>
+				</mods>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="ABYautja_Race"]/alienRace/raceRestriction/whiteApparelList</xpath>
+					<value>
+						<li>AG_ForsakenCloak</li>
+						<li>AG_ForsakenCloak_Child</li>
+					</value>
+				</match>
+			</li>
+			
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>[K4G] Empires of Old - Core</li>
+				</mods>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="ABYautja_Race"]/alienRace/raceRestriction/whiteApparelList</xpath>
+					<value>
+						<li>K4G_Apparel_AdvancedFlakVest</li>
+						<li>K4G_Apparel_RiotParka</li>
+						<li>K4G_Apparel_FlakMask</li>
+						<li>K4G_Apparel_Goggles</li>
+						<li>K4G_Apparel_Monocle</li>
+						<li>K4G_Apparel_KidOveralls</li>
+						<li>K4G_Apparel_KidKimono</li>
+						<li>K4G_Apparel_KidThawb</li>
+						<li MayRequire="Ludeon.RimWorld.Royalty">K4G_Apparel_RoyalKidKimono</li>
+						<li>K4G_Apparel_Overalls</li>
+						<li>K4G_Apparel_ServiceParka</li>
+						<li>K4G_Apparel_Kimono</li>
+						<li>K4G_Apparel_Thawb</li>
+						<li>K4G_Apparel_TatteredRags</li>
+						<li>K4G_Apparel_Overcoat</li>
+						<li>K4G_Apparel_SuitJacket</li>
+						<li>K4G_Apparel_Armband</li>
+						<li>K4G_Apparel_Necktie</li>
+						<li MayRequire="Ludeon.RimWorld.Royalty">K4G_Apparel_RoyalKimono</li>
+						<li MayRequire="Ludeon.RimWorld.Royalty">K4G_Apparel_EmbroideredOvercoat</li>
+						<li MayRequire="Ludeon.RimWorld.Royalty">K4G_Apparel_PrestigeAdvancedFlakVest</li>
+						<li>K4G_Apparel_MilitaryMedal</li>
+					</value>
+				</match>
+			</li>
+			
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Anomaly</li>
+				</mods>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="ABYautja_Race"]/alienRace/raceRestriction/whiteApparelList</xpath>
+					<value>
+						<li MayRequire="k4g.core">K4G_Apparel_LabCoat</li>
+					</value>
+				</nomatch>
+			</li>
+			
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Alpha Mechs</li>
+				</mods>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="ABYautja_Race"]/alienRace/raceRestriction/whiteApparelList</xpath>
+					<value>
+						<li>VFEP_Warcasket_MechController</li>
+						<li>VFEP_Warcasket_Shoulders_MechController</li>
+						<li>VFEP_Warcasket_Helmet_MechController</li>
+					</value>
+				</match>
+			</li>
+					
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Rim of Madness - Bones</li>
+				</mods>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="ABYautja_Race"]/alienRace/raceRestriction/whiteApparelList</xpath>
+					<value>
+						<li>ROMB_Apparel_SkullMask</li>
+						<li>Sihv_Apparel_BoneArmor</li>
+					</value>
+				</match>
+			</li>
+			
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>WarCasket Expanded</li>
+				</mods>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="ABYautja_Race"]/alienRace/raceRestriction/whiteApparelList</xpath>
+					<value>
+					<!--Helmets-->
+						<li>WarcasketHelmet_Sentinel</li>
+						<li>WarcasketHelmet_GuardianX</li>
+						<li>WarcasketHelmet_Tyrant</li>
+						<li>WarcasketHelmet_Centurion</li>
+					<!--Shoulders-->
+						<li>WarcasketShoulders_Sentinel</li>
+						<li>Warcasket_GuardianX</li>
+						<li>Warcasket_Tyrant</li>
+						<li>Warcasket_Centurion</li>
+					<!--Bodies-->
+						<li>Warcasket_Sentinel</li>
+						<li>WarcasketShoulders_GuardianX</li>
+						<li>WarcasketShoulders_Tyrant</li>
+						<li>WarcasketShoulders_Centurion</li>
+					</value>
+				</match>
+			</li>
+			
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Arsenal - Orbital Security</li>
+				</mods>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="ABYautja_Race"]/alienRace/raceRestriction/whiteApparelList</xpath>
+					<value>
+						<li>Apparel_SealedUndersuit</li>
+						<li>Apparel_EVAsuit</li>
+						<li>Apparel_AstroSuit</li>
+						<li>Apparel_AstroMask</li>
+						<li>Apparel_SecurityArmor</li>
+					</value>
+				</match>
+			</li>
+			
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Save Our Ship 2</li>
+				</mods>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="ABYautja_Race"]/alienRace/raceRestriction/whiteApparelList</xpath>
+					<value>
+						<li>Apparel_SpaceSuitBody</li>
+						<li>Apparel_SpaceSuitBodyChild</li>
+						<li>Apparel_SpaceSuitHelmet</li>
+						<li>Apparel_SpaceSuitHelmetChild</li>
+						<li>Apparel_SpaceSuitBodyHeavy</li>
+						<li>Apparel_SpaceSuitHelmetHeavy</li>
+						<li MayRequire="Ludeon.RimWorld.Royalty">Apparel_SpaceSuitBodyHeavyPrestige</li>
+						<li MayRequire="Ludeon.RimWorld.Royalty">Apparel_SpaceSuitHelmetHeavyPrestige</li>
+						<li>Apparel_SpaceSurvivalBelt</li>
+					</value>
+				</match>
+			</li>
+			
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Combat Extended</li>
+				</mods>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="ABYautja_Race"]/alienRace/raceRestriction/whiteApparelList</xpath>
+					<value>
+						<li>CE_Apparel_GasMask</li>
+						<li>CE_Apparel_ImprovGasMask</li>
+						<li>CE_Apparel_SimpleNightVision</li>
+						<li>CE_Apparel_AdvancedNightVision</li>
+						<li>CE_Apparel_MeleeShield</li>
+						<li>CE_Apparel_BallisticShield</li>
+						<li>CE_Apparel_CompositeVest</li>
+						<li>CE_Apparel_TacVest</li>
+						<li>CE_Apparel_Backpack</li>
+						<li>CE_Apparel_KidBackpack</li>
+						<li>CE_Apparel_TribalBackpack</li>
+						<li>CE_Apparel_RadioPack</li>
+						<li>CE_Apparel_ExoFrame</li>
+					</value>
+				</match>
+			</li>
+			
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Combat Extended Armors</li>
+				</mods>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="ABYautja_Race"]/alienRace/raceRestriction/whiteApparelList</xpath>
+					<value>
+						<li>CE_Armor_LargeBackpack</li>
+						<li>CE_Armor_Sombrero</li>
+						<li>CE_Armor_BallisticGoggles</li>
+						<li>CE_Armor_Cuirass</li>
+						<li>CE_Armor_Jumpsuit</li>
+						<li>CE_Armor_Poncho</li>
+						<li>CE_Armor_SoftVest</li>
+						<li>CE_Armor_FragSuit</li>
 					</value>
 				</match>
 			</li>

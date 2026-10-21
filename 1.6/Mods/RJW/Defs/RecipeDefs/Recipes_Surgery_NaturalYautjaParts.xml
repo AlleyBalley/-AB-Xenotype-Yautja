@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+	<RecipeDef ParentName="SexReassignmentP">
+		<defName>AttachYautjaPenis</defName>
+		<label>attach yautja penis</label>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>YautjaPenis</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>YautjaPenis</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>YautjaPenis</addsHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="MultiPenis">
+		<defName>AddMultiYautjaPenis</defName>
+		<label>add yautja penis</label>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>YautjaPenis</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>YautjaPenis</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>YautjaPenis</addsHediff>
+	</RecipeDef>
+</Defs>

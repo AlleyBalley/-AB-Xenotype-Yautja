@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="XMT_Starbeast_AlienRace"]/alienRace/raceRestriction/whiteApparelList</xpath>
+				<value>
+					<li>ABYautja_Utility_PlasmaCaster</li>
+					<li>ABYautja_Utility_Blazer</li>
+					<li>ABYautja_Utility_NetGun</li>
+					<li>ABYautja_Utility_PlasmaNetGun</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="XMT_Starbeast_AlienRace"]/alienRace/raceRestriction/whiteRecipeList</xpath>
+				<value>
+					<li>ABYautja_SelfDestructDeviceRemove</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/RecipeDef[@Name="WristBladeInstallImplantBase"]/recipeUsers</xpath>
+				<value>
+					<li>XMT_Starbeast_AlienRace</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/RecipeDef[@Name="WristBladeRemoveImplantBase"]/recipeUsers</xpath>
+				<value>
+					<li>XMT_Starbeast_AlienRace</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

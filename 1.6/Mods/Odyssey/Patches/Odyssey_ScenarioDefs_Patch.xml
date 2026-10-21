@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
+
 	<Operation Class="PatchOperationSequence">
 		<operations>
 			<li Class="PatchOperationFindMod">
@@ -7,7 +8,7 @@
 					<li>Humanoid Alien Races</li>
 				</mods>
 				<match Class="PatchOperationInsert">
-					<xpath>/Defs/ScenarioDef[defName="ABYautjaHuntingScouts"]/scenario/parts/li[2]</xpath>
+					<xpath>Defs/ScenarioDef[defName="ABYautjaHuntingScouts"]/scenario/parts/li[2]</xpath>
 					<order>Append</order>
 					<value>
 						<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
@@ -18,7 +19,7 @@
 					</value>
 				</match>
 				<nomatch Class="PatchOperationInsert">
-					<xpath>/Defs/ScenarioDef[defName="ABYautjaHuntingScouts"]/scenario/parts/li[2]/def</xpath>
+					<xpath>Defs/ScenarioDef[defName="ABYautjaHuntingScouts"]/scenario/parts/li[2]/def</xpath>
 					<order>Prepend</order>
 					<value>
 						<pawnChoiceCount>3</pawnChoiceCount>
@@ -31,7 +32,7 @@
 						<li>Humanoid Alien Races</li>
 					</mods>
 				<nomatch Class="PatchOperationInsert">
-					<xpath>/Defs/ScenarioDef[defName="ABYautjaHuntingScouts"]/scenario/parts/li[2]/overrideKinds/li/pawnKind</xpath>
+					<xpath>Defs/ScenarioDef[defName="ABYautjaHuntingScouts"]/scenario/parts/li[2]/overrideKinds/li/pawnKind</xpath>
 					<order>Append</order>
 					<value>
 						<xenotype>ABStandardYautja</xenotype>
@@ -44,7 +45,7 @@
 						<li>Humanoid Alien Races</li>
 					</mods>
 				<nomatch Class="PatchOperationInsert">
-					<xpath>/Defs/ScenarioDef[defName="ABYautjaHuntingScouts"]/scenario/parts/li[2]/overrideKinds</xpath>
+					<xpath>Defs/ScenarioDef[defName="ABYautjaHuntingScouts"]/scenario/parts/li[2]/overrideKinds</xpath>
 					<order>Append</order>
 					<value>
 						<xenotypeCounts>

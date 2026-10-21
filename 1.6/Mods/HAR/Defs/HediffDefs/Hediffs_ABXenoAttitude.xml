@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<HediffDef>
+		<defName>ABYautjaXenoAttitude</defName>
+		<label>random attitude towards xenos</label>
+		<description>.</description>
+		<everCurableByItem>false</everCurableByItem>
+        <initialSeverity>0.001</initialSeverity>
+        <stages />
+        <hediffClass>HediffWithComps</hediffClass>
+        <comps>
+            <li Class="EBSGFramework.HediffCompProperties_GainRandomGeneSet">
+                <removeGenesFromOtherLists>False</removeGenesFromOtherLists>
+                <geneSets>
+                    <li>
+                        <weightOfGeneSet>0.1</weightOfGeneSet>
+                        <geneSet>
+                            <li>ABYautjaNoOneSpecial</li>
+                        </geneSet>
+                    </li>
+                    <li>
+                        <weightOfGeneSet>0.3</weightOfGeneSet>
+                        <geneSet>
+                            <li>ABYautjaSuperiorRace</li>
+                        </geneSet>
+                    </li>
+                </geneSets>
+            </li>
+        </comps>
+	</HediffDef>
+</Defs>

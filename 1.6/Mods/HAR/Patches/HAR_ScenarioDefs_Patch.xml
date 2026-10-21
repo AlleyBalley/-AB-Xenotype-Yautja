@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
+
 	<Operation Class="PatchOperationSequence">
 		<operations>
 			<li Class="PatchOperationInsert">
-				<xpath>/Defs/ScenarioDef[defName="ABYautjaScenarioUnblooded"]/scenario/parts/li[1]</xpath>
+				<xpath>Defs/ScenarioDef[defName="ABYautjaScenarioUnblooded"]/scenario/parts/li[1]</xpath>
 				<order>Append</order>
 				<value>
 					<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
@@ -15,7 +16,7 @@
 			</li>
 			
 			<li Class="PatchOperationInsert">
-				<xpath>/Defs/ScenarioDef[defName="ABYautjaScenarioBlooded"]/scenario/parts/li[1]</xpath>
+				<xpath>Defs/ScenarioDef[defName="ABYautjaScenarioBlooded"]/scenario/parts/li[1]</xpath>
 				<order>Append</order>
 				<value>
 					<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
@@ -27,7 +28,7 @@
 			</li>
 			
 			<li Class="PatchOperationInsert">
-				<xpath>/Defs/ScenarioDef[defName="ABYautjaScenarioLongExile"]/scenario/parts/li[1]</xpath>
+				<xpath>Defs/ScenarioDef[defName="ABYautjaScenarioLongExile"]/scenario/parts/li[1]</xpath>
 				<order>Append</order>
 				<value>
 					<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">

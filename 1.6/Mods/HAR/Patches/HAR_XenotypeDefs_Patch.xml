@@ -1,10 +1,91 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
-	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/XenotypeDef[defName="ABGrendelKingYautja"]/genes</xpath>
-		<value>
-			<li>ABYautjaSuperiorRace</li>
-		</value>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/XenotypeDef[defName="ABStandardYautja" or defName="ABMalformedYautja" or defName="ABFeralYautja" or defName="ABBerserkYautja" or defName="ABSwordYautja" or defName="ABShieldYautja" or defName="ABScoutYautja" or defName="ABTranslucentYautja" or defName="ABGrendelKingYautja"]/genes/li[text()="ABYautjaSharpShooter"]</xpath>
+				<value>
+					<li>ABHARYautjaSharpShooter</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/XenotypeDef[defName="ABStandardYautja" or defName="ABMalformedYautja" or defName="ABFeralYautja" or defName="ABBerserkYautja" or defName="ABSwordYautja" or defName="ABShieldYautja" or defName="ABScoutYautja" or defName="ABTranslucentYautja" or defName="ABGrendelKingYautja"]/genes</xpath>
+				<value>
+					<li>ABYautjaChildhood</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/XenotypeDef[defName="ABBerserkYautja"]/genes</xpath>
+				<value>
+					<li>ABYautjaXenoAttitude</li>
+				</value>
+			</li>
+		
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/XenotypeDef[defName="ABGrendelKingYautja"]/genes</xpath>
+				<value>
+					<li>ABYautjaSuperiorRace</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/XenotypeDef[defName="ABMalformedYautja"]/genes/li[text()="ABMalformedYautjaFrame"]</xpath>
+				<value>
+					<li>ABHARMalformedYautjaFrame</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/XenotypeDef[defName="ABFeralYautja"]/genes/li[text()="ABFeralYautjaFrame"]</xpath>
+				<value>
+					<li>ABHARFeralYautjaFrame</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/XenotypeDef[defName="ABBerserkYautja" or defName="ABSwordYautja"]/genes/li[text()="ABBerserkYautjaFrame"]</xpath>
+				<value>
+					<li>ABHARBerserkYautjaFrame</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/XenotypeDef[defName="ABShieldYautja" or defName="ABGrendelKingYautja"]/genes/li[text()="ABGrendelKingYautjaFrame"]</xpath>
+				<value>
+					<li>ABHARGrendelKingYautjaFrame</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/XenotypeDef[defName="ABStandardYautja" or defName="ABBerserkYautja" or defName="ABSwordYautja" or defName="ABShieldYautja" or defName="ABScoutYautja" or defName="ABGrendelKingYautja"]/genes/li[text()="ABYautjaHair_Tendril"]</xpath>
+				<value>
+					<li>ABYautjaHair_Tendril_NoRequirement</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/XenotypeDef[defName="ABStandardYautja" or defName="ABMalformedYautja" or defName="ABFeralYautja" or defName="ABBerserkYautja" or defName="ABSwordYautja" or defName="ABShieldYautja" or defName="ABScoutYautja" or defName="ABTranslucentYautja" or defName="ABGrendelKingYautja"]/genes/li[text()="ABYautjaLeatherySkin"]</xpath>
+				<value>
+					<li>ABYautjaHARLeatherySkin</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/XenotypeDef[defName="ABStandardYautja" or defName="ABMalformedYautja" or defName="ABFeralYautja" or defName="ABBerserkYautja" or defName="ABShieldYautja" or defName="ABTranslucentYautja" or defName="ABGrendelKingYautja"]/genes/li[text()="ABYautjaUpperMandibles"]</xpath>
+				<value>
+					<li>ABYautjaMandibleUpperMandibles</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/XenotypeDef[defName="ABStandardYautja" or defName="ABMalformedYautja" or defName="ABFeralYautja" or defName="ABBerserkYautja" or defName="ABSwordYautja" or defName="ABShieldYautja" or defName="ABScoutYautja" or defName="ABTranslucentYautja" or defName="ABGrendelKingYautja"]/genes/li[text()="ABYautjaLowerMandibles"]</xpath>
+				<value>
+					<li>ABYautjaMandibleLowerMandibles</li>
+				</value>
+			</li>
+		</operations>
 	</Operation>
 </Patch>

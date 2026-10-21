@@ -111,7 +111,7 @@
 					<li>Extended Human Body Simulation</li>
 				</mods>
 				<match Class="PatchOperationInsert">
-					<xpath>Defs/BodyDef[defName="ABYautja_Biped"]/corePart/parts/li[def = "Shoulder" and customLabel = "left shoulder"]/parts/li[def = "Arm"]/parts/li[def = "ABYautja_LeftForearm"]/parts/li[def = "Radius"]</xpath>
+					<xpath>Defs/BodyDef[defName="ABYautja_Biped"]/corePart/parts/li[def = "Shoulder" and customLabel = "left shoulder"]/parts/li[def = "Arm"]/parts/li[def = "ABYautja_Forearm"]/parts/li[def = "Radius"]</xpath>
 					<value>		
 						<li>
 							<def>Ulna</def>
@@ -133,7 +133,7 @@
 					<li>Extended Human Body Simulation</li>
 				</mods>
 				<match Class="PatchOperationInsert">
-					<xpath>Defs/BodyDef[defName="ABYautja_Biped"]/corePart/parts/li[def = "Shoulder" and customLabel = "right shoulder"]/parts/li[def = "Arm"]/parts/li[def = "ABYautja_RightForearm"]/parts/li[def = "Radius"]</xpath>
+					<xpath>Defs/BodyDef[defName="ABYautja_Biped"]/corePart/parts/li[def = "Shoulder" and customLabel = "right shoulder"]/parts/li[def = "Arm"]/parts/li[def = "ABYautja_Forearm"]/parts/li[def = "Radius"]</xpath>
 					<value>		
 						<li>
 							<def>Ulna</def>

@@ -24,32 +24,33 @@
 				<maleGenderProbability>0.75</maleGenderProbability>
 				<immuneToAge>false</immuneToAge>
 				<growthAges>
-					<li>7</li>
-					<li>10</li>
+					<li>8</li>
 					<li>15</li>
-					<li>25</li>
-					<li>35</li>
-					<li>50</li>
-					<li>75</li>
-					<li>100</li>
+					<li>45</li>
 				</growthAges>
+				<growthFactorByAge>
+					<points>
+						<li>(0, 1)</li>
+						<li>(8,1)</li>
+						<li>(15,0.85)</li>
+						<li>(45,0.75)</li>
+					</points>
+				</growthFactorByAge>
 				<ageSkillFactorCurve>
 					<points>
 						<li>(3, 0.2)</li>
-						<li>(18, 1)</li>
+						<li>(8, 0.5)</li>
+						<li>(45, 1)</li>
 						<li>(1050, 1)</li>
-						<li>(1850, 1.6)</li>
+						<li>(1850, 1.2)</li>
+						<li>(1950,1.5)</li>
 					</points>
 				</ageSkillFactorCurve>
 				<lovinIntervalHoursFromAge>
 					<points>
-						<li>(100, 2)</li>
-						<li>(170, 3)</li>
-						<li>(200, 4)</li>
-						<li>(400, 6)</li>
-						<li>(800, 8)</li>
-						<li>(1000, 16)</li>
-						<li>(1750, 48)</li>
+						<li>(100, 16)</li>
+						<li>(170, 20)</li>
+						<li>(1750, 24)</li>
 						<li>(1900, 16)</li>
 						<li>(2000, 8)</li>
 					</points>
@@ -57,22 +58,23 @@
 				<reproduction>
 					<maleFertilityAgeFactor>
 						<points>
-							<li>(14, 0)</li>
-							<li>(18, 1)</li>
+							<li>(15, 0)</li>
+							<li>(45, 1)</li>
 							<li>(1050, 1)</li>
-							<li>(1750, 0.5)</li>
-							<li>(1900, 0)</li>
+							<li>(1850, 0.75)</li>
+							<li>(1950, 0.5)</li>
+							<li>(2000, 0)</li>
 						</points>
 					</maleFertilityAgeFactor>
 					<femaleFertilityAgeFactor>
 						<points>
-							<li>(14, 0)</li>
-							<li>(20, 1)</li>
-							<li>(1000, 1)</li>
-							<li>(1250, 0.5)</li>
-							<li>(1300, 0.1)</li>
-							<li>(1450, 0.02)</li>
-							<li>(1500, 0)</li>
+							<li>(15, 0)</li>
+							<li>(45, 1)</li>
+							<li>(1350, 1)</li>
+							<li>(1450, 0.75)</li>
+							<li>(1650, 0.5)</li>
+							<li>(1750, 0.25)</li>
+							<li>(1850, 0)</li>
 						</points>
 					</femaleFertilityAgeFactor>
 				</reproduction>
@@ -124,6 +126,76 @@
 						<li>ABYautjaHeadR_Decorated</li>
 						<li>ABYautjaHeadR_Speckled</li>
 						<li>ABYautjaHeadR_Striped</li>
+					<!--Require Gene-->
+						<!--Clover-->
+						<li>ABYautjaHeadGeneYG_Clover_Albino</li>
+						<li>ABYautjaHeadGeneYG_Clover_Decorated</li>
+						<li>ABYautjaHeadGeneYG_Clover_Speckled</li>
+						<li>ABYautjaHeadGeneYG_Clover_Striped</li>
+						<li>ABYautjaHeadGeneY_Clover_Albino</li>
+						<li>ABYautjaHeadGeneY_Clover_Decorated</li>
+						<li>ABYautjaHeadGeneY_Clover_Speckled</li>
+						<li>ABYautjaHeadGeneY_Clover_Striped</li>
+						<li>ABYautjaHeadGeneYO_Clover_Albino</li>
+						<li>ABYautjaHeadGeneYO_Clover_Decorated</li>
+						<li>ABYautjaHeadGeneYO_Clover_Speckled</li>
+						<li>ABYautjaHeadGeneYO_Clover_Striped</li>
+						<li>ABYautjaHeadGeneO_Clover_Albino</li>
+						<li>ABYautjaHeadGeneO_Clover_Decorated</li>
+						<li>ABYautjaHeadGeneO_Clover_Speckled</li>
+						<li>ABYautjaHeadGeneO_Clover_Striped</li>
+						<li>ABYautjaHeadGeneR_Clover_Albino</li>
+						<li>ABYautjaHeadGeneR_Clover_Decorated</li>
+						<li>ABYautjaHeadGeneR_Clover_Speckled</li>
+						<li>ABYautjaHeadGeneR_Clover_Striped</li>
+						<!--Malformed-->
+						<li>ABYautjaHeadGeneYG_Malformed_Albino</li>
+						<li>ABYautjaHeadGeneYG_Malformed_Decorated</li>
+						<li>ABYautjaHeadGeneYG_Malformed_Speckled</li>
+						<li>ABYautjaHeadGeneYG_Malformed_Striped</li>
+						<li>ABYautjaHeadGeneY_Malformed_Albino</li>
+						<li>ABYautjaHeadGeneY_Malformed_Decorated</li>
+						<li>ABYautjaHeadGeneY_Malformed_Speckled</li>
+						<li>ABYautjaHeadGeneY_Malformed_Striped</li>
+						<li>ABYautjaHeadGeneYO_Malformed_Albino</li>
+						<li>ABYautjaHeadGeneYO_Malformed_Decorated</li>
+						<li>ABYautjaHeadGeneYO_Malformed_Speckled</li>
+						<li>ABYautjaHeadGeneYO_Malformed_Striped</li>
+						<li>ABYautjaHeadGeneO_Malformed_Albino</li>
+						<li>ABYautjaHeadGeneO_Malformed_Decorated</li>
+						<li>ABYautjaHeadGeneO_Malformed_Speckled</li>
+						<li>ABYautjaHeadGeneO_Malformed_Striped</li>
+						<li>ABYautjaHeadGeneR_Malformed_Albino</li>
+						<li>ABYautjaHeadGeneR_Malformed_Decorated</li>
+						<li>ABYautjaHeadGeneR_Malformed_Speckled</li>
+						<li>ABYautjaHeadGeneR_Malformed_Striped</li>
+						<!--Feral-->
+						<li>ABYautjaHeadGeneYG_Feral_Albino</li>
+						<li>ABYautjaHeadGeneYG_Feral_Decorated</li>
+						<li>ABYautjaHeadGeneYG_Feral_Speckled</li>
+						<li>ABYautjaHeadGeneYG_Feral_Striped</li>
+						<li>ABYautjaHeadGeneY_Feral_Albino</li>
+						<li>ABYautjaHeadGeneY_Feral_Decorated</li>
+						<li>ABYautjaHeadGeneY_Feral_Speckled</li>
+						<li>ABYautjaHeadGeneY_Feral_Striped</li>
+						<li>ABYautjaHeadGeneYO_Feral_Albino</li>
+						<li>ABYautjaHeadGeneYO_Feral_Decorated</li>
+						<li>ABYautjaHeadGeneYO_Feral_Speckled</li>
+						<li>ABYautjaHeadGeneYO_Feral_Striped</li>
+						<li>ABYautjaHeadGeneO_Feral_Albino</li>
+						<li>ABYautjaHeadGeneO_Feral_Decorated</li>
+						<li>ABYautjaHeadGeneO_Feral_Speckled</li>
+						<li>ABYautjaHeadGeneO_Feral_Striped</li>
+						<li>ABYautjaHeadGeneR_Feral_Albino</li>
+						<li>ABYautjaHeadGeneR_Feral_Decorated</li>
+						<li>ABYautjaHeadGeneR_Feral_Speckled</li>
+						<li>ABYautjaHeadGeneR_Feral_Striped</li>
+						<!--Translucent-->
+						<li>ABYautjaHeadGene_TranslucentAlbino</li>
+						<li>ABYautjaHeadGene_Crested_TranslucentCurledHornAlbino</li>
+						<li>ABYautjaHeadGene_Clover_TranslucentAlbino</li>
+						<li>ABYautjaHeadGene_Malformed_TranslucentAlbino</li>
+						<li>ABYautjaHeadGene_Feral_TranslucentAlbino</li>
 					</headTypes>
 					<bodyTypes>
 						<li>Female</li>
@@ -951,6 +1023,14 @@
 							</li>
 						</li>
 					</colorChannels>
+					<oldHairAgeCurve>
+						<points>
+							<li>(1, 0)</li>
+							<li>(1000, 0)</li>
+							<li>(1250, 0.7)</li>
+							<li>(2000, 1)</li>
+						</points>
+					</oldHairAgeCurve>
 				</alienPartGenerator>
 				<minAgeForAdulthood>100</minAgeForAdulthood>
 				<humanRecipeImport>true</humanRecipeImport>
@@ -992,16 +1072,33 @@
 				</factionRelations>
 			</generalSettings>
 			<graphicPaths>
-				<skinShader>Cutout</skinShader>
+				<skinShader>CutoutSkin</skinShader>
+				<skinColor>(4,26,3,1)</skinColor>
 				<body>Things/Pawn/Humanlike/Yautja/Bodies/</body>
-				<head>Things/Pawn/Humanlike/Yautja/Heads/</head>
-				<skull>Things/Pawn/Humanlike/Yautja/YautjaSkull</skull>
+				<head>Things/Pawn/Humanlike/Yautja/Heads/Crested/</head>
+				<skull>Things/Pawn/Humanlike/Yautja/Heads/YautjaSkull_Crested</skull>
 			</graphicPaths>
 			<thoughtSettings>
 				<replacerList>
 					<li>
+						<original>KilledMySpouse</original>
+						<replacer>KilledMyMate</replacer>
+					</li>
+					<li>
+						<original>KilledMySon</original>
+						<replacer>KilledMyPup</replacer>
+					</li>
+					<li>
+						<original>KilledMyDaughter</original>
+						<replacer>KilledMyPup</replacer>
+					</li>
+					<li>
 						<original>Disfigured</original>
 						<replacer>ABDisfigured</replacer> 
+					</li>
+					<li>
+						<original>AteCorpse</original>
+						<replacer>ABYautja_AteCorpse</replacer>
 					</li>
 				</replacerList>
 				<cannotReceiveThoughts>
@@ -1018,8 +1115,16 @@
 					<li>ExecutedPrisoner</li>
 					<li>KnowPrisonerSold</li>
 					<li>HumanLeatherApparelSad</li>
+					<li MayRequire="Ludeon.Rimworld.Biotech">KilledChild</li>
+					<li MayRequire="Ludeon.Rimworld.Biotech">EnslavedChild</li>
 					<li MayRequire="Ludeon.Rimworld.Anomaly">Chimera</li>
 					<li MayRequire="Ludeon.Rimworld.Anomaly">WearingDreadLeather</li>
+					<!--Opionion Altering Thoughts-->
+					<li MayRequire="Ludeon.Rimworld.Biotech">KilledChild_Opinion</li>
+					<li MayRequire="Ludeon.Rimworld.Ideology">ButcheredHuman_Know_Abhorrent_Opinion</li>
+					<li MayRequire="Ludeon.Rimworld.Ideology">ButcheredHuman_Know_Horrible_Opinion</li>
+					<li MayRequire="Ludeon.Rimworld.Ideology">ButcheredHuman_Know_Disapproved_Opinion</li>
+					<li MayRequire="VanillaExpanded.VanillaSocialInteractionsExpanded">VSIE_IngestedHumanFlesh</li>
 				</cannotReceiveThoughts>
 				<butcherThoughtSpecific>
 					<li>
@@ -1036,7 +1141,9 @@
 							<li>ABAlien_Yautja</li>
 						</raceList>
 						<thought>ABAteYautjaMeatDirect</thought>
-						<thoughtCannibal>ABAteYautjaMeatDirectCannibal</thoughtCannibal> 
+						<ingredientThought>ABAteYautjaMeatAsIngredient</ingredientThought>
+						<thoughtCannibal>ABAteYautjaMeatDirectCannibal</thoughtCannibal>
+						<ingredientThoughtCannibal>ABAteYautjaMeatAsIngredientCannibal</ingredientThoughtCannibal>
 					</li>
 				</ateThoughtSpecific>
 			</thoughtSettings>
@@ -1049,6 +1156,38 @@
 				<relationChanceModifierFiance>1</relationChanceModifierFiance>
 				<relationChanceModifierSpouse>1</relationChanceModifierSpouse>
 				<relationChanceModifierExSpouse>1</relationChanceModifierExSpouse>
+				<renamer>
+					<li>
+						<relation>Child</relation>
+						<label>Pup</label>
+						<femaleLabel>Pup</femaleLabel>
+					</li>
+					<li>
+						<relation>Stepchild</relation>
+						<label>Step-Pup</label>
+						<femaleLabel>Step-Pup</femaleLabel>
+					</li>
+					<li>
+						<relation>Grandchild</relation>
+						<label>Grandpup</label>
+						<femaleLabel>Grandpup</femaleLabel>
+					</li>
+					<li>
+						<relation>Grandchild</relation>
+						<label>Great Grandpup</label>
+						<femaleLabel>Great Grandpup</femaleLabel>
+					</li>
+					<li>
+						<relation>Spouse</relation>
+						<label>Mate</label>
+						<femaleLabel>Mate</femaleLabel>
+					</li>
+					<li>
+						<relation>ExSpouse</relation>
+						<label>Ex-Mate</label>
+						<femaleLabel>Ex-Mate</femaleLabel>
+					</li>
+				</renamer>
 			</relationSettings>
 			<raceRestriction>
 				<canReproduce>true</canReproduce>
@@ -1065,8 +1204,20 @@
 					<li>ABSwordYautja</li>
 					<li>ABShieldYautja</li>
 					<li>ABScoutYautja</li>
+					<li>ABMalformedYautja</li>
+					<li>ABFeralYautja</li>
+					<li>ABTranslucentYautja</li>
 					<li>ABGrendelKingYautja</li>
 				</xenotypeList>
+				<whiteGeneList>
+					<li>ABYautjaCloverHead</li>
+					<li>ABYautjaMalformedHead</li>
+					<li>ABYautjaFeralHead</li>
+					<li>ABYautjaTranslucentHead</li>
+					<li>ABYautjaTranslucentCloverHead</li>
+					<li>ABYautjaTranslucentCurledHornHead</li>
+					<li>ABYautjaTranslucentMalformedHead</li>
+				</whiteGeneList>
 				<blackGeneList>
 					<li>Skin_Melanin1</li>
 					<li>Skin_Melanin2</li>
@@ -1095,13 +1246,15 @@
 							<li>ABYautja_Tech_T1</li>
 							<li>ABYautja_Tech_T2</li>
 							<li>ABYautja_Tech_T3</li>
-							<li>ABYautja_Tech_Melee_T1</li>
-							<li>ABYautja_Tech_Melee_T2</li>
-							<li>ABYautja_Tech_Ranged_T1</li>
-							<li>ABYautja_Tech_Ranged_T2</li>
-							<li>ABYautja_Tech_Ranged_T3</li>
+							<li>ABYautja_Tech_T4</li>
+							<li>ABYautja_Tech_Explosive</li>
+							<li>ABYautja_Tech_Tracking</li>
+							<li>ABYautja_Tech_PlasmaEnergy</li>
+							<li>ABYautja_Tech_Turrets</li>
+							<!--li>ABYautja_Tech_Improvised</li>
+							<li MayRequire="Ludeon.Rimworld.Anomaly">ABYautja_Material_Anomaly</li>
+							<li MayRequire="niz.xenomorphtype">ABYautja_Material_Xenomorph</li-->
 							<li>ABYautja_Tech_CloakGenerator</li>
-							<!--li>ABYautja_Traps</li-->
 						</projects>
 					</li>
 				</researchList>
@@ -1116,32 +1269,31 @@
 				</conceptList>
 				<buildingList>
 					<li>ABYautja_TableMachining</li>
-					<!--li>ABTrapSpike</li-->
+					<li>ABYautja_TinkeringTable</li>
+					<!--li>ABYautja_TrophyTable</li-->
+					<li>ABYautja_Turret_PredGun</li>
+					<li>ABYautja_Turret_Fireliner</li>
+					<li>ABYautja_Turret_HeavyPredGun</li>
+					<!--li>ABYautja_Trap_Spike</li-->
+					<li>ABYautja_Trap_CutClamp</li>
 				</buildingList>
 				<apparelList>
-					<li>ABYautja_Armor_ChestplateLight</li>
+				<!--Shirts-->
 					<li>ABYautja_Armor_Chestplate</li>
-					<li>ABYautja_Armor_Greaves</li>
+					<li>ABYautja_Armor_ChestplateLight</li>
 					<li>ABYautja_Armor_ChestplateHeavy</li>
 					<li>ABYautja_Armor_ChestplateElite</li>
 					<li>ABYautja_Armor_ChestplateOrnate</li>
+				<!--Pants-->
+					<li>ABYautja_Armor_Greaves</li>
+					<li>ABYautja_Armor_OrnateGreaves</li>
+				<!--Shields-->
+					<!--li>ABYautja_Shield_Half</li-->
+					<li>ABYautja_Shield_Predator</li>
+					<!--li>ABYautja_Shield_Bladed</li>
+					<li>ABYautja_Shield_Plasma</li>
+					<li>ABYautja_Shield_PlasmaEdged</li-->
 				</apparelList>
-				<weaponList>
-					<li>ABYautja_Melee_CeremonialDagger</li>
-					<li>ABYautja_Melee_HandScythe</li>
-					<li>ABYautja_Melee_BladedMaul</li>
-					<li>ABYautja_Melee_Glaive</li>
-					<li>ABYautja_Gun_Hunting_Bow</li>
-					<li>ABYautja_Gun_Bolt</li>
-					<li>ABBullet_Needlegun</li>
-					<li>ABYautja_Gun_Shuriken</li>
-					<li>ABYautja_Gun_Compound_Bow</li>
-					<li>ABYautja_Gun_Blaster</li>
-					<li>ABYautja_Gun_Speargun</li>
-					<li>ABYautja_Gun_SpearRifle</li>
-					<li>ABYautja_Gun_Burner</li>
-					<li>ABYautja_Gun_SmartDisk</li>
-				</weaponList>
 				<whiteApparelList>
 				<!--Yautja-->
 					<li>ABYautja_Apparel_TribalMask</li>
@@ -1151,9 +1303,15 @@
 					<li>ABYautja_Armor_BioMaskFalconer</li>
 					<li>ABYautja_Armor_BioMaskOrnate</li>
 					<li>ABYautja_Apparel_ThermalMesh</li>
+					<li>ABYautja_KidApparel_ThermalMesh</li>
 					<li>ABYautja_Apparel_AdvancedThermalMesh</li>
+					<li>ABYautja_KidApparel_AdvancedThermalMesh</li>
 					<li>ABYautja_Apparel_TribalCloak</li>
 					<li>ABYautja_Utility_Belt</li>
+					<li>ABYautja_Utility_PlasmaCaster</li>
+					<li>ABYautja_Utility_Blazer</li>
+					<li>ABYautja_Utility_NetGun</li>
+					<li>ABYautja_Utility_PlasmaNetGun</li>
 					<li>ABYautja_Armor_Sandals</li>
 					<li>ABYautja_Armor_Boots</li>
 					<li>ABYautja_Armor_Gloves</li>
@@ -1218,90 +1376,146 @@
 					<li MayRequire="Ludeon.Rimworld.Biotech">Apparel_KidTribal</li>
 					<li MayRequire="Ludeon.Rimworld.Odyssey">Apparel_VacsuitChildren</li>
 				</whiteApparelList>
+				<weaponList>
+				<!--Ranged-->
+					<li>ABYautja_Gun_Hunting_Bow</li>
+					<li>ABYautja_Gun_Compound_Bow</li>
+					<li>ABYautja_Gun_Bolt</li>
+					<li>ABYautja_Gun_SpinningBlade</li>
+					<li>ABYautja_Ranged_CinchingBola</li>
+					<li>ABYautja_Gun_Needler</li>
+					<li>ABYautja_Gun_Speargun</li>
+					<li>ABYautja_Gun_SpearRifle</li>
+					<li>ABYautja_Gun_HandheldNetGun</li>
+					<li>ABYautja_Ranged_ElectroshockBola</li>
+					<li>ABYautja_Gun_Burner</li>
+					<li>ABYautja_Gun_HandheldPlasmacaster</li>
+					<li>ABYautja_Gun_HandheldBlazer</li>
+				<!--Melee-->
+					<li>ABYautja_Melee_WarClub</li>
+					<li>ABYautja_Melee_PredatorAxe</li>
+					<li>ABYautja_Melee_PredatorSword</li>
+					<li>ABYautja_Melee_ElderSword</li>
+					<li>ABYautja_Melee_PredatorKatana</li>
+					<li>ABYautja_Melee_CeremonialDagger</li>
+					<li>ABYautja_Melee_HandScythe</li>
+					<li>ABYautja_Melee_BladedMaul</li>
+					<li>ABYautja_Melee_PredatorScythe</li>
+					<li>ABYautja_Melee_PredatorWarAxe</li>
+					<li>ABYautja_Melee_Glaive</li>
+					<!--li>ABYautja_Melee_RazorWhip</li-->
+					<li>ABYautja_Melee_Flail</li>
+				<!--Ranged/Melee-->
+					<li>ABYautja_Gun_CutClamp</li>
+					<li>ABYautja_Gun_Shuriken</li>
+					<li>ABYautja_Gun_SmartDisc</li>
+					<li>ABYautja_Gun_PoliNanoDisc</li>
+				</weaponList>
 				<recipeList>
+				<!--Items-->
 					<li>ABYautja_ShapeWristblade</li>
 					<li>ABYautja_ShapeLongWristblade</li>
-					<li>ABYautja_SmithWristblade</li>
-					<li>ABYautja_SmithLongWristblade</li>
-					<li>ABYautja_CraftShifter</li>
 					<li>ABYautja_CraftComponentYautja</li>
-						
-					<li>Make_ABYautja_Apparel_TribalMask</li>
-					<li>Make_ABYautja_Apparel_ThermalMesh</li>
-					<li>Make_ABYautja_Apparel_AdvancedThermalMesh</li>
-					<li>Make_ABYautja_Apparel_TribalCloak</li>
+				<!--Shirts-->
 					<li>Make_ABYautja_Armor_ChestplateLight</li>
 					<li>Make_ABYautja_Armor_Chestplate</li>
-					<li>Make_ABYautja_Armor_Greaves</li>
 					<li>Make_ABYautja_Armor_ChestplateHeavy</li>
+					<li>Make_ABYautja_Armor_ChestplateElite</li>
+					<li>Make_ABYautja_Armor_ChestplateOrnate</li>
+				<!--Pants-->
+					<li>Make_ABYautja_Armor_Greaves</li>
+					<li>Make_ABYautja_Armor_OrnateGreaves</li>
+				<!--Hats-->
+					<li>Make_ABYautja_Apparel_TribalMask</li>
 					<li>Make_ABYautja_Armor_BioMaskLight</li>
 					<li>Make_ABYautja_Armor_BioMask</li>
-					<li>Make_ABYautja_Armor_ChestplateElite</li>
 					<li>Make_ABYautja_Armor_BioMaskElite</li>
-					<li>Make_ABYautja_Armor_ChestplateOrnate</li>
 					<li>Make_ABYautja_Armor_BioMaskOrnate</li>
 					<li>Make_ABYautja_Armor_BioMaskFalconer</li>
+				<!--Shields-->
+					<!--li>Make_ABYautja_Shield_Half</li-->
+					<li>Make_ABYautja_Shield_Predator</li>
+					<!--li>Make_ABYautja_Shield_Bladed</li>
+					<li>Make_ABYautja_Shield_PlasmaEdged</li>
+					<li>Make_ABYautja_Shield_Plasma</li-->
+				<!--Utility-->
+					<li>Make_ABYautja_Utility_Belt</li>
+					<li>Make_ABYautja_Utility_PlasmaCaster</li>
+					<li>Make_ABYautja_Utility_Blazer</li>
+					<li>Make_ABYautja_Utility_NetGun</li>
+					<li>Make_ABYautja_Utility_PlasmaNetGun</li>
+				<!--Misc Apparel-->
+					<li>Make_ABYautja_Apparel_ThermalMesh</li>
+					<li>Make_ABYautja_KidApparel_ThermalMesh</li>
+					<li>Make_ABYautja_Apparel_AdvancedThermalMesh</li>
+					<li>Make_ABYautja_KidApparel_AdvancedThermalMesh</li>
+					<li>Make_ABYautja_Apparel_TribalCloak</li>
 					<li>Make_ABYautja_Armor_Sandals</li>
 					<li>Make_ABYautja_Armor_Boots</li>
 					<li>Make_ABYautja_Armor_Gloves</li>
-						
-					<li>Make_ABYautja_Utility_Belt</li>
-					<li>Make_ABYautja_Utility_PlasmaCaster</li>
-					
-					<li>Make_ABYautja_Melee_CeremonialDagger</li>
-					<li>Make_ABYautja_Melee_Combistaff</li>
-					<li>Make_ABYautja_Melee_HandScythe</li>
-					<li>Make_ABYautja_Melee_BladedMaul</li>
-					<li>Make_ABYautja_Melee_Glaive</li>
+				<!--Weapons-->
 					<li>Make_ABYautja_Gun_Hunting_Bow</li>
-					<li>Make_ABYautja_Gun_Bolt</li>
-					<li>Make_ABYautja_Gun_Needler</li>
-					<li>Make_ABYautja_Gun_Shuriken</li>
 					<li>Make_ABYautja_Gun_Compound_Bow</li>
-					<li>Make_ABYautja_Gun_Blaster</li>
+					<li>Make_ABYautja_Gun_Bolt</li>
+					<li>Make_ABYautja_Gun_SpinningBlade</li>
+					<li>Make_ABYautja_Ranged_CinchingBola</li>
+					<li>Make_ABYautja_Gun_Needler</li>
 					<li>Make_ABYautja_Gun_Speargun</li>
 					<li>Make_ABYautja_Gun_SpearRifle</li>
+					<li>Make_ABYautja_Gun_HandheldNetGun</li>
+					<li>Make_ABYautja_Ranged_ElectroshockBola</li>
 					<li>Make_ABYautja_Gun_Burner</li>
-					<li>Make_ABYautja_Gun_SmartDisk</li>
-						
-					<li>ABYautja_SwapLTribalWristbladeDualR</li>
-					<li>ABYautja_SwapRTribalWristbladeDualL</li>
-					<li>ABYautja_SwapLTribalWristbladeSingleR</li>
-					<li>ABYautja_SwapRTribalWristbladeSingleL</li>
-					<li>ABYautja_SwapLTribalWristbladeLongR</li>
-					<li>ABYautja_SwapRTribalWristbladeLongL</li>
-					<li>ABYautja_SwapLTechWristbladeDualR</li>
-					<li>ABYautja_SwapRTechWristbladeDualL</li>
-					<li>ABYautja_SwapLTechWristbladeSingleR</li>
-					<li>ABYautja_SwapRTechWristbladeSingleL</li>
-					<li>ABYautja_SwapLTechWristbladeLongR</li>
-					<li>ABYautja_SwapRTechWristbladeLongL</li>
-					<li>ABYautja_SwapLCloaking_TechWristbladeDualR</li>
-					<li>ABYautja_SwapRCloaking_TechWristbladeDualL</li>
-					<li>ABYautja_SwapLCloaking_TechWristbladeSingleR</li>
-					<li>ABYautja_SwapRCloaking_TechWristbladeSingleL</li>
-					<li>ABYautja_SwapLCloaking_TechWristbladeLongR</li>
-					<li>ABYautja_SwapRCloaking_TechWristbladeLongL</li>
-						
-					<li>ABYautja_InstallLeftTribalSingleWristblade</li>
-					<li>ABYautja_InstallLeftTribalDualWristblade</li>
-					<li>ABYautja_InstallLeftTribalLongWristblade</li>
-					<li>ABYautja_InstallRightTribalSingleWristblade</li>
-					<li>ABYautja_InstallRightTribalDualWristblade</li>
-					<li>ABYautja_InstallRightTribalLongWristblade</li>
-					<li>ABYautja_InstallLeftTechSingleWristblade</li>
-					<li>ABYautja_InstallLeftTechDualWristblade</li>
-					<li>ABYautja_InstallLeftTechLongWristblade</li>
-					<li>ABYautja_InstallRightTechSingleWristblade</li>
-					<li>ABYautja_InstallRightTechDualWristblade</li>
-					<li>ABYautja_InstallRightTechLongWristblade</li>
-					<li>ABYautja_InstallLeftCloaking_TechSingleWristblade</li>
-					<li>ABYautja_InstallLeftCloaking_TechDualWristblade</li>
-					<li>ABYautja_InstallLeftCloaking_TechLongWristblade</li>
-					<li>ABYautja_InstallRightCloaking_TechSingleWristblade</li>
-					<li>ABYautja_InstallRightCloaking_TechDualWristblade</li>
-					<li>ABYautja_InstallRightCloaking_TechLongWristblade</li>
+					<li>Make_ABYautja_Gun_HandheldPlasmacaster</li>
+					<li>Make_ABYautja_Gun_HandheldBlazer</li>
+					<li>Make_ABYautja_Melee_WarClub</li>
+					<li>Make_ABYautja_Melee_PredatorAxe</li>
+					<li>Make_ABYautja_Melee_PredatorSword</li>
+					<li>Make_ABYautja_Melee_ElderSword</li>
+					<li>Make_ABYautja_Melee_PredatorKatana</li>
+					<li>Make_ABYautja_Melee_CeremonialDagger</li>
+					<li>Make_ABYautja_Melee_HandScythe</li>
+					<li>Make_ABYautja_Melee_BladedMaul</li>
+					<li>Make_ABYautja_Melee_PredatorScythe</li>
+					<li>Make_ABYautja_Melee_PredatorWarAxe</li>
+					<li>Make_ABYautja_Melee_Glaive</li>
+					<!--li>Make_ABYautja_Melee_RazorWhip</li-->
+					<li>Make_ABYautja_Melee_Flail</li>
+					<li>Make_ABYautja_Gun_CutClamp</li>
+					<li>Make_ABYautja_Gun_Shuriken</li>
+					<li>Make_ABYautja_Gun_SmartDisc</li>
+					<li>Make_ABYautja_Gun_PoliNanoDisc</li>
+				<!--Gauntlets + Modules-->
+					<li>Make_ABYautja_TribalGauntlet</li>
+					<li>Make_ABYautja_TechGauntlet</li>
+					<li>Make_ABYautja_Wristblade</li>
+					<li>Make_ABYautja_DualWristblades</li>
+					<li>Make_ABYautja_LongWristblade</li>
+					<li>Make_ABYautja_ScimitarWristblade</li>
+					<li>Make_ABYautja_PrehensileWristblade</li>
+					<li>Make_ABYautja_ClawWristblades</li>
+					<li>Make_ABYautja_WristbladeLauncher</li>
+					<li>Make_ABYautja_WristRocket</li>
+					<li>Make_ABYautja_EnergyFlechette</li>
+					<li>Make_ABYautja_WristCannon</li>
+					<li>Make_ABYautja_CloakingDevice</li>
+					<li>Make_ABYautja_SelfDestructDevice</li>
+					<li>ABYautja_InstallWristblade</li>
+					<li>ABYautja_InstallDualWristblades</li>
+					<li>ABYautja_InstallLongWristblade</li>
+					<li>ABYautja_InstallScimitarWristblade</li>
+					<li>ABYautja_InstallPrehensileWristblades</li>
+					<li>ABYautja_InstallClawWristblades</li>
+					<li>ABYautja_InstallWristbladeLauncher</li>
+					<li>ABYautja_InstallWristRocket</li>
+					<li>ABYautja_InstallEnergyFlechette</li>
+					<li>ABYautja_InstallWristCannon</li>
+					<li>ABYautja_InstallCloakingDevice</li>
+					<li>ABYautja_InstallSelfDestructDevice</li>
 				</recipeList>
+				<whiteRecipeList />
+				<petList>
+					<!--li>ABYautjaHellHound</li-->
+				</petList>
 			</raceRestriction>
 			<styleSettings>
 				<li>
@@ -1310,18 +1524,23 @@
 						<hasStyle>true</hasStyle>
 						<styleTags>
 							<li>Yautja</li>
+							<li>Yautja_CurledHorn</li>
 							<li>YautjaBALD</li>
+							<li>MALFORMED_Yautja</li>
+							<li>FERAL_Yautja</li>
 						</styleTags>
-						<styleTagsOverride>
-							<li>Yautja</li>
-							<li>YautjaBALD</li>
-						</styleTagsOverride>
 					</value>
 				</li>
 				<li>
 					<key>BeardDef</key>
 					<value>
 						<hasStyle>false</hasStyle>
+						<!--styleTags>
+							<li>Yautja</li>
+						</styleTags>
+						<styleTagsOverride>
+							<li>Yautja</li>
+						</styleTagsOverride-->
 					</value>
 				</li>
 				<li>
@@ -1351,6 +1570,8 @@
 			<PainShockThreshold>0.9</PainShockThreshold>
 			<GlobalLearningFactor>1.05</GlobalLearningFactor>
 			<MeleeDodgeChance>2.05</MeleeDodgeChance>
+			<TerrorSource MayRequire="Ludeon.RimWorld.Ideology">5</TerrorSource>
+			<SlaveSuppressionFallRate MayRequire="Ludeon.RimWorld.Ideology">9</SlaveSuppressionFallRate>
 			<MeleeHitChance>1.125</MeleeHitChance>
 			<NegotiationAbility>0.50</NegotiationAbility>
 			<SocialImpact>0.50</SocialImpact>
@@ -1358,6 +1579,10 @@
 			<ButcheryFleshSpeed>1.3</ButcheryFleshSpeed>
 			<ButcheryFleshEfficiency>1.3</ButcheryFleshEfficiency>
 		</statBases>
+		<tradeTags>
+			<li>ExoticMisc</li>
+			<li>Yautja</li>
+		</tradeTags>
 		<tools>
 			<li>
 				<label>left fist</label>
@@ -1430,12 +1655,17 @@
 			<meatColor>(194,217,124)</meatColor>
 			<baseBodySize>1.25</baseBodySize>
 			<baseHungerRate>0.3</baseHungerRate>
-			<baseHealthScale>1.25</baseHealthScale>
+			<baseHealthScale>2</baseHealthScale>
 			<foodType>OmnivoreHuman</foodType>
+			<manhunterOnTameFailChance>0.7</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<gestationPeriodDays>45</gestationPeriodDays>
+			<meatMarketValue>0.9</meatMarketValue>
+			<soundCallIntervalRange>2000~5000</soundCallIntervalRange>
 			<knowledgeCategory MayRequire="Ludeon.RimWorld.Anomaly">Basic</knowledgeCategory>
 			<anomalyKnowledge MayRequire="Ludeon.RimWorld.Anomaly">1</anomalyKnowledge>
 			<canBecomeShambler MayRequire="Ludeon.RimWorld.Anomaly">true</canBecomeShambler>
+			<hasUnnaturalCorpse MayRequire="Ludeon.RimWorld.Anomaly">true</hasUnnaturalCorpse>
 			<litterSizeCurve>
 				<points>
 				<li>(0.5, 0)</li>
@@ -1447,24 +1677,24 @@
 			</litterSizeCurve>
 			<lifeStageAges>
 				<li>
-					<def>HumanlikeBaby</def>
+					<def>ABYautja_Baby</def>
 					<minAge>0</minAge>
 				</li>
 				<li MayRequire="cyanobot.toddlers">
-					<def>HumanlikeToddler</def>
+					<def>ABYautja_Toddler</def>
 					<minAge>3</minAge>
 				</li>
 				<li>
-					<def>HumanlikeChild</def>
-					<minAge>17</minAge>
+					<def>ABYautja_Child</def>
+					<minAge>8</minAge>
 				</li>
 				<li>
-					<def>HumanlikePreTeenager</def>
-					<minAge>35</minAge>
+					<def>ABYautja_PreTeenager</def>
+					<minAge>15</minAge>
 				</li>
 				<li>
-					<def>HumanlikeTeenager</def>
-					<minAge>75</minAge>
+					<def>ABYautja_Teenager</def>
+					<minAge>45</minAge>
 				</li>
 				<li>
 					<def>HumanlikeAdult</def>
@@ -1472,28 +1702,28 @@
 				</li>
 			</lifeStageAges>
 			<lifeStageWorkSettings MayRequire="Ludeon.RimWorld.Biotech">
-				<Firefighter>7</Firefighter>
+				<Firefighter>8</Firefighter>
 				<Patient>0</Patient>
-				<Doctor>10</Doctor>
+				<Doctor>15</Doctor>
 				<PatientBedRest>0</PatientBedRest>
-				<Childcare MayRequire="Ludeon.RimWorld.Biotech">0</Childcare>
+				<Childcare MayRequire="Ludeon.RimWorld.Biotech">8</Childcare>
 				<BasicWorker>3</BasicWorker>
-				<Warden>35</Warden>
-				<Handling>7</Handling>
-				<Cooking>13</Cooking>
-				<Hunting>5</Hunting>
-				<Construction>30</Construction>
-				<Growing>7</Growing>
-				<Mining>7</Mining>
-				<PlantCutting>13</PlantCutting>
-				<Smithing>35</Smithing>
-				<Tailoring>13</Tailoring>
-				<Art>10</Art>
-				<Crafting>13</Crafting>
-				<Hauling>5</Hauling>
-				<Cleaning>5</Cleaning>
-				<Research>35</Research>
-				<DarkStudy MayRequire="Ludeon.RimWorld.Anomaly">35</DarkStudy>
+				<Warden>45</Warden>
+				<Handling>8</Handling>
+				<Cooking>15</Cooking>
+				<Hunting>8</Hunting>
+				<Construction>45</Construction>
+				<Growing>15</Growing>
+				<Mining>15</Mining>
+				<PlantCutting>15</PlantCutting>
+				<Smithing>45</Smithing>
+				<Tailoring>45</Tailoring>
+				<Art>15</Art>
+				<Crafting>15</Crafting>
+				<Hauling>8</Hauling>
+				<Cleaning>8</Cleaning>
+				<Research>45</Research>
+				<DarkStudy MayRequire="Ludeon.RimWorld.Anomaly">45</DarkStudy>
 			</lifeStageWorkSettings>
 			<soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
 			<soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding_Generic</soundMeleeHitBuilding>
@@ -1508,16 +1738,14 @@
 					<li MayRequire="Ludeon.RimWorld.Biotech">(10,10)</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">(35,43)</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">(60,86)</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">(98.5,118)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(96.5,118)</li>
 					<!--  Exclude 98.5-99 years to avoid spawning pawns who are very close to becoming adults  -->
-					<li MayRequire="Ludeon.RimWorld.Biotech">(98.51,0)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(98.5,0)</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">(99,0)</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">(99.001,122)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(99.999,0)</li>
 					<!--  End exclude  -->
-					<li MayRequire="Ludeon.RimWorld.Biotech">(99.999,130)</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">(100,0)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(100,130)</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">(100.001,130)</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">(110.5,0)</li>
 					<li>(120,175)</li>
 					<li>(140,200)</li>
 					<li>(200,225)</li>
@@ -1537,14 +1765,13 @@
 				<li>ABOrganic_Yautja</li>
 			</hediffGiverSets>
 		</race>
-		<recipes />
 		<comps>
 			<li MayRequire="Ludeon.RimWorld.Anomaly" Class="CompProperties_HoldingPlatformTarget">
 				<baseEscapeIntervalMtbDays>95</baseEscapeIntervalMtbDays>
 				<getsColdContainmentBonus>true</getsColdContainmentBonus>
 			</li>
 			<li MayRequire="Ludeon.RimWorld.Anomaly" Class="CompProperties_Studiable">
-				<frequencyTicks>120000</frequencyTicks>
+				<frequencyTicks>125000</frequencyTicks>
 				<minMonolithLevelForStudy>1</minMonolithLevelForStudy>
 				<requiresImprisonment>true</requiresImprisonment>
 			</li>

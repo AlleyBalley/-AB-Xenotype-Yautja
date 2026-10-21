@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Bionic Modularity</li>
+				</mods>
+				<match Class="PatchOperationAddModExtension">
+					<xpath>Defs/HediffDef[defName="ABYautja_SimpleProstheticMandible" or defName="ABYautja_BionicMandible" or defName="ABYautja_ArchotechMandible" or @Name="CombineProstheticandGauntlet_Base"]</xpath>
+					<value>
+						<li Class="BionicModularity.DefExtension_ModularHediff"></li>
+					</value>
+				</match>
+			</li>
+
+		<!--Bionic modularity modules-->
+			<!--Base-->
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Bionic Modularity</li>
+				</mods>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/RecipeDef[defName="BM_SpacerPowerFangCombatModule_InstallHuman" or defName="BM_SpacerPowerFangCombatModule_InstallHuman_Implant"]/appliedOnFixedBodyParts</xpath>
+					<value>
+						<li>ABYautja_UpperMandibles</li>
+						<li>ABYautja_LowerMandibles</li>
+						<li>ABYautja_Mouth</li>
+					</value>
+				</match>
+			</li>
+			
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Bionic Modularity</li>
+				</mods>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/RecipeDef[defName="BM_SpacerSilenceUtilityModule_InstallHuman" or defName="BM_SpacerSilenceUtilityModule_InstallHuman_Implant" or defName="BM_SpacerDevourerUtilityModule_InstallHuman" or defName="BM_SpacerDevourerUtilityModule_InstallHuman_Implant" or defName="BM_SpacerVoicemodUtilityModule_InstallHuman" or defName="BM_SpacerVoicemodUtilityModule_InstallHuman_Implant"]/appliedOnFixedBodyParts</xpath>
+					<value>
+						<li>ABYautja_Mouth</li>
+					</value>
+				</match>
+			</li>
+			
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Bionic Modularity</li>
+				</mods>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/RecipeDef[defName="BM_SpacerPowerSlashHornCombatModule_InstallHuman" or defName="BM_SpacerPowerSlashHornCombatModule_InstallHuman_Implant" or defName="BM_SpacerPowerStrikeHornCombatModule_InstallHuman" or defName="BM_SpacerPowerStrikeHornCombatModule_InstallHuman_Implant"]/appliedOnFixedBodyParts</xpath>
+					<value>
+						<li>ABYautja_Crest</li>
+					</value>
+				</match>
+			</li>
+			
+			<!--Biotech-->
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Bionic Modularity</li>
+				</mods>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/RecipeDef[defName="BM_SpacerMechsensorWorkModule_InstallHuman" or defName="BM_SpacerMechsensorWorkModule_InstallHuman_Implant"]/appliedOnFixedBodyParts</xpath>
+					<value>
+						<li>ABYautja_Nose</li>
+					</value>
+				</match>
+			</li>
+			
+			<!--Royalty-->
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Bionic Modularity</li>
+				</mods>
+				<match Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Royalty">
+					<xpath>Defs/RecipeDef[defName="BM_SpacerPlasmaFangCombatModule_InstallHuman" or defName="BM_SpacerPlasmaFangCombatModule_InstallHuman_Implant" or defName="BM_SpacerMonoFangCombatModule_InstallHuman" or defName="BM_SpacerMonoFangCombatModule_InstallHuman_Implant" or defName="BM_SpacerZeusFangCombatModule_InstallHuman" or defName="BM_SpacerZeusFangCombatModule_InstallHuman_Implant" or defName="BM_SpacerVenomFangsCombatModule_InstallHuman" or defName="BM_SpacerVenomFangsCombatModule_InstallHuman_Implant"]/appliedOnFixedBodyParts</xpath>
+					<value>
+						<li>ABYautja_UpperMandibles</li>
+						<li>ABYautja_LowerMandibles</li>
+						<li>ABYautja_Mouth</li>
+					</value>
+				</match>
+			</li>
+			
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Bionic Modularity</li>
+				</mods>
+				<match Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Royalty">
+				<!--No aesthetic shaper, nose is not visually seen-->
+					<xpath>Defs/RecipeDef[defName="BM_SpacerGastroanalyzerWorkModule_InstallHuman" or defName="BM_SpacerGastroanalyzerWorkModule_InstallHuman_Implant"]/appliedOnFixedBodyParts</xpath>
+					<value>
+						<li>ABYautja_Nose</li>
+					</value>
+				</match>
+			</li>
+			
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Bionic Modularity</li>
+				</mods>
+				<match Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Royalty">
+					<xpath>Defs/RecipeDef[defName="BM_SpacerPlasmaslashHornCombatModule_InstallHuman" or defName="BM_SpacerPlasmaslashHornCombatModule_InstallHuman_Implant" or defName="BM_SpacerMonoslashHornCombatModule_InstallHuman" or defName="BM_SpacerMonoslashHornCombatModule_InstallHuman_Implant" or defName="BM_SpacerZeustrikeHornCombatModule_InstallHuman" or defName="BM_SpacerZeustrikeHornCombatModule_InstallHuman_Implant"]/appliedOnFixedBodyParts</xpath>
+					<value>
+						<li>ABYautja_Crest</li>
+					</value>
+				</match>
+			</li>
+			
+		<!--Cryptoforge-->
+			<!--Currently disabled due to the author of bionic modularity seeking to update them
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Bionic Modularity</li>
+				</mods>
+				<match Class="PatchOperationAdd" MayRequire="vanillaquestsexpanded.cryptoforge">
+					<xpath>Defs/RecipeDef[defName="BM_SpacerCryptoFangCombatModule_InstallHuman" or defName="BM_SpacerCryptoFangCombatModule_InstallHuman_Implant"]/appliedOnFixedBodyParts</xpath>
+					<value>
+						<li>ABYautja_UpperMandibles</li>
+						<li>ABYautja_LowerMandibles</li>
+						<li>ABYautja_Mouth</li>
+					</value>
+				</match>
+			</li>
+			
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Bionic Modularity</li>
+				</mods>
+				<match Class="PatchOperationAdd" MayRequire="vanillaquestsexpanded.cryptoforge">
+					<xpath>Defs/RecipeDef[defName="BM_SpacerCryptoslashHornCombatModule_InstallHuman" or defName="BM_SpacerCryptoslashHornCombatModule_InstallHuman_Implant"]/appliedOnFixedBodyParts</xpath>
+					<value>
+						<li>ABYautja_Crest</li>
+					</value>
+				</match>
+			</li-->
+			
+		<!--VEF: Empire-->
+			<!--Not currently implemented
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Bionic Modularity</li>
+				</mods>
+				<match Class="PatchOperationAdd" MayRequire="oskarpotocki.vfe.empire">
+					<xpath>Defs/RecipeDef[defName="BM_SpacerToxFangCombatModule_InstallHuman" or defName="BM_SpacerToxFangCombatModule_InstallHuman_Implant"]/appliedOnFixedBodyParts</xpath>
+					<value>
+						<li>ABYautja_UpperMandibles</li>
+						<li>ABYautja_LowerMandibles</li>
+						<li>ABYautja_Mouth</li>
+					</value>
+				</match>
+			</li>
+			
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Bionic Modularity</li>
+				</mods>
+				<match Class="PatchOperationAdd" MayRequire="oskarpotocki.vfe.empire">
+					<xpath>Defs/RecipeDef[defName="BM_SpacerToxslashHornCombatModule_InstallHuman" or defName="BM_SpacerToxslashHornCombatModule_InstallHuman_Implant"]/appliedOnFixedBodyParts</xpath>
+					<value>
+						<li>ABYautja_Crest</li>
+					</value>
+				</match>
+			</li-->
+			
+		<!--VEW: Non-Lethal-->
+			<!--Currently disabled due to the author of bionic modularity seeking to update them
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Bionic Modularity</li>
+				</mods>
+				<match Class="PatchOperationAdd" MayRequire="VanillaExpanded.VWENL">
+					<xpath>Defs/RecipeDef[defName="BM_SpacerStunFangCombatModule_InstallHuman" or defName="BM_SpacerStunFangCombatModule_InstallHuman_Implant"]/appliedOnFixedBodyParts</xpath>
+					<value>
+						<li>ABYautja_UpperMandibles</li>
+						<li>ABYautja_LowerMandibles</li>
+						<li>ABYautja_Mouth</li>
+					</value>
+				</match>
+			</li>
+			
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Bionic Modularity</li>
+				</mods>
+				<match Class="PatchOperationAdd" MayRequire="VanillaExpanded.VWENL">
+					<xpath>Defs/RecipeDef[defName="BM_SpacerStunStrikeHornCombatModule_InstallHuman" or defName="BM_SpacerStunStrikeHornCombatModule_InstallHuman_Implant"]/appliedOnFixedBodyParts</xpath>
+					<value>
+						<li>ABYautja_Crest</li>
+					</value>
+				</match>
+			</li-->
+			
+		<!--Surgery-->
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Bionic Modularity</li>
+				</mods>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/RecipeDef[@Name="BM_SurgeryInstallModule_Human_Mechanical" or @Name="BM_SurgeryRemoveModule_Mechanical" or @Name="BM_SurgeryInstallModule_Human_Flesh" or @Name="BM_SurgeryRemoveModule_Flesh" or @Name="BM_SurgeryIncreaseHediffSeverity_ImplantModule_Increase_Machinery" or @Name="BM_SurgeryDecreaseHediffSeverity_ImplantModule_Decrease_Machinery" or @Name="BM_SurgeryIncreaseHediffSeverity_ImplantModule_Increase_Settings" or @Name="BM_SurgeryDecreaseHediffSeverity_ImplantModule_Decrease_Settings" or @Name="BM_SurgeryIncreaseHediffFuel_ImplantModule_Increase" or @Name= "BM_SurgeryDecreaseHediffFuel_ImplantModule_Decrease"]/recipeUsers</xpath>
+					<value>
+						<li>ABAlien_Yautja</li>
+					</value>
+				</match>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

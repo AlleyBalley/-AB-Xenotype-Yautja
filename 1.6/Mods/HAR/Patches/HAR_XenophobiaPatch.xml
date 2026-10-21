@@ -3,6 +3,8 @@
 	
 	<Operation Class="PatchOperationSequence">
 		<operations>
+		<!--Xenophobe and Xenophile trait-->
+		
 			<li Class="PatchOperationConditional">
 				<xpath>Defs/TraitDef[defName="HAR_Xenophobia"]/conflictingTraits</xpath>
 				<nomatch Class="PatchOperationAdd">
@@ -34,6 +36,199 @@
 				<xpath>Defs/TraitDef[defName="HAR_Xenophobia"]/exclusionTags</xpath>
 				<value>
 					<li>ABYautjaRacist</li>
+				</value>
+			</li>
+			
+			<!--Xenophobe and Xenophile trait thoughts-->
+			
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/ThoughtDef[defName="HAR_XenophobeVsXenophile"]/nullifyingTraits</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/ThoughtDef[defName="HAR_XenophobeVsXenophile"]</xpath>
+					<value>
+						<nullifyingTraits />
+					</value>
+				</nomatch>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThoughtDef[defName="HAR_XenophobeVsXenophile"]/nullifyingTraits</xpath>
+				<value>
+					<li>ABYautja_NotXenophobic</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/ThoughtDef[defName="HAR_XenophobiaVsAlien"]/nullifyingTraits</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/ThoughtDef[defName="HAR_XenophobiaVsAlien"]</xpath>
+					<value>
+						<nullifyingTraits />
+					</value>
+				</nomatch>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThoughtDef[defName="HAR_XenophobiaVsAlien"]/nullifyingTraits</xpath>
+				<value>
+					<li>ABYautja_NotXenophobic</li>
+				</value>
+			</li>
+			
+			<!--Ideology thoughts: xenophobia and xenophilia-->
+			
+			<li Class="PatchOperationConditional" MayRequire="Ludeon.Rimworld.Ideology">
+				<xpath>Defs/ThoughtDef[defName="HAR_AlienRaces_Abhorrent"]/nullifyingTraits</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/ThoughtDef[defName="HAR_AlienRaces_Abhorrent"]</xpath>
+					<value>
+						<nullifyingTraits />
+					</value>
+				</nomatch>
+			</li>
+
+			<li Class="PatchOperationAdd" MayRequire="Ludeon.Rimworld.Anomaly">
+				<xpath>*/ThoughtDef[defName="HAR_AlienRaces_Abhorrent"]/nullifyingTraits</xpath>
+				<value>
+					<li>ABYautja_NotXenophobic</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationConditional" MayRequire="Ludeon.Rimworld.Ideology">
+				<xpath>Defs/ThoughtDef[defName="HAR_AlienRaces_Abhorrent_Social"]/nullifyingTraits</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/ThoughtDef[defName="HAR_AlienRaces_Abhorrent_Social"]</xpath>
+					<value>
+						<nullifyingTraits />
+					</value>
+				</nomatch>
+			</li>
+
+			<li Class="PatchOperationAdd" MayRequire="Ludeon.Rimworld.Anomaly">
+				<xpath>*/ThoughtDef[defName="HAR_AlienRaces_Abhorrent_Social"]/nullifyingTraits</xpath>
+				<value>
+					<li>ABYautja_NotXenophobic</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationConditional" MayRequire="Ludeon.Rimworld.Ideology">
+				<xpath>Defs/ThoughtDef[defName="HAR_AlienRaces_Horrible_Social"]/nullifyingTraits</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/ThoughtDef[defName="HAR_AlienRaces_Horrible_Social"]</xpath>
+					<value>
+						<nullifyingTraits />
+					</value>
+				</nomatch>
+			</li>
+
+			<li Class="PatchOperationAdd" MayRequire="Ludeon.Rimworld.Anomaly">
+				<xpath>*/ThoughtDef[defName="HAR_AlienRaces_Horrible_Social"]/nullifyingTraits</xpath>
+				<value>
+					<li>ABYautja_NotXenophobic</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationConditional" MayRequire="Ludeon.Rimworld.Ideology">
+				<xpath>Defs/ThoughtDef[defName="HAR_AlienRaces_Respected_Social"]/nullifyingTraits</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/ThoughtDef[defName="HAR_AlienRaces_Respected_Social"]</xpath>
+					<value>
+						<nullifyingTraits />
+					</value>
+				</nomatch>
+			</li>
+
+			<li Class="PatchOperationAdd" MayRequire="Ludeon.Rimworld.Anomaly">
+				<xpath>*/ThoughtDef[defName="HAR_AlienRaces_Respected_Social"]/nullifyingTraits</xpath>
+				<value>
+					<li>ABYautja_NotXenophobic</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationConditional" MayRequire="Ludeon.Rimworld.Ideology">
+				<xpath>Defs/ThoughtDef[defName="HAR_AlienRaces_Exalted"]/nullifyingTraits</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/ThoughtDef[defName="HAR_AlienRaces_Exalted"]</xpath>
+					<value>
+						<nullifyingTraits />
+					</value>
+				</nomatch>
+			</li>
+
+			<li Class="PatchOperationAdd" MayRequire="Ludeon.Rimworld.Anomaly">
+				<xpath>*/ThoughtDef[defName="HAR_AlienRaces_Exalted"]/nullifyingTraits</xpath>
+				<value>
+					<li>ABYautja_NotXenophobic</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationConditional" MayRequire="Ludeon.Rimworld.Ideology">
+				<xpath>Defs/ThoughtDef[defName="HAR_AlienRaces_Exalted_Social"]/nullifyingTraits</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/ThoughtDef[defName="HAR_AlienRaces_Exalted_Social"]</xpath>
+					<value>
+						<nullifyingTraits />
+					</value>
+				</nomatch>
+			</li>
+
+			<li Class="PatchOperationAdd" MayRequire="Ludeon.Rimworld.Anomaly">
+				<xpath>*/ThoughtDef[defName="HAR_AlienRaces_Exalted_Social"]/nullifyingTraits</xpath>
+				<value>
+					<li>ABYautja_NotXenophobic</li>
+				</value>
+			</li>
+			
+			<!--Ideology thoughts: alien dating-->
+			
+			<li Class="PatchOperationConditional" MayRequire="Ludeon.Rimworld.Ideology">
+				<xpath>Defs/ThoughtDef[defName="HAR_AlienDating_Horrible"]/nullifyingTraits</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/ThoughtDef[defName="HAR_AlienDating_Horrible"]</xpath>
+					<value>
+						<nullifyingTraits />
+					</value>
+				</nomatch>
+			</li>
+
+			<li Class="PatchOperationAdd" MayRequire="Ludeon.Rimworld.Anomaly">
+				<xpath>*/ThoughtDef[defName="HAR_AlienDating_Horrible"]/nullifyingTraits</xpath>
+				<value>
+					<li>ABYautja_NotXenophobic</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationConditional" MayRequire="Ludeon.Rimworld.Ideology">
+				<xpath>Defs/ThoughtDef[defName="HAR_AlienDating_Know_Horrible"]/nullifyingTraits</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/ThoughtDef[defName="HAR_AlienDating_Know_Horrible"]</xpath>
+					<value>
+						<nullifyingTraits />
+					</value>
+				</nomatch>
+			</li>
+
+			<li Class="PatchOperationAdd" MayRequire="Ludeon.Rimworld.Anomaly">
+				<xpath>*/ThoughtDef[defName="HAR_AlienDating_Know_Horrible"]/nullifyingTraits</xpath>
+				<value>
+					<li>ABYautja_NotXenophobic</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationConditional" MayRequire="Ludeon.Rimworld.Ideology">
+				<xpath>Defs/ThoughtDef[defName="HAR_AlienDating_Know_Honorable"]/nullifyingTraits</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/ThoughtDef[defName="HAR_AlienDating_Know_Honorable"]</xpath>
+					<value>
+						<nullifyingTraits />
+					</value>
+				</nomatch>
+			</li>
+
+			<li Class="PatchOperationAdd" MayRequire="Ludeon.Rimworld.Anomaly">
+				<xpath>*/ThoughtDef[defName="HAR_AlienDating_Know_Honorable"]/nullifyingTraits</xpath>
+				<value>
+					<li>ABYautja_NotXenophobic</li>
 				</value>
 			</li>
 		</operations>

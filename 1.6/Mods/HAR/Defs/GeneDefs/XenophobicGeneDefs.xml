@@ -16,6 +16,28 @@
 	</GeneDef>
 	
 	<GeneDef ParentName="ABYautjaGeneXenophobic">
+		<defName>ABYautjaXenoAttitude</defName>
+		<geneClass>EBSGFramework.HediffAdder</geneClass>
+		<label>random attitude towards xenos</label>
+		<description>Carriers of this gene will either be xenophobes or egalitarianist.</description>
+		<iconPath>UI/Icons/Genes/HAR/GeneIcon_NoOneSpecial</iconPath>
+		<modExtensions>
+			<li Class="VEF.Genes.GeneExtension">
+				<hideGene>true</hideGene>
+				<disableGeneExtraction>true</disableGeneExtraction>
+			</li>
+			<li Class="EBSGFramework.EBSGExtension">
+                <hediffsToApply>
+                    <li>
+						<hediff>ABYautjaXenoAttitude</hediff>
+					</li>
+                </hediffsToApply>
+				<vanishingGene>true</vanishingGene>
+			</li>
+		</modExtensions>
+	</GeneDef>
+	
+	<GeneDef ParentName="ABYautjaGeneXenophobic">
 		<defName>ABYautjaSuperiorRace</defName>
 		<label>Superior Race</label>
 		<labelShortAdj>superior</labelShortAdj>

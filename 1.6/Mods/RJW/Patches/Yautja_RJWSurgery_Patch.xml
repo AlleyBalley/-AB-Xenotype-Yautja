@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Humanoid Alien Races</li>
+				</mods>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/RecipeDef[@Name="RJW_SurgeryFlesh"]/recipeUsers</xpath>
+					<value>
+						<li>ABAlien_Yautja</li>
+					</value>
+				</match>
+			</li>
+			
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Humanoid Alien Races</li>
+				</mods>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/rjw.force_off_gear_def[@Name="ForceOffGenericGear"]/recipeUsers</xpath>
+					<value>
+						<li>ABAlien_Yautja</li>
+					</value>
+				</match>
+			</li>
+			
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Humanoid Alien Races</li>
+				</mods>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/RecipeDef[defName="DeterminePaternity" or defName="DeterminePregnancy"]/recipeUsers</xpath>
+					<value>
+						<li>ABAlien_Yautja</li>
+					</value>
+				</match>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

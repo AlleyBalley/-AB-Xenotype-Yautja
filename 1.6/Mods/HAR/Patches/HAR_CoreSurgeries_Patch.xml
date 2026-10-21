@@ -2,7 +2,7 @@
 <Patch>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/RecipeDef[@Name="SurgeryInstallImplantBase"]/recipeUsers</xpath>
+		<xpath>Defs/RecipeDef[@Name="SurgeryInstallImplantBase"]/recipeUsers</xpath>
 		<value>
 			<li>ABAlien_Yautja</li>
 		</value>

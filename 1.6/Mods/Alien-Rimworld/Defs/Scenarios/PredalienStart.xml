@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ScenarioDef ParentName="ScenarioBase">
+		<defName>ABXMTScenarioPredalien</defName>
+		<label>Escaped Predalien</label>
+		<description>You hatched from a recovered yautja body, who had failed to be blooded. The yautja aboard the ship were unaware of their conition.\n\nYou wreaked havok and caused them to loose control of their ship, tumbling back down to orbit. The only survivor to emerge from the debris is you.</description>
+			<scenario>
+				<summary>A lone cryptomorph predalien.</summary>
+				<playerFaction>
+					<factionDef>XMT_PlayerHive</factionDef>
+				</playerFaction>
+				<parts>
+			<!--  Config pages  -->
+					<li Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes">
+						<def>ConfigurePawnsXenotypes</def>
+						<customSummary>Start with a predalien.</customSummary>
+						<pawnChoiceCount>1</pawnChoiceCount>
+						<xenotypeCounts>
+							<li>
+								<count>1</count>
+								<xenotype>XMTPredalien</xenotype>
+								<description>predalien</description>
+								<allowedDevelopmentalStages>Adult</allowedDevelopmentalStages>
+							</li>
+						</xenotypeCounts>
+						<overrideKinds>
+							<li>
+								<pawnKind>XMT_PredalienStarbeastKind_Colonist</pawnKind>
+								<xenotype>XMTPredalien</xenotype>
+							</li>
+						</overrideKinds>
+					</li>
+				<!--Scene Parts-->
+					<!--  Player starting stuff spawn method -->
+					<li Class="ScenPart_PlayerPawnsArriveMethod">
+						<def>PlayerPawnsArriveMethod</def>
+						<visible>false</visible>
+						<method>DropPods</method>
+					</li>
+					<!--  Player starting stuff spawn method -->
+					<li Class="ScenPart_Naked">
+						<def>Naked</def>
+						<context>PlayerStarter</context>
+					</li>
+					<li Class="ScenPart_ScatterThingsNearPlayerStart">
+						<def>ScatterThingsNearPlayerStart</def>
+						<thingDef>ShipChunk</thingDef>
+						<count>7</count>
+					</li>
+					<li Class="ScenPart_ScatterThingsNearPlayerStart">
+						<def>ScatterThingsNearPlayerStart</def>
+						<thingDef>ChunkSlagSteel</thingDef>
+						<count>13</count>
+					</li>
+					<li Class="ScenPart_ScatterThingsAnywhere">
+					  <def>ScatterThingsAnywhere</def>
+					  <thingDef>ShipChunk</thingDef>
+					  <allowRoofed>false</allowRoofed>
+					  <count>5</count>
+					</li>
+					<li Class="ScenPart_ScatterThingsAnywhere">
+					  <def>ScatterThingsAnywhere</def>
+					  <thingDef>Steel</thingDef>
+					  <count>720</count>
+					</li>
+					<!--  Player pawns start with no possessions eg. extra drugs.  -->
+					<li Class="ScenPart_NoPossessions">
+						<def>NoPossessions</def>
+					</li>
+					<!--  Game start dialog  -->
+					<li Class="ScenPart_GameStartDialog">
+						<def>GameStartDialog</def>
+						<text>You burst from your host surrounded by danger. One by one you wiped out the yautja aboard. You were alone, in an odd metal casing. But it began to vibrate, and soon it was hot and loud.\n\nWhen all was still you ventured from the metal. You were still alone, but now you were surrounded by organic material. The perfect conditions to start a hive.</text>
+						<closeSound>GameStartSting</closeSound>
+					</li>
+				</parts>
+			</scenario>
+	</ScenarioDef>
+</Defs>

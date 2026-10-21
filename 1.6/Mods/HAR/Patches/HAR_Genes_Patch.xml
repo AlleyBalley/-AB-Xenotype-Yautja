@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/GeneDef[defName="ABYautjaBald"]</xpath>
+				<value>
+					<hairTagFilter>
+						<whitelist>true</whitelist>
+						<tags>
+							<li>YautjaBALD</li>
+						</tags>
+					</hairTagFilter>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/GeneDef[defName="ABYautja_ForeheadTendrils_RemovedAtMaturity"]/modExtensions/li[2]/removePastAge</xpath>
+				<value>
+					<removePastAge>8</removePastAge>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/GeneDef[defName="ABYautja_CurledHorns"]/modExtensions/li/hediffsToBodyParts/li/bodyparts/li</xpath>
+				<value>
+					<li>ABYautja_Crest</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/GeneDef[defName="ABYautjaUpperMandibles"]/label</xpath>
+				<value>
+					<label>Upper Mandibles</label>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/GeneDef[defName="ABYautjaLowerMandibles"]/label</xpath>
+				<value>
+					<label>Lower Mandibles</label>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/GeneDef[defName="HBBiohazardMandibles"]/label</xpath>
+				<value>
+					<label>Biohazard Mandibles</label>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

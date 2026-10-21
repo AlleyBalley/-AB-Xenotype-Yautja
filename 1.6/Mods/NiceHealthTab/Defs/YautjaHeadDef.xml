@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<NiceHealthTab.DollGenePart>
+		<defName>CrestedHead</defName>
+		<imagePath>HediffTab/Yautja/CrestedHead</imagePath>
+		<geneDefName>ABYautjaHead</geneDefName>
+		<dollType>Figure</dollType>
+		<height>3</height>
+		<width>3</width>
+		<position>
+		  <x>1.00</x>
+		  <y>-378.50</y>
+		</position>
+		<layer>4</layer>
+		<bodyPartId>20</bodyPartId>
+		<visibleByDefault>true</visibleByDefault>
+	</NiceHealthTab.DollGenePart>
+	
+	<<!--NiceHealthTab.DollGenePart>
+		<defName>CurledHorns</defName>
+		<imagePath>UI/Icons/Genes/GeneIcon_ABYautjaCurledHorns</imagePath>
+		<geneDefName>ABYautja_CurledHorns</geneDefName>
+		<dollType>Figure</dollType>
+		<height>0.5</height>
+		<width>0.5</width>
+		<position>
+			<x>0</x>
+			<y>0</y>
+		</position>
+		<bodyPartId>20</bodyPartId>
+		<visibleByDefault>true</visibleByDefault>
+	</NiceHealthTab.DollGenePart-->
+	
+	<!--NiceHealthTab.DollGenePart>
+		<defName>ABYautjaCloverHead</defName>
+		<imagePath>HediffTab/Yautja/CloverHead</imagePath>
+		<geneDefName>ABYautjaCloverHead</geneDefName>
+		<replace>true</replace>
+		<position>
+			<x>0</x>
+			<y>0</y>
+		</position>
+		<bodyPartId>13</bodyPartId>
+		<layer>0</layer>
+		<visibleByDefault>true</visibleByDefault>
+	</NiceHealthTab.DollGenePart>
+	
+	<NiceHealthTab.DollGenePart>
+		<defName>ABYautjaCurledHornHead</defName>
+		<imagePath>HediffTab/Yautja/CurledHornHead</imagePath>
+		<geneDefName>ABYautjaTranslucentCurledHornHead</geneDefName>
+		<replace>true</replace>
+		<position>
+			<x>0</x>
+			<y>0</y>
+		</position>
+		<bodyPartId>13</bodyPartId>
+		<layer>0</layer>
+		<visibleByDefault>true</visibleByDefault>
+	</NiceHealthTab.DollGenePart-->
+</Defs>
+

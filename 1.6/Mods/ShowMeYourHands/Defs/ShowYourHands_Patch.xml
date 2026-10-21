@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <WHands.ClutterHandsTDef>
+    <defName>ClutterHandsSettings_ABXenotypeYautja</defName>
+    <label>Yautja weapon hand settings</label>
+    <thingClass>Thing</thingClass>
+    <WeaponCompLoader>
+	<!--T1-->
+		<!--Ranged-->
+		<li>
+			<MainHand>(0.106, 0.300, 0.000)</MainHand>
+			<MainRotation>-69</MainRotation>
+			<ThingTargets>
+				<li>ABYautja_Gun_Hunting_Bow</li>
+				<!-- Hunting Bow -->
+			</ThingTargets>
+		</li>
+		<li>
+			<MainHand>(0.115, 0.300, 0.000)</MainHand>
+			<MainRotation>-62</MainRotation>
+			<ThingTargets>
+				<li>ABYautja_Gun_Compound_Bow</li>
+				<!-- Compound Bow -->
+			</ThingTargets>
+		</li>
+		<!--Melee-->
+		<li>
+			<MainHand>(-0.151, 0.300, -0.137)</MainHand>
+			<SecHand>(0.069, 0.000, 0.120)</SecHand>
+			<MainRotation>-43</MainRotation>
+			<SecRotation>-26</SecRotation>
+			<ThingTargets>
+				<li>ABYautja_Melee_WarClub</li>
+				<!-- War Club -->
+			</ThingTargets>
+		</li>
+		<li>
+			<MainHand>(-0.156, 0.100, -0.119)</MainHand>
+			<SecHand>(0.069, -0.100, 0.124)</SecHand>
+			<MainRotation>-16</MainRotation>
+			<SecRotation>-44</SecRotation>
+			<ThingTargets>
+				<li>ABYautja_Melee_PredatorAxe</li>
+				<!-- Predator Axe -->
+			</ThingTargets>
+		</li>
+		<li>
+			<MainHand>(-0.357, 0.100, -0.330)</MainHand>
+			<MainRotation>-16</MainRotation>
+			<ThingTargets>
+				<li>ABYautja_Melee_PredatorSword</li>
+				<!-- Predator Sword -->
+			</ThingTargets>
+		</li>
+		<li>
+			<MainHand>(-0.302, 0.100, -0.270)</MainHand>
+			<MainRotation>-11</MainRotation>
+			<ThingTargets>
+				<li>ABYautja_Melee_ElderSword</li>
+				<!-- Predator Sword -->
+			</ThingTargets>
+		</li>
+	<!--T2-->
+		<!--Ranged-->
+		<li>
+			<MainHand>(-0.256, 0.300, -0.050)</MainHand>
+			<SecHand>(0.244, -0.100, 0.033)</SecHand>
+			<MainRotation>-15</MainRotation>
+			<SecRotation>-15</SecRotation>
+			<ThingTargets>
+				<li>ABYautja_Gun_Bolt</li>
+				<!-- Bolt Gun -->
+			</ThingTargets>
+		</li>
+		<li>
+			<MainHand>(-0.068, 0.300, -0.022)</MainHand>
+			<MainRotation>-64</MainRotation>
+			<ThingTargets>
+				<li>ABYautja_Gun_SpinningBlade</li>
+				<!-- Spinning Blade -->
+			</ThingTargets>
+		</li>
+		<!--Melee-->
+		<li>
+			<MainHand>(-0.256, 0.300, -0.275)</MainHand>
+			<MainRotation>-23</MainRotation>
+			<ThingTargets>
+				<li>ABYautja_Melee_PredatorKatana</li>
+				<!-- Predator katana -->
+			</ThingTargets>
+		</li>
+		<li>
+			<MainHand>(-0.256, 0.300, 0.000)</MainHand>
+			<ThingTargets>
+				<li>ABYautja_Melee_CeremonialDagger</li>
+				<!-- Ceremonial Dagger -->
+			</ThingTargets>
+		</li>
+		<li>
+			<MainHand>(-0.233, 0.300, -0.064)</MainHand>
+			<MainRotation>-21</MainRotation>
+			<SecRotation>-41</SecRotation>
+			<ThingTargets>
+				<li>ABYautja_Melee_HandScythe</li>
+				<!-- Hand Scythe -->
+			</ThingTargets>
+		</li>
+		<li>
+			<MainHand>(0.014, 0.300, 0.211)</MainHand>
+			<MainRotation>-53</MainRotation>
+			<ThingTargets>
+				<li>ABYautja_Melee_BladedMaul</li>
+				<!-- Bladed Maul -->
+			</ThingTargets>
+		</li>
+		<li>
+			<MainHand>(-0.123, 0.100, -0.032)</MainHand>
+			<SecHand>(0.124, 0.000, 0.211)</SecHand>
+			<ThingTargets>
+				<li>ABYautja_Melee_PredatorScythe</li>
+				<!-- Predator Scythe -->
+			</ThingTargets>
+		</li>
+		<li>
+			<MainHand>(-0.256, 0.300, -0.233)</MainHand>
+			<SecHand>(-0.004, 0.000, 0.042)</SecHand>
+			<MainRotation>-29</MainRotation>
+			<SecRotation>-41</SecRotation>
+			<ThingTargets>
+				<li>ABYautja_Melee_PredatorWarAxe</li>
+				<!-- Predator War-axe -->
+			</ThingTargets>
+		</li>
+		<li>
+			<MainHand>(0.000, 0.300, 0.012)</MainHand>
+			<MainRotation>-24</MainRotation>
+			<ThingTargets>
+				<li>ABYautja_Melee_Glaive</li>
+				<!-- Predator Glaive -->
+			</ThingTargets>
+		</li>
+		<!--Ranged+Melee-->
+		<li>
+			<MainHand>(-0.078, 0.300, -0.188)</MainHand>
+			<MainRotation>-43</MainRotation>
+			<ThingTargets>
+				<li>ABYautja_Gun_CutClamp</li>
+				<!-- Cut Clamp -->
+			</ThingTargets>
+		</li>
+		<li>
+			<MainHand>(-0.321, 0.300, -0.004)</MainHand>
+			<MainRotation>-64</MainRotation>
+			<ThingTargets>
+				<li>ABYautja_Gun_Shuriken</li>
+				<!-- Predator Shuriken -->
+			</ThingTargets>
+		</li>
+	<!--T3-->
+		<!--Ranged-->
+		<li>
+			<MainHand>(-0.128, 0.300, -0.050)</MainHand>
+			<MainRotation>-64</MainRotation>
+			<ThingTargets>
+				<li>ABYautja_Gun_Needler</li>
+				<!-- Needlegun -->
+			</ThingTargets>
+		</li>
+		<li>
+			<MainHand>(-0.128, 0.300, -0.050)</MainHand>
+			<MainRotation>-64</MainRotation>
+			<ThingTargets>
+				<li>ABYautja_Gun_Speargun</li>
+				<!-- Speargun -->
+			</ThingTargets>
+		</li>
+		<li>
+			<MainHand>(-0.224, 0.300, -0.100)</MainHand>
+			<SecHand>(0.170, -0.100, -0.036)</SecHand>
+			<ThingTargets>
+				<li>ABYautja_Gun_SpearRifle</li>
+				<!-- Rifle Speargun -->
+			</ThingTargets>
+		</li>
+		<li>
+			<MainHand>(-0.087, 0.300, 0.056)</MainHand>
+			<MainRotation>-29</MainRotation>
+			<ThingTargets>
+				<li>ABYautja_Ranged_ElectroshockBola</li>
+				<!-- electroshock bola -->
+			</ThingTargets>
+		</li>
+		<li>
+			<MainHand>(-0.178, 0.300, -0.114)</MainHand>
+			<MainRotation>-34</MainRotation>
+			<ThingTargets>
+				<li>ABYautja_Gun_HandheldNetGun</li>
+				<!-- Handheld Net Gun -->
+			</ThingTargets>
+		</li>
+		<!--Melee-->
+		<li>
+			<MainHand>(-0.197, 0.300, 0.175)</MainHand>
+			<ThingTargets>
+				<li>ABYautja_Melee_Flail</li>
+				<!-- Predator Flail -->
+			</ThingTargets>
+		</li>
+		<!--Ranged+Melee-->
+		<li>
+			<MainHand>(-0.133, 0.300, -0.110)</MainHand>
+			<SecHand>(0.133, -0.100, 0.124)</SecHand>
+			<MainRotation>-16</MainRotation>
+			<SecRotation>-41</SecRotation>
+			<ThingTargets>
+				<li>ABYautja_Melee_Combistaff</li>
+				<!-- Combistaff -->
+			</ThingTargets>
+		</li>
+	<!--T4-->
+		<!--Ranged-->
+		<li>
+			<MainHand>(-0.243, 0.300, -0.091)</MainHand>
+			<SecHand>(0.019, -0.100, -0.100)</SecHand>
+			<ThingTargets>
+				<li>ABYautja_Gun_Burner</li>
+				<!-- Burner -->
+			</ThingTargets>
+		</li>
+		<!--Melee-->
+		<!--Ranged+Melee-->
+		<li>
+			<MainHand>(0.014, 0, 0)</MainHand>
+			<MainRotation>-49</MainRotation>
+			<ThingTargets>
+				<li>ABYautja_Gun_PoliNanoDisc</li>
+				<!-- Poli Nanovibronic Disc -->
+			</ThingTargets>
+		</li>
+	<!--T Explosive-->
+		<!--Ranged-->
+	<!--T Plasma Energy-->
+		<!--Ranged-->
+		<li>
+			<MainHand>(-0.178, 0.300, -0.114)</MainHand>
+			<MainRotation>-34</MainRotation>
+			<ThingTargets>
+				<li>ABYautja_Gun_HandheldPlasmacaster</li>
+				<!-- Handheld Plasmacaster -->
+			</ThingTargets>
+		</li>
+		<li>
+			<MainHand>(-0.178, 0.300, -0.114)</MainHand>
+			<MainRotation>-34</MainRotation>
+			<ThingTargets>
+				<li>ABYautja_Gun_HandheldBlazer</li>
+				<!-- Handheld Blazer -->
+			</ThingTargets>
+		</li>
+		<li>
+			<MainHand>(-0.178, 0.300, -0.114)</MainHand>
+			<MainRotation>-34</MainRotation>
+			<ThingTargets>
+				<li>ABYautja_Gun_HandheldPlasmaNetGun</li>
+				<!-- Handheld Plasma Net Gun -->
+			</ThingTargets>
+		</li>
+		<li>
+			<MainHand>(-0.068, 0.300, -0.022)</MainHand>
+			<MainRotation>-64</MainRotation>
+			<ThingTargets>
+				<li>ABYautja_Gun_PlasmaSpinningBlade</li>
+				<!-- Spinning Plasma Blade -->
+			</ThingTargets>
+		</li>
+		<!--Melee-->
+		<!--Ranged+Melee-->
+	<!--T Tracking Tech-->
+		<!--Ranged-->
+		<!--Melee-->
+		<!--Ranged+Melee-->
+		<li>
+			<MainHand>(0.005, 0.300, 0.000)</MainHand>
+			<MainRotation>-49</MainRotation>
+			<ThingTargets>
+				<li>ABYautja_Gun_SmartDisc</li>
+				<!-- Predator Smart Disc -->
+			</ThingTargets>
+		</li>
+	<!--T Improvised-->
+		<!--Ranged-->
+		<!--Melee-->
+		<!--Ranged+Melee-->
+    </WeaponCompLoader>
+  </WHands.ClutterHandsTDef>
+</Defs>

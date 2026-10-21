@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<GeneDef Name="ABHARYautjaFrameBase" ParentName="ABYautjaFrameBase" Abstract="True">
+		<statOffsets Inherit="False" />
+	</GeneDef>
+	
+<!--Malformed-->
+	<GeneDef ParentName="ABHARYautjaFrameBase">
+		<defName>ABHARMalformedYautjaFrame</defName>
+		<label>(har) Malformed Yautja Frame</label>
+		<description>Carriers of this gene grow to 5 or 6.5 feet and can live for 2000 years.</description>
+		<iconPath>UI/Icons/Genes/BS_Frames/MalformedYautja</iconPath>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>+1</biostatMet>
+		<statOffsets>
+			<SM_BodySizeOffset MayRequire="redmattis.betterprerequisites">-0.2</SM_BodySizeOffset>
+		</statOffsets>
+		<statFactors>
+			<CarryingCapacity>0.97</CarryingCapacity>
+			<VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">0.97</VEF_MassCarryCapacity>
+		</statFactors>
+	</GeneDef>
+<!--Feral-->
+	<GeneDef ParentName="ABHARYautjaFrameBase">
+		<defName>ABHARFeralYautjaFrame</defName>
+		<label>(har) Feral Yautja Frame</label>
+		<description>Carriers of this gene grow to 6.5 or 7 feet and can live for 2000 years.</description>
+		<iconPath>UI/Icons/Genes/BS_Frames/FeralYautja</iconPath>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>+1</biostatMet>
+		<statOffsets>
+			<SM_BodySizeOffset MayRequire="redmattis.betterprerequisites">-0.12</SM_BodySizeOffset>
+		</statOffsets>
+		<statFactors>
+			<CarryingCapacity>1.5</CarryingCapacity>
+			<VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">1.2</VEF_MassCarryCapacity>
+		</statFactors>
+	</GeneDef>
+<!--Berserk-->
+	<GeneDef ParentName="ABHARYautjaFrameBase">
+		<defName>ABHARBerserkYautjaFrame</defName>
+		<label>(har) Berserk Yautja Frame</label>
+		<description>Carriers of this gene grow to 8 or 8.5 feet.</description>
+		<iconPath>UI/Icons/Genes/BS_Frames/BerserkYautja</iconPath>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<statOffsets>
+			<SM_BodySizeOffset MayRequire="redmattis.betterprerequisites">0.2</SM_BodySizeOffset>
+		</statOffsets>
+		<statFactors>
+				<CarryingCapacity>1.5</CarryingCapacity>
+				<VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">1.5</VEF_MassCarryCapacity>
+		</statFactors>
+		<forcedTraits>
+			<li>
+				<def>BS_Giant</def>
+			</li>
+		</forcedTraits>
+	</GeneDef>
+<!--Grendel-->	
+	<GeneDef ParentName="ABHARYautjaFrameBase">
+		<defName>ABHARGrendelKingYautjaFrame</defName>
+		<label>(har) Grendel Yautja Frame</label>
+		<description>Carriers of this gene grow to 10 feet.</description>
+		<iconPath>UI/Icons/Genes/BS_Frames/GrendelYautja</iconPath>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-2</biostatMet>
+		<exclusionTags>
+			<li MayRequire="redmattis.betterprerequisites">BS_BodySizeHuge</li>
+			<li>BodySize</li>
+		</exclusionTags>
+		<statOffsets>
+			<SM_BodySizeOffset MayRequire="redmattis.betterprerequisites">0.5</SM_BodySizeOffset>
+		</statOffsets>
+		<statFactors>
+				<CarryingCapacity>2</CarryingCapacity>
+				<VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">2</VEF_MassCarryCapacity>
+		</statFactors>
+		<forcedTraits>
+			<li>
+				<def>BS_Giant</def>
+			</li>
+		</forcedTraits>
+	</GeneDef>
+</Defs>

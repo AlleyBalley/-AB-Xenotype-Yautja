@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!--Standard-->
+  <XenotypeDef>
+    <defName>XMTPredalien</defName>
+    <label>Predalien</label>
+	<description>Predaliens are the result of a yautja falling victim to a face-hugger.</description>
+    <iconPath>UI/Icons/Xenotypes/Yautja</iconPath>
+    <displayPriority>-3605</displayPriority>
+    <genes>
+	<!--Vanilla Genes-->
+		<li>DarkVision</li>
+		<li>Nearsighted</li>
+	<!--Predalien Genes-->
+		<li>ABPredalien_Head</li>
+		<li>ABPredalien_TendrilHair</li>
+		<li>ABPredalienUpperMandibles</li>
+		<li>ABPredalienLowerMandibles</li>
+	<!--Yautja Genes-->
+		<li>ABYautjaAdvancedTechnologically</li>
+		<li>ABYautja_BreedingSeason</li>
+		<li>ABYautjaChildhood</li>
+		<li>ABYautjaRoarVoice</li>
+		<li>ABYautja_Ambush</li>
+		<li>ABYautjaSharpShooter</li>
+		<li>ABYautjaAlienRace</li>
+		<li>ABYautjaWarriorsMindset</li>
+		<li>ABYautjaMenacingApperance</li>
+		<li>ABYautjaKeenSenses</li>
+		<li>ABPredalienLeatherySkin</li>
+		<li>ABYautjaClaws</li>
+    </genes>
+	</XenotypeDef>
+</Defs>

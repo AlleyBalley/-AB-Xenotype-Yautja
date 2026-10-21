@@ -213,73 +213,70 @@
 									</groups>
 									<parts>
 										<li>
+											<def>ABYautja_UpperMandibles</def>
+											<customLabel>left upper mandible</customLabel>
+											<coverage>0.2</coverage>
+											<depth>Outside</depth>
+											<height>Bottom</height>
+											<flipGraphic>true</flipGraphic>
+											<groups>
+												<li>Teeth</li>
+												<li>ABYautja_Mandibles</li>
+											</groups>
+										</li>
+										<li>
+											<def>ABYautja_LowerMandibles</def>
+											<customLabel>left lower mandible</customLabel>
+											<coverage>0.2</coverage>
+											<depth>Outside</depth>
+											<height>Bottom</height>
+											<flipGraphic>true</flipGraphic>
+											<groups>
+												<li>Teeth</li>
+												<li>ABYautja_Mandibles</li>
+											</groups>
+										</li>
+										<li>
+											<def>ABYautja_UpperMandibles</def>
+											<customLabel>right upper mandible</customLabel>
+											<coverage>0.2</coverage>
+											<depth>Outside</depth>
+											<height>Bottom</height>
+											<groups>
+												<li>Teeth</li>
+												<li>ABYautja_Mandibles</li>
+											</groups>
+										</li>
+										<li>
+											<def>ABYautja_LowerMandibles</def>
+											<customLabel>right lower mandible</customLabel>
+											<coverage>0.2</coverage>
+											<depth>Outside</depth>
+											<height>Bottom</height>
+											<groups>
+												<li>Teeth</li>
+												<li>ABYautja_Mandibles</li>
+											</groups>
+										</li>
+										<li>
 											<def>ABYautja_Mouth</def>
-											<coverage>0.04</coverage>
+											<coverage>0.18</coverage>
 											<depth>Inside</depth>
 											<parts>
 												<li>
 													<def>ABYautja_Nose</def>
-													<coverage>0.001</coverage>
+													<coverage>0.05</coverage>
 													<depth>Inside</depth>
 													<groups>
-														<li>FullHead</li>
 														<li>Mouth</li>
-													</groups>
-												</li>
-												<li>
-													<def>ABYautja_UpperMandibles</def>
-													<customLabel>left upper mandible</customLabel>
-													<coverage>0.0045</coverage>
-													<depth>Outside</depth>
-													<groups>
-														<li>Teeth</li>
-														<li>Mouth</li>
-														<li>ABYautja_Mandibles</li>
-														<li>FullHead</li>
-													</groups>
-												</li>
-												<li>
-													<def>ABYautja_LowerMandibles</def>
-													<customLabel>left lower mandible</customLabel>
-													<coverage>0.0045</coverage>
-													<depth>Outside</depth>
-													<groups>
-														<li>Teeth</li>
-														<li>Mouth</li>
-														<li>ABYautja_Mandibles</li>
-														<li>FullHead</li>
-													</groups>
-												</li>
-												<li>
-													<def>ABYautja_UpperMandibles</def>
-													<customLabel>right upper mandible</customLabel>
-													<coverage>0.0045</coverage>
-													<depth>Outside</depth>
-													<groups>
-														<li>Teeth</li>
-														<li>Mouth</li>
-														<li>ABYautja_Mandibles</li>
-														<li>FullHead</li>
-													</groups>
-												</li>
-												<li>
-													<def>ABYautja_LowerMandibles</def>
-													<customLabel>right lower mandible</customLabel>
-													<coverage>0.0045</coverage>
-													<depth>Outside</depth>
-													<groups>
-														<li>Teeth</li>
-														<li>Mouth</li>
-														<li>ABYautja_Mandibles</li>
-														<li>FullHead</li>
 													</groups>
 												</li>
 												<li>
 													<def>Tongue</def>
-													<coverage>0.001</coverage>
+													<coverage>0.05</coverage>
 													<depth>Inside</depth>
 													<groups>
-														<li>FullHead</li>
+														<li>Mouth</li>
 													</groups>
 												</li>
 											</parts>
@@ -318,7 +315,6 @@
 							<flipGraphic>true</flipGraphic>
 							<groups>
 								<li>Arms</li>
-								<li>ABYautja_LeftArm</li>
 							</groups>
 							<parts>
 								<li>
@@ -331,7 +327,7 @@
 									</groups>
 								</li>
 								<li>
-									<def>ABYautja_LeftForearm</def>
+									<def>ABYautja_Forearm</def>
 									<customLabel>left forearm</customLabel>
 									<coverage>0.5</coverage>
 									<height>Middle</height>
@@ -450,7 +446,6 @@
 							<coverage>0.77</coverage>
 							<groups>
 								<li>Arms</li>
-								<li>ABYautja_RightArm</li>
 							</groups>
 							<parts>
 								<li>
@@ -463,7 +458,7 @@
 									</groups>
 								</li>
 								<li>
-									<def>ABYautja_RightForearm</def>
+									<def>ABYautja_Forearm</def>
 										<customLabel>right forearm</customLabel>
 										<coverage>0.5</coverage>
 										<height>Middle</height>

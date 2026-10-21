@@ -1,11 +1,21 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
+
 	<Operation Class="PatchOperationAddModExtension">
 		<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="ABYautja_Race"]</xpath>
 		<value>
 			<li Class="Xenomorphtype.AnimalHostGenes">
+				<customChildKind>XMT_PredalienStarbeastKind</customChildKind>
 				<genes>
 					<li>ABPredalien_Head</li>
+					<li>ABPredalien_TendrilHair</li>
+					<li>ABYautjaSharpShooter</li>
+					<li>ABYautjaAlienRace</li>
+					<li>ABYautjaWarriorsMindset</li>
+					<li>ABYautjaMenacingApperance</li>
+					<li>ABYautjaKeenSenses</li>
+					<li>ABPredalienLeatherySkin</li>
+					<li>ABYautjaClaws</li>
 				</genes>
 			</li>
 			<li Class="Xenomorphtype.AnimalMutateForms">
