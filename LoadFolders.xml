@@ -2,15 +2,37 @@
 <loadFolders>
 	<v1.6>
 		<li IfModActive="Ludeon.Rimworld.Ideology">1.6/Mods/Ideology</li>
+		<li IfModActive="Ludeon.Rimworld.Anomaly">1.6/Mods/Anomaly</li>
 		<li IfModActive="Ludeon.Rimworld.Odyssey">1.6/Mods/Odyssey</li>
 		<li IfModActive="niz.xenomorphtype">1.6/Mods/Alien-Rimworld</li>
 		<li IfModActive="erdelf.humanoidalienraces">1.6/Mods/HAR</li>
+		<li IfModActive="rim.job.world">1.6/Mods/RJW</li>
 		<li IfModNotActive="erdelf.humanoidalienraces">1.6/Mods/HARless</li>
+		<li IfModActive="ceteam.combatextended">1.6/Mods/CE</li>
+		<li IfModNotActive="ceteam.combatextended">1.6/Mods/CEless</li>
 		<li IfModActive="Proxyer.DeSurgeries.DeSurgeries">1.6/Mods/DESurgeries</li>
 		<li IfModActive="trickity.samurai.faction,heis.edo.themed.expansion">1.6/Mods/T'sSamurai-EdoThemedExpansion</li>
-		<li IfModActive="Halicade.RandomGeneticsFW">1.6/Mods/RandomGenetics</li>
+		<li IfModActive="mlie.showmeyourhands">1.6/Mods/ShowMeYourHands</li>
 		<!--li IfModActive="nals.facialanimation">1.6/Mods/Facial Animation</li-->
 		<li>Common</li>
 		<li>1.6</li>
 	</v1.6>
+	
+	<v1.7>
+		<li IfModActive="Ludeon.Rimworld.Ideology">1.6/Mods/Ideology</li>
+		<li IfModActive="Ludeon.Rimworld.Anomaly">1.6/Mods/Anomaly</li>
+		<li IfModActive="Ludeon.Rimworld.Odyssey">1.6/Mods/Odyssey</li>
+		<li IfModActive="niz.xenomorphtype">1.6/Mods/Alien-Rimworld</li>
+		<li IfModActive="erdelf.humanoidalienraces">1.6/Mods/HAR</li>
+		<li IfModActive="rim.job.world">1.6/Mods/RJW</li>
+		<li IfModNotActive="erdelf.humanoidalienraces">1.6/Mods/HARless</li>
+		<li IfModActive="ceteam.combatextended">1.6/Mods/CE</li>
+		<li IfModNotActive="ceteam.combatextended">1.6/Mods/CEless</li>
+		<li IfModActive="Proxyer.DeSurgeries.DeSurgeries">1.6/Mods/DESurgeries</li>
+		<li IfModActive="trickity.samurai.faction,heis.edo.themed.expansion">1.6/Mods/T'sSamurai-EdoThemedExpansion</li>
+		<li IfModActive="mlie.showmeyourhands">1.6/Mods/ShowMeYourHands</li>
+		<!--li IfModActive="nals.facialanimation">1.6/Mods/Facial Animation</li-->
+		<li>Common</li>
+		<li>1.6</li>
+	</v1.7>
 </loadFolders>
