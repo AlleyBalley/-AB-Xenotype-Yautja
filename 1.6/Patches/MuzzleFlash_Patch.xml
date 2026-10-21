@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationAddModExtension" MayRequire="IssacZhuang.MuzzleFlash">
+				<xpath>Defs/ThingDef[defName="ABYautja_Gun_HandheldPlasmacaster"]</xpath>
+				<value>
+					<li Class="MuzzleFlash.MuzzleFlashProps">
+						<def>MF_ChargedMuzzleFalsh</def>
+						<drawSize>(1.1,1.2)</drawSize>
+						<offsets>
+							<li>(0.2,0)</li>
+						</offsets>
+					</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAddModExtension" MayRequire="IssacZhuang.MuzzleFlash">
+				<xpath>Defs/ThingDef[defName="ABYautja_Gun_HandheldBlazer"]</xpath>
+				<value>
+					<li Class="MuzzleFlash.MuzzleFlashProps">
+						<def>MF_ChargedMuzzleFalsh</def>
+						<drawSize>(1.1,1.2)</drawSize>
+						<offsets>
+							<li>(0.4,0)</li>
+						</offsets>
+					</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAddModExtension" MayRequire="IssacZhuang.MuzzleFlash">
+				<xpath>Defs/ThingDef[defName="ABYautja_Gun_Burner"]</xpath>
+				<value>
+					<li Class="MuzzleFlash.MuzzleFlashProps">
+						<def>MF_ChargedMuzzleFalsh</def>
+						<drawSize>(0.8,1)</drawSize>
+						<offsets>
+							<li>(0.4,0)</li>
+						</offsets>
+					</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAddModExtension" MayRequire="IssacZhuang.MuzzleFlash">
+				<xpath>Defs/ThingDef[defName="ABYautja_PredGun"]</xpath>
+				<value>
+					<li Class="MuzzleFlash.MuzzleFlashProps">
+						<def>MF_ChargedMuzzleFalsh</def>
+						<drawSize>(0.8,1)</drawSize>
+						<offsets>
+							<li>(0.6,0)</li>
+						</offsets>
+					</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAddModExtension" MayRequire="IssacZhuang.MuzzleFlash">
+				<xpath>Defs/ThingDef[defName="ABYautja_Fireliner"]</xpath>
+				<value>
+					<li Class="MuzzleFlash.MuzzleFlashProps">
+						<def>MF_ChargedMuzzleFalsh</def>
+						<drawSize>(0.8,1)</drawSize>
+						<offsets>
+							<li>(0.6,0)</li>
+						</offsets>
+					</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAddModExtension" MayRequire="IssacZhuang.MuzzleFlash">
+				<xpath>Defs/ThingDef[defName="ABYautja_Heavy_PredGun"]</xpath>
+				<value>
+					<li Class="MuzzleFlash.MuzzleFlashProps">
+						<def>MF_ChargedMuzzleFalsh</def>
+						<drawSize>(2.1,2.2)</drawSize>
+						<offsets>
+							<li>(1.25,0)</li>
+						</offsets>
+					</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

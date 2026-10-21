@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Bionic Modularity</li>
+				</mods>
+				<match Class="PatchOperationAddModExtension">
+					<xpath>Defs/HediffDef[defName="ABYautja_WoodenForearm" or defName="ABYautja_SimpleProstheticForearm" or defName="ABYautja_BionicForearm" or defName="ABYautja_ArchotechForearm" or @Name="CombineProstheticandGauntlet_Base"]</xpath>
+					<value>
+						<li Class="BionicModularity.DefExtension_ModularHediff"></li>
+					</value>
+				</match>
+			</li>
+
+		<!--Bionic modularity modules-->
+			<!--Base-->
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Bionic Modularity</li>
+				</mods>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/RecipeDef[defName="BM_SpacerDoomsdayRocketLauncherCombatModule_InstallHuman" or defName="BM_SpacerMinigunCombatModule_InstallHuman" or defName="BM_SpacerChainShotgunCombatModule_InstallHuman" or defName="BM_SpacerLMGCombatModule_InstallHuman" or defName="BM_SpacerSniperRifleCombatModule_InstallHuman" or defName="BM_SpacerPumpShotgunCombatModule_InstallHuman" or defName="BM_SpacerHeavySMGCombatModule_InstallHuman" or defName="BM_SpacerAssaultRifleCombatModule_InstallHuman" or defName="BM_SpacerEMPLauncherCombatModule_InstallHuman" or defName="BM_SpacerIncendiaryLauncherCombatModule_InstallHuman" or defName="BM_SpacerSmokeLauncherCombatModule_InstallHuman" or defName="BM_SpacerPowerFistCombatModule_InstallHuman" or defName="BM_SpacerChargeRifleCombatModule_InstallHuman" or defName="BM_SpacerChargeLanceCombatModule_InstallHuman" or defName="BM_SpacerDrillWorkModule_InstallHuman" or defName="BM_SpacerFieldWorkModule_InstallHuman" or defName="BM_SpacerAnalyzerWorkModule_InstallHuman" or defName="BM_SpacerCrafterWorkModule_InstallHuman" or defName="BM_SpacerConstructorWorkModule_InstallHuman" or defName="BM_SpacerChefWorkModule_InstallHuman" or defName="BM_SpacerMedicWorkModule_InstallHuman" or defName="BM_SpacerExplosiveTrapDeployerAbilityModule_InstallHuman" or defName="BM_SpacerAntigrainTrapDeployerAbilityModule_InstallHuman" or defName="BM_SpacerFirefoamTrapDeployerAbilityModule_InstallHuman" or defName="BM_SpacerSmokeTrapDeployerAbilityModule_InstallHuman" or defName="BM_SpacerEMPTrapDeployerAbilityModule_InstallHuman" or defName="BM_SpacerIncendiaryTrapDeployerAbilityModule_InstallHuman" or defName="BM_SpacerOrbitalBombardmentAbilityModule_InstallHuman" or defName="BM_SpacerOrbitalPowerBeamAbilityModule_InstallHuman" or defName="BM_SpacerTornadoGeneratorAbilityModule_InstallHuman" or defName="BM_SpacerAutopistolCombatModule_InstallHuman" or defName="BM_SpacerHighExplosiveBurstAbilityModule_InstallHuman" or defName="BM_SpacerFirefoamBurstAbilityModule_InstallHuman" or defName="BM_SpacerSmokeBurstAbilityModule_InstallHuman" or defName="BM_SpacerEMPBurstAbilityModule_InstallHuman" or defName="BM_SpacerIncendiaryBurstAbilityModule_InstallHuman" or defName="BM_SpacerPowerClawCombatModule_InstallHuman" or defName="BM_SpacerPowerBladeCombatModule_InstallHuman" or defName="BM_SpacerPowerSawCombatModule_InstallHuman" or defName="BM_SpacerPyroweaveSupportModule_InstallHuman" or defName="BM_SpacerMagweaveSupportModule_InstallHuman" or defName="BM_SpacerCryoweaveSupportModule_InstallHuman" or defName="BM_SpacerToxweaveSupportModule_InstallHuman"]/appliedOnFixedBodyParts</xpath>
+					<value>
+						<li>ABYautja_Forearm</li>
+					</value>
+				</match>
+			</li>
+			
+			<!--Anomaly-->
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Bionic Modularity</li>
+				</mods>
+				<match Class="PatchOperationAdd" MayRequire="Ludeon.Rimworld.Anomaly">
+					<xpath>Defs/RecipeDef[defName="BM_SpacerDeadlifeBurstAbilityModule_InstallHuman" or defName="BM_SpacerDeadlifeBurstAbilityModule_InstallHuman" or defName="BM_SpacerDeadlifeBurstAbilityModule_InstallHuman" or defName="BM_SpacerDeadlifeTrapDeployerAbilityModule_InstallHuman" or defName="BM_SpacerTurretDeployerAbilityModule_InstallHuman"]/appliedOnFixedBodyParts</xpath>
+					<value>
+						<li>ABYautja_Forearm</li>
+					</value>
+				</match>
+			</li>
+			
+			<!--Biotech-->
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Bionic Modularity</li>
+				</mods>
+				<match Class="PatchOperationAdd" MayRequire="Ludeon.Rimworld.Biotech">
+					<xpath>Defs/RecipeDef[defName="BM_SpacerToxbombLauncherCombatModule_InstallHuman" or defName="BM_SpacerToxBurstAbilityModule_InstallHuman" or defName="BM_SpacerToxTrapDeployerAbilityModule_InstallHuman" or defName="BM_SpacerMecharrayUtilityModule_InstallHuman" or defName="BM_SpacerMecharrayUtilityModule_InstallHuman_Implant"]/appliedOnFixedBodyParts</xpath>
+					<value>
+						<li>ABYautja_Forearm</li>
+					</value>
+				</match>
+			</li>
+			
+			<!--Odyssey-->
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Bionic Modularity</li>
+				</mods>
+				<match Class="PatchOperationAdd" MayRequire="Ludeon.Rimworld.Odyssey">
+					<xpath>Defs/RecipeDef[defName="BM_SpacerHunterDroneDeployerAbilityModule_InstallHuman"]/appliedOnFixedBodyParts</xpath>
+					<value>
+						<li>ABYautja_Forearm</li>
+					</value>
+				</match>
+			</li>
+			
+			<!--Royalty-->
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Bionic Modularity</li>
+				</mods>
+				<!--No elbow blade. Forearm prosthetic does not include the elbow-->
+				<match Class="PatchOperationAdd" MayRequire="Ludeon.Rimworld.Royalty">
+					<xpath>Defs/RecipeDef[defName="BM_SpacerHandTalonCombatModule_InstallHuman" or defName="BM_SpacerVenomTalonCombatModule_InstallHuman" or defName="BM_SpacerZeusfistCombatModule_InstallHuman" or defName="BM_SpacerLowShieldDeployerAbilityModule_InstallHuman" or defName="BM_SpacerOrbitalMechClusterAbilityModule_InstallHuman" or defName="BM_SpacerPlasmaClawCombatModule_InstallHuman" or defName="BM_SpacerPlasmaBladeCombatModule_InstallHuman" or defName="BM_SpacerPlasmaSawCombatModule_InstallHuman" or defName="BM_SpacerMonoClawCombatModule_InstallHuman" or defName="BM_SpacerMonoBladeCombatModule_InstallHuman" or defName="BM_SpacerMonoSawCombatModule_InstallHuman"]/appliedOnFixedBodyParts</xpath>
+					<value>
+						<li>ABYautja_Forearm</li>
+					</value>
+				</match>
+			</li>
+
+		<!--Cryptoforge-->
+			<!--Currently disabled due to the author of bionic modularity seeking to update them
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Bionic Modularity</li>
+				</mods>
+				<match Class="PatchOperationAdd" MayRequire="vanillaquestsexpanded.cryptoforge">
+					<xpath>Defs/RecipeDef[defName="BM_SpacerCryptoClawCombatModule_InstallHuman" or defName="BM_SpacerCryptoBladeCombatModule_InstallHuman" or defName="BM_SpacerCryptoSawCombatModule_InstallHuman" or defName="BM_SpacerCryptoBolterCombatModule_InstallHuman" or defName="BM_SpacerCryptoweaveSupportModule_InstallHuman"]/appliedOnFixedBodyParts</xpath>
+					<value>
+						<li>ABYautja_Forearm</li>
+					</value>
+				</match>
+			</li-->
+		</operations>
+	</Operation>
+	
+<!--Other disabled categories:
+ - MOD_Cryptoforge-WeaponsRestores
+ - MOD_Impact_Weaponry
+ - MOD_VE_Coilguns
+ - MOD_VE_Empire
+ - MOD_VE_HeavyWeapons
+ - MOD_VE_Lasers
+ - MOD_VE_Lasers-DLC_Odyssey
+ - MOD_VE_NonLethal
+ - MOD_VE_Weapons-->
+</Patch>

@@ -3,7 +3,6 @@
 
 	<Operation Class="PatchOperationSequence">
 		<operations>
-		
 			<li Class="PatchOperationConditional">
 				<xpath>Defs/ResearchProjectDef[defName = "Electricity"]/tags</xpath>
 				<match Class="PatchOperationAdd">

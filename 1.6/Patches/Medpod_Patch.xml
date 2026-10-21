@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Medpod</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[@Name="MedPodBedBase"]/comps/li[@Class="MedPod.CompProperties_TreatmentRestrictions"]/neverTreatableHediffs</xpath>
+					<value>
+					<!--Gene Hediffs-->
+						<li>ABYautjaClaws</li>
+						<li>ABYautjaCrest</li>
+						<li>ABYautjaCurledHorns</li>
+						<li>ABYautjaLeatherySkin</li>
+						<li>ABYautjaUpperMandibles</li>
+						<li>ABYautjaSuperiorUpperMandibles</li>
+						<li>ABYautjaLowerMandibles</li>
+						<li>HBYautjaLowerMandible</li>
+						<li>ABYautjaSuperiorLowerMandibles</li>
+						<li>HBYautjaComboMandibles</li>
+						<li MayRequire="erdelf.humanoidalienraces">ABYautjaMandibleUpperMandible</li>
+						<li MayRequire="erdelf.humanoidalienraces">ABYautjaMandibleLowerMandibles</li>
+						<li MayRequire="erdelf.humanoidalienraces">HBYautjaCenterMandibles</li>
+						<li MayRequire="erdelf.humanoidalienraces">ABYautjaXenoAttitude</li>
+						
+					<!--Gauntlet Hediffs-->
+						<li>ABYautja_TribalGauntlet</li>
+						<li>ABYautja_TechGauntlet</li>
+						<li>ABYautja_NPCUnbloodedWristbladeGauntlet</li>
+						<li>ABYautja_NPCWristbladeGauntlet</li>
+						<li>ABYautja_NPCLeaderWristbladeGauntlet</li>
+					
+					<!--Gauntlet Module Hediffs-->
+						<li>ABYautja_WristbladeLauncher</li>
+						<li>ABYautja_WristRocket</li>
+						<li>ABYautja_EnergyFlechette</li>
+						<li>ABYautja_WristCannon</li>
+						<li>ABYautja_DualWristblades</li>
+						<li>ABYautja_Wristblade</li>
+						<li>ABYautja_LongWristblade</li>
+						<li>ABYautja_ScimitarWristblade</li>
+						<li>ABYautja_PrehensileWristblades</li>
+						<li>ABYautja_ClawWristblades</li>
+						<li>ABYautja_SelfDestructDevice</li>
+						<li>ABYautja_CloakingDevice</li>
+						
+					<!--Abilities-->
+						<li>ABYautja_Invisibility</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[@Name="MedPodBedBase"]/comps/li[@Class="MedPod.CompProperties_TreatmentRestrictions"]/alwaysTreatableHediffs</xpath>
+					<value>
+						<li MayRequire="niz.xenomorphtype">XMT_Yautja_HorrorPregnant</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

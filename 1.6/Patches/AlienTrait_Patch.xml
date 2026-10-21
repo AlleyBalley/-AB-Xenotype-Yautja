@@ -3,29 +3,28 @@
 
 	<Operation Class="PatchOperationSequence">
 		<operations>
-
 			<li Class="PatchOperationAdd">
-				<xpath>*/ThoughtDef[defName="AteHumanlikeMeatAsIngredient"]/nullifyingTraits</xpath>
+				<xpath>Defs/ThoughtDef[defName="AteHumanlikeMeatAsIngredient"]/nullifyingTraits</xpath>
 				<value>
 					<li>ABYautjaAlien</li>
 				</value>
 			</li>
 
 			<li Class="PatchOperationAdd">
-				<xpath>*/ThoughtDef[defName="AteHumanlikeMeatAsIngredient"]/nullifyingTraits</xpath>
+				<xpath>Defs/ThoughtDef[defName="AteHumanlikeMeatAsIngredient"]/nullifyingTraits</xpath>
 				<value>
 					<li>ABYautjaAlien</li>
 				</value>
 			</li>
 
 			<li Class="PatchOperationAdd">
-				<xpath>*/ThoughtDef[defName="AteRawHumanlikeMeat"]/nullifyingTraits</xpath>
+				<xpath>Defs/ThoughtDef[defName="AteRawHumanlikeMeat"]/nullifyingTraits</xpath>
 				<value>
 					<li>ABYautjaAlien</li>
 				</value>
 			</li>
 
-		<li Class="PatchOperationConditional" MayRequire="Ludeon.Rimworld.Anomaly">
+			<li Class="PatchOperationConditional">
 				<xpath>Defs/ThoughtDef[defName="AteHumanlikeMeatDirectCannibal"]/nullifyingTraits</xpath>
 				<nomatch Class="PatchOperationAdd">
 					<xpath>Defs/ThoughtDef[defName="AteHumanlikeMeatDirectCannibal"]</xpath>
@@ -33,16 +32,15 @@
 						<nullifyingTraits />
 					</value>
 				</nomatch>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/ThoughtDef[defName="AteHumanlikeMeatDirectCannibal"]/nullifyingTraits</xpath>
+					<value>
+						<li>ABYautjaAlien</li>
+					</value>
+				</match>
 			</li>
 
-			<li Class="PatchOperationAdd">
-				<xpath>*/ThoughtDef[defName="AteHumanlikeMeatDirectCannibal"]/nullifyingTraits</xpath>
-				<value>
-					<li>ABYautjaAlien</li>
-				</value>
-			</li>
-
-			<li Class="PatchOperationConditional" MayRequire="Ludeon.Rimworld.Anomaly">
+			<li Class="PatchOperationConditional">
 				<xpath>Defs/ThoughtDef[defName="AteHumanlikeMeatAsIngredientCannibal"]/nullifyingTraits</xpath>
 				<nomatch Class="PatchOperationAdd">
 					<xpath>Defs/ThoughtDef[defName="AteHumanlikeMeatAsIngredientCannibal"]</xpath>
@@ -50,30 +48,29 @@
 						<nullifyingTraits />
 					</value>
 				</nomatch>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/ThoughtDef[defName="AteHumanlikeMeatAsIngredientCannibal"]/nullifyingTraits</xpath>
+					<value>
+						<li>ABYautjaAlien</li>
+					</value>
+				</match>
 			</li>
 
 			<li Class="PatchOperationAdd">
-				<xpath>*/ThoughtDef[defName="AteHumanlikeMeatAsIngredientCannibal"]/nullifyingTraits</xpath>
+				<xpath>Defs/ThoughtDef[defName="ButcheredHumanlikeCorpse"]/nullifyingTraits</xpath>
 				<value>
 					<li>ABYautjaAlien</li>
 				</value>
 			</li>
 
 			<li Class="PatchOperationAdd">
-				<xpath>*/ThoughtDef[defName="ButcheredHumanlikeCorpse"]/nullifyingTraits</xpath>
-				<value>
-					<li>ABYautjaAlien</li>
-				</value>
-			</li>
-
-			<li Class="PatchOperationAdd">
-				<xpath>*/ThoughtDef[defName="KnowButcheredHumanlikeCorpse"]/nullifyingTraits</xpath>
+				<xpath>Defs/ThoughtDef[defName="KnowButcheredHumanlikeCorpse"]/nullifyingTraits</xpath>
 				<value>
 					<li>ABYautjaAlien</li>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>*/ThoughtDef[defName="HumanLeatherApparelSad"]/nullifyingTraits</xpath>
+				<xpath>Defs/ThoughtDef[defName="HumanLeatherApparelSad"]/nullifyingTraits</xpath>
 				<value>
 					<li>ABYautjaAlien</li>
 				</value>
@@ -85,42 +82,42 @@
 		<operations>
 			<!--Abhorrent-->
 			<li Class="PatchOperationAdd">
-				<xpath>*/ThoughtDef[defName="AteHumanMeat_Abhorrent"]/nullifyingTraits</xpath>
+				<xpath>Defs/ThoughtDef[defName="AteHumanMeat_Abhorrent"]/nullifyingTraits</xpath>
 				<value>
 					<li>ABYautjaAlien</li>
 				</value>
 			</li>
 			
 			<li Class="PatchOperationAdd">
-				<xpath>*/ThoughtDef[defName="ButcheredHuman_Abhorrent"]/nullifyingTraits</xpath>
+				<xpath>Defs/ThoughtDef[defName="ButcheredHuman_Abhorrent"]/nullifyingTraits</xpath>
 				<value>
 					<li>ABYautjaAlien</li>
 				</value>
 			</li>
 			
 			<li Class="PatchOperationAdd">
-				<xpath>*/ThoughtDef[defName="ButcheredHuman_Know_Abhorrent"]/nullifyingTraits</xpath>
+				<xpath>Defs/ThoughtDef[defName="ButcheredHuman_Know_Abhorrent"]/nullifyingTraits</xpath>
 				<value>
 					<li>ABYautjaAlien</li>
 				</value>
 			</li>
 			
 			<li Class="PatchOperationAdd">
-				<xpath>*/ThoughtDef[defName="ButcheredHuman_Know_Abhorrent_Opinion"]/nullifyingTraits</xpath>
+				<xpath>Defs/ThoughtDef[defName="ButcheredHuman_Know_Abhorrent_Opinion"]/nullifyingTraits</xpath>
 				<value>
 					<li>ABYautjaAlien</li>
 				</value>
 			</li>
 			
 			<li Class="PatchOperationAdd">
-				<xpath>*/ThoughtDef[defName="AteHumanMeat_Know_Abhorrent"]/nullifyingTraits</xpath>
+				<xpath>Defs/ThoughtDef[defName="AteHumanMeat_Know_Abhorrent"]/nullifyingTraits</xpath>
 				<value>
 					<li>ABYautjaAlien</li>
 				</value>
 			</li>
 			
 			<li Class="PatchOperationAdd">
-				<xpath>*/ThoughtDef[defName="HumanLeatherApparel_Abhorrent"]/nullifyingTraits</xpath>
+				<xpath>Defs/ThoughtDef[defName="HumanLeatherApparel_Abhorrent"]/nullifyingTraits</xpath>
 				<value>
 					<li>ABYautjaAlien</li>
 				</value>
@@ -128,42 +125,42 @@
 			
 		<!--Horrible-->	
 			<li Class="PatchOperationAdd">
-				<xpath>*/ThoughtDef[defName="AteHumanMeat_Horrible"]/nullifyingTraits</xpath>
+				<xpath>Defs/ThoughtDef[defName="AteHumanMeat_Horrible"]/nullifyingTraits</xpath>
 				<value>
 					<li>ABYautjaAlien</li>
 				</value>
 			</li>
 			
 			<li Class="PatchOperationAdd">
-				<xpath>*/ThoughtDef[defName="ButcheredHuman_Horrible"]/nullifyingTraits</xpath>
+				<xpath>Defs/ThoughtDef[defName="ButcheredHuman_Horrible"]/nullifyingTraits</xpath>
 				<value>
 					<li>ABYautjaAlien</li>
 				</value>
 			</li>
 			
 			<li Class="PatchOperationAdd">
-				<xpath>*/ThoughtDef[defName="ButcheredHuman_Know_Horrible"]/nullifyingTraits</xpath>
+				<xpath>Defs/ThoughtDef[defName="ButcheredHuman_Know_Horrible"]/nullifyingTraits</xpath>
 				<value>
 					<li>ABYautjaAlien</li>
 				</value>
 			</li>
 			
 			<li Class="PatchOperationAdd">
-				<xpath>*/ThoughtDef[defName="ButcheredHuman_Know_Horrible_Opinion"]/nullifyingTraits</xpath>
+				<xpath>Defs/ThoughtDef[defName="ButcheredHuman_Know_Horrible_Opinion"]/nullifyingTraits</xpath>
 				<value>
 					<li>ABYautjaAlien</li>
 				</value>
 			</li>
 			
 			<li Class="PatchOperationAdd">
-				<xpath>*/ThoughtDef[defName="AteHumanMeat_Know_Horrible"]/nullifyingTraits</xpath>
+				<xpath>Defs/ThoughtDef[defName="AteHumanMeat_Know_Horrible"]/nullifyingTraits</xpath>
 				<value>
 					<li>ABYautjaAlien</li>
 				</value>
 			</li>
 			
 			<li Class="PatchOperationAdd">
-				<xpath>*/ThoughtDef[defName="HumanLeatherApparel_Horrible"]/nullifyingTraits</xpath>
+				<xpath>Defs/ThoughtDef[defName="HumanLeatherApparel_Horrible"]/nullifyingTraits</xpath>
 				<value>
 					<li>ABYautjaAlien</li>
 				</value>
@@ -171,46 +168,58 @@
 			
 		<!--Dissapproved-->
 			<li Class="PatchOperationAdd">
-				<xpath>*/ThoughtDef[defName="AteHumanMeat_Disapproved"]/nullifyingTraits</xpath>
+				<xpath>Defs/ThoughtDef[defName="AteHumanMeat_Disapproved"]/nullifyingTraits</xpath>
 				<value>
 					<li>ABYautjaAlien</li>
 				</value>
 			</li>
 			
 			<li Class="PatchOperationAdd">
-				<xpath>*/ThoughtDef[defName="ButcheredHuman_Disapproved"]/nullifyingTraits</xpath>
+				<xpath>Defs/ThoughtDef[defName="ButcheredHuman_Disapproved"]/nullifyingTraits</xpath>
 				<value>
 					<li>ABYautjaAlien</li>
 				</value>
 			</li>
 			
 			<li Class="PatchOperationAdd">
-				<xpath>*/ThoughtDef[defName="ButcheredHuman_Know_Disapproved"]/nullifyingTraits</xpath>
+				<xpath>Defs/ThoughtDef[defName="ButcheredHuman_Know_Disapproved"]/nullifyingTraits</xpath>
 				<value>
 					<li>ABYautjaAlien</li>
 				</value>
 			</li>
 			
 			<li Class="PatchOperationAdd">
-				<xpath>*/ThoughtDef[defName="ButcheredHuman_Know_Disapproved_Opinion"]/nullifyingTraits</xpath>
+				<xpath>Defs/ThoughtDef[defName="ButcheredHuman_Know_Disapproved_Opinion"]/nullifyingTraits</xpath>
 				<value>
 					<li>ABYautjaAlien</li>
 				</value>
 			</li>
 			
 			<li Class="PatchOperationAdd">
-				<xpath>*/ThoughtDef[defName="AteHumanMeat_Know_Disapproved"]/nullifyingTraits</xpath>
+				<xpath>Defs/ThoughtDef[defName="AteHumanMeat_Know_Disapproved"]/nullifyingTraits</xpath>
 				<value>
 					<li>ABYautjaAlien</li>
 				</value>
 			</li>
 			
 			<li Class="PatchOperationAdd">
-				<xpath>*/ThoughtDef[defName="HumanLeatherApparel_Disapproved"]/nullifyingTraits</xpath>
+				<xpath>Defs/ThoughtDef[defName="HumanLeatherApparel_Disapproved"]/nullifyingTraits</xpath>
 				<value>
 					<li>ABYautjaAlien</li>
 				</value>
 			</li>
 		</operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Social Interactions Expanded</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThoughtDef[defName="VSIE_IngestedHumanFlesh"]/nullifyingTraits</xpath>
+			<value>
+				<li>ABYautjaAlien</li>
+			</value>
+		</match>
 	</Operation>
 </Patch>

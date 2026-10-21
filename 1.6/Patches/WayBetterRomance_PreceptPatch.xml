@@ -1,21 +1,47 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
+
 	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Way Better Romance</li>
 		</mods>
-		<match Class="PatchOperationAdd">
-			<xpath>/Defs/FactionDef[@Name="ABYautjaFactionBase"]/disallowedPrecepts</xpath>
-			<value>
-				<li MayRequire="Ludeon.RimWorld.Ideology">LoverCount_Male_MaxOne</li>
-				<li MayRequire="Ludeon.RimWorld.Ideology">LoverCount_Male_MaxTwo</li>
-				<li MayRequire="Ludeon.RimWorld.Ideology">LoverCount_Female_MaxTwo</li>
-				<li MayRequire="Ludeon.RimWorld.Ideology">LoverCount_Male_MaxThree</li>
-				<li MayRequire="Ludeon.RimWorld.Ideology">LoverCount_Female_MaxThree</li>
-				<li MayRequire="Ludeon.RimWorld.Ideology">LoverCount_Male_MaxFour</li>
-				<li MayRequire="Ludeon.RimWorld.Ideology">LoverCount_Female_MaxFour</li>
-				<li MayRequire="Ludeon.RimWorld.Ideology">LoverCount_Female_Unlimited</li>
-			</value>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/FactionDef[@Name="ABYautjaFactionBase"]/disallowedPrecepts</xpath>
+					<value>
+						<li MayRequire="Ludeon.RimWorld.Ideology">LoverCount_Male_MaxOne</li>
+						<li MayRequire="Ludeon.RimWorld.Ideology">LoverCount_Male_MaxTwo</li>
+						<li MayRequire="Ludeon.RimWorld.Ideology">LoverCount_Female_MaxTwo</li>
+						<li MayRequire="Ludeon.RimWorld.Ideology">LoverCount_Male_MaxThree</li>
+						<li MayRequire="Ludeon.RimWorld.Ideology">LoverCount_Female_MaxThree</li>
+						<li MayRequire="Ludeon.RimWorld.Ideology">LoverCount_Male_MaxFour</li>
+						<li MayRequire="Ludeon.RimWorld.Ideology">LoverCount_Female_MaxFour</li>
+						<li MayRequire="Ludeon.RimWorld.Ideology">LoverCount_Female_Unlimited</li>
+					</value>
+				</li>
+				<li Class ="PatchOperationAddModExtension">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="ABAlien_Yautja"]</xpath>
+					<value>
+						<li Class="BetterRomance.RegularSexSettings">
+							<minAgeForSex>100</minAgeForSex>
+							<maxAgeForSex>2000</maxAgeForSex>
+							<maxAgeGap>1050</maxAgeGap>
+							<declineAtAge>1750</declineAtAge>
+						</li>
+					</value>
+				</li>
+				<!--Prevent glitch where yautja loaded with way better romance blood appears white-->
+				<li Class ="PatchOperationConditional">
+					<xpath>Defs/XenotypeDef[defName="ABStandardYautja" or defName="ABMalformedYautja" or defName="ABFeralYautja" or defName="ABBerserkYautja" or defName="ABSwordYautja" or defName="ABShieldYautja" or defName="ABScoutYautja" or defName="ABTranslucentYautja" or defName="ABGrendelKingYautja"]/genes/li[text()="ABYautja_GreenBlood"]</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/XenotypeDef[defName="ABStandardYautja" or defName="ABMalformedYautja" or defName="ABFeralYautja" or defName="ABBerserkYautja" or defName="ABSwordYautja" or defName="ABShieldYautja" or defName="ABScoutYautja" or defName="ABTranslucentYautja" or defName="ABGrendelKingYautja"]/genes</xpath>
+						<value>
+							<li>ABYautja_GreenBlood</li>
+						</value>
+					</nomatch>
+				</li>
+			</operations>
 		</match>
 	</Operation>
 </Patch>

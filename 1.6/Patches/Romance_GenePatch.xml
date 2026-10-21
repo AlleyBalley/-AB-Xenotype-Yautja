@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
+
 	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Rational Romance 2 (Continued)</li>
 		</mods>
 		<match Class="PatchOperationAdd">
-			<xpath>/Defs/GeneDef[defName="ABYautja_BreedingSeason"]</xpath>
+			<xpath>Defs/GeneDef[defName="ABYautja_BreedingSeason"]</xpath>
 			<value>
 				<forcedTraits>
 					<li>
@@ -15,12 +16,13 @@
 			</value>
 		</match>
 	</Operation>
+	
 	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>[RF] Rational Romance (Continued)</li>
 		</mods>
 		<match Class="PatchOperationAdd">
-			<xpath>/Defs/GeneDef[defName="ABYautja_BreedingSeason"]</xpath>
+			<xpath>Defs/GeneDef[defName="ABYautja_BreedingSeason"]</xpath>
 			<value>
 				<forcedTraits>
 					<li>

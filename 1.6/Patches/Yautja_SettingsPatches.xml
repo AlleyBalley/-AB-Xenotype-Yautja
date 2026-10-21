@@ -1,0 +1,867 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="VEF.PatchOperationToggableSequence">
+		<enabled>False</enabled>
+		<label>Disable Yautja Tutorial pop-ups</label>
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ConceptDef[defName="ABConcept_Ranged" or defName="ABConcept_Melee" or defName="ABConcept_WristBlades" or defName="ABConcept_Gauntlet" or defName="ABConcept_YautjaComponents" or defName="ABConcept_Cloak" or defName="ABConcept_Plasmacaster"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove" MayRequire="erdelf.humanoidalienraces">
+				<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="ABYautja_Race"]/alienRace/raceRestriction/conceptList</xpath>
+			</li>
+		</operations>
+	</Operation>
+
+	<Operation Class="VEF.PatchOperationToggableSequence">
+		<enabled>False</enabled>
+		<label>Replace "predator" with "yautja"</label>
+		<operations>
+		<!--Apparel-->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="ABYautja_Armor_ChestplateLight"]/label</xpath>
+				<value>
+					<label>yautja light chestplate</label>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="ABYautja_Armor_Chestplate"]/label</xpath>
+				<value>
+					<label>yautja hunter chestplate</label>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="ABYautja_Armor_ChestplateHeavy"]/label</xpath>
+				<value>
+					<label>yautja heavy chestplate</label>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="ABYautja_Armor_ChestplateElite"]/label</xpath>
+				<value>
+					<label>elite yautja hunter chestplate</label>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="ABYautja_Armor_ChestplateOrnate"]/label</xpath>
+				<value>
+					<label>ornate yautja hunter chestplate</label>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="ABYautja_Armor_Greaves"]/label</xpath>
+				<value>
+					<label>yautja hunter greaves</label>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="ABYautja_Armor_OrnateGreaves"]/label</xpath>
+				<value>
+					<label>yautja ornate greaves</label>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="ABYautja_Armor_BioMaskLight"]/label</xpath>
+				<value>
+					<label>yautja light bio-mask</label>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="ABYautja_Armor_BioMask"]/label</xpath>
+				<value>
+					<label>yautja bio-mask</label>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="ABYautja_Armor_BioMaskElite"]/label</xpath>
+				<value>
+					<label>elite yautja bio-mask</label>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="ABYautja_Armor_BioMaskFalconer"]/label</xpath>
+				<value>
+					<label>yautja falconer bio-mask</label>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="ABYautja_Armor_BioMaskOrnate"]/label</xpath>
+				<value>
+					<label>ornate yautja bio-mask</label>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="ABYautja_Apparel_ThermalMesh"]/label</xpath>
+				<value>
+					<label>yautja thermal mesh</label>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="ABYautja_KidApparel_ThermalMesh"]/label</xpath>
+				<value>
+					<label>yautja pup thermal mesh</label>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="ABYautja_Apparel_AdvancedThermalMesh"]/label</xpath>
+				<value>
+					<label>yautja advanced thermal mesh</label>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="ABYautja_KidApparel_AdvancedThermalMesh"]/label</xpath>
+				<value>
+					<label>yautja pup advanced thermal mesh</label>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="ABYautja_Apparel_TribalMask"]/label</xpath>
+				<value>
+					<label>yautja tribal mask</label>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="ABYautja_Armor_Gloves"]/label</xpath>
+				<value>
+					<label>yautja gloves</label>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="ABYautja_Armor_Sandals"]/label</xpath>
+				<value>
+					<label>yautja sandals</label>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="ABYautja_Armor_Boots"]/label</xpath>
+				<value>
+					<label>yautja boots</label>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="ABYautja_Utility_Belt"]/label</xpath>
+				<value>
+					<label>yautja belt</label>
+				</value>
+			</li>
+		<!--Weapons-->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="ABYautja_Gun_Hunting_Bow"]/label</xpath>
+				<value>
+					<label>yautja hunting bow</label>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="ABYautja_Gun_Compound_Bow"]/label</xpath>
+				<value>
+					<label>yautja compound bow</label>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="ABYautja_Melee_PredatorAxe"]/label</xpath>
+				<value>
+					<label>yautja axe</label>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="ABYautja_Melee_PredatorSword"]/label</xpath>
+				<value>
+					<label>yautja sword</label>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="ABYautja_Melee_PredatorKatana"]/label</xpath>
+				<value>
+					<label>yautja katana</label>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="ABYautja_Melee_PredatorScythe"]/label</xpath>
+				<value>
+					<label>yautja scythe</label>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="ABYautja_Melee_PredatorWarAxe"]/label</xpath>
+				<value>
+					<label>yautja war-axe</label>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="ABYautja_Melee_Glaive"]/label</xpath>
+				<value>
+					<label>yautja glaive</label>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="ABYautja_Gun_Shuriken"]/label</xpath>
+				<value>
+					<label>yautja shuriken</label>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="ABYautja_Melee_Flail"]/label</xpath>
+				<value>
+					<label>yautja flail</label>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="ABYautja_Gun_SmartDisc"]/label</xpath>
+				<value>
+					<label>yautja smart disc</label>
+				</value>
+			</li>
+			<!--Buildings-->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="ABYautja_TableMachining"]/label</xpath>
+				<value>
+					<label>yautja machining table</label>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="ABYautja_TinkeringTable"]/label</xpath>
+				<value>
+					<label>yautja tinkering table</label>
+				</value>
+			</li>
+			<!--Misc-->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="ComponentYautja"]/label</xpath>
+				<value>
+					<label>yautja component</label>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="ABYautja_FilthBlood"]/label</xpath>
+				<value>
+					<label>yautja blood</label>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="ABYautja_FilthBloodSmear"]/label</xpath>
+				<value>
+					<label>yautja blood smear</label>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	 
+	<Operation Class="VEF.PatchOperationToggableSequence">
+		<enabled>False</enabled>
+		<label>Yautja turrets don't explode</label>
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[@Name="ABYautjaTurretBase"]/comps/li[@Class="CompProperties_Explosive"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[@Name="ABYautjaHeavyTurretBase"]/comps/li[@Class="CompProperties_Explosive"]</xpath>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="VEF.PatchOperationToggableSequence">
+		<enabled>False</enabled>
+		<label>Yautja turrets don't need power</label>
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[@Name="ABYautjaTurretBase"]/comps/li[@Class="CompProperties_Power"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[@Name="ABYautjaHeavyTurretBase"]/comps/li[@Class="CompProperties_Power"]</xpath>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="VEF.PatchOperationToggableSequence">
+		<enabled>False</enabled>
+		<label>Yautja turrets don't need refueled</label>
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName="ABYautja_Turret_PredGun" or defName="ABYautja_Turret_Fireliner" or defName="ABYautja_Turret_HeavyPredGun"]/comps/li[@Class="CompProperties_Refuelable"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove" MayRequire="reel.turretpipeline">
+				<xpath>Defs/ThingDef[@Name="ABYautjaTurretBase"]/comps/li[@Class="PipeSystem.CompProperties_ResourceTrader"]</xpath>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="VEF.PatchOperationToggableSequence">
+		<enabled>False</enabled>
+		<label>Yautja machinery doesn't break down</label>
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[@Name="ABYautjaTurretBase"]/comps/li[@Class="CompProperties_Breakdownable"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[@Name="ABYautjaHeavyTurretBase"]/comps/li[@Class="CompProperties_Breakdownable"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName="ABYautja_TableMachining"]/comps/li[@Class="CompProperties_Breakdownable"]</xpath>
+			</li>
+		</operations>
+	</Operation>
+
+	<Operation Class="VEF.PatchOperationToggableSequence">
+		<enabled>False</enabled>
+		<mods>
+			<li>Humanoid Alien Races</li>
+		</mods>
+		<label>Yautja only spawn in Yautja Factions</label>
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/AlienRace.RaceSettings[defName="Yautja_Settings"]/pawnKindSettings/startingColonists</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/AlienRace.RaceSettings[defName="Yautja_Settings"]/pawnKindSettings</xpath>
+				<value>
+					<startingColonists>
+						<li>
+							<pawnKindEntries>
+								<li>
+									<kindDefs>
+										<li>Colonist_ABYautja_Unblooded</li>
+										<li>Colonist_ABYautja_Blooded</li>
+									</kindDefs>
+									<chance>50</chance>
+								</li>
+							</pawnKindEntries>
+							<factionDefs>
+								<li>ABYautja_PlayerColony</li> 
+							</factionDefs>
+						</li>
+						<li>
+							<pawnKindEntries>
+								<li>
+									<kindDefs>
+										<li>Colonist_ABYautja_Unblooded</li>
+									</kindDefs>
+									<chance>100</chance>
+								</li>
+							</pawnKindEntries>
+							<factionDefs>
+								<li>ABYautja_PlayerUnblooded</li> 
+							</factionDefs>
+						</li>
+						<li>
+							<pawnKindEntries>
+								<li>
+									<kindDefs>
+										<li>Colonist_ABYautja_Blooded</li>
+									</kindDefs>
+									<chance>100</chance>
+								</li>
+							</pawnKindEntries>
+							<factionDefs>
+								<li>ABYautja_PlayerBlooded</li> 
+							</factionDefs>
+						</li>
+					</startingColonists>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+    <Operation Class="VEF.PatchOperationToggableSequence">
+		<enabled>False</enabled>
+		<mods>
+			<li>Humanoid Alien Races</li>
+		</mods>
+		<label>Yautja can wear anything</label>
+		<operations>			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="ABYautja_Race"]/alienRace/raceRestriction/onlyUseRaceRestrictedApparel</xpath>
+				<value>
+					<onlyUseRaceRestrictedApparel>false</onlyUseRaceRestrictedApparel>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="VEF.PatchOperationToggableSequence">
+		<enabled>False</enabled>
+		<mods>
+			<li>Humanoid Alien Races</li>
+		</mods>
+		<label>Only Yautja can use Yautja apparel</label>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="ABYautja_Race"]/alienRace/raceRestriction/apparelList</xpath>
+				<value>
+					<li>ABYautja_Apparel_TribalMask</li>
+					<li>ABYautja_Armor_BioMaskLight</li>
+					<li>ABYautja_Armor_BioMask</li>
+					<li>ABYautja_Armor_BioMaskElite</li>
+					<li>ABYautja_Armor_BioMaskFalconer</li>
+					<li>ABYautja_Armor_BioMaskOrnate</li>
+					<li>ABYautja_Apparel_ThermalMesh</li>
+					<li>ABYautja_KidApparel_ThermalMesh</li>
+					<li>ABYautja_Apparel_AdvancedThermalMesh</li>
+					<li>ABYautja_KidApparel_AdvancedThermalMesh</li>
+					<li>ABYautja_Utility_Belt</li>
+					<li>ABYautja_Utility_PlasmaCaster</li>
+					<li>ABYautja_Utility_Blazer</li>
+					<li>ABYautja_Utility_NetGun</li>
+					<li>ABYautja_Utility_PlasmaNetGun</li>
+					<li>ABYautja_Armor_Sandals</li>
+					<li>ABYautja_Armor_Boots</li>
+					<li>ABYautja_Armor_Gloves</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="VEF.PatchOperationToggableSequence">
+		<enabled>False</enabled>
+		<mods>
+			<li>Humanoid Alien Races</li>
+		</mods>
+		<label>Any race can use Yautja apparel</label>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="ABYautja_Race"]/alienRace/raceRestriction/whiteApparelList</xpath>
+				<value>
+					<li>ABYautja_Armor_ChestplateLight</li>
+					<li>ABYautja_Armor_Chestplate</li>
+					<li>ABYautja_Armor_Greaves</li>
+					<li>ABYautja_Armor_OrnateGreaves</li>
+					<li>ABYautja_Armor_ChestplateHeavy</li>
+					<li>ABYautja_Armor_ChestplateElite</li>
+					<li>ABYautja_Armor_ChestplateOrnate</li>
+					<!--li>ABYautja_Shield_Half</li-->
+					<li>ABYautja_Shield_Predator</li>
+					<!--li>ABYautja_Shield_Bladed</li>
+					<li>ABYautja_Shield_PlasmaEdged</li>
+					<li>ABYautja_Shield_Plasma</li-->
+				</value>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="ABYautja_Race"]/alienRace/raceRestriction/apparelList</xpath>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="VEF.PatchOperationToggableSequence">
+		<enabled>False</enabled>
+		<label>Player yautja gauntlet combat modules don't need ammunition</label>
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/HediffDef[defName="ABYautja_WristbladeLauncher" or defName="ABYautja_WristRocket"]/comps/li/verbProps/li/comps/li[@Class="MVCF.Reloading.Comps.VerbCompProperties_Reloadable"]</xpath>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="VEF.PatchOperationToggableSequence">
+		<enabled>False</enabled>
+		<mods>
+			<li>Humanoid Alien Races</li>
+		</mods>
+		<label>Any race can install gauntlets</label>
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="ABYautja_Race"]/alienRace/raceRestriction/recipeList/li[text()="ABYautja_InstallWristblade"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="ABYautja_Race"]/alienRace/raceRestriction/recipeList/li[text()="ABYautja_InstallDualWristblades"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="ABYautja_Race"]/alienRace/raceRestriction/recipeList/li[text()="ABYautja_InstallLongWristblade"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="ABYautja_Race"]/alienRace/raceRestriction/recipeList/li[text()="ABYautja_InstallScimitarWristblade"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="ABYautja_Race"]/alienRace/raceRestriction/recipeList/li[text()="ABYautja_InstallPrehensileWristblades"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="ABYautja_Race"]/alienRace/raceRestriction/recipeList/li[text()="ABYautja_InstallClawWristblades"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="ABYautja_Race"]/alienRace/raceRestriction/recipeList/li[text()="ABYautja_InstallWristbladeLauncher"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="ABYautja_Race"]/alienRace/raceRestriction/recipeList/li[text()="ABYautja_InstallWristRocket"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="ABYautja_Race"]/alienRace/raceRestriction/recipeList/li[text()="ABYautja_InstallEnergyFlechette"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="ABYautja_Race"]/alienRace/raceRestriction/recipeList/li[text()="ABYautja_InstallWristCannon"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="ABYautja_Race"]/alienRace/raceRestriction/recipeList/li[text()="ABYautja_InstallCloakingDevice"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="ABYautja_Race"]/alienRace/raceRestriction/recipeList/li[text()="ABYautja_InstallSelfDestructDevice"]</xpath>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="VEF.PatchOperationToggableSequence">
+		<enabled>False</enabled>
+		<mods>
+			<li>Humanoid Alien Races</li>
+		</mods>
+		<label>Any race can use Yautja weaponry</label>
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="ABYautja_Race"]/alienRace/raceRestriction/weaponList</xpath>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="VEF.PatchOperationToggableSequence">
+		<enabled>False</enabled>
+		<label>No bald yautja</label>
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/XenotypeDef[defName="ABStandardYautja" or defName="ABMalformedYautja" or defName="ABFeralYautja" or defName="ABBerserkYautja" or defName="ABSwordYautja" or defName="ABShieldYautja" or defName="ABScoutYautja" or defName="ABTranslucentYautja" or defName="ABGrendelKingYautja"]/genes/li[text()="ABYautjaBald"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove" MayRequire="erdelf.humanoidalienraces">
+				<xpath>Defs/HairDef[defName="ABYautjaBald"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove" MayRequire="erdelf.humanoidalienraces">
+				<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="ABYautja_Race"]/alienRace/styleSettings/li[1]/value/styleTags/li[text()="YautjaBALD"]</xpath>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="VEF.PatchOperationToggableSequence">
+		<enabled>False</enabled>
+		<mods>
+			<li>Humanoid Alien Races</li>
+		</mods>
+		<label>Give HAR Yautja Skin/Hair Color Genes</label>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/XenotypeDef[defName="ABStandardYautja" or defName="ABMalformedYautja" or defName="ABFeralYautja" or defName="ABBerserkYautja" or defName="ABSwordYautja" or defName="ABShieldYautja" or defName="ABScoutYautja" or defName="ABGrendelKingYautja"]/genes</xpath>
+				<value>
+				<!--Skin Colors-->
+					<li>YautjaSkin_Graphite</li>
+					<li>YautjaSkin_Smoke</li>
+					<li>YautjaSkin_Gloom</li>
+					<li>YautjaSkin_Dust</li>
+					<li>YautjaSkin_Cloud</li>
+					<li>YautjaSkin_Silver</li>
+					<li>YautjaSkin_Flint</li>
+					<li>YautjaSkin_Scale</li>
+					<li>YautjaSkin_Jean</li>
+					<li>YautjaSkin_Mermaid</li>
+					<li>YautjaSkin_Independence</li>
+					<li>YautjaSkin_Denim</li>
+					<li>YautjaSkin_Sea</li>
+					<li>YautjaSkin_Pewter</li>
+					<li>YautjaSkin_Coin</li>
+					<li>YautjaSkin_Cornflower</li>
+					<li>YautjaSkin_Steel</li>
+					<li>YautjaSkin_Sky</li>
+					<li>YautjaSkin_GreyAegean</li>
+					<li>YautjaSkin_Aegean</li>
+					<li>YautjaSkin_Grave</li>
+					<li>YautjaSkin_Waterlogged</li>
+					<li>YautjaSkin_Kitchen</li>
+					<li>YautjaSkin_Maya</li>
+					<li>YautjaSkin_Tort</li>
+					<li>YautjaSkin_ExplorerBlue</li>
+					<li>YautjaSkin_TempeStar</li>
+					<li>YautjaSkin_Peacock</li>
+					<li>YautjaSkin_GrandRapids</li>
+					<li>YautjaSkin_Hammock</li>
+					<li>YautjaSkin_MorningGreen</li>
+					<li>YautjaSkin_Turkish</li>
+					<li>YautjaSkin_Aqua</li>
+					<li>YautjaSkin_GreenMallard</li>
+					<li>YautjaSkin_Westhaven</li>
+					<li>YautjaSkin_BlueSurf</li>
+					<li>YautjaSkin_SilicateGreen</li>
+					<li>YautjaSkin_AloeVera</li>
+					<li>YautjaSkin_Seafoam</li>
+					<li>YautjaSkin_ForestGreenery</li>
+					<li>YautjaSkin_KorainandoGreen</li>
+					<li>YautjaSkin_PlantainGreen</li>
+					<li>YautjaSkin_Wintessa</li>
+					<li>YautjaSkin_CoventGarden</li>
+					<li>YautjaSkin_Burleigh</li>
+					<li>YautjaSkin_Jungle</li>
+					<li>YautjaSkin_Hunter</li>
+					<li>YautjaSkin_MushiaoGreen</li>
+					<li>YautjaSkin_Emerald</li>
+					<li>YautjaSkin_BalsamFir</li>
+					<li>YautjaSkin_LilyPad</li>
+					<li>YautjaSkin_Swanndri</li>
+					<li>YautjaSkin_Shamrock</li>
+					<li>YautjaSkin_Pine</li>
+					<li>YautjaSkin_Moss</li>
+					<li>YautjaSkin_Forest</li>
+					<li>YautjaSkin_Drizzle</li>
+					<li>YautjaSkin_GreenClay</li>
+					<li>YautjaSkin_Pistachio</li>
+					<li>YautjaSkin_Chlorosis</li>
+					<li>YautjaSkin_Pear</li>
+					<li>YautjaSkin_Sage</li>
+					<li>YautjaSkin_Fern</li>
+					<li>YautjaSkin_Jade</li>
+					<li>YautjaSkin_SycamoreStand</li>
+					<li>YautjaSkin_Drab</li>
+					<li>YautjaSkin_FreshSod</li>
+					<li>YautjaSkin_WildAxolotl</li>
+					<li>YautjaSkin_Pickle</li>
+					<li>YautjaSkin_Basil</li>
+					<li>YautjaSkin_Seaweed</li>
+					<li>YautjaSkin_Artichoke</li>
+					<li>YautjaSkin_Rejuvenation</li>
+					<li>YautjaSkin_KoiPond</li>
+					<li>YautjaSkin_PalmLeaf</li>
+					<li>YautjaSkin_Monstera</li>
+					<li>YautjaSkin_Juniper</li>
+					<li>YautjaSkin_Crocodile</li>
+					<li>YautjaSkin_Oyster</li>
+					<li>YautjaSkin_Mink</li>
+					<li>YautjaSkin_Beige</li>
+					<li>YautjaSkin_HazelWood</li>
+					<li>YautjaSkin_Olive</li>
+					<li>YautjaSkin_EasternBamboo</li>
+					<li>YautjaSkin_LisbonBrown</li>
+					<li>YautjaSkin_ReptileRevenge</li>
+					<li>YautjaSkin_Tortilla</li>
+					<li>YautjaSkin_Ash</li>
+					<li>YautjaSkin_Shadow</li>
+					<li>YautjaSkin_Flaxen</li>
+					<li>YautjaSkin_IvyTopiary</li>
+					<li>YautjaSkin_Sepia</li>
+					<li>YautjaSkin_BlackishBrown</li>
+					<li>YautjaSkin_CocoaBrown</li>
+					<li>YautjaSkin_Madras</li>
+					<li>YautjaSkin_Sand</li>
+					<li>YautjaSkin_Almond</li>
+					<li>YautjaSkin_Khaki</li>
+					<li>YautjaSkin_Makara</li>
+					<li>YautjaSkin_Tan</li>
+					<li>YautjaSkin_PeppercornRent</li>
+					<li>YautjaSkin_Bear</li>
+					<li>YautjaSkin_Espresso</li>
+					<li>YautjaSkin_MilkBrownieDough</li>
+					<li>YautjaSkin_BradfordBrown</li>
+					<li>YautjaSkin_Squid</li>
+					<li>YautjaSkin_BargeboardBrown</li>
+					<li>YautjaSkin_MoroccanHenna</li>
+					<li>YautjaSkin_BrownBeauty</li>
+					<li>YautjaSkin_Penny</li>
+					<li>YautjaSkin_Rust</li>
+					<li>YautjaSkin_Salmon</li>
+					<li>YautjaSkin_CafeOle</li>
+					<li>YautjaSkin_Redwood</li>
+					<li>YautjaSkin_TerraceBrown</li>
+					<li>YautjaSkin_FireRoasted</li>
+					<li>YautjaSkin_Mahogany</li>
+					<li>YautjaSkin_Pecan</li>
+					<li>YautjaSkin_DarkSienna</li>
+					<li>YautjaSkin_Syrup</li>
+					<li>YautjaSkin_Gum</li>
+					<li>YautjaSkin_HorizonGlow</li>
+					<li>YautjaSkin_ClayRidge</li>
+					<li>YautjaSkin_Coral</li>
+					<li>YautjaSkin_RockyMountain</li>
+					<li>YautjaSkin_Fireside</li>
+					<li>YautjaSkin_Carmine</li>
+					<li>YautjaSkin_SealBrown</li>
+					<li>YautjaSkin_Currant</li>
+					<li>YautjaSkin_Wine</li>
+					<li>YautjaSkin_BurntTile</li>
+					<li>YautjaSkin_Lipstick</li>
+					<li>YautjaSkin_ArrestingAubunr</li>
+					<li>YautjaSkin_Berry</li>
+					<li>YautjaSkin_Merlot</li>
+					<li>YautjaSkin_Jam</li>
+					<li>YautjaSkin_Raspberry</li>
+					<li>YautjaSkin_Sandstone</li>
+					<li>YautjaSkin_Bronze</li>
+					<li>YautjaSkin_Clay</li>
+					<li>YautjaSkin_ClayPlay</li>
+					<li>YautjaSkin_Brick</li>
+					<li>YautjaSkin_Amber</li>
+				<!--Hair Colors-->
+					<li>YautjaHair_Lumber</li>
+					<li>YautjaHair_Chocolate</li>
+					<li>YautjaHair_Hickory</li>
+					<li>YautjaHair_Squirrel</li>
+					<li>YautjaHair_Bark</li>
+					<li>YautjaHair_Mulberry</li>
+					<li>YautjaHair_Pomegranate</li>
+					<li>YautjaHair_Gore</li>
+					<li>YautjaHair_Paste</li>
+					<li>YautjaHair_Bone</li>
+					<li>YautjaHair_Gloom</li>
+					<li>YautjaHair_EssexGreen</li>
+					<li>YautjaHair_Smog</li>
+					<li>YautjaHair_Cavern</li>
+					<li>YautjaHair_Charcoal</li>
+					<li>YautjaHair_Space</li>
+					<li>YautjaHair_Midnight</li>
+					<li>YautjaHair_Bubble</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="VEF.PatchOperationToggableSequence">
+		<enabled>False</enabled>
+		<label>Friendly Yautja Factions (Removes required memes)</label>
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/FactionDef[@Name="ABYautjaFactionBase"]/requiredMemes</xpath>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="VEF.PatchOperationToggableSequence">
+		<enabled>False</enabled>
+		<label>Allow Friendly Yautja Factions violent memes that *aren't required* (Use with setting above!)</label>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/FactionDef[@Name="ABYautjaFactionBase"]/allowedMemes</xpath>
+					<value>
+						<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+						<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+					</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="VEF.PatchOperationToggableSequence">
+		<enabled>False</enabled>
+		<label>Disable enemy yautja's gauntlet self destruct device</label>
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/HediffDef[@Name="ABYautja_NPCUnbloodedWristbladeGauntlet"]/comps/li[@Class="VEF.AnimalBehaviours.HediffCompProperties_Exploder"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/HediffDef[defName="ABYautja_NPCLeaderWristbladeGauntlet" or defName="ABYautja_NPCWristbladeGauntlet"]/comps/li[@Class="VEF.AnimalBehaviours.HediffCompProperties_Exploder"]</xpath>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="VEF.PatchOperationToggableSequence">
+		<enabled>False</enabled>
+		<label>2x2 Yautja machining table</label>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="ABYautja_TableMachining"]/size</xpath>
+				<value>
+					<size>(2,2)</size>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="VEF.PatchOperationToggableSequence">
+		<enabled>False</enabled>
+		<label>Hide gene hediffs in health tab</label>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/HediffDef[defName="ABYautjaClaws" or defName="ABYautjaCrest" or defName="ABYautjaCurledHorns" or defName="ABYautjaLeatherySkin"]/stages/li/becomeVisible</xpath>
+				<value>
+					<becomeVisible>false</becomeVisible>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/HediffDef[@Name="ABYautjaMandibleBase"]/stages/li/becomeVisible</xpath>
+				<value>
+					<becomeVisible>false</becomeVisible>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="VEF.PatchOperationToggableSequence">
+		<enabled>False</enabled>
+		<label>Stronger Yautja (HARless)</label>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/HediffDef[defName="ABYautjaLeatherySkin"]/stages/li/statOffsets/ArmorRating_Blunt</xpath>
+				<value>
+					<ArmorRating_Blunt>0.8</ArmorRating_Blunt>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/HediffDef[defName="ABYautjaLeatherySkin"]/stages/li/statOffsets/ArmorRating_Sharp</xpath>
+				<value>
+					<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/GeneDef[defName="ABYautjaLeatherySkin"]/customEffectDescriptions/li[1]</xpath>
+				<value>
+					<li>Armor against Blunt 80</li>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/GeneDef[defName="ABYautjaLeatherySkin"]/customEffectDescriptions/li[2]</xpath>
+				<value>
+					<li>Armor against Sharp 40</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="VEF.PatchOperationToggableSequence">
+		<enabled>False</enabled>
+		<label>Stronger Yautja (HAR) *only use one</label>
+		<mods>
+			<li>Humanoid Alien Races</li>
+		</mods>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="ABYautja_Race"]/race/baseHealthScale</xpath>
+				<value>
+					<baseHealthScale>3.5</baseHealthScale>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="VEF.PatchOperationToggableSequence">
+		<enabled>False</enabled>
+		<label>OP Yautja (HAR) *only use one</label>
+		<mods>
+			<li>Humanoid Alien Races</li>
+		</mods>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="ABYautja_Race"]/race/baseHealthScale</xpath>
+				<value>
+					<baseHealthScale>5</baseHealthScale>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="VEF.PatchOperationToggableSequence">
+		<enabled>False</enabled>
+		<mods>
+			<li>Humanoid Alien Races</li>
+		</mods>
+		<label>Give HAR Yautja HARless yautja genes</label>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/XenotypeDef[defName="ABStandardYautja" or defName="ABFeralYautja" or defName="ABBerserkYautja" or defName="ABSwordYautja" or defName="ABShieldYautja" or defName="ABScoutYautja" or defName="ABTranslucentYautja" or defName="ABGrendelKingYautja"]/genes</xpath>
+				<value>
+					<li>ABYautjaAlienRace</li>
+					<li>ABYautjaWarriorsMindset</li>
+					<li>ABYautjaMenacingApperance</li>
+					<li>ABYautjaKeenSenses</li>
+					<li>ABYautjaClaws</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/XenotypeDef[defName="ABMalformedYautja"]/genes</xpath>
+				<value>
+					<li>ABYautjaAlienRace</li>
+					<li>ABYautjaWarriorsMindset</li>
+					<li>ABYautjaKeenSenses</li>
+					<li>ABYautjaClaws</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Toddlers</li>
+		</mods>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="ABYautja_KidApparel_ThermalMesh" or defName="ABYautja_KidApparel_AdvancedThermalMesh"]/apparel/developmentalStageFilter</xpath>
+			<value>
+				<developmentalStageFilter>Baby,Child</developmentalStageFilter>
+			</value>
+		</match>
+	</Operation>
+</Patch>

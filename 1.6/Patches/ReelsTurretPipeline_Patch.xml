@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Reel's Turret Pipeline</li>
+				</mods>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[@Name="ABYautjaTurretBase"]/comps</xpath>
+					<value>
+						<li Class="PipeSystem.CompProperties_ResourceTrader">
+							<pipeNet>Reel_AmmoNet</pipeNet>
+						</li>
+					</value>
+				</match>
+			</li>
+
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Reel's Turret Pipeline</li>
+				</mods>
+				<match Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="ABYautja_Turret_PredGun"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li</xpath>
+					<value>
+						<li>ReelTurretAmmo</li>
+					</value>
+				</match>
+			</li>
+			
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Reel's Turret Pipeline</li>
+				</mods>
+				<match Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="ABYautja_Turret_Fireliner"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li</xpath>
+					<value>
+						<li>ReelTurretAmmo</li>
+					</value>
+				</match>
+			</li>
+			
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Reel's Turret Pipeline</li>
+				</mods>
+				<match Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="ABYautja_Turret_HeavyPredGun"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li</xpath>
+					<value>
+						<li>ReelTurretAmmo</li>
+					</value>
+				</match>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

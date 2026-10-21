@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationReplace" MayRequire="RedMattis.BSFurniture">
+				<xpath>Defs/ThingDef[defName="ABYautjaTitanCrib"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Beds/BS_GiantCrib</texPath>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace" MayRequire="RedMattis.BSFurniture">
+				<xpath>Defs/ThingDef[defName="ABYautjaBigCrib"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Beds/BS_GiantCrib</texPath>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace" MayRequire="RedMattis.BSFurniture">
+				<xpath>Defs/ThingDef[defName="ABYautjaBigBabySleepingSpot"]/designationCategory</xpath>
+				<value>
+					<designationCategory>BS_Furniture</designationCategory>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace" MayRequire="RedMattis.BSFurniture">
+				<xpath>Defs/ThingDef[defName="ABYautjaBigCrib"]/designationCategory</xpath>
+				<value>
+					<designationCategory>BS_Furniture</designationCategory>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace" MayRequire="RedMattis.BSFurniture">
+				<xpath>Defs/ThingDef[defName="ABYautjaTitanBabySleepingSpot"]/designationCategory</xpath>
+				<value>
+					<designationCategory>BS_Furniture</designationCategory>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace" MayRequire="RedMattis.BSFurniture">
+				<xpath>Defs/ThingDef[defName="ABYautjaTitanCrib"]/designationCategory</xpath>
+				<value>
+					<designationCategory>BS_Furniture</designationCategory>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

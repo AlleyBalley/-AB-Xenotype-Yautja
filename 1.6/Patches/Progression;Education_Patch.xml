@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Progression: Education</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<!--Crafting Skill Patch-->
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/SkillDef[defName="Crafting"]/modExtensions/li[@Class="ProgressionEducation.SkillBuildingRequirement"]/requiredBuildings</xpath>
+						<value>
+							<li>ABYautja_TableMachining</li>
+							<li>ABYautja_TinkeringTable</li>
+						</value>
+					</li>
+				
+				<!--Scenarios Patches-->
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ScenarioDef[defName="ABYautjaScenarioLongExile" or defName="ABYautjaScenarioBlooded" or defName="ABYautjaScenarioUnblooded"]/scenario/parts</xpath>
+						<value>
+							<li Class="ProgressionEducation.ScenPart_ForcedProficiencyTrait">
+								<def>PE_ForcedProficiencyTrait</def>
+								<chance>1</chance>
+								<context>PlayerStarter</context>
+								<trait>PE_HighTechProficiency</trait>
+							</li>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationAdd" MayRequire="Ludeon.Rimworld.Ideology">
+						<xpath>Defs/ScenarioDef[defName="ABYautjaHuntingScouts"]/scenario/parts</xpath>
+						<value>
+							<li Class="ProgressionEducation.ScenPart_ForcedProficiencyTrait">
+								<def>PE_ForcedProficiencyTrait</def>
+								<chance>1</chance>
+								<context>PlayerStarter</context>
+								<trait>PE_HighTechProficiency</trait>
+							</li>
+						</value>
+					</li>
+					
+				<!--Gear Patches-->
+					<li Class="PatchOperationAddModExtension">
+						<xpath>Defs/ThingDef[defName="ABYautja_Gun_Hunting_Bow" or defName="ABYautja_Gun_Compound_Bow" or defName="ABYautja_Melee_WarClub" or defName="ABYautja_Melee_PredatorAxe" or defName="ABYautja_Melee_PredatorSword" or defName="ABYautja_Melee_ElderSword" or defName="ABYautja_Gun_SpinningBlade" or defName="ABYautja_Melee_PredatorKatana" or defName="ABYautja_Melee_CeremonialDagger" or defName="ABYautja_Melee_HandScythe" or defName="ABYautja_Melee_BladedMaul" or defName="ABYautja_Melee_PredatorScythe" or defName="ABYautja_Melee_PredatorWarAxe" or defName="ABYautja_Melee_Glaive" or defName="ABYautja_Gun_CutClamp" or defName="ABYautja_Gun_Shuriken" or defName="ABYautja_Melee_Flail" or defName="ABYautja_Melee_Combistaff"]</xpath>
+						<value>
+							<li Class="ProgressionEducation.ItemProficiencyRequirement">
+								<requiredProficiency>PE_LowTechProficiency</requiredProficiency>
+							</li>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationAddModExtension">
+						<xpath>Defs/ThingDef[defName="ABYautja_Ranged_ElectroshockBola" or defName="ABYautja_Gun_PlasmaSpinningBlade" or defName="ABYautja_Gun_SmartDisc" or defName="ABYautja_Gun_PoliNanoDisc"]</xpath>
+						<value>
+							<li Class="ProgressionEducation.ItemProficiencyRequirement">
+								<requiredProficiency>PE_HighTechProficiency</requiredProficiency>
+							</li>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationAddModExtension">
+						<xpath>Defs/ThingDef[defName="ABYautja_Gun_Bolt" or defName="ABYautja_Gun_Needler" or defName="ABYautja_Gun_Speargun" or defName="ABYautja_Gun_SpearRifle" or defName="ABYautja_Gun_HandheldNetGun" or defName="ABYautja_Gun_HandheldPlasmacaster" or defName="ABYautja_Gun_HandheldBlazer" or defName="ABYautja_Gun_HandheldPlasmaNetGun" or defName="ABYautja_Gun_Burner"]</xpath>
+						<value>
+							<li Class="ProgressionEducation.ItemProficiencyRequirement">
+								<requiredProficiency>PE_FirearmProficiency</requiredProficiency>
+							</li>
+						</value>
+					</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>
