@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<LanguageData>
+		<ABX_Blooding_TotalKills>Worthy kills: {0}</ABX_Blooding_TotalKills>
+		<ABX_Blooding_TotalScore>Accumulated score: {0}</ABX_Blooding_TotalScore>
+		<ABX_Blooding_LastKill>Last kill: {0} (score: {1})</ABX_Blooding_LastKill>
+		<ABX_Blooding_BestKill>Greatest hunt: {0} (score: {1})</ABX_Blooding_BestKill>
+	</LanguageData>
