@@ -3,10 +3,16 @@
 	<ResearchProjectTagDef>
 		<defName>YautjaStart</defName>
 	</ResearchProjectTagDef>
+	
+	<ResearchProjectTagDef>
+		<defName>YautjaBadBloodStart</defName>
+	</ResearchProjectTagDef>
+	
 	<ResearchProjectTagDef>
 		<defName>YautjaUnbloodedStart</defName>
 	</ResearchProjectTagDef>
-  <ResearchProjectTagDef>
+	
+	<ResearchProjectTagDef>
 		<defName>YautjaBloodedStart</defName>
 	</ResearchProjectTagDef>
 

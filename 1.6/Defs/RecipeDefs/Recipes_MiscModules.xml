@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!--Self destruct device-->
+	<RecipeDef ParentName="GauntletModuleInstall">
+		<defName>ABYautja_InstallSelfDestructDevice</defName>
+		<label>install a self destruct device</label>
+		<description>Install a self destruct device.</description>
+		<jobString>installing self destruct device.</jobString>
+		<incompatibleWithHediffTags>
+			<li>GauntletModuleTag_LastResort</li>
+		</incompatibleWithHediffTags>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_SelfDestructDevice</ThingDef>
+			<HediffDef>ABYautja_SelfDestructDevice</HediffDef>
+		</descriptionHyperlinks>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ABYautja_SelfDestructDevice</li>
+					</thingDefs>
+				</filter>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ABYautja_SelfDestructDevice</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>ABYautja_SelfDestructDevice</addsHediff>
+		<uiIconThing>ABYautja_SelfDestructDevice</uiIconThing>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="GauntletModuleRemove">
+		<defName>ABYautja_SelfDestructDeviceRemove</defName>
+		<workerClass>ABXenotypeYautja.Recipe_RemoveGauntletModule</workerClass>
+		<label>remove self destruct device</label>
+		<description>remove self destruct device.</description>
+		<jobString>remove self destruct device.</jobString>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_SelfDestructDevice</ThingDef>
+			<HediffDef>ABYautja_SelfDestructDevice</HediffDef>
+		</descriptionHyperlinks>
+		<removesHediff>ABYautja_SelfDestructDevice</removesHediff>
+	</RecipeDef>
+
+<!--Shifter-->
+	<RecipeDef ParentName="GauntletModuleInstall">
+		<defName>ABYautja_InstallCloakingDevice</defName>
+		<label>install a shifter</label>
+		<description>Install a shifter.</description>
+		<jobString>installing shifter.</jobString>
+		<incompatibleWithHediffTags>
+			<li>GauntletModuleTag_Utility</li>
+		</incompatibleWithHediffTags>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_CloakingDevice</ThingDef>
+			<HediffDef>ABYautja_CloakingDevice</HediffDef>
+		</descriptionHyperlinks>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ABYautja_CloakingDevice</li>
+					</thingDefs>
+				</filter>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ABYautja_CloakingDevice</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>ABYautja_CloakingDevice</addsHediff>
+		<uiIconThing>ABYautja_CloakingDevice</uiIconThing>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="GauntletModuleRemove">
+		<defName>ABYautja_CloakingDeviceRemove</defName>
+		<workerClass>ABXenotypeYautja.Recipe_RemoveGauntletModule</workerClass>
+		<label>remove shifter</label>
+		<description>remove shifter.</description>
+		<jobString>remove shifter.</jobString>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_CloakingDevice</ThingDef>
+			<HediffDef>ABYautja_CloakingDevice</HediffDef>
+		</descriptionHyperlinks>
+		<removesHediff>ABYautja_CloakingDevice</removesHediff>
+	</RecipeDef>
+</Defs>

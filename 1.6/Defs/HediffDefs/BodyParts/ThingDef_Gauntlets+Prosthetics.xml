@@ -1,0 +1,370 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!--Wood-->
+	<ThingDef ParentName="CombineProstheticandGauntlet_TribalBase">
+		<defName>WoodLogWithGauntlet_TribalGauntlet</defName>
+		<label>wooden limb with wooden gauntlet</label>
+		<description>An installed wooden limb complete with a wooden hand. Has a wooden gauntlet attached.</description>
+		<techLevel>Neolithic</techLevel>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_TribalGauntlet</ThingDef>
+			<HediffDef>ABYautja_WoodLog_TribalGauntlet</HediffDef>
+			<RecipeDef>Install_WoodLogWithGauntlet_TribalGauntlet</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<ABYautja_TribalGauntlet>1</ABYautja_TribalGauntlet>
+			<WoodLog>1</WoodLog>
+		</costList>
+		<statBases>
+			<MarketValue>1001.2</MarketValue>
+			<MaxHitPoints>250</MaxHitPoints>
+			<Flammability>0.5</Flammability>
+			<Beauty>-3</Beauty>
+			<DeteriorationRate>0.15</DeteriorationRate>
+			<Mass>0.55</Mass>
+		</statBases>
+		<recipeMaker>
+			<recipeUsers Inherit="False">
+				<li>CraftingSpot</li>
+				<li MayRequire="oskarpotocki.vfe.classical">VFEC_CraftingBench</li>
+			</recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+	
+	<ThingDef ParentName="CombineProstheticandGauntlet_TechBase">
+		<defName>WoodLogWithGauntlet_TechGauntlet</defName>
+		<label>wooden limb with metal gauntlet</label>
+		<description>An installed wooden limb complete with a wooden hand. Has a metal gauntlet attached.</description>
+		<techLevel>Neolithic</techLevel>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_TechGauntlet</ThingDef>
+			<HediffDef>ABYautja_WoodLog_TechGauntlet</HediffDef>
+			<RecipeDef>Install_WoodLogWithGauntlet_TechGauntlet</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<ABYautja_TechGauntlet>1</ABYautja_TechGauntlet>
+			<WoodLog>1</WoodLog>
+		</costList>
+		<statBases>
+			<MarketValue>4501.2</MarketValue>
+			<MaxHitPoints>250</MaxHitPoints>
+			<Flammability>0.5</Flammability>
+			<Beauty>-3</Beauty>
+			<DeteriorationRate>0.15</DeteriorationRate>
+			<Mass>0.55</Mass>
+		</statBases>
+		<recipeMaker>
+			<recipeUsers Inherit="False">
+				<li>CraftingSpot</li>
+				<li MayRequire="oskarpotocki.vfe.classical">VFEC_CraftingBench</li>
+			</recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+
+<!--Simple Prosthetics+Tribal-->
+	<ThingDef ParentName="CombineProstheticandGauntlet_TribalBase">
+		<defName>SimpleProstheticForearmWithGauntlet_TribalGauntlet</defName>
+		<label>prosthetic forearm with wooden gauntlet</label>
+		<description>An installed prosthetic forearm. Has a wooden gauntlet attached.</description>
+		<techLevel>Neolithic</techLevel>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_TribalGauntlet</ThingDef>
+			<ThingDef>ABYautja_SimpleProstheticForearm</ThingDef>
+			<HediffDef>ABYautja_SimpleProsthetic_Forearm_TribalGauntlet</HediffDef>
+			<RecipeDef>Install_SimpleProstheticForearmWithGauntlet_TribalGauntlet</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<ABYautja_TribalGauntlet>1</ABYautja_TribalGauntlet>
+			<ABYautja_SimpleProstheticForearm>1</ABYautja_SimpleProstheticForearm>
+		</costList>
+		<statBases>
+			<MarketValue>1260</MarketValue>
+			<MaxHitPoints>250</MaxHitPoints>
+			<Flammability>0.05</Flammability>
+			<Beauty>-3</Beauty>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Mass>2.15</Mass>
+		</statBases>
+	</ThingDef>
+	
+	<ThingDef ParentName="CombineProstheticandGauntlet_TribalBase">
+		<defName>SimpleProstheticArmWithGauntlet_TribalGauntlet</defName>
+		<label>prosthetic arm with wooden gauntlet</label>
+		<description>An installed prosthetic arm. Has a wooden gauntlet attached.</description>
+		<techLevel>Neolithic</techLevel>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_TribalGauntlet</ThingDef>
+			<ThingDef>SimpleProstheticArm</ThingDef>
+			<HediffDef>ABYautja_SimpleProsthetic_Arm_TribalGauntlet</HediffDef>
+			<RecipeDef>Install_SimpleProstheticArmWithGauntlet_TribalGauntlet</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<ABYautja_TribalGauntlet>1</ABYautja_TribalGauntlet>
+			<SimpleProstheticArm>1</SimpleProstheticArm>
+		</costList>
+		<statBases>
+			<MarketValue>1260</MarketValue>
+			<MaxHitPoints>250</MaxHitPoints>
+			<Flammability>0.05</Flammability>
+			<Beauty>-3</Beauty>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Mass>3.15</Mass>
+		</statBases>
+	</ThingDef>
+
+<!--Simple Prosthetics+Tech-->
+	<ThingDef ParentName="CombineProstheticandGauntlet_TechBase">
+		<defName>SimpleProstheticForearmWithGauntlet_TechGauntlet</defName>
+		<label>prosthetic forearm with metal gauntlet</label>
+		<description>An installed prosthetic forearm. Has a metal gauntlet attached.</description>
+		<techLevel>Neolithic</techLevel>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_TechGauntlet</ThingDef>
+			<ThingDef>ABYautja_SimpleProstheticForearm</ThingDef>
+			<HediffDef>ABYautja_SimpleProsthetic_Forearm_TechGauntlet</HediffDef>
+			<RecipeDef>Install_SimpleProstheticForearmWithGauntlet_TechGauntlet</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<ABYautja_TechGauntlet>1</ABYautja_TechGauntlet>
+			<ABYautja_SimpleProstheticForearm>1</ABYautja_SimpleProstheticForearm>
+		</costList>
+		<statBases>
+			<MarketValue>4630</MarketValue>
+			<MaxHitPoints>250</MaxHitPoints>
+			<Flammability>0.05</Flammability>
+			<Beauty>-3</Beauty>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Mass>2.15</Mass>
+		</statBases>
+	</ThingDef>
+	
+	<ThingDef ParentName="CombineProstheticandGauntlet_TechBase">
+		<defName>SimpleProstheticArmWithGauntlet_TechGauntlet</defName>
+		<label>prosthetic arm with metal gauntlet</label>
+		<description>An installed prosthetic arm. Has a metal gauntlet attached.</description>
+		<techLevel>Neolithic</techLevel>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_TechGauntlet</ThingDef>
+			<ThingDef>SimpleProstheticArm</ThingDef>
+			<HediffDef>ABYautja_SimpleProsthetic_Arm_TechGauntlet</HediffDef>
+			<RecipeDef>Install_SimpleProstheticArmWithGauntlet_TechGauntlet</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<ABYautja_TechGauntlet>1</ABYautja_TechGauntlet>
+			<SimpleProstheticArm>1</SimpleProstheticArm>
+		</costList>
+		<statBases>
+			<MarketValue>4760</MarketValue>
+			<MaxHitPoints>250</MaxHitPoints>
+			<Flammability>0.05</Flammability>
+			<Beauty>-3</Beauty>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Mass>3.15</Mass>
+		</statBases>
+	</ThingDef>
+	
+<!--Bionic Prosthetics+Tribal-->
+	<ThingDef ParentName="CombineProstheticandGauntlet_TribalBase">
+		<defName>BionicForearmWithGauntlet_TribalGauntlet</defName>
+		<label>bionic forearm with wooden gauntlet</label>
+		<description>An installed bionic forearm. Has a wooden gauntlet attached.</description>
+		<techLevel>Neolithic</techLevel>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_TribalGauntlet</ThingDef>
+			<ThingDef>ABYautja_BionicForearm</ThingDef>
+			<HediffDef>ABYautja_Bionic_Forearm_TribalGauntlet</HediffDef>
+			<RecipeDef>Install_BionicForearmWithGauntlet_TribalGauntlet</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<ABYautja_TribalGauntlet>1</ABYautja_TribalGauntlet>
+			<ABYautja_BionicForearm>1</ABYautja_BionicForearm>
+		</costList>
+		<statBases>
+			<MarketValue>1515</MarketValue>
+			<MaxHitPoints>250</MaxHitPoints>
+			<Flammability>0.05</Flammability>
+			<Beauty>-3</Beauty>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Mass>2.15</Mass>
+		</statBases>
+	</ThingDef>
+	
+	<ThingDef ParentName="CombineProstheticandGauntlet_TribalBase">
+		<defName>BionicArmWithGauntlet_TribalGauntlet</defName>
+		<label>bionic arm with wooden gauntlet</label>
+		<description>An installed bionic arm. Has a wooden gauntlet attached.</description>
+		<techLevel>Neolithic</techLevel>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_TribalGauntlet</ThingDef>
+			<ThingDef>BionicArm</ThingDef>
+			<HediffDef>ABYautja_Bionic_Arm_TribalGauntlet</HediffDef>
+			<RecipeDef>Install_BionicArmWithGauntlet_TribalGauntlet</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<ABYautja_TribalGauntlet>1</ABYautja_TribalGauntlet>
+			<BionicArm>1</BionicArm>
+		</costList>
+		<statBases>
+			<MarketValue>2030</MarketValue>
+			<MaxHitPoints>250</MaxHitPoints>
+			<Flammability>0.05</Flammability>
+			<Beauty>-3</Beauty>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Mass>3.15</Mass>
+		</statBases>
+	</ThingDef>
+
+<!--Bionic Prosthetics+Tech-->
+	<ThingDef ParentName="CombineProstheticandGauntlet_TechBase">
+		<defName>BionicForearmWithGauntlet_TechGauntlet</defName>
+		<label>bionic forearm with metal gauntlet</label>
+		<description>An installed bionic forearm. Has a metal gauntlet attached.</description>
+		<techLevel>Neolithic</techLevel>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_TechGauntlet</ThingDef>
+			<ThingDef>ABYautja_BionicForearm</ThingDef>
+			<HediffDef>ABYautja_Bionic_Forearm_TechGauntlet</HediffDef>
+			<RecipeDef>Install_BionicForearmWithGauntlet_TechGauntlet</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<ABYautja_TechGauntlet>1</ABYautja_TechGauntlet>
+			<ABYautja_BionicForearm>1</ABYautja_BionicForearm>
+		</costList>
+		<statBases>
+			<MarketValue>5015</MarketValue>
+			<MaxHitPoints>250</MaxHitPoints>
+			<Flammability>0.05</Flammability>
+			<Beauty>-3</Beauty>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Mass>2.15</Mass>
+		</statBases>
+	</ThingDef>
+	
+	<ThingDef ParentName="CombineProstheticandGauntlet_TechBase">
+		<defName>BionicArmWithGauntlet_TechGauntlet</defName>
+		<label>bionic arm with metal gauntlet</label>
+		<description>An installed bionic arm. Has a metal gauntlet attached.</description>
+		<techLevel>Neolithic</techLevel>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_TechGauntlet</ThingDef>
+			<ThingDef>BionicArm</ThingDef>
+			<HediffDef>ABYautja_Bionic_Arm_TechGauntlet</HediffDef>
+			<RecipeDef>Install_BionicArmWithGauntlet_TechGauntlet</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<ABYautja_TechGauntlet>1</ABYautja_TechGauntlet>
+			<BionicArm>1</BionicArm>
+		</costList>
+		<statBases>
+			<MarketValue>5530</MarketValue>
+			<MaxHitPoints>250</MaxHitPoints>
+			<Flammability>0.05</Flammability>
+			<Beauty>-3</Beauty>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Mass>3.15</Mass>
+		</statBases>
+	</ThingDef>
+	
+<!--Archotech Prosthetics+Tribal-->
+	<ThingDef ParentName="CombineProstheticandGauntlet_TribalBase">
+		<defName>ArchotechForearmWithGauntlet_TribalGauntlet</defName>
+		<label>archotech forearm with wooden gauntlet</label>
+		<description>An installed archotech forearm. Has a wooden gauntlet attached.</description>
+		<techLevel>Neolithic</techLevel>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_TribalGauntlet</ThingDef>
+			<ThingDef>ABYautja_ArchotechForearm</ThingDef>
+			<HediffDef>ABYautja_Archotech_Forearm_TribalGauntlet</HediffDef>
+			<RecipeDef>Install_ArchotechForearmWithGauntlet_TribalGauntlet</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<ABYautja_TribalGauntlet>1</ABYautja_TribalGauntlet>
+			<ABYautja_ArchotechForearm>1</ABYautja_ArchotechForearm>
+		</costList>
+		<statBases>
+			<MarketValue>3000</MarketValue>
+			<MaxHitPoints>250</MaxHitPoints>
+			<Flammability>0.05</Flammability>
+			<Beauty>-3</Beauty>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Mass>2.15</Mass>
+		</statBases>
+	</ThingDef>
+	
+	<ThingDef ParentName="CombineProstheticandGauntlet_TribalBase">
+		<defName>ArchotechArmWithGauntlet_TribalGauntlet</defName>
+		<label>archotech arm with wooden gauntlet</label>
+		<description>An installed archotech arm. Has a wooden gauntlet attached.</description>
+		<techLevel>Neolithic</techLevel>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_TribalGauntlet</ThingDef>
+			<ThingDef>ArchotechArm</ThingDef>
+			<HediffDef>ABYautja_Archotech_Arm_TribalGauntlet</HediffDef>
+			<RecipeDef>Install_ArchotechArmWithGauntlet_TribalGauntlet</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<ABYautja_TribalGauntlet>1</ABYautja_TribalGauntlet>
+			<ArchotechArm>1</ArchotechArm>
+		</costList>
+		<statBases>
+			<MarketValue>3800</MarketValue>
+			<MaxHitPoints>250</MaxHitPoints>
+			<Flammability>0.05</Flammability>
+			<Beauty>-3</Beauty>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Mass>3.15</Mass>
+		</statBases>
+	</ThingDef>
+
+<!--Archotech Prosthetics+Tech-->
+	<ThingDef ParentName="CombineProstheticandGauntlet_TechBase">
+		<defName>ArchotechForearmWithGauntlet_TechGauntlet</defName>
+		<label>archotech forearm with metal gauntlet</label>
+		<description>An installed archotech forearm. Has a metal gauntlet attached.</description>
+		<techLevel>Neolithic</techLevel>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_TechGauntlet</ThingDef>
+			<ThingDef>ABYautja_ArchotechForearm</ThingDef>
+			<HediffDef>ABYautja_Archotech_Forearm_TechGauntlet</HediffDef>
+			<RecipeDef>Install_ArchotechForearmWithGauntlet_TechGauntlet</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<ABYautja_TechGauntlet>1</ABYautja_TechGauntlet>
+			<ABYautja_ArchotechForearm>1</ABYautja_ArchotechForearm>
+		</costList>
+		<statBases>
+			<MarketValue>6500</MarketValue>
+			<MaxHitPoints>250</MaxHitPoints>
+			<Flammability>0.05</Flammability>
+			<Beauty>-3</Beauty>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Mass>2.15</Mass>
+		</statBases>
+	</ThingDef>
+	
+	<ThingDef ParentName="CombineProstheticandGauntlet_TechBase">
+		<defName>ArchotechArmWithGauntlet_TechGauntlet</defName>
+		<label>archotech arm with metal gauntlet</label>
+		<description>An installed archotech arm. Has a metal gauntlet attached.</description>
+		<techLevel>Neolithic</techLevel>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_TechGauntlet</ThingDef>
+			<ThingDef>ArchotechArm</ThingDef>
+			<HediffDef>ABYautja_Archotech_Arm_TechGauntlet</HediffDef>
+			<RecipeDef>Install_ArchotechArmWithGauntlet_TechGauntlet</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<ABYautja_TechGauntlet>1</ABYautja_TechGauntlet>
+			<ArchotechArm>1</ArchotechArm>
+		</costList>
+		<statBases>
+			<MarketValue>7300</MarketValue>
+			<MaxHitPoints>250</MaxHitPoints>
+			<Flammability>0.05</Flammability>
+			<Beauty>-3</Beauty>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Mass>3.15</Mass>
+		</statBases>
+	</ThingDef>
+</Defs>

@@ -1,0 +1,313 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<HairDef Name="ABYautjaFeralHairBase" Abstract="true">
+		<styleGender>Any</styleGender>
+		<requiredGene>ABYautjaFeralHair_Tendril</requiredGene>
+		<category>Yautja</category>
+		<styleTags>
+		  <li>FERAL_Yautja</li>
+		</styleTags>
+	</HairDef>
+		
+<!--Ringed Long Dreds-->
+	<HairDef ParentName="ABYautjaFeralHairBase">
+		<defName>ABYautjaFeralAlbinoRingedLongDreds</defName>
+		<label>Albino Feral Yautja Gold Ringed Long Dreds</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/FeralHead/FeralYautjaTendrilAlbinoRingedHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaFeralHairBase">
+		<defName>ABYautjaFeralAlbinoSilverRingedLongDreds</defName>
+		<label>Albino Feral Yautja Silver Ringed Long Dreds</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/FeralHead/SILVER_FeralYautjaTendrilAlbinoRingedHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaFeralHairBase">
+		<defName>ABYautjaFeralRingedLongDreds</defName>
+		<label>Feral Yautja Gold Ringed Long Dreds</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/FeralHead/FeralYautjaTendrilRingedHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaFeralHairBase">
+		<defName>ABYautjaFeralSilverRingedLongDreds</defName>
+		<label>Feral Yautja Silver Ringed Long Dreds</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/FeralHead/SILVER_FeralYautjaTendrilRingedHair</texPath>
+	</HairDef>
+	
+<!--Long Dreds-->
+	<HairDef ParentName="ABYautjaFeralHairBase">
+		<defName>ABYautjaFeralAlbinoLongDreds</defName>
+		<label>Albino Feral Yautja Long Dreds</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/FeralHead/FeralYautjaTendrilAlbinoHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaFeralHairBase">
+		<defName>ABYautjaFeralLongDreds</defName>
+		<label>Feral Yautja Long Dreds</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/FeralHead/FeralYautjaTendrilHair</texPath>
+	</HairDef>
+	
+<!--Ringed Short Dreds-->
+	<HairDef ParentName="ABYautjaFeralHairBase">
+		<defName>ABYautjaFeralAlbinoRingedShortDreds</defName>
+		<label>Albino Feral Yautja Gold Ringed Short Dreds</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/FeralHead/FeralYautjaShortTendrilAlbinoRingedHair</texPath>
+	</HairDef>
+	
+    <HairDef ParentName="ABYautjaFeralHairBase">
+		<defName>ABYautjaFeralAlbinoSilverRingedShortDreds</defName>
+		<label>Albino Feral Yautja Silver Ringed Short Dreds</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/FeralHead/SILVER_FeralYautjaShortTendrilAlbinoRingedHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaFeralHairBase">
+		<defName>ABYautjaFeralRingedShortDreds</defName>
+		<label>Feral Yautja Gold Ringed Short Dreds</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/FeralHead/FeralYautjaShortTendrilRingedHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaFeralHairBase">
+		<defName>ABYautjaFeralSilverRingedShortDreds</defName>
+		<label>Feral Yautja Silver Ringed Short Dreds</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/FeralHead/SILVER_FeralYautjaShortTendrilRingedHair</texPath>
+	</HairDef>
+	
+<!--Short Dreds-->
+	<HairDef ParentName="ABYautjaFeralHairBase">
+		<defName>ABYautjaFeralAlbinoShortDreds</defName>
+		<label>Albino Feral Yautja Short Dreds</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/FeralHead/FeralYautjaShortTendrilAlbinoHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaFeralHairBase">
+		<defName>ABYautjaFeralShortDreds</defName>
+		<label>Feral Yautja Short Dreds</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/FeralHead/FeralYautjaShortTendrilHair</texPath>
+	</HairDef>
+	
+<!--Ringed Long Half-Up-->
+	<HairDef ParentName="ABYautjaFeralHairBase">
+		<defName>ABYautjaFeralRingedLongHalfUp</defName>
+		<label>Feral Yautja Long Gold Ringed Half-Up</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/FeralHead/FeralYautjaLongHalfUpRingedHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaFeralHairBase">
+		<defName>ABYautjaFeralSilverRingedLongHalfUp</defName>
+		<label>Feral Yautja Long Silver Ringed Half-Up</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/FeralHead/SILVER_FeralYautjaLongHalfUpRingedHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaFeralHairBase">
+		<defName>ABYautjaFeralAlbinoRingedLongHalfUp</defName>
+		<label>Albino Feral Yautja Long Gold Ringed Half-Up</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/FeralHead/FeralYautjaLongHalfUpRingedAlbinoHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaFeralHairBase">
+		<defName>ABYautjaFeralAlbinoSilverRingedLongHalfUp</defName>
+		<label>Albino Feral Yautja Long Silver Ringed Half-Up</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/FeralHead/SILVER_FeralYautjaLongHalfUpRingedAlbinoHair</texPath>
+	</HairDef>
+	
+<!--Long Half-Up-->
+	<HairDef ParentName="ABYautjaFeralHairBase">
+		<defName>ABYautjaFeralLongHalfUp</defName>
+		<label>Feral Yautja Long Half-Up</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/FeralHead/FeralYautjaLongHalfUpHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaFeralHairBase">
+		<defName>ABYautjaFeralLongSilverHalfUp</defName>
+		<label>Feral Yautja Long Silver Half-Up</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/FeralHead/SILVER_FeralYautjaLongHalfUpHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaFeralHairBase">
+		<defName>ABYautjaFeralAlbinoLongHalfUp</defName>
+		<label>Albino Feral Yautja Long Half-Up</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/FeralHead/FeralYautjaLongHalfUpAlbinoHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaFeralHairBase">
+		<defName>ABYautjaFeralAlbinoLongSilverHalfUp</defName>
+		<label>Albino Feral Yautja Long Silver Half-Up</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/FeralHead/SILVER_FeralYautjaLongHalfUpAlbinoHair</texPath>
+	</HairDef>
+	
+<!--Short Half-Up-->
+	<HairDef ParentName="ABYautjaFeralHairBase">
+		<defName>ABYautjaFeralShortHalfUp</defName>
+		<label>Feral Yautja Short Half-Up</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/FeralHead/FeralYautjaShortHalfUpHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaFeralHairBase">
+		<defName>ABYautjaFeralShortSilverHalfUp</defName>
+		<label>Feral Yautja Short Silver Half-Up</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/FeralHead/SILVER_FeralYautjaShortHalfUpHair</texPath>
+	</HairDef> 
+	
+	<HairDef ParentName="ABYautjaFeralHairBase">
+		<defName>ABYautjaFeralAlbinoShortHalfUp</defName>
+		<label>Albino Feral Yautja Short Half-Up</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/FeralHead/FeralYautjaShortHalfUpAlbinoHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaFeralHairBase">
+		<defName>ABYautjaFeralAlbinoShortSilverHalfUp</defName>
+		<label>Albino Feral Yautja Short Silver Half-Up</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/FeralHead/SILVER_FeralYautjaShortHalfUpAlbinoHair</texPath>
+	</HairDef>
+	
+<!--Ringed Short Half-Up-->
+	<HairDef ParentName="ABYautjaFeralHairBase">
+		<defName>ABYautjaFeralRingedShortHalfUp</defName>
+		<label>Feral Yautja Short Gold Ringed Half-Up</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/FeralHead/FeralYautjaShortHalfUpRingedHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaFeralHairBase">
+		<defName>ABYautjaFeralSilverRingedShortHalfUp</defName>
+		<label>Feral Yautja Short Silver Ringed Half-Up</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/FeralHead/SILVER_FeralYautjaShortHalfUpRingedHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaFeralHairBase">
+		<defName>ABYautjaFeralAlbinoRingedShortHalfUp</defName>
+		<label>Albino Feral Yautja Short Gold Ringed Half-Up</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/FeralHead/FeralYautjaShortHalfUpRingedAlbinoHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaFeralHairBase">
+		<defName>ABYautjaFeralAlbinoSilverRingedShortHalfUp</defName>
+		<label>Albino Feral Yautja Short Silver Ringed Half-Up</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/FeralHead/SILVER_FeralYautjaShortHalfUpRingedAlbinoHair</texPath>
+	</HairDef>
+	
+<!--Long Ringed Ponytail-->
+	<HairDef ParentName="ABYautjaFeralHairBase">
+		<defName>ABYautjaFeralRingedLongPonytail</defName>
+		<label>Feral Yautja Long Gold Ringed Ponytail</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/FeralHead/FeralYautjaRingedLongPonytailHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaFeralHairBase">
+		<defName>ABYautjaFeralSilverRingedLongPonytail</defName>
+		<label>Feral Yautja Long Silver Ringed Ponytail</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/FeralHead/SILVER_FeralYautjaRingedLongPonytailHair</texPath>
+	</HairDef>  
+	
+	<HairDef ParentName="ABYautjaFeralHairBase">
+		<defName>ABYautjaFeralAlbinoRingedLongPonytail</defName>
+		<label>Albino Feral Yautja Long Gold Ringed Ponytail</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/FeralHead/FeralYautjaRingedLongPonytailAlbinoHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaFeralHairBase">
+		<defName>ABYautjaFeralAlbinoSilverRingedLongPonytail</defName>
+		<label>Albino Feral Yautja Long Silver Ringed Ponytail</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/FeralHead/SILVER_FeralYautjaRingedLongPonytailAlbinoHair</texPath>
+	</HairDef>
+	
+<!--Long Ponytail-->
+	<HairDef ParentName="ABYautjaFeralHairBase">
+		<defName>ABYautjaFeralLongPonytail</defName>
+		<label>Feral Yautja Long Gold Ponytail</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/FeralHead/FeralYautjaLongPonytailHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaFeralHairBase">
+		<defName>ABYautjaFeralLongSilverPonytail</defName>
+		<label>Feral Yautja Long Silver Ponytail</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/FeralHead/SILVER_FeralYautjaLongPonytailHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaFeralHairBase">
+		<defName>ABYautjaFeralAlbinoLongPonytail</defName>
+		<label>Albino Feral Yautja Long Gold Ponytail</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/FeralHead/FeralYautjaLongPonytailAlbinoHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaFeralHairBase">
+		<defName>ABYautjaFeralAlbinoLongSilverPonytail</defName>
+		<label>Albino Feral Yautja Long Silver Ponytail</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/FeralHead/SILVER_FeralYautjaLongPonytailAlbinoHair</texPath>
+	</HairDef>
+	
+<!--Short Ringed Ponytail-->
+	<HairDef ParentName="ABYautjaFeralHairBase">
+		<defName>ABYautjaFeralRingedShortPonytail</defName>
+		<label>Feral Yautja Short Gold Ringed Ponytail</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/FeralHead/FeralYautjaRingedShortPonytailHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaFeralHairBase">
+		<defName>ABYautjaFeralSilverRingedShortPonytail</defName>
+		<label>Feral Yautja Short Silver Ringed Ponytail</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/FeralHead/SILVER_FeralYautjaRingedShortPonytailHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaFeralHairBase">
+		<defName>ABYautjaFeralAlbinoRingedShortPonytail</defName>
+		<label>Albino Feral Yautja Short Gold Ringed Ponytail</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/FeralHead/FeralYautjaRingedShortPonytailAlbinoHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaFeralHairBase">
+		<defName>ABYautjaFeralAlbinoSilverRingedShortPonytail</defName>
+		<label>Albino Feral Yautja Short Silver Ringed Ponytail</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/FeralHead/SILVER_FeralYautjaRingedShortPonytailAlbinoHair</texPath>
+	</HairDef>
+	
+<!--Short Ponytail-->
+	<HairDef ParentName="ABYautjaFeralHairBase">
+		<defName>ABYautjaFeralShortPonytail</defName>
+		<label>Feral Yautja Short Gold Ponytail</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/FeralHead/FeralYautjaShortPonytailHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaFeralHairBase">
+		<defName>ABYautjaFeralShortSilverPonytail</defName>
+		<label>Feral Yautja Short Silver Ponytail</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/FeralHead/SILVER_FeralYautjaShortPonytailHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaFeralHairBase">
+		<defName>ABYautjaFeralAlbinoShortPonytail</defName>
+		<label>Albino Feral Yautja Short Gold Ponytail</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/FeralHead/FeralYautjaShortPonytailAlbinoHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaFeralHairBase">
+		<defName>ABYautjaFeralAlbinoShortSilverPonytail</defName>
+		<label>Albino Feral Yautja Short Silver Ponytail</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/FeralHead/SILVER_FeralYautjaShortPonytailAlbinoHair</texPath>
+	</HairDef>  
+	
+<!--Bun-->
+	<HairDef ParentName="ABYautjaFeralHairBase">
+		<defName>ABYautjaFeralBun</defName>
+		<label>Feral Yautja Gold Bun</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/FeralHead/FeralYautjaBunHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaFeralHairBase">
+		<defName>ABYautjaFeralSilverBun</defName>
+		<label>Feral Yautja Silver Bun</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/FeralHead/SILVER_FeralYautjaBunHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaFeralHairBase">
+		<defName>ABYautjaFeralAlbinoBun</defName>
+		<label>Albino Feral Yautja Gold Bun</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/FeralHead/FeralYautjaAlbinoBunHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaFeralHairBase">
+		<defName>ABYautjaFeralAlbinoSilverBun</defName>
+		<label>Albino Feral Yautja Silver Bun</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/FeralHead/SILVER_FeralYautjaAlbinoBunHair</texPath>
+	</HairDef>
+</Defs>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    ╔══════════════════════════════════════════════════════════════════╗
+    ║  ABX BLOODING SYSTEM — HediffDef (Boilerplate / Template)        ║
+    ╠══════════════════════════════════════════════════════════════════╣
+    ║  This file defines the primary HediffDef used by the Blooding    ║
+    ║  C# progression logic. The defName MUST be "ABX_Hediff_Blooding" ║
+    ║  to match the static reference in BloodingDefOf.cs.              ║
+    ║                                                                  ║
+    ║  Hunter progression is controlled entirely via SEVERITY:         ║
+    ║  each stage corresponds to a hunter rank.                        ║
+    ║                                                                  ║
+    ║  INSTRUCTIONS FOR XML DEVELOPER:                                 ║
+    ║  1. Adjust labels, descriptions, and stat offsets as desired.    ║
+    ║  2. Add, remove, or retune stages as needed.                     ║
+    ║  3. minSeverity on each stage dictates rank advancement gates.   ║
+    ║  4. hediffClass and the tracker comp are REQUIRED for tracking.  ║
+    ╚══════════════════════════════════════════════════════════════════╝
+-->
+<Defs>
+
+    <HediffDef>
+        <!-- 
+            IMPORTANT: Referenced directly by BloodingDefOf.cs.
+            Do not rename without updating the corresponding C# field.
+        -->
+        <defName>ABX_Hediff_Blooding</defName>
+        <label>blooding</label>
+        <description>The mark of a hunter's progression. Each worthy kill strengthens the Yautja's standing among their clan, advancing them through the ranks of the hunt.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        
+        <!-- Never naturally removed by tending or immunity -->
+        <isBad>false</isBad>
+        <defaultLabelColor>(0.7, 0.85, 0.5)</defaultLabelColor>
+        <makesSickThought>false</makesSickThought>
+        <tendable>false</tendable>
+        <scenarioCanAdd>false</scenarioCanAdd>
+        
+        <!-- Severity limits: 1 instance per pawn, capped at 1.0 -->
+        <maxSeverity>1.0</maxSeverity>
+        <minSeverity>0.01</minSeverity>
+
+        <!-- 
+            Tracker Component:
+            HediffComp_BloodingTracker logs kills, scores, and personal bests.
+        -->
+        <comps>
+            <li Class="ABXenotypeYautja.BloodingSystem.HediffCompProperties_BloodingTracker">
+                <showKillCountInTooltip>true</showKillCountInTooltip>
+            </li>
+        </comps>
+
+        <!-- 
+            ══════════════════════════════════════════════
+            STAGES — Each stage represents a hunter rank.
+            minSeverity defines the threshold to enter each rank.
+            ══════════════════════════════════════════════
+        -->
+        <stages>
+
+            <!-- RANK 0: Young Blood (First worthy kill) -->
+            <li>
+                <minSeverity>0.01</minSeverity>
+                <label>young blood</label>
+                <becomeVisible>true</becomeVisible>
+				<statOffsets>
+					<MeleeHitChance>0.02</MeleeHitChance>
+					<MeleeDodgeChance>0.01</MeleeDodgeChance>
+				</statOffsets>
+            </li>
+
+            <!-- RANK 1: Blooded (Novice hunter) -->
+            <li>
+                <minSeverity>0.20</minSeverity>
+                <label>blooded</label>
+                <becomeVisible>true</becomeVisible>
+				<statOffsets>
+					<MeleeHitChance>0.05</MeleeHitChance>
+					<MeleeDodgeChance>0.03</MeleeDodgeChance>
+					<PainShockThreshold>0.05</PainShockThreshold>
+				</statOffsets>
+            </li>
+
+            <!-- RANK 2: Warrior (Experienced hunter) -->
+            <li>
+                <minSeverity>0.40</minSeverity>
+                <label>warrior</label>
+                <becomeVisible>true</becomeVisible>
+				<statOffsets>
+					<MeleeHitChance>0.10</MeleeHitChance>
+					<MeleeDodgeChance>0.05</MeleeDodgeChance>
+					<PainShockThreshold>0.10</PainShockThreshold>
+					<GlobalLearningFactor>0.05</GlobalLearningFactor>
+				</statOffsets>
+            </li>
+
+            <!-- RANK 3: Elite (Elite hunter) -->
+            <li>
+                <minSeverity>0.60</minSeverity>
+                <label>elite</label>
+                <becomeVisible>true</becomeVisible>
+				<statOffsets>
+					<MeleeHitChance>0.15</MeleeHitChance>
+					<MeleeDodgeChance>0.08</MeleeDodgeChance>
+					<PainShockThreshold>0.15</PainShockThreshold>
+					<ArmorRating_Sharp>0.05</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+				</statOffsets>
+            </li>
+
+            <!-- RANK 4: Elder (Supreme veteran) -->
+            <li>
+                <minSeverity>0.80</minSeverity>
+                <label>elder</label>
+                <becomeVisible>true</becomeVisible>
+				<statOffsets>
+					<MeleeHitChance>0.20</MeleeHitChance>
+					<MeleeDodgeChance>0.12</MeleeDodgeChance>
+					<PainShockThreshold>0.20</PainShockThreshold>
+					<ArmorRating_Sharp>0.10</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.10</ArmorRating_Blunt>
+					<ShootingAccuracyPawn>0.05</ShootingAccuracyPawn>
+				</statOffsets>
+            </li>
+
+            <!-- RANK 5: Ancient (Living legend) -->
+            <li>
+                <minSeverity>1.00</minSeverity>
+                <label>ancient</label>
+                <becomeVisible>true</becomeVisible>
+				<statOffsets>
+					<MeleeHitChance>0.25</MeleeHitChance>
+					<MeleeDodgeChance>0.15</MeleeDodgeChance>
+					<PainShockThreshold>0.25</PainShockThreshold>
+					<ArmorRating_Sharp>0.15</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+					<ShootingAccuracyPawn>0.10</ShootingAccuracyPawn>
+					<MoveSpeed>0.3</MoveSpeed>
+				</statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+</Defs>

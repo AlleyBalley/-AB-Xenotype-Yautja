@@ -2,7 +2,7 @@
 <Defs>
 	<ThingDef ParentName="FilthBlood">
 		<defName>ABYautja_FilthBlood</defName>
-		<label>yautja blood</label>
+		<label>predator blood</label>
 		<graphicData>
 			<color>(60, 209, 15, 180)</color>
 		</graphicData>
@@ -10,7 +10,7 @@
 	
 	<ThingDef ParentName="FilthBlood">
 		<defName>ABYautja_FilthBloodSmear</defName>
-		<label>yautja blood smear</label>
+		<label>predator blood smear</label>
 		<graphicData>
 			<texPath>Things/Filth/CrawlSmear</texPath>
 			<color>(60, 209, 15, 180)</color>

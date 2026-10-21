@@ -57,7 +57,7 @@
 	  	
 	<ThingCategoryDef>
 		<defName>ABYautja_Equipment</defName>
-		<label>Yautja Equipment</label>
+		<label>Yautja equipment</label>
 		<parent>ApparelUtility</parent>
 	</ThingCategoryDef>
 </Defs>

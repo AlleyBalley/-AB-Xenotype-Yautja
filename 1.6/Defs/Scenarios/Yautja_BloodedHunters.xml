@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+<!--Blooded Yautja Hunters-->
+	<ScenarioDef ParentName="ScenarioBase">
+		<defName>ABYautjaScenarioBlooded</defName>
+		<label>Blooded Yautja hunters</label>
+		<description>After decades of hunting, your Pack decided to go and claim new hunting grounds for the Glory of the Clan.</description>
+		<scenario>
+			<summary>Four Blooded Yautja attempt to build their own clan. Difficult.</summary>
+			<playerFaction>
+				<factionDef>ABYautja_PlayerBlooded</factionDef>
+			</playerFaction>
+			<parts Inherit="False">
+			<!-- Config pages -->
+				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes">
+					<def>ConfigurePawnsXenotypes</def>
+					<customSummary>Start with just yautja.</customSummary>
+					<overrideKinds>
+						<li>
+							<pawnKind>Colonist_ABYautja_Blooded</pawnKind>
+						</li>
+					</overrideKinds>
+				</li>
+			<!--Scene Parts-->
+				<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>ABYautja_Tech_T1</project>
+				</li>
+				<li Class="ScenPart_PlayerPawnsArriveMethod">
+					<def>PlayerPawnsArriveMethod</def>
+					<method>DropPods</method>
+					<visible>false</visible>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Silver</thingDef>
+					<count>500</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MealSurvivalPack</thingDef>
+					<count>30</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MedicineIndustrial</thingDef>
+					<count>20</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>ABYautja_Gun_Burner</thingDef>
+					<stuff>Steel</stuff>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>ABYautja_Melee_BladedMaul</thingDef>
+					<stuff>Steel</stuff>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>ABYautja_Gun_HandheldPlasmacaster</thingDef>
+					<stuff>Steel</stuff>
+					<count>2</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsNearPlayerStart">
+					<def>ScatterThingsNearPlayerStart</def>
+					<thingDef>Steel</thingDef>
+					<count>720</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsNearPlayerStart">
+					<def>ScatterThingsNearPlayerStart</def>
+					<thingDef>Steel</thingDef>
+					<count>720</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsNearPlayerStart">
+					<def>ScatterThingsNearPlayerStart</def>
+					<thingDef>Plasteel</thingDef>
+					<count>50</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsNearPlayerStart">
+					<def>ScatterThingsNearPlayerStart</def>
+					<thingDef>ComponentIndustrial</thingDef>
+					<count>15</count>
+				</li>
+				<li Class="ScenPart_GameStartDialog">
+					<def>GameStartDialog</def>
+					<text>You land in the middle of the unknown. Time to make your Clan proud and find worthy preys.</text>
+					<closeSound>GameStartSting</closeSound>
+				</li>
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<thingDef>ShipChunk</thingDef>
+					<count>10</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<thingDef>Steel</thingDef>
+					<count>200</count>
+				</li>
+			</parts>
+		</scenario>
+	</ScenarioDef>
+</Defs>

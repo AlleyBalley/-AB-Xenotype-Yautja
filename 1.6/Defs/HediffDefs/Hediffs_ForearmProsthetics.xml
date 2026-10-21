@@ -4,7 +4,7 @@
 	<HediffDef ParentName="AddedBodyPartBase">
 		<defName>ABYautja_WoodenForearm</defName>
 		<label>wooden forearm</label>
-		<labelNoun>a wooden forearm</labelNoun>
+		<labelNoun>wooden</labelNoun>
 		<description>An installed wooden forearm complete with a wooden hand. Better than a stump, but not by much.</description>
 		<priceImpact>false</priceImpact>
 		<descriptionHyperlinks>
@@ -13,14 +13,14 @@
 		<spawnThingOnRemoved>WoodLog</spawnThingOnRemoved>
 		<addedPartProps>
 			<solid>true</solid>
-			<partEfficiency>0.6</partEfficiency>
+			<partEfficiency>0.3</partEfficiency>
 		</addedPartProps>
 	</HediffDef>
 
 	<HediffDef ParentName="AddedBodyPartBase">
 		<defName>ABYautja_SimpleProstheticForearm</defName>
 		<label>prosthetic forearm</label>
-		<labelNoun>a prosthetic forearm</labelNoun>
+		<labelNoun>prosthetic</labelNoun>
 		<description>An installed prosthetic forearm. While it lacks a neural interface, its complex arrangement of internal joints allows it to mimic natural movement quite convincingly. Still, it is inferior to a real forearm.</description>
 		<descriptionHyperlinks>
 			<ThingDef>ABYautja_SimpleProstheticForearm</ThingDef>
@@ -28,7 +28,7 @@
 		<spawnThingOnRemoved>ABYautja_SimpleProstheticForearm</spawnThingOnRemoved>
 		<addedPartProps>
 			<solid>true</solid>
-			<partEfficiency>0.85</partEfficiency>
+			<partEfficiency>0.5</partEfficiency>
 		</addedPartProps>
 		<comps>
 			<li Class="HediffCompProperties_VerbGiver">
@@ -38,8 +38,7 @@
 						<capacities>
 							<li>Blunt</li>
 						</capacities>
-						<power>8.2</power>
-						<!--  Same as natural fist  -->
+						<power>8.2</power> <!--  Same as natural fist  -->
 						<cooldownTime>2</cooldownTime>
 					</li>
 				</tools>
@@ -50,7 +49,7 @@
 	<HediffDef ParentName="AddedBodyPartBase">
 		<defName>ABYautja_BionicForearm</defName>
 		<label>bionic forearm</label>
-		<labelNoun>a bionic forearm</labelNoun>
+		<labelNoun>bionic</labelNoun>
 		<description>An installed bionic forearm. Silenced mini-servos give great strength, while the biogel nerve-link gives exquisite control. A lattice-dust healing system allows it to recover from damage. It is better than a biological forearm in almost every way.</description>
 		<descriptionHyperlinks>
 			<ThingDef>ABYautja_BionicForearm</ThingDef>
@@ -82,7 +81,7 @@
 	<HediffDef ParentName="AddedBodyPartBase">
 		<defName>ABYautja_ArchotechForearm</defName>
 		<label>archotech forearm</label>
-		<labelNoun>an archotech forearm</labelNoun>
+		<labelNoun>archotech</labelNoun>
 		<description>An installed archotech forearm. It looks and feels like natural flesh, but it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. Its internal workings are a mystery to all human minds.</description>
 		<descriptionHyperlinks>
 			<ThingDef>ABYautja_ArchotechForearm</ThingDef>

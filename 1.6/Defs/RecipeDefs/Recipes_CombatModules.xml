@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!--wristblade launcher-->
+	<RecipeDef ParentName="GauntletModuleInstall">
+		<defName>ABYautja_InstallWristbladeLauncher</defName>
+		<label>install a wristblade launcher</label>
+		<description>Install a wristblade launcher.</description>
+		<jobString>installing wristblade launcher.</jobString>
+		<incompatibleWithHediffTags>
+			<li>GauntletModuleTag_Combat</li>
+		</incompatibleWithHediffTags>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_WristbladeLauncher</ThingDef>
+			<HediffDef>ABYautja_WristbladeLauncher</HediffDef>
+		</descriptionHyperlinks>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ABYautja_WristbladeLauncher</li>
+					</thingDefs>
+				</filter>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ABYautja_WristbladeLauncher</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>ABYautja_WristbladeLauncher</addsHediff>
+		<uiIconThing>ABYautja_WristbladeLauncher</uiIconThing>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="GauntletModuleRemove">
+		<defName>ABYautja_WristbladeLauncherRemove</defName>
+		<workerClass>ABXenotypeYautja.Recipe_RemoveGauntletModule</workerClass>
+		<label>remove wristblade launcher</label>
+		<description>remove wristblade launcher.</description>
+		<jobString>remove wristblade launcher.</jobString>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_WristbladeLauncher</ThingDef>
+			<HediffDef>ABYautja_WristbladeLauncher</HediffDef>
+		</descriptionHyperlinks>
+		<removesHediff>ABYautja_WristbladeLauncher</removesHediff>
+	</RecipeDef>
+	
+<!--wrist rocket-->
+	<RecipeDef ParentName="GauntletModuleInstall">
+		<defName>ABYautja_InstallWristRocket</defName>
+		<label>install a wrist rocket</label>
+		<description>Install a wrist rocket launcher.</description>
+		<jobString>installing wrist rocket.</jobString>
+		<incompatibleWithHediffTags>
+			<li>GauntletModuleTag_Combat</li>
+		</incompatibleWithHediffTags>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_WristRocket</ThingDef>
+			<HediffDef>ABYautja_WristRocket</HediffDef>
+		</descriptionHyperlinks>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ABYautja_WristRocket</li>
+					</thingDefs>
+				</filter>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ABYautja_WristRocket</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>ABYautja_WristRocket</addsHediff>
+		<uiIconThing>ABYautja_WristRocket</uiIconThing>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="GauntletModuleRemove">
+		<defName>ABYautja_WristRocketRemove</defName>
+		<workerClass>ABXenotypeYautja.Recipe_RemoveGauntletModule</workerClass>
+		<label>remove wrist rocket</label>
+		<description>remove wrist rocket launcher.</description>
+		<jobString>remove wrist rocket.</jobString>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_WristRocket</ThingDef>
+			<HediffDef>ABYautja_WristRocket</HediffDef>
+		</descriptionHyperlinks>
+		<removesHediff>ABYautja_WristRocket</removesHediff>
+	</RecipeDef>
+	
+<!--energy flechette-->
+	<RecipeDef ParentName="GauntletModuleInstall">
+		<defName>ABYautja_InstallEnergyFlechette</defName>
+		<label>install a energy flechette</label>
+		<description>Install a energy flechette.</description>
+		<jobString>installing energy flechette.</jobString>
+		<incompatibleWithHediffTags>
+			<li>GauntletModuleTag_Combat</li>
+		</incompatibleWithHediffTags>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_EnergyFlechette</ThingDef>
+			<HediffDef>ABYautja_EnergyFlechette</HediffDef>
+		</descriptionHyperlinks>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ABYautja_EnergyFlechette</li>
+					</thingDefs>
+				</filter>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ABYautja_EnergyFlechette</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>ABYautja_EnergyFlechette</addsHediff>
+		<uiIconThing>ABYautja_EnergyFlechette</uiIconThing>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="GauntletModuleRemove">
+		<defName>ABYautja_EnergyFlechetteRemove</defName>
+		<workerClass>ABXenotypeYautja.Recipe_RemoveGauntletModule</workerClass>
+		<label>remove energy flechette</label>
+		<description>remove energy flechette.</description>
+		<jobString>remove energy flechette.</jobString>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_EnergyFlechette</ThingDef>
+			<HediffDef>ABYautja_EnergyFlechette</HediffDef>
+		</descriptionHyperlinks>
+		<removesHediff>ABYautja_EnergyFlechette</removesHediff>
+	</RecipeDef>
+	
+<!--wrist cannon-->
+	<RecipeDef ParentName="GauntletModuleInstall">
+		<defName>ABYautja_InstallWristCannon</defName>
+		<label>install a wrist cannon</label>
+		<description>Install a wrist cannon.</description>
+		<jobString>installing wrist cannon.</jobString>
+		<incompatibleWithHediffTags>
+			<li>GauntletModuleTag_Combat</li>
+		</incompatibleWithHediffTags>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_WristCannon</ThingDef>
+			<HediffDef>ABYautja_WristCannon</HediffDef>
+		</descriptionHyperlinks>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ABYautja_WristCannon</li>
+					</thingDefs>
+				</filter>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ABYautja_WristCannon</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>ABYautja_WristCannon</addsHediff>
+		<uiIconThing>ABYautja_WristCannon</uiIconThing>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="GauntletModuleRemove">
+		<defName>ABYautja_WristCannonRemove</defName>
+		<workerClass>ABXenotypeYautja.Recipe_RemoveGauntletModule</workerClass>
+		<label>remove wrist cannon</label>
+		<description>remove wrist cannon.</description>
+		<jobString>remove wrist cannon.</jobString>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_WristCannon</ThingDef>
+			<HediffDef>ABYautja_WristCannon</HediffDef>
+		</descriptionHyperlinks>
+		<removesHediff>ABYautja_WristCannon</removesHediff>
+	</RecipeDef>
+</Defs>

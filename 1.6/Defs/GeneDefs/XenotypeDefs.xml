@@ -1,21 +1,38 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+<!--Base-->
+	<xenotypeDef Name="ABYautjaXenoBase" Abstract="True">
+		<inheritable>true</inheritable>
+		<nameMaker>ABNamerPerson_Yautja_Male</nameMaker>
+		<nameMakerFemale>ABNamerPerson_Yautja_Female</nameMakerFemale>
+		<chanceToUseNameMaker>5</chanceToUseNameMaker>
+		<modExtensions>
+            <li Class="EBSGFramework.EBSGExtension">
+				<hideAllInactiveSkinColorGenesForXenotype>true</hideAllInactiveSkinColorGenesForXenotype>
+				<hideAllInactiveHairColorGenesForXenotype>true</hideAllInactiveHairColorGenesForXenotype>
+            </li>
+        </modExtensions>
+		<genes>
+			<li>ABX_BloodingSystem</li>
+		</genes>
+	</xenotypeDef>
 <!--Standard-->
-  <XenotypeDef>
+  <XenotypeDef ParentName="ABYautjaXenoBase">
     <defName>ABStandardYautja</defName>
     <label>Yautja</label>
 	<description>Yautja are extra terrestrial hunters that hail from the planet Yautja Prime. They are prolific killers with a fondness for the art of hunting, basing their entire society around it. Those who do not respect the honor and tradition of the hunt are banished.</description>
     <descriptionShort>Yautja are extra terrestrials with an intense skill and fondness for hunting.</descriptionShort>
     <iconPath>UI/Icons/Xenotypes/Yautja</iconPath>
-	<inheritable>true</inheritable>
     <displayPriority>-3605</displayPriority>
-	<nameMaker>ABNamerPerson_Yautja_Unisex</nameMaker>
-    <chanceToUseNameMaker>5</chanceToUseNameMaker>
     <genes>
 	<!--Vanilla Genes-->
 		<li>DarkVision</li>
-		<li>Nearsighted</li>
 	<!--Yautja Genes-->
+		<li>ABYautjaHair_Tendril</li>
+		<li>ABYautjaBald</li>
+		<li>ABYautjaLeatherySkin</li>
+		<li>ABYautjaMonocolorVision</li>
+		<li>ABYautjaSharpShooter</li>
 		<li>ABYautjaAdvancedTechnologically</li>
 		<li>ABYautja_BreedingSeason</li>
 		<li>ABYautjaUpperMandibles</li>
@@ -25,24 +42,26 @@
     </genes>
 	</XenotypeDef>
 <!--Berserk-->
-  <XenotypeDef>
+  <XenotypeDef ParentName="ABYautjaXenoBase">
     <defName>ABBerserkYautja</defName>
     <label>Super Yautja</label>
-	<description>Yautja are extra terrestrial hunters that hail from the planet Yautja Prime. They are prolific killers with a fondness for the art of hunting, basing their entire society around it. Those who do not respect the honor and tradition of the hunt are banished.</description>
-    <descriptionShort>Yautja are extra terrestrials with an intense skill and fondness for hunting.</descriptionShort>
+	<description>Super yautja are everything the average yautja is but better. Larger, stronger, and all too eager to gloat about it.</description>
+    <descriptionShort>Super yautja are everything the average yautja is but better.</descriptionShort>
     <iconPath>UI/Icons/Xenotypes/Yautja</iconPath>
-	<inheritable>true</inheritable>
     <displayPriority>-3606</displayPriority>
-	<nameMaker>ABNamerPerson_Yautja_Unisex</nameMaker>
-    <chanceToUseNameMaker>5</chanceToUseNameMaker>
     <genes>
 	<!--Vanilla Genes-->
 		<li>DarkVision</li>
-		<li>Nearsighted</li>
 		<li>Body_Fat</li>
 		<li>Body_Hulk</li>
 		<li>Body_Standard</li>
 	<!--Yautja Genes-->
+		<li>ABYautjaHair_Tendril</li>
+		<li>ABYautjaBald</li>
+		<li>ABYautjaLeatherySkin</li>
+		<li>ABYautjaMonocolorVision</li>
+		<li>ABYautjaSharpShooter</li>
+		<li>ABYautja_SuperPredator_Crest</li>
 		<li>ABYautjaAdvancedTechnologically</li>
 		<li>ABYautja_BreedingSeason</li>
 		<li>ABYautjaUpperMandibles</li>
@@ -53,24 +72,25 @@
     </genes>
 	</XenotypeDef>
 <!--Sword-->
-  <XenotypeDef>
+  <XenotypeDef ParentName="ABYautjaXenoBase">
     <defName>ABSwordYautja</defName>
-    <label>Sword Yautja</label>
-	<description>Yautja are extra terrestrial hunters that hail from the planet Yautja Prime. They are prolific killers with a fondness for the art of hunting, basing their entire society around it. Those who do not respect the honor and tradition of the hunt are banished.</description>
-    <descriptionShort>Yautja are extra terrestrials with an intense skill and fondness for hunting.</descriptionShort>
+    <label>Oni Yautja</label>
+	<description>Oni yautja are abnormally tall and lanky, even compared to other yautja. The majority of their height disproportinately comes from their legs rather than their torso. Oni yautja only have bottom mandibles, making up for their lack of top mandibles with small spikes growing from their eyebrows and cheekbones.</description>
+    <descriptionShort>Oni yautja are abnormally tall and lanky, even compared to other yautja.</descriptionShort>
     <iconPath>UI/Icons/Xenotypes/SwordYautja</iconPath>
-	<inheritable>true</inheritable>
     <displayPriority>-3607</displayPriority>
-	<nameMaker>ABNamerPerson_Yautja_Unisex</nameMaker>
-    <chanceToUseNameMaker>5</chanceToUseNameMaker>
     <genes>
 	<!--Vanilla Genes-->
 		<li>DarkVision</li>
-		<li>Nearsighted</li>
 		<li>MoveSpeed_Quick</li>
 		<li>Body_Thin</li>
 		<li>Body_Standard</li>
 	<!--Yautja Genes-->
+		<li>ABYautjaHair_Tendril</li>
+		<li>ABYautjaBald</li>
+		<li>ABYautjaLeatherySkin</li>
+		<li>ABYautjaMonocolorVision</li>
+		<li>ABYautjaSharpShooter</li>
 		<li>ABYautjaAdvancedTechnologically</li>
 		<li>ABYautja_BreedingSeason</li>
 		<li>ABYautjaLowerMandibles</li>
@@ -80,22 +100,24 @@
     </genes>
 	</XenotypeDef>
 <!--Shield-->
-  <XenotypeDef>
+  <XenotypeDef ParentName="ABYautjaXenoBase">
     <defName>ABShieldYautja</defName>
-    <label>Shield Yautja</label>
-	<description>Yautja are extra terrestrial hunters that hail from the planet Yautja Prime. They are prolific killers with a fondness for the art of hunting, basing their entire society around it. Those who do not respect the honor and tradition of the hunt are banished.</description>
-    <descriptionShort>Yautja are extra terrestrials with an intense skill and fondness for hunting.</descriptionShort>
+    <label>Jotun Yautja</label>
+	<description>The jotun yautja are one of the largest types of yautja. They are even stronger than super yautja and often sport stocky bodies.</description>
+    <descriptionShort>The jotun yautja are one of the largest types of yautja.</descriptionShort>
     <iconPath>UI/Icons/Xenotypes/Yautja</iconPath>
-	<inheritable>true</inheritable>
     <displayPriority>-3608</displayPriority>
-	<nameMaker>ABNamerPerson_Yautja_Unisex</nameMaker>
-    <chanceToUseNameMaker>5</chanceToUseNameMaker>
     <genes>
 	<!--Vanilla Genes-->
 		<li>DarkVision</li>
 		<li>Body_Fat</li>
 		<li>Body_Hulk</li>
 	<!--Yautja Genes-->
+		<li>ABYautjaHair_Tendril</li>
+		<li>ABYautjaBald</li>
+		<li>ABYautjaLeatherySkin</li>
+		<li>ABYautjaMonocolorVision</li>
+		<li>ABYautjaSharpShooter</li>
 		<li>ABYautjaAdvancedTechnologically</li>
 		<li>ABYautjaTwoToed</li>
 		<li>ABYautja_BreedingSeason</li>
@@ -107,21 +129,22 @@
     </genes>
 	</XenotypeDef>
 <!--Scout-->
-  <XenotypeDef>
+  <XenotypeDef ParentName="ABYautjaXenoBase">
     <defName>ABScoutYautja</defName>
     <label>Scout Yautja</label>
-	<description>Yautja are extra terrestrial hunters that hail from the planet Yautja Prime. They are prolific killers with a fondness for the art of hunting, basing their entire society around it. Those who do not respect the honor and tradition of the hunt are banished.</description>
-    <descriptionShort>Yautja are extra terrestrials with an intense skill and fondness for hunting.</descriptionShort>
+	<description>The scout yautja are an interesting specimine, having developed on a small island on Yautja Prime. Their upper mandibles relocated after many years of isolation giving them their recognizable four lower mandibles. Not much else makes them differ from the average yautja.</description>
+    <descriptionShort>After many years of isolation on a small island on Yautja Prime, their upper mandibles relocated giving them their recognizable four lower mandibles.</descriptionShort>
     <iconPath>UI/Icons/Xenotypes/ScoutYautja</iconPath>
-	<inheritable>true</inheritable>
-    <displayPriority>-36078</displayPriority>
-	<nameMaker>ABNamerPerson_Yautja_Unisex</nameMaker>
-    <chanceToUseNameMaker>5</chanceToUseNameMaker>
+    <displayPriority>-3609</displayPriority>
     <genes>
 	<!--Vanilla Genes-->
 		<li>DarkVision</li>
-		<li>Nearsighted</li>
 	<!--Yautja Genes-->
+		<li>ABYautjaHair_Tendril</li>
+		<li>ABYautjaBald</li>
+		<li>ABYautjaLeatherySkin</li>
+		<li>ABYautjaMonocolorVision</li>
+		<li>ABYautjaSharpShooter</li>
 		<li>ABYautjaAdvancedTechnologically</li>
 		<li>ABYautja_BreedingSeason</li>
 		<li>ABYautjaLowerMandibles</li>
@@ -130,25 +153,121 @@
 		<li>ABYautja_Ambush</li>
     </genes>
 	</XenotypeDef>
-<!--Grendel-->
-  <XenotypeDef>
-    <defName>ABGrendelKingYautja</defName>
-    <label>Grendel Yautja</label>
-	<description>Yautja are extra terrestrial hunters that hail from the planet Yautja Prime. They are prolific killers with a fondness for the art of hunting, basing their entire society around it. Those who do not respect the honor and tradition of the hunt are banished.</description>
-    <descriptionShort>Yautja are extra terrestrials with an intense skill and fondness for hunting.</descriptionShort>
-    <iconPath>UI/Icons/Xenotypes/GrendelYautja</iconPath>
-	<inheritable>true</inheritable>
-    <displayPriority>-36078</displayPriority>
-	<nameMaker>ABNamerPerson_Yautja_Unisex</nameMaker>
-    <chanceToUseNameMaker>5</chanceToUseNameMaker>
+<!--Malformed-->
+  <XenotypeDef ParentName="ABYautjaXenoBase">
+    <defName>ABMalformedYautja</defName>
+    <label>Malformed Yautja</label>
+	<description>The malformed yautja are a genetic anomaly that are shunned by other yautja. These yautja have a small crest and lack the full height of a yautja. While this genetic mutation can occur in any pairing, many malformed yautja stem from the bloodline of Njohrr.</description>
+    <descriptionShort>A genetic mutation makes these yautja less formidable and less respected than other yautja.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/MalformedYautja</iconPath>
+    <displayPriority>-3609</displayPriority>
     <genes>
 	<!--Vanilla Genes-->
 		<li>DarkVision</li>
-		<li>Nearsighted</li>
+		<li>Body_Standard</li>
+		<li>Body_Thin</li>
+	<!--Yautja Genes-->
+		<li>ABYautjaMalformedHead</li>
+		<li>ABYautja_ForeheadTendrils_RemovedAtMaturity</li>
+		<li>ABYautjaMalformedHair_Tendril</li>
+		<li>ABYautjaBald</li>
+		<li>ABYautjaLeatherySkin</li>
+		<li>ABYautjaMonocolorVision</li>
+		<li>ABYautjaSharpShooter</li>
+		<li>ABYautjaAdvancedTechnologically</li>
+		<li>ABYautja_BreedingSeason</li>
+		<li>ABYautjaUpperMandibles</li>
+		<li>ABYautjaLowerMandibles</li>
+		<li>ABYautjaRoarVoice</li>
+		<li>ABMalformedYautjaFrame</li>
+    </genes>
+	</XenotypeDef>
+<!--Feral-->
+	<XenotypeDef ParentName="ABYautjaXenoBase">
+    <defName>ABFeralYautja</defName>
+    <label>Feral Yautja</label>
+	<description>Feral yautja are adapted to live in dry and arid savanna-like environments. They have thinner, and more hair tendrils used to cool down their bodies. It is theorized that the pits on their face also help with this task.</description>
+    <descriptionShort>Feral yautja are adapted to live in dry and arid savanna-like environments.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/FeralYautja</iconPath>
+    <displayPriority>-3609</displayPriority>
+    <genes>
+	<!--Vanilla Genes-->
+		<li>DarkVision</li>
+	<!--Yautja Genes-->
+		<li>ABYautjaFeralHead</li>
+		<li>ABYautja_HeatPits</li>
+		<li>ABYautjaFeralHair_Tendril</li>
+		<li>ABYautjaBald</li>
+		<li>ABYautjaLeatherySkin</li>
+		<li>ABYautjaMonocolorVision</li>
+		<li>ABYautjaSharpShooter</li>
+		<li>ABYautjaAdvancedTechnologically</li>
+		<li>ABYautja_BreedingSeason</li>
+		<li>ABYautjaUpperMandibles</li>
+		<li>ABYautjaLowerMandibles</li>
+		<li>ABYautjaRoarVoice</li>
+		<li>ABYautja_Ambush</li>
+		<li>ABFeralYautjaFrame</li>
+    </genes>
+	</XenotypeDef>
+<!--Translucent-->
+  <XenotypeDef ParentName="ABYautjaXenoBase">
+    <defName>ABTranslucentYautja</defName>
+    <label>Stalker Yautja</label>
+	<description>Stalker yautja's name is self explanitory. Their skin lacks pigmentation to the point of turning translucent, allowing their bioluminescent blood to shine through. It is thought that they developed this trait as a survival tactic to be seen through the wheather they indured on the poles of Yautja Prime.</description>
+    <descriptionShort>Their skin lacks pigmentation to the point of turning translucent, allowing their bioluminescent blood to shine through.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/TranslucentYautja</iconPath>
+	<displayPriority>-3610</displayPriority>
+    <genes>
+	<!--Vanilla Genes-->
+		<li>DarkVision</li>
+		<li>MinTemp_LargeDecrease</li>
+	<!--Yautja Genes-->
+		<li>ABYautjaCurledHorns_Hair_Tendril</li>
+		<li>ABYautjaBald</li>
+		<li>ABYautjaLeatherySkin</li>
+		<li>ABYautjaMonocolorVision</li>
+		<li>ABYautjaSharpShooter</li>
+		<li>ABYautjaAdvancedTechnologically</li>
+		<li>ABYautja_BreedingSeason</li>
+		<li>ABYautjaUpperMandibles</li>
+		<li>ABYautjaLowerMandibles</li>
+		<li>ABYautjaRoarVoice</li>
+		<li>ABYautja_Ambush</li>
+		<li>ABYautja_GreenBrainStem</li>
+		<li>ABYautja_GreenCardiovascular</li>
+	<!--Translucent Genes-->
+		<li>ABYautjaTranslucentCurledHornHead</li>
+		<li>ABYautja_TranslucentLines_Head</li>
+		<li>ABYautja_Pattern</li>
+		<li>YautjaSkin_Transparent_Misty</li>
+		<li>YautjaSkin_Transparent_Highlighter</li>
+		<li>YautjaSkin_Transparent_YautjaBlood</li>
+		<li>YautjaHair_Transparent_Misty</li>
+		<li>YautjaHair_Transparent_Highlighter</li>
+		<li>YautjaHair_Transparent_YautjaBlood</li>
+    </genes>
+	</XenotypeDef>
+<!--Grendel-->
+  <XenotypeDef ParentName="ABYautjaXenoBase">
+    <defName>ABGrendelKingYautja</defName>
+    <label>Warlord Yautja</label>
+	<description>Warlord yautja are one of the largest yautja type. They tower over all with their natural height and enhanced strength. Many believe that when a warlord yautja is born they are destined to be leaders. The warlord yautja has four sets of mandibles, two pairs frame the original mandibles, making it appear that the warlord is wearing a yautja's skull.</description>
+    <descriptionShort>The warlord yautja has four sets of mandibles, two pairs frame the original mandibles, making it appear that the warlord is wearing a yautja's skull.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/GrendelYautja</iconPath>
+    <displayPriority>-3611</displayPriority>
+    <genes>
+	<!--Vanilla Genes-->
+		<li>DarkVision</li>
 		<li>Body_Fat</li>
 		<li>Body_Hulk</li>
 		<li>Body_Standard</li>
 	<!--Yautja Genes-->
+		<li>ABYautjaHair_Tendril</li>
+		<li>ABYautjaBald</li>
+		<li>ABYautjaLeatherySkin</li>
+		<li>ABYautjaMonocolorVision</li>
+		<li>ABYautjaSharpShooter</li>
 		<li>ABYautjaAdvancedTechnologically</li>
 		<li>ABYautja_BreedingSeason</li>
 		<li>ABYautjaUpperMandibles</li>

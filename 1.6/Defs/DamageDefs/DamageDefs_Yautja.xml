@@ -7,38 +7,20 @@
 		<isRanged>true</isRanged>
 	</DamageDef>
 	
-	<DamageDef Name="BombBase">
-		<defName>ABBomb</defName>
-		<label>bomb</label>
-		<workerClass>DamageWorker_AddInjury</workerClass>
+	<DamageDef ParentName="ABLocalRangedInjuryBase" Name="ABStunBase" Abstract="True">
+		<makesBlood>false</makesBlood>
 		<externalViolence>true</externalViolence>
-		<isExplosive>true</isExplosive>
-		<deathMessage>{0} has died in an explosion.</deathMessage>
-		<hediff>Shredded</hediff>
-		<hediffSolid>Crack</hediffSolid>
-		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
-		<impactSoundType>Blunt</impactSoundType>
-		<armorCategory>Sharp</armorCategory>
-		<minDamageToFragment>15</minDamageToFragment>
-		<defaultDamage>50</defaultDamage>
-		<defaultStoppingPower>0.5</defaultStoppingPower>
-		<defaultArmorPenetration>0.10</defaultArmorPenetration>
-		<buildingDamageFactor>4</buildingDamageFactor>
-		<plantDamageFactor>4</plantDamageFactor>
-		<explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
-		<explosionHeatEnergyPerCell>5</explosionHeatEnergyPerCell>
 		<explosionCellFleck>BlastDry</explosionCellFleck>
-		<explosionColorCenter>(0.188,0.392,0.604)</explosionColorCenter>
-		<explosionColorEdge>(0.8,0.898,1)</explosionColorEdge>
-		<soundExplosion>Explosion_Bomb</soundExplosion>
-		<combatLogRules>Damage_Bomb</combatLogRules>
+		<soundExplosion>Explosion_Stun</soundExplosion>
+		<combatLogRules>Damage_Stun</combatLogRules>
+		<causeStun>true</causeStun>
 	</DamageDef>
-
-    <DamageDef ParentName="BombBase">
-		<defName>ABSuperBomb</defName>
-		<defaultDamage>550</defaultDamage>
-		<defaultStoppingPower>2.0</defaultStoppingPower>
-		<defaultArmorPenetration>1.30</defaultArmorPenetration>
+	
+	<DamageDef ParentName="Bomb">
+		<defName>ABMiniBomb</defName>
+		<defaultDamage>17</defaultDamage>
+		<defaultStoppingPower>1.5</defaultStoppingPower>
+		<defaultArmorPenetration>0.6</defaultArmorPenetration>
 	</DamageDef>
 	
 	<DamageDef Name="ABPlasmaInjuryBase" ParentName="ABLocalRangedInjuryBase" Abstract="True">
@@ -57,53 +39,60 @@
 		<label>plasma</label>
 		<deathMessage>{0} caught a plasma bolt.</deathMessage>
 		<defaultDamage>10</defaultDamage>
-		<buildingDamageFactor>1</buildingDamageFactor>
+		<buildingDamageFactor>7</buildingDamageFactor>
 	</DamageDef>
 	
-	<DamageDef>
+	<DamageDef ParentName="ABLocalRangedInjuryBase">
 		<defName>ABRangedCut</defName>
 		<label>cut</label>
-		<workerClass>DamageWorker_AddInjury</workerClass>
 		<externalViolence>true</externalViolence>
 		<deathMessage>{0} has been cut to death.</deathMessage>
 		<hediff>Cut</hediff>
 		<hediffSolid>Crack</hediffSolid>
+		<defaultDamage>16</defaultDamage>
 		<impactSoundType>Slice</impactSoundType>
 		<armorCategory>Sharp</armorCategory>
-		<overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>	
-		<harmsHealth>true</harmsHealth>
-		<isRanged>true</isRanged>
+		<overkillPctToDestroyPart>0.6~0.8</overkillPctToDestroyPart>	
 		<makesAnimalsFlee>true</makesAnimalsFlee>
 	</DamageDef>
   
-	<DamageDef>
+	<DamageDef ParentName="ABLocalRangedInjuryBase" Name="ABRangedStab">
 		<defName>ABRangedStab</defName>
 		<label>stab</label>
-		<workerClass>DamageWorker_AddInjury</workerClass>
 		<externalViolence>true</externalViolence>
 		<deathMessage>{0} has been stabbed to death.</deathMessage>
 		<hediff>Stab</hediff>
 		<hediffSolid>Crack</hediffSolid>
+		<defaultDamage>12</defaultDamage>
 		<impactSoundType>Slice</impactSoundType>
 		<armorCategory>Sharp</armorCategory>
-		<overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>
+		<overkillPctToDestroyPart>0.6~0.8</overkillPctToDestroyPart>
 		<harmsHealth>true</harmsHealth>
-		<isRanged>true</isRanged>
 		<makesAnimalsFlee>true</makesAnimalsFlee>
 	</DamageDef>
-
-	<DamageDef>
-		<defName>ABRangedStab_Combistaff</defName>
+	
+	<DamageDef ParentName="ABRangedStab">
+		<defName>ABPlasmaRangedStab</defName>
+		<isExplosive>true</isExplosive>
+		<hediff>Burn</hediff>
+		<hediffSolid>Crack</hediffSolid>
+		<defaultDamage>17</defaultDamage>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<armorCategory>Heat</armorCategory>
+		<combatLogRules>Damage_Bomb</combatLogRules>
+	</DamageDef>
+	
+	<DamageDef ParentName="ABLocalRangedInjuryBase">
+		<defName>ABImpalingStab</defName>
 		<label>stab</label>
-		<workerClass>DamageWorker_AddInjury</workerClass>
 		<externalViolence>true</externalViolence>
 		<deathMessage>{0} has been fatally impaled.</deathMessage>
 		<hediff>ABImpaled</hediff>
 		<hediffSolid>Crack</hediffSolid>
+		<defaultDamage>25</defaultDamage>
 		<impactSoundType>Slice</impactSoundType>
 		<armorCategory>Sharp</armorCategory>
 		<overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>
-		<isRanged>true</isRanged>
 		<makesAnimalsFlee>true</makesAnimalsFlee>
 		<additionalHediffs>
 		  <li>
@@ -112,4 +101,74 @@
 		  </li>
 		</additionalHediffs>
 	</DamageDef>
+
+	<DamageDef ParentName="ABLocalRangedInjuryBase">
+		<defName>ABRangedStab_Combistaff</defName>
+		<label>stab</label>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} has been fatally impaled.</deathMessage>
+		<hediff>ABImpaled</hediff>
+		<hediffSolid>Crack</hediffSolid>
+		<defaultDamage>30</defaultDamage>
+		<impactSoundType>Slice</impactSoundType>
+		<armorCategory>Sharp</armorCategory>
+		<overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>
+		<makesAnimalsFlee>true</makesAnimalsFlee>
+		<additionalHediffs>
+		  <li>
+			<hediff>ABHediff_PinnedCombistaff</hediff>
+			<severityPerDamageDealt>1</severityPerDamageDealt>
+		  </li>
+		</additionalHediffs>
+	</DamageDef>
+
+	<DamageDef ParentName="ABStunBase">
+		<defName>ABYautja_ElectricShock</defName>
+		<label>electric shock</label>
+		<deathMessage>{0} has been shocked to death.</deathMessage>
+		<hediff>Bruise</hediff>
+		<hediffSolid>Crack</hediffSolid>
+		<defaultDamage>14</defaultDamage>
+		<armorCategory>Blunt</armorCategory>
+		<overkillPctToDestroyPart>0.8~0.9</overkillPctToDestroyPart>
+		<isRanged>true</isRanged>
+		<additionalHediffs>
+			<li>
+				<hediff>AB_ElectricShock</hediff>
+				<severityPerDamageDealt>1</severityPerDamageDealt>
+			</li>
+		</additionalHediffs>
+	</DamageDef>
+
+	<DamageDef ParentName="ABStunBase" Name="ABYautja_Net">
+		<workerClass>DamageWorker_AddInjury</workerClass>
+		<defName>ABYautja_Net</defName>
+		<label>net</label>
+		<deathMessage>{0} has been sliced to death.</deathMessage>
+		<defaultDamage>10</defaultDamage>
+		<hediff>AB_Injury_CinchingNet</hediff>
+		<hediffSolid>AB_Injury_CinchingNet</hediffSolid>
+		<impactSoundType>Slice</impactSoundType>
+		<armorCategory>Sharp</armorCategory>
+		<overkillPctToDestroyPart>0.9~1</overkillPctToDestroyPart>
+		<makesAnimalsFlee>true</makesAnimalsFlee>
+		<additionalHediffs>
+			<li>
+				<hediff>AB_CinchingNet</hediff>
+				<severityPerDamageDealt>0.75</severityPerDamageDealt>
+			</li>
+		</additionalHediffs>
+	</DamageDef>
+	
+	<DamageDef ParentName="ABYautja_Net">
+		<defName>ABYautja_PlasmaNet</defName>
+		<label>plasma-net</label>
+		<additionalHediffs Inherit="false">
+			<li>
+				<hediff>AB_CinchingPlasmaNet</hediff>
+				<severityPerDamageDealt>0.75</severityPerDamageDealt>
+			</li>
+		</additionalHediffs>
+	</DamageDef>
+
 </Defs>

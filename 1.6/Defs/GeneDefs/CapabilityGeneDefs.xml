@@ -1,5 +1,29 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+<!--Mono-color Vision-->
+	<GeneDef>
+		<defName>ABYautjaMonocolorVision</defName>
+		<label>mono-color vision</label>
+		<iconPath>UI/Icons/Genes/GeneIcon_MonocoloredVision</iconPath>
+		<description>Carriers of this gene see at incredibly short distances due to their ability to only see the world in one color.</description>
+		<displayCategory>ABYautjaCategory</displayCategory>
+		<displayOrderInCategory>975</displayOrderInCategory>
+		<statFactors>
+			<ShootingAccuracyFactor_Long>0.35</ShootingAccuracyFactor_Long>
+			<ShootingAccuracyFactor_Medium>0.65</ShootingAccuracyFactor_Medium>
+			<ShootingAccuracyFactor_Short>0.85</ShootingAccuracyFactor_Short>
+		</statFactors>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>2</biostatMet>
+		<exclusionTags>
+			<li>ShootingAccuracy</li>
+		</exclusionTags>
+		<modExtensions>
+			<li Class="VEF.Genes.GeneExtension">
+				<backgroundPathEndogenes>UI/Icons/Genes/Yautja_Endogene_Background</backgroundPathEndogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
 <!--Alien Race-->
 	<GeneDef>
 		<defName>ABYautjaAlienRace</defName>
@@ -22,7 +46,6 @@
 			</li>
 		</modExtensions>
 	</GeneDef>
-
 <!--Warrior's Mindset-->
 	<GeneDef>
 		<defName>ABYautjaWarriorsMindset</defName>
@@ -42,6 +65,23 @@
 				<def>ABYautjaWarriorsMindset</def>
 			</li>
 		</forcedTraits>
+		<suppressedTraits>
+			<li>
+				<def>Wimp</def>
+				<degree>0</degree>
+			</li>
+			<li>
+				<def>Nerves</def>
+				<degree>-1</degree>
+			</li>
+			<li MayRequire="Ludeon.Rimworld.Biotech">
+				<def>Delicate</def>
+				<degree>0</degree>
+			</li>
+		</suppressedTraits>
+		<descriptionHyperlinks>
+			<TraitDef>ABYautjaWarriorsMindset</TraitDef>
+		</descriptionHyperlinks>
 		<modExtensions>
 			<li Class="VEF.Genes.GeneExtension">
 				<backgroundPathEndogenes>UI/Icons/Genes/Yautja_Endogene_Background</backgroundPathEndogenes>
@@ -67,6 +107,11 @@
 		</statFactors>
 		<biostatCpx>2</biostatCpx>
 		<biostatMet>1</biostatMet>
+		<exclusionTags>
+            <li>EBSG_Social_Convincing</li>
+			<li>EBSG_Social_Suave</li>
+			<li>EBSG_Social_Terrifying</li>
+        </exclusionTags>
 		<modExtensions>
 			<li Class="VEF.Genes.GeneExtension">
 				<backgroundPathEndogenes>UI/Icons/Genes/Yautja_Endogene_Background</backgroundPathEndogenes>
@@ -87,10 +132,14 @@
 			<MeleeHitChance>1.125</MeleeHitChance>
 		</statOffsets>
 		<statFactors>
-			<HuntingStealth>0.85</HuntingStealth>
+			<HuntingStealth>1.85</HuntingStealth>
 		</statFactors>
 		<biostatCpx>2</biostatCpx>
 		<biostatMet>2</biostatMet>
+		<exclusionTags>
+            <li>EBSG_Hunting</li>
+			<li>Stealth</li>
+        </exclusionTags>
 		<modExtensions>
 			<li Class="VEF.Genes.GeneExtension">
 				<backgroundPathEndogenes>UI/Icons/Genes/Yautja_Endogene_Background</backgroundPathEndogenes>
@@ -98,7 +147,7 @@
 		</modExtensions>
 	</GeneDef>
  <!--Sharp Shooter-->
-	<GeneDef>
+	<GeneDef Name="ABYautjaSharpShooter">
 		<defName>ABYautjaSharpShooter</defName>
 		<label>Sharp Shooter</label>
 		<labelShortAdj>Accurate</labelShortAdj>
@@ -110,6 +159,12 @@
 			<li>Shooting +3</li>
 			<li>Melee +2</li>
 		</customEffectDescriptions>
+		<statFactors>
+			<ShootingAccuracyPawn>1.10</ShootingAccuracyPawn>
+		</statFactors>
+		<statOffsets>
+			<AimingDelayFactor>-0.25</AimingDelayFactor>
+		</statOffsets>
 		<modExtensions MayRequire="ebsg.framework">
 			<li Class="EBSGFramework.EBSGExtension">
 				<skillChanges>
@@ -133,6 +188,9 @@
 		</modExtensions>
 		<biostatCpx>1</biostatCpx>
 		<biostatMet>-1</biostatMet>
+		<exclusionTags>
+			<li>EBSG_Shooter</li>
+		</exclusionTags>
 	</GeneDef>
 <!--Alien Intelligence-->
 	<GeneDef>
@@ -151,6 +209,7 @@
 			<ResearchSpeed>0.15</ResearchSpeed>
 			<HackingSpeed>0.15</HackingSpeed>
 			<GlobalLearningFactor>0.5</GlobalLearningFactor>
+			<EntityStudyRate MayRequire="Ludeon.Rimworld.Anomaly">0.15</EntityStudyRate>
 		</statOffsets>
 		<modExtensions MayRequire="ebsg.framework">
 			<li Class="EBSGFramework.EBSGExtension">
@@ -167,7 +226,11 @@
 			</li>
 		</modExtensions>
 		<biostatCpx>1</biostatCpx>
-		<biostatMet>2</biostatMet>
+		<biostatMet>1</biostatMet>
+		<exclusionTags>
+            <li>EBSG_Curiosity</li>
+			<li>EBSG_Hacking</li>
+        </exclusionTags>
 	</GeneDef>
 <!--Toe Toed-->
    <GeneDef>
@@ -191,7 +254,7 @@
 				<backgroundPathEndogenes>UI/Icons/Genes/Yautja_Endogene_Background</backgroundPathEndogenes>
 			</li>
 		</modExtensions>
-  </GeneDef>
+	</GeneDef>
 <!--Seasonal Breeding-->
 	<GeneDef ParentName="FertilityBase">
 		<defName>ABYautja_BreedingSeason</defName>

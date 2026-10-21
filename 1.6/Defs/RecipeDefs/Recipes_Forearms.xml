@@ -10,8 +10,7 @@
 		</descriptionHyperlinks>
 		<jobString>Installing wooden forearm.</jobString>
 		<appliedOnFixedBodyParts>
-			<li>ABYautja_RightForearm</li>
-			<li>ABYautja_LeftForearm</li>
+			<li>ABYautja_Forearm</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>ABYautja_WoodenForearm</addsHediff>
 		<uiIconThing>WoodLog</uiIconThing>
@@ -42,8 +41,7 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<appliedOnFixedBodyParts>
-			<li>ABYautja_RightForearm</li>
-			<li>ABYautja_LeftForearm</li>
+			<li>ABYautja_Forearm</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>ABYautja_SimpleProstheticForearm</addsHediff>
 	</RecipeDef>
@@ -54,7 +52,6 @@
 		<description>Install a bionic forearm.</description>
 		<descriptionHyperlinks>
 			<ThingDef>ABYautja_BionicForearm</ThingDef>
-			<HediffDef>ABYautja_BionicForearm</HediffDef>
 		</descriptionHyperlinks>
 		<jobString>Installing bionic forearm.</jobString>
 		<ingredients>
@@ -73,8 +70,7 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<appliedOnFixedBodyParts>
-			<li>ABYautja_RightForearm</li>
-			<li>ABYautja_LeftForearm</li>
+			<li>ABYautja_Forearm</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>ABYautja_BionicForearm</addsHediff>
 	</RecipeDef>
@@ -104,8 +100,7 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<appliedOnFixedBodyParts>
-			<li>ABYautja_RightForearm</li>
-			<li>ABYautja_LeftForearm</li>
+			<li>ABYautja_Forearm</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>ABYautja_ArchotechForearm</addsHediff>
 	</RecipeDef>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!--Base-->
+	<HeadTypeDef ParentName="ABYautjaHeadGene_Base" Name="ABYautjaMalformedHeadGene_Base" Abstract="True">
+		<requiredGenes Inherit="False">
+			<li>ABYautjaMalformedHead</li>
+		</requiredGenes>
+	</HeadTypeDef>
+<!--Translucent-->
+	<HeadTypeDef ParentName="AverageBase">
+		<narrow>false</narrow>
+		<randomChosen>true</randomChosen>
+		<gender>None</gender>
+		<selectionWeight>100000</selectionWeight>
+		<requiredGenes>
+			<li>ABYautjaTranslucentMalformedHead</li>
+		</requiredGenes>
+		<defName>ABYautjaHeadGene_Malformed_TranslucentAlbino</defName>
+		<graphicPath>Things/Pawn/Humanlike/Yautja/Heads/Malformed/YautjaHead_Malformed_TranslucentAlbino</graphicPath>
+	</HeadTypeDef>
+<!--Yellow-Green Eyed-->
+	<!--Albino-->
+		<HeadTypeDef ParentName="ABYautjaMalformedHeadGene_Base">
+			<defName>ABYautjaHeadGeneYG_Malformed_Albino</defName>
+			<graphicPath>Things/Pawn/Humanlike/Yautja/Heads/Malformed/YautjaHeadYG_Malformed_Albino</graphicPath>
+		</HeadTypeDef>
+	<!--Decorated-->
+		<HeadTypeDef ParentName="ABYautjaMalformedHeadGene_Base">
+			<defName>ABYautjaHeadGeneYG_Malformed_Decorated</defName>
+			<graphicPath>Things/Pawn/Humanlike/Yautja/Heads/Malformed/YautjaHeadYG_Malformed_Decorated</graphicPath>
+		</HeadTypeDef>
+	<!--Speckled-->
+		<HeadTypeDef ParentName="ABYautjaMalformedHeadGene_Base">
+			<defName>ABYautjaHeadGeneYG_Malformed_Speckled</defName>
+			<graphicPath>Things/Pawn/Humanlike/Yautja/Heads/Malformed/YautjaHeadYG_Malformed_Speckled</graphicPath>
+		</HeadTypeDef>
+	<!--Striped-->
+		<HeadTypeDef ParentName="ABYautjaMalformedHeadGene_Base">
+			<defName>ABYautjaHeadGeneYG_Malformed_Striped</defName>
+			<graphicPath>Things/Pawn/Humanlike/Yautja/Heads/Malformed/YautjaHeadYG_Malformed_Striped</graphicPath>
+		</HeadTypeDef>
+<!--Yellow Eyed-->
+	<!--Albino-->
+		<HeadTypeDef ParentName="ABYautjaMalformedHeadGene_Base">
+			<defName>ABYautjaHeadGeneY_Malformed_Albino</defName>
+			<graphicPath>Things/Pawn/Humanlike/Yautja/Heads/Malformed/YautjaHeadY_Malformed_Albino</graphicPath>
+		</HeadTypeDef>
+	<!--Decorated-->
+		<HeadTypeDef ParentName="ABYautjaMalformedHeadGene_Base">
+			<defName>ABYautjaHeadGeneY_Malformed_Decorated</defName>
+			<graphicPath>Things/Pawn/Humanlike/Yautja/Heads/Malformed/YautjaHeadY_Malformed_Decorated</graphicPath>
+		</HeadTypeDef>
+	<!--Speckled-->
+		<HeadTypeDef ParentName="ABYautjaMalformedHeadGene_Base">
+			<defName>ABYautjaHeadGeneY_Malformed_Speckled</defName>
+			<graphicPath>Things/Pawn/Humanlike/Yautja/Heads/Malformed/YautjaHeadY_Malformed_Speckled</graphicPath>
+		</HeadTypeDef>
+	<!--Striped-->
+		<HeadTypeDef ParentName="ABYautjaMalformedHeadGene_Base">
+			<defName>ABYautjaHeadGeneY_Malformed_Striped</defName>
+			<graphicPath>Things/Pawn/Humanlike/Yautja/Heads/Malformed/YautjaHeadY_Malformed_Striped</graphicPath>
+		</HeadTypeDef>
+<!--Yellow-Orange Eyed-->
+	<!--Albino-->
+		<HeadTypeDef ParentName="ABYautjaMalformedHeadGene_Base">
+			<defName>ABYautjaHeadGeneYO_Malformed_Albino</defName>
+			<graphicPath>Things/Pawn/Humanlike/Yautja/Heads/Malformed/YautjaHeadYO_Malformed_Albino</graphicPath>
+		</HeadTypeDef>
+	<!--Decorated-->
+		<HeadTypeDef ParentName="ABYautjaMalformedHeadGene_Base">
+			<defName>ABYautjaHeadGeneYO_Malformed_Decorated</defName>
+			<graphicPath>Things/Pawn/Humanlike/Yautja/Heads/Malformed/YautjaHeadYO_Malformed_Decorated</graphicPath>
+		</HeadTypeDef>
+	<!--Speckled-->
+		<HeadTypeDef ParentName="ABYautjaMalformedHeadGene_Base">
+			<defName>ABYautjaHeadGeneYO_Malformed_Speckled</defName>
+			<graphicPath>Things/Pawn/Humanlike/Yautja/Heads/Malformed/YautjaHeadYO_Malformed_Speckled</graphicPath>
+		</HeadTypeDef>
+	<!--Striped-->
+		<HeadTypeDef ParentName="ABYautjaMalformedHeadGene_Base">
+			<defName>ABYautjaHeadGeneYO_Malformed_Striped</defName>
+			<graphicPath>Things/Pawn/Humanlike/Yautja/Heads/Malformed/YautjaHeadYO_Malformed_Striped</graphicPath>
+		</HeadTypeDef>
+<!--Orange Eyed-->
+	<!--Albino-->
+		<HeadTypeDef ParentName="ABYautjaMalformedHeadGene_Base">
+			<defName>ABYautjaHeadGeneO_Malformed_Albino</defName>
+			<graphicPath>Things/Pawn/Humanlike/Yautja/Heads/Malformed/YautjaHeadO_Malformed_Albino</graphicPath>
+		</HeadTypeDef>
+	<!--Decorated-->
+		<HeadTypeDef ParentName="ABYautjaMalformedHeadGene_Base">
+			<defName>ABYautjaHeadGeneO_Malformed_Decorated</defName>
+			<graphicPath>Things/Pawn/Humanlike/Yautja/Heads/Malformed/YautjaHeadO_Malformed_Decorated</graphicPath>
+		</HeadTypeDef>
+	<!--Speckled-->
+		<HeadTypeDef ParentName="ABYautjaMalformedHeadGene_Base">
+			<defName>ABYautjaHeadGeneO_Malformed_Speckled</defName>
+			<graphicPath>Things/Pawn/Humanlike/Yautja/Heads/Malformed/YautjaHeadO_Malformed_Speckled</graphicPath>
+		</HeadTypeDef>
+	<!--Striped-->
+		<HeadTypeDef ParentName="ABYautjaMalformedHeadGene_Base">
+			<defName>ABYautjaHeadGeneO_Malformed_Striped</defName>
+			<graphicPath>Things/Pawn/Humanlike/Yautja/Heads/Malformed/YautjaHeadO_Malformed_Striped</graphicPath>
+		</HeadTypeDef>
+<!--Red Eyed-->
+	<!--Albino-->
+		<HeadTypeDef ParentName="ABYautjaMalformedHeadGene_Base">
+			<defName>ABYautjaHeadGeneR_Malformed_Albino</defName>
+			<graphicPath>Things/Pawn/Humanlike/Yautja/Heads/Malformed/YautjaHeadR_Malformed_Albino</graphicPath>
+		</HeadTypeDef>
+	<!--Decorated-->
+		<HeadTypeDef ParentName="ABYautjaMalformedHeadGene_Base">
+			<defName>ABYautjaHeadGeneR_Malformed_Decorated</defName>
+			<graphicPath>Things/Pawn/Humanlike/Yautja/Heads/Malformed/YautjaHeadR_Malformed_Decorated</graphicPath>
+		</HeadTypeDef>
+	<!--Speckled-->
+		<HeadTypeDef ParentName="ABYautjaMalformedHeadGene_Base">
+			<defName>ABYautjaHeadGeneR_Malformed_Speckled</defName>
+			<graphicPath>Things/Pawn/Humanlike/Yautja/Heads/Malformed/YautjaHeadR_Malformed_Speckled</graphicPath>
+		</HeadTypeDef>
+	<!--Striped-->
+		<HeadTypeDef ParentName="ABYautjaMalformedHeadGene_Base">
+			<defName>ABYautjaHeadGeneR_Malformed_Striped</defName>
+			<graphicPath>Things/Pawn/Humanlike/Yautja/Heads/Malformed/YautjaHeadR_Malformed_Striped</graphicPath>
+		</HeadTypeDef>
+</Defs>

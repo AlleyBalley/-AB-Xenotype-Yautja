@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+<!--Lone Bad Blood-->
+	<ScenarioDef ParentName="ScenarioBase">
+		<defName>ABYautjaScenarioLongExile</defName>
+		<label>Lone Exile</label>
+		<description>You have broken the code of honor and have been cast out from any clan. You have been titled a Bad Blood, those you called your brothers and sisters will now hunt you.</description>
+			<scenario>
+				<summary>Naked, alone, and utterly unprepared. Can you survive? Extremely difficult and unfair.</summary>
+				<playerFaction>
+					<factionDef>ABYautja_PlayerBadBlood</factionDef>
+				</playerFaction>
+				<parts>
+			<!--  Config pages  -->
+					<li Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes">
+						<def>ConfigurePawnsXenotypes</def>
+						<customSummary>Start with a yautja.</customSummary>
+						<overrideKinds>
+							<li>
+								<pawnKind>Colonist_ABYautja_BadBlooded</pawnKind>
+							</li>
+						</overrideKinds>
+					</li>
+				<!--Scene Parts-->
+					<!--li Class="ScenPart_StartingResearch">
+						<def>StartingResearch</def>
+						<project>ABYautja_Tech_Improvised</project>
+					</li-->
+					<!--  Player starting stuff spawn method -->
+					<li Class="ScenPart_PlayerPawnsArriveMethod">
+						<def>PlayerPawnsArriveMethod</def>
+						<visible>false</visible>
+						<method>DropPods</method>
+					</li>
+					<!--  Player starting stuff spawn method -->
+					<li Class="ScenPart_Naked">
+						<def>Naked</def>
+						<context>PlayerStarter</context>
+					</li>
+					<!--  Player pawns start with no possessions eg. extra drugs.  -->
+					<li Class="ScenPart_NoPossessions">
+						<def>NoPossessions</def>
+					</li>
+					<li Class="ScenPart_ForcedHediff">
+						<def>ForcedHediff</def>
+						<chance>1</chance>
+						<context>PlayerStarter</context>
+						<hediff>Sterilized</hediff>
+						<severityRange>0.9~1</severityRange>
+					</li>
+					<!--Vanilla Faction Extended, Faction disposition-->
+					<li Class="VEF.Factions.ScenPart_ForcedFactionGoodwill">
+						<factionDef>ABYautjaClan</factionDef>
+						<alwaysHostile>True</alwaysHostile>
+						<affectStartingGoodwill>True</affectStartingGoodwill>
+						<startingGoodwillRange>-50~-25</startingGoodwillRange>
+						<affectNaturalGoodwill>True</affectNaturalGoodwill>
+						<naturalGoodwillRange>-100~-85</naturalGoodwillRange>
+						<def>VFEC_ForcedFactionGoodwill</def>
+					</li>
+					<li Class="VEF.Factions.ScenPart_ForcedFactionGoodwill">
+						<factionDef>ABYautjaBerserkClan</factionDef>
+						<alwaysHostile>True</alwaysHostile>
+						<affectStartingGoodwill>True</affectStartingGoodwill>
+						<startingGoodwillRange>-50~-25</startingGoodwillRange>
+						<affectNaturalGoodwill>True</affectNaturalGoodwill>
+						<naturalGoodwillRange>-100~-85</naturalGoodwillRange>
+						<def>VFEC_ForcedFactionGoodwill</def>
+					</li>
+					<li Class="VEF.Factions.ScenPart_ForcedFactionGoodwill">
+						<factionDef>ABYautjaModderClan</factionDef>
+						<alwaysHostile>True</alwaysHostile>
+						<affectStartingGoodwill>True</affectStartingGoodwill>
+						<startingGoodwillRange>-50~-15</startingGoodwillRange>
+						<affectNaturalGoodwill>True</affectNaturalGoodwill>
+						<naturalGoodwillRange>-25~-75</naturalGoodwillRange>
+						<def>VFEC_ForcedFactionGoodwill</def>
+					</li>
+					<li Class="VEF.Factions.ScenPart_ForcedFactionGoodwill">
+						<factionDef>ABYautjaBadBloodClan</factionDef>
+						<affectHiddenFactions>True</affectHiddenFactions>
+						<affectStartingGoodwill>True</affectStartingGoodwill>
+						<startingGoodwillRange>20~75</startingGoodwillRange>
+						<affectNaturalGoodwill>True</affectNaturalGoodwill>
+						<naturalGoodwillRange>0~30</naturalGoodwillRange>
+						<def>VFEC_ForcedFactionGoodwill</def>
+					</li>
+					<!--  Game start dialog  -->
+					<li Class="ScenPart_GameStartDialog">
+						<def>GameStartDialog</def>
+						<text>You have broken the code of honor and have been cast out from any clan. You have been titled a Bad Blood, those you called your brothers and sisters will now hunt you.\n\nYou are totally naked with no preparation, no supplies, and no tools, can you survive?</text>
+						<closeSound>GameStartSting</closeSound>
+					</li>
+				</parts>
+			</scenario>
+	</ScenarioDef>
+</Defs>

@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!--Translucent Lineart-->
+	<!--Human-->
+		<GeneDef>
+			<defName>ABHuman_TranslucentLines_Average</defName>
+			<label>Translucent Human-head Lines (Average)</label>
+			<labelShortAdj>lines</labelShortAdj>
+			<displayCategory>Cosmetic</displayCategory>
+			<biostatCpx>0</biostatCpx>
+			<biostatMet>0</biostatMet>
+			<iconPath>UI/Icons/Genes/HeadGenes/Gene_HumanHeadLines</iconPath>
+			<displayOrderInCategory>7902</displayOrderInCategory>
+			<renderNodeProperties>
+				<li Class="EBSGFramework.PawnRenderNodeProperties_EBSG">
+					<nodeClass>EBSGFramework.PawnRenderNode_EBSGAttachmentHead</nodeClass>
+					<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+					<texPath>Things/Pawn/Humanlike/HeadAttachments/TranslucentLines/MaleAverage</texPath>
+					<ageGraphics>
+							<li>
+								<maleHead>Things/Pawn/Humanlike/HeadAttachments/TranslucentLines/MaleAverage</maleHead>
+								<femaleHead>Things/Pawn/Humanlike/HeadAttachments/TranslucentLines/FemaleAverage</femaleHead>
+							</li>
+						</ageGraphics>
+					<overrideMeshSize>(1, 1)</overrideMeshSize>
+					<parentTagDef>Head</parentTagDef>
+					<rotDrawMode>Fresh</rotDrawMode>
+					<color>(255, 255, 255)</color>
+					<visibleFacing>
+					<li>East</li>
+					<li>South</li>
+					<li>West</li>
+					</visibleFacing>
+					<baseLayer>60</baseLayer>
+				</li>
+			</renderNodeProperties>
+			<modExtensions>
+				<li Class="EBSGFramework.EBSGExtension">
+					<hideInGeneTabWhenInactive>True</hideInGeneTabWhenInactive>
+				</li>
+			</modExtensions>
+		</GeneDef>
+		<GeneDef>
+			<defName>ABHuman_TranslucentLines_Narrow</defName>
+			<label>Translucent Human-head Lines (Narrow)</label>
+			<labelShortAdj>lines</labelShortAdj>
+			<displayCategory>Cosmetic</displayCategory>
+			<biostatCpx>0</biostatCpx>
+			<biostatMet>0</biostatMet>
+			<iconPath>UI/Icons/Genes/HeadGenes/Gene_HumanHeadLines_Narrow</iconPath>
+			<displayOrderInCategory>7902</displayOrderInCategory>
+			<renderNodeProperties>
+				<li Class="EBSGFramework.PawnRenderNodeProperties_EBSG">
+					<nodeClass>EBSGFramework.PawnRenderNode_EBSGAttachmentHead</nodeClass>
+					<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+					<texPath>Things/Pawn/Humanlike/HeadAttachments/TranslucentLines/MaleNarrow</texPath>
+					<ageGraphics>
+							<li>
+								<maleHead>Things/Pawn/Humanlike/HeadAttachments/TranslucentLines/MaleNarrow</maleHead>
+								<femaleHead>Things/Pawn/Humanlike/HeadAttachments/TranslucentLines/FemaleNarrow</femaleHead>
+							</li>
+						</ageGraphics>
+					<overrideMeshSize>(1, 1)</overrideMeshSize>
+					<parentTagDef>Head</parentTagDef>
+					<rotDrawMode>Fresh</rotDrawMode>
+					<color>(255, 255, 255)</color>
+					<visibleFacing>
+					<li>East</li>
+					<li>South</li>
+					<li>West</li>
+					</visibleFacing>
+					<baseLayer>60</baseLayer>
+				</li>
+			</renderNodeProperties>
+			<modExtensions>
+				<li Class="EBSGFramework.EBSGExtension">
+					<hideInGeneTabWhenInactive>True</hideInGeneTabWhenInactive>
+				</li>
+			</modExtensions>
+		</GeneDef>
+	<!--Yautja-->
+		<GeneDef>
+			<defName>ABYautja_TranslucentLines_Head</defName>
+			<label>Translucent Yautja-head Lines (Crested)</label>
+			<labelShortAdj>lines</labelShortAdj>
+			<displayCategory>ABYautjaCategory</displayCategory>
+			<biostatCpx>0</biostatCpx>
+			<biostatMet>0</biostatMet>
+			<iconPath>UI/Icons/Genes/HeadGenes/CrestedHead/Gene_HeadLines</iconPath>
+			<displayOrderInCategory>7902</displayOrderInCategory>
+			<renderNodeProperties>
+				<li>
+					<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+					<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+					<texPaths>
+						<li>Things/Pawn/Humanlike/HeadAttachments/TranslucentLines/Lines_HeadY</li>
+						<li>Things/Pawn/Humanlike/HeadAttachments/TranslucentLines/Lines_HeadYO</li>
+						<li>Things/Pawn/Humanlike/HeadAttachments/TranslucentLines/Lines_HeadYG</li>
+						<li>Things/Pawn/Humanlike/HeadAttachments/TranslucentLines/Lines_HeadO</li>
+						<li>Things/Pawn/Humanlike/HeadAttachments/TranslucentLines/Lines_HeadR</li>
+					</texPaths>
+					<overrideMeshSize>(1, 1)</overrideMeshSize>
+					<parentTagDef>Head</parentTagDef>
+					<rotDrawMode>Fresh</rotDrawMode>
+					<color>(255, 255, 255)</color>
+					<visibleFacing>
+					<li>East</li>
+					<li>South</li>
+					<li>West</li>
+					</visibleFacing>
+					<baseLayer>60</baseLayer>
+				</li>
+			</renderNodeProperties>
+			<exclusionTags>
+				<li>Yautja_Eyes</li>
+			</exclusionTags>
+			<modExtensions>
+				<li Class="EBSGFramework.EBSGExtension">
+					<hideInGeneTabWhenInactive>True</hideInGeneTabWhenInactive>
+				</li>
+				<li Class="VEF.Genes.GeneExtension">
+					<backgroundPathEndogenes>UI/Icons/Genes/Yautja_Endogene_Background</backgroundPathEndogenes>
+				</li>
+			</modExtensions>
+		</GeneDef>
+		<GeneDef>
+			<defName>ABYautja_TranslucentLines_HeadClover</defName>
+			<label>Translucent Yautja-head Lines (Clover)</label>
+			<labelShortAdj>lines</labelShortAdj>
+			<displayCategory>ABYautjaCategory</displayCategory>
+			<biostatCpx>0</biostatCpx>
+			<biostatMet>0</biostatMet>
+			<iconPath>UI/Icons/Genes/HeadGenes/CloverHead/Gene_CloverHeadLines</iconPath>
+			<displayOrderInCategory>7902</displayOrderInCategory>
+			<renderNodeProperties>
+				<li>
+					<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+					<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+					<texPaths>
+						<li>Things/Pawn/Humanlike/HeadAttachments/TranslucentLines/Lines_CloverHeadY</li>
+						<li>Things/Pawn/Humanlike/HeadAttachments/TranslucentLines/Lines_CloverHeadYO</li>
+						<li>Things/Pawn/Humanlike/HeadAttachments/TranslucentLines/Lines_CloverHeadYG</li>
+						<li>Things/Pawn/Humanlike/HeadAttachments/TranslucentLines/Lines_CloverHeadO</li>
+						<li>Things/Pawn/Humanlike/HeadAttachments/TranslucentLines/Lines_CloverHeadR</li>
+					</texPaths>
+					<overrideMeshSize>(1, 1)</overrideMeshSize>
+					<parentTagDef>Head</parentTagDef>
+					<rotDrawMode>Fresh</rotDrawMode>
+					<color>(255, 255, 255)</color>
+					<visibleFacing>
+					<li>East</li>
+					<li>South</li>
+					<li>West</li>
+					</visibleFacing>
+					<baseLayer>60</baseLayer>
+				</li>
+			</renderNodeProperties>
+			<exclusionTags>
+				<li>Yautja_Eyes</li>
+			</exclusionTags>
+			<modExtensions>
+				<li Class="EBSGFramework.EBSGExtension">
+					<hideInGeneTabWhenInactive>True</hideInGeneTabWhenInactive>
+				</li>
+				<li Class="VEF.Genes.GeneExtension">
+					<backgroundPathEndogenes>UI/Icons/Genes/Yautja_Endogene_Background</backgroundPathEndogenes>
+				</li>
+			</modExtensions>
+		</GeneDef>
+		<GeneDef>
+			<defName>ABYautja_TranslucentLines_HeadMalformed</defName>
+			<label>Translucent Yautja-head Lines (Malformed)</label>
+			<labelShortAdj>lines</labelShortAdj>
+			<displayCategory>ABYautjaCategory</displayCategory>
+			<biostatCpx>0</biostatCpx>
+			<biostatMet>0</biostatMet>
+			<iconPath>UI/Icons/Genes/HeadGenes/MalformedHead/Gene_MalformedHeadLines</iconPath>
+			<displayOrderInCategory>7902</displayOrderInCategory>
+			<renderNodeProperties>
+				<li>
+					<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+					<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+					<texPaths>
+						<li>Things/Pawn/Humanlike/HeadAttachments/TranslucentLines/Lines_MalformedHeadY</li>
+						<li>Things/Pawn/Humanlike/HeadAttachments/TranslucentLines/Lines_MalformedHeadYO</li>
+						<li>Things/Pawn/Humanlike/HeadAttachments/TranslucentLines/Lines_MalformedHeadYG</li>
+						<li>Things/Pawn/Humanlike/HeadAttachments/TranslucentLines/Lines_MalformedHeadO</li>
+						<li>Things/Pawn/Humanlike/HeadAttachments/TranslucentLines/Lines_MalformedHeadR</li>
+					</texPaths>
+					<overrideMeshSize>(1, 1)</overrideMeshSize>
+					<parentTagDef>Head</parentTagDef>
+					<rotDrawMode>Fresh</rotDrawMode>
+					<color>(255, 255, 255)</color>
+					<visibleFacing>
+					<li>East</li>
+					<li>South</li>
+					<li>West</li>
+					</visibleFacing>
+					<baseLayer>60</baseLayer>
+				</li>
+			</renderNodeProperties>
+			<exclusionTags>
+				<li>Yautja_Eyes</li>
+			</exclusionTags>
+			<modExtensions>
+				<li Class="EBSGFramework.EBSGExtension">
+					<hideInGeneTabWhenInactive>True</hideInGeneTabWhenInactive>
+				</li>
+				<li Class="VEF.Genes.GeneExtension">
+					<backgroundPathEndogenes>UI/Icons/Genes/Yautja_Endogene_Background</backgroundPathEndogenes>
+				</li>
+			</modExtensions>
+		</GeneDef>
+		<GeneDef>
+			<defName>ABYautja_TranslucentLines_HeadFeral</defName>
+			<label>Translucent Yautja-head Lines (Feral)</label>
+			<labelShortAdj>lines</labelShortAdj>
+			<displayCategory>ABYautjaCategory</displayCategory>
+			<biostatCpx>0</biostatCpx>
+			<biostatMet>0</biostatMet>
+			<iconPath>UI/Icons/Genes/HeadGenes/FeralHead/Gene_FeralHeadLines</iconPath>
+			<displayOrderInCategory>7902</displayOrderInCategory>
+			<renderNodeProperties>
+				<li>
+					<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+					<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+					<texPaths>
+						<li>Things/Pawn/Humanlike/HeadAttachments/TranslucentLines/Lines_FeralHeadY</li>
+						<li>Things/Pawn/Humanlike/HeadAttachments/TranslucentLines/Lines_FeralHeadYO</li>
+						<li>Things/Pawn/Humanlike/HeadAttachments/TranslucentLines/Lines_FeralHeadYG</li>
+						<li>Things/Pawn/Humanlike/HeadAttachments/TranslucentLines/Lines_FeralHeadO</li>
+						<li>Things/Pawn/Humanlike/HeadAttachments/TranslucentLines/Lines_FeralHeadR</li>
+					</texPaths>
+					<overrideMeshSize>(1, 1)</overrideMeshSize>
+					<parentTagDef>Head</parentTagDef>
+					<rotDrawMode>Fresh</rotDrawMode>
+					<color>(255, 255, 255)</color>
+					<visibleFacing>
+					<li>East</li>
+					<li>South</li>
+					<li>West</li>
+					</visibleFacing>
+					<baseLayer>60</baseLayer>
+				</li>
+			</renderNodeProperties>
+			<exclusionTags>
+				<li>Yautja_Eyes</li>
+			</exclusionTags>
+			<modExtensions>
+				<li Class="EBSGFramework.EBSGExtension">
+					<hideInGeneTabWhenInactive>True</hideInGeneTabWhenInactive>
+				</li>
+				<li Class="VEF.Genes.GeneExtension">
+					<backgroundPathEndogenes>UI/Icons/Genes/Yautja_Endogene_Background</backgroundPathEndogenes>
+				</li>
+			</modExtensions>
+		</GeneDef>
+		<GeneDef>
+			<defName>ABYautja_Pattern</defName>
+			<label>Translucent Crest Pattern (Crested)</label>
+			<labelShortAdj>pattern</labelShortAdj>
+			<displayCategory>ABYautjaCategory</displayCategory>
+			<biostatCpx>0</biostatCpx>
+			<biostatMet>0</biostatMet>
+			<iconPath>UI/Icons/Genes/HeadGenes/CrestedHead/Gene_CrestPattern</iconPath>
+			<displayOrderInCategory>7902</displayOrderInCategory>
+			<renderNodeProperties>
+				<li>
+					<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+					<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+					<texPaths>
+						<li>Things/Pawn/Humanlike/HeadAttachments/CrestPattern/Albino</li>
+						<li>Things/Pawn/Humanlike/HeadAttachments/CrestPattern/Decorated</li>
+						<li>Things/Pawn/Humanlike/HeadAttachments/CrestPattern/Speckled</li>
+						<li>Things/Pawn/Humanlike/HeadAttachments/CrestPattern/Striped</li>
+					</texPaths>
+					<overrideMeshSize>(1, 1)</overrideMeshSize>
+					<parentTagDef>Head</parentTagDef>
+					<colorType>Hair</colorType>
+					<rotDrawMode>Fresh</rotDrawMode>
+					<visibleFacing>
+					<li>East</li>
+					<li>South</li>
+					<li>West</li>
+					</visibleFacing>
+					<baseLayer>59</baseLayer>
+				</li>
+			</renderNodeProperties>
+			<exclusionTags>
+				<li>Yautja_Pattern</li>
+			</exclusionTags>
+			<modExtensions>
+				<li Class="EBSGFramework.EBSGExtension">
+					<hideInGeneTabWhenInactive>True</hideInGeneTabWhenInactive>
+				</li>
+				<li Class="VEF.Genes.GeneExtension">
+					<backgroundPathEndogenes>UI/Icons/Genes/Yautja_Endogene_Background</backgroundPathEndogenes>
+				</li>
+			</modExtensions>
+		</GeneDef>
+		<GeneDef>
+			<defName>ABYautja_Clover_Pattern</defName>
+			<label>Translucent Crest Pattern (Clover)</label>
+			<labelShortAdj>pattern</labelShortAdj>
+			<displayCategory>ABYautjaCategory</displayCategory>
+			<biostatCpx>0</biostatCpx>
+			<biostatMet>0</biostatMet>
+			<iconPath>UI/Icons/Genes/HeadGenes/CloverHead/Gene_CloverCrestPattern</iconPath>
+			<displayOrderInCategory>7902</displayOrderInCategory>
+			<renderNodeProperties>
+				<li>
+					<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+					<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+					<texPaths>
+						<li>Things/Pawn/Humanlike/HeadAttachments/CrestPattern/Albino</li>
+						<li>Things/Pawn/Humanlike/HeadAttachments/CrestPattern/CloverDecorated</li>
+						<li>Things/Pawn/Humanlike/HeadAttachments/CrestPattern/CloverSpeckled</li>
+						<li>Things/Pawn/Humanlike/HeadAttachments/CrestPattern/Striped</li>
+					</texPaths>
+					<overrideMeshSize>(1, 1)</overrideMeshSize>
+					<parentTagDef>Head</parentTagDef>
+					<colorType>Hair</colorType>
+					<rotDrawMode>Fresh</rotDrawMode>
+					<visibleFacing>
+					<li>East</li>
+					<li>South</li>
+					<li>West</li>
+					</visibleFacing>
+					<baseLayer>59</baseLayer>
+				</li>
+			</renderNodeProperties>
+			<exclusionTags>
+				<li>Yautja_Pattern</li>
+			</exclusionTags>
+			<modExtensions>
+				<li Class="EBSGFramework.EBSGExtension">
+					<hideInGeneTabWhenInactive>True</hideInGeneTabWhenInactive>
+				</li>
+				<li Class="VEF.Genes.GeneExtension">
+					<backgroundPathEndogenes>UI/Icons/Genes/Yautja_Endogene_Background</backgroundPathEndogenes>
+				</li>
+			</modExtensions>
+		</GeneDef>
+		<GeneDef>
+			<defName>ABYautja_Malformed_Pattern</defName>
+			<label>Translucent Crest Pattern (Malformed)</label>
+			<labelShortAdj>pattern</labelShortAdj>
+			<displayCategory>ABYautjaCategory</displayCategory>
+			<biostatCpx>0</biostatCpx>
+			<biostatMet>0</biostatMet>
+			<iconPath>UI/Icons/Genes/HeadGenes/MalformedHead/Gene_MalformedCrestPattern</iconPath>
+			<displayOrderInCategory>7902</displayOrderInCategory>
+			<renderNodeProperties>
+				<li>
+					<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+					<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+					<texPaths>
+						<li>Things/Pawn/Humanlike/HeadAttachments/CrestPattern/Albino</li>
+						<li>Things/Pawn/Humanlike/HeadAttachments/CrestPattern/MalformedDecorated</li>
+						<li>Things/Pawn/Humanlike/HeadAttachments/CrestPattern/MalformedSpeckled</li>
+						<li>Things/Pawn/Humanlike/HeadAttachments/CrestPattern/Striped</li>
+					</texPaths>
+					<overrideMeshSize>(1, 1)</overrideMeshSize>
+					<parentTagDef>Head</parentTagDef>
+					<colorType>Hair</colorType>
+					<rotDrawMode>Fresh</rotDrawMode>
+					<visibleFacing>
+					<li>East</li>
+					<li>South</li>
+					<li>West</li>
+					</visibleFacing>
+					<baseLayer>59</baseLayer>
+				</li>
+			</renderNodeProperties>
+			<exclusionTags>
+				<li>Yautja_Pattern</li>
+			</exclusionTags>
+			<modExtensions>
+				<li Class="EBSGFramework.EBSGExtension">
+					<hideInGeneTabWhenInactive>True</hideInGeneTabWhenInactive>
+				</li>
+				<li Class="VEF.Genes.GeneExtension">
+					<backgroundPathEndogenes>UI/Icons/Genes/Yautja_Endogene_Background</backgroundPathEndogenes>
+				</li>
+			</modExtensions>
+		</GeneDef>
+		<GeneDef>
+			<defName>ABYautja_Feral_Pattern</defName>
+			<label>Translucent Crest Pattern (Feral)</label>
+			<labelShortAdj>pattern</labelShortAdj>
+			<displayCategory>ABYautjaCategory</displayCategory>
+			<biostatCpx>0</biostatCpx>
+			<biostatMet>0</biostatMet>
+			<iconPath>UI/Icons/Genes/HeadGenes/FeralHead/Gene_FeralCrestPattern</iconPath>
+			<displayOrderInCategory>7902</displayOrderInCategory>
+			<renderNodeProperties>
+				<li>
+					<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+					<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+					<texPaths>
+						<li>Things/Pawn/Humanlike/HeadAttachments/CrestPattern/Albino</li>
+						<li>Things/Pawn/Humanlike/HeadAttachments/CrestPattern/FeralDecorated</li>
+						<li>Things/Pawn/Humanlike/HeadAttachments/CrestPattern/FeralSpeckled</li>
+						<li>Things/Pawn/Humanlike/HeadAttachments/CrestPattern/FeralStriped</li>
+					</texPaths>
+					<overrideMeshSize>(1, 1)</overrideMeshSize>
+					<parentTagDef>Head</parentTagDef>
+					<colorType>Hair</colorType>
+					<rotDrawMode>Fresh</rotDrawMode>
+					<visibleFacing>
+					<li>East</li>
+					<li>South</li>
+					<li>West</li>
+					</visibleFacing>
+					<baseLayer>59</baseLayer>
+				</li>
+			</renderNodeProperties>
+			<exclusionTags>
+				<li>Yautja_Pattern</li>
+			</exclusionTags>
+			<modExtensions>
+				<li Class="EBSGFramework.EBSGExtension">
+					<hideInGeneTabWhenInactive>True</hideInGeneTabWhenInactive>
+				</li>
+				<li Class="VEF.Genes.GeneExtension">
+					<backgroundPathEndogenes>UI/Icons/Genes/Yautja_Endogene_Background</backgroundPathEndogenes>
+				</li>
+			</modExtensions>
+		</GeneDef>
+</Defs>

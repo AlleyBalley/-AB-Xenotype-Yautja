@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!--Base-->
+	<HeadTypeDef ParentName="ABYautjaHeadGene_Base" Name="ABYautjaFeralHeadGene_Base" Abstract="True">
+		<requiredGenes Inherit="False">
+			<li>ABYautjaFeralHead</li>
+		</requiredGenes>
+	</HeadTypeDef>
+<!--Translucent-->
+	<HeadTypeDef ParentName="AverageBase">
+		<narrow>false</narrow>
+		<randomChosen>true</randomChosen>
+		<gender>None</gender>
+		<selectionWeight>100000</selectionWeight>
+		<requiredGenes>
+			<li>ABYautjaTranslucentFeralHead</li>
+		</requiredGenes>
+		<defName>ABYautjaHeadGene_Feral_TranslucentAlbino</defName>
+		<graphicPath>Things/Pawn/Humanlike/Yautja/Heads/Feral/YautjaHead_Feral_TranslucentAlbino</graphicPath>
+	</HeadTypeDef>
+<!--Yellow-Green Eyed-->
+	<!--Albino-->
+		<HeadTypeDef ParentName="ABYautjaFeralHeadGene_Base">
+			<defName>ABYautjaHeadGeneYG_Feral_Albino</defName>
+			<graphicPath>Things/Pawn/Humanlike/Yautja/Heads/Feral/YautjaHeadYG_Feral_Albino</graphicPath>
+		</HeadTypeDef>
+	<!--Decorated-->
+		<HeadTypeDef ParentName="ABYautjaFeralHeadGene_Base">
+			<defName>ABYautjaHeadGeneYG_Feral_Decorated</defName>
+			<graphicPath>Things/Pawn/Humanlike/Yautja/Heads/Feral/YautjaHeadYG_Feral_Decorated</graphicPath>
+		</HeadTypeDef>
+	<!--Speckled-->
+		<HeadTypeDef ParentName="ABYautjaFeralHeadGene_Base">
+			<defName>ABYautjaHeadGeneYG_Feral_Speckled</defName>
+			<graphicPath>Things/Pawn/Humanlike/Yautja/Heads/Feral/YautjaHeadYG_Feral_Speckled</graphicPath>
+		</HeadTypeDef>
+	<!--Striped-->
+		<HeadTypeDef ParentName="ABYautjaFeralHeadGene_Base">
+			<defName>ABYautjaHeadGeneYG_Feral_Striped</defName>
+			<graphicPath>Things/Pawn/Humanlike/Yautja/Heads/Feral/YautjaHeadYG_Feral_Striped</graphicPath>
+		</HeadTypeDef>
+<!--Yellow Eyed-->
+	<!--Albino-->
+		<HeadTypeDef ParentName="ABYautjaFeralHeadGene_Base">
+			<defName>ABYautjaHeadGeneY_Feral_Albino</defName>
+			<graphicPath>Things/Pawn/Humanlike/Yautja/Heads/Feral/YautjaHeadY_Feral_Albino</graphicPath>
+		</HeadTypeDef>
+	<!--Decorated-->
+		<HeadTypeDef ParentName="ABYautjaFeralHeadGene_Base">
+			<defName>ABYautjaHeadGeneY_Feral_Decorated</defName>
+			<graphicPath>Things/Pawn/Humanlike/Yautja/Heads/Feral/YautjaHeadY_Feral_Decorated</graphicPath>
+		</HeadTypeDef>
+	<!--Speckled-->
+		<HeadTypeDef ParentName="ABYautjaFeralHeadGene_Base">
+			<defName>ABYautjaHeadGeneY_Feral_Speckled</defName>
+			<graphicPath>Things/Pawn/Humanlike/Yautja/Heads/Feral/YautjaHeadY_Feral_Speckled</graphicPath>
+		</HeadTypeDef>
+	<!--Striped-->
+		<HeadTypeDef ParentName="ABYautjaFeralHeadGene_Base">
+			<defName>ABYautjaHeadGeneY_Feral_Striped</defName>
+			<graphicPath>Things/Pawn/Humanlike/Yautja/Heads/Feral/YautjaHeadY_Feral_Striped</graphicPath>
+		</HeadTypeDef>
+<!--Yellow-Orange Eyed-->
+	<!--Albino-->
+		<HeadTypeDef ParentName="ABYautjaFeralHeadGene_Base">
+			<defName>ABYautjaHeadGeneYO_Feral_Albino</defName>
+			<graphicPath>Things/Pawn/Humanlike/Yautja/Heads/Feral/YautjaHeadYO_Feral_Albino</graphicPath>
+		</HeadTypeDef>
+	<!--Decorated-->
+		<HeadTypeDef ParentName="ABYautjaFeralHeadGene_Base">
+			<defName>ABYautjaHeadGeneYO_Feral_Decorated</defName>
+			<graphicPath>Things/Pawn/Humanlike/Yautja/Heads/Feral/YautjaHeadYO_Feral_Decorated</graphicPath>
+		</HeadTypeDef>
+	<!--Speckled-->
+		<HeadTypeDef ParentName="ABYautjaFeralHeadGene_Base">
+			<defName>ABYautjaHeadGeneYO_Feral_Speckled</defName>
+			<graphicPath>Things/Pawn/Humanlike/Yautja/Heads/Feral/YautjaHeadYO_Feral_Speckled</graphicPath>
+		</HeadTypeDef>
+	<!--Striped-->
+		<HeadTypeDef ParentName="ABYautjaFeralHeadGene_Base">
+			<defName>ABYautjaHeadGeneYO_Feral_Striped</defName>
+			<graphicPath>Things/Pawn/Humanlike/Yautja/Heads/Feral/YautjaHeadYO_Feral_Striped</graphicPath>
+		</HeadTypeDef>
+<!--Orange Eyed-->
+	<!--Albino-->
+		<HeadTypeDef ParentName="ABYautjaFeralHeadGene_Base">
+			<defName>ABYautjaHeadGeneO_Feral_Albino</defName>
+			<graphicPath>Things/Pawn/Humanlike/Yautja/Heads/Feral/YautjaHeadO_Feral_Albino</graphicPath>
+		</HeadTypeDef>
+	<!--Decorated-->
+		<HeadTypeDef ParentName="ABYautjaFeralHeadGene_Base">
+			<defName>ABYautjaHeadGeneO_Feral_Decorated</defName>
+			<graphicPath>Things/Pawn/Humanlike/Yautja/Heads/Feral/YautjaHeadO_Feral_Decorated</graphicPath>
+		</HeadTypeDef>
+	<!--Speckled-->
+		<HeadTypeDef ParentName="ABYautjaFeralHeadGene_Base">
+			<defName>ABYautjaHeadGeneO_Feral_Speckled</defName>
+			<graphicPath>Things/Pawn/Humanlike/Yautja/Heads/Feral/YautjaHeadO_Feral_Speckled</graphicPath>
+		</HeadTypeDef>
+	<!--Striped-->
+		<HeadTypeDef ParentName="ABYautjaFeralHeadGene_Base">
+			<defName>ABYautjaHeadGeneO_Feral_Striped</defName>
+			<graphicPath>Things/Pawn/Humanlike/Yautja/Heads/Feral/YautjaHeadO_Feral_Striped</graphicPath>
+		</HeadTypeDef>
+<!--Red Eyed-->
+	<!--Albino-->
+		<HeadTypeDef ParentName="ABYautjaFeralHeadGene_Base">
+			<defName>ABYautjaHeadGeneR_Feral_Albino</defName>
+			<graphicPath>Things/Pawn/Humanlike/Yautja/Heads/Feral/YautjaHeadR_Feral_Albino</graphicPath>
+		</HeadTypeDef>
+	<!--Decorated-->
+		<HeadTypeDef ParentName="ABYautjaFeralHeadGene_Base">
+			<defName>ABYautjaHeadGeneR_Feral_Decorated</defName>
+			<graphicPath>Things/Pawn/Humanlike/Yautja/Heads/Feral/YautjaHeadR_Feral_Decorated</graphicPath>
+		</HeadTypeDef>
+	<!--Speckled-->
+		<HeadTypeDef ParentName="ABYautjaFeralHeadGene_Base">
+			<defName>ABYautjaHeadGeneR_Feral_Speckled</defName>
+			<graphicPath>Things/Pawn/Humanlike/Yautja/Heads/Feral/YautjaHeadR_Feral_Speckled</graphicPath>
+		</HeadTypeDef>
+	<!--Striped-->
+		<HeadTypeDef ParentName="ABYautjaFeralHeadGene_Base">
+			<defName>ABYautjaHeadGeneR_Feral_Striped</defName>
+			<graphicPath>Things/Pawn/Humanlike/Yautja/Heads/Feral/YautjaHeadR_Feral_Striped</graphicPath>
+		</HeadTypeDef>
+</Defs>

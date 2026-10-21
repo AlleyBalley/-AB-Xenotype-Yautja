@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+<!--Unblooded Yautja Hunters-->
+	<ScenarioDef ParentName="ScenarioBase">
+		<defName>ABYautjaScenarioUnblooded</defName>
+		<label>Unblooded Yautja hunters</label>
+		<description>The five of you are sent to an unknown planet as Pups. You have to build everything from scratch and face the competition of the other Hunters. The Elders expect you to return to your clan as true Hunters.</description>
+		<scenario>
+			<summary>Five Unblooded Yautja attempt to survive a hunt to earn their blood status. Difficult.</summary>
+			<playerFaction>
+				<factionDef>ABYautja_PlayerUnblooded</factionDef>
+			</playerFaction>
+			<parts Inherit="False">
+			<!-- Config pages -->
+					<li Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes">
+						<def>ConfigurePawnsXenotypes</def>
+						<customSummary>Start with just yautja.</customSummary>
+						<overrideKinds>
+							<li>
+								<pawnKind>Colonist_ABYautja_Unblooded</pawnKind>
+							</li>
+						</overrideKinds>
+					</li>
+			<!--Scene Parts-->
+				<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>ABYautja_Tech_T1</project>
+				</li>
+				<li Class="ScenPart_PlayerPawnsArriveMethod">
+					<def>PlayerPawnsArriveMethod</def>
+					<method>DropPods</method>
+					<visible>false</visible>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Silver</thingDef>
+					<count>200</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MealSurvivalPack</thingDef>
+					<count>25</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MedicineIndustrial</thingDef>
+					<count>15</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>ABYautja_Gun_Hunting_Bow</thingDef>
+					<stuff>WoodLog</stuff>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>ABYautja_Gun_Hunting_Bow</thingDef>
+					<stuff>WoodLog</stuff>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>ABYautja_Gun_Compound_Bow</thingDef>
+					<stuff>WoodLog</stuff>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>ABYautja_Melee_CeremonialDagger</thingDef>
+					<stuff>Steel</stuff>
+					<count>2</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsNearPlayerStart">
+					<def>ScatterThingsNearPlayerStart</def>
+					<thingDef>Steel</thingDef>
+					<count>300</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsNearPlayerStart">
+					<def>ScatterThingsNearPlayerStart</def>
+					<thingDef>ComponentIndustrial</thingDef>
+					<count>10</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsNearPlayerStart">
+					<def>ScatterThingsNearPlayerStart</def>
+					<thingDef>Plasteel</thingDef>
+					<count>5</count>
+				</li>
+				<li Class="ScenPart_GameStartDialog">
+					<def>GameStartDialog</def>
+					<text>Your clan sent you in drop pods with the bare minimum. To become Hunters you have to hunt, survive and return to your clan... \n\nOr die trying.</text>
+					<closeSound>GameStartSting</closeSound>
+				</li>
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<thingDef>ShipChunk</thingDef>
+					<count>10</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<thingDef>Steel</thingDef>
+					<count>720</count>
+				</li>
+			</parts>
+		</scenario>
+	</ScenarioDef>
+</Defs>

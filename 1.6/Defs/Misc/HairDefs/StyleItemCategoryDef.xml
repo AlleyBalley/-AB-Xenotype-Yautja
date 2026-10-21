@@ -1,7 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <StyleItemCategoryDef>
-    <defName>Yautja</defName>
-    <label>yautjan</label>
-  </StyleItemCategoryDef>
+	<StyleItemCategoryDef>
+		<defName>Yautja</defName>
+		<label>yautjan</label>
+	</StyleItemCategoryDef>
+  
+	<StyleItemCategoryDef>
+		<defName>Yautja_CurledHorn</defName>
+		<label>yautjan</label>
+	</StyleItemCategoryDef>
+  
+	<StyleItemCategoryDef>
+		<defName>MALFORMED_Yautja</defName>
+		<label>yautjan</label>
+	</StyleItemCategoryDef>
+  
+	<StyleItemCategoryDef>
+		<defName>FERAL_Yautja</defName>
+		<label>yautjan</label>
+	</StyleItemCategoryDef>
 </Defs>

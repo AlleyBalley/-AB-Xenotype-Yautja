@@ -6,10 +6,15 @@
 		<displayOrderInCategory>950</displayOrderInCategory>
 		<selectionWeight>1</selectionWeight>
 		<exclusionTags>
-			<li MayRequire="redmattis.betterprerequisites">BS_BodySizeHuge</li>
+			<li>BS_BodySizeHuge</li>
+			<li>AG_BodySize</li>
 			<li>BodySize</li>
 		</exclusionTags>
 		<canGenerateInGeneSet>true</canGenerateInGeneSet>
+		<statFactors>
+			<LifespanFactor>4.5</LifespanFactor>
+			<ImmunityGainSpeed>1.25</ImmunityGainSpeed>
+		</statFactors>
 		<damageFactors>
 			<AcidBurn>0.85</AcidBurn>
 			<VEF_SecondaryAcidBurn>0.85</VEF_SecondaryAcidBurn>
@@ -20,6 +25,66 @@
 			</li>
 		</modExtensions>
 	</GeneDef>
+	
+<!--Malformed-->
+	<GeneDef ParentName="ABYautjaFrameBase">
+		<defName>ABMalformedYautjaFrame</defName>
+		<label>Malformed Yautja Frame</label>
+		<description>Carriers of this gene grow to 5 or 6.5 feet and can live for 2000 years.</description>
+		<iconPath>UI/Icons/Genes/BS_Frames/MalformedYautja</iconPath>
+		<biostatCpx>2</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<statOffsets>
+			<SM_BodySizeOffset MayRequire="redmattis.betterprerequisites">0.05</SM_BodySizeOffset>
+			<ComfyTemperatureMax>68</ComfyTemperatureMax>
+			<SM_RaidWealthOffset MayRequire="redmattis.betterprerequisites">1000</SM_RaidWealthOffset>
+		</statOffsets>
+		<statFactors>
+			<CarryingCapacity>1.9</CarryingCapacity>
+			<VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">4</VEF_MassCarryCapacity>
+		</statFactors>
+	</GeneDef>
+	
+<!--Feral-->
+	<GeneDef ParentName="ABYautjaFrameBase">
+		<defName>ABFeralYautjaFrame</defName>
+		<label>Feral Yautja Frame</label>
+		<description>Carriers of this gene grow to 6.5 or 7 feet and can live for 2000 years.</description>
+		<iconPath>UI/Icons/Genes/BS_Frames/FeralYautja</iconPath>
+		<biostatCpx>2</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<statOffsets>
+			<SM_BodySizeOffset MayRequire="redmattis.betterprerequisites">0.13</SM_BodySizeOffset>
+			<ComfyTemperatureMax>68</ComfyTemperatureMax>
+			<SM_RaidWealthOffset MayRequire="redmattis.betterprerequisites">1600</SM_RaidWealthOffset>
+		</statOffsets>
+		<statFactors>
+			<MoveSpeed>1.3</MoveSpeed>
+			<CarryingCapacity>2.3</CarryingCapacity>
+			<VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">5.3</VEF_MassCarryCapacity>
+		</statFactors>
+	</GeneDef>
+	
+<!--Standard-->
+	<GeneDef ParentName="ABYautjaFrameBase">
+		<defName>ABYautjaFrame</defName>
+		<label>Yautja Frame</label>
+		<description>Carriers of this gene grow to 7 or 7.5 feet and can live for 2000 years.</description>
+		<iconPath>UI/Icons/Genes/BS_Frames/Yautja</iconPath>
+		<biostatCpx>3</biostatCpx>
+		<biostatMet>-2</biostatMet>
+		<statOffsets>
+			<SM_BodySizeOffset MayRequire="redmattis.betterprerequisites">0.25</SM_BodySizeOffset>
+			<ComfyTemperatureMax>68</ComfyTemperatureMax>
+			<SM_RaidWealthOffset MayRequire="redmattis.betterprerequisites">1750</SM_RaidWealthOffset>
+		</statOffsets>
+		<statFactors>
+			<MoveSpeed>2.5</MoveSpeed>
+			<CarryingCapacity>2.3</CarryingCapacity>
+			<VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">5.5</VEF_MassCarryCapacity>
+		</statFactors>
+	</GeneDef>
+	
 <!--Berserk-->
 	<GeneDef ParentName="ABYautjaFrameBase">
 		<defName>ABBerserkYautjaFrame</defName>
@@ -30,12 +95,20 @@
 		<biostatMet>-2</biostatMet>
 		<statOffsets>
 			<SM_BodySizeOffset MayRequire="redmattis.betterprerequisites">0.45</SM_BodySizeOffset>
+			<ComfyTemperatureMax>68</ComfyTemperatureMax>
+			<SM_RaidWealthOffset MayRequire="redmattis.betterprerequisites">1850</SM_RaidWealthOffset>
 		</statOffsets>
 		<statFactors>
 				<CarryingCapacity>2.6</CarryingCapacity>
 				<VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">6</VEF_MassCarryCapacity>
 		</statFactors>
+		<forcedTraits>
+			<li>
+				<def>BS_Giant</def>
+			</li>
+		</forcedTraits>
 	</GeneDef>
+	
 <!--Grendel-->	
 	<GeneDef ParentName="ABYautjaFrameBase">
 		<defName>ABGrendelKingYautjaFrame</defName>
@@ -44,17 +117,20 @@
 		<iconPath>UI/Icons/Genes/BS_Frames/GrendelYautja</iconPath>
 		<biostatCpx>3</biostatCpx>
 		<biostatMet>-3</biostatMet>
-		<exclusionTags>
-			<li MayRequire="redmattis.betterprerequisites">BS_BodySizeHuge</li>
-			<li>BodySize</li>
-		</exclusionTags>
 		<statOffsets>
 			<SM_BodySizeOffset MayRequire="redmattis.betterprerequisites">0.7</SM_BodySizeOffset>
+			<ComfyTemperatureMax>68</ComfyTemperatureMax>
+			<SM_RaidWealthOffset MayRequire="redmattis.betterprerequisites">2000</SM_RaidWealthOffset>
 		</statOffsets>
 		<statFactors>
 				<MoveSpeed>2</MoveSpeed>
 				<CarryingCapacity>3</CarryingCapacity>
 				<VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">7.5</VEF_MassCarryCapacity>
 		</statFactors>
+		<forcedTraits>
+			<li>
+				<def>BS_Giant</def>
+			</li>
+		</forcedTraits>
 	</GeneDef>
 </Defs>

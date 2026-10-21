@@ -1,0 +1,460 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!--Wood-->
+	<RecipeDef ParentName="WoodGauntletUIICONinstall">
+		<defName>Install_WoodLogWithGauntlet_TribalGauntlet</defName>
+		<label>Install wooden limb with wooden gauntlet</label>
+		<description>Install wooden limb with a wooden gauntlet.</description>
+		<jobString>installing wood limb with wood gauntlet.</jobString>
+		<incompatibleWithHediffTags>
+			<li>GauntletTag</li>
+		</incompatibleWithHediffTags>
+		<descriptionHyperlinks>
+			<ThingDef>WoodLogWithGauntlet_TribalGauntlet</ThingDef>
+			<HediffDef>ABYautja_WoodLog_TribalGauntlet</HediffDef>
+		</descriptionHyperlinks>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>WoodLogWithGauntlet_TribalGauntlet</li>
+					</thingDefs>
+				</filter>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>WoodLogWithGauntlet_TribalGauntlet</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>ABYautja_Forearm</li>
+			<li>Shoulder</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>ABYautja_WoodLog_TribalGauntlet</addsHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="WoodGauntletUIICONinstall">
+		<defName>Install_WoodLogWithGauntlet_TechGauntlet</defName>
+		<label>Install wooden limb with metal gauntlet</label>
+		<description>Install wooden limb with a metal gauntlet.</description>
+		<jobString>installing wood limb with metal gauntlet.</jobString>
+		<incompatibleWithHediffTags>
+			<li>GauntletTag</li>
+		</incompatibleWithHediffTags>
+		<descriptionHyperlinks>
+			<ThingDef>WoodLogWithGauntlet_TechGauntlet</ThingDef>
+			<HediffDef>ABYautja_WoodLog_TechGauntlet</HediffDef>
+		</descriptionHyperlinks>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>WoodLogWithGauntlet_TechGauntlet</li>
+					</thingDefs>
+				</filter>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>WoodLogWithGauntlet_TechGauntlet</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>ABYautja_Forearm</li>
+			<li>Shoulder</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>ABYautja_WoodLog_TechGauntlet</addsHediff>
+	</RecipeDef>
+	
+<!--Simple Prosthetic+Tribal-->
+	<RecipeDef ParentName="ProstheticGauntletUIICONinstall">
+		<defName>Install_SimpleProstheticForearmWithGauntlet_TribalGauntlet</defName>
+		<label>Install prosthetic forearm with wooden gauntlet</label>
+		<description>Install prosthetic forearm with a wooden gauntlet.</description>
+		<jobString>installing prosthetic forearm with wood gauntlet.</jobString>
+		<incompatibleWithHediffTags>
+			<li>GauntletTag</li>
+		</incompatibleWithHediffTags>
+		<descriptionHyperlinks>
+			<ThingDef>SimpleProstheticForearmWithGauntlet_TribalGauntlet</ThingDef>
+			<HediffDef>ABYautja_SimpleProsthetic_Forearm_TribalGauntlet</HediffDef>
+		</descriptionHyperlinks>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SimpleProstheticForearmWithGauntlet_TribalGauntlet</li>
+					</thingDefs>
+				</filter>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SimpleProstheticForearmWithGauntlet_TribalGauntlet</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>ABYautja_Forearm</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>ABYautja_SimpleProsthetic_Forearm_TribalGauntlet</addsHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="ProstheticGauntletUIICONinstall">
+		<defName>Install_SimpleProstheticArmWithGauntlet_TribalGauntlet</defName>
+		<label>Install prosthetic arm with wooden gauntlet</label>
+		<description>Install prosthetic arm with a wooden gauntlet.</description>
+		<jobString>installing prosthetic arm with wood gauntlet.</jobString>
+		<incompatibleWithHediffTags>
+			<li>GauntletTag</li>
+		</incompatibleWithHediffTags>
+		<descriptionHyperlinks>
+			<ThingDef>SimpleProstheticArmWithGauntlet_TribalGauntlet</ThingDef>
+			<HediffDef>ABYautja_SimpleProsthetic_Arm_TribalGauntlet</HediffDef>
+		</descriptionHyperlinks>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SimpleProstheticArmWithGauntlet_TribalGauntlet</li>
+					</thingDefs>
+				</filter>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SimpleProstheticArmWithGauntlet_TribalGauntlet</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Shoulder</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>ABYautja_SimpleProsthetic_Arm_TribalGauntlet</addsHediff>
+	</RecipeDef>
+	
+<!--Simple Prosthetic+Tech-->
+	<RecipeDef ParentName="ProstheticGauntletUIICONinstall">
+		<defName>Install_SimpleProstheticForearmWithGauntlet_TechGauntlet</defName>
+		<label>Install prosthetic forearm with metal gauntlet</label>
+		<description>Install prosthetic forearm with a metal gauntlet.</description>
+		<jobString>installing prosthetic forearm with metal gauntlet.</jobString>
+		<incompatibleWithHediffTags>
+			<li>GauntletTag</li>
+		</incompatibleWithHediffTags>
+		<descriptionHyperlinks>
+			<ThingDef>SimpleProstheticForearmWithGauntlet_TechGauntlet</ThingDef>
+			<HediffDef>ABYautja_SimpleProsthetic_Forearm_TechGauntlet</HediffDef>
+		</descriptionHyperlinks>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SimpleProstheticForearmWithGauntlet_TechGauntlet</li>
+					</thingDefs>
+				</filter>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SimpleProstheticForearmWithGauntlet_TechGauntlet</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>ABYautja_Forearm</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>ABYautja_SimpleProsthetic_Forearm_TechGauntlet</addsHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="ProstheticGauntletUIICONinstall">
+		<defName>Install_SimpleProstheticArmWithGauntlet_TechGauntlet</defName>
+		<label>Install prosthetic arm with metal gauntlet</label>
+		<description>Install prosthetic arm with a metal gauntlet.</description>
+		<jobString>installing prosthetic arm with metal gauntlet.</jobString>
+		<incompatibleWithHediffTags>
+			<li>GauntletTag</li>
+		</incompatibleWithHediffTags>
+		<descriptionHyperlinks>
+			<ThingDef>SimpleProstheticArmWithGauntlet_TechGauntlet</ThingDef>
+			<HediffDef>ABYautja_SimpleProsthetic_Arm_TechGauntlet</HediffDef>
+		</descriptionHyperlinks>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SimpleProstheticArmWithGauntlet_TechGauntlet</li>
+					</thingDefs>
+				</filter>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SimpleProstheticArmWithGauntlet_TechGauntlet</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Shoulder</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>ABYautja_SimpleProsthetic_Arm_TechGauntlet</addsHediff>
+	</RecipeDef>
+	
+<!--Bionic+Tribal-->
+	<RecipeDef ParentName="BionicGauntletUIICONinstall">
+		<defName>Install_BionicForearmWithGauntlet_TribalGauntlet</defName>
+		<label>Install bionic forearm with wooden gauntlet</label>
+		<description>Install bionic forearm with a wooden gauntlet.</description>
+		<jobString>installing bionic forearm with wood gauntlet.</jobString>
+		<incompatibleWithHediffTags>
+			<li>GauntletTag</li>
+		</incompatibleWithHediffTags>
+		<descriptionHyperlinks>
+			<ThingDef>BionicForearmWithGauntlet_TribalGauntlet</ThingDef>
+			<HediffDef>ABYautja_Bionic_Forearm_TribalGauntlet</HediffDef>
+		</descriptionHyperlinks>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BionicForearmWithGauntlet_TribalGauntlet</li>
+					</thingDefs>
+				</filter>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BionicForearmWithGauntlet_TribalGauntlet</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>ABYautja_Forearm</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>ABYautja_Bionic_Forearm_TribalGauntlet</addsHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="BionicGauntletUIICONinstall">
+		<defName>Install_BionicArmWithGauntlet_TribalGauntlet</defName>
+		<label>Install bionic arm with wooden gauntlet</label>
+		<description>Install bionic arm with a wooden gauntlet.</description>
+		<jobString>installing bionic arm with wood gauntlet.</jobString>
+		<incompatibleWithHediffTags>
+			<li>GauntletTag</li>
+		</incompatibleWithHediffTags>
+		<descriptionHyperlinks>
+			<ThingDef>BionicArmWithGauntlet_TribalGauntlet</ThingDef>
+			<HediffDef>ABYautja_Bionic_Arm_TribalGauntlet</HediffDef>
+		</descriptionHyperlinks>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BionicArmWithGauntlet_TribalGauntlet</li>
+					</thingDefs>
+				</filter>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BionicArmWithGauntlet_TribalGauntlet</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Shoulder</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>ABYautja_Bionic_Arm_TribalGauntlet</addsHediff>
+	</RecipeDef>
+	
+<!--Bionic+Tech-->
+	<RecipeDef ParentName="BionicGauntletUIICONinstall">
+		<defName>Install_BionicForearmWithGauntlet_TechGauntlet</defName>
+		<label>Install bionic forearm with metal gauntlet</label>
+		<description>Install bionic forearm with a metal gauntlet.</description>
+		<jobString>installing bionic forearm with metal gauntlet.</jobString>
+		<incompatibleWithHediffTags>
+			<li>GauntletTag</li>
+		</incompatibleWithHediffTags>
+		<descriptionHyperlinks>
+			<ThingDef>BionicForearmWithGauntlet_TechGauntlet</ThingDef>
+			<HediffDef>ABYautja_Bionic_Forearm_TechGauntlet</HediffDef>
+		</descriptionHyperlinks>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BionicForearmWithGauntlet_TechGauntlet</li>
+					</thingDefs>
+				</filter>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BionicForearmWithGauntlet_TechGauntlet</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>ABYautja_Forearm</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>ABYautja_Bionic_Forearm_TechGauntlet</addsHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="BionicGauntletUIICONinstall">
+		<defName>Install_BionicArmWithGauntlet_TechGauntlet</defName>
+		<label>Install bionic arm with metal gauntlet</label>
+		<description>Install bionic arm with a metal gauntlet.</description>
+		<jobString>installing bionic arm with metal gauntlet.</jobString>
+		<incompatibleWithHediffTags>
+			<li>GauntletTag</li>
+		</incompatibleWithHediffTags>
+		<descriptionHyperlinks>
+			<ThingDef>BionicArmWithGauntlet_TechGauntlet</ThingDef>
+			<HediffDef>ABYautja_Bionic_Arm_TechGauntlet</HediffDef>
+		</descriptionHyperlinks>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BionicArmWithGauntlet_TechGauntlet</li>
+					</thingDefs>
+				</filter>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BionicArmWithGauntlet_TechGauntlet</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Shoulder</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>ABYautja_Bionic_Arm_TechGauntlet</addsHediff>
+	</RecipeDef>
+	
+<!--Archotech+Tribal-->
+	<RecipeDef ParentName="ArchotechGauntletUIICONinstall">
+		<defName>Install_ArchotechForearmWithGauntlet_TribalGauntlet</defName>
+		<label>Install archotech forearm with wooden gauntlet</label>
+		<description>Install archotech forearm with a wooden gauntlet.</description>
+		<jobString>installing archotech forearm with wood gauntlet.</jobString>
+		<incompatibleWithHediffTags>
+			<li>GauntletTag</li>
+		</incompatibleWithHediffTags>
+		<descriptionHyperlinks>
+			<ThingDef>ArchotechForearmWithGauntlet_TribalGauntlet</ThingDef>
+			<HediffDef>ABYautja_Archotech_Forearm_TribalGauntlet</HediffDef>
+		</descriptionHyperlinks>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ArchotechForearmWithGauntlet_TribalGauntlet</li>
+					</thingDefs>
+				</filter>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ArchotechForearmWithGauntlet_TribalGauntlet</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>ABYautja_Forearm</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>ABYautja_Archotech_Forearm_TribalGauntlet</addsHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="ArchotechGauntletUIICONinstall">
+		<defName>Install_ArchotechArmWithGauntlet_TribalGauntlet</defName>
+		<label>Install archotech arm with wooden gauntlet</label>
+		<description>Install archotech arm with a wooden gauntlet.</description>
+		<jobString>installing archotech arm with wood gauntlet.</jobString>
+		<incompatibleWithHediffTags>
+			<li>GauntletTag</li>
+		</incompatibleWithHediffTags>
+		<descriptionHyperlinks>
+			<ThingDef>ArchotechArmWithGauntlet_TribalGauntlet</ThingDef>
+			<HediffDef>ABYautja_Archotech_Arm_TribalGauntlet</HediffDef>
+		</descriptionHyperlinks>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ArchotechArmWithGauntlet_TribalGauntlet</li>
+					</thingDefs>
+				</filter>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ArchotechArmWithGauntlet_TribalGauntlet</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Shoulder</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>ABYautja_Archotech_Arm_TribalGauntlet</addsHediff>
+	</RecipeDef>
+	
+<!--Archotech+Tech-->
+	<RecipeDef ParentName="ArchotechGauntletUIICONinstall">
+		<defName>Install_ArchotechForearmWithGauntlet_TechGauntlet</defName>
+		<label>Install archotech forearm with metal gauntlet</label>
+		<description>Install archotech forearm with a metal gauntlet.</description>
+		<jobString>installing archotech forearm with metal gauntlet.</jobString>
+		<incompatibleWithHediffTags>
+			<li>GauntletTag</li>
+		</incompatibleWithHediffTags>
+		<descriptionHyperlinks>
+			<ThingDef>ArchotechForearmWithGauntlet_TechGauntlet</ThingDef>
+			<HediffDef>ABYautja_Archotech_Forearm_TechGauntlet</HediffDef>
+		</descriptionHyperlinks>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ArchotechForearmWithGauntlet_TechGauntlet</li>
+					</thingDefs>
+				</filter>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ArchotechForearmWithGauntlet_TechGauntlet</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>ABYautja_Forearm</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>ABYautja_Archotech_Forearm_TechGauntlet</addsHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="ArchotechGauntletUIICONinstall">
+		<defName>Install_ArchotechArmWithGauntlet_TechGauntlet</defName>
+		<label>Install archotech arm with metal gauntlet</label>
+		<description>Install archotech arm with a metal gauntlet.</description>
+		<jobString>installing archotech arm with metal gauntlet.</jobString>
+		<incompatibleWithHediffTags>
+			<li>GauntletTag</li>
+		</incompatibleWithHediffTags>
+		<descriptionHyperlinks>
+			<ThingDef>ArchotechArmWithGauntlet_TechGauntlet</ThingDef>
+			<HediffDef>ABYautja_Archotech_Arm_TechGauntlet</HediffDef>
+		</descriptionHyperlinks>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ArchotechArmWithGauntlet_TechGauntlet</li>
+					</thingDefs>
+				</filter>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ArchotechArmWithGauntlet_TechGauntlet</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Shoulder</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>ABYautja_Archotech_Arm_TechGauntlet</addsHediff>
+	</RecipeDef>
+</Defs>

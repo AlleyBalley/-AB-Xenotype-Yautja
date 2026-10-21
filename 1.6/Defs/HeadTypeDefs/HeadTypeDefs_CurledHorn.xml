@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<HeadTypeDef ParentName="AverageBase">
+		<narrow>false</narrow>
+		<randomChosen>true</randomChosen>
+		<gender>None</gender>
+		<selectionWeight>100000</selectionWeight>
+		<requiredGenes>
+			<li>ABYautjaTranslucentCurledHornHead</li>
+		</requiredGenes>
+		<defName>ABYautjaHeadGene_Crested_TranslucentCurledHornAlbino</defName>
+		<graphicPath>Things/Pawn/Humanlike/Yautja/Heads/CurledHorn/YautjaHead_TranslucentCurledHornAlbino</graphicPath>
+	</HeadTypeDef>
+</Defs>

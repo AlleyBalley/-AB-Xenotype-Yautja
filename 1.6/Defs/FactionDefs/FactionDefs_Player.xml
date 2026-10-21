@@ -179,11 +179,11 @@
 		</startingResearchTags>
 		<apparelStuffFilter>
 			<thingDefs>
-			<li>Steel</li>
-			<li>Synthread</li>
-			<li>Leather_Light</li>
-			<li>Leather_Plain</li>
-			<li>Leather_Bear</li>
+				<li>Steel</li>
+				<li>Synthread</li>
+				<li>Leather_Light</li>
+				<li>Leather_Plain</li>
+				<li>Leather_Bear</li>
 			</thingDefs>
 		</apparelStuffFilter>
 		<colorSpectrum>
@@ -199,5 +199,49 @@
 			</li>
 		</pawnGroupMakers>
 		<factionIconPath>UI/Icons/Icon_YautjaB</factionIconPath>
+	</FactionDef>
+	
+	<FactionDef ParentName="PlayerFactionBase">
+		<defName>ABYautja_PlayerUSMC</defName>
+		<label>Marine</label>
+		<description>off-world space marines.</description>
+		<isPlayer>true</isPlayer>
+		<basicMemberKind>ABYautja_PlayerUSMC</basicMemberKind>
+		<pawnSingular>marine</pawnSingular>
+		<pawnsPlural>marines</pawnsPlural>
+		<techLevel>Spacer</techLevel>
+		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
+		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Offworld</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+		<factionIconPath>World/WorldObjects/Expanding/Village</factionIconPath>
+		<startingResearchTags>
+			<li>ClassicStart</li>
+		</startingResearchTags>
+		<startingTechprintsResearchTags>
+			<li>ClassicStart</li>
+			<li>ClassicStartTechprints</li>
+		</startingTechprintsResearchTags>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>Synthread</li>
+				<li>Leather_Bear</li>
+			</thingDefs>
+		</apparelStuffFilter>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Baseliner MayRequire="Ludeon.RimWorld.Biotech">0.75</Baseliner>
+				<Hussar MayRequire="Ludeon.RimWorld.Biotech">0.05</Hussar>
+				<Dirtmole MayRequire="Ludeon.RimWorld.Biotech">0.1</Dirtmole>
+				<Waster MayRequire="Ludeon.RimWorld.Biotech">0.1</Waster>
+				<Starjack MayRequire="Ludeon.RimWorld.Biotech,Ludeon.RimWorld.Odyssey">0.25</Starjack>
+			</xenotypeChances>
+		</xenotypeSet>
 	</FactionDef>
 </Defs>

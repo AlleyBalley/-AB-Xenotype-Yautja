@@ -1,0 +1,638 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!--Ranged-->
+	<ThingDef ParentName="ABYautja_BaseMakeableGun_T3">
+		<defName>ABYautja_Gun_Needler</defName>
+		<label>needlegun</label>
+		<description>Regardless of the exact form of the weapon, all needleguns serve as projectile weapons firing a hail of razor thin metal spears. How these projectiles are fired is not clear, as the weapon produces no discernible muzzle flash and often little noise, yet fires these needles with tremendous velocity and accuracy. Regardless of physical appearance, the needlegun is mid-ranged and powerful.\n\nThey are made from an unknown metal that is incredibly lightweight yet able to cut like hardened steel. They spears often have a blood groove down the middle, designed to cause a target to bleed out if they become stuck in the flesh.</description>
+		<graphicData>
+			<texPath>Things/Equipment/Ranged/Yautja_Needlegun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<equippedAngleOffset>-10</equippedAngleOffset>
+		<soundInteract>Interact_Autopistol</soundInteract>
+		<statBases>
+			<WorkToMake>5000</WorkToMake>
+			<MarketValue>750</MarketValue>
+			<Mass>1.5</Mass>
+			<AccuracyTouch>0.75</AccuracyTouch>
+			<AccuracyShort>0.85</AccuracyShort>
+			<AccuracyMedium>0.50</AccuracyMedium>
+			<AccuracyLong>0.35</AccuracyLong>
+			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>ABBullet_Needlegun</defaultProjectile>
+				<warmupTime>1.2</warmupTime>
+				<range>24</range>
+				<burstShotCount>3</burstShotCount>
+				<ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+				<muzzleFlashScale>0</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+			<label>grip</label>
+			<capacities>
+				<li>Blunt</li>
+			</capacities>
+			<power>9</power>
+			<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+			<label>barrel</label>
+			<capacities>
+				<li>Blunt</li>
+				<li>Poke</li>
+			</capacities>
+			<power>9</power>
+			<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<weaponTags>
+			<li>YautjaNeedleGun</li>
+		</weaponTags>
+		<costStuffCount>80</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costList>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<researchPrerequisites>
+			<li>Smithing</li>
+		</researchPrerequisites>
+	</ThingDef>
+	
+	<ThingDef ParentName="ABYautja_BaseMakeableGun_T3">
+		<defName>ABYautja_Gun_Speargun</defName>
+		<label>speargun</label>
+		<description>Regardless of the exact form of the weapon, all spearguns serve as projectile weapons firing a hail of razor thin metal spears. How these projectiles are fired is not clear, as the weapon produces no discernible muzzle flash and often little noise, yet fires these needles with tremendous velocity and accuracy. Regardless of physical appearance, the speargun is mid-ranged and powerful.\n\nThey are made from an unknown metal that is incredibly lightweight yet able to cut like hardened steel. They spears often have a blood groove down the middle, designed to cause a target to bleed out if they become stuck in the flesh.</description>
+		<techLevel Inherit ="False">Medieval</techLevel>
+		<graphicData>
+			<texPath>Things/Equipment/Ranged/Yautja_Speargun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<equippedAngleOffset>-10</equippedAngleOffset>
+		<soundInteract>Interact_Autopistol</soundInteract>
+		<statBases>
+			<WorkToMake>7000</WorkToMake>
+			<MarketValue>900</MarketValue>
+			<Mass>3</Mass>
+			<AccuracyTouch>0.75</AccuracyTouch>
+			<AccuracyShort>0.85</AccuracyShort>
+			<AccuracyMedium>0.50</AccuracyMedium>
+			<AccuracyLong>0.35</AccuracyLong>
+			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>ABBullet_speargun</defaultProjectile>
+				<warmupTime>1</warmupTime>
+				<range>35</range>
+				<burstShotCount>3</burstShotCount>
+				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+				<muzzleFlashScale>0</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+			<label>grip</label>
+			<capacities>
+				<li>Blunt</li>
+			</capacities>
+			<power>9</power>
+			<cooldownTime>1.6</cooldownTime>
+			</li>
+			<li>
+			<label>barrel</label>
+			<capacities>
+				<li>Blunt</li>
+				<li>Poke</li>
+			</capacities>
+			<power>9</power>
+			<cooldownTime>1.6</cooldownTime>
+			</li>
+		</tools>
+		<weaponTags>
+			<li>YautjaSpearGun</li>
+		</weaponTags>
+		<costStuffCount>100</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costList>
+			<Plasteel>30</Plasteel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+		</costList>
+		<researchPrerequisites>
+			<li>Smithing</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<ThingDef ParentName="ABYautja_BaseMakeableGun_T3">
+		<defName>ABYautja_Gun_SpearRifle</defName>
+		<label>rifle speargun</label>
+		<description>Regardless of the exact form of the weapon, all spearguns serve as projectile weapons firing metal spears. How these projectiles are fired is not clear, as the weapon produces no discernible muzzle flash and often little noise, yet fires spears with tremendous velocity and accuracy. Regardless of physical appearance, the speargun is long-ranged and very powerful. Some have been seen with integrated computerized scopes further increasing their range. A common tactic, particularly with young and inexperienced hunters, is to use the Netgun to immobilize prey before finishing it off with the Speargun.\n\nDespite the weapon's name, the projectiles fired by the Speargun are not typically spear-shaped; the most common form seems to be a U-shaped projectile with a weighted tail and two serrated prongs pointing forwards. They are made from an unknown metal that is incredibly lightweight yet able to cut like hardened steel. The spears often have a blood groove down the middle, designed to cause a target to bleed out if they become stuck in the flesh.</description>
+		<techLevel Inherit ="False">Medieval</techLevel>
+		<graphicData>
+			<texPath>Things/Equipment/Ranged/Yautja_SpearRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>1.5</drawSize>			
+		</graphicData>
+		<equippedAngleOffset>-15</equippedAngleOffset>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<statBases>
+			<MarketValue>1250</MarketValue>
+			<WorkToMake>9000</WorkToMake>
+			<Mass>4</Mass>
+			<AccuracyTouch>0.50</AccuracyTouch>
+			<AccuracyShort>0.70</AccuracyShort>
+			<AccuracyMedium>0.86</AccuracyMedium>
+			<AccuracyLong>0.88</AccuracyLong>
+			<RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+		</statBases>
+		<costStuffCount>130</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costList>
+			<Uranium>5</Uranium>
+			<Plasteel>25</Plasteel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<verbs>
+			<li>
+			<verbClass>Verb_Shoot</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>ABBullet_SpearRifle</defaultProjectile>
+			<warmupTime>2.7</warmupTime>
+			<range>50</range>
+			<soundCastTail>GunTail_Heavy</soundCastTail>
+			<muzzleFlashScale>0</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<weaponTags>
+			<li>YautjaSpearRifle</li>
+		</weaponTags>
+		<generateCommonality>0.05</generateCommonality>
+		<modExtensions>
+			<li Class="VEF.Things.ThingDefExtension">
+				<weaponCarryDrawOffsets>
+					<north>
+						<drawOffset>(0.04, 0, 0.06)</drawOffset>
+					</north>
+					<east>
+						<drawOffset>(-0.04, 0, 0.06)</drawOffset>
+					</east>
+					<south>
+						<drawOffset>(0.04, 0, 0.06)</drawOffset>
+					</south>
+					<west>
+						<drawOffset>(0.04, 0, 0.06)</drawOffset>
+					</west>
+				</weaponCarryDrawOffsets>
+			</li>
+		</modExtensions>
+	</ThingDef> 
+
+	<ThingDef ParentName="ABYautja_BaseMakeableGun_T3">
+		<defName>ABYautja_Gun_HandheldNetGun</defName>
+		<label>handheld net gun</label>
+		<description>The handheld net gun is a handheld version of the shoulder mounted net gun.</description>
+		<graphicData>
+			<texPath>Things/Equipment/Ranged/Handheld_PredatorNetGun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>0.9</drawSize>
+		</graphicData>
+		<equippedAngleOffset>-10</equippedAngleOffset>
+		<soundInteract>Interact_Autopistol</soundInteract>
+		<statBases>
+			<WorkToMake>5000</WorkToMake>
+			<MarketValue>500</MarketValue>
+			<Mass>2</Mass>
+			<AccuracyTouch>1</AccuracyTouch>
+			<AccuracyShort>0.87</AccuracyShort>
+			<AccuracyMedium>0.6</AccuracyMedium>
+			<AccuracyLong>0.3</AccuracyLong>
+			<RangedWeapon_Cooldown>3</RangedWeapon_Cooldown>
+		</statBases>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>ABGun_Net</defaultProjectile>
+				<warmupTime>1</warmupTime>
+				<range>20</range>
+				<soundCast>Interact_BeatFire</soundCast>
+				<soundCastTail>GunTail_Light</soundCastTail>
+				<muzzleFlashScale>8</muzzleFlashScale>
+			</li>
+		</verbs>
+		<techLevel>Medieval</techLevel>
+		<weaponTags>
+			<li>YautjaHandheldNetGun</li>
+		</weaponTags>
+		<costStuffCount>75</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costList>				
+			<Cloth>40</Cloth>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<modExtensions>
+			<li Class="VEF.Things.ThingDefExtension">
+				<weaponCarryDrawOffsets>
+					<north>
+						<drawOffset>(0, 0, -0.05)</drawOffset>
+					</north>
+					<east>
+						<drawOffset>(0, 0, -0.05)</drawOffset>
+					</east>
+					<south>
+						<drawOffset>(0, 0, -0.05)</drawOffset>
+					</south>
+					<west>
+						<drawOffset>(0, 0, -0.05)</drawOffset>
+					</west>
+				</weaponCarryDrawOffsets>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="ABYautja_BaseMakeableGun_T3">
+		<defName>ABYautja_Ranged_ElectroshockBola</defName>
+		<label>electroshock bolas</label>
+		<description>A set of three un-assuming orbs attached to each other by three strings, knotted in the center. These orbs are made of a highly conductive material, and when they touch after wrapping around a target the emitt an electric charge.</description>
+		<thingClass>VEF.Weapons.LaserGun</thingClass>
+		<techLevel Inherit ="False">Medieval</techLevel>
+		<graphicData>
+			<texPath>Things/Equipment/Ranged/Yautja_ElectricBola</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<equippedAngleOffset>-55</equippedAngleOffset>
+		<uiIconScale>1.2</uiIconScale>
+		<tickerType>Normal</tickerType>
+		<soundInteract>Interact_BeatFire</soundInteract>
+		<statBases>
+			<MarketValue>600</MarketValue>
+			<WorkToMake>3600</WorkToMake>
+			<Mass>1.4</Mass>
+			<AccuracyTouch>1</AccuracyTouch>
+			<AccuracyShort>0.80</AccuracyShort>
+			<AccuracyMedium>0.75</AccuracyMedium>
+			<AccuracyLong>0.60</AccuracyLong>
+			<RangedWeapon_Cooldown>5</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponTags>
+			<li>YautjaBolas</li>
+			<li>NonLethal</li>
+		</weaponTags>
+		<generateCommonality>0.1</generateCommonality>
+		<weaponClasses>
+			<li>Ranged</li>
+		</weaponClasses>
+		<recipeMaker>
+			<researchPrerequisite>ABYautja_Tech_T3</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Steel>30</Steel>
+			<Silver>5</Silver>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_LaunchProjectile</verbClass>
+				<label>bolas</label>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>ElectroBola_Thrown</defaultProjectile>
+				<warmupTime>1</warmupTime>
+				<range>20</range>
+				<soundCast>Interact_BeatFire</soundCast>
+				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+				<muzzleFlashScale>0</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>false</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+		<modExtensions>
+			<li Class="VEF.Things.ThingDefExtension">
+				<weaponCarryDrawOffsets>
+					<north>
+						<drawOffset>(0.05, 0, -0.04)</drawOffset>
+					</north>
+					<east>
+						<drawOffset>(-0.13, 0, -0.09)</drawOffset>
+					</east>
+					<south>
+						<drawOffset>(-0.05, 0, -0.04)</drawOffset>
+					</south>
+					<west>
+						<drawOffset>(0.13, 0, -0.09)</drawOffset>
+					</west>
+				</weaponCarryDrawOffsets>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	
+<!--Melee-->
+	<!--ThingDef ParentName="ABBaseMeleeWeapon_Sharp_Quality">
+		<defName>ABYautja_Melee_RazorWhip</defName>
+		<label>razor whip</label>
+		<description>A flexible metal whip with blades incorperated into the whole length. Offers a great reach while still being melee damage.</description>
+		<techLevel Inherit="False">Medieval</techLevel>
+		<graphicData>
+			<texPath>Things/Equipment/Melee/Yautja_RazorWhip</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<equippedAngleOffset>-28</equippedAngleOffset>
+		<statBases>
+			<WorkToMake>6500</WorkToMake>
+			<MarketValue>1000</MarketValue>
+			<MaxHitPoints>325</MaxHitPoints>
+			<Mass>4</Mass>
+			<Flammability>0.4</Flammability>
+			<DeteriorationRate>0.5</DeteriorationRate>
+			<VEF_MeleeWeaponRange>2.5</VEF_MeleeWeaponRange>
+		</statBases>
+		<tools>
+		  <li>
+			<label>whip</label>
+			<capacities>
+				<li>Scratch</li>
+			</capacities>
+			<power>24</power>
+			<cooldownTime>0.75</cooldownTime>
+		  </li>
+		  <li>
+			<label>blade</label>
+			<capacities>
+				<li>Cut</li>
+				<li>Stab</li>
+			</capacities>
+			<power>26</power>
+			<cooldownTime>0.7</cooldownTime>
+		  </li>
+		</tools>
+		<costList>
+			<Steel>100</Steel>
+		</costList>
+		<costStuffCount>50</costStuffCount>
+		<stuffCategories Inherit="False">
+			<li>Metallic</li>
+		</stuffCategories>
+		<recipeMaker>
+			<researchPrerequisite>ABYautja_Tech_T3</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<weaponTags>
+			<li>YautjaRazorWhip</li>
+		</weaponTags>
+		<modExtensions Inherit="False">
+			<li Class="VEF.Things.ThingDefExtension">
+				<weaponCarryDrawOffsets>
+					<north>
+						<drawOffset>(0.17, 0, 0.07)</drawOffset>
+					</north>
+					<east>
+						<drawOffset>(0, 0, 0.07)</drawOffset>
+					</east>
+					<south>
+						<drawOffset>(0.17, 0, 0.07)</drawOffset>
+					</south>
+					<west>
+						<drawOffset>(0, 0, 0.07)</drawOffset>
+					</west>
+				</weaponCarryDrawOffsets>
+			</li>
+		</modExtensions>
+	</ThingDef-->
+
+	<ThingDef ParentName="ABYautja_BaseMeleeWeapon_Blunt_Quality">
+		<defName>ABYautja_Melee_Flail</defName>
+		<label>predator flail</label>
+		<description>A multi-jointed metal flail. The further away from the user, the more abbrasive spikes there are. While a tricky weapon to master, the damage is worth the effort.</description>
+		<techLevel Inherit="False">Medieval</techLevel>
+		<graphicData>
+			<texPath>Things/Equipment/Melee/Yautja_PredatorFlail</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<equippedAngleOffset>-50</equippedAngleOffset>
+		<statBases>
+			<WorkToMake>3300</WorkToMake>
+			<MarketValue>800</MarketValue>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Mass>3</Mass>
+			<Flammability>0.4</Flammability>
+			<DeteriorationRate>0.5</DeteriorationRate>
+			<VEF_MeleeWeaponRange>1.15</VEF_MeleeWeaponRange>
+		</statBases>
+		<tools>
+		  <li>
+			<label>point</label>
+			<capacities>
+				<li>Scratch</li>
+				<li>Blunt</li>
+			</capacities>
+			<power>28</power>
+			<cooldownTime>1.3</cooldownTime>
+		  </li>
+		  <li>
+			<label>flail</label>
+			<capacities>
+				<li>Blunt</li>
+			</capacities>
+			<power>28</power>
+			<cooldownTime>1.3</cooldownTime>
+		  </li>
+		  <li>
+			<label>handle</label>
+			<capacities>
+				<li>Blunt</li>
+			</capacities>
+			<power>9</power>
+			<cooldownTime>2</cooldownTime>
+		  </li>
+		</tools>
+		<costStuffCount>140</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<recipeMaker>
+			<researchPrerequisite>ABYautja_Tech_T3</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<weaponTags>
+			<li>YautjaFlail</li>
+		</weaponTags>
+		<modExtensions>
+			<li Class="VEF.Things.ThingDefExtension">
+				<usableWithShields>true</usableWithShields>
+				<weaponCarryDrawOffsets>
+					<north>
+						<drawOffset>(0, 0, -0.15)</drawOffset>
+					</north>
+					<east>
+						<drawOffset>(0, 0, -0.15)</drawOffset>
+					</east>
+					<south>
+						<drawOffset>(0, 0, -0.15)</drawOffset>
+					</south>
+					<west>
+						<drawOffset>(0, 0, -0.15)</drawOffset>
+					</west>
+				</weaponCarryDrawOffsets>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+<!--Ranged+Melee-->
+	<ThingDef ParentName="ABBaseMeleeWeapon_Sharp_Quality">
+		<defName>ABYautja_Melee_Combistaff</defName>
+		<label>combistaff</label>
+		<description>A collapsible combat staff. It can be thrown at targets like a pila.</description>
+		<techLevel Inherit ="False">Medieval</techLevel>
+		<graphicData>
+			<texPath>Things/Equipment/Melee/Yautja_Combistaff</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>1.25</drawSize>		
+		</graphicData>
+		<weaponClasses>
+			<li>Ranged</li>
+		</weaponClasses>
+		<tickerType>Normal</tickerType>
+		<soundInteract>Interact_BeatFire</soundInteract>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>70</costStuffCount>
+		<statBases>
+			<MarketValue>450</MarketValue>
+			<WorkToMake>6000</WorkToMake>
+			<Mass>2</Mass>
+			<AccuracyTouch>0.50</AccuracyTouch>
+			<AccuracyShort>0.75</AccuracyShort>
+			<AccuracyMedium>0.80</AccuracyMedium>
+			<AccuracyLong>0.60</AccuracyLong>
+			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+			<VEF_MeleeWeaponRange>1.7</VEF_MeleeWeaponRange>
+		</statBases>
+		<weaponTags>
+			<li>YautjaCombistaff</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>Ranged</li>
+		</weaponClasses>
+		<recipeMaker>
+			<researchPrerequisite>ABYautja_Tech_T3</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<label>Combistaff</label>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Combistaff_Thrown</defaultProjectile>
+				<warmupTime>1</warmupTime>
+				<range>24</range>
+				<soundCast>Interact_BeatFire</soundCast>
+				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>shaft</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>13</power>
+				<cooldownTime>0.75</cooldownTime>
+			</li>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+					<li>Poke</li>
+				</capacities>
+				<power>16</power>
+				<cooldownTime>0.75</cooldownTime>
+			</li>
+		</tools>
+		<comps>
+			<li Class="MVCF.Comps.CompProperties_VerbProps">
+				<compClass>MVCF.Comps.Comp_VerbProps</compClass>
+				<verbProps>
+					<li>
+						<label>Combistaff</label>
+						<canBeToggled>true</canBeToggled>
+						<separateToggle>true</separateToggle>
+						<toggleLabel>Toggle throwing</toggleLabel>
+						<toggleDescription>Toggle the throwing of the combistaff</toggleDescription>
+						<toggleIconPath>Things/Projectile/Yautja_Combistaff</toggleIconPath>
+						<comps>
+							<li Class="MVCF.VerbComps.VerbCompProperties_Switch">
+								<switchIcon>Things/Projectile/Yautja_Combistaff</switchIcon>
+								<startEnabled>true</startEnabled>
+							</li>
+						</comps>
+					</li>
+				</verbProps>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

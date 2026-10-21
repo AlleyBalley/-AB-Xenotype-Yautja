@@ -5,8 +5,10 @@
 		<settlementNameMaker>ABNamerYautjaJungleClan</settlementNameMaker>
 		<settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
 		<factionIconPath>UI/Icons/Icon_Yautja</factionIconPath>
-		<settlementGenerationWeight>1</settlementGenerationWeight>
-		<requiredCountAtGameStart>2</requiredCountAtGameStart>
+		<settlementGenerationWeight>0.5</settlementGenerationWeight>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<canSiege>true</canSiege>
+		<canStageAttacks>true</canStageAttacks>
 		<maxConfigurableAtWorldCreation IgnoreIfNoMatchingField="True">5</maxConfigurableAtWorldCreation>
 		<configurationListOrderPriority IgnoreIfNoMatchingField="True">1</configurationListOrderPriority>
 		<requiredMemes>
@@ -78,14 +80,9 @@
 		<description>The Yautja Clans are a coalition of extra terrestrial aliens with a fondness for hunting. They are ruthless hunters, fighting with honor for glory. Those that disobey their strict code of honor are cast out as Bad Bloods. Their quest for glory is endless and inoxerable. Few survive their bloodlust.</description>
 		<listOrderPriority>20</listOrderPriority>
 		<earliestRaidDays>75</earliestRaidDays>
-		<settlementGenerationWeight>1</settlementGenerationWeight>
-		<requiredCountAtGameStart>1</requiredCountAtGameStart>
-		<basicMemberKind>ABYautja_Unblooded</basicMemberKind>
+		<settlementGenerationWeight>0.8</settlementGenerationWeight>
 		<canMakeRandomly>true</canMakeRandomly>
-		<canSiege>false</canSiege>
-		<canStageAttacks>true</canStageAttacks>
 		<leaderTitle>Hunter Clan Elder</leaderTitle>
-		<canMakeRandomly>true</canMakeRandomly>
 		<techLevel>Spacer</techLevel>
 		<colorSpectrum>
 			<li>(83, 142, 74)</li>
@@ -94,10 +91,13 @@
 		</colorSpectrum>
 		<xenotypeSet>
 			<xenotypeChances>
-				<ABStandardYautja>0.85</ABStandardYautja>
+				<ABStandardYautja>0.84</ABStandardYautja>
+				<ABFeralYautja>0.45</ABFeralYautja>
 				<ABScoutYautja>0.05</ABScoutYautja>
 				<ABSwordYautja>0.05</ABSwordYautja>
 				<ABShieldYautja>0.04</ABShieldYautja>
+				<ABMalformedYautja>0.01</ABMalformedYautja>
+				<ABTranslucentYautja>0.01</ABTranslucentYautja>
 				<ABGrendelKingYautja>0.01</ABGrendelKingYautja>
 			</xenotypeChances>
 		</xenotypeSet>
@@ -206,12 +206,8 @@
 		<description>The Yautja Clans are a coalition of extra terrestrial aliens with a fondness for hunting. They are ruthless hunters, fighting with honor for glory. Those that disobey their strict code of honor are cast out as Bad Bloods. Their quest for glory is endless and inoxerable. Few survive their bloodlust.</description>
 		<listOrderPriority>20</listOrderPriority>
 		<earliestRaidDays>75</earliestRaidDays>
-		<settlementGenerationWeight>1</settlementGenerationWeight>
-		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<settlementGenerationWeight>0.5</settlementGenerationWeight>
 		<basicMemberKind>ABYautja_AugmentedUnblooded</basicMemberKind>
-		<canMakeRandomly>true</canMakeRandomly>
-		<canSiege>false</canSiege>
-		<canStageAttacks>true</canStageAttacks>
 		<leaderTitle>Augmented Clan Elder</leaderTitle>
 		<canMakeRandomly>true</canMakeRandomly>
 		<techLevel>Spacer</techLevel>
@@ -222,11 +218,14 @@
 		</colorSpectrum>
 		<xenotypeSet>
 			<xenotypeChances>
-				<ABStandardYautja>0.83</ABStandardYautja>
+				<ABStandardYautja>0.81</ABStandardYautja>
 				<ABBerserkYautja>0.02</ABBerserkYautja>
+				<ABFeralYautja>0.52</ABFeralYautja>
 				<ABScoutYautja>0.05</ABScoutYautja>
 				<ABSwordYautja>0.05</ABSwordYautja>
 				<ABShieldYautja>0.04</ABShieldYautja>
+				<ABMalformedYautja>0.03</ABMalformedYautja>
+				<ABTranslucentYautja>0.02</ABTranslucentYautja>
 				<ABGrendelKingYautja>0.01</ABGrendelKingYautja>
 			</xenotypeChances>
 		</xenotypeSet>
@@ -335,12 +334,8 @@
 		<description>Berserk Clans are comprised mainly of Super Yautja. These Berserk Clans are sometimes in opposition with Hunter Clans. While Berserk Clans can sometimes disagree with the Hunter Clans they still follow the code of honor.</description>
 		<listOrderPriority>20</listOrderPriority>
 		<earliestRaidDays>75</earliestRaidDays>
-		<settlementGenerationWeight>1</settlementGenerationWeight>
-		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<settlementGenerationWeight>0.7</settlementGenerationWeight>
 		<basicMemberKind>ABYautja_Unblooded</basicMemberKind>
-		<canMakeRandomly>true</canMakeRandomly>
-		<canSiege>false</canSiege>
-		<canStageAttacks>true</canStageAttacks>
 		<leaderTitle>Berserk Clan Elder</leaderTitle>
 		<canMakeRandomly>true</canMakeRandomly>
 		<techLevel>Spacer</techLevel>
@@ -351,9 +346,11 @@
 		</colorSpectrum>
 		<xenotypeSet>
 			<xenotypeChances>				
-				<ABBerserkYautja>0.90</ABBerserkYautja>
+				<ABBerserkYautja>0.89</ABBerserkYautja>
+				<ABFeralYautja>0.52</ABFeralYautja>
 				<ABSwordYautja>0.05</ABSwordYautja>
 				<ABShieldYautja>0.04</ABShieldYautja>
+				<ABTranslucentYautja>0.01</ABTranslucentYautja>
 				<ABGrendelKingYautja>0.01</ABGrendelKingYautja>
 			</xenotypeChances>
 		</xenotypeSet>
@@ -457,12 +454,9 @@
 		<description>The Bad Bloods are traitors, pariah and, worst of all, dishonored members of the Yautja society. They are banned from their parents clan and hunted out of spite. They live in chaos with no rules or lord except the will to live and to hunt. They do not obey to any code of Honor known to yautja society and their existence is considered an insult to the Clans.</description>
 		<listOrderPriority>20</listOrderPriority>
 		<earliestRaidDays>75</earliestRaidDays>
-		<settlementGenerationWeight>1</settlementGenerationWeight>
-		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<settlementGenerationWeight>1.5</settlementGenerationWeight>
+		<requiredCountAtGameStart>2</requiredCountAtGameStart>
 		<basicMemberKind>ABYautja_YoungBlood</basicMemberKind>
-		<canMakeRandomly>true</canMakeRandomly>
-		<canSiege>false</canSiege>
-		<canStageAttacks>true</canStageAttacks>
 		<leaderTitle>BadBlood Elder</leaderTitle>
 		<settlementNameMaker>ABNamerYautjaBadBloodClan</settlementNameMaker>
 		<canMakeRandomly>true</canMakeRandomly>
@@ -474,10 +468,13 @@
 		<permanentEnemy>true</permanentEnemy>
 		<xenotypeSet>
 			<xenotypeChances>
-				<ABStandardYautja>0.75</ABStandardYautja>
+				<ABStandardYautja>0.74</ABStandardYautja>
 				<ABBerserkYautja>0.10</ABBerserkYautja>
+				<ABFeralYautja>0.52</ABFeralYautja>
 				<ABScoutYautja>0.05</ABScoutYautja>
 				<ABSwordYautja>0.05</ABSwordYautja>
+				<ABMalformedYautja>0.02</ABMalformedYautja>
+				<ABTranslucentYautja>0.01</ABTranslucentYautja>
 				<ABShieldYautja>0.05</ABShieldYautja>
 			</xenotypeChances>
 		</xenotypeSet>

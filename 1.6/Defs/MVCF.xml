@@ -2,11 +2,12 @@
 <Defs>
     <MVCF.ModDef>
         <defName>ABYautja</defName>
-        <label>AB Yautja</label>
-        <description>Xenotype Yautja Plasmacaster</description>
+        <label>[AB] Xenotype: Yautja</label>
+        <description>multi verb combat attributes of [AB] Xenotype: Yautja</description>
         <ActivateFeatures>
             <li>Drawing</li>
             <li>ApparelVerbs</li>
+			<li>HediffVerbs</li>
             <li>IndependentFire</li>
             <li>IntegratedToggle</li>
         </ActivateFeatures>

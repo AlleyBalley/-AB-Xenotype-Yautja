@@ -3,10 +3,10 @@
  
 	<ThingDef ParentName="ABYautja_HelmetMakeable_Base">
 		<defName>ABYautja_Apparel_TribalMask</defName>
-		<label>Yautja Tribal Mask</label>
-		<description>A light Tribal mask, the ancestor of the standard Yautja bio mask. The helmet offers far less protection than a bio mask.</description>
+		<label>predator tribal mask</label>
+		<description>A light Tribal mask, the ancestor of the standard yautja bio-mask. The helmet offers far less protection than a bio-mask.</description>
 		<graphicData>
-		<texPath>Things/Pawn/Humanlike/Yautja/Apparel/Yautja_Light_Armor_Helmet/Yautja_LightArmor_Helmet_B</texPath>
+		<texPath>Things/Pawn/Humanlike/Yautja/Apparel/Yautja_LightBiomask/Yautja_LightBiomask_B</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
@@ -14,18 +14,21 @@
 			<MarketValue>300</MarketValue>
 			<MaxHitPoints>100</MaxHitPoints>
 			<WorkToMake>5000</WorkToMake>
-			<ArmorRating_Sharp>0.35</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.10</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.05</ArmorRating_Heat>
+			<ArmorRating_Sharp>0.45</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.20</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.15</ArmorRating_Heat>
 			<Insulation_Heat>1</Insulation_Heat>
 			<Insulation_Cold>1</Insulation_Cold>
 		</statBases>
 		<equippedStatOffsets>
 			<PsychicSensitivity>-0.10</PsychicSensitivity>
 		</equippedStatOffsets>
-		<costList>
-			<WoodLog>30</WoodLog>
-		</costList>
+		<costStuffCount inherit="false">30</costStuffCount>
+		<stuffCategories inherit="false">
+			<li>Woody</li>
+			<li>Stony</li>
+			<li>Metallic</li>
+		</stuffCategories>
 		<recipeMaker>
 			<recipeUsers>
 				<li>CraftingSpot</li>
@@ -44,7 +47,7 @@
 			<bodyPartGroups>
 				<li>FullHead</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Pawn/Humanlike/Yautja/Apparel/Yautja_Light_Armor_Helmet/Yautja_LightArmor_Helmet_B</wornGraphicPath>		
+			<wornGraphicPath>Things/Pawn/Humanlike/Yautja/Apparel/Yautja_LightBiomask/Yautja_LightBiomask_B</wornGraphicPath>		
 			<layers>
 				<li>Overhead</li>
 			</layers>

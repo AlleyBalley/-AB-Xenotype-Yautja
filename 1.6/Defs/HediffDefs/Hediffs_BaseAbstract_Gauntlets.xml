@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<HediffDef ParentName="ABSpecialGoodHediff" Name="ABGauntletHediffBase" Abstract="True">
+		<hediffClass>Hediff_Implant</hediffClass>
+		<labelNoun>gauntlet</labelNoun>
+		<initialSeverity>1</initialSeverity>
+		<maxSeverity>1</maxSeverity>
+		<priceImpact>true</priceImpact>
+		<countsAsAddedPartOrImplant>true</countsAsAddedPartOrImplant>
+		<allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
+		<addedPartProps>
+			<solid>true</solid>
+		</addedPartProps>
+		<tags>
+			<li>GauntletTag</li>
+		</tags>
+		<modExtensions>
+			<li Class="ABXenotypeYautja.DefExtension_GauntletModuleHediff" />
+		</modExtensions>
+	</HediffDef>
+	
+	<HediffDef ParentName="ABGauntletHediffBase" Name="ABGauntletHediffBase_Tribal" Abstract="True">
+		<tags>
+			<li>GauntletModuleTag_Utility</li>
+			<li>GauntletModuleTag_Combat</li>
+			<li>GauntletModuleTag_LastResort</li>
+		</tags>
+	</HediffDef>
+	
+	<HediffDef ParentName="AddedBodyPartBase" Name="ABGauntletProstheticHediffBase" Abstract="True">
+		<hediffClass>Hediff_AddedPart</hediffClass>
+		<defaultLabelColor>(0.5, 0.5, 0.9)</defaultLabelColor>
+		<labelNoun>gauntlet</labelNoun>
+		<initialSeverity>1</initialSeverity>
+		<maxSeverity>1</maxSeverity>
+		<makesAlert>false</makesAlert>
+		<makesSickThought>false</makesSickThought>
+		<priceImpact>true</priceImpact>
+		<countsAsAddedPartOrImplant>true</countsAsAddedPartOrImplant>
+		<allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
+		<tags>
+			<li>GauntletTag</li>
+		</tags>
+		<modExtensions>
+			<li Class="ABXenotypeYautja.DefExtension_GauntletModuleHediff" />
+		</modExtensions>
+	</HediffDef>
+	
+	<HediffDef ParentName="ABGauntletProstheticHediffBase" Name="ABGauntletProstheticHediffBase_Tribal" Abstract="True">
+		<stages>
+			<li>
+				<minSeverity>1</minSeverity>
+				<statOffsets>
+					<ArmorRating_Blunt>0.01</ArmorRating_Blunt>
+					<ArmorRating_Sharp>0.01</ArmorRating_Sharp>
+					<ArmorRating_Heat>0.01</ArmorRating_Heat>
+					<WorkSpeedGlobal>-0.05</WorkSpeedGlobal>
+				</statOffsets>
+			</li>
+		</stages>
+		<tags>
+			<li>GauntletModuleTag_Utility</li>
+			<li>GauntletModuleTag_Combat</li>
+			<li>GauntletModuleTag_LastResort</li>
+		</tags>
+	</HediffDef>
+	
+	<HediffDef ParentName="ABGauntletProstheticHediffBase" Name="ABGauntletProstheticHediffBase_Tech" Abstract="True">
+		<stages>
+			<li>
+				<minSeverity>1</minSeverity>
+				<statOffsets>
+					<ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+					<ArmorRating_Sharp>0.05</ArmorRating_Sharp>
+					<ArmorRating_Heat>0.05</ArmorRating_Heat>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<HediffDef Name="GauntletModuleHediffBase" Abstract="True">
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(176,215,200)</defaultLabelColor>
+		<countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
+		<priceImpact>true</priceImpact>
+		<tags>
+			<li>GauntletModule_BaseTag</li>
+		</tags>
+	</HediffDef>
+	
+	<HediffDef ParentName="GauntletModuleHediffBase" Name="GauntletModuleHediffBase_Blade" Abstract="True">
+		<tags>
+			<li>GauntletModuleTag_Blade</li>
+		</tags>
+		<comps>
+			<li Class="ABXenotypeYautja.HediffCompProperties_ExtraTip_ModuleSlotName">
+				<SlotTitle>Occupied slot: </SlotTitle>
+				<SlotName>Blade</SlotName>
+			</li>
+		</comps>
+	</HediffDef>
+	
+	<HediffDef ParentName="GauntletModuleHediffBase" Name="GauntletModuleHediffBase_Utility" Abstract="True">
+		<tags>
+			<li>GauntletModuleTag_Utility</li>
+		</tags>
+		<comps>
+			<li Class="ABXenotypeYautja.HediffCompProperties_ExtraTip_ModuleSlotName">
+				<SlotTitle>Occupied slot: </SlotTitle>
+				<SlotName>Utility</SlotName>
+			</li>
+		</comps>
+	</HediffDef>
+	
+	<HediffDef ParentName="GauntletModuleHediffBase" Name="GauntletModuleHediffBase_Combat" Abstract="True">
+		<tags>
+			<li>GauntletModuleTag_Combat</li>
+		</tags>
+		<comps>
+			<li Class="ABXenotypeYautja.HediffCompProperties_ExtraTip_ModuleSlotName">
+				<SlotTitle>Occupied slot: </SlotTitle>
+				<SlotName>Combat</SlotName>
+			</li>
+		</comps>
+	</HediffDef>
+	
+	<HediffDef ParentName="GauntletModuleHediffBase" Name="GauntletModuleHediffBase_LastResort" Abstract="True">
+		<tags>
+			<li>GauntletModuleTag_LastResort</li>
+		</tags>
+		<comps>
+			<li Class="ABXenotypeYautja.HediffCompProperties_ExtraTip_ModuleSlotName">
+				<SlotTitle>Occupied slot: </SlotTitle>
+				<SlotName>Bomb</SlotName>
+			</li>
+		</comps>
+	</HediffDef>
+</Defs>

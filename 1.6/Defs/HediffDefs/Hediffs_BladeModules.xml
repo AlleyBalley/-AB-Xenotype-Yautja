@@ -1,0 +1,339 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<HediffDef ParentName="GauntletModuleHediffBase_Blade">
+		<defName>ABYautja_DualWristblades</defName>
+		<label>dual wristblades</label>
+		<description>A pair of two retractable wristblades attached to a gauntlet.</description>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_Wristblade</ThingDef>
+			<RecipeDef>ABYautja_InstallDualWristblades</RecipeDef>
+		</descriptionHyperlinks>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>wristblade</label>
+						<capacities>
+							<li>Cut</li>
+							<li>Stab</li>
+						</capacities>
+						<power>20</power>
+						<cooldownTime>1.8</cooldownTime>
+						<chanceFactor>0.75</chanceFactor>
+						<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+						<soundMeleeHit>MeleeHit_BionicSlash</soundMeleeHit>
+						<soundMeleeMiss>MeleeMiss_BionicSlash</soundMeleeMiss>
+					</li>
+					<li>
+						<label>wristblade point</label>
+						<capacities>
+							<li>Stab</li>
+						</capacities>
+						<power>16</power>
+						<cooldownTime>1.6</cooldownTime>
+						<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+						<soundMeleeHit>MeleeHit_BionicSlash</soundMeleeHit>
+						<soundMeleeMiss>MeleeMiss_BionicSlash</soundMeleeMiss>
+					</li>
+					<li>
+						<label>wristblade edge</label>
+						<capacities>
+							<li>Cut</li>
+						</capacities>
+						<power>16</power>
+						<cooldownTime>1.5</cooldownTime>
+						<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+						<soundMeleeHit>MeleeHit_BionicSlash</soundMeleeHit>
+						<soundMeleeMiss>MeleeMiss_BionicSlash</soundMeleeMiss>
+					</li>
+				</tools>
+			</li>
+		</comps>
+		<spawnThingOnRemoved>ABYautja_Wristblade</spawnThingOnRemoved>
+	</HediffDef>
+	
+	<HediffDef ParentName="GauntletModuleHediffBase_Blade">
+		<defName>ABYautja_Wristblade</defName>
+		<label>wristblade</label>
+		<description>A retractable wristblade attached to a gauntlet.</description>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_Wristblade</ThingDef>
+			<RecipeDef>ABYautja_InstallWristblade</RecipeDef>
+		</descriptionHyperlinks>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>wristblade</label>
+						<capacities>
+							<li>Cut</li>
+							<li>Stab</li>
+						</capacities>
+						<power>15</power>
+						<cooldownTime>1.4</cooldownTime>
+						<chanceFactor>0.75</chanceFactor>
+						<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+						<soundMeleeHit>MeleeHit_BionicSlash</soundMeleeHit>
+						<soundMeleeMiss>MeleeMiss_BionicSlash</soundMeleeMiss>
+					</li>
+					<li>
+						<label>wristblade point</label>
+						<capacities>
+							<li>Stab</li>
+						</capacities>
+						<power>12</power>
+						<cooldownTime>1.2</cooldownTime>
+						<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+						<soundMeleeHit>MeleeHit_BionicSlash</soundMeleeHit>
+						<soundMeleeMiss>MeleeMiss_BionicSlash</soundMeleeMiss>
+					</li>
+					<li>
+						<label>wristblade edge</label>
+						<capacities>
+							<li>Cut</li>
+						</capacities>
+						<power>15</power>
+						<cooldownTime>1.5</cooldownTime>
+						<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+						<soundMeleeHit>MeleeHit_BionicSlash</soundMeleeHit>
+						<soundMeleeMiss>MeleeMiss_BionicSlash</soundMeleeMiss>
+					</li>
+				</tools>
+			</li>
+		</comps>
+		<spawnThingOnRemoved>ABYautja_Wristblade</spawnThingOnRemoved>
+	</HediffDef>
+	
+	<HediffDef ParentName="GauntletModuleHediffBase_Blade">
+		<defName>ABYautja_LongWristblade</defName>
+		<label>long wristblade</label>
+		<description>A long, retractable wristblade attached to a gauntlet.</description>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_LongWristblade</ThingDef>
+			<RecipeDef>ABYautja_InstallLongWristblade</RecipeDef>
+		</descriptionHyperlinks>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>wristblade</label>
+						<capacities>
+							<li>Cut</li>
+							<li>Stab</li>
+						</capacities>
+						<power>28</power>
+						<cooldownTime>2.8</cooldownTime>
+						<chanceFactor>0.75</chanceFactor>
+						<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+						<soundMeleeHit>MeleeHit_BionicSlash</soundMeleeHit>
+						<soundMeleeMiss>MeleeMiss_BionicSlash</soundMeleeMiss>
+					</li>
+					<li>
+						<label>wristblade point</label>
+						<capacities>
+							<li>Stab</li>
+						</capacities>
+						<power>25</power>
+						<cooldownTime>2.6</cooldownTime>
+						<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+						<soundMeleeHit>MeleeHit_BionicSlash</soundMeleeHit>
+						<soundMeleeMiss>MeleeMiss_BionicSlash</soundMeleeMiss>
+					</li>
+					<li>
+						<label>wristblade edge</label>
+						<capacities>
+							<li>Cut</li>
+						</capacities>
+						<power>23</power>
+						<cooldownTime>2.3</cooldownTime>
+						<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+						<soundMeleeHit>MeleeHit_BionicSlash</soundMeleeHit>
+						<soundMeleeMiss>MeleeMiss_BionicSlash</soundMeleeMiss>
+					</li>
+				</tools>
+			</li>
+		</comps>
+		<spawnThingOnRemoved>ABYautja_LongWristblade</spawnThingOnRemoved>
+	</HediffDef>
+	
+	<HediffDef ParentName="GauntletModuleHediffBase_Blade">
+		<defName>ABYautja_ScimitarWristblade</defName>
+		<label>scimitar wristblade</label>
+		<description>A extremely long, semi-retractable wristblade attached to a gauntlet.</description>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_ScimitarWristblade</ThingDef>
+			<RecipeDef>ABYautja_InstallScimitarWristblade</RecipeDef>
+		</descriptionHyperlinks>
+		<stages>
+			<li>
+				<minSeverity>1</minSeverity>
+				<statOffsets>
+					<WorkSpeedGlobal>-0.2</WorkSpeedGlobal>
+				</statOffsets>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>wristblade</label>
+						<capacities>
+							<li>Cut</li>
+							<li>Stab</li>
+						</capacities>
+						<power>32</power>
+						<cooldownTime>2.8</cooldownTime>
+						<chanceFactor>0.75</chanceFactor>
+						<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+						<soundMeleeHit>MeleeHit_BionicSlash</soundMeleeHit>
+						<soundMeleeMiss>MeleeMiss_BionicSlash</soundMeleeMiss>
+					</li>
+					<li>
+						<label>wristblade point</label>
+						<capacities>
+							<li>Stab</li>
+						</capacities>
+						<power>29</power>
+						<cooldownTime>2.6</cooldownTime>
+						<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+						<soundMeleeHit>MeleeHit_BionicSlash</soundMeleeHit>
+						<soundMeleeMiss>MeleeMiss_BionicSlash</soundMeleeMiss>
+					</li>
+					<li>
+						<label>wristblade edge</label>
+						<capacities>
+							<li>Cut</li>
+						</capacities>
+						<power>27</power>
+						<cooldownTime>2.3</cooldownTime>
+						<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+						<soundMeleeHit>MeleeHit_BionicSlash</soundMeleeHit>
+						<soundMeleeMiss>MeleeMiss_BionicSlash</soundMeleeMiss>
+					</li>
+				</tools>
+			</li>
+		</comps>
+		<spawnThingOnRemoved>ABYautja_ScimitarWristblade</spawnThingOnRemoved>
+	</HediffDef>
+	
+	<HediffDef ParentName="GauntletModuleHediffBase_Blade">
+		<defName>ABYautja_PrehensileWristblades</defName>
+		<label>prehensile wristblades</label>
+		<description>A triad of three retractable blades, each hinging at the center, attached to a gauntlet.</description>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_Wristblade</ThingDef>
+			<RecipeDef>ABYautja_InstallPrehensileWristblades</RecipeDef>
+		</descriptionHyperlinks>
+		<stages>
+			<li>
+				<minSeverity>1</minSeverity>
+				<statOffsets>
+					<WorkSpeedGlobal>0.05</WorkSpeedGlobal>
+				</statOffsets>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>wristblade</label>
+						<capacities>
+							<li>Cut</li>
+							<li>Stab</li>
+						</capacities>
+						<power>28</power>
+						<cooldownTime>2.8</cooldownTime>
+						<chanceFactor>0.75</chanceFactor>
+						<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+						<soundMeleeHit>MeleeHit_BionicSlash</soundMeleeHit>
+						<soundMeleeMiss>MeleeMiss_BionicSlash</soundMeleeMiss>
+					</li>
+					<li>
+						<label>wristblade point</label>
+						<capacities>
+							<li>Stab</li>
+						</capacities>
+						<power>25</power>
+						<cooldownTime>2.6</cooldownTime>
+						<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+						<soundMeleeHit>MeleeHit_BionicSlash</soundMeleeHit>
+						<soundMeleeMiss>MeleeMiss_BionicSlash</soundMeleeMiss>
+					</li>
+					<li>
+						<label>wristblade edge</label>
+						<capacities>
+							<li>Cut</li>
+						</capacities>
+						<power>23</power>
+						<cooldownTime>2.3</cooldownTime>
+						<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+						<soundMeleeHit>MeleeHit_BionicSlash</soundMeleeHit>
+						<soundMeleeMiss>MeleeMiss_BionicSlash</soundMeleeMiss>
+					</li>
+				</tools>
+			</li>
+		</comps>
+		<spawnThingOnRemoved>ABYautja_PrehensileWristblade</spawnThingOnRemoved>
+	</HediffDef>
+	
+	<HediffDef ParentName="GauntletModuleHediffBase_Blade">
+		<defName>ABYautja_ClawWristblades</defName>
+		<label>claw wristblades</label>
+		<description>A quintet of semi-retractable blades, attached to a gauntlet.</description>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_ClawWristblades</ThingDef>
+			<RecipeDef>ABYautja_InstallClawWristblades</RecipeDef>
+		</descriptionHyperlinks>
+		<stages>
+			<li>
+				<minSeverity>1</minSeverity>
+				<statOffsets>
+					<WorkSpeedGlobal>-0.07</WorkSpeedGlobal>
+				</statOffsets>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>wristblade</label>
+						<capacities>
+							<li>Cut</li>
+							<li>Stab</li>
+						</capacities>
+						<power>35</power>
+						<cooldownTime>2.9</cooldownTime>
+						<chanceFactor>0.75</chanceFactor>
+						<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+						<soundMeleeHit>MeleeHit_BionicSlash</soundMeleeHit>
+						<soundMeleeMiss>MeleeMiss_BionicSlash</soundMeleeMiss>
+					</li>
+					<li>
+						<label>wristblade point</label>
+						<capacities>
+							<li>Stab</li>
+						</capacities>
+						<power>32</power>
+						<cooldownTime>2.7</cooldownTime>
+						<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+						<soundMeleeHit>MeleeHit_BionicSlash</soundMeleeHit>
+						<soundMeleeMiss>MeleeMiss_BionicSlash</soundMeleeMiss>
+					</li>
+					<li>
+						<label>wristblade edge</label>
+						<capacities>
+							<li>Cut</li>
+						</capacities>
+						<power>29</power>
+						<cooldownTime>2.4</cooldownTime>
+						<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+						<soundMeleeHit>MeleeHit_BionicSlash</soundMeleeHit>
+						<soundMeleeMiss>MeleeMiss_BionicSlash</soundMeleeMiss>
+					</li>
+				</tools>
+			</li>
+		</comps>
+		<spawnThingOnRemoved>ABYautja_ClawWristblades</spawnThingOnRemoved>
+	</HediffDef>
+</Defs>

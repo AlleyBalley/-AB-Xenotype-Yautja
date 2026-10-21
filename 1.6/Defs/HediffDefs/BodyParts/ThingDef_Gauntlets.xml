@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="ABYautja_BodyPartGauntlet_Base">
+		<defName>ABYautja_TribalGauntlet</defName>
+		<label>wooden gauntlet</label>
+		<description>This wooden gauntlet is the ancestor of the most basic piece of equipment a Hunter carries. While having no attachments now, wristblades can be affixed to it. These primitive versions have fixed claws which do get in the way of non combat activities.</description>
+		<graphicData>
+			<texPath>Things/Item/Yautja/Gauntlets/Yautja_TribalGauntlet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Neolithic</techLevel>
+		<costStuffCount>10</costStuffCount>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<statBases>
+			<MarketValue>300</MarketValue>
+			<MaxHitPoints>250</MaxHitPoints>
+			<Flammability>0.05</Flammability>
+			<WorkToMake>500</WorkToMake>
+			<Beauty>-3</Beauty>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Mass>0.15</Mass>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>ABYautja_Tech_T1</researchPrerequisite>
+			<recipeUsers Inherit="False">
+				<li>CraftingSpot</li>
+				<li MayRequire="oskarpotocki.vfe.classical">VFEC_CraftingBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<techHediffsTags>
+			<li>YautjaTribalEquipment</li>
+		</techHediffsTags>
+		<tradeTags>
+			<li>YautjaTribalEquipment</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="ABYautja_BodyPartGauntlet_Base">
+		<defName>ABYautja_TechGauntlet</defName>
+		<label>metal gauntlet</label>
+		<description>This metal gauntlet is the most basic piece of equipment a Hunter carries. While having no attachments now, wristblades can be affixed to it. They come in infinite variations.</description>
+		<graphicData>
+			<texPath>Things/Item/Yautja/Gauntlets/Yautja_TechGauntlet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<costStuffCount>10</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<statBases>
+			<MarketValue>3000</MarketValue>
+			<MaxHitPoints>500</MaxHitPoints>
+			<Flammability>0.05</Flammability>
+			<WorkToMake>7500</WorkToMake>
+			<Beauty>-3</Beauty>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Mass>0.45</Mass>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>ABYautja_Tech_T3</researchPrerequisite>
+			<recipeUsers Inherit="False">
+				<li>ABYautja_TableMachining</li>
+			</recipeUsers>
+		</recipeMaker>
+		<techHediffsTags>
+			<li>YautjaEquipment</li>
+		</techHediffsTags>
+		<tradeTags>
+			<li>YautjaEquipment</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="BodyPartBase" Name="ABYautja_NPCUnbloodedWristbladeGauntlet_Thing">
+		<defName>ABYautja_NPCUnbloodedWristbladeGauntlet</defName>
+		<label>wristblade gauntlet</label>
+		<description>A metal gauntlet attached to the wrist. This one comes pre-installed with a single metal blade and a self destruct device.</description>
+		<graphicData>
+			<texPath>Things/Item/Yautja/Gauntlets/Yautja_NPCUnbloodedGauntlet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<thingClass>ThingWithComps</thingClass>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<thingCategories Inherit="False">
+			<li>ABYautja_GauntletModules</li>
+		</thingCategories>
+		<techLevel>Spacer</techLevel>
+		<statBases>
+			<MarketValue>0</MarketValue>
+			<MaxHitPoints>1</MaxHitPoints>
+			<Flammability>0.05</Flammability>
+			<Beauty>-3</Beauty>
+			<DeteriorationRate>10000</DeteriorationRate>
+			<Mass>1.5</Mass>
+		</statBases>
+		<techHediffsTags Inherit="False">
+			<li>NPCGauntlet</li>
+			<li>NPCUnbloodedGauntlet</li>
+		</techHediffsTags>
+		<violentTechHediff>true</violentTechHediff>
+		<tradeTags Inherit="False">
+			<li>NPCGauntlet</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="ABYautja_NPCUnbloodedWristbladeGauntlet_Thing" Name="ABYautja_NPCWristbladeGauntlet">
+		<defName>ABYautja_NPCWristbladeGauntlet</defName>
+		<description>A metal gauntlet attached to the wrist. This one comes pre-installed with dual metal blades, a shifter, and a self destruct device.</description>
+		<graphicData Inherit="False">
+			<texPath>Things/Item/Yautja/Gauntlets/Yautja_NPCGauntlet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techHediffsTags Inherit="False">
+			<li>NPCGauntlet</li>
+		</techHediffsTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="ABYautja_NPCWristbladeGauntlet">
+		<defName>ABYautja_NPCLeaderWristbladeGauntlet</defName>
+		<description>A metal gauntlet attached to the wrist. This one comes pre-installed with dual metal blades, a shifter, a wrist rocket module, and a self destruct device.</description>
+		<techHediffsTags>
+			<li>NPCLeaderGauntlet</li>
+		</techHediffsTags>
+	</ThingDef>
+</Defs>

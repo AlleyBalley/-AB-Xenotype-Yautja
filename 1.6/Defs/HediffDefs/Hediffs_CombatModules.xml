@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<HediffDef ParentName="GauntletModuleHediffBase_Combat">
+		<defName>ABYautja_WristbladeLauncher</defName>
+		<label>wristblade harpoon</label>
+		<description>A sharp blade loaded with a spring mechanism, so that it launches itself forward.</description>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_WristbladeLauncher</ThingDef>
+			<ThingDef>ABYautja_Wristblade</ThingDef>
+			<RecipeDef>ABYautja_InstallWristbladeLauncher</RecipeDef>
+		</descriptionHyperlinks>
+		<comps>
+			<li Class="MVCF.Comps.HediffCompProperties_ExtendedVerbGiver">
+				<verbs>
+					<li>
+						<verbClass>Verb_Shoot</verbClass>
+						<label>wristblade launcher</label>
+						<hasStandardCommand>true</hasStandardCommand>
+						<defaultProjectile>Gauntlet_WristbladeLauncher</defaultProjectile>
+						<warmupTime>0.2</warmupTime>
+						<range>30</range>
+						<soundCast>Shot_NeedleGun</soundCast>
+						<onlyManualCast>true</onlyManualCast>
+						<targetParams>
+							<canTargetLocations>false</canTargetLocations>
+						</targetParams>
+						<muzzleFlashScale>0</muzzleFlashScale>
+					</li>
+				</verbs>
+				<verbProps>
+					<li>
+						<label>wristblade launcher</label>
+						<canBeToggled>true</canBeToggled>
+						<separateToggle>true</separateToggle>
+						<toggleLabel>Automatic Firing</toggleLabel>
+						<toggleIconPath>UI/Commands/Attack</toggleIconPath>
+						 <comps>
+							<li Class="MVCF.VerbComps.VerbCompProperties_Cooldown">
+								<compClass>MVCF.VerbComps.VerbComp_Cooldown</compClass>
+								<cooldownTime>3</cooldownTime>
+							</li>
+							<li Class="MVCF.Reloading.Comps.VerbCompProperties_Reloadable">
+								<compClass>MVCF.Reloading.Comps.VerbComp_Reloadable</compClass>
+								<AmmoFilter>
+									<thingDefs>
+										<li>ABYautja_Wristblade</li>
+									</thingDefs>
+								</AmmoFilter>
+								<ItemsPerShot>1</ItemsPerShot>
+								<MaxShots>5</MaxShots>
+								<ReloadTimePerShot>2.5</ReloadTimePerShot>
+							</li>
+						</comps>
+					</li>
+				</verbProps>
+			</li>
+		</comps>
+		<spawnThingOnRemoved>ABYautja_WristbladeLauncher</spawnThingOnRemoved>
+	</HediffDef>
+	
+	<HediffDef ParentName="GauntletModuleHediffBase_Combat">
+		<defName>ABYautja_WristRocket</defName>
+		<label>wrist rocket module</label>
+		<description>A combat module mounted to a gauntlet that allows for the launching of small rockets that explode on contact with a target.</description>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_WristRocket</ThingDef>
+			<RecipeDef>ABYautja_InstallWristRocket</RecipeDef>
+		</descriptionHyperlinks>
+		<comps>
+			<li Class="MVCF.Comps.HediffCompProperties_ExtendedVerbGiver">
+				<verbs>
+					<li>
+						<verbClass>Verb_Shoot</verbClass>
+						<label>wrist rocket</label>
+						<hasStandardCommand>true</hasStandardCommand>
+						<defaultProjectile>Gauntlet_WristRocket</defaultProjectile>
+						<warmupTime>0.4</warmupTime>
+						<range>30</range>
+						<soundCast>Shot_NeedleGun</soundCast>
+						<onlyManualCast>true</onlyManualCast>
+						<targetParams>
+							<canTargetLocations>true</canTargetLocations>
+						</targetParams>
+						<muzzleFlashScale>0</muzzleFlashScale>
+					</li>
+				</verbs>
+				<verbProps>
+					<li>
+						<label>wrist rocket</label>
+						<canBeToggled>true</canBeToggled>
+						<separateToggle>true</separateToggle>
+						<toggleLabel>Automatic Firing</toggleLabel>
+						<toggleIconPath>UI/Commands/Attack</toggleIconPath>
+						 <comps>
+							<li Class="MVCF.VerbComps.VerbCompProperties_Cooldown">
+								<compClass>MVCF.VerbComps.VerbComp_Cooldown</compClass>
+								<cooldownTime>5</cooldownTime>
+							</li>
+							<li Class="MVCF.Reloading.Comps.VerbCompProperties_Reloadable">
+								<compClass>MVCF.Reloading.Comps.VerbComp_Reloadable</compClass>
+								<AmmoFilter>
+									<thingDefs>
+										<li>Shell_HighExplosive</li>
+									</thingDefs>
+								</AmmoFilter>
+								<ItemsPerShot>1</ItemsPerShot>
+								<MaxShots>5</MaxShots>
+								<ReloadTimePerShot>2.5</ReloadTimePerShot>
+							</li>
+						</comps>
+					</li>
+				</verbProps>
+			</li>
+		</comps>
+		<spawnThingOnRemoved>ABYautja_WristRocket</spawnThingOnRemoved>
+	</HediffDef>
+	
+	<HediffDef ParentName="GauntletModuleHediffBase_Combat">
+		<defName>ABYautja_EnergyFlechette</defName>
+		<label>energy flechette module</label>
+		<description>A combat module mounted to a gauntlet that allows for the launching of small shots of plasma, functioning as a less powerful plasmacaster.</description>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_EnergyFlechette</ThingDef>
+			<RecipeDef>ABYautja_InstallEnergyFlechette</RecipeDef>
+		</descriptionHyperlinks>
+		<comps>
+			<li Class="MVCF.Comps.HediffCompProperties_ExtendedVerbGiver">
+				<verbs>
+					<li>
+						<verbClass>Verb_Shoot</verbClass>
+						<label>energy flechette</label>
+						<hasStandardCommand>true</hasStandardCommand>
+						<defaultProjectile>ABBullet_PlasmaBurner</defaultProjectile>
+						<warmupTime>0.2</warmupTime>
+						<range>40</range>
+						<soundCast>ABShot_ShoulderCannon</soundCast>
+						<onlyManualCast>true</onlyManualCast>
+						<targetParams>
+							<canTargetLocations>false</canTargetLocations>
+						</targetParams>
+						<muzzleFlashScale>0</muzzleFlashScale>
+					</li>
+				</verbs>
+				<verbProps>
+					<li>
+						<label>energy flechette</label>
+						<canBeToggled>true</canBeToggled>
+						<separateToggle>true</separateToggle>
+						<toggleLabel>Automatic Firing</toggleLabel>
+						<toggleIconPath>UI/Commands/Attack</toggleIconPath>
+						 <comps>
+							<li Class="MVCF.VerbComps.VerbCompProperties_Cooldown">
+								<compClass>MVCF.VerbComps.VerbComp_Cooldown</compClass>
+								<cooldownTime>8</cooldownTime>
+							</li>
+						</comps>
+					</li>
+				</verbProps>
+			</li>
+		</comps>
+		<spawnThingOnRemoved>ABYautja_EnergyFlechette</spawnThingOnRemoved>
+	</HediffDef>
+	
+	<HediffDef ParentName="GauntletModuleHediffBase_Combat">
+		<defName>ABYautja_WristCannon</defName>
+		<label>wrist cannon module</label>
+		<description>A combat module mounted to a gauntlet that allows for the launching of small shots of plasma. While still weaker than a plasmacaster, this version is stronger than the energy flechette.</description>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_WristCannon</ThingDef>
+			<RecipeDef>ABYautja_InstallWristCannon</RecipeDef>
+		</descriptionHyperlinks>
+		<comps>
+			<li Class="MVCF.Comps.HediffCompProperties_ExtendedVerbGiver">
+				<verbs>
+					<li>
+						<verbClass>Verb_Shoot</verbClass>
+						<label>wrist cannon</label>
+						<hasStandardCommand>true</hasStandardCommand>
+						<defaultProjectile>Gauntlet_WristCannon</defaultProjectile>
+						<warmupTime>0.2</warmupTime>
+						<range>43</range>
+						<soundCast>ABShot_ShoulderCannon</soundCast>
+						<onlyManualCast>true</onlyManualCast>
+						<targetParams>
+							<canTargetLocations>false</canTargetLocations>
+						</targetParams>
+						<muzzleFlashScale>0</muzzleFlashScale>
+					</li>
+				</verbs>
+				<verbProps>
+					<li>
+						<label>wrist cannon</label>
+						<canBeToggled>true</canBeToggled>
+						<separateToggle>true</separateToggle>
+						<toggleLabel>Automatic Firing</toggleLabel>
+						<toggleIconPath>UI/Commands/Attack</toggleIconPath>
+						 <comps>
+							<li Class="MVCF.VerbComps.VerbCompProperties_Cooldown">
+								<compClass>MVCF.VerbComps.VerbComp_Cooldown</compClass>
+								<cooldownTime>11</cooldownTime>
+							</li>
+						</comps>
+					</li>
+				</verbProps>
+			</li>
+		</comps>
+		<spawnThingOnRemoved>ABYautja_WristCannon</spawnThingOnRemoved>
+	</HediffDef>
+</Defs>

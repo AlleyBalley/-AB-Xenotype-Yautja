@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<HediffDef ParentName="ABGauntletHediffBase_Tribal">
+		<defName>ABYautja_TribalGauntlet</defName>
+		<label>wooden gauntlet</label>
+		<description>A wooden gauntlet attached to the wrist. Allows for the attachment of wristblades.</description>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_TribalGauntlet</ThingDef>
+		</descriptionHyperlinks>
+		<stages>
+			<li>
+				<minSeverity>1</minSeverity>
+				<statOffsets>
+					<ArmorRating_Blunt>0.01</ArmorRating_Blunt>
+					<ArmorRating_Sharp>0.01</ArmorRating_Sharp>
+					<ArmorRating_Heat>0.01</ArmorRating_Heat>
+					<WorkSpeedGlobal>-0.05</WorkSpeedGlobal>
+				</statOffsets>
+			</li>
+		</stages>
+		<spawnThingOnRemoved>ABYautja_TribalGauntlet</spawnThingOnRemoved>
+	</HediffDef>
+	
+	<HediffDef ParentName="ABGauntletHediffBase">
+		<defName>ABYautja_TechGauntlet</defName>
+		<label>metal gauntlet</label>
+		<description>A metal gauntlet attached to the wrist. Allows for the attachment of wristblades and other gauntlet modules.</description>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_TechGauntlet</ThingDef>
+		</descriptionHyperlinks>
+		<stages>
+			<li>
+				<minSeverity>1</minSeverity>
+				<statOffsets>
+					<ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+					<ArmorRating_Sharp>0.05</ArmorRating_Sharp>
+					<ArmorRating_Heat>0.05</ArmorRating_Heat>
+				</statOffsets>
+			</li>
+		</stages>
+		<spawnThingOnRemoved>ABYautja_TechGauntlet</spawnThingOnRemoved>
+	</HediffDef>
+	
+<!--NPC-->
+	<HediffDef ParentName="ABGauntletHediffBase" Name="ABYautja_NPCUnbloodedWristbladeGauntlet">
+		<defName>ABYautja_NPCUnbloodedWristbladeGauntlet</defName>
+		<label>wristblade gauntlet</label>
+		<description>A metal gauntlet attached to the wrist. This one comes pre-installed with a single metal blade, a shifter, a wrist rocket module, and a self destruct device.</description>
+		<stages>
+			<li>
+				<minSeverity>1</minSeverity>
+				<statOffsets>
+					<ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+					<ArmorRating_Sharp>0.05</ArmorRating_Sharp>
+					<ArmorRating_Heat>0.05</ArmorRating_Heat>
+				</statOffsets>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>wristblade</label>
+						<capacities>
+							<li>Cut</li>
+							<li>Stab</li>
+						</capacities>
+						<power>15</power>
+						<cooldownTime>1.4</cooldownTime>
+						<chanceFactor>0.75</chanceFactor>
+						<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+						<soundMeleeHit>MeleeHit_BionicSlash</soundMeleeHit>
+						<soundMeleeMiss>MeleeMiss_BionicSlash</soundMeleeMiss>
+					</li>
+					<li>
+						<label>wristblade point</label>
+						<capacities>
+							<li>Stab</li>
+						</capacities>
+						<power>12</power>
+						<cooldownTime>1.2</cooldownTime>
+						<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+						<soundMeleeHit>MeleeHit_BionicSlash</soundMeleeHit>
+						<soundMeleeMiss>MeleeMiss_BionicSlash</soundMeleeMiss>
+					</li>
+					<li>
+						<label>wristblade edge</label>
+						<capacities>
+							<li>Cut</li>
+						</capacities>
+						<power>15</power>
+						<cooldownTime>1.5</cooldownTime>
+						<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+						<soundMeleeHit>MeleeHit_BionicSlash</soundMeleeHit>
+						<soundMeleeMiss>MeleeMiss_BionicSlash</soundMeleeMiss>
+					</li>
+				</tools>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath" />
+			<li Class="VEF.AnimalBehaviours.HediffCompProperties_Exploder">
+				<explosionForce>1</explosionForce>
+				<damageDef>BombSuper</damageDef>
+			</li>
+		</comps>
+		<tags Inherit="False">
+			<li>NPCGauntlet</li>
+		</tags>
+		<spawnThingOnRemoved>Steel</spawnThingOnRemoved>
+		<modExtensions Inherit="False" />
+	</HediffDef>
+	
+	<HediffDef ParentName="ABYautja_NPCUnbloodedWristbladeGauntlet">
+		<defName>ABYautja_NPCWristbladeGauntlet</defName>
+		<label>wristblade gauntlet</label>
+		<description>A metal gauntlet attached to the wrist. This one comes pre-installed with dual metal blades, a shifter, and a self destruct device.</description>
+		<comps Inherit="False">
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>wristblade</label>
+						<capacities>
+							<li>Cut</li>
+							<li>Stab</li>
+						</capacities>
+						<power>20</power>
+						<cooldownTime>1.8</cooldownTime>
+						<chanceFactor>0.75</chanceFactor>
+						<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+						<soundMeleeHit>MeleeHit_BionicSlash</soundMeleeHit>
+						<soundMeleeMiss>MeleeMiss_BionicSlash</soundMeleeMiss>
+					</li>
+					<li>
+						<label>wristblade point</label>
+						<capacities>
+							<li>Stab</li>
+						</capacities>
+						<power>16</power>
+						<cooldownTime>1.6</cooldownTime>
+						<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+						<soundMeleeHit>MeleeHit_BionicSlash</soundMeleeHit>
+						<soundMeleeMiss>MeleeMiss_BionicSlash</soundMeleeMiss>
+					</li>
+					<li>
+						<label>wristblade edge</label>
+						<capacities>
+							<li>Cut</li>
+						</capacities>
+						<power>16</power>
+						<cooldownTime>1.5</cooldownTime>
+						<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+						<soundMeleeHit>MeleeHit_BionicSlash</soundMeleeHit>
+						<soundMeleeMiss>MeleeMiss_BionicSlash</soundMeleeMiss>
+					</li>
+				</tools>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath" />
+			<li Class="VEF.AnimalBehaviours.HediffCompProperties_Exploder">
+				<explosionForce>2</explosionForce>
+				<damageDef>BombSuper</damageDef>
+			</li>
+		</comps>
+		<abilities>
+			<li>ABYautja_Cloaking_NPC</li>
+		</abilities>
+	</HediffDef>
+	
+	<HediffDef ParentName="ABYautja_NPCUnbloodedWristbladeGauntlet">
+		<defName>ABYautja_NPCLeaderWristbladeGauntlet</defName>
+		<label>wristblade gauntlet</label>
+		<description>A metal gauntlet attached to the wrist. This one comes pre-installed with dual metal blades, a shifter, a wrist rocket module, and a self destruct device.</description>
+		<comps Inherit="False">
+			<li Class="MVCF.Comps.HediffCompProperties_ExtendedVerbGiver">
+				<verbs>
+					<li>
+						<verbClass>Verb_Shoot</verbClass>
+						<label>wrist rocket</label>
+						<hasStandardCommand>true</hasStandardCommand>
+						<defaultProjectile>Gauntlet_WristRocket</defaultProjectile>
+						<warmupTime>0.4</warmupTime>
+						<range>30</range>
+						<soundCast>Shot_NeedleGun</soundCast>
+						<onlyManualCast>true</onlyManualCast>
+						<targetParams>
+							<canTargetLocations>false</canTargetLocations>
+						</targetParams>
+						<muzzleFlashScale>0</muzzleFlashScale>
+					</li>
+				</verbs>
+				<verbProps>
+					<li>
+						<label>wrist rocket</label>
+						<canBeToggled>false</canBeToggled>
+						 <comps>
+							<li Class="MVCF.VerbComps.VerbCompProperties_Cooldown">
+								<compClass>MVCF.VerbComps.VerbComp_Cooldown</compClass>
+								<cooldownTime>5</cooldownTime>
+							</li>
+							<li Class="MVCF.Reloading.Comps.VerbCompProperties_Reloadable">
+								<compClass>MVCF.Reloading.Comps.VerbComp_Reloadable</compClass>
+								<AmmoFilter>
+									<thingDefs>
+										<li>Shell_HighExplosive</li>
+									</thingDefs>
+								</AmmoFilter>
+								<ItemsPerShot>1</ItemsPerShot>
+								<MaxShots>5</MaxShots>
+								<ReloadTimePerShot>2.5</ReloadTimePerShot>
+							</li>
+						</comps>
+					</li>
+				</verbProps>
+			</li>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>wristblade</label>
+						<capacities>
+							<li>Cut</li>
+							<li>Stab</li>
+						</capacities>
+						<power>20</power>
+						<cooldownTime>1.8</cooldownTime>
+						<chanceFactor>0.75</chanceFactor>
+						<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+						<soundMeleeHit>MeleeHit_BionicSlash</soundMeleeHit>
+						<soundMeleeMiss>MeleeMiss_BionicSlash</soundMeleeMiss>
+					</li>
+					<li>
+						<label>wristblade point</label>
+						<capacities>
+							<li>Stab</li>
+						</capacities>
+						<power>16</power>
+						<cooldownTime>1.6</cooldownTime>
+						<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+						<soundMeleeHit>MeleeHit_BionicSlash</soundMeleeHit>
+						<soundMeleeMiss>MeleeMiss_BionicSlash</soundMeleeMiss>
+					</li>
+					<li>
+						<label>wristblade edge</label>
+						<capacities>
+							<li>Cut</li>
+						</capacities>
+						<power>16</power>
+						<cooldownTime>1.5</cooldownTime>
+						<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+						<soundMeleeHit>MeleeHit_BionicSlash</soundMeleeHit>
+						<soundMeleeMiss>MeleeMiss_BionicSlash</soundMeleeMiss>
+					</li>
+				</tools>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath" />
+			<li Class="VEF.AnimalBehaviours.HediffCompProperties_Exploder">
+				<explosionForce>3</explosionForce>
+				<damageDef>BombSuper</damageDef>
+			</li>
+		</comps>
+		<abilities>
+			<li>ABYautja_Cloaking_NPC</li>
+		</abilities>
+	</HediffDef>
+</Defs>

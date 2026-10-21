@@ -19,13 +19,233 @@
 				<permanentLabel>stab scar</permanentLabel>
 			</li>
 		</comps>
-		<injuryProps>
+		<injuryProps Inherit="False">
 			<painPerSeverity>0.0125</painPerSeverity>
 			<averagePainPerSeverityPermanent>0.00625</averagePainPerSeverityPermanent>
-			<bleedRate>0.06</bleedRate>
+			<bleedRate>0.03</bleedRate>
 			<canMerge>false</canMerge>
 			<destroyedLabel>Cut off</destroyedLabel>
 			<destroyedOutLabel>Cut out</destroyedOutLabel>
 		</injuryProps>
+	</HediffDef>
+	
+	<HediffDef ParentName="ABSpecialBadHediff">
+		<hediffClass>HediffWithComps</hediffClass>
+		<defName>ABHediff_PinnedCombistaff</defName>
+		<label>pinned</label>
+		<description>pinned</description>
+		<labelNoun>pinned</labelNoun>
+		<maxSeverity>2</maxSeverity>
+		<comps>
+			<li Class="HediffCompProperties_SelfHeal">
+				<healAmount>0.2</healAmount>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<minSeverity>0.6</minSeverity>
+				<label>getting free</label>
+				<partEfficiencyOffset>-0.8</partEfficiencyOffset>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.3</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>1</minSeverity>
+				<label>pinned</label>
+				<partEfficiencyOffset>-0.8</partEfficiencyOffset>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<setMax>0.05</setMax>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef ParentName="ABSpecialBadHediff">
+		<hediffClass>HediffWithComps</hediffClass>
+		<defName>ABHediff_Pinned</defName>
+		<label>pinned</label>
+		<description>pinned</description>
+		<labelNoun>pinned</labelNoun>
+		<maxSeverity>2</maxSeverity>
+		<comps>
+			<li Class="HediffCompProperties_SelfHeal">
+				<healAmount>0.25</healAmount>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<minSeverity>0.6</minSeverity>
+				<label>getting free</label>
+				<partEfficiencyOffset>-0.5</partEfficiencyOffset>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.15</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>1</minSeverity>
+				<label>pinned</label>
+				<partEfficiencyOffset>-0.6</partEfficiencyOffset>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<setMax>0.2</setMax>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<HediffDef ParentName="ABSpecialBadHediff">
+		<hediffClass>HediffWithComps</hediffClass>
+		<defName>AB_ElectricShock</defName>
+		<label>electrically charged</label>
+		<description>The body is rigid with electricity.</description>
+		<labelNoun>electrocuted</labelNoun>
+		<isBad>true</isBad>
+		<maxSeverity>3</maxSeverity>
+		<comps>
+			<li Class="HediffCompProperties_SelfHeal">
+				<healAmount>0.05</healAmount>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<minSeverity>0.5</minSeverity>
+				<label>wearing off</label>
+				<painOffset>0.1</painOffset>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.4</offset>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>-0.4</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>1</minSeverity>
+				<label>stunned</label>
+				<painOffset>0.50</painOffset>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<setMax>0.05</setMax>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<setMax>0.05</setMax>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<HediffDef ParentName="InjuryBase">
+		<defName>AB_Injury_CinchingNet</defName>
+		<label>cinching net</label>
+		<labelNoun>entangled</labelNoun>
+		<description>A cinching net.</description>
+		<isBad>true</isBad>
+		<comps>
+			<li Class="HediffCompProperties_TendDuration">
+				<labelTendedWell>bandaged</labelTendedWell>
+				<labelTendedWellInner>sutured</labelTendedWellInner>
+				<labelSolidTendedWell>set</labelSolidTendedWell>
+			</li>
+			<li Class="HediffCompProperties_Infecter">
+				<infectionChance>0.05</infectionChance>
+			</li>
+			<li Class="HediffCompProperties_GetsPermanent">
+				<permanentLabel>grid scar</permanentLabel>
+			</li>
+		</comps>
+		<injuryProps Inherit="False">
+			<painPerSeverity>0.02</painPerSeverity>
+			<averagePainPerSeverityPermanent>0.004</averagePainPerSeverityPermanent>
+			<bleedRate>0.015</bleedRate>
+			<canMerge>true</canMerge>
+			<destroyedLabel>Sliced off</destroyedLabel>
+			<destroyedOutLabel>Cut out</destroyedOutLabel>
+		</injuryProps>
+	</HediffDef>
+	
+	<HediffDef ParentName="ABSpecialBadHediff" Name="AB_CinchingNet">
+		<hediffClass>HediffWithComps</hediffClass>
+		<defName>AB_CinchingNet</defName>
+		<label>cinching net</label>
+		<description>A cinching net.</description>
+		<labelNoun>netted</labelNoun>
+		<isBad>true</isBad>
+		<maxSeverity>3</maxSeverity>
+		<comps>
+			<li Class="HediffCompProperties_SelfHeal">
+				<healAmount>0.25</healAmount>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<minSeverity>0.6</minSeverity>
+				<label>loosely wrapped</label>
+				<painOffset>0.1</painOffset>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.15</offset>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>-0.15</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>1</minSeverity>
+				<label>wrapped</label>
+				<painOffset>0.5</painOffset>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.4</offset>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>-0.4</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>2</minSeverity>
+				<label>tightly wrapped</label>
+				<painOffset>0.75</painOffset>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<setMax>0.05</setMax>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<setMax>0.05</setMax>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<HediffDef ParentName="AB_CinchingNet">
+		<defName>AB_CinchingPlasmaNet</defName>
+		<label>plasma cinching net</label>
+		<description>A cinching plasma-net.</description>
 	</HediffDef>
 </Defs>

@@ -1,19 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-<!--Head-->	
-	<GeneDef ParentName="GeneJawBase">
-		<defName>ABYautjaHead</defName>
-		<label>crested head</label>
-		<labelShortAdj>crested head</labelShortAdj>
-		<description>A head that grows a crest off the back of the scalp.</description>
+<!--Head base-->
+	<GeneDef ParentName="GeneJawBase" Name="ABYautjaHeadGeneBase" Abstract="True">
 		<biostatCpx>1</biostatCpx>
 		<biostatMet>0</biostatMet>
 		<neverGrayHair>false</neverGrayHair>
-		<displayOrderInCategory>400</displayOrderInCategory>
-		<iconPath>UI/Icons/Genes/GeneIcon_ABYautjaHead</iconPath>
-		<iconColor>(0.75, 0.75, 0.75)</iconColor>
-		<minMelanin>2</minMelanin>
-		<missingGeneRomanceChanceFactor>0.75</missingGeneRomanceChanceFactor>
+		<missingGeneRomanceChanceFactor>0.9</missingGeneRomanceChanceFactor>
 		<displayCategory>ABYautjaCategory</displayCategory>
 		<customEffectDescriptions>
 			<li>When unarmed may headbutt with their crest, causing blunt damage</li>
@@ -24,35 +16,7 @@
 			<li>Heads</li>
 			<li>Head</li>
 			<li>Crest</li>
-			<li>Eye</li>
-			<li>Eyes</li>
-			<li>EyeColor</li>
-			<li>EyeColors</li>
-			<li>EyesColor</li>
-			<li>EyesColors</li>
 		</exclusionTags>
-		<forcedHeadTypes>
-			<li>ABYautjaHeadGeneYG_Albino</li>
-			<li>ABYautjaHeadGeneYG_Decorated</li>
-			<li>ABYautjaHeadGeneYG_Speckled</li>
-			<li>ABYautjaHeadGeneYG_Striped</li>
-			<li>ABYautjaHeadGeneY_Albino</li>
-			<li>ABYautjaHeadGeneY_Decorated</li>
-			<li>ABYautjaHeadGeneY_Speckled</li>
-			<li>ABYautjaHeadGeneY_Striped</li>
-			<li>ABYautjaHeadGeneYO_Albino</li>
-			<li>ABYautjaHeadGeneYO_Decorated</li>
-			<li>ABYautjaHeadGeneYO_Speckled</li>
-			<li>ABYautjaHeadGeneYO_Striped</li>
-			<li>ABYautjaHeadGeneO_Albino</li>
-			<li>ABYautjaHeadGeneO_Decorated</li>
-			<li>ABYautjaHeadGeneO_Speckled</li>
-			<li>ABYautjaHeadGeneO_Striped</li>
-			<li>ABYautjaHeadGeneR_Albino</li>
-			<li>ABYautjaHeadGeneR_Decorated</li>
-			<li>ABYautjaHeadGeneR_Speckled</li>
-			<li>ABYautjaHeadGeneR_Striped</li>
-		</forcedHeadTypes>
 		<beardTagFilter>
 		  <whitelist>true</whitelist>
 		  <tags>
@@ -72,22 +36,548 @@
 				</li>
 			</prefixSymbols>
 		</symbolPack>
-		<modExtensions MayRequire="oskarpotocki.vanillafactionsexpanded.core">
-			<li Class="VEF.Genes.GeneExtension">
-				<backgroundPathEndogenes>UI/Icons/Genes/Yautja_Endogene_Background</backgroundPathEndogenes>
-				<hediffsToBodyParts>
-					<li>
-						<hediff>ABYautjaCrest</hediff>
-						<bodyparts>
-							<li>Head</li>
-						</bodyparts>
-					</li>
-				</hediffsToBodyParts>
-			</li>
-		</modExtensions>
-  </GeneDef>
+	</GeneDef>
+	
+	<BigAndSmall.FlagStringData>
+		<defName>ABYautja_Crest</defName>
+		<label>Crest pattern color</label>
+		<flags>
+			<ABYautja_Crest/>
+		</flags>
+	</BigAndSmall.FlagStringData>
+	
+<!--Crested-->
+	<!--Head-->	
+		<GeneDef ParentName="ABYautjaHeadGeneBase">
+			<defName>ABYautjaHead</defName>
+			<label>crested head</label>
+			<labelShortAdj>crested head</labelShortAdj>
+			<description>A head that grows a crest off the back of the scalp.</description>
+			<displayOrderInCategory>400</displayOrderInCategory>
+			<iconPath>UI/Icons/Genes/HeadGenes/CrestedHead/GeneIcon_ABYautjaHead</iconPath>
+			<forcedHeadTypes>
+				<li>ABYautjaHeadGeneYG_Albino</li>
+				<li>ABYautjaHeadGeneYG_Decorated</li>
+				<li>ABYautjaHeadGeneYG_Speckled</li>
+				<li>ABYautjaHeadGeneYG_Striped</li>
+				<li>ABYautjaHeadGeneY_Albino</li>
+				<li>ABYautjaHeadGeneY_Decorated</li>
+				<li>ABYautjaHeadGeneY_Speckled</li>
+				<li>ABYautjaHeadGeneY_Striped</li>
+				<li>ABYautjaHeadGeneYO_Albino</li>
+				<li>ABYautjaHeadGeneYO_Decorated</li>
+				<li>ABYautjaHeadGeneYO_Speckled</li>
+				<li>ABYautjaHeadGeneYO_Striped</li>
+				<li>ABYautjaHeadGeneO_Albino</li>
+				<li>ABYautjaHeadGeneO_Decorated</li>
+				<li>ABYautjaHeadGeneO_Speckled</li>
+				<li>ABYautjaHeadGeneO_Striped</li>
+				<li>ABYautjaHeadGeneR_Albino</li>
+				<li>ABYautjaHeadGeneR_Decorated</li>
+				<li>ABYautjaHeadGeneR_Speckled</li>
+				<li>ABYautjaHeadGeneR_Striped</li>
+			</forcedHeadTypes>
+			<modExtensions>
+				<li Class="VEF.Genes.GeneExtension" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+					<skullGraphicPath>Things/Pawn/Humanlike/Yautja/Heads/YautjaSkull_Crested</skullGraphicPath>
+					<backgroundPathEndogenes>UI/Icons/Genes/Yautja_Endogene_Background</backgroundPathEndogenes>
+					<hediffsToBodyParts>
+						<li>
+							<hediff>ABYautjaCrest</hediff>
+							<bodyparts>
+								<li>Head</li>
+							</bodyparts>
+						</li>
+					</hediffsToBodyParts>
+				</li>
+				<li Class="BigAndSmall.PawnExtension" MayRequire="redmattis.betterprerequisites">
+					<headPaths>
+						<ABYautjaHeadGeneYG_Albino>Things/Pawn/Humanlike/Yautja/Heads/Crested/YautjaHeadYG_Albino</ABYautjaHeadGeneYG_Albino>
+						<ABYautjaHeadGeneYG_Decorated>Things/Pawn/Humanlike/Yautja/Heads/Crested/YautjaHeadYG_Decorated</ABYautjaHeadGeneYG_Decorated>
+						<ABYautjaHeadGeneYG_Speckled>Things/Pawn/Humanlike/Yautja/Heads/Crested/YautjaHeadYG_Speckled</ABYautjaHeadGeneYG_Speckled>
+						<ABYautjaHeadGeneYG_Striped>Things/Pawn/Humanlike/Yautja/Heads/Crested/YautjaHeadYG_Striped</ABYautjaHeadGeneYG_Striped>
+						<ABYautjaHeadGeneY_Albino>Things/Pawn/Humanlike/Yautja/Heads/Crested/YautjaHeadY_Albino</ABYautjaHeadGeneY_Albino>
+						<ABYautjaHeadGeneY_Decorated>Things/Pawn/Humanlike/Yautja/Heads/Crested/YautjaHeadY_Decorated</ABYautjaHeadGeneY_Decorated>
+						<ABYautjaHeadGeneY_Speckled>Things/Pawn/Humanlike/Yautja/Heads/Crested/YautjaHeadY_Speckled</ABYautjaHeadGeneY_Speckled>
+						<ABYautjaHeadGeneY_Striped>Things/Pawn/Humanlike/Yautja/Heads/Crested/YautjaHeadY_Striped</ABYautjaHeadGeneY_Striped>
+						<ABYautjaHeadGeneYO_Albino>Things/Pawn/Humanlike/Yautja/Heads/Crested/YautjaHeadYO_Albino</ABYautjaHeadGeneYO_Albino>
+						<ABYautjaHeadGeneYO_Decorated>Things/Pawn/Humanlike/Yautja/Heads/Crested/YautjaHeadYO_Decorated</ABYautjaHeadGeneYO_Decorated>
+						<ABYautjaHeadGeneYO_Speckled>Things/Pawn/Humanlike/Yautja/Heads/Crested/YautjaHeadYO_Speckled</ABYautjaHeadGeneYO_Speckled>
+						<ABYautjaHeadGeneYO_Striped>Things/Pawn/Humanlike/Yautja/Heads/Crested/YautjaHeadYO_Striped</ABYautjaHeadGeneYO_Striped>
+						<ABYautjaHeadGeneO_Albino>Things/Pawn/Humanlike/Yautja/Heads/Crested/YautjaHeadO_Albino</ABYautjaHeadGeneO_Albino>
+						<ABYautjaHeadGeneO_Decorated>Things/Pawn/Humanlike/Yautja/Heads/Crested/YautjaHeadO_Decorated</ABYautjaHeadGeneO_Decorated>
+						<ABYautjaHeadGeneO_Speckled>Things/Pawn/Humanlike/Yautja/Heads/Crested/YautjaHeadO_Speckled</ABYautjaHeadGeneO_Speckled>
+						<ABYautjaHeadGeneO_Striped>Things/Pawn/Humanlike/Yautja/Heads/Crested/YautjaHeadO_Striped</ABYautjaHeadGeneO_Striped>
+						<ABYautjaHeadGeneR_Albino>Things/Pawn/Humanlike/Yautja/Heads/Crested/YautjaHeadR_Albino</ABYautjaHeadGeneR_Albino>
+						<ABYautjaHeadGeneR_Decorated>Things/Pawn/Humanlike/Yautja/Heads/Crested/YautjaHeadR_Decorated</ABYautjaHeadGeneR_Decorated>
+						<ABYautjaHeadGeneR_Speckled>Things/Pawn/Humanlike/Yautja/Heads/Crested/YautjaHeadR_Speckled</ABYautjaHeadGeneR_Speckled>
+						<ABYautjaHeadGeneR_Striped>Things/Pawn/Humanlike/Yautja/Heads/Crested/YautjaHeadR_Striped</ABYautjaHeadGeneR_Striped>
+					</headPaths>
+					<headMaterial>
+						<shader>CutoutComplex</shader>
+						<overrideDesiccated>false</overrideDesiccated>
+						<colorA>
+							<skinColor>true</skinColor>
+						</colorA>
+						<colorB>
+							<hairColor>true</hairColor>
+							<alts>
+								<li>
+									<customTagGraphicIsSet>
+										<tag><ABYautja_Crest/></tag>
+										<colorB>true</colorB>
+									</customTagGraphicIsSet>
+									<customClrTagB><ABYautja_Crest/></customClrTagB>
+								</li>
+							</alts>
+						</colorB>
+					</headMaterial>
+				</li>
+				<li Class="BigAndSmall.HasCustomizableGraphics">
+					<tag><ABYautja_Crest/></tag>
+					<colorB>true</colorB>
+				</li>
+			</modExtensions>
+		</GeneDef>
+		<!--Translucent Head-->
+		<GeneDef ParentName="ABYautjaHeadGeneBase">
+			<defName>ABYautjaTranslucentHead</defName>
+			<label>eyeless crested head</label>
+			<labelShortAdj>translucent crested head</labelShortAdj>
+			<description>An eyeless head that grows a crest off the back of the scalp.</description>
+			<displayOrderInCategory>400</displayOrderInCategory>
+			<iconPath>UI/Icons/Genes/HeadGenes/CrestedHead/GeneIcon_ABYautjaTranslucentHead</iconPath>
+			<forcedHeadTypes>
+				<li>ABYautjaHeadGene_TranslucentAlbino</li>
+			</forcedHeadTypes>
+			<modExtensions>
+				<li Class="VEF.Genes.GeneExtension" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+					<skullGraphicPath>Things/Pawn/Humanlike/Yautja/Heads/YautjaSkull_Crested</skullGraphicPath>
+					<backgroundPathEndogenes>UI/Icons/Genes/Yautja_Endogene_Background</backgroundPathEndogenes>
+					<hediffsToBodyParts>
+						<li>
+							<hediff>ABYautjaCrest</hediff>
+							<bodyparts>
+								<li>Head</li>
+							</bodyparts>
+						</li>
+					</hediffsToBodyParts>
+				</li>
+			</modExtensions>
+		</GeneDef>
+		<!--Translucent Curled Horns Head-->
+		<GeneDef ParentName="ABYautjaHeadGeneBase">
+			<defName>ABYautjaTranslucentCurledHornHead</defName>
+			<label>eyeless crested head with curled horns</label>
+			<labelShortAdj>translucent</labelShortAdj>
+			<description>An eyeless head that grows a crest off the back of the scalp. Two curled horns sit atop the crest.</description>
+			<displayOrderInCategory>400</displayOrderInCategory>
+			<iconPath>UI/Icons/Genes/HeadGenes/GeneIcon_ABYautjaTranslucentCurledHornHead</iconPath>
+			<forcedHeadTypes>
+				<li>ABYautjaHeadGene_Crested_TranslucentCurledHornAlbino</li>
+			</forcedHeadTypes>
+			<modExtensions>
+				<li Class="VEF.Genes.GeneExtension" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+					<skullGraphicPath>Things/Pawn/Humanlike/Yautja/Heads/YautjaSkull_Crested</skullGraphicPath>
+					<backgroundPathEndogenes>UI/Icons/Genes/Yautja_Endogene_Background</backgroundPathEndogenes>
+					<hediffsToBodyParts>
+						<li>
+							<hediff>ABYautjaCrest</hediff>
+							<bodyparts>
+								<li>Head</li>
+							</bodyparts>
+						</li>
+						<li>
+							<hediff>ABYautjaCurledHorns</hediff>
+							<bodyparts>
+								<li>Head</li>
+							</bodyparts>
+						</li>
+					</hediffsToBodyParts>
+				</li>
+			</modExtensions>
+		</GeneDef>
+<!--Clover-->
+	<!--Head-->	
+		<GeneDef ParentName="ABYautjaHeadGeneBase">
+			<defName>ABYautjaCloverHead</defName>
+			<label>clover crested head</label>
+			<labelShortAdj>clover head</labelShortAdj>
+			<description>A head that grows a crest off the back of the scalp and the sides of the head.</description>
+			<displayOrderInCategory>400</displayOrderInCategory>
+			<iconPath>UI/Icons/Genes/HeadGenes/CloverHead/GeneIcon_ABYautjaCloverHead</iconPath>
+			<forcedHeadTypes>
+				<li>ABYautjaHeadGeneYG_Clover_Albino</li>
+				<li>ABYautjaHeadGeneYG_Clover_Decorated</li>
+				<li>ABYautjaHeadGeneYG_Clover_Speckled</li>
+				<li>ABYautjaHeadGeneYG_Clover_Striped</li>
+				<li>ABYautjaHeadGeneY_Clover_Albino</li>
+				<li>ABYautjaHeadGeneY_Clover_Decorated</li>
+				<li>ABYautjaHeadGeneY_Clover_Speckled</li>
+				<li>ABYautjaHeadGeneY_Clover_Striped</li>
+				<li>ABYautjaHeadGeneYO_Clover_Albino</li>
+				<li>ABYautjaHeadGeneYO_Clover_Decorated</li>
+				<li>ABYautjaHeadGeneYO_Clover_Speckled</li>
+				<li>ABYautjaHeadGeneYO_Clover_Striped</li>
+				<li>ABYautjaHeadGeneO_Clover_Albino</li>
+				<li>ABYautjaHeadGeneO_Clover_Decorated</li>
+				<li>ABYautjaHeadGeneO_Clover_Speckled</li>
+				<li>ABYautjaHeadGeneO_Clover_Striped</li>
+				<li>ABYautjaHeadGeneR_Clover_Albino</li>
+				<li>ABYautjaHeadGeneR_Clover_Decorated</li>
+				<li>ABYautjaHeadGeneR_Clover_Speckled</li>
+				<li>ABYautjaHeadGeneR_Clover_Striped</li>
+			</forcedHeadTypes>
+			<modExtensions>
+				<li Class="VEF.Genes.GeneExtension" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+					<skullGraphicPath>Things/Pawn/Humanlike/Yautja/Heads/YautjaSkull_Clover</skullGraphicPath>
+					<backgroundPathEndogenes>UI/Icons/Genes/Yautja_Endogene_Background</backgroundPathEndogenes>
+					<hediffsToBodyParts>
+						<li>
+							<hediff>ABYautjaCrest</hediff>
+							<bodyparts>
+								<li>Head</li>
+							</bodyparts>
+						</li>
+					</hediffsToBodyParts>
+				</li>
+				<li Class="BigAndSmall.PawnExtension" MayRequire="redmattis.betterprerequisites">
+					<headPaths>
+						<ABYautjaHeadGeneYG_Clover_Albino>Things/Pawn/Humanlike/Yautja/Heads/Clover/YautjaHeadYG_Clover_Albino</ABYautjaHeadGeneYG_Clover_Albino>
+						<ABYautjaHeadGeneYG_Clover_Decorated>Things/Pawn/Humanlike/Yautja/Heads/Clover/YautjaHeadYG_Clover_Decorated</ABYautjaHeadGeneYG_Clover_Decorated>
+						<ABYautjaHeadGeneYG_Clover_Speckled>Things/Pawn/Humanlike/Yautja/Heads/Clover/YautjaHeadYG_Clover_Speckled</ABYautjaHeadGeneYG_Clover_Speckled>
+						<ABYautjaHeadGeneYG_Clover_Striped>Things/Pawn/Humanlike/Yautja/Heads/Clover/YautjaHeadYG_Clover_Striped</ABYautjaHeadGeneYG_Clover_Striped>
+						<ABYautjaHeadGeneY_Clover_Albino>Things/Pawn/Humanlike/Yautja/Heads/Clover/YautjaHeadY_Clover_Albino</ABYautjaHeadGeneY_Clover_Albino>
+						<ABYautjaHeadGeneY_Clover_Decorated>Things/Pawn/Humanlike/Yautja/Heads/Clover/YautjaHeadY_Clover_Decorated</ABYautjaHeadGeneY_Clover_Decorated>
+						<ABYautjaHeadGeneY_Clover_Speckled>Things/Pawn/Humanlike/Yautja/Heads/Clover/YautjaHeadY_Clover_Speckled</ABYautjaHeadGeneY_Clover_Speckled>
+						<ABYautjaHeadGeneY_Clover_Striped>Things/Pawn/Humanlike/Yautja/Heads/Clover/YautjaHeadY_Clover_Striped</ABYautjaHeadGeneY_Clover_Striped>
+						<ABYautjaHeadGeneYO_Clover_Albino>Things/Pawn/Humanlike/Yautja/Heads/Clover/YautjaHeadYO_Clover_Albino</ABYautjaHeadGeneYO_Clover_Albino>
+						<ABYautjaHeadGeneYO_Clover_Decorated>Things/Pawn/Humanlike/Yautja/Heads/Clover/YautjaHeadYO_Clover_Decorated</ABYautjaHeadGeneYO_Clover_Decorated>
+						<ABYautjaHeadGeneYO_Clover_Speckled>Things/Pawn/Humanlike/Yautja/Heads/Clover/YautjaHeadYO_Clover_Speckled</ABYautjaHeadGeneYO_Clover_Speckled>
+						<ABYautjaHeadGeneYO_Clover_Striped>Things/Pawn/Humanlike/Yautja/Heads/Clover/YautjaHeadYO_Clover_Striped</ABYautjaHeadGeneYO_Clover_Striped>
+						<ABYautjaHeadGeneO_Clover_Albino>Things/Pawn/Humanlike/Yautja/Heads/Clover/YautjaHeadO_Clover_Albino</ABYautjaHeadGeneO_Clover_Albino>
+						<ABYautjaHeadGeneO_Clover_Decorated>Things/Pawn/Humanlike/Yautja/Heads/Clover/YautjaHeadO_Clover_Decorated</ABYautjaHeadGeneO_Clover_Decorated>
+						<ABYautjaHeadGeneO_Clover_Speckled>Things/Pawn/Humanlike/Yautja/Heads/Clover/YautjaHeadO_Clover_Speckled</ABYautjaHeadGeneO_Clover_Speckled>
+						<ABYautjaHeadGeneO_Clover_Striped>Things/Pawn/Humanlike/Yautja/Heads/Clover/YautjaHeadO_Clover_Striped</ABYautjaHeadGeneO_Clover_Striped>
+						<ABYautjaHeadGeneR_Clover_Albino>Things/Pawn/Humanlike/Yautja/Heads/Clover/YautjaHeadR_Clover_Albino</ABYautjaHeadGeneR_Clover_Albino>
+						<ABYautjaHeadGeneR_Clover_Decorated>Things/Pawn/Humanlike/Yautja/Heads/Clover/YautjaHeadR_Clover_Decorated</ABYautjaHeadGeneR_Clover_Decorated>
+						<ABYautjaHeadGeneR_Clover_Speckled>Things/Pawn/Humanlike/Yautja/Heads/Clover/YautjaHeadR_Clover_Speckled</ABYautjaHeadGeneR_Clover_Speckled>
+						<ABYautjaHeadGeneR_Clover_Striped>Things/Pawn/Humanlike/Yautja/Heads/Clover/YautjaHeadR_Clover_Striped</ABYautjaHeadGeneR_Clover_Striped>
+					</headPaths>
+					<headMaterial>
+						<shader>CutoutComplex</shader>
+						<overrideDesiccated>false</overrideDesiccated>
+						<colorA>
+							<skinColor>true</skinColor>
+						</colorA>
+						<colorB>
+							<hairColor>true</hairColor>
+							<alts>
+								<li>
+									<customTagGraphicIsSet>
+										<tag><ABYautja_Crest/></tag>
+										<colorB>true</colorB>
+									</customTagGraphicIsSet>
+									<customClrTagB><ABYautja_Crest/></customClrTagB>
+								</li>
+							</alts>
+						</colorB>
+					</headMaterial>
+				</li>
+				<li Class="BigAndSmall.HasCustomizableGraphics">
+					<tag><ABYautja_Crest/></tag>
+					<colorB>true</colorB>
+				</li>
+			</modExtensions>
+		</GeneDef>
+		<!--Translucent Head-->
+		<GeneDef ParentName="ABYautjaHeadGeneBase">
+			<defName>ABYautjaTranslucentCloverHead</defName>
+			<label>eyeless clover head</label>
+			<labelShortAdj>translucent clover head</labelShortAdj>
+			<description>An eyeless head that grows a crest off the back of and the sides of the scalp.</description>
+			<displayOrderInCategory>400</displayOrderInCategory>
+			<iconPath>UI/Icons/Genes/HeadGenes/CloverHead/GeneIcon_ABYautjaTranslucentCloverHead</iconPath>
+			<forcedHeadTypes>
+				<li>ABYautjaHeadGene_Clover_TranslucentAlbino</li>
+			</forcedHeadTypes>
+			<modExtensions>
+				<li Class="VEF.Genes.GeneExtension" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+					<skullGraphicPath>Things/Pawn/Humanlike/Yautja/Heads/YautjaSkull_Clover</skullGraphicPath>
+					<backgroundPathEndogenes>UI/Icons/Genes/Yautja_Endogene_Background</backgroundPathEndogenes>
+					<hediffsToBodyParts>
+						<li>
+							<hediff>ABYautjaCrest</hediff>
+							<bodyparts>
+								<li>Head</li>
+							</bodyparts>
+						</li>
+					</hediffsToBodyParts>
+				</li>
+			</modExtensions>
+		</GeneDef>
+<!--Malformed-->
+	<!--Head-->	
+		<GeneDef ParentName="ABYautjaHeadGeneBase">
+			<defName>ABYautjaMalformedHead</defName>
+			<label>malformed crested head</label>
+			<labelShortAdj>malformed head</labelShortAdj>
+			<description>A head that grows a crest on the forehead and the sides of the head.</description>
+			<displayOrderInCategory>400</displayOrderInCategory>
+			<iconPath>UI/Icons/Genes/HeadGenes/MalformedHead/GeneIcon_ABYautjaMalformedHead</iconPath>
+			<forcedHeadTypes>
+				<li>ABYautjaHeadGeneYG_Malformed_Albino</li>
+				<li>ABYautjaHeadGeneYG_Malformed_Decorated</li>
+				<li>ABYautjaHeadGeneYG_Malformed_Speckled</li>
+				<li>ABYautjaHeadGeneYG_Malformed_Striped</li>
+				<li>ABYautjaHeadGeneY_Malformed_Albino</li>
+				<li>ABYautjaHeadGeneY_Malformed_Decorated</li>
+				<li>ABYautjaHeadGeneY_Malformed_Speckled</li>
+				<li>ABYautjaHeadGeneY_Malformed_Striped</li>
+				<li>ABYautjaHeadGeneYO_Malformed_Albino</li>
+				<li>ABYautjaHeadGeneYO_Malformed_Decorated</li>
+				<li>ABYautjaHeadGeneYO_Malformed_Speckled</li>
+				<li>ABYautjaHeadGeneYO_Malformed_Striped</li>
+				<li>ABYautjaHeadGeneO_Malformed_Albino</li>
+				<li>ABYautjaHeadGeneO_Malformed_Decorated</li>
+				<li>ABYautjaHeadGeneO_Malformed_Speckled</li>
+				<li>ABYautjaHeadGeneO_Malformed_Striped</li>
+				<li>ABYautjaHeadGeneR_Malformed_Albino</li>
+				<li>ABYautjaHeadGeneR_Malformed_Decorated</li>
+				<li>ABYautjaHeadGeneR_Malformed_Speckled</li>
+				<li>ABYautjaHeadGeneR_Malformed_Striped</li>
+			</forcedHeadTypes>
+			<customEffectDescriptions Inherit="False" />
+			<modExtensions>
+				<li Class="VEF.Genes.GeneExtension" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+					<skullGraphicPath>Things/Pawn/Humanlike/Yautja/Heads/YautjaSkull_Malformed</skullGraphicPath>
+					<backgroundPathEndogenes>UI/Icons/Genes/Yautja_Endogene_Background</backgroundPathEndogenes>
+				</li>
+				<li Class="BigAndSmall.PawnExtension" MayRequire="redmattis.betterprerequisites">
+					<headPaths>
+						<ABYautjaHeadGeneYG_Malformed_Albino>Things/Pawn/Humanlike/Yautja/Heads/Malformed/YautjaHeadYG_Malformed_Albino</ABYautjaHeadGeneYG_Malformed_Albino>
+						<ABYautjaHeadGeneYG_Malformed_Decorated>Things/Pawn/Humanlike/Yautja/Heads/Malformed/YautjaHeadYG_Malformed_Decorated</ABYautjaHeadGeneYG_Malformed_Decorated>
+						<ABYautjaHeadGeneYG_Malformed_Speckled>Things/Pawn/Humanlike/Yautja/Heads/Malformed/YautjaHeadYG_Malformed_Speckled</ABYautjaHeadGeneYG_Malformed_Speckled>
+						<ABYautjaHeadGeneYG_Malformed_Striped>Things/Pawn/Humanlike/Yautja/Heads/Malformed/YautjaHeadYG_Malformed_Striped</ABYautjaHeadGeneYG_Malformed_Striped>
+						<ABYautjaHeadGeneY_Malformed_Albino>Things/Pawn/Humanlike/Yautja/Heads/Malformed/YautjaHeadY_Malformed_Albino</ABYautjaHeadGeneY_Malformed_Albino>
+						<ABYautjaHeadGeneY_Malformed_Decorated>Things/Pawn/Humanlike/Yautja/Heads/Malformed/YautjaHeadY_Malformed_Decorated</ABYautjaHeadGeneY_Malformed_Decorated>
+						<ABYautjaHeadGeneY_Malformed_Speckled>Things/Pawn/Humanlike/Yautja/Heads/Malformed/YautjaHeadY_Malformed_Speckled</ABYautjaHeadGeneY_Malformed_Speckled>
+						<ABYautjaHeadGeneY_Malformed_Striped>Things/Pawn/Humanlike/Yautja/Heads/Malformed/YautjaHeadY_Malformed_Striped</ABYautjaHeadGeneY_Malformed_Striped>
+						<ABYautjaHeadGeneYO_Malformed_Albino>Things/Pawn/Humanlike/Yautja/Heads/Malformed/YautjaHeadYO_Malformed_Albino</ABYautjaHeadGeneYO_Malformed_Albino>
+						<ABYautjaHeadGeneYO_Malformed_Decorated>Things/Pawn/Humanlike/Yautja/Heads/Malformed/YautjaHeadYO_Malformed_Decorated</ABYautjaHeadGeneYO_Malformed_Decorated>
+						<ABYautjaHeadGeneYO_Malformed_Speckled>Things/Pawn/Humanlike/Yautja/Heads/Malformed/YautjaHeadYO_Malformed_Speckled</ABYautjaHeadGeneYO_Malformed_Speckled>
+						<ABYautjaHeadGeneYO_Malformed_Striped>Things/Pawn/Humanlike/Yautja/Heads/Malformed/YautjaHeadYO_Malformed_Striped</ABYautjaHeadGeneYO_Malformed_Striped>
+						<ABYautjaHeadGeneO_Malformed_Albino>Things/Pawn/Humanlike/Yautja/Heads/Malformed/YautjaHeadO_Malformed_Albino</ABYautjaHeadGeneO_Malformed_Albino>
+						<ABYautjaHeadGeneO_Malformed_Decorated>Things/Pawn/Humanlike/Yautja/Heads/Malformed/YautjaHeadO_Malformed_Decorated</ABYautjaHeadGeneO_Malformed_Decorated>
+						<ABYautjaHeadGeneO_Malformed_Speckled>Things/Pawn/Humanlike/Yautja/Heads/Malformed/YautjaHeadO_Malformed_Speckled</ABYautjaHeadGeneO_Malformed_Speckled>
+						<ABYautjaHeadGeneO_Malformed_Striped>Things/Pawn/Humanlike/Yautja/Heads/Malformed/YautjaHeadO_Malformed_Striped</ABYautjaHeadGeneO_Malformed_Striped>
+						<ABYautjaHeadGeneR_Malformed_Albino>Things/Pawn/Humanlike/Yautja/Heads/Malformed/YautjaHeadR_Malformed_Albino</ABYautjaHeadGeneR_Malformed_Albino>
+						<ABYautjaHeadGeneR_Malformed_Decorated>Things/Pawn/Humanlike/Yautja/Heads/Malformed/YautjaHeadR_Malformed_Decorated</ABYautjaHeadGeneR_Malformed_Decorated>
+						<ABYautjaHeadGeneR_Malformed_Speckled>Things/Pawn/Humanlike/Yautja/Heads/Malformed/YautjaHeadR_Malformed_Speckled</ABYautjaHeadGeneR_Malformed_Speckled>
+						<ABYautjaHeadGeneR_Malformed_Striped>Things/Pawn/Humanlike/Yautja/Heads/Malformed/YautjaHeadR_Malformed_Striped</ABYautjaHeadGeneR_Malformed_Striped>
+					</headPaths>
+					<headMaterial>
+						<shader>CutoutComplex</shader>
+						<overrideDesiccated>false</overrideDesiccated>
+						<colorA>
+							<skinColor>true</skinColor>
+						</colorA>
+						<colorB>
+							<hairColor>true</hairColor>
+							<alts>
+								<li>
+									<customTagGraphicIsSet>
+										<tag><ABYautja_Crest/></tag>
+										<colorB>true</colorB>
+									</customTagGraphicIsSet>
+									<customClrTagB><ABYautja_Crest/></customClrTagB>
+								</li>
+							</alts>
+						</colorB>
+					</headMaterial>
+				</li>
+				<li Class="BigAndSmall.HasCustomizableGraphics">
+					<tag><ABYautja_Crest/></tag>
+					<colorB>true</colorB>
+				</li>
+			</modExtensions>
+		</GeneDef>
+		<!--Translucent Head-->
+		<GeneDef ParentName="ABYautjaHeadGeneBase">
+			<defName>ABYautjaTranslucentMalformedHead</defName>
+			<label>eyeless malformed head</label>
+			<labelShortAdj>translucent malformed head</labelShortAdj>
+			<description>An eyeless head that grows a crest on the forehead and the sides of the scalp.</description>
+			<displayOrderInCategory>400</displayOrderInCategory>
+			<iconPath>UI/Icons/Genes/HeadGenes/MalformedHead/GeneIcon_ABYautjaTranslucentMalformedHead</iconPath>
+			<forcedHeadTypes>
+				<li>ABYautjaHeadGene_Malformed_TranslucentAlbino</li>
+			</forcedHeadTypes>
+			<customEffectDescriptions Inherit="False" />
+		</GeneDef>
+<!--Feral-->
+	<!--Head-->	
+		<GeneDef ParentName="ABYautjaHeadGeneBase">
+			<defName>ABYautjaFeralHead</defName>
+			<label>feral crested head</label>
+			<labelShortAdj>feral head</labelShortAdj>
+			<description>A head that grows a crest off the back of the scalp and the sides of the head. Four pits accent a raised bump on the forehead.</description>
+			<displayOrderInCategory>400</displayOrderInCategory>
+			<iconPath>UI/Icons/Genes/HeadGenes/FeralHead/GeneIcon_ABYautjaFeralHead</iconPath>
+			<forcedHeadTypes>
+				<li>ABYautjaHeadGeneYG_Feral_Albino</li>
+				<li>ABYautjaHeadGeneYG_Feral_Decorated</li>
+				<li>ABYautjaHeadGeneYG_Feral_Speckled</li>
+				<li>ABYautjaHeadGeneYG_Feral_Striped</li>
+				<li>ABYautjaHeadGeneY_Feral_Albino</li>
+				<li>ABYautjaHeadGeneY_Feral_Decorated</li>
+				<li>ABYautjaHeadGeneY_Feral_Speckled</li>
+				<li>ABYautjaHeadGeneY_Feral_Striped</li>
+				<li>ABYautjaHeadGeneYO_Feral_Albino</li>
+				<li>ABYautjaHeadGeneYO_Feral_Decorated</li>
+				<li>ABYautjaHeadGeneYO_Feral_Speckled</li>
+				<li>ABYautjaHeadGeneYO_Feral_Striped</li>
+				<li>ABYautjaHeadGeneO_Feral_Albino</li>
+				<li>ABYautjaHeadGeneO_Feral_Decorated</li>
+				<li>ABYautjaHeadGeneO_Feral_Speckled</li>
+				<li>ABYautjaHeadGeneO_Feral_Striped</li>
+				<li>ABYautjaHeadGeneR_Feral_Albino</li>
+				<li>ABYautjaHeadGeneR_Feral_Decorated</li>
+				<li>ABYautjaHeadGeneR_Feral_Speckled</li>
+				<li>ABYautjaHeadGeneR_Feral_Striped</li>
+			</forcedHeadTypes>
+			<modExtensions>
+				<li Class="VEF.Genes.GeneExtension" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+					<skullGraphicPath>Things/Pawn/Humanlike/Yautja/Heads/YautjaSkull_Feral</skullGraphicPath>
+					<backgroundPathEndogenes>UI/Icons/Genes/Yautja_Endogene_Background</backgroundPathEndogenes>
+					<hediffsToBodyParts>
+						<li>
+							<hediff>ABYautjaCrest</hediff>
+							<bodyparts>
+								<li>Head</li>
+							</bodyparts>
+						</li>
+					</hediffsToBodyParts>
+				</li>
+				<li Class="BigAndSmall.PawnExtension" MayRequire="redmattis.betterprerequisites">
+					<headPaths>
+						<ABYautjaHeadGeneYG_Feral_Albino>Things/Pawn/Humanlike/Yautja/Heads/Feral/YautjaHeadYG_Feral_Albino</ABYautjaHeadGeneYG_Feral_Albino>
+						<ABYautjaHeadGeneYG_Feral_Decorated>Things/Pawn/Humanlike/Yautja/Heads/Feral/YautjaHeadYG_Feral_Decorated</ABYautjaHeadGeneYG_Feral_Decorated>
+						<ABYautjaHeadGeneYG_Feral_Speckled>Things/Pawn/Humanlike/Yautja/Heads/Feral/YautjaHeadYG_Feral_Speckled</ABYautjaHeadGeneYG_Feral_Speckled>
+						<ABYautjaHeadGeneYG_Feral_Striped>Things/Pawn/Humanlike/Yautja/Heads/Feral/YautjaHeadYG_Feral_Striped</ABYautjaHeadGeneYG_Feral_Striped>
+						<ABYautjaHeadGeneY_Feral_Albino>Things/Pawn/Humanlike/Yautja/Heads/Feral/YautjaHeadY_Feral_Albino</ABYautjaHeadGeneY_Feral_Albino>
+						<ABYautjaHeadGeneY_Feral_Decorated>Things/Pawn/Humanlike/Yautja/Heads/Feral/YautjaHeadY_Feral_Decorated</ABYautjaHeadGeneY_Feral_Decorated>
+						<ABYautjaHeadGeneY_Feral_Speckled>Things/Pawn/Humanlike/Yautja/Heads/Feral/YautjaHeadY_Feral_Speckled</ABYautjaHeadGeneY_Feral_Speckled>
+						<ABYautjaHeadGeneY_Feral_Striped>Things/Pawn/Humanlike/Yautja/Heads/Feral/YautjaHeadY_Feral_Striped</ABYautjaHeadGeneY_Feral_Striped>
+						<ABYautjaHeadGeneYO_Feral_Albino>Things/Pawn/Humanlike/Yautja/Heads/Feral/YautjaHeadYO_Feral_Albino</ABYautjaHeadGeneYO_Feral_Albino>
+						<ABYautjaHeadGeneYO_Feral_Decorated>Things/Pawn/Humanlike/Yautja/Heads/Feral/YautjaHeadYO_Feral_Decorated</ABYautjaHeadGeneYO_Feral_Decorated>
+						<ABYautjaHeadGeneYO_Feral_Speckled>Things/Pawn/Humanlike/Yautja/Heads/Feral/YautjaHeadYO_Feral_Speckled</ABYautjaHeadGeneYO_Feral_Speckled>
+						<ABYautjaHeadGeneYO_Feral_Striped>Things/Pawn/Humanlike/Yautja/Heads/Feral/YautjaHeadYO_Feral_Striped</ABYautjaHeadGeneYO_Feral_Striped>
+						<ABYautjaHeadGeneO_Feral_Albino>Things/Pawn/Humanlike/Yautja/Heads/Feral/YautjaHeadO_Feral_Albino</ABYautjaHeadGeneO_Feral_Albino>
+						<ABYautjaHeadGeneO_Feral_Decorated>Things/Pawn/Humanlike/Yautja/Heads/Feral/YautjaHeadO_Feral_Decorated</ABYautjaHeadGeneO_Feral_Decorated>
+						<ABYautjaHeadGeneO_Feral_Speckled>Things/Pawn/Humanlike/Yautja/Heads/Feral/YautjaHeadO_Feral_Speckled</ABYautjaHeadGeneO_Feral_Speckled>
+						<ABYautjaHeadGeneO_Feral_Striped>Things/Pawn/Humanlike/Yautja/Heads/Feral/YautjaHeadO_Feral_Striped</ABYautjaHeadGeneO_Feral_Striped>
+						<ABYautjaHeadGeneR_Feral_Albino>Things/Pawn/Humanlike/Yautja/Heads/Feral/YautjaHeadR_Feral_Albino</ABYautjaHeadGeneR_Feral_Albino>
+						<ABYautjaHeadGeneR_Feral_Decorated>Things/Pawn/Humanlike/Yautja/Heads/Feral/YautjaHeadR_Feral_Decorated</ABYautjaHeadGeneR_Feral_Decorated>
+						<ABYautjaHeadGeneR_Feral_Speckled>Things/Pawn/Humanlike/Yautja/Heads/Feral/YautjaHeadR_Feral_Speckled</ABYautjaHeadGeneR_Feral_Speckled>
+						<ABYautjaHeadGeneR_Feral_Striped>Things/Pawn/Humanlike/Yautja/Heads/Feral/YautjaHeadR_Feral_Striped</ABYautjaHeadGeneR_Feral_Striped>
+					</headPaths>
+					<headMaterial>
+						<shader>CutoutComplex</shader>
+						<overrideDesiccated>false</overrideDesiccated>
+						<colorA>
+							<skinColor>true</skinColor>
+						</colorA>
+						<colorB>
+							<hairColor>true</hairColor>
+							<alts>
+								<li>
+									<customTagGraphicIsSet>
+										<tag><ABYautja_Crest/></tag>
+										<colorB>true</colorB>
+									</customTagGraphicIsSet>
+									<customClrTagB><ABYautja_Crest/></customClrTagB>
+								</li>
+							</alts>
+						</colorB>
+					</headMaterial>
+				</li>
+				<li Class="BigAndSmall.HasCustomizableGraphics">
+					<tag><ABYautja_Crest/></tag>
+					<colorB>true</colorB>
+				</li>
+			</modExtensions>
+		</GeneDef>
+		<!--Translucent Head-->
+		<GeneDef ParentName="ABYautjaHeadGeneBase">
+			<defName>ABYautjaTranslucentFeralHead</defName>
+			<label>eyeless feral head</label>
+			<labelShortAdj>translucent feral head</labelShortAdj>
+			<description>An eyeless head that grows a crest off the back of and the sides of the scalp. Four pits accent a raised bump on the forehead.</description>
+			<displayOrderInCategory>400</displayOrderInCategory>
+			<iconPath>UI/Icons/Genes/HeadGenes/FeralHead/GeneIcon_ABYautjaTranslucentFeralHead</iconPath>
+			<forcedHeadTypes>
+				<li>ABYautjaHeadGene_Feral_TranslucentAlbino</li>
+			</forcedHeadTypes>
+			<modExtensions>
+				<li Class="VEF.Genes.GeneExtension" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+					<skullGraphicPath>Things/Pawn/Humanlike/Yautja/Heads/YautjaSkull_Feral</skullGraphicPath>
+					<backgroundPathEndogenes>UI/Icons/Genes/Yautja_Endogene_Background</backgroundPathEndogenes>
+					<hediffsToBodyParts>
+						<li>
+							<hediff>ABYautjaCrest</hediff>
+							<bodyparts>
+								<li>Head</li>
+							</bodyparts>
+						</li>
+					</hediffsToBodyParts>
+				</li>
+			</modExtensions>
+		</GeneDef>
+<!--Horns-->
+	<GeneDef ParentName="GeneHeadboneBase">
+			<defName>ABYautja_CurledHorns</defName>
+			<label>Crested curled horns</label>
+			<labelShortAdj>curled</labelShortAdj>
+			<description>A pair of curled horns fit for a crested head.</description>
+			<displayCategory>ABYautjaCategory</displayCategory>
+			<biostatCpx>1</biostatCpx>
+			<displayOrderInCategory>400</displayOrderInCategory>
+			<iconPath>UI/Icons/Genes/GeneIcon_ABYautjaCurledHorns</iconPath>
+			<renderNodeProperties>
+				<li>
+					<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+					<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+					<texPath>Things/Pawn/Humanlike/HeadAttachments/CrestedCurledHorns/CrestedCurledHorns</texPath>
+					<overrideMeshSize>(1.5, 1.5)</overrideMeshSize>
+					<parentTagDef>Head</parentTagDef>
+					<rotDrawMode>Fresh,Rotting,Dessicated</rotDrawMode>
+					<colorType>Skin</colorType>
+					<visibleFacing>
+						<li>East</li>
+						<li>South</li>
+						<li>North</li>
+						<li>West</li>
+					</visibleFacing>
+					<baseLayer>65</baseLayer>
+				</li>
+			</renderNodeProperties>
+			<modExtensions>
+				<li Class="VEF.Genes.GeneExtension" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+					<backgroundPathEndogenes>UI/Icons/Genes/Yautja_Endogene_Background</backgroundPathEndogenes>
+					<hediffsToBodyParts>
+						<li>
+							<hediff>ABYautjaCurledHorns</hediff>
+							<bodyparts>
+								<li>Head</li>
+							</bodyparts>
+						</li>
+					</hediffsToBodyParts>
+				</li>
+			</modExtensions>
+		</GeneDef>
 <!-- Skin-->
-	<GeneDef>
+	<GeneDef Name="ABYautjaLeatherySkin">
 		<defName>ABYautjaLeatherySkin</defName>
 		<label>leathery skin</label>
 		<labelShortAdj>leathery skin</labelShortAdj>
@@ -95,17 +585,16 @@
 		<biostatCpx>1</biostatCpx>
 		<biostatMet>-1</biostatMet>
 		<customEffectDescriptions>
-			<li>Armor against Blunt x40%</li>
-			<li>Armor against Sharp x20%</li>
+			<li>Armor against Blunt 40</li>
+			<li>Armor against Sharp 20</li>
 		</customEffectDescriptions>
 		<displayCategory>ABYautjaCategory</displayCategory>
 		<displayOrderInCategory>401</displayOrderInCategory>
 		<fur>ABYautja_LeatherySkin</fur>
 		<skinIsHairColor>false</skinIsHairColor>
 		<tattoosVisible>true</tattoosVisible>
-		<missingGeneRomanceChanceFactor>1</missingGeneRomanceChanceFactor>
+		<missingGeneRomanceChanceFactor>0.9</missingGeneRomanceChanceFactor>
 		<iconPath>UI/Icons/Genes/GeneIcon_YautjaLeatherySkin</iconPath>
-		<iconColor>(0.75, 0.75, 0.75)</iconColor>
 		<beardTagFilter>
 			<whitelist>true</whitelist>
 			<tags>
@@ -144,18 +633,28 @@
 				</li>
 			</prefixSymbols>
 		</symbolPack>
-		<painFactor>-0.25</painFactor>
+		<painFactor>0.75</painFactor>
 		<statOffsets>
-		<Flammability>-0.1</Flammability>
+			<Flammability>-0.1</Flammability>
 		</statOffsets>
 		<statFactors>
 			<PainShockThreshold>1.15</PainShockThreshold>
 		</statFactors>
-		<modExtensions MayRequire="oskarpotocki.vanillafactionsexpanded.core">
-			<li Class="VEF.Genes.GeneExtension">
+		<modExtensions>
+			<li Class="VEF.Genes.GeneExtension" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
 				<backgroundPathEndogenes>UI/Icons/Genes/Yautja_Endogene_Background</backgroundPathEndogenes>
 				<useSkinColorForFur>true</useSkinColorForFur>
 				<hediffToWholeBody>ABYautjaLeatherySkin</hediffToWholeBody>
+			</li>
+			<li Class="BigAndSmall.PawnExtension" MayRequire="redmattis.betterprerequisites">
+				<bodyPaths>
+					<Body_Female>Things/Pawn/Humanlike/Yautja/Bodies/Naked_Female</Body_Female>
+					<Body_Male>Things/Pawn/Humanlike/Yautja/Bodies/Naked_Male</Body_Male>
+					<Body_Thin>Things/Pawn/Humanlike/Yautja/Bodies/Naked_Thin</Body_Thin>
+					<Body_Hulk>Things/Pawn/Humanlike/Yautja/Bodies/Naked_Hulk</Body_Hulk>
+					<Body_Fat>Things/Pawn/Humanlike/Yautja/Bodies/Naked_Fat</Body_Fat>
+					<Body_Child>Things/Pawn/Humanlike/Yautja/Bodies/Naked_Child</Body_Child>
+				</bodyPaths>
 			</li>
 		</modExtensions>
 	</GeneDef>	
@@ -171,8 +670,8 @@
 		<customEffectDescriptions>
 			<li>Unarmed melee attacks inflict sharp damage.</li>
 		</customEffectDescriptions>
-	<modExtensions MayRequire="oskarpotocki.vanillafactionsexpanded.core">
-			<li Class="VEF.Genes.GeneExtension">
+	<modExtensions>
+			<li Class="VEF.Genes.GeneExtension" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
 				<backgroundPathEndogenes>UI/Icons/Genes/Yautja_Endogene_Background</backgroundPathEndogenes>
 				<hediffsToBodyParts>
 					<li>
@@ -186,6 +685,20 @@
 			</li>
 		</modExtensions>
 	</GeneDef>
+<!--Blooding System Allower-->
+	<GeneDef>
+		<defName>ABX_BloodingSystem</defName>
+		<label>yautja culture</label>
+		<labelShortAdj>culture</labelShortAdj>
+		<description>Those with this gene are followers of yautja society and culture. They value their ability to kill fiersome prey and it gives them strength and status.</description>
+		<displayOrderInCategory>400</displayOrderInCategory>
+		<iconPath>UI/Icons/Icon_YautjaPlayer</iconPath>
+		<modExtensions>
+			<li Class="VEF.Genes.GeneExtension" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+				<backgroundPathEndogenes>UI/Icons/Genes/Yautja_Endogene_Background</backgroundPathEndogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
 <!--Mandibles-->
     <GeneDef Name="ABYautjaMandibles_Base" Abstract="True">
 		<biostatCpx>1</biostatCpx>
@@ -193,33 +706,36 @@
 		<endogeneCategory>Headbone</endogeneCategory>
 		<displayCategory>ABYautjaCategory</displayCategory>
 		<displayOrderInCategory>110</displayOrderInCategory>
-		<iconColor>(0.75, 0.75, 0.75)</iconColor>
 		<randomChosen>false</randomChosen>
 		<customEffectDescriptions>
 			<li>When unarmed may bite with mandibles</li>
+			<li>Increases eating speed by 3%</li>
 		</customEffectDescriptions>
-		<statFactors>
-			<EatingSpeed>1.03</EatingSpeed>
-		</statFactors>
 	</GeneDef>
+	<!--Upper-->
     <GeneDef ParentName="ABYautjaMandibles_Base">
         <defName>ABYautjaUpperMandibles</defName>
         <label>Yautja Upper Mandibles</label>
         <description>A finger-like digit that sprouts from the cheekbone and possesses a sharp tooth.</description>
-        <iconPath>UI/Icons/Genes/GeneIcon_YautjaUpperMandibles</iconPath>
+        <iconPath>UI/Icons/Genes/Mandibles/GeneIcon_YautjaUpperMandibles</iconPath>
         <renderNodeProperties>
 			<li>
 				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
 				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
 				<texPath>Things/Pawn/Humanlike/HeadAttachments/UpperMandibles/YautjaUpperMandibles</texPath>
 				<parentTagDef>Head</parentTagDef>
+				<overrideMeshSize>(0.6, 0.6)</overrideMeshSize>
 				<color>(255, 255, 255)</color>
 				<visibleFacing>
 					<li>East</li>
 					<li>South</li>
 					<li>West</li>
 				</visibleFacing>
-				<baseLayer>56</baseLayer>
+				<drawData>
+					<defaultData>
+						<layer>56</layer>
+					</defaultData>
+				</drawData>
 			</li>
         </renderNodeProperties>
 		<symbolPack>
@@ -238,8 +754,11 @@
 				</li>
 			</prefixSymbols>
 		</symbolPack>	
-		<modExtensions MayRequire="oskarpotocki.vanillafactionsexpanded.core">
-			<li Class="VEF.Genes.GeneExtension">
+		<exclusionTags>
+			<li>ABUpperMandibles</li>
+		</exclusionTags>		
+		<modExtensions>
+			<li Class="VEF.Genes.GeneExtension" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
 				<backgroundPathEndogenes>UI/Icons/Genes/Yautja_Endogene_Background</backgroundPathEndogenes>
 				<hediffsToBodyParts>
 					<li>
@@ -252,25 +771,30 @@
 			</li>
 		</modExtensions>	
     </GeneDef>
-	
-	    <GeneDef ParentName="ABYautjaMandibles_Base">
+	<!--Lower-->
+	<GeneDef ParentName="ABYautjaMandibles_Base">
         <defName>ABYautjaLowerMandibles</defName>
         <label>Yautja Lower Mandibles</label>
         <description>A finger-like digit that sprouts from the jawline and possesses a sharp tooth.</description>
-        <iconPath>UI/Icons/Genes/GeneIcon_YautjaLowerMandibles</iconPath>
+        <iconPath>UI/Icons/Genes/Mandibles/GeneIcon_YautjaLowerMandibles</iconPath>
         <renderNodeProperties>
 			<li>
 				<texPath>Things/Pawn/Humanlike/HeadAttachments/LowerMandibles/YautjaLowerMandibles</texPath>
 				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
 				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
 				<parentTagDef>Head</parentTagDef>
+				<overrideMeshSize>(0.6, 0.6)</overrideMeshSize>
 				<color>(255, 255, 255)</color>
 				<visibleFacing>
 					<li>East</li>
 					<li>South</li>
 					<li>West</li>
 				</visibleFacing>
-				<baseLayer>55</baseLayer>
+				<drawData>
+					<defaultData>
+						<layer>55</layer>
+					</defaultData>
+				</drawData>
 			</li>
         </renderNodeProperties>
 		<symbolPack>
@@ -283,8 +807,8 @@
 				</li>
 			</prefixSymbols>
 		</symbolPack>	
-		<modExtensions MayRequire="oskarpotocki.vanillafactionsexpanded.core">
-			<li Class="VEF.Genes.GeneExtension">
+		<modExtensions>
+			<li Class="VEF.Genes.GeneExtension" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
 				<backgroundPathEndogenes>UI/Icons/Genes/Yautja_Endogene_Background</backgroundPathEndogenes>
 				<hediffsToBodyParts>
 					<li>
@@ -297,12 +821,12 @@
 			</li>
 		</modExtensions>	
     </GeneDef>
-	
+	<!--Superior Upper-->
 	<GeneDef ParentName="ABYautjaMandibles_Base">
         <defName>ABYautjaSuperiorUpperMandibles</defName>
         <label>Yautja Superior Upper Mandibles</label>
         <description>A finger-like digit that sprouts from the outer cheekbone and possesses a sharp tooth.</description>
-        <iconPath>UI/Icons/Genes/GeneIcon_YautjaSuperiorUpperMandibles</iconPath>
+        <iconPath>UI/Icons/Genes/Mandibles/GeneIcon_YautjaSuperiorUpperMandibles</iconPath>
         <renderNodeProperties>
 			<li>
 				<texPath>Things/Pawn/Humanlike/HeadAttachments/Superior_UpperMandibles/Superior_YautjaUpperMandibles</texPath>
@@ -315,7 +839,11 @@
 					<li>South</li>
 					<li>West</li>
 				</visibleFacing>
-				<baseLayer>58</baseLayer>
+				<drawData>
+					<defaultData>
+						<layer>58</layer>
+					</defaultData>
+				</drawData>
 			</li>
         </renderNodeProperties>
 		<symbolPack>
@@ -328,8 +856,8 @@
 				</li>
 			</prefixSymbols>
 		</symbolPack>	
-		<modExtensions MayRequire="oskarpotocki.vanillafactionsexpanded.core">
-			<li Class="VEF.Genes.GeneExtension">
+		<modExtensions>
+			<li Class="VEF.Genes.GeneExtension" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
 				<backgroundPathEndogenes>UI/Icons/Genes/Yautja_Endogene_Background</backgroundPathEndogenes>
 				<hediffsToBodyParts>
 					<li>
@@ -342,12 +870,12 @@
 			</li>
 		</modExtensions>	
     </GeneDef>
-	
+	<!--Superior Lower-->
 	<GeneDef ParentName="ABYautjaMandibles_Base">
         <defName>ABYautjaSuperiorLowerMandibles</defName>
         <label>Yautja Superior Lower Mandibles</label>
         <description>A finger-like digit that sprouts from the outer jawline and possesses a sharp tooth.</description>
-        <iconPath>UI/Icons/Genes/GeneIcon_YautjaSuperiorLowerMandibles</iconPath>
+        <iconPath>UI/Icons/Genes/Mandibles/GeneIcon_YautjaSuperiorLowerMandibles</iconPath>
         <renderNodeProperties>
 			<li>
 				<texPath>Things/Pawn/Humanlike/HeadAttachments/Superior_LowerMandibles/Superior_YautjaLowerMandibles</texPath>
@@ -360,7 +888,11 @@
 					<li>South</li>
 					<li>West</li>
 				</visibleFacing>
-				<baseLayer>57</baseLayer>
+				<drawData>
+					<defaultData>
+						<layer>57</layer>
+					</defaultData>
+				</drawData>
 			</li>
         </renderNodeProperties>
 		<symbolPack>
@@ -373,8 +905,8 @@
 				</li>
 			</prefixSymbols>
 		</symbolPack>	
-		<modExtensions MayRequire="oskarpotocki.vanillafactionsexpanded.core">
-			<li Class="VEF.Genes.GeneExtension">
+		<modExtensions>
+			<li Class="VEF.Genes.GeneExtension" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
 				<backgroundPathEndogenes>UI/Icons/Genes/Yautja_Endogene_Background</backgroundPathEndogenes>
 				<hediffsToBodyParts>
 					<li>

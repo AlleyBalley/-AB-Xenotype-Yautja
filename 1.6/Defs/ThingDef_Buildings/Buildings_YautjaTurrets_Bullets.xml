@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+	<ThingDef ParentName="BaseBullet">
+		<defName>ABBullet_YautjaTurret</defName>
+		<label>pred-gun plasma bolt</label>
+		<graphicData>
+			<texPath>Things/Projectile/PlasmaShotSml</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>ABPlasma</damageDef>
+			<damageAmountBase>18</damageAmountBase>
+			<armorPenetrationBase>0.68</armorPenetrationBase>
+			<stoppingPower>1.75</stoppingPower>
+			<speed>105</speed>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="ABYautja_LaserBullet" Class="VEF.Weapons.LaserBeamDef">
+		<defName>ABBullet_YautjaFirelinerTurret</defName>
+		<label>fireliner plasma laser</label>
+		<graphicData>
+			<texPath>Things/Projectile/PlasmaLaserShot</texPath>
+			<graphicClass>Graphic_Flicker</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<textures>
+			<li>Things/Projectile/PlasmaLaser</li>
+		</textures>
+		<seam>0</seam>
+		<flickerFrameTime>5</flickerFrameTime>
+		<causefireChance>0.3</causefireChance>
+		<beamWidth>2</beamWidth>
+		<lifetime>45</lifetime>
+		<projectile>
+			<damageDef>ABPlasma</damageDef>
+			<damageAmountBase>12</damageAmountBase>
+			<armorPenetrationBase>0.3</armorPenetrationBase>
+			<stoppingPower>0.8</stoppingPower>
+			<speed>125</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_YautjaPlasmaCannonBullet</defName>
+		<label>heavy pred-gun plasma bolt</label>
+		<graphicData>
+			<texPath>Things/Projectile/Shoulder_Cannon_Projectile</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>ABPlasma</damageDef>
+			<damageAmountBase>32</damageAmountBase>
+			<armorPenetrationBase>1.2</armorPenetrationBase>
+			<stoppingPower>1</stoppingPower>
+			<speed>105</speed>
+		</projectile>
+	</ThingDef>
+</Defs>

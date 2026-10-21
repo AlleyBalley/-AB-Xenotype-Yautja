@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RecipeDef ParentName="WristBladeInstallImplantBase">
+		<defName>ABYautja_InstallTribalGauntlet</defName>
+		<label>Install wooden gauntlet</label>
+		<description>Install a wooden gauntlet.</description>
+		<jobString>installing gauntlet.</jobString>
+		<incompatibleWithHediffTags>
+			<li>GauntletTag</li>
+		</incompatibleWithHediffTags>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_TribalGauntlet</ThingDef>
+			<HediffDef>ABYautja_TribalGauntlet</HediffDef>
+		</descriptionHyperlinks>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ABYautja_TribalGauntlet</li>
+					</thingDefs>
+				</filter>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ABYautja_TribalGauntlet</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>ABYautja_Forearm</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>ABYautja_TribalGauntlet</addsHediff>
+		<uiIconThing>ABYautja_TribalGauntlet</uiIconThing>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="WristBladeInstallImplantBase">
+		<defName>ABYautja_InstallTechGauntlet</defName>
+		<label>Install metal gauntlet</label>
+		<description>Install a metal gauntlet.</description>
+		<jobString>installing gauntlet.</jobString>
+		<incompatibleWithHediffTags>
+			<li>GauntletTag</li>
+		</incompatibleWithHediffTags>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_TechGauntlet</ThingDef>
+			<HediffDef>ABYautja_TechGauntlet</HediffDef>
+		</descriptionHyperlinks>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ABYautja_TechGauntlet</li>
+					</thingDefs>
+				</filter>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ABYautja_TechGauntlet</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>ABYautja_Forearm</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>ABYautja_TechGauntlet</addsHediff>
+		<uiIconThing>ABYautja_TechGauntlet</uiIconThing>
+	</RecipeDef>
+	
+<!--NPCs-->	
+	<RecipeDef ParentName="NPCWristBladeInstallImplant" Name="ABYautja_InstallNPCUnbloodedWristbladeGauntlet">
+		<defName>ABYautja_InstallNPCUnbloodedWristbladeGauntlet</defName>
+		<label>Install wristblade gauntlet</label>
+		<description>Install a wristblade gauntlet.</description>
+		<jobString>installing gauntlet.</jobString>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_NPCUnbloodedWristbladeGauntlet</ThingDef>
+			<HediffDef>ABYautja_NPCUnbloodedWristbladeGauntlet</HediffDef>
+		</descriptionHyperlinks>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ABYautja_NPCUnbloodedWristbladeGauntlet</li>
+					</thingDefs>
+				</filter>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ABYautja_NPCUnbloodedWristbladeGauntlet</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>ABYautja_Forearm</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>ABYautja_NPCUnbloodedWristbladeGauntlet</addsHediff>
+		<uiIconThing>ABYautja_NPCUnbloodedWristbladeGauntlet</uiIconThing>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="ABYautja_InstallNPCUnbloodedWristbladeGauntlet">
+		<defName>ABYautja_InstallNPCWristbladeGauntlet</defName>
+		<descriptionHyperlinks Inherit="False">
+			<ThingDef>ABYautja_NPCWristbladeGauntlet</ThingDef>
+			<HediffDef>ABYautja_NPCWristbladeGauntlet</HediffDef>
+		</descriptionHyperlinks>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ABYautja_NPCWristbladeGauntlet</li>
+					</thingDefs>
+				</filter>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ABYautja_NPCWristbladeGauntlet</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>ABYautja_NPCWristbladeGauntlet</addsHediff>
+		<uiIconThing>ABYautja_NPCWristbladeGauntlet</uiIconThing>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="ABYautja_InstallNPCUnbloodedWristbladeGauntlet">
+		<defName>ABYautja_InstallNPCLeaderWristbladeGauntlet</defName>
+		<descriptionHyperlinks Inherit="False">
+			<ThingDef>ABYautja_NPCLeaderWristbladeGauntlet</ThingDef>
+			<HediffDef>ABYautja_NPCLeaderWristbladeGauntlet</HediffDef>
+		</descriptionHyperlinks>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ABYautja_NPCLeaderWristbladeGauntlet</li>
+					</thingDefs>
+				</filter>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ABYautja_NPCLeaderWristbladeGauntlet</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>ABYautja_NPCLeaderWristbladeGauntlet</addsHediff>
+		<uiIconThing>ABYautja_NPCWristbladeGauntlet</uiIconThing>
+	</RecipeDef>
+</Defs>

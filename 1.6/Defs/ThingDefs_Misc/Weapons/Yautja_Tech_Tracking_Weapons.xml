@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!--Ranged+Melee-->
+	<ThingDef ParentName="ABYautja_BaseMakeableGun_T3">
+		<defName>ABYautja_Gun_SmartDisc</defName>
+		<label>predator smart disc</label>
+		<description>A circular shaped, extremely sharp thrown weapon. The smart disc come equipped with a heat-signature targeting system that makes it deadly accurate but has a long time to setup before throwing. While mainly used for ranged combat, one could use the smart disc as a melee weapon though it is unweildy to hold.</description>
+		<techLevel Inherit="False">Industrial</techLevel>
+		<graphicData>
+			<texPath>Things/Equipment/Ranged/Yautja_SmartDisc</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.9</drawSize>
+		</graphicData>
+		<weaponClasses>
+			<li>Melee</li>
+		</weaponClasses>
+		<soundInteract>Interact_BeatFire</soundInteract>
+		<costStuffCount>35</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costList>
+			<Plasteel>30</Plasteel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<MarketValue>1250</MarketValue>
+			<WorkToMake>6500</WorkToMake>
+			<Mass>1</Mass>
+			<AccuracyTouch>0.85</AccuracyTouch>
+			<AccuracyShort>0.75</AccuracyShort>
+			<AccuracyMedium>0.6</AccuracyMedium>
+			<AccuracyLong>0.55</AccuracyLong>
+			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponTags>
+				<li>YautjaSmartDisc</li>
+		</weaponTags>
+		<recipeMaker>
+			<researchPrerequisite>ABYautja_Tech_Tracking</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<verbs>
+			<li>
+				<verbClass>Verb_LaunchProjectile</verbClass>
+				<label>SmartDisc</label>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>ABSmartDisc_Thrown</defaultProjectile>
+				<warmupTime>1.4</warmupTime>
+				<range>25</range>
+				<soundCast>Interact_BeatFire</soundCast>
+				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>blade</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>18</power>
+				 <cooldownTime>1.7</cooldownTime>
+			</li>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>16</power>
+				 <cooldownTime>1.7</cooldownTime>
+			</li>
+		</tools>
+		<generateCommonality>0.1</generateCommonality>
+		<comps>
+			<li Class="MVCF.Comps.CompProperties_VerbProps">
+				<compClass>MVCF.Comps.Comp_VerbProps</compClass>
+				<verbProps>
+					<li>
+						<label>SmartDisc</label>
+						<canBeToggled>true</canBeToggled>
+						<separateToggle>true</separateToggle>
+						<toggleLabel>Toggle throwing</toggleLabel>
+						<toggleDescription>Toggle the throwing of the smart disc</toggleDescription>
+						<toggleIconPath>Things/Projectile/Yautja_SmartDisc_Thrown</toggleIconPath>
+						<comps>
+							<li Class="MVCF.VerbComps.VerbCompProperties_Switch">
+								<switchIcon>Things/Projectile/Yautja_SmartDisc_Thrown</switchIcon>
+								<startEnabled>true</startEnabled>
+							</li>
+						</comps>
+					</li>
+				</verbProps>
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="VEF.Things.ThingDefExtension">
+				<weaponCarryDrawOffsets>
+					<north>
+						<drawOffset>(0, 0, -0.2)</drawOffset>
+					</north>
+					<east>
+						<drawOffset>(0, 0, -0.2)</drawOffset>
+					</east>
+					<south>
+						<drawOffset>(0, 0, -0.2)</drawOffset>
+					</south>
+					<west>
+						<drawOffset>(0, 0, -0.2)</drawOffset>
+					</west>
+				</weaponCarryDrawOffsets>
+			</li>
+		</modExtensions>
+	</ThingDef>
+</Defs>

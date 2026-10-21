@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<ThingDef>
+		<defName>ElectricShockBeamGraphic</defName>
+		<thingClass>VEF.Weapons.LaserBeamGraphic</thingClass>
+		<drawOffscreen>true</drawOffscreen>
+		<label>electric shock</label>
+		<category>Projectile</category>
+		<tickerType>Normal</tickerType>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<useHitPoints>False</useHitPoints>
+		<neverMultiSelect>True</neverMultiSelect>
+	</ThingDef>
+
+	<ThingDef Abstract="True" Name="ABYautja_ElectricBullet" ParentName="BaseBullet">
+		<thingClass>VEF.Weapons.LaserBeam</thingClass>
+		<drawOffscreen>true</drawOffscreen>
+		<beamGraphic>ElectricShockBeamGraphic</beamGraphic>
+		<explosionEffect>ABYautja_ElectricShockImpact</explosionEffect>
+		<hitLivingEffect>ABYautja_ElectricShockLivingImpact</hitLivingEffect>
+	</ThingDef>
+
+	<ThingDef>
+		<defName>PlasmaLaserBeamGraphic</defName>
+		<thingClass>VEF.Weapons.LaserBeamGraphic</thingClass>
+		<drawOffscreen>true</drawOffscreen>
+		<label>plasma laser</label>
+		<category>Projectile</category>
+		<tickerType>Normal</tickerType>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<useHitPoints>False</useHitPoints>
+		<neverMultiSelect>True</neverMultiSelect>
+	</ThingDef>
+
+	<ThingDef Abstract="True" Name="ABYautja_LaserBullet" ParentName="ABYautja_ElectricBullet">
+		<beamGraphic>PlasmaLaserBeamGraphic</beamGraphic>
+	</ThingDef>
+	
+	<ThingDef>
+		<defName>SpinningDiscBeamGraphic</defName>
+		<thingClass>VEF.Weapons.LaserBeamGraphic</thingClass>
+		<drawOffscreen>true</drawOffscreen>
+		<label>disc</label>
+		
+		<category>Projectile</category>
+		<tickerType>Normal</tickerType>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<useHitPoints>False</useHitPoints>
+		<neverMultiSelect>True</neverMultiSelect>
+	</ThingDef>
+	
+	<ThingDef Abstract="True" Name="ABYautja_SpinningDisc" ParentName="BaseBullet">
+		<thingClass>VEF.Weapons.LaserBeam</thingClass>
+		<drawOffscreen>true</drawOffscreen>
+		<beamGraphic>SpinningDiscBeamGraphic</beamGraphic>
+	</ThingDef>
+</Defs>

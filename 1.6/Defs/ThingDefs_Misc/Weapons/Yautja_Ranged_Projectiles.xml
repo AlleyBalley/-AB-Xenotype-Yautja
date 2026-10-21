@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+<!--Arrows-->
+	<ThingDef ParentName="BaseProjectileNeolithic">
+		<defName>Arrow_Yautja_Hunting_Bow</defName>
+		<label>yautja arrow</label>
+		<graphicData>
+			<texPath>Things/Projectile/Arrow_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>Arrow</damageDef>
+			<damageAmountBase>13</damageAmountBase>
+			<stoppingPower>1.5</stoppingPower>
+			<armorPenetrationBase>0.25</armorPenetrationBase>
+			<speed>60</speed>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseProjectileNeolithic">
+		<defName>Arrow_Yautja_Compound_Bow</defName>
+		<label>yautja arrow</label>
+		<graphicData>
+			<texPath>Things/Projectile/Arrow_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>Arrow</damageDef>
+			<damageAmountBase>17</damageAmountBase>
+			<stoppingPower>2.5</stoppingPower>
+			<armorPenetrationBase>0.5</armorPenetrationBase>
+			<speed>70</speed>
+		</projectile>
+	</ThingDef>
+	
+<!--Bullets-->
+	<!--Bolts-->
+	<ThingDef ParentName="BaseBullet">
+		<defName>ABBullet_Boltgun</defName>
+		<label>bolt</label>
+		<graphicData>
+			<texPath>Things/Projectile/NeedlerShotSml</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.75</drawSize>
+		</graphicData>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>ABRangedStab</damageDef>
+			<damageAmountBase>12</damageAmountBase>
+			<armorPenetrationBase>0.4</armorPenetrationBase>
+			<speed>65</speed>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>ABBullet_Needlegun</defName>
+		<label>needle bolt</label>
+		<graphicData>
+			<texPath>Things/Projectile/NeedlerShotSml</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>ABRangedStab</damageDef>
+			<damageAmountBase>15</damageAmountBase>
+			<armorPenetrationBase>0.57</armorPenetrationBase>
+			<speed>70</speed>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>ABBullet_speargun</defName>
+		<label>spear bolt</label>
+		<graphicData>
+			<texPath>Things/Projectile/NeedlerShotSml</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>ABRangedStab</damageDef>
+			<damageAmountBase>20</damageAmountBase>
+			<armorPenetrationBase>0.68</armorPenetrationBase>
+			<speed>75</speed>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>ABBullet_SpearRifle</defName>
+		<label>spear bolt</label>
+		<graphicData>
+			<texPath>Things/Projectile/NeedlerShot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>ABRangedStab</damageDef>
+			<damageAmountBase>27</damageAmountBase>
+			<stoppingPower>2.0</stoppingPower>
+			<speed>120</speed>
+		</projectile>
+	</ThingDef>
+	
+	<!--Plasma-->
+	<ThingDef ParentName="BaseBullet">
+		<defName>ABBullet_PlasmaBurner</defName>
+		<label>plasma bolt</label>
+		<graphicData>
+			<texPath>Things/Projectile/PlasmaPulseSml</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>ABPlasma</damageDef>
+			<damageAmountBase>10</damageAmountBase>
+			<armorPenetrationBase>0.45</armorPenetrationBase>
+			<stoppingPower>0.75</stoppingPower>
+			<speed>80</speed>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="ABYautja_LaserBullet" Class="VEF.Weapons.LaserBeamDef">
+		<defName>ABBullet_YautjaBlazer</defName>
+		<label>plasma laser</label>
+		<graphicData>
+			<texPath>Things/Projectile/PlasmaLaserShot</texPath>
+			<graphicClass>Graphic_Flicker</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<textures>
+			<li>Things/Projectile/PlasmaLaser</li>
+		</textures>
+		<seam>0</seam>
+		<flickerFrameTime>5</flickerFrameTime>
+		<causefireChance>0.3</causefireChance>
+		<beamWidth>2</beamWidth>
+		<lifetime>45</lifetime>
+		<projectile>
+			<damageDef>ABPlasma</damageDef>
+			<damageAmountBase>12</damageAmountBase>
+			<armorPenetrationBase>0.3</armorPenetrationBase>
+			<stoppingPower>0.8</stoppingPower>
+			<speed>125</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>ABBullet_Plasma</defName>
+		<label>plasma bolt</label>
+		<graphicData>
+			<texPath>Things/Projectile/PlasmaShotSml</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>ABPlasma</damageDef>
+			<damageAmountBase>18</damageAmountBase>
+			<armorPenetrationBase>0.68</armorPenetrationBase>
+			<stoppingPower>1.75</stoppingPower>
+			<speed>65</speed>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>ABBullet_Plasma_PlasmaCaster</defName>
+		<label>plasma bolt</label>
+		<graphicData>
+			<texPath>Things/Projectile/Shoulder_Cannon_Projectile</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>ABPlasma</damageDef>
+			<damageAmountBase>25</damageAmountBase>
+			<armorPenetrationBase>0.68</armorPenetrationBase>
+			<stoppingPower>0.75</stoppingPower>
+			<speed>80</speed>
+		</projectile>
+	</ThingDef>
+	
+	<!--ThingDef ParentName="BaseBullet">
+		<defName>ABBullet_PlasmaHeavyCannon</defName>
+		<label>heavy plasma bolt</label>
+		<graphicData>
+			<texPath>Things/Projectile/Shoulder_Cannon_Projectile</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>ABPlasma</damageDef>
+			<damageAmountBase>45</damageAmountBase>
+			<armorPenetrationBase>1.2</armorPenetrationBase>
+			<stoppingPower>1</stoppingPower>
+			<speed>105</speed>
+		</projectile>
+	</ThingDef-->
+	
+	<!--Misc-->
+	<ThingDef ParentName="BaseBullet">
+		<defName>ABGun_Net</defName>
+		<label>net</label>
+		<graphicData>
+			<texPath>Things/Projectile/Yautja_Net</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>ABYautja_Net</damageDef>
+			<damageAmountBase>10</damageAmountBase>
+			<armorPenetrationBase>0.45</armorPenetrationBase>
+			<stoppingPower>2.3</stoppingPower>
+			<speed>46</speed>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>ABGun_PlasmaNet</defName>
+		<label>plasma net</label>
+		<graphicData>
+			<texPath>Things/Projectile/Yautja_PlasmaNet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>ABYautja_PlasmaNet</damageDef>
+			<damageAmountBase>16</damageAmountBase>
+			<armorPenetrationBase>0.74</armorPenetrationBase>
+			<stoppingPower>2.8</stoppingPower>
+			<speed>46</speed>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="ABYautja_ElectricBullet" Class="VEF.Weapons.LaserBeamDef">
+		<defName>ElectroBola_Thrown</defName>
+		<label>electroshock bolas</label>
+		<graphicData>
+			<texPath>Things/Projectile/Yautja_ElectricBola</texPath>
+			<graphicClass>Graphic_Flicker</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>0.9</drawSize>
+		</graphicData>
+		<textures>
+			<li>Things/Projectile/Yautja_ElectricBola</li>
+		</textures>
+		<seam>0</seam>
+		<flickerFrameTime>4</flickerFrameTime>
+		<causefireChance>0</causefireChance>
+		<beamWidth>0</beamWidth>
+		<lifetime>0</lifetime>
+		<projectile>
+			<damageDef>ABYautja_ElectricShock</damageDef>
+			<damageAmountBase>1</damageAmountBase>
+			<armorPenetrationBase>0.45</armorPenetrationBase>
+			<stoppingPower>3</stoppingPower>
+			<speed>46</speed>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet" Class="VEF.Weapons.LaserBeamDef">
+		<defName>CinchingBola_Thrown</defName>
+		<label>cinching bolas</label>
+		<graphicData>
+			<texPath>Things/Projectile/Yautja_CinchingBola</texPath>
+			<graphicClass>Graphic_Flicker</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>0.9</drawSize>
+		</graphicData>
+		<textures>
+			<li>Things/Projectile/Yautja_CinchingBola</li>
+		</textures>
+		<seam>0</seam>
+		<flickerFrameTime>4</flickerFrameTime>
+		<causefireChance>0</causefireChance>
+		<beamWidth>0</beamWidth>
+		<lifetime>0</lifetime>
+		<projectile>
+			<damageDef>ABRangedStab</damageDef>
+			<damageAmountBase>23</damageAmountBase>
+			<armorPenetrationBase>0.7</armorPenetrationBase>
+			<stoppingPower>1.3</stoppingPower>
+			<speed>57</speed>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef Name="ABSpinningBlade_Thrown" ParentName="ABYautja_SpinningDisc" Class="VEF.Weapons.LaserBeamDef">
+		<defName>ABSpinningBlade_Thrown</defName>
+		<label>spinning blade</label>
+		<graphicData>
+			<texPath>Things/Projectile/Yautja_SpinningBlade</texPath>
+			<graphicClass>Graphic_Flicker</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<textures>
+			<li>Things/Projectile/Yautja_SpinningBlade</li>
+		</textures>
+		<seam>0</seam>
+		<flickerFrameTime>3</flickerFrameTime>
+		<causefireChance>0</causefireChance>
+		<beamWidth>0</beamWidth>
+		<lifetime>0</lifetime>
+		<projectile>
+			<damageDef>ABRangedStab</damageDef>
+			<damageAmountBase>11</damageAmountBase>
+			<armorPenetrationBase>0.45</armorPenetrationBase>
+			<stoppingPower>0.8</stoppingPower>
+			<speed>62</speed>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="ABSpinningBlade_Thrown" Class="VEF.Weapons.LaserBeamDef">
+		<defName>ABPlasmaSpinningBlade_Thrown</defName>
+		<label>spinning plasma blade</label>
+		<graphicData Inherit="False">
+			<texPath>Things/Projectile/Yautja_SpinningPlasmaBlade</texPath>
+			<graphicClass>Graphic_Flicker</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<textures Inherit="False">
+			<li>Things/Projectile/Yautja_SpinningPlasmaBlade</li>
+		</textures>
+		<projectile>
+			<damageDef>ABPlasmaRangedStab</damageDef>
+			<damageAmountBase>22</damageAmountBase>
+			<armorPenetrationBase>0.65</armorPenetrationBase>
+		</projectile>
+	</ThingDef>
+	
+<!--Ranged+Melee-->
+	<ThingDef ParentName="ABYautja_SpinningDisc" Class="VEF.Weapons.LaserBeamDef">
+		<defName>ABCutClamp_Thrown</defName>
+		<label>cut clamp</label>
+		<graphicData>
+			<texPath>Things/Projectile/Yautja_CutClamp</texPath>
+			<graphicClass>Graphic_Flicker</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<textures>
+			<li>Things/Projectile/Yautja_CutClamp</li>
+		</textures>
+		<seam>0</seam>
+		<flickerFrameTime>3</flickerFrameTime>
+		<causefireChance>0</causefireChance>
+		<beamWidth>0</beamWidth>
+		<lifetime>0</lifetime>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<arcHeightFactor>0.25</arcHeightFactor>
+			<damageDef>ABRangedCut</damageDef>
+			<damageAmountBase>16</damageAmountBase>
+			<stoppingPower>1.5</stoppingPower>
+			<armorPenetrationBase>0.35</armorPenetrationBase>
+			<speed>58</speed>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseProjectileNeolithic">
+		<defName>Combistaff_Thrown</defName>
+		<label>combistaff</label>
+		<graphicData>
+			<texPath>Things/Projectile/Yautja_Combistaff</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.75</drawSize>		
+		</graphicData>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>ABRangedStab_Combistaff</damageDef>
+			<damageAmountBase>30</damageAmountBase>
+			<stoppingPower>2.5</stoppingPower>
+			<armorPenetrationBase>0.10</armorPenetrationBase>
+			<speed>46</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="ABYautja_SpinningDisc" Class="VEF.Weapons.LaserBeamDef">
+		<defName>ABShuriken_Thrown</defName>
+		<label>shuriken</label>
+		<graphicData>
+			<texPath>Things/Projectile/Yautja_Shuriken</texPath>
+			<graphicClass>Graphic_Flicker</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<textures>
+			<li>Things/Projectile/Yautja_Shuriken</li>
+		</textures>
+		<seam>0</seam>
+		<flickerFrameTime>3</flickerFrameTime>
+		<causefireChance>0</causefireChance>
+		<beamWidth>0</beamWidth>
+		<lifetime>0</lifetime>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<arcHeightFactor>0.25</arcHeightFactor>
+			<damageDef>ABRangedCut</damageDef>
+			<damageAmountBase>16</damageAmountBase>
+			<stoppingPower>1.5</stoppingPower>
+			<armorPenetrationBase>0.15</armorPenetrationBase>
+			<speed>55</speed>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="ABYautja_SpinningDisc" Class="VEF.Weapons.LaserBeamDef">
+		<defName>ABSmartDisc_Thrown</defName>
+		<label>smart disc</label>
+		<graphicData>
+			<texPath>Things/Projectile/Yautja_SmartDisc</texPath>
+			<graphicClass>Graphic_Flicker</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<textures>
+			<li>Things/Projectile/Yautja_SmartDisc</li>
+		</textures>
+		<seam>0</seam>
+		<flickerFrameTime>3</flickerFrameTime>
+		<causefireChance>0</causefireChance>
+		<beamWidth>0</beamWidth>
+		<lifetime>0</lifetime>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<arcHeightFactor>0.25</arcHeightFactor>
+			<damageDef>ABRangedCut</damageDef>
+			<damageAmountBase>20</damageAmountBase>
+			<stoppingPower>2.5</stoppingPower>
+			<armorPenetrationBase>0.30</armorPenetrationBase>
+			<speed>65</speed>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="ABYautja_SpinningDisc" Class="VEF.Weapons.LaserBeamDef">
+		<defName>ABPoliNanoDisc_Thrown</defName>
+		<label>poli nanovibronic disc</label>
+		<graphicData>
+			<texPath>Things/Projectile/Yautja_PoliNanoDisc</texPath>
+			<graphicClass>Graphic_Flicker</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<textures>
+			<li>Things/Projectile/Yautja_PoliNanoDisc</li>
+		</textures>
+		<seam>0</seam>
+		<flickerFrameTime>3</flickerFrameTime>
+		<causefireChance>0</causefireChance>
+		<beamWidth>0</beamWidth>
+		<lifetime>0</lifetime>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<arcHeightFactor>0.25</arcHeightFactor>
+			<damageDef>ABRangedCut</damageDef>
+			<damageAmountBase>30</damageAmountBase>
+			<stoppingPower>2.75</stoppingPower>
+			<armorPenetrationBase>0.45</armorPenetrationBase>
+			<speed>80</speed>
+		</projectile>
+	</ThingDef>
+
+<!--Gauntlet Modules-->
+	<ThingDef ParentName="BaseProjectileNeolithic">
+		<defName>Gauntlet_WristbladeLauncher</defName>
+		<label>wristblade</label>
+		<graphicData>
+			<texPath>Things/Projectile/Yautja_Wristblade_Launched</texPath>
+			<graphicClass>Graphic_Single</graphicClass>		
+		</graphicData>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>ABImpalingStab</damageDef>
+			<damageAmountBase>15</damageAmountBase>
+			<stoppingPower>1.5</stoppingPower>
+			<armorPenetrationBase>0.45</armorPenetrationBase>
+			<speed>50</speed>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<thingClass>Projectile_Explosive</thingClass>
+		<defName>Gauntlet_WristRocket</defName>
+		<label>wrist rocket</label>
+		<graphicData>
+			<texPath>Things/Projectile/Rocket_Swarm</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.55</drawSize>
+		</graphicData>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>ABMiniBomb</damageDef>
+			<explosionRadius>1.3</explosionRadius>
+			<damageAmountBase>20</damageAmountBase>
+			<stoppingPower>1.5</stoppingPower>
+			<armorPenetrationBase>0.6</armorPenetrationBase>
+			<speed>75</speed>
+			<explosionDelay>0</explosionDelay>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>Gauntlet_WristCannon</defName>
+		<label>plasma bolt</label>
+		<graphicData>
+			<texPath>Things/Projectile/PlasmaShotSml</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>ABPlasma</damageDef>
+			<damageAmountBase>21</damageAmountBase>
+			<armorPenetrationBase>0.68</armorPenetrationBase>
+			<stoppingPower>1.75</stoppingPower>
+			<speed>80</speed>
+		</projectile>
+	</ThingDef>
+</Defs>

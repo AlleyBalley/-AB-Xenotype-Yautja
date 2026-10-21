@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+<!--USMC-->
+	<ScenarioDef ParentName="ScenarioBase">
+		<defName>ABYautjaScenarioUSMC</defName>
+		<label>United States Colonial Marine Corps</label>
+		<description>You are humans, baseliners or not. Your job is to protect the people from hostile alien threats. You've been deployed on this planet for such a reason. Find the threat. Eliminate it.</description>
+			<scenario>
+				<summary>Marines deployed on a planet to take down hostile alien life.</summary>
+				<playerFaction>
+					<factionDef>ABYautja_PlayerUSMC</factionDef>
+				</playerFaction>
+				<parts>
+				<!--Scene Parts-->
+					<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+						<def>ConfigPage_ConfigureStartingPawns</def>
+						<pawnCount>4</pawnCount>
+						<pawnChoiceCount>10</pawnChoiceCount>
+						<allowedDevelopmentalStages>Adult</allowedDevelopmentalStages>
+						  <requiredSkills>
+							<li>Shooting</li>
+							<li>Melee</li>
+						  </requiredSkills>
+					</li>
+					<li Class="ScenPart_StartingResearch">
+						<def>StartingResearch</def>
+						<project>GunTurrets</project>
+					</li>
+				<!-- Player pawns modifiers -->
+					<li Class="ScenPart_ForcedHediff">
+						<def>ForcedHediff</def>
+						<visible>false</visible>
+						<context>PlayerStarter</context>
+						<chance>0.75</chance>
+						<hediff>CryptosleepSickness</hediff>
+						<hideOffMap>true</hideOffMap>
+						<severityRange>1~0.5</severityRange>
+					</li>
+					<!--  Player starting stuff spawn method -->
+					<li Class="ScenPart_PlayerPawnsArriveMethod">
+						<def>PlayerPawnsArriveMethod</def>
+						<visible>true</visible>
+						<method>DropPods</method>
+					</li>
+					<li Class="ScenPart_StartingThing_Defined">
+						<def>StartingThing_Defined</def>
+						<thingDef>Gun_MachinePistol</thingDef>
+						<count>2</count>
+					</li>
+					<li Class="ScenPart_StartingThing_Defined">
+						<def>StartingThing_Defined</def>
+						<thingDef>Gun_BoltActionRifle</thingDef>
+					</li>
+					<li Class="ScenPart_StartingThing_Defined">
+						<def>StartingThing_Defined</def>
+						<thingDef>MeleeWeapon_Knife</thingDef>
+						<stuff>Plasteel</stuff>
+					</li>
+					<li Class="ScenPart_StartingThing_Defined">
+						<def>StartingThing_Defined</def>
+						<thingDef>Apparel_FlakPants</thingDef>
+						<count>2</count>
+					</li>
+					<li Class="ScenPart_StartingThing_Defined">
+						<def>StartingThing_Defined</def>
+						<thingDef>Apparel_FlakVest</thingDef>
+						<count>2</count>
+					</li>
+					<li Class="ScenPart_StartingThing_Defined">
+						<def>StartingThing_Defined</def>
+						<thingDef>Apparel_AdvancedHelmet</thingDef>
+						<count>2</count>
+					</li>
+					<li Class="ScenPart_StartingThing_Defined">
+						<def>StartingThing_Defined</def>
+						<thingDef>Silver</thingDef>
+						<count>250</count>
+					</li>
+					<li Class="ScenPart_StartingThing_Defined">
+						<def>StartingThing_Defined</def>
+						<thingDef>MealSurvivalPack</thingDef>
+						<count>30</count>
+					</li>
+					<li Class="ScenPart_StartingThing_Defined">
+						<def>StartingThing_Defined</def>
+						<thingDef>MedicineIndustrial</thingDef>
+						<count>20</count>
+					</li>
+					<li Class="ScenPart_ScatterThingsNearPlayerStart">
+						<def>ScatterThingsNearPlayerStart</def>
+						<thingDef>Steel</thingDef>
+						<count>400</count>
+					</li>
+					<li Class="ScenPart_ScatterThingsNearPlayerStart">
+						<def>ScatterThingsNearPlayerStart</def>
+						<thingDef>ComponentIndustrial</thingDef>
+						<count>10</count>
+					</li>
+					<li Class="ScenPart_ScatterThingsAnywhere">
+						<def>ScatterThingsAnywhere</def>
+						<thingDef>ShipChunk</thingDef>
+						<allowRoofed>false</allowRoofed>
+						<count>3</count>
+					</li>
+					<!--Vanilla Faction Extended, Faction disposition-->
+					<li Class="VEF.Factions.ScenPart_ForcedFactionGoodwill">
+						<factionDef>ABYautjaClan</factionDef>
+						<alwaysHostile>True</alwaysHostile>
+						<affectStartingGoodwill>True</affectStartingGoodwill>
+						<startingGoodwillRange>-100~-85</startingGoodwillRange>
+						<affectNaturalGoodwill>True</affectNaturalGoodwill>
+						<naturalGoodwillRange>-100~-85</naturalGoodwillRange>
+						<def>VFEC_ForcedFactionGoodwill</def>
+					</li>
+					<li Class="VEF.Factions.ScenPart_ForcedFactionGoodwill">
+						<factionDef>ABYautjaBerserkClan</factionDef>
+						<alwaysHostile>True</alwaysHostile>
+						<affectStartingGoodwill>True</affectStartingGoodwill>
+						<startingGoodwillRange>-100~-85</startingGoodwillRange>
+						<affectNaturalGoodwill>True</affectNaturalGoodwill>
+						<naturalGoodwillRange>-100~-85</naturalGoodwillRange>
+						<def>VFEC_ForcedFactionGoodwill</def>
+					</li>
+					<li Class="VEF.Factions.ScenPart_ForcedFactionGoodwill">
+						<factionDef>ABYautjaModderClan</factionDef>
+						<alwaysHostile>True</alwaysHostile>
+						<affectStartingGoodwill>True</affectStartingGoodwill>
+						<startingGoodwillRange>-100~-85</startingGoodwillRange>
+						<affectNaturalGoodwill>True</affectNaturalGoodwill>
+						<naturalGoodwillRange>-100~-85</naturalGoodwillRange>
+						<def>VFEC_ForcedFactionGoodwill</def>
+					</li>
+					<li Class="VEF.Factions.ScenPart_ForcedFactionGoodwill">
+						<factionDef>ABYautjaBadBloodClan</factionDef>
+						<affectHiddenFactions>True</affectHiddenFactions>
+						<affectStartingGoodwill>True</affectStartingGoodwill>
+						<startingGoodwillRange>-100~-85</startingGoodwillRange>
+						<affectNaturalGoodwill>True</affectNaturalGoodwill>
+						<naturalGoodwillRange>-100~-85</naturalGoodwillRange>
+						<def>VFEC_ForcedFactionGoodwill</def>
+					</li>
+					<!--  Game start dialog  -->
+					<li Class="ScenPart_GameStartDialog">
+						<def>GameStartDialog</def>
+						<text>You've been deployed on this planet for such a reason. Find the threat. Eliminate it.</text>
+						<closeSound>GameStartSting</closeSound>
+					</li>
+				</parts>
+			</scenario>
+	</ScenarioDef>
+</Defs>

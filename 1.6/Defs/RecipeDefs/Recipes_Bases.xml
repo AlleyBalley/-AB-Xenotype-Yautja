@@ -1,18 +1,129 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<RecipeDef Name="HandSwappingBase" Abstract="True">
-		<jobString>swapping wristblade handedness.</jobString>
-		<workAmount>50</workAmount>
+	<RecipeDef Name="CombineWristbladeRecipe_Base" Abstract="True">
 		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_Machining</soundWorking>
+		<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
 		<skillRequirements>
 			<Crafting>1</Crafting>
 		</skillRequirements>
 		<workSkill>Crafting</workSkill>
 		<recipeUsers>
-			<li>ABYautja_TableMachining</li>
+			<li>ABYautja_TinkeringTable</li>
+			<li>CraftingSpot</li>
+			<li MayRequire="oskarpotocki.vfe.classical">VFEC_CraftingBench</li>
 		</recipeUsers>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryInstallImplantBase" Name="WristBladeInstallImplantBase" Abstract="True">
+		<effectWorking>ButcherMechanoid</effectWorking>
+		<soundWorking>Interact_ConstructMetal</soundWorking>
+		<workAmount>50</workAmount>
+		<anesthetize>false</anesthetize>
+		<surgerySuccessChanceFactor>1</surgerySuccessChanceFactor>
+		<developmentalStageFilter>Adult</developmentalStageFilter>
+		<surgeryOutcomeEffect>SurgeryOutcomeWristbladeInstall</surgeryOutcomeEffect>
+		<skillRequirements Inherit="False">
+			<Medicine>2</Medicine>
+		</skillRequirements>
+		<recipeUsers>
+			<li>Human</li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">CreepJoiner</li>
+			<li MayRequire="erdelf.humanoidalienraces">ABAlien_Yautja</li>
+		</recipeUsers>
+		<ingredients Inherit="False" />
+		<fixedIngredientFilter Inherit="False" />
+	</RecipeDef>
+	
+	<RecipeDef ParentName="WristBladeInstallImplantBase" Name="NPCWristBladeInstallImplantBase" Abstract="True">
+		<workAmount>5000</workAmount>
+		<skillRequirements Inherit="False">
+			<Medicine>20</Medicine>
+		</skillRequirements>
+		<recipeUsers Inherit="False"/>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="NPCWristBladeInstallImplantBase" Name="NPCWristBladeInstallImplant" Abstract="True">
+		<workerClass>ABXenotypeYautja.Recipe_InstallGauntletModule</workerClass>
+		<appliedOnFixedBodyParts>
+			<li>ABYautja_Forearm</li>
+			<li>Shoulder</li>
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryRemoveImplantBase" Name="WristBladeRemoveImplantBase" Abstract="True">
+		<effectWorking>ButcherMechanoid</effectWorking>
+		<soundWorking>Interact_ConstructMetal</soundWorking>
+		<isViolation>true</isViolation>
+		<workAmount>30</workAmount>
+		<anesthetize>false</anesthetize>
+		<surgerySuccessChanceFactor>1</surgerySuccessChanceFactor>
+		<developmentalStageFilter>Adult</developmentalStageFilter>
+		<surgeryOutcomeEffect>SurgeryOutcomeWristbladeInstall</surgeryOutcomeEffect>
+		<skillRequirements Inherit="False">
+			<Medicine>2</Medicine>
+		</skillRequirements>
+		<recipeUsers>
+			<li>Human</li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">CreepJoiner</li>
+			<li MayRequire="erdelf.humanoidalienraces">ABAlien_Yautja</li>
+		</recipeUsers>
+		<ingredients Inherit="False" />
+		<fixedIngredientFilter Inherit="False" />
+	</RecipeDef>
+	
+	<RecipeDef ParentName="WristBladeInstallImplantBase" Name="GauntletModuleInstall" Abstract="True">
+		<workerClass>ABXenotypeYautja.Recipe_InstallGauntletModule</workerClass>
+		<appliedOnFixedBodyParts>
+			<li>ABYautja_Forearm</li>
+			<li>Shoulder</li>
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="WristBladeRemoveImplantBase" Name="GauntletModuleRemove" Abstract="True">
+		<workerClass>ABXenotypeYautja.Recipe_RemoveGauntletModule</workerClass>
+	</RecipeDef>
+	
+	<SurgeryOutcomeEffectDef>
+		<defName>SurgeryOutcomeWristbladeInstall</defName>
+		<outcomes>
+			<li Class="SurgeryOutcomeSuccess" />
+		</outcomes>
+	</SurgeryOutcomeEffectDef>
+	
+<!--Install prosthetic+gauntlet-->
+	<RecipeDef ParentName="SurgeryInstallImplantBase" Name="WoodGauntletUIICONinstall" Abstract="True">
+		<uiIconThing>WoodLog</uiIconThing>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryInstallImplantBase" Name="ProstheticGauntletUIICONinstall" Abstract="True">
+		<uiIconThing>SimpleProstheticArm</uiIconThing>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryInstallImplantBase" Name="BionicGauntletUIICONinstall" Abstract="True">
+	<uiIconThing>BionicArm</uiIconThing>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryInstallImplantBase" Name="ArchotechGauntletUIICONinstall" Abstract="True">
+	<uiIconThing>ArchotechArm</uiIconThing>
+	</RecipeDef>
+	
+<!--remove prosthetic+gauntlet-->
+	<RecipeDef ParentName="SurgeryRemoveImplantBase" Name="WoodGauntletUIICONremove" Abstract="True">
+		<uiIconThing>WoodLog</uiIconThing>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryRemoveImplantBase" Name="ProstheticGauntletUIICONremove" Abstract="True">
+		<uiIconThing>SimpleProstheticArm</uiIconThing>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryRemoveImplantBase" Name="BionicGauntletUIICONremove" Abstract="True">
+	<uiIconThing>BionicArm</uiIconThing>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryRemoveImplantBase" Name="ArchotechGauntletUIICONremove" Abstract="True">
+	<uiIconThing>ArchotechArm</uiIconThing>
 	</RecipeDef>
 </Defs>

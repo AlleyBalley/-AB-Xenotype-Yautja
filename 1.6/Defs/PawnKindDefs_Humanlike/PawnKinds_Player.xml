@@ -11,7 +11,7 @@
 			<li>Neolithic</li>
 		</apparelTags>
 		<apparelMoney>
-			<min>10000</min>
+			<min>5000</min>
 			<max>10000</max>
 		</apparelMoney>
 		<techHediffsChance>0.03</techHediffsChance>
@@ -29,7 +29,7 @@
 		<defName>Colonist_ABYautja_Unblooded</defName>
 		<label>unblooded Yautja colonist</label>
 		<defaultFactionType>ABYautja_PlayerUnblooded</defaultFactionType>
-		<backstoryFiltersOverride Inherit="false">
+		<backstoryFiltersOverride>
 			<li>
 				<categories>
 					<li>ABYautja_Unblooded</li>
@@ -43,8 +43,14 @@
 		</apparelTags>
 		<apparelMoney>
 			<min>1000</min>
-			<max>1000</max>
+			<max>5000</max>
 		</apparelMoney>
+		<startingHediffs>
+			<li>
+				<def>ABX_Hediff_Blooding</def>
+				<severity>0.01</severity>
+			</li>
+		</startingHediffs>
 		<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
 	</PawnKindDef>
   
@@ -52,7 +58,7 @@
 		<defName>Colonist_ABYautja_Blooded</defName>
 		<label>blooded Yautja colonist</label>
 		<defaultFactionType>ABYautja_PlayerBlooded</defaultFactionType>
-		<backstoryFiltersOverride Inherit="false">
+		<backstoryFiltersOverride>
 			<li>
 				<categories>
 					<li>ABYautja_Blooded</li>
@@ -60,13 +66,55 @@
 			</li>
 		</backstoryFiltersOverride>
 		<apparelTags>
-			<li>YautjaLightArmour</li>
-			<li>YautjaArmour</li>
+			<li>YautjaLightArmor</li>
+			<li>YautjaHeavyArmor</li>
+			<li>YautjaNormalArmor</li>
 			<li>YautjaWebbing</li>
+			<li>YautjaMesh</li>
 			<li>Neolithic</li>
 		</apparelTags>
 		<apparelMoney>
-			<min>10000</min>
+			<min>5000</min>
+			<max>10000</max>
+		</apparelMoney>
+		<techHediffsChance>0.03</techHediffsChance>
+		<techHediffsMoney>50~800</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+			<li>Simple</li>
+			<li>ImplantEmpireCommon</li>
+			<li>YautjaTribalEquipment</li>
+		</techHediffsTags>
+		<startingHediffs>
+			<li>
+				<def>ABX_Hediff_Blooding</def>
+				<severity>0.2</severity>
+			</li>
+		</startingHediffs>
+		<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+	</PawnKindDef>
+  
+	<PawnKindDef ParentName="BaseYautjaPawnKind">
+		<defName>Colonist_ABYautja_BadBlooded</defName>
+		<label>BadBlood yautja colonist</label>
+		<defaultFactionType>ABYautja_PlayerColony</defaultFactionType>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>ABYautja_BadBlood</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<apparelTags>
+			<li>YautjaLightArmor</li>
+			<li>YautjaHeavyArmor</li>
+			<li>YautjaNormalArmor</li>
+			<li>YautjaWebbing</li>
+			<li>YautjaMesh</li>
+			<li>Neolithic</li>
+		</apparelTags>
+		<apparelMoney>
+			<min>5000</min>
 			<max>10000</max>
 		</apparelMoney>
 		<techHediffsChance>0.03</techHediffsChance>
@@ -79,35 +127,42 @@
 		</techHediffsTags>
 		<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
 	</PawnKindDef>
-  
-	<PawnKindDef ParentName="BaseYautjaPawnKind">
-		<defName>Colonist_ABYautja_BadBlooded</defName>
-		<label>BadBlood yautja colonist</label>
-		<defaultFactionType>ABYautja_PlayerColony</defaultFactionType>
-		<backstoryFiltersOverride Inherit="false">
-			<li>
-				<categories>
-					<li>ABYautja_BadBlood</li>
-				</categories>
-			</li>
-		</backstoryFiltersOverride>
-		<apparelTags>
-			<li>YautjaGreaves</li>
-			<li>YautjaWebbing</li>
-			<li>Neolithic</li>
-		</apparelTags>
-		<apparelMoney>
-			<min>1000</min>
-			<max>1000</max>
-		</apparelMoney>
-		<techHediffsChance>0.03</techHediffsChance>
-		<techHediffsMoney>50~800</techHediffsMoney>
-		<techHediffsTags>
-			<li>Poor</li>
-			<li>Simple</li>
-			<li>ImplantEmpireCommon</li>
-			<li>YautjaTribalEquipment</li>
-		</techHediffsTags>
-		<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
-	</PawnKindDef>
+	
+	<PawnKindDef ParentName="BasePlayerPawnKind">
+    <defName>ABYautja_PlayerUSMC</defName>
+    <label>USMC Marine</label>
+    <defaultFactionDef>ABYautja_PlayerUSMC</defaultFactionDef>
+    <chemicalAddictionChance>0.06</chemicalAddictionChance>
+    <apparelColor>(255,255,255)</apparelColor>
+    <apparelTags>
+      <li>IndustrialBasic</li>
+      <li>IndustrialAdvanced</li>
+      <li>IndustrialMilitaryBasic</li>
+      <li>BeltDefensePop</li>
+    </apparelTags>
+    <ignoreApparelAllowChance>true</ignoreApparelAllowChance>
+    <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+    <apparelMoney>1500~2000</apparelMoney>
+    <backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+    <techHediffsChance>0.03</techHediffsChance>
+    <techHediffsMoney>50~800</techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+      <li>Simple</li>
+      <li>ImplantEmpireCommon</li>
+    </techHediffsTags>
+    <techHediffsDisallowTags>
+      <li>PainCauser</li>
+    </techHediffsDisallowTags>
+	<inventoryOptions>
+      <skipChance>0.95</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>1</countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+    <initialResistanceRange>21~35</initialResistanceRange>
+  </PawnKindDef>
 </Defs>

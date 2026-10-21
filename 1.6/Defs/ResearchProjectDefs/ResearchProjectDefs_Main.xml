@@ -1,13 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+<!--Tier 1-4-->
 	<ResearchProjectDef>
 		<tab>ABYautja_ResearchTab</tab>
 		<defName>ABYautja_Tech_T1</defName>
 		<label>Yautja Basic tech</label>
-		<description>Allows you to create basic level Yautja tech</description>
-		<baseCost>1000</baseCost>
-		<techLevel>Industrial</techLevel> 
+		<description>Allows you to create basic level Yautja tech.</description>
+		<baseCost>300</baseCost>
+		<prerequisites>
+			<li>Stonecutting</li>
+		</prerequisites>
+		<techLevel>Neolithic</techLevel>
+		<tags>
+			<li>YautjaStart</li>
+		</tags>
 		<researchViewX>0</researchViewX>
 		<researchViewY>2</researchViewY>
 	</ResearchProjectDef>
@@ -16,13 +23,13 @@
 		<tab>ABYautja_ResearchTab</tab>
 		<defName>ABYautja_Tech_T2</defName>
 		<label>Yautja Common tech</label>
-		<description>Allows you to create mid level Yautja tech</description>
-		<baseCost>2000</baseCost>
+		<description>Allows you to create mid level Yautja tech.</description>
+		<baseCost>700</baseCost>
 		<prerequisites>
 			<li>ABYautja_Tech_T1</li>
+			<li>Smithing</li>
 		</prerequisites>
-		<techLevel>Industrial</techLevel>
-		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<techLevel>Medieval</techLevel>
 		<researchViewX>1</researchViewX>
 		<researchViewY>2</researchViewY>
 	</ResearchProjectDef>
@@ -31,116 +38,118 @@
 		<tab>ABYautja_ResearchTab</tab>
 		<defName>ABYautja_Tech_T3</defName>
 		<label>Yautja Advanced tech</label>
-		<description>Allows you to create high level Yautja tech</description>
-		<baseCost>4000</baseCost>
+		<description>Allows you to create high level Yautja tech.</description>
+		<baseCost>1300</baseCost>
 		<prerequisites>
 			<li>ABYautja_Tech_T2</li>
 		</prerequisites>
-		<techLevel>Industrial</techLevel>
-		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-    <requiredResearchFacilities>
-      <li>MultiAnalyzer</li>
-    </requiredResearchFacilities>
+		<techLevel>Medieval</techLevel>
 		<researchViewX>2</researchViewX>
 		<researchViewY>2</researchViewY>
 	</ResearchProjectDef>
-
+	
 	<ResearchProjectDef>
 		<tab>ABYautja_ResearchTab</tab>
-		<defName>ABYautja_Tech_Melee_T1</defName>
-		<label>Simple Melee Weapons</label>
-		<description>Allows you to create basic Yautja Melee Weapons</description>
-		<baseCost>500</baseCost>
+		<defName>ABYautja_Tech_T4</defName>
+		<label>Yautja Spacer tech</label>
+		<description>Allows you to create spacer level Yautja tech.</description>
+		<baseCost>4000</baseCost>
 		<prerequisites>
-			<li>ABYautja_Tech_T1</li>
+			<li>ABYautja_Tech_T3</li>
 		</prerequisites>
-		<techLevel>Industrial</techLevel>
 		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-		<researchViewX>1</researchViewX>
-		<researchViewY>3</researchViewY>
+		<techLevel>Spacer</techLevel>
+		<researchViewX>6</researchViewX>
+		<researchViewY>2</researchViewY>
 	</ResearchProjectDef>
+	
+<!-- Branches-->
+	<!--ResearchProjectDef>
+		<tab>ABYautja_ResearchTab</tab>
+		<defName>ABYautja_Tech_Improvised</defName>
+		<label>Improvised Yautja tech</label>
+		<description>Allows you to create improvised Yautja tech.</description>
+		<baseCost>100</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<tags>
+			<li>YautjaBadBloodStart</li>
+		</tags>
+		<researchViewX>0</researchViewX>
+		<researchViewY>5</researchViewY>
+	</ResearchProjectDef-->
 
 	<ResearchProjectDef>
 		<tab>ABYautja_ResearchTab</tab>
-		<defName>ABYautja_Tech_Melee_T2</defName>
-		<label>Special Melee Weapons</label>
-		<description>Allows you to create Special Yautja Melee Weapons</description>
-		<baseCost>1000</baseCost>
+		<defName>ABYautja_Tech_Explosive</defName>
+		<label>Yautja Explosive tech</label>
+		<description>Unlocks the world of explosives for yautja tech.</description>
+		<baseCost>1500</baseCost>
 		<prerequisites>
-			<li>ABYautja_Tech_T2</li>
-			<li>ABYautja_Tech_Melee_T1</li>
+			<li>ABYautja_Tech_T3</li>
 		</prerequisites>
 		<techLevel>Industrial</techLevel>
-		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-		<researchViewX>2</researchViewX>
-		<researchViewY>4</researchViewY>
-	</ResearchProjectDef>
-
-	<ResearchProjectDef>
-		<tab>ABYautja_ResearchTab</tab>
-		<defName>ABYautja_Tech_Ranged_T1</defName>
-		<label>Simple Ranged Weapons</label>
-		<description>Allows you to create basic Yautja Ranged Weapons</description>
-		<baseCost>500</baseCost>
-		<prerequisites>
-			<li>ABYautja_Tech_T1</li>
-		</prerequisites>
-		<techLevel>Industrial</techLevel>
-		<researchViewX>1</researchViewX>
+		<researchViewX>4</researchViewX>
 		<researchViewY>1</researchViewY>
 	</ResearchProjectDef>
 	
 	<ResearchProjectDef>
 		<tab>ABYautja_ResearchTab</tab>
-		<defName>ABYautja_Tech_Ranged_T2</defName>
-		<label>Ranged Weapons</label>
-		<description>Allows you to create common Yautja Ranged Weapons</description>
-		<baseCost>1000</baseCost>
+		<defName>ABYautja_Tech_Tracking</defName>
+		<label>Yautja Tracking tech</label>
+		<description>Unlocks the ability to install self-propelled targetting systems into weaponry.</description>
+		<baseCost>1500</baseCost>
 		<prerequisites>
-			<li>ABYautja_Tech_T2</li>
-			<li>ABYautja_Tech_Ranged_T1</li>
+			<li>ABYautja_Tech_T3</li>
 		</prerequisites>
 		<techLevel>Industrial</techLevel>
-		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-		<researchViewX>2</researchViewX>
-		<researchViewY>0</researchViewY>
+		<researchViewX>4</researchViewX>
+		<researchViewY>2</researchViewY>
 	</ResearchProjectDef>
 	
 	<ResearchProjectDef>
 		<tab>ABYautja_ResearchTab</tab>
-		<defName>ABYautja_Tech_Ranged_T3</defName>
-		<label>Advanced Ranged Weapons</label>
-		<description>Allows you to create advanced Yautja Ranged Weapons</description>
-		<baseCost>2000</baseCost>
+		<defName>ABYautja_Tech_PlasmaEnergy</defName>
+		<label>Yautja Plasma Energy</label>
+		<description>Harness the power of plasma</description>
+		<baseCost>3000</baseCost>
 		<prerequisites>
 			<li>ABYautja_Tech_T3</li>
-			<li>ABYautja_Tech_Ranged_T2</li>
 		</prerequisites>
 		<techLevel>Industrial</techLevel>
-		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-    <requiredResearchFacilities>
-		<li>MultiAnalyzer</li>
-    </requiredResearchFacilities>
-			<researchViewX>3</researchViewX>
-			<researchViewY>1</researchViewY>
+		<researchViewX>4</researchViewX>
+		<researchViewY>3</researchViewY>
 	</ResearchProjectDef>
 	
+	<ResearchProjectDef>
+		<tab>ABYautja_ResearchTab</tab>
+		<defName>ABYautja_Tech_Turrets</defName>
+		<label>Yautja Turrets</label>
+		<description>Put yautja weaponry on stands to protect your base without any pawns involved.</description>
+		<baseCost>4000</baseCost>
+		<prerequisites>
+			<li>ABYautja_Tech_PlasmaEnergy</li>
+			<li>ABYautja_Tech_Tracking</li>
+		</prerequisites>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>5</researchViewX>
+		<researchViewY>2.5</researchViewY>
+	</ResearchProjectDef>
+
 	<ResearchProjectDef>
 		<tab>ABYautja_ResearchTab</tab>
 		<defName>ABYautja_Tech_CloakGenerator</defName>
 		<label>Cloaking Generator</label>
-		<description>Allows for creation of cloaking technology.</description>
-		<baseCost>4000</baseCost>
+		<description>Allows for the creation of cloaking technology</description>
+		<baseCost>6000</baseCost>
 		<prerequisites>
-			<li>ABYautja_Tech_T2</li>
+			<li>ABYautja_Tech_T4</li>
 		</prerequisites>
-		<techLevel>Industrial</techLevel>
+		<techLevel>Spacer</techLevel>
 		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-    <requiredResearchFacilities>
-      <li>MultiAnalyzer</li>
-    </requiredResearchFacilities>
-		<researchViewX>3</researchViewX>
-		<researchViewY>3</researchViewY>
-	</ResearchProjectDef>	
-	
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>7</researchViewX>
+		<researchViewY>2</researchViewY>
+	</ResearchProjectDef>
 </Defs>

@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!--Ranged-->
+	<ThingDef ParentName="ABYautja_SimpleRanged">
+		<defName>ABYautja_Gun_Hunting_Bow</defName>
+		<label>predator hunting bow</label>
+		<description>This bow is a traditional weapon used by yautja of ancient times to hunt.</description>
+		<graphicData>
+			<texPath>Things/Equipment/Ranged/Yautja_Hunting_Bow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>1</drawSize>			
+		</graphicData>
+		<soundInteract>Bow_Large</soundInteract>
+		<statBases>
+			<MarketValue>100</MarketValue>
+			<WorkToMake>1000</WorkToMake>
+			<Mass>1.0</Mass>
+			<AccuracyTouch>0.65</AccuracyTouch>
+			<AccuracyShort>0.85</AccuracyShort>
+			<AccuracyMedium>0.75</AccuracyMedium>
+			<AccuracyLong>0.50</AccuracyLong>
+			<RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponTags>
+			<li>YautjaBow</li>
+			<li>YautjaHuntingBow</li>
+			<li>YautjaRanged</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Arrow_Yautja_Hunting_Bow</defaultProjectile>
+				<warmupTime>1.25</warmupTime>
+				<range>33</range>
+				<soundCast>Bow_Large</soundCast>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>limb</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<costStuffCount>60</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<recipeMaker>
+			<recipeUsers>
+				<li>ElectricSmithy</li>
+				<li>FueledSmithy</li>
+				<li>CraftingSpot</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<modExtensions Inherit="False" />
+	</ThingDef>
+	
+	<ThingDef ParentName="ABYautja_SimpleRanged">
+		<defName>ABYautja_Gun_Compound_Bow</defName>
+		<label>predator compound bow</label>
+		<description>The predator compound bow shares history with the predator hunting bow. This bow is heavier duty and requires more strength to weild.</description>
+		<graphicData>
+			<texPath>Things/Equipment/Ranged/Yautja_Compound_Bow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>1</drawSize>			
+		</graphicData>
+		<soundInteract>Bow_Large</soundInteract>
+		<statBases>
+			<MarketValue>350</MarketValue>
+			<WorkToMake>2000</WorkToMake>
+			<Mass>3.0</Mass>
+			<AccuracyTouch>0.65</AccuracyTouch>
+			<AccuracyShort>0.85</AccuracyShort>
+			<AccuracyMedium>0.75</AccuracyMedium>
+			<AccuracyLong>0.65</AccuracyLong>
+			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponTags>
+			<li>YautjaBow</li>
+			<li>YautjaCompoundBow</li>
+			<li>YautjaRanged</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Arrow_Yautja_Compound_Bow</defaultProjectile>
+				<warmupTime>1.2</warmupTime>
+				<range>45</range>
+				<soundCast>Bow_Large</soundCast>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>limb</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<costStuffCount>100</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<recipeMaker>
+			<recipeUsers>
+				<li>ElectricSmithy</li>
+				<li>FueledSmithy</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<researchPrerequisites>
+			<li>RecurveBow</li>
+		</researchPrerequisites>
+		<modExtensions Inherit="False" />
+	</ThingDef>
+	
+<!--Melee-->
+	<ThingDef ParentName="ABYautja_BaseMeleeWeapon_Blunt">
+		<defName>ABYautja_Melee_WarClub</defName>
+		<label>war club</label>
+		<description>A large slab of material shaped into a club. Features a retractable blade at the hilt and the head of the club.</description>
+		<graphicData>
+			<texPath>Things/Equipment/Melee/Yautja_WarClub</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>1.1</drawSize>
+		</graphicData>
+		<equippedAngleOffset>-17</equippedAngleOffset>
+		<tickerType>Normal</tickerType>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Stony</li>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>70</costStuffCount>
+		<statBases>
+			<MarketValue>100</MarketValue>
+			<WorkToMake>500</WorkToMake>
+			<Mass>2</Mass>
+		</statBases>
+		<weaponTags>
+			<li>YautjaClub</li>
+		</weaponTags>
+		<recipeMaker>
+			<researchPrerequisite>ABYautja_Tech_T1</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>2</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+				<li>ElectricSmithy</li>
+				<li>FueledSmithy</li>
+				<li>CraftingSpot</li>
+			</recipeUsers>
+		</recipeMaker>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>1.7</cooldownTime>
+			</li>
+			<li>
+				<label>club</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>16</power>
+				<cooldownTime>1.4</cooldownTime>
+			</li>
+			<li>
+				<label>club blade</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>13</power>
+				<cooldownTime>2.4</cooldownTime>
+			</li>
+		</tools>
+		<modExtensions>
+			<li Class="VEF.Things.ThingDefExtension">
+				<usableWithShields>true</usableWithShields>
+				<weaponCarryDrawOffsets>
+					<north>
+						<drawOffset>(0.03, 0, -0.095)</drawOffset>
+					</north>
+					<east>
+						<drawOffset>(0.02, 0, -0.095)</drawOffset>
+					</east>
+					<south>
+						<drawOffset>(0.03, 0, -0.095)</drawOffset>
+					</south>
+					<west>
+						<drawOffset>(-0.02, 0, -0.095)</drawOffset>
+					</west>
+				</weaponCarryDrawOffsets>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	
+	<ThingDef ParentName="ABBaseMeleeWeapon_Sharp_Quality">
+		<defName>ABYautja_Melee_PredatorAxe</defName>
+		<label>predator axe</label>
+		<description>A handaxe that has been crafted for combat purposes. While one may be able to use it to chop firewood, it is much better at chopping through flesh.</description>
+		<graphicData>
+			<texPath>Things/Equipment/Melee/Yautja_PredatorAxe</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<equippedAngleOffset>-20</equippedAngleOffset>
+		<tickerType>Normal</tickerType>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>40</costStuffCount>
+		<statBases>
+			<MarketValue>100</MarketValue>
+			<WorkToMake>450</WorkToMake>
+			<Mass>1.5</Mass>
+		</statBases>
+		<weaponTags>
+			<li>YautjaAxe</li>
+		</weaponTags>
+		<recipeMaker>
+			<researchPrerequisite>ABYautja_Tech_T1</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>2</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+				<li>ElectricSmithy</li>
+				<li>FueledSmithy</li>
+				<li>CraftingSpot</li>
+			</recipeUsers>
+		</recipeMaker>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>4</power>
+				<cooldownTime>1.7</cooldownTime>
+			</li>
+			<li>
+				<label>blade</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>17</power>
+				<cooldownTime>1.4</cooldownTime>
+			</li>
+		</tools>
+		<modExtensions Inherit="False">
+			<li Class="VEF.Things.ThingDefExtension">
+				<weaponCarryDrawOffsets>
+					<north>
+						<drawOffset>(0.08, 0, 0.04)</drawOffset>
+					</north>
+					<east>
+						<drawOffset>(0.04, 0, 0.04)</drawOffset>
+					</east>
+					<south>
+						<drawOffset>(0.08, 0, 0.04)</drawOffset>
+					</south>
+					<west>
+						<drawOffset>(-0.04, 0, 0.04)</drawOffset>
+					</west>
+				</weaponCarryDrawOffsets>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	
+	<ThingDef ParentName="ABBaseMeleeWeapon_Sharp_Quality">
+		<defName>ABYautja_Melee_PredatorSword</defName>
+		<label>predator sword</label>
+		<description>A traditional yautja sword. Before the development of bladed gauntlets many yautja used swords.</description>
+		<graphicData>
+			<texPath>Things/Equipment/Melee/Yautja_PredatorSword</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>0.95</drawSize>
+		</graphicData>
+		<equippedAngleOffset>-35</equippedAngleOffset>
+		<tickerType>Normal</tickerType>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>50</costStuffCount>
+		<statBases>
+			<MarketValue>250</MarketValue>
+			<WorkToMake>1000</WorkToMake>
+			<Mass>1.2</Mass>
+		</statBases>
+		<weaponTags>
+			<li>YautjaSword</li>
+			<li>YautjanSwords</li>
+		</weaponTags>
+		<recipeMaker>
+			<researchPrerequisite>ABYautja_Tech_T1</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>2</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+				<li>ElectricSmithy</li>
+				<li>FueledSmithy</li>
+				<li>CraftingSpot</li>
+			</recipeUsers>
+		</recipeMaker>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>4</power>
+				<cooldownTime>1.7</cooldownTime>
+			</li>
+			<li>
+				<label>blade</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>20</power>
+				<cooldownTime>1.5</cooldownTime>
+			</li>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>17</power>
+				<cooldownTime>1.9</cooldownTime>
+			</li>
+		</tools>
+		<researchPrerequisites>
+			<li>Smithing</li>
+		</researchPrerequisites>
+		<modExtensions>
+			<li Class="VEF.Things.ThingDefExtension">
+				<weaponCarryDrawOffsets>
+					<north>
+						<drawOffset>(0.2, 0, 1)</drawOffset>
+					</north>
+					<east>
+						<drawOffset>(0.3, 0, 1)</drawOffset>
+					</east>
+					<south>
+						<drawOffset>(0.2, 0, 1)</drawOffset>
+					</south>
+					<west>
+						<drawOffset>(-0.3, 0, 1)</drawOffset>
+					</west>
+				</weaponCarryDrawOffsets>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	
+	<ThingDef ParentName="ABBaseMeleeWeapon_Sharp_Quality">
+		<defName>ABYautja_Melee_ElderSword</defName>
+		<label>elder sword</label>
+		<description>Elder swords were the result of the finest yautja craftsmanship and were typically reserved for yautja possessing high status and great power.</description>
+		<graphicData>
+			<texPath>Things/Equipment/Melee/Yautja_ElderSword</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>0.95</drawSize>
+		</graphicData>
+		<equippedAngleOffset>-28</equippedAngleOffset>
+		<tickerType>Normal</tickerType>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>60</costStuffCount>
+		<statBases>
+			<MarketValue>300</MarketValue>
+			<WorkToMake>1250</WorkToMake>
+			<Mass>1.4</Mass>
+		</statBases>
+		<weaponTags>
+			<li>YautjaElderSword</li>
+			<li>YautjanSwords</li>
+		</weaponTags>
+		<recipeMaker>
+			<researchPrerequisite>ABYautja_Tech_T1</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+				<li>ElectricSmithy</li>
+				<li>FueledSmithy</li>
+				<li>CraftingSpot</li>
+			</recipeUsers>
+		</recipeMaker>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>6</power>
+				<cooldownTime>1.6</cooldownTime>
+			</li>
+			<li>
+				<label>blade</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>24</power>
+				<cooldownTime>1.4</cooldownTime>
+			</li>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>20</power>
+				<cooldownTime>1.8</cooldownTime>
+			</li>
+		</tools>
+		<researchPrerequisites>
+			<li>Smithing</li>
+		</researchPrerequisites>
+		<modExtensions>
+			<li Class="VEF.Things.ThingDefExtension">
+				<weaponCarryDrawOffsets>
+					<north>
+						<drawOffset>(0.2, 0, 1)</drawOffset>
+					</north>
+					<east>
+						<drawOffset>(0.3, 0, 1)</drawOffset>
+					</east>
+					<south>
+						<drawOffset>(0.2, 0, 1)</drawOffset>
+					</south>
+					<west>
+						<drawOffset>(-0.3, 0, 1)</drawOffset>
+					</west>
+				</weaponCarryDrawOffsets>
+			</li>
+		</modExtensions>
+	</ThingDef>
+</Defs>

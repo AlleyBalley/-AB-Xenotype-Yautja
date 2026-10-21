@@ -1,0 +1,352 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+<!--Blade modules-->
+	<ThingDef ParentName="ABYautja_BodyPartGauntlet_BladeModuleBase">
+		<defName>ABYautja_Wristblade</defName>
+		<label>wristblade</label>
+		<description>A sharp blade ready to be attached to a gauntlet.</description>
+		<descriptionHyperlinks>
+			<HediffDef>ABYautja_Wristblade</HediffDef>
+			<RecipeDef>ABYautja_InstallWristblade</RecipeDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Yautja/Wristblade</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<WorkToMake>600</WorkToMake>
+			<MarketValue>14</MarketValue>
+			<Mass>0.5</Mass>
+			<Flammability>0</Flammability>
+			<Beauty>-1</Beauty>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>ABYautja_Tech_T1</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<Steel>5</Steel>
+		</costList>
+	</ThingDef>
+	
+	<ThingDef ParentName="CombineMultipleWristblades_Base">
+		<defName>ABYautja_DualWristblades</defName>
+		<label>dual wristblades</label>
+		<description>A pair of sharp blade ready to be attached to a gauntlet.</description>
+		<descriptionHyperlinks>
+			<HediffDef>ABYautja_DualWristblades</HediffDef>
+			<RecipeDef>ABYautja_InstallDualWristblades</RecipeDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Yautja/DualWristblades</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<WorkToMake>10</WorkToMake>
+			<MarketValue>28</MarketValue>
+			<Mass>1</Mass>
+		</statBases>
+	</ThingDef>
+	
+	<ThingDef ParentName="ABYautja_BodyPartGauntlet_BladeModuleBase">
+		<defName>ABYautja_LongWristblade</defName>
+		<label>long wristblade</label>
+		<description>A long, sharp blade ready to be attached to a gauntlet.</description>
+		<descriptionHyperlinks>
+			<HediffDef>ABYautja_LongWristblade</HediffDef>
+			<RecipeDef>ABYautja_InstallLongWristblade</RecipeDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Yautja/LongWristblade</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<WorkToMake>1000</WorkToMake>
+			<MarketValue>16</MarketValue>
+			<Mass>0.6</Mass>
+			<Flammability>0</Flammability>
+			<Beauty>-1</Beauty>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>ABYautja_Tech_T1</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<Steel>7</Steel>
+		</costList>
+	</ThingDef>
+	
+	<ThingDef ParentName="ABYautja_BodyPartGauntlet_BladeModuleBase">
+		<defName>ABYautja_ScimitarWristblade</defName>
+		<label>scimitar wristblade</label>
+		<description>An extremely long, sharp blade ready to be attached to a gauntlet. When sheathed it reaches the knee, but when extended it can easily reach the ground. While this blade offers brutal damage it's immense size does inhibit the wearer's maneuverability.</description>
+		<descriptionHyperlinks>
+			<HediffDef>ABYautja_ScimitarWristblade</HediffDef>
+			<RecipeDef>ABYautja_InstallScimitarWristblade</RecipeDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Yautja/ScimitarWristblade</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.3</drawSize>
+		</graphicData>
+		<statBases>
+			<WorkToMake>1750</WorkToMake>
+			<MarketValue>24</MarketValue>
+			<Mass>0.9</Mass>
+			<Flammability>0</Flammability>
+			<Beauty>-1</Beauty>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>ABYautja_Tech_T1</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<Steel>16</Steel>
+		</costList>
+	</ThingDef>
+	
+	<ThingDef ParentName="CombineMultipleWristblades_Base">
+		<defName>ABYautja_PrehensileWristblade</defName>
+		<label>prehensile wristblade</label>
+		<description>Two wristblades attached together with a hinge at the center to create a rudimentary grip, ready to be attached to a gauntlet.</description>
+		<descriptionHyperlinks>
+			<HediffDef>ABYautja_PrehensileWristblades</HediffDef>
+			<RecipeDef>ABYautja_InstallPrehensileWristblades</RecipeDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Yautja/PrehensileWristblade</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<WorkToMake>30</WorkToMake>
+			<MarketValue>28</MarketValue>
+			<Mass>0.6</Mass>
+		</statBases>
+	</ThingDef>
+	
+	<ThingDef ParentName="CombineMultipleWristblades_Base">
+		<defName>ABYautja_ClawWristblades</defName>
+		<label>claw wristblades</label>
+		<description>A quintet of semi-retractable blades, ready to be attached to a gauntlet. Four of the blades are attached to the front of the gauntlet to act like fingers, while a smaller wristblade is mounted to the side to act like a thumb. While the main 4 blades have a point of articulation, similar to a prehensile wristblade, they are much too oversized to help with fine motor control.</description>
+		<descriptionHyperlinks>
+			<HediffDef>ABYautja_ClawWristblades</HediffDef>
+			<RecipeDef>ABYautja_InstallClawWristblades</RecipeDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Yautja/ClawWristblade</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<WorkToMake>50</WorkToMake>
+			<MarketValue>43</MarketValue>
+			<Mass>1.2</Mass>
+		</statBases>
+	</ThingDef>
+
+<!--Combat Modules-->
+	<ThingDef ParentName="ABYautja_BodyPartGauntlet_CombatModuleBase">
+		<defName>ABYautja_WristbladeLauncher</defName>
+		<label>wristblade launcher</label>
+		<description>A sharp blade loaded with a spring mechanism, so that it launches itself forward, ready to be attached to a gauntlet.</description>
+		<descriptionHyperlinks>
+			<HediffDef>ABYautja_WristbladeLauncher</HediffDef>
+			<RecipeDef>ABYautja_InstallWristbladeLauncher</RecipeDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Yautja/WristbladeLauncher</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<WorkToMake>600</WorkToMake>
+			<MarketValue>30</MarketValue>
+			<Mass>0.5</Mass>
+			<Flammability>0</Flammability>
+			<Beauty>-1</Beauty>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>ABYautja_Tech_T2</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<ABYautja_Wristblade>1</ABYautja_Wristblade>
+			<ComponentIndustrial>2</ComponentIndustrial>
+			<Steel>15</Steel>
+		</costList>
+	</ThingDef>
+	
+	<ThingDef ParentName="ABYautja_BodyPartGauntlet_CombatModuleBase">
+		<defName>ABYautja_WristRocket</defName>
+		<label>wrist rocket module</label>
+		<description>A combat module mounted to a gauntlet that allows for the launching of small rockets that explode on contact with a target.</description>
+		<descriptionHyperlinks>
+			<HediffDef>ABYautja_WristRocket</HediffDef>
+			<RecipeDef>ABYautja_InstallWristRocket</RecipeDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Yautja/WristRocket</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<WorkToMake>1200</WorkToMake>
+			<MarketValue>60</MarketValue>
+			<Mass>0.5</Mass>
+			<Flammability>0</Flammability>
+			<Beauty>-1</Beauty>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>ABYautja_Tech_Explosive</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<Chemfuel>10</Chemfuel>
+			<Uranium>5</Uranium>
+			<ComponentIndustrial>2</ComponentIndustrial>
+			<Steel>25</Steel>
+		</costList>
+	</ThingDef>
+	
+	<ThingDef ParentName="ABYautja_BodyPartGauntlet_CombatModuleBase">
+		<defName>ABYautja_EnergyFlechette</defName>
+		<label>energy flechette module</label>
+		<description>A combat module mounted to a gauntlet that allows for the launching of small shots of plasma, functioning as a less powerful plasmacaster.</description>
+		<descriptionHyperlinks>
+			<HediffDef>ABYautja_EnergyFlechette</HediffDef>
+			<RecipeDef>ABYautja_InstallEnergyFlechette</RecipeDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Yautja/EnergyFlechette</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<WorkToMake>1500</WorkToMake>
+			<MarketValue>100</MarketValue>
+			<Mass>0.5</Mass>
+			<Flammability>0</Flammability>
+			<Beauty>-1</Beauty>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>ABYautja_Tech_PlasmaEnergy</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<Plasteel>20</Plasteel>
+			<ComponentSpacer>1</ComponentSpacer>
+			<Steel>15</Steel>
+		</costList>
+	</ThingDef>
+	
+	<ThingDef ParentName="ABYautja_BodyPartGauntlet_CombatModuleBase">
+		<defName>ABYautja_WristCannon</defName>
+		<label>wrist cannon module</label>
+		<description>A combat module mounted to a gauntlet that allows for the launching of small shots of plasma. While still weaker than a plasmacaster, this version is stronger than the energy flechette.</description>
+		<descriptionHyperlinks>
+			<HediffDef>ABYautja_WristCannon</HediffDef>
+			<RecipeDef>ABYautja_InstallWristCannon</RecipeDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Yautja/WristCannon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<WorkToMake>2500</WorkToMake>
+			<MarketValue>200</MarketValue>
+			<Mass>0.5</Mass>
+			<Flammability>0</Flammability>
+			<Beauty>-1</Beauty>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>ABYautja_Tech_T4</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<Plasteel>40</Plasteel>
+			<ComponentSpacer>1</ComponentSpacer>
+			<ComponentYautja>1</ComponentYautja>
+			<Steel>20</Steel>
+		</costList>
+	</ThingDef>
+
+<!--Misc Modules-->
+	<ThingDef ParentName="ABYautja_BodyPartGauntlet_MiscModuleBase">
+		<defName>ABYautja_CloakingDevice</defName>
+		<label>shifter</label>
+		<description>The shifter, also referred to as a cloaker or a cloak, is a small metallic orb the size of a marbel. This module holds the power to apply a cloak of invisibility to the user.</description>
+		<descriptionHyperlinks>
+			<HediffDef>ABYautja_CloakingDevice</HediffDef>
+			<RecipeDef>ABYautja_InstallCloakingDevice</RecipeDef>
+			<AbilityDef>ABYautja_Cloaking</AbilityDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Yautja/Shifter</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<WorkToMake>1000</WorkToMake>
+			<MarketValue>1000</MarketValue>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Mass>0.3</Mass>
+			<Flammability>0</Flammability>
+			<Beauty>-1</Beauty>
+			<DeteriorationRate>0.2</DeteriorationRate>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>ABYautja_Tech_CloakGenerator</researchPrerequisite>
+			<skillRequirements Inherit="False">
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Steel>10</Steel>
+			<Plasteel>5</Plasteel>
+			<ComponentYautja>1</ComponentYautja>
+		</costList>
+		<comps>
+			<li Class="ABXenotypeYautja.CompProperties_ExtraTip_ModuleSlotName">
+				<SlotTitle>Occupies slot: </SlotTitle>
+				<SlotName>Utility</SlotName>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="ABYautja_BodyPartGauntlet_MiscModuleBase">
+		<defName>ABYautja_SelfDestructDevice</defName>
+		<label>Self Destruct Device</label>
+		<description>A module that promises to generate an explosion upon the death of the user.</description>
+		<descriptionHyperlinks>
+			<HediffDef>ABYautja_SelfDestructDevice</HediffDef>
+			<RecipeDef>ABYautja_InstallSelfDestructDevice</RecipeDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Yautja/SelfDestructDevice</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<WorkToMake>1000</WorkToMake>
+			<MarketValue>1000</MarketValue>
+			<MaxHitPoints>75</MaxHitPoints>
+			<Mass>0.3</Mass>
+			<Flammability>10</Flammability>
+			<Beauty>-1</Beauty>
+			<DeteriorationRate>0.5</DeteriorationRate>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>ABYautja_Tech_Explosive</researchPrerequisite>
+			<skillRequirements Inherit="False">
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Steel>25</Steel>
+			<Uranium>10</Uranium>
+			<Chemfuel>40</Chemfuel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+		</costList>
+		<comps>
+			<li Class="ABXenotypeYautja.CompProperties_ExtraTip_ModuleSlotName">
+				<SlotTitle>Occupies slot: </SlotTitle>
+				<SlotName>Bomb</SlotName>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

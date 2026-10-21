@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<HairDef Name="ABYautjaMalformedHairBase" Abstract="true">
+		<styleGender>Any</styleGender>
+		<requiredGene>ABYautjaMalformedHair_Tendril</requiredGene>
+		<category>Yautja</category>
+		<styleTags>
+		  <li>MALFORMED_Yautja</li>
+		</styleTags>
+	</HairDef>
+		
+<!--Stubble-->
+	<HairDef ParentName="ABYautjaMalformedHairBase">
+		<defName>ABYautjaMalformedAlbinoStubble</defName>
+		<label>Albino Malformed Yautja Stubble</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/MalformedHead/MalformedYautjaStubbleAlbinoHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaMalformedHairBase">
+		<defName>ABYautjaMalformedStubble</defName>
+		<label>Malformed Yautja Stubble</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/MalformedHead/MalformedYautjaStubbleHair</texPath>
+	</HairDef>
+		
+<!--Ringed Long Dreds-->
+	<HairDef ParentName="ABYautjaMalformedHairBase">
+		<defName>ABYautjaMalformedAlbinoRingedLongDreds</defName>
+		<label>Albino Malformed Yautja Gold Ringed Long Dreds</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/MalformedHead/MalformedYautjaTendrilAlbinoRingedHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaMalformedHairBase">
+		<defName>ABYautjaMalformedAlbinoSilverRingedLongDreds</defName>
+		<label>Albino Malformed Yautja Silver Ringed Long Dreds</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/MalformedHead/SILVER_MalformedYautjaTendrilAlbinoRingedHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaMalformedHairBase">
+		<defName>ABYautjaMalformedRingedLongDreds</defName>
+		<label>Malformed Yautja Gold Ringed Long Dreds</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/MalformedHead/MalformedYautjaTendrilRingedHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaMalformedHairBase">
+		<defName>ABYautjaMalformedSilverRingedLongDreds</defName>
+		<label>Malformed Yautja Silver Ringed Long Dreds</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/MalformedHead/SILVER_MalformedYautjaTendrilRingedHair</texPath>
+	</HairDef>
+	
+<!--Long Dreds-->
+	<HairDef ParentName="ABYautjaMalformedHairBase">
+		<defName>ABYautjaMalformedAlbinoLongDreds</defName>
+		<label>Albino Malformed Yautja Long Dreds</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/MalformedHead/MalformedYautjaTendrilAlbinoHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaMalformedHairBase">
+		<defName>ABYautjaMalformedLongDreds</defName>
+		<label>Malformed Yautja Long Dreds</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/MalformedHead/MalformedYautjaTendrilHair</texPath>
+	</HairDef>
+	
+<!--Ringed Short Dreds-->
+	<HairDef ParentName="ABYautjaMalformedHairBase">
+		<defName>ABYautjaMalformedAlbinoRingedShortDreds</defName>
+		<label>Albino Malformed Yautja Gold Ringed Short Dreds</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/MalformedHead/MalformedYautjaShortTendrilAlbinoRingedHair</texPath>
+	</HairDef>
+	
+    <HairDef ParentName="ABYautjaMalformedHairBase">
+		<defName>ABYautjaMalformedAlbinoSilverRingedShortDreds</defName>
+		<label>Albino Malformed Yautja Silver Ringed Short Dreds</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/MalformedHead/SILVER_MalformedYautjaShortTendrilAlbinoRingedHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaMalformedHairBase">
+		<defName>ABYautjaMalformedRingedShortDreds</defName>
+		<label>Malformed Yautja Gold Ringed Short Dreds</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/MalformedHead/MalformedYautjaShortTendrilRingedHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaMalformedHairBase">
+		<defName>ABYautjaMalformedSilverRingedShortDreds</defName>
+		<label>Malformed Yautja Silver Ringed Short Dreds</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/MalformedHead/SILVER_MalformedYautjaShortTendrilRingedHair</texPath>
+	</HairDef>
+	
+<!--Short Dreds-->
+	<HairDef ParentName="ABYautjaMalformedHairBase">
+		<defName>ABYautjaMalformedAlbinoShortDreds</defName>
+		<label>Albino Malformed Yautja Short Dreds</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/MalformedHead/MalformedYautjaShortTendrilAlbinoHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaMalformedHairBase">
+		<defName>ABYautjaMalformedShortDreds</defName>
+		<label>Malformed Yautja Short Dreds</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/MalformedHead/MalformedYautjaShortTendrilHair</texPath>
+	</HairDef>
+	
+<!--Ringed Long Half-Up-->
+	<HairDef ParentName="ABYautjaMalformedHairBase">
+		<defName>ABYautjaMalformedRingedLongHalfUp</defName>
+		<label>Malformed Yautja Long Gold Ringed Half-Up</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/MalformedHead/MalformedYautjaLongHalfUpRingedHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaMalformedHairBase">
+		<defName>ABYautjaMalformedSilverRingedLongHalfUp</defName>
+		<label>Malformed Yautja Long Silver Ringed Half-Up</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/MalformedHead/SILVER_MalformedYautjaLongHalfUpRingedHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaMalformedHairBase">
+		<defName>ABYautjaMalformedAlbinoRingedLongHalfUp</defName>
+		<label>Albino Malformed Yautja Long Gold Ringed Half-Up</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/MalformedHead/MalformedYautjaLongHalfUpRingedAlbinoHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaMalformedHairBase">
+		<defName>ABYautjaMalformedAlbinoSilverRingedLongHalfUp</defName>
+		<label>Albino Malformed Yautja Long Silver Ringed Half-Up</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/MalformedHead/SILVER_MalformedYautjaLongHalfUpRingedAlbinoHair</texPath>
+	</HairDef>
+	
+<!--Long Half-Up-->
+	<HairDef ParentName="ABYautjaMalformedHairBase">
+		<defName>ABYautjaMalformedLongHalfUp</defName>
+		<label>Malformed Yautja Long Half-Up</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/MalformedHead/MalformedYautjaLongHalfUpHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaMalformedHairBase">
+		<defName>ABYautjaMalformedLongSilverHalfUp</defName>
+		<label>Malformed Yautja Long Silver Half-Up</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/MalformedHead/SILVER_MalformedYautjaLongHalfUpHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaMalformedHairBase">
+		<defName>ABYautjaMalformedAlbinoLongHalfUp</defName>
+		<label>Albino Malformed Yautja Long Half-Up</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/MalformedHead/MalformedYautjaLongHalfUpAlbinoHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaMalformedHairBase">
+		<defName>ABYautjaMalformedAlbinoLongSilverHalfUp</defName>
+		<label>Albino Malformed Yautja Long Silver Half-Up</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/MalformedHead/SILVER_MalformedYautjaLongHalfUpAlbinoHair</texPath>
+	</HairDef>
+	
+<!--Short Half-Up-->
+	<HairDef ParentName="ABYautjaMalformedHairBase">
+		<defName>ABYautjaMalformedShortHalfUp</defName>
+		<label>Malformed Yautja Short Half-Up</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/MalformedHead/MalformedYautjaShortHalfUpHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaMalformedHairBase">
+		<defName>ABYautjaMalformedShortSilverHalfUp</defName>
+		<label>Malformed Yautja Short Silver Half-Up</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/MalformedHead/SILVER_MalformedYautjaShortHalfUpHair</texPath>
+	</HairDef> 
+	
+	<HairDef ParentName="ABYautjaMalformedHairBase">
+		<defName>ABYautjaMalformedAlbinoShortHalfUp</defName>
+		<label>Albino Malformed Yautja Short Half-Up</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/MalformedHead/MalformedYautjaShortHalfUpAlbinoHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaMalformedHairBase">
+		<defName>ABYautjaMalformedAlbinoShortSilverHalfUp</defName>
+		<label>Albino Malformed Yautja Short Silver Half-Up</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/MalformedHead/SILVER_MalformedYautjaShortHalfUpAlbinoHair</texPath>
+	</HairDef>
+	
+<!--Ringed Short Half-Up-->
+	<HairDef ParentName="ABYautjaMalformedHairBase">
+		<defName>ABYautjaMalformedRingedShortHalfUp</defName>
+		<label>Malformed Yautja Short Gold Ringed Half-Up</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/MalformedHead/MalformedYautjaShortHalfUpRingedHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaMalformedHairBase">
+		<defName>ABYautjaMalformedSilverRingedShortHalfUp</defName>
+		<label>Malformed Yautja Short Silver Ringed Half-Up</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/MalformedHead/SILVER_MalformedYautjaShortHalfUpRingedHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaMalformedHairBase">
+		<defName>ABYautjaMalformedAlbinoRingedShortHalfUp</defName>
+		<label>Albino Malformed Yautja Short Gold Ringed Half-Up</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/MalformedHead/MalformedYautjaShortHalfUpRingedAlbinoHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaMalformedHairBase">
+		<defName>ABYautjaMalformedAlbinoSilverRingedShortHalfUp</defName>
+		<label>Albino Malformed Yautja Short Silver Ringed Half-Up</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/MalformedHead/SILVER_MalformedYautjaShortHalfUpRingedAlbinoHair</texPath>
+	</HairDef>
+	
+<!--Long Ringed Ponytail-->
+	<HairDef ParentName="ABYautjaMalformedHairBase">
+		<defName>ABYautjaMalformedRingedLongPonytail</defName>
+		<label>Malformed Yautja Long Gold Ringed Ponytail</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/MalformedHead/MalformedYautjaRingedLongPonytailHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaMalformedHairBase">
+		<defName>ABYautjaMalformedSilverRingedLongPonytail</defName>
+		<label>Malformed Yautja Long Silver Ringed Ponytail</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/MalformedHead/SILVER_MalformedYautjaRingedLongPonytailHair</texPath>
+	</HairDef>  
+	
+	<HairDef ParentName="ABYautjaMalformedHairBase">
+		<defName>ABYautjaMalformedAlbinoRingedLongPonytail</defName>
+		<label>Albino Malformed Yautja Long Gold Ringed Ponytail</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/MalformedHead/MalformedYautjaRingedLongPonytailAlbinoHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaMalformedHairBase">
+		<defName>ABYautjaMalformedAlbinoSilverRingedLongPonytail</defName>
+		<label>Albino Malformed Yautja Long Silver Ringed Ponytail</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/MalformedHead/SILVER_MalformedYautjaRingedLongPonytailAlbinoHair</texPath>
+	</HairDef>
+	
+<!--Long Ponytail-->
+	<HairDef ParentName="ABYautjaMalformedHairBase">
+		<defName>ABYautjaMalformedLongPonytail</defName>
+		<label>Malformed Yautja Long Gold Ponytail</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/MalformedHead/MalformedYautjaLongPonytailHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaMalformedHairBase">
+		<defName>ABYautjaMalformedLongSilverPonytail</defName>
+		<label>Malformed Yautja Long Silver Ponytail</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/MalformedHead/SILVER_MalformedYautjaLongPonytailHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaMalformedHairBase">
+		<defName>ABYautjaMalformedAlbinoLongPonytail</defName>
+		<label>Albino Malformed Yautja Long Gold Ponytail</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/MalformedHead/MalformedYautjaLongPonytailAlbinoHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaMalformedHairBase">
+		<defName>ABYautjaMalformedAlbinoLongSilverPonytail</defName>
+		<label>Albino Malformed Yautja Long Silver Ponytail</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/MalformedHead/SILVER_MalformedYautjaLongPonytailAlbinoHair</texPath>
+	</HairDef>
+	
+<!--Short Ringed Ponytail-->
+	<HairDef ParentName="ABYautjaMalformedHairBase">
+		<defName>ABYautjaMalformedRingedShortPonytail</defName>
+		<label>Malformed Yautja Short Gold Ringed Ponytail</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/MalformedHead/MalformedYautjaRingedShortPonytailHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaMalformedHairBase">
+		<defName>ABYautjaMalformedSilverRingedShortPonytail</defName>
+		<label>Malformed Yautja Short Silver Ringed Ponytail</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/MalformedHead/SILVER_MalformedYautjaRingedShortPonytailHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaMalformedHairBase">
+		<defName>ABYautjaMalformedAlbinoRingedShortPonytail</defName>
+		<label>Albino Malformed Yautja Short Gold Ringed Ponytail</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/MalformedHead/MalformedYautjaRingedShortPonytailAlbinoHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaMalformedHairBase">
+		<defName>ABYautjaMalformedAlbinoSilverRingedShortPonytail</defName>
+		<label>Albino Malformed Yautja Short Silver Ringed Ponytail</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/MalformedHead/SILVER_MalformedYautjaRingedShortPonytailAlbinoHair</texPath>
+	</HairDef>
+	
+<!--Short Ponytail-->
+	<HairDef ParentName="ABYautjaMalformedHairBase">
+		<defName>ABYautjaMalformedShortPonytail</defName>
+		<label>Malformed Yautja Short Gold Ponytail</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/MalformedHead/MalformedYautjaShortPonytailHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaMalformedHairBase">
+		<defName>ABYautjaMalformedShortSilverPonytail</defName>
+		<label>Malformed Yautja Short Silver Ponytail</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/MalformedHead/SILVER_MalformedYautjaShortPonytailHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaMalformedHairBase">
+		<defName>ABYautjaMalformedAlbinoShortPonytail</defName>
+		<label>Albino Malformed Yautja Short Gold Ponytail</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/MalformedHead/MalformedYautjaShortPonytailAlbinoHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaMalformedHairBase">
+		<defName>ABYautjaMalformedAlbinoShortSilverPonytail</defName>
+		<label>Albino Malformed Yautja Short Silver Ponytail</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/MalformedHead/SILVER_MalformedYautjaShortPonytailAlbinoHair</texPath>
+	</HairDef>  
+	
+<!--Bun-->
+	<HairDef ParentName="ABYautjaMalformedHairBase">
+		<defName>ABYautjaMalformedBun</defName>
+		<label>Malformed Yautja Gold Bun</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/MalformedHead/MalformedYautjaBunHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaMalformedHairBase">
+		<defName>ABYautjaMalformedSilverBun</defName>
+		<label>Malformed Yautja Silver Bun</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/MalformedHead/SILVER_MalformedYautjaBunHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaMalformedHairBase">
+		<defName>ABYautjaMalformedAlbinoBun</defName>
+		<label>Albino Malformed Yautja Gold Bun</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/MalformedHead/MalformedYautjaAlbinoBunHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaMalformedHairBase">
+		<defName>ABYautjaMalformedAlbinoSilverBun</defName>
+		<label>Albino Malformed Yautja Silver Bun</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/MalformedHead/SILVER_MalformedYautjaAlbinoBunHair</texPath>
+	</HairDef>
+</Defs>

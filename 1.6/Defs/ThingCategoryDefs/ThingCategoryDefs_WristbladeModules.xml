@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingCategoryDef>
+		<defName>ABYautja_GauntletModules</defName>
+		<label>gauntlets</label>
+		<parent>BodyParts</parent>
+	</ThingCategoryDef>
+	
+	<ThingCategoryDef>
+		<defName>ABYautja_ProstheticGauntletModules</defName>
+		<label>Prosthetics with gauntlets</label>
+		<parent>BodyParts</parent>
+	</ThingCategoryDef>
+	
+	<ThingCategoryDef>
+		<defName>ABYautja_WristbladeModules</defName>
+		<label>Blade slot modules</label>
+		<parent>ABYautja_GauntletModules</parent>
+	</ThingCategoryDef>
+	
+	<ThingCategoryDef>
+		<defName>ABYautja_GauntletActionModules</defName>
+		<label>Combat slot modules</label>
+		<parent>ABYautja_GauntletModules</parent>
+	</ThingCategoryDef>
+	
+	<ThingCategoryDef>
+		<defName>ABYautja_GauntletMiscModules</defName>
+		<label>Misc gauntlet modules</label>
+		<parent>ABYautja_GauntletModules</parent>
+	</ThingCategoryDef>
+</Defs>

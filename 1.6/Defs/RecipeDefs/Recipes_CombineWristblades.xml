@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RecipeDef ParentName="CombineWristbladeRecipe_Base">
+		<defName>Make_ABYautja_DualWristblades</defName>
+		<label>pair two wristblades</label>
+		<description>pair two wristblades.</description>
+		<jobString>Pair two wristblades.</jobString>
+		<workAmount>10</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ABYautja_Wristblade</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ABYautja_Wristblade</li>
+				<li>Steel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<ABYautja_DualWristblades>1</ABYautja_DualWristblades>
+		</products>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="CombineWristbladeRecipe_Base">
+		<defName>Make_ABYautja_PrehensileWristblade</defName>
+		<label>craft a prehensile wristblade</label>
+		<description>combine two wristblades together with a hinged joint.</description>
+		<jobString>craft prehensile wristblade.</jobString>
+		<workAmount>30</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ABYautja_Wristblade</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ABYautja_Wristblade</li>
+				<li>Steel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<ABYautja_PrehensileWristblade>1</ABYautja_PrehensileWristblade>
+		</products>
+		<researchPrerequisite>ABYautja_Tech_T4</researchPrerequisite>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="CombineWristbladeRecipe_Base">
+		<defName>Make_ABYautja_ClawWristblades</defName>
+		<label>craft a claw wristblade</label>
+		<description>combine four prehensile wristblades and one wristblade into a claw.</description>
+		<jobString>combine wristblades.</jobString>
+		<workAmount>50</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ABYautja_Wristblade</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ABYautja_PrehensileWristblade</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ABYautja_Wristblade</li>
+				<li>ABYautja_PrehensileWristblade</li>
+				<li>Steel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<ABYautja_ClawWristblades>1</ABYautja_ClawWristblades>
+		</products>
+		<researchPrerequisite>ABYautja_Tech_T2</researchPrerequisite>
+	</RecipeDef>
+	
+</Defs>

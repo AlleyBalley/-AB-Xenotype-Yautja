@@ -10,16 +10,18 @@
 		<isFighter>true</isFighter>
 		<itemQuality>Excellent</itemQuality>
 		<combatPower>250</combatPower>
+		<minGenerationAge>50</minGenerationAge>
+		<maxGenerationAge>100</maxGenerationAge>
 		<gearHealthRange>
 			<min>0.5</min>
 			<max>2.0</max>
 		</gearHealthRange>
 		<apparelMoney>
-			<min>5000</min>
-			<max>9000</max>
+			<min>8000</min>
+			<max>12000</max>
 		</apparelMoney>
 		<apparelTags Inherit="False">
-			<li>YautjaGreaves</li>
+			<li>YautjaOrnateGreaves</li>
 			<li>YautjaOrnateArmor</li>
 			<li>YautjaShoulderCannon</li>
 			<li>ABYautja_Equipment</li>
@@ -45,6 +47,9 @@
 			<li>YautjaEquipment</li>
 			<li>Advanced</li>
 		</techHediffsTags>
+		<techHediffsRequired>
+			<li>ABYautja_NPCWristbladeGauntlet</li>
+		</techHediffsRequired>
 		<backstoryFiltersOverride Inherit="false">
 			<li>
 				<categories>
@@ -53,6 +58,12 @@
 				</categories>
 			</li>
 		</backstoryFiltersOverride>
+		<startingHediffs>
+			<li>
+				<def>ABX_Hediff_Blooding</def>
+				<severity>1</severity>
+			</li>
+		</startingHediffs>
 		<minGenerationAge>25</minGenerationAge>
 		<maxGenerationAge>2000</maxGenerationAge>
 	</PawnKindDef>
@@ -61,8 +72,8 @@
 		<defName>ABYautja_AugmentedAncient</defName>
 		<label>Augmented Yautja Ancient</label>
 		<techHediffsMoney Inherit="False">
-			<min>1000</min>
-			<max>3000</max>
+			<min>3000</min>
+			<max>5000</max>
 		</techHediffsMoney>
 		<techHediffsChance>0.95</techHediffsChance>
 	</PawnKindDef>
@@ -70,6 +81,12 @@
 	<PawnKindDef ParentName="ABYautjaBase_Civilian" Name="ABYautja_Civilian">
 		<defName>ABYautja_Civilian</defName>
 		<label>Yautja Civilian</label>
+		<startingHediffs>
+			<li>
+				<def>ABX_Hediff_Blooding</def>
+				<severity>0.2</severity>
+			</li>
+		</startingHediffs>
 	</PawnKindDef>
 	
 	<PawnKindDef ParentName="ABYautja_Civilian">
@@ -92,6 +109,7 @@
 		<defName>ABYautja_Slaves</defName>
 		<label>Yautja slave</label>
 		<apparelTags Inherit="False">
+			<li>Neolithic</li>
 		</apparelTags>	
 		<apparelRequired>
 			<li>Apparel_TribalA</li>
@@ -105,7 +123,8 @@
 		<defName>ABYautja_Unblooded</defName>
 		<label>Unblooded Yautja</label>
 		<combatPower>100</combatPower>
-		<maxGenerationAge>20</maxGenerationAge>
+		<minGenerationAge>20</minGenerationAge>
+		<maxGenerationAge>30</maxGenerationAge>
 		<backstoryFiltersOverride Inherit="false">
 			<li>
 				<categories>
@@ -143,6 +162,9 @@
 			<li>Advanced</li>
 			<li>YautjaTribalEquipment</li>
 		</techHediffsTags>
+		<techHediffsRequired>
+			<li>ABYautja_NPCUnbloodedWristbladeGauntlet</li>
+		</techHediffsRequired>
 		<techHediffsChance>0.20</techHediffsChance>
 		<invNutrition>2.55</invNutrition>
 		<inventoryOptions>
@@ -170,6 +192,8 @@
 	<PawnKindDef ParentName="ABYautjaBase_Hunter" Name="ABYautja_YoungBlood">
 		<defName>ABYautja_YoungBlood</defName>
 		<label>Yautja Young Blood</label>
+		<minGenerationAge>8</minGenerationAge>
+		<maxGenerationAge>18</maxGenerationAge>
 		<backstoryFiltersOverride Inherit="false">
 			<li>
 				<categories>
@@ -181,6 +205,12 @@
 			<li>YautjaGun</li>
 			<li>YautjaMelee</li>
 		</weaponTags>
+		<startingHediffs>
+			<li>
+				<def>ABX_Hediff_Blooding</def>
+				<severity>0.01</severity>
+			</li>
+		</startingHediffs>
 		<initialWillRange>3~5</initialWillRange>
 		<initialResistanceRange>20~30</initialResistanceRange>
 	</PawnKindDef>
@@ -197,9 +227,10 @@
 
 	<PawnKindDef ParentName="ABYautjaBase_Hunter" Name="ABYautja_Blooded">
 		<defName>ABYautja_Blooded</defName>
-		<label>Yautja Blooded</label>
+		<label>Blooded Yautja</label>
 		<combatPower>120</combatPower>
-		<minGenerationAge>20</minGenerationAge>
+		<minGenerationAge>30</minGenerationAge>
+		<maxGenerationAge>50</maxGenerationAge>
 		<backstoryFiltersOverride Inherit="false">
 			<li>
 				<categories>
@@ -214,17 +245,26 @@
 		<apparelTags>
 			<li>YautjaHeavyArmor</li>
 		</apparelTags>
+		<startingHediffs>
+			<li>
+				<def>ABX_Hediff_Blooding</def>
+				<severity>0.2</severity>
+			</li>
+		</startingHediffs>
 		<initialWillRange>4~6</initialWillRange>
 		<initialResistanceRange>30~40</initialResistanceRange>
 	</PawnKindDef>
 	
 	<PawnKindDef ParentName="ABYautja_Blooded">
 		<defName>ABYautja_AugmentedBlooded</defName>
-		<label>Augmented Yautja Blooded</label>
+		<label>Augmented Blooded Yautja</label>
 		<techHediffsMoney Inherit="False">
-			<min>1500</min>
-			<max>4000</max>
+			<min>4000</min>
+			<max>6500</max>
 		</techHediffsMoney>
+		<apparelTags>
+			<li Mayrequire="OskarPotocki.VFE.Pirates">WarcasketMelee</li>
+		</apparelTags>
 		<techHediffsChance>0.95</techHediffsChance>
 	</PawnKindDef>
 
@@ -233,6 +273,7 @@
 		<label>Yautja Elite</label>
 		<combatPower>160</combatPower>
 		<minGenerationAge>60</minGenerationAge>
+		<maxGenerationAge>80</maxGenerationAge>
 		<itemQuality>Excellent</itemQuality>
 		<backstoryFiltersOverride Inherit="false">
 			<li>
@@ -243,19 +284,29 @@
 			</li>
 		</backstoryFiltersOverride>
 		<apparelMoney>
-			<min>3000</min>
-			<max>6000</max>
+			<min>6000</min>
+			<max>8000</max>
 		</apparelMoney>
 		<apparelTags>
 			<li>YautjaEliteArmor</li>
 			<li>YautjaShoulderCannon</li>
 			<li>ABYautja_Equipment</li>
 			<li>Neolithic</li>
+			<li Mayrequire="OskarPotocki.VFE.Pirates">WarcasketMelee</li>
 		</apparelTags>
+		<techHediffsRequired Inherit="False">
+			<li>ABYautja_NPCLeaderWristbladeGauntlet</li>
+		</techHediffsRequired>
 		<weaponTags>
 			<li>YautjaGun</li>
 			<li>YautjaMelee</li>
 		</weaponTags>
+		<startingHediffs>
+			<li>
+				<def>ABX_Hediff_Blooding</def>
+				<severity>0.6</severity>
+			</li>
+		</startingHediffs>
 	</PawnKindDef>
 	
 	<PawnKindDef ParentName="ABYautja_Elite">
@@ -265,6 +316,10 @@
 			<min>1500</min>
 			<max>4000</max>
 		</techHediffsMoney>
+		<apparelTags>
+			<li Mayrequire="OskarPotocki.VFE.Pirates">WarcasketVeteran</li>
+			<li Mayrequire="OskarPotocki.VFE.Pirates">WarcasketMelee</li>
+		</apparelTags>
 		<techHediffsChance>0.95</techHediffsChance>
 	</PawnKindDef>
 
@@ -272,7 +327,8 @@
 		<defName>ABYautja_Elder</defName>
 		<label>Yautja Elder</label>
 		<combatPower>200</combatPower>
-		<minGenerationAge>300</minGenerationAge>
+		<minGenerationAge>60</minGenerationAge>
+		<maxGenerationAge>500</maxGenerationAge>
 		<backstoryFiltersOverride Inherit="false">
 			<li>
 				<categories>
@@ -287,8 +343,8 @@
 			<max>3.5</max>
 		</gearHealthRange>
 		<apparelMoney>
-			<min>5000</min>
-			<max>9000</max>
+			<min>8000</min>
+			<max>10000</max>
 		</apparelMoney>
 		<apparelTags Inherit="false">
 			<li>YautjaEliteArmor</li>
@@ -333,6 +389,12 @@
 				</li>
 			</subOptionsChooseOne>
 		</inventoryOptions>
+		<startingHediffs>
+			<li>
+				<def>ABX_Hediff_Blooding</def>
+				<severity>0.8</severity>
+			</li>
+		</startingHediffs>
 		<initialWillRange>4~6</initialWillRange>
 		<initialResistanceRange>55~360</initialResistanceRange>
 	</PawnKindDef>
@@ -344,6 +406,9 @@
 			<min>3000</min>
 			<max>10000</max>
 		</techHediffsMoney>
+		<apparelTags>
+			<li Mayrequire="OskarPotocki.VFE.Pirates">WarcasketVeteran</li>
+		</apparelTags>
 		<techHediffsChance>0.95</techHediffsChance>
 	</PawnKindDef>
 	

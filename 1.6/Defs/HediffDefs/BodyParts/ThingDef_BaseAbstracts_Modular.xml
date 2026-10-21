@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!--Gauntlets-->
+	<ThingDef ParentName="BodyPartBase" Name="ABYautja_BodyPartGauntlet_Base" Abstract="True">
+		<techLevel>Neolithic</techLevel>
+		<thingCategories Inherit="False">
+			<li>ABYautja_GauntletModules</li>
+		</thingCategories>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Machining</soundWorking>
+			<unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
+			<defaultIngredientFilter>
+				<categories>
+					<li>Root</li>
+				</categories>
+				<disallowedThingDefs>
+					<li>Gold</li>
+					<li>Silver</li>
+					<li>Jade</li>
+					<li>Uranium</li>
+					<li MayRequire="Ludeon.RimWorld.Anomaly">Bioferrite</li>
+					<li MayRequire="Ludeon.RimWorld.Odyssey">Obsidian</li>
+				</disallowedThingDefs>
+			</defaultIngredientFilter>
+		</recipeMaker>
+		<thingClass>ThingWithComps</thingClass>
+		<tradeTags>
+			<li>TechHediff</li>
+		</tradeTags>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+		</comps>
+		<modExtensions Inherit="False">
+			<li Class="ABXenotypeYautja.DefExtension_GauntletModuleHediff" />
+		</modExtensions>
+	</ThingDef>
+	
+	<ThingDef ParentName="BodyPartProstheticMakeableBase" Name="CombineProstheticandGauntlet_Base" Abstract="True">
+		<thingCategories Inherit="False">
+			<li>ABYautja_ProstheticGauntletModules</li>
+		</thingCategories>
+		<statBases>
+			<WorkToMake>30</WorkToMake>
+		</statBases>
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Machining</soundWorking>
+			<unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
+			<defaultIngredientFilter>
+				<categories>
+					<li>Root</li>
+				</categories>
+				<disallowedThingDefs>
+					<li>Gold</li>
+					<li>Silver</li>
+					<li>Jade</li>
+					<li>Uranium</li>
+					<li MayRequire="Ludeon.RimWorld.Anomaly">Bioferrite</li>
+					<li MayRequire="Ludeon.RimWorld.Odyssey">Obsidian</li>
+				</disallowedThingDefs>
+			</defaultIngredientFilter>
+			<recipeUsers Inherit="False">
+				<li>ABYautja_TinkeringTable</li>
+			</recipeUsers>
+			<skillRequirements Inherit="False" />
+		</recipeMaker>
+		<modExtensions>
+			<li Class="ABXenotypeYautja.DefExtension_GauntletModuleHediff" />
+		</modExtensions>
+	</ThingDef>
+	
+	<ThingDef ParentName="CombineProstheticandGauntlet_Base" Name="CombineProstheticandGauntlet_TribalBase" Abstract="True">
+		<techHediffsTags>
+			<li>YautjaTribalWristbladeProsthetics</li>
+		</techHediffsTags>
+		<tradeTags>
+			<li>YautjaTribalWristbladeProsthetics</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="CombineProstheticandGauntlet_Base" Name="CombineProstheticandGauntlet_TechBase" Abstract="True">
+		<techLevel>Medieval</techLevel>
+		<techHediffsTags>
+			<li>YautjaTechWristbladeProsthetics</li>
+		</techHediffsTags>
+		<tradeTags>
+			<li>YautjaTechWristbladeProsthetics</li>
+		</tradeTags>
+	</ThingDef>
+
+<!--Modules-->
+	<ThingDef ParentName="ABYautja_BodyPartGauntlet_Base" Name="ABYautja_BodyPartGauntlet_BladeModuleBase" Abstract="True">
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<stackLimit>50</stackLimit>
+		<thingCategories Inherit="False">
+			<li>ABYautja_WristbladeModules</li>
+		</thingCategories>
+		<recipeMaker>
+			<effectWorking>Cook</effectWorking>
+			<soundWorking>Recipe_Machining</soundWorking>
+			<unfinishedThingDef Inherit="False">UnfinishedWeapon</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+				<li>ABYautja_TableMachining</li>
+			</recipeUsers>
+		</recipeMaker>
+		<violentTechHediff>true</violentTechHediff>
+		<comps>
+			<li Class="ABXenotypeYautja.CompProperties_ExtraTip_ModuleSlotName">
+				<SlotTitle>Occupies slot: </SlotTitle>
+				<SlotName>Blade</SlotName>
+			</li>
+		</comps>
+		<modExtensions Inherit="False" />
+	</ThingDef>
+	
+	<ThingDef Name="CombineMultipleWristblades_Base" Abstract="True">
+		<thingClass>ThingWithComps</thingClass>
+		<techLevel>Neolithic</techLevel>
+		<thingCategories Inherit="False">
+			<li>ABYautja_WristbladeModules</li>
+		</thingCategories>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<category>Item</category>
+		<drawerType>MapMeshOnly</drawerType>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<useHitPoints>true</useHitPoints>
+		<selectable>true</selectable>
+		<altitudeLayer>Item</altitudeLayer>
+		<tickerType>Never</tickerType>
+		<alwaysHaulable>true</alwaysHaulable>
+		<isTechHediff>true</isTechHediff>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<pathCost>14</pathCost>
+		<allowedArchonexusCount>1</allowedArchonexusCount>
+		<rotatable>false</rotatable>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<stackLimit>50</stackLimit>
+		<statBases>
+			<Flammability>0</Flammability>
+			<Beauty>-1</Beauty>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
+		<violentTechHediff>true</violentTechHediff>
+		<tradeTags>
+			<li>TechHediff</li>
+		</tradeTags>
+		<comps>
+			<li Class="ABXenotypeYautja.CompProperties_ExtraTip_ModuleSlotName">
+				<SlotTitle>Occupies slot: </SlotTitle>
+				<SlotName>Blade</SlotName>
+			</li>
+			<li Class="CompProperties_Forbiddable"/>
+		</comps>
+		<modExtensions Inherit="False">
+			<li Class="ABXenotypeYautja.DefExtension_GauntletModuleHediff" />
+		</modExtensions>
+	</ThingDef>
+	
+	<ThingDef ParentName="ABYautja_BodyPartGauntlet_BladeModuleBase" Name="ABYautja_BodyPartGauntlet_CombatModuleBase" Abstract="True">
+		<thingCategories Inherit="False">
+			<li>ABYautja_GauntletActionModules</li>
+		</thingCategories>
+		<comps Inherit ="False">
+			<li Class="ABXenotypeYautja.CompProperties_ExtraTip_ModuleSlotName">
+				<SlotTitle>Occupies slot: </SlotTitle>
+				<SlotName>Combat</SlotName>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="ABYautja_BodyPartGauntlet_BladeModuleBase" Name="ABYautja_BodyPartGauntlet_MiscModuleBase" Abstract="True">
+		<thingCategories Inherit="False">
+			<li>ABYautja_GauntletMiscModules</li>
+		</thingCategories>
+		<comps Inherit ="False" />
+	</ThingDef>
+</Defs>

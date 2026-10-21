@@ -1,0 +1,399 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!--Wood-->
+	<HediffDef ParentName="ABGauntletProstheticHediffBase_Tribal">
+		<defName>ABYautja_WoodLog_TribalGauntlet</defName>
+		<label>wooden limb with wooden gauntlet</label>
+		<description>A wooden gauntlet attached to a wooden limb. Allows for the attachment of wristblades.</description>
+		<descriptionHyperlinks>
+			<ThingDef>WoodLogWithGauntlet_TribalGauntlet</ThingDef>
+		</descriptionHyperlinks>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>0.3</partEfficiency>
+		</addedPartProps>
+		<spawnThingOnRemoved>WoodLogWithGauntlet_TribalGauntlet</spawnThingOnRemoved>
+	</HediffDef>
+	
+	<HediffDef ParentName="ABGauntletProstheticHediffBase_Tech">
+		<defName>ABYautja_WoodLog_TechGauntlet</defName>
+		<label>wooden limb with metal gauntlet</label>
+		<description>A metal gauntlet attached to a wooden limb. Allows for the attachment of wristblades.</description>
+		<descriptionHyperlinks>
+			<ThingDef>WoodLogWithGauntlet_TechGauntlet</ThingDef>
+		</descriptionHyperlinks>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>0.3</partEfficiency>
+		</addedPartProps>
+		<spawnThingOnRemoved>WoodLogWithGauntlet_TechGauntlet</spawnThingOnRemoved>
+	</HediffDef>
+	
+<!--Simple Prosthetic+Tribal-->
+	<HediffDef ParentName="ABGauntletProstheticHediffBase_Tribal">
+		<defName>ABYautja_SimpleProsthetic_Forearm_TribalGauntlet</defName>
+		<label>prosthetic forearm with wooden gauntlet</label>
+		<description>A wooden gauntlet attached to a prosthetic forearm. Allows for the attachment of wristblades.</description>
+		<descriptionHyperlinks>
+			<ThingDef>SimpleProstheticForearmWithGauntlet_TribalGauntlet</ThingDef>
+		</descriptionHyperlinks>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>0.5</partEfficiency>
+		</addedPartProps>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>fist</label>
+						<capacities>
+							<li>Blunt</li>
+						</capacities>
+						<power>8.2</power> <!-- Same as natural fist -->
+						<cooldownTime>2</cooldownTime>
+					</li>
+				</tools>
+			</li>
+		</comps>
+		<spawnThingOnRemoved>SimpleProstheticForearmWithGauntlet_TribalGauntlet</spawnThingOnRemoved>
+	</HediffDef>
+	
+	<HediffDef ParentName="ABGauntletProstheticHediffBase_Tribal">
+		<defName>ABYautja_SimpleProsthetic_Arm_TribalGauntlet</defName>
+		<label>prosthetic arm with wooden gauntlet</label>
+		<description>A wooden gauntlet attached to a prosthetic arm. Allows for the attachment of wristblades.</description>
+		<descriptionHyperlinks>
+			<ThingDef>SimpleProstheticArmWithGauntlet_TribalGauntlet</ThingDef>
+		</descriptionHyperlinks>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>0.5</partEfficiency>
+		</addedPartProps>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>fist</label>
+						<capacities>
+							<li>Blunt</li>
+						</capacities>
+						<power>8.2</power> <!-- Same as natural fist -->
+						<cooldownTime>2</cooldownTime>
+					</li>
+				</tools>
+			</li>
+		</comps>
+		<spawnThingOnRemoved>SimpleProstheticArmWithGauntlet_TribalGauntlet</spawnThingOnRemoved>
+	</HediffDef>
+	
+<!--Simple Prosthetic+Tech-->
+	<HediffDef ParentName="ABGauntletProstheticHediffBase_Tech">
+		<defName>ABYautja_SimpleProsthetic_Forearm_TechGauntlet</defName>
+		<label>prosthetic forearm with metal gauntlet</label>
+		<description>A metal gauntlet attached to a prosthetic forearm. Allows for the attachment of wristblades and other gauntlet modules.</description>
+		<descriptionHyperlinks>
+			<ThingDef>SimpleProstheticForearmWithGauntlet_TechGauntlet</ThingDef>
+		</descriptionHyperlinks>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>0.5</partEfficiency>
+		</addedPartProps>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>fist</label>
+						<capacities>
+							<li>Blunt</li>
+						</capacities>
+						<power>8.2</power> <!-- Same as natural fist -->
+						<cooldownTime>2</cooldownTime>
+					</li>
+				</tools>
+			</li>
+		</comps>
+		<spawnThingOnRemoved>SimpleProstheticForearmWithGauntlet_TechGauntlet</spawnThingOnRemoved>
+	</HediffDef>
+	
+	<HediffDef ParentName="ABGauntletProstheticHediffBase_Tech">
+		<defName>ABYautja_SimpleProsthetic_Arm_TechGauntlet</defName>
+		<label>prosthetic arm with metal gauntlet</label>
+		<description>A metal gauntlet attached to a prosthetic arm. Allows for the attachment of wristblades and other gauntlet modules.</description>
+		<descriptionHyperlinks>
+			<ThingDef>SimpleProstheticArmWithGauntlet_TechGauntlet</ThingDef>
+		</descriptionHyperlinks>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>0.5</partEfficiency>
+		</addedPartProps>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>fist</label>
+						<capacities>
+							<li>Blunt</li>
+						</capacities>
+						<power>8.2</power> <!-- Same as natural fist -->
+						<cooldownTime>2</cooldownTime>
+					</li>
+				</tools>
+			</li>
+		</comps>
+		<spawnThingOnRemoved>SimpleProstheticArmWithGauntlet_TechGauntlet</spawnThingOnRemoved>
+	</HediffDef>
+	
+<!--Bionic+Tribal-->
+	<HediffDef ParentName="ABGauntletProstheticHediffBase_Tribal">
+		<defName>ABYautja_Bionic_Forearm_TribalGauntlet</defName>
+		<label>bionic forearm with wooden gauntlet</label>
+		<description>A wooden gauntlet attached to a bionic forearm. Allows for the attachment of wristblades.</description>
+		<descriptionHyperlinks>
+			<ThingDef>BionicForearmWithGauntlet_TribalGauntlet</ThingDef>
+		</descriptionHyperlinks>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.25</partEfficiency>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>fist</label>
+						<capacities>
+							<li>Blunt</li>
+						</capacities>
+						<power>12</power>
+						<cooldownTime>2</cooldownTime>
+						<soundMeleeHit>MeleeHit_BionicPunch</soundMeleeHit>
+						<soundMeleeMiss>MeleeMiss_BionicPunch</soundMeleeMiss>
+					</li>
+				</tools>
+			</li>
+		</comps>
+		<spawnThingOnRemoved>BionicForearmWithGauntlet_TribalGauntlet</spawnThingOnRemoved>
+	</HediffDef>
+	
+	
+	<HediffDef ParentName="ABGauntletProstheticHediffBase_Tribal">
+		<defName>ABYautja_Bionic_Arm_TribalGauntlet</defName>
+		<label>bionic arm with wooden gauntlet</label>
+		<description>A wooden gauntlet attached to a bionic arm. Allows for the attachment of wristblades.</description>
+		<descriptionHyperlinks>
+			<ThingDef>BionicArmWithGauntlet_TribalGauntlet</ThingDef>
+		</descriptionHyperlinks>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.25</partEfficiency>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>fist</label>
+						<capacities>
+							<li>Blunt</li>
+						</capacities>
+						<power>12</power>
+						<cooldownTime>2</cooldownTime>
+						<soundMeleeHit>MeleeHit_BionicPunch</soundMeleeHit>
+						<soundMeleeMiss>MeleeMiss_BionicPunch</soundMeleeMiss>
+					</li>
+				</tools>
+			</li>
+		</comps>
+		<spawnThingOnRemoved>BionicArmWithGauntlet_TribalGauntlet</spawnThingOnRemoved>
+	</HediffDef>
+	
+<!--Bionic+Tech-->
+	<HediffDef ParentName="ABGauntletProstheticHediffBase_Tech">
+		<defName>ABYautja_Bionic_Forearm_TechGauntlet</defName>
+		<label>bionic forearm with metal gauntlet</label>
+		<description>A metal gauntlet attached to a bionic forearm. Allows for the attachment of wristblades and other gauntlet modules.</description>
+		<descriptionHyperlinks>
+			<ThingDef>BionicForearmWithGauntlet_TechGauntlet</ThingDef>
+		</descriptionHyperlinks>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.25</partEfficiency>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>fist</label>
+						<capacities>
+							<li>Blunt</li>
+						</capacities>
+						<power>12</power>
+						<cooldownTime>2</cooldownTime>
+						<soundMeleeHit>MeleeHit_BionicPunch</soundMeleeHit>
+						<soundMeleeMiss>MeleeMiss_BionicPunch</soundMeleeMiss>
+					</li>
+				</tools>
+			</li>
+		</comps>
+		<spawnThingOnRemoved>BionicForearmWithGauntlet_TechGauntlet</spawnThingOnRemoved>
+	</HediffDef>	
+	
+	<HediffDef ParentName="ABGauntletProstheticHediffBase_Tech">
+		<defName>ABYautja_Bionic_Arm_TechGauntlet</defName>
+		<label>bionic arm with metal gauntlet</label>
+		<description>A metal gauntlet attached to a bionic arm. Allows for the attachment of wristblades and other gauntlet modules.</description>
+		<descriptionHyperlinks>
+			<ThingDef>BionicArmWithGauntlet_TechGauntlet</ThingDef>
+		</descriptionHyperlinks>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.25</partEfficiency>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>fist</label>
+						<capacities>
+							<li>Blunt</li>
+						</capacities>
+						<power>12</power>
+						<cooldownTime>2</cooldownTime>
+						<soundMeleeHit>MeleeHit_BionicPunch</soundMeleeHit>
+						<soundMeleeMiss>MeleeMiss_BionicPunch</soundMeleeMiss>
+					</li>
+				</tools>
+			</li>
+		</comps>
+		<spawnThingOnRemoved>BionicArmWithGauntlet_TechGauntlet</spawnThingOnRemoved>
+	</HediffDef>
+	
+<!--Archotech+Tribal-->
+	<HediffDef ParentName="ABGauntletProstheticHediffBase_Tribal">
+		<defName>ABYautja_Archotech_Forearm_TribalGauntlet</defName>
+		<label>archotech forearm with wooden gauntlet</label>
+		<description>A wooden gauntlet attached to an archotech forearm. Allows for the attachment of wristblades.</description>
+		<descriptionHyperlinks>
+			<ThingDef>ArchotechForearmWithGauntlet_TribalGauntlet</ThingDef>
+		</descriptionHyperlinks>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.5</partEfficiency>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>fist</label>
+						<capacities>
+							<li>Blunt</li>
+						</capacities>
+						<power>14</power>
+						<cooldownTime>2</cooldownTime>
+						<soundMeleeHit>MeleeHit_BionicPunch</soundMeleeHit>
+						<soundMeleeMiss>MeleeMiss_BionicPunch</soundMeleeMiss>
+					</li>
+				</tools>
+			</li>
+		</comps>
+		<spawnThingOnRemoved>ArchotechForearmWithGauntlet_TribalGauntlet</spawnThingOnRemoved>
+	</HediffDef>
+	
+	<HediffDef ParentName="ABGauntletProstheticHediffBase_Tribal">
+		<defName>ABYautja_Archotech_Arm_TribalGauntlet</defName>
+		<label>archotech arm with wooden gauntlet</label>
+		<description>A wooden gauntlet attached to an archotech arm. Allows for the attachment of wristblades.</description>
+		<descriptionHyperlinks>
+			<ThingDef>ArchotechArmWithGauntlet_TribalGauntlet</ThingDef>
+		</descriptionHyperlinks>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.5</partEfficiency>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>fist</label>
+						<capacities>
+							<li>Blunt</li>
+						</capacities>
+						<power>14</power>
+						<cooldownTime>2</cooldownTime>
+						<soundMeleeHit>MeleeHit_BionicPunch</soundMeleeHit>
+						<soundMeleeMiss>MeleeMiss_BionicPunch</soundMeleeMiss>
+					</li>
+				</tools>
+			</li>
+		</comps>
+		<spawnThingOnRemoved>ArchotechArmWithGauntlet_TribalGauntlet</spawnThingOnRemoved>
+	</HediffDef>
+	
+<!--Archotech+Tech-->
+	<HediffDef ParentName="ABGauntletProstheticHediffBase_Tech">
+		<defName>ABYautja_Archotech_Forearm_TechGauntlet</defName>
+		<label>archotech forearm with metal gauntlet</label>
+		<description>A metal gauntlet attached to an archotech forearm. Allows for the attachment of wristblades and other gauntlet modules.</description>
+		<descriptionHyperlinks>
+			<ThingDef>ArchotechForearmWithGauntlet_TechGauntlet</ThingDef>
+		</descriptionHyperlinks>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.5</partEfficiency>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>fist</label>
+						<capacities>
+							<li>Blunt</li>
+						</capacities>
+						<power>14</power>
+						<cooldownTime>2</cooldownTime>
+						<soundMeleeHit>MeleeHit_BionicPunch</soundMeleeHit>
+						<soundMeleeMiss>MeleeMiss_BionicPunch</soundMeleeMiss>
+					</li>
+				</tools>
+			</li>
+		</comps>
+		<spawnThingOnRemoved>ArchotechForearmWithGauntlet_TechGauntlet</spawnThingOnRemoved>
+	</HediffDef>	
+	
+	<HediffDef ParentName="ABGauntletProstheticHediffBase_Tech">
+		<defName>ABYautja_Archotech_Arm_TechGauntlet</defName>
+		<label>archotech arm with metal gauntlet</label>
+		<description>A metal gauntlet attached to an archotech arm. Allows for the attachment of wristblades and other gauntlet modules.</description>
+		<descriptionHyperlinks>
+			<ThingDef>ArchotechArmWithGauntlet_TechGauntlet</ThingDef>
+		</descriptionHyperlinks>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.5</partEfficiency>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>fist</label>
+						<capacities>
+							<li>Blunt</li>
+						</capacities>
+						<power>14</power>
+						<cooldownTime>2</cooldownTime>
+						<soundMeleeHit>MeleeHit_BionicPunch</soundMeleeHit>
+						<soundMeleeMiss>MeleeMiss_BionicPunch</soundMeleeMiss>
+					</li>
+				</tools>
+			</li>
+		</comps>
+		<spawnThingOnRemoved>ArchotechArmWithGauntlet_TechGauntlet</spawnThingOnRemoved>
+	</HediffDef>
+</Defs>

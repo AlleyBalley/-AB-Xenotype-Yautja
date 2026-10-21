@@ -7,11 +7,14 @@
 		<race>Human</race>
 		<xenotypeSet>
 			<xenotypeChances>
-				<ABStandardYautja>0.75</ABStandardYautja>
+				<ABStandardYautja>0.74</ABStandardYautja>
 				<ABBerserkYautja>0.09</ABBerserkYautja>
+				<ABFeralYautja>0.052</ABFeralYautja>
 				<ABScoutYautja>0.05</ABScoutYautja>
 				<ABSwordYautja>0.05</ABSwordYautja>
 				<ABShieldYautja>0.05</ABShieldYautja>
+				<ABMalformedYautja>0.02</ABMalformedYautja>
+				<ABTranslucentYautja>0.01</ABTranslucentYautja>
 				<ABGrendelKingYautja>0.01</ABGrendelKingYautja>
 			</xenotypeChances>
 		</xenotypeSet>
@@ -40,9 +43,10 @@
 		<initialResistanceRange>15~20</initialResistanceRange>
 		<apparelAllowHeadgearChance>0.85</apparelAllowHeadgearChance>
 		<apparelTags>
-			<li>YautjaArmor</li>
-			<li>YautjaHelmet</li>
-			<li>YautjaApparel</li>
+			<li>YautjaLightArmor</li>
+			<li>YautjaNormalArmor</li>
+			<li>YautjaWebbing</li>
+			<li>YautjaMesh</li>
 			<li>Neolithic</li>
 		</apparelTags>
 		<forcedTraits>
@@ -75,17 +79,21 @@
     </lifeStages>
 	<xenotypeSet>
 		<xenotypeChances>
-			<ABStandardYautja>0.75</ABStandardYautja>
+			<ABStandardYautja>0.74</ABStandardYautja>
 			<ABBerserkYautja>0.09</ABBerserkYautja>
 			<ABScoutYautja>0.05</ABScoutYautja>
 			<ABSwordYautja>0.05</ABSwordYautja>
 			<ABShieldYautja>0.05</ABShieldYautja>
+			<ABMalformedYautja>0.02</ABMalformedYautja>
+			<ABTranslucentYautja>0.01</ABTranslucentYautja>
 			<ABGrendelKingYautja>0.01</ABGrendelKingYautja>
 		</xenotypeChances>
 	</xenotypeSet>
 	<forcedTraits>
 		<ABYautjaWarriorsMindset>0</ABYautjaWarriorsMindset>
 	</forcedTraits>
+	<nameMaker>ABNamerPerson_Yautja_Male</nameMaker>
+	<nameMakerFemale>ABNamerPerson_Yautja_Female</nameMakerFemale>
   </PawnKindDef>	
 	
 <!--Civilian Base-->
@@ -98,9 +106,16 @@
 			<max>2.0</max>
 		</gearHealthRange>
 		<apparelMoney>
-			<min>300</min>
-			<max>900</max>
+			<min>2000</min>
+			<max>3000</max>
 		</apparelMoney>
+		<apparelTags Inherit="False">
+			<li>YautjaLightArmor</li>
+			<li>YautjaNormalArmor</li>
+			<li>YautjaWebbing</li>
+			<li>YautjaMesh</li>
+			<li>Neolithic</li>
+		</apparelTags>
 		<weaponMoney>
 			<min>300</min>
 			<max>750</max>
@@ -116,7 +131,7 @@
 		</techHediffsMoney>
 		<techHediffsTags>
 			<li>Simple</li>
-			<li>YautjaEquipment</li>
+			<li>NPCGauntlet</li>
 		</techHediffsTags>
 		<techHediffsChance>0.51</techHediffsChance>
 		<invNutrition>2.55</invNutrition>
@@ -157,21 +172,28 @@
 		</gearHealthRange>
 		<apparelTags>
 			<li>YautjaLightArmor</li>
-			<li>YautjaArmor</li>
+			<li>YautjaHeavyArmor</li>
 			<li>Neolithic</li>
 		</apparelTags>
 		<techHediffsTags>
 			<li>Advanced</li>
 			<li>AdvancedWeapon</li>
-			<li>YautjaEquipment</li>
+			<li>NPCGauntlet</li>
 			<li>Spacer</li>
 		</techHediffsTags>
+		<techHediffsRequired>
+			<li>ABYautja_NPCWristbladeGauntlet</li>
+		</techHediffsRequired>
+		<techHediffsMoney>
+			<min>1000</min>
+			<max>1500</max>
+		</techHediffsMoney>
 		<requiredWorkTags>
 			<li>Violent</li>
 		</requiredWorkTags>
 		<apparelMoney>
-			<min>1500</min>
-			<max>3800</max>
+			<min>1900</min>
+			<max>4500</max>
 		</apparelMoney>
 		<weaponMoney>
 			<min>750</min>
@@ -181,10 +203,6 @@
 			<li>YautjaRanged</li>
 			<li>YautjaMelee</li>
 		</weaponTags>
-		<techHediffsMoney>
-			<min>1000</min>
-			<max>1500</max>
-		</techHediffsMoney>
 		<inventoryOptions>
 			<skipChance>0.8</skipChance>
 			<subOptionsChooseOne>
@@ -220,24 +238,43 @@
 				</categories>
 			</li>
 		</backstoryFiltersOverride>
-		<apparelTags />
 	</PawnKindDef>
 	
 <!--Leader Base-->	
 	<PawnKindDef ParentName="ABYautjaBase_Military" Name="ABYautjaLeaderBase" Abstract="True">
 		<combatPower>85</combatPower>
-		<minGenerationAge>30</minGenerationAge>
-		<maxGenerationAge>999</maxGenerationAge>
+		<minGenerationAge>55</minGenerationAge>
+		<maxGenerationAge>200</maxGenerationAge>
 		<itemQuality>Normal</itemQuality>
 		<factionLeader>true</factionLeader>
 		<canBeSapper>true</canBeSapper>
+		<apparelTags Inherit="False">
+			<li>YautjaOrnateChestplate</li>
+			<li>YautjaOrnateGreaves</li>
+			<li>YautjaOrnateArmor</li>
+			<li>YautjaMesh</li>
+			<li>Royal</li>
+		</apparelTags>
 		<apparelRequired>
 			<li>ABYautja_Armor_ChestplateOrnate</li>
+			<li>ABYautja_Armor_OrnateGreaves</li>
 			<li>ABYautja_Armor_BioMaskOrnate</li>
+			<li>ABYautja_Apparel_AdvancedThermalMesh</li>
 		</apparelRequired>
-		<techHediffsRequired>
+		<apparelMoney>
+			<min>10000</min>
+			<max>20000</max>
+		</apparelMoney>
+		<techHediffsRequired Inherit="false">
 			<li>DeathAcidifier</li>
+			<li>ABYautja_NPCLeaderWristbladeGauntlet</li>
 		</techHediffsRequired>
+		<startingHediffs>
+			<li>
+				<def>ABX_Hediff_Blooding</def>
+				<severity>1</severity>
+			</li>
+		</startingHediffs>
 		<initialWillRange>5~7</initialWillRange>
 		<initialResistanceRange>75~95</initialResistanceRange>
 	</PawnKindDef>

@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<HairDef ParentName="ABYautjaHairBase" Name="ABYautjaHairCurledHornBase" Abstract="true">
+		<requiredGene Inherit="False">ABYautjaCurledHorns_Hair_Tendril</requiredGene>
+		<styleTags Inherit="False">
+		  <li>Yautja_CurledHorn</li>
+		</styleTags>
+	</HairDef>
+
+<!--Ringed Long Dreds-->
+	<HairDef ParentName="ABYautjaHairCurledHornBase">
+		<defName>ABYautjaCurledHornHead_AlbinoRingedLongDreds</defName>
+		<label>Curled Horn Albino Yautja Gold Ringed Long Dreds</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/EyelessCurledHornHead/YautjaCurledHornTendrilAlbinoRingedHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaHairCurledHornBase">
+		<defName>ABYautjaCurledHornHead_AlbinoSilverRingedLongDreds</defName>
+		<label>Curled Horn Albino Yautja Silver Ringed Long Dreds</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/EyelessCurledHornHead/SILVER_YautjaCurledHornTendrilAlbinoRingedHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaHairCurledHornBase">
+		<defName>ABYautjaCurledHornHead_RingedLongDreds</defName>
+		<label>Curled Horn Yautja Gold Ringed Long Dreds</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/EyelessCurledHornHead/YautjaCurledHornTendrilRingedHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaHairCurledHornBase">
+		<defName>ABYautjaCurledHornHead_SilverRingedLongDreds</defName>
+		<label>Curled Horn Yautja Silver Ringed Long Dreds</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/EyelessCurledHornHead/SILVER_YautjaCurledHornTendrilRingedHair</texPath>
+	</HairDef>
+	
+<!--Long Dreds-->
+	<HairDef ParentName="ABYautjaHairCurledHornBase">
+		<defName>ABYautjaCurledHornHead_AlbinoLongDreds</defName>
+		<label>Curled Horn Albino Yautja Long Dreds</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/EyelessCurledHornHead/YautjaCurledHornTendrilAlbinoHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaHairCurledHornBase">
+		<defName>ABYautjaCurledHornHead_LongDreds</defName>
+		<label>Curled Horn Yautja Long Dreds</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/EyelessCurledHornHead/YautjaCurledHornTendrilHair</texPath>
+	</HairDef>
+	
+<!--Ringed Short Dreds-->
+	<HairDef ParentName="ABYautjaHairCurledHornBase">
+		<defName>ABYautjaCurledHornHead_AlbinoRingedShortDreds</defName>
+		<label>Curled Horn Albino Yautja Gold Ringed Short Dreds</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/EyelessCurledHornHead/YautjaCurledHornShortTendrilAlbinoRingedHair</texPath>
+	</HairDef>
+	
+    <HairDef ParentName="ABYautjaHairCurledHornBase">
+		<defName>ABYautjaCurledHornHead_AlbinoSilverRingedShortDreds</defName>
+		<label>Curled Horn Albino Yautja Silver Ringed Short Dreds</label>
+		
+		<texPath>Things/Pawn/Humanlike/Hairs/EyelessCurledHornHead/SILVER_YautjaCurledHornShortTendrilAlbinoRingedHair</texPath>
+
+	</HairDef>
+	<HairDef ParentName="ABYautjaHairCurledHornBase">
+		<defName>ABYautjaCurledHornHead_RingedShortDreds</defName>
+		<label>Curled Horn Yautja Gold Ringed Short Dreds</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/EyelessCurledHornHead/YautjaCurledHornShortTendrilRingedHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaHairCurledHornBase">
+		<defName>ABYautjaCurledHornHead_SilverRingedShortDreds</defName>
+		<label>Curled Horn Yautja Silver Ringed Short Dreds</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/EyelessCurledHornHead/SILVER_YautjaCurledHornShortTendrilRingedHair</texPath>
+	</HairDef>
+	
+<!--Short Dreds-->
+	<HairDef ParentName="ABYautjaHairCurledHornBase">
+		<defName>ABYautjaCurledHornHead_AlbinoShortDreds</defName>
+		<label>Curled Horn Albino Yautja Short Dreds</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/EyelessCurledHornHead/YautjaCurledHornShortTendrilAlbinoHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaHairCurledHornBase">
+		<defName>ABYautjaCurledHornHead_ShortDreds</defName>
+		<label>Curled Horn Yautja Short Dreds</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/EyelessCurledHornHead/YautjaCurledHornShortTendrilHair</texPath>
+	</HairDef>
+	
+<!--Ringed Long Half-Up-->
+	<HairDef ParentName="ABYautjaHairCurledHornBase">
+		<defName>ABYautjaCurledHornHead_RingedLongHalfUp</defName>
+		<label>Curled Horn Yautja Long Gold Ringed Half-Up</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/EyelessCurledHornHead/YautjaCurledHornLongHalfUpRingedHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaHairCurledHornBase">
+		<defName>ABYautjaCurledHornHead_SilverRingedLongHalfUp</defName>
+		<label>Curled Horn Yautja Long Silver Ringed Half-Up</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/EyelessCurledHornHead/SILVER_YautjaCurledHornLongHalfUpRingedHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaHairCurledHornBase">
+		<defName>ABYautjaCurledHornHead_AlbinoRingedLongHalfUp</defName>
+		<label>Curled Horn Albino Yautja Long Gold Ringed Half-Up</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/EyelessCurledHornHead/YautjaCurledHornLongHalfUpRingedAlbinoHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaHairCurledHornBase">
+		<defName>ABYautjaCurledHornHead_AlbinoSilverRingedLongHalfUp</defName>
+		<label>Curled Horn Albino Yautja Long Silver Ringed Half-Up</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/EyelessCurledHornHead/SILVER_YautjaCurledHornLongHalfUpRingedAlbinoHair</texPath>
+	</HairDef>
+	
+<!--Long Half-Up-->
+	<HairDef ParentName="ABYautjaHairCurledHornBase">
+		<defName>ABYautjaCurledHornHead_LongHalfUp</defName>
+		<label>Curled Horn Yautja Long Half-Up</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/EyelessCurledHornHead/YautjaCurledHornLongHalfUpHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaHairCurledHornBase">
+		<defName>ABYautjaCurledHornHead_LongSilverHalfUp</defName>
+		<label>Curled Horn Yautja Long Silver Half-Up</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/EyelessCurledHornHead/SILVER_YautjaCurledHornLongHalfUpHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaHairCurledHornBase">
+		<defName>ABYautjaCurledHornHead_AlbinoLongHalfUp</defName>
+		<label>Curled Horn Albino Yautja Long Half-Up</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/EyelessCurledHornHead/YautjaCurledHornLongHalfUpAlbinoHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaHairCurledHornBase">
+		<defName>ABYautjaCurledHornHead_AlbinoLongSilverHalfUp</defName>
+		<label>Curled Horn Albino Yautja Long Silver Half-Up</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/EyelessCurledHornHead/SILVER_YautjaCurledHornLongHalfUpAlbinoHair</texPath>
+	</HairDef>
+	
+<!--Short Half-Up-->
+	<HairDef ParentName="ABYautjaHairCurledHornBase">
+		<defName>ABYautjaCurledHornHead_ShortHalfUp</defName>
+		<label>Curled Horn Yautja Short Half-Up</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/EyelessCurledHornHead/YautjaCurledHornShortHalfUpHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaHairCurledHornBase">
+		<defName>ABYautjaCurledHornHead_ShortSilverHalfUp</defName>
+		<label>Curled Horn Yautja Short Silver Half-Up</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/EyelessCurledHornHead/SILVER_YautjaCurledHornShortHalfUpHair</texPath>
+	</HairDef>  
+	
+	<HairDef ParentName="ABYautjaHairCurledHornBase">
+		<defName>ABYautjaCurledHornHead_AlbinoShortHalfUp</defName>
+		<label>Curled Horn Albino Yautja Short Half-Up</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/EyelessCurledHornHead/YautjaCurledHornShortHalfUpAlbinoHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaHairCurledHornBase">
+		<defName>ABYautjaCurledHornHead_AlbinoShortSilverHalfUp</defName>
+		<label>Curled Horn Albino Yautja Short Silver Half-Up</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/EyelessCurledHornHead/SILVER_YautjaCurledHornShortHalfUpAlbinoHair</texPath>
+	</HairDef>
+	
+<!--Ringed Short Half-Up-->
+	<HairDef ParentName="ABYautjaHairCurledHornBase">
+		<defName>ABYautjaCurledHornHead_RingedShortHalfUp</defName>
+		<label>Curled Horn Yautja Short Gold Ringed Half-Up</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/EyelessCurledHornHead/YautjaCurledHornShortHalfUpRingedHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaHairCurledHornBase">
+		<defName>ABYautjaCurledHornHead_SilverRingedShortHalfUp</defName>
+		<label>Curled Horn Yautja Short Silver Ringed Half-Up</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/EyelessCurledHornHead/SILVER_YautjaCurledHornShortHalfUpRingedHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaHairCurledHornBase">
+		<defName>ABYautjaCurledHornHead_AlbinoRingedShortHalfUp</defName>
+		<label>Curled Horn Albino Yautja Short Gold Ringed Half-Up</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/EyelessCurledHornHead/YautjaCurledHornShortHalfUpRingedAlbinoHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaHairCurledHornBase">
+		<defName>ABYautjaCurledHornHead_AlbinoSilverRingedShortHalfUp</defName>
+		<label>Curled Horn Albino Yautja Short Silver Ringed Half-Up</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/EyelessCurledHornHead/SILVER_YautjaCurledHornShortHalfUpRingedAlbinoHair</texPath>
+	</HairDef>
+	
+<!--Long Ringed Ponytail-->
+	<HairDef ParentName="ABYautjaHairCurledHornBase">
+		<defName>ABYautjaCurledHornHead_RingedLongPonytail</defName>
+		<label>Curled Horn Yautja Long Gold Ringed Ponytail</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/EyelessCurledHornHead/YautjaCurledHornRingedLongPonytailHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaHairCurledHornBase">
+		<defName>ABYautjaCurledHornHead_SilverRingedLongPonytail</defName>
+		<label>Curled Horn Yautja Long Silver Ringed Ponytail</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/EyelessCurledHornHead/SILVER_YautjaCurledHornRingedLongPonytailHair</texPath>
+	</HairDef>  
+	
+	<HairDef ParentName="ABYautjaHairCurledHornBase">
+		<defName>ABYautjaCurledHornHead_AlbinoRingedLongPonytail</defName>
+		<label>Curled Horn Albino Yautja Long Gold Ringed Ponytail</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/EyelessCurledHornHead/YautjaCurledHornRingedLongPonytailAlbinoHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaHairCurledHornBase">
+		<defName>ABYautjaCurledHornHead_AlbinoSilverRingedLongPonytail</defName>
+		<label>Curled Horn Albino Yautja Long Silver Ringed Ponytail</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/EyelessCurledHornHead/SILVER_YautjaCurledHornRingedLongPonytailAlbinoHair</texPath>
+	</HairDef>
+	
+<!--Long Ponytail-->
+	<HairDef ParentName="ABYautjaHairCurledHornBase">
+		<defName>ABYautjaCurledHornHead_LongPonytail</defName>
+		<label>Curled Horn Yautja Long Gold Ponytail</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/EyelessCurledHornHead/YautjaCurledHornLongPonytailHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaHairCurledHornBase">
+		<defName>ABYautjaCurledHornHead_AlbinoLongPonytail</defName>
+		<label>Curled Horn Albino Yautja Long Gold Ponytail</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/EyelessCurledHornHead/YautjaCurledHornLongPonytailAlbinoHair</texPath>
+	</HairDef>
+	
+<!--Short Ringed Ponytail-->
+	<HairDef ParentName="ABYautjaHairCurledHornBase">
+		<defName>ABYautjaCurledHornHead_RingedShortPonytail</defName>
+		<label>Curled Horn Yautja Short Gold Ringed Ponytail</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/EyelessCurledHornHead/YautjaCurledHornRingedShortPonytailHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaHairCurledHornBase">
+		<defName>ABYautjaCurledHornHead_SilverRingedShortPonytail</defName>
+		<label>Curled Horn Yautja Short Silver Ringed Ponytail</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/EyelessCurledHornHead/SILVER_YautjaCurledHornRingedShortPonytailHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaHairCurledHornBase">
+		<defName>ABYautjaCurledHornHead_AlbinoRingedShortPonytail</defName>
+		<label>Curled Horn Albino Yautja Short Gold Ringed Ponytail</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/EyelessCurledHornHead/YautjaCurledHornRingedShortPonytailAlbinoHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaHairCurledHornBase">
+		<defName>ABYautjaCurledHornHead_AlbinoSilverRingedShortPonytail</defName>
+		<label>Curled Horn Albino Yautja Short Silver Ringed Ponytail</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/EyelessCurledHornHead/SILVER_YautjaCurledHornRingedShortPonytailAlbinoHair</texPath>
+	</HairDef>
+	
+<!--Short Ponytail-->
+	<HairDef ParentName="ABYautjaHairCurledHornBase">
+		<defName>ABYautjaCurledHornHead_ShortPonytail</defName>
+		<label>Curled Horn Yautja Short Gold Ponytail</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/EyelessCurledHornHead/YautjaCurledHornShortPonytailHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaHairCurledHornBase">
+		<defName>ABYautjaCurledHornHead_AlbinoShortPonytail</defName>
+		<label>Curled Horn Albino Yautja Short Gold Ponytail</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/EyelessCurledHornHead/YautjaCurledHornShortPonytailAlbinoHair</texPath>
+	</HairDef>
+	
+<!--Bun-->
+	<HairDef ParentName="ABYautjaHairCurledHornBase">
+		<defName>ABYautjaCurledHornHead_Bun</defName>
+		<label>Curled Horn Yautja Gold Bun</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/EyelessCurledHornHead/YautjaCurledHornBunHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaHairCurledHornBase">
+		<defName>ABYautjaCurledHornHead_SilverBun</defName>
+		<label>Curled Horn Yautja Silver Bun</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/EyelessCurledHornHead/SILVER_YautjaCurledHornBunHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaHairCurledHornBase">
+		<defName>ABYautjaCurledHornHead_AlbinoBun</defName>
+		<label>Curled Horn Albino Yautja Gold Bun</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/EyelessCurledHornHead/YautjaCurledHornAlbinoBunHair</texPath>
+	</HairDef>
+	
+	<HairDef ParentName="ABYautjaHairCurledHornBase">
+		<defName>ABYautjaCurledHornHead_AlbinoSilverBun</defName>
+		<label>Curled Horn Albino Yautja Silver Bun</label>
+		<texPath>Things/Pawn/Humanlike/Hairs/EyelessCurledHornHead/SILVER_YautjaCurledHornAlbinoBunHair</texPath>
+	</HairDef>
+</Defs>

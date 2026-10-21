@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--ThingDef ParentName="ABYautjaTrapBase">
+		<defName>ABYautja_Trap_Spike</defName>
+		<label>predator spike trap</label>
+		<description>Five spikes under tension, connected to a touch-activated trigger. When the victim disturbs the trigger, the spikes spring forthm and strike the victim. Since it is hidden in the surrounding terrain, it cannot be placed adjacent to other traps. Animals can sense these when calm.</description>
+		<graphicData>
+			<texPath>Things/Buildings/Traps/Yautja_SpikeTrapArmed</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<damageData>
+				<rect>(0,0,1,0.15)</rect>
+			</damageData>
+		</graphicData>
+		<statBases>
+			<Mass>2.5</Mass>
+			<MaxHitPoints>40</MaxHitPoints>
+			<WorkToBuild>3200</WorkToBuild>
+			<Flammability>1</Flammability>
+			<Beauty>-18</Beauty>
+			<Cleanliness>-5</Cleanliness>
+			<TrapMeleeDamage>20</TrapMeleeDamage>
+			<TrapSpringChance>1.0</TrapSpringChance>
+		</statBases>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>90</costStuffCount>
+		<building>
+			<trapUnarmedGraphicData>
+				<texPath>Things/Buildings/Traps/Yautja_SpikeTrap_Active</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+				<shaderType>Cutout</shaderType>
+			</trapUnarmedGraphicData>
+			<isTrap>true</isTrap>
+			<trapDestroyOnSpring>false</trapDestroyOnSpring>
+			<trapDamageCategory>Sharp</trapDamageCategory>
+			<expandHomeArea>false</expandHomeArea>
+			<ai_chillDestination>false</ai_chillDestination>
+		</building>
+		<constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+		<researchPrerequisites Inherit="False">
+		  <li>ABYautja_Tech_Improvised</li>
+		</researchPrerequisites>
+	</ThingDef-->
+	
+	<ThingDef ParentName="ABYautjaTrapBase">
+		<defName>ABYautja_Trap_CutClamp</defName>
+		<label>cut clamp trap</label>
+		<description>A long, hinged, line of blades ready to snap closed at a moments notice.</description>
+		<techLevel>Medieval</techLevel>
+		<graphicData>
+			<texPath>Things/Buildings/Security/Yautja_CutClamp_Trap_Armed</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.2,1.2)</drawSize>
+			<drawOffset>(0,0,0.1)</drawOffset>
+			<damageData>
+				<rect>(0,0,1,0.15)</rect>
+			</damageData>
+		</graphicData>
+		<statBases>
+			<Mass>0.7</Mass>
+			<MaxHitPoints>40</MaxHitPoints>
+			<WorkToBuild>1400</WorkToBuild>
+			<Flammability>1</Flammability>
+			<Beauty>-10</Beauty>
+			<Cleanliness>-3</Cleanliness>
+			<TrapMeleeDamage>23</TrapMeleeDamage>
+			<TrapSpringChance>1.0</TrapSpringChance>
+		</statBases>
+		<size>(1,1)</size>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>45</costStuffCount>
+		<costList>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<building>
+			<isTrap>true</isTrap>
+			<trapDestroyOnSpring>true</trapDestroyOnSpring>
+			<trapDamageCategory>Sharp</trapDamageCategory>
+			<expandHomeArea>false</expandHomeArea>
+			<ai_chillDestination>false</ai_chillDestination>
+		</building>
+		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+		<researchPrerequisites>
+		  <li>ABYautja_Tech_T2</li>
+		</researchPrerequisites>
+		<comps>
+			<li Class="VFESecurity.CompProperties_Rearmable" MayRequire="vanillaexpanded.vfesecurity">
+				<initiallyArmed>true</initiallyArmed>
+				<unarmedGraphicData>
+					<texPath>Things/Buildings/Security/Yautja_CutClamp_Trap_Triggered</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+					<drawSize>(1.2,1.2)</drawSize>
+					<drawOffset>(0,0,0.1)</drawOffset>
+				</unarmedGraphicData>
+				<workToRearm>200</workToRearm>
+				<rearmSound>TrapArm</rearmSound>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

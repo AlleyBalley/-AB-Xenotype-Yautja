@@ -1,0 +1,304 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!--Dual Wristblades-->
+	<RecipeDef ParentName="GauntletModuleInstall">
+		<defName>ABYautja_InstallDualWristblades</defName>
+		<label>install dual wristblades</label>
+		<description>Install dual wristblades.</description>
+		<jobString>installing wristblades.</jobString>
+		<incompatibleWithHediffTags>
+			<li>GauntletModuleTag_Blade</li>
+		</incompatibleWithHediffTags>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_DualWristblades</ThingDef>
+			<HediffDef>ABYautja_DualWristblades</HediffDef>
+		</descriptionHyperlinks>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ABYautja_DualWristblades</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ABYautja_DualWristblades</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>ABYautja_DualWristblades</addsHediff>
+		<uiIconThing>ABYautja_Wristblade</uiIconThing>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="GauntletModuleInstall">
+		<defName>ABYautja_InstallTwoWristblades</defName>
+		<label>install two wristblades</label>
+		<description>Install two wristblades to make dual wristblades.</description>
+		<jobString>installing wristblades.</jobString>
+		<incompatibleWithHediffTags>
+			<li>GauntletModuleTag_Blade</li>
+		</incompatibleWithHediffTags>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_Wristblade</ThingDef>
+			<HediffDef>ABYautja_DualWristblades</HediffDef>
+		</descriptionHyperlinks>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ABYautja_Wristblade</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ABYautja_Wristblade</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>ABYautja_DualWristblades</addsHediff>
+		<uiIconThing>ABYautja_Wristblade</uiIconThing>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="GauntletModuleRemove">
+		<defName>ABYautja_DualWristbladesRemove</defName>
+		<workerClass>ABXenotypeYautja.Recipe_RemoveGauntletModule</workerClass>
+		<label>remove dual wristblades</label>
+		<description>Remove dual wristblades.</description>
+		<jobString>Remove wristblades.</jobString>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_DualWristblades</ThingDef>
+			<HediffDef>ABYautja_DualWristblades</HediffDef>
+		</descriptionHyperlinks>
+		<removesHediff>ABYautja_DualWristblades</removesHediff>
+	</RecipeDef>
+	
+<!--Wristblade-->
+	<RecipeDef ParentName="GauntletModuleInstall">
+		<defName>ABYautja_InstallWristblade</defName>
+		<label>install wristblade</label>
+		<description>Install wristblade.</description>
+		<jobString>installing wristblade.</jobString>
+		<incompatibleWithHediffTags>
+			<li>GauntletModuleTag_Blade</li>
+		</incompatibleWithHediffTags>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_Wristblade</ThingDef>
+			<HediffDef>ABYautja_Wristblade</HediffDef>
+		</descriptionHyperlinks>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ABYautja_Wristblade</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ABYautja_Wristblade</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>ABYautja_Wristblade</addsHediff>
+		<uiIconThing>ABYautja_Wristblade</uiIconThing>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="GauntletModuleRemove">
+		<defName>ABYautja_WristbladeRemove</defName>
+		<workerClass>ABXenotypeYautja.Recipe_RemoveGauntletModule</workerClass>
+		<label>Remove wristblade</label>
+		<description>Remove wristblade.</description>
+		<jobString>Remove wristblade.</jobString>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_Wristblade</ThingDef>
+			<HediffDef>ABYautja_Wristblade</HediffDef>
+		</descriptionHyperlinks>
+		<removesHediff>ABYautja_Wristblade</removesHediff>
+	</RecipeDef>
+	
+<!--Long Wristblade-->
+	<RecipeDef ParentName="GauntletModuleInstall">
+		<defName>ABYautja_InstallLongWristblade</defName>
+		<label>install long wristblade</label>
+		<description>Install long wristblade.</description>
+		<jobString>installing long wristblade.</jobString>
+		<incompatibleWithHediffTags>
+			<li>GauntletModuleTag_Blade</li>
+		</incompatibleWithHediffTags>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_LongWristblade</ThingDef>
+			<HediffDef>ABYautja_LongWristblade</HediffDef>
+		</descriptionHyperlinks>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ABYautja_LongWristblade</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ABYautja_LongWristblade</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>ABYautja_LongWristblade</addsHediff>
+		<uiIconThing>ABYautja_LongWristblade</uiIconThing>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="GauntletModuleRemove">
+		<defName>ABYautja_LongWristbladeRemove</defName>
+		<workerClass>ABXenotypeYautja.Recipe_RemoveGauntletModule</workerClass>
+		<label>Remove long wristblade</label>
+		<description>Remove long wristblade.</description>
+		<jobString>Remove long wristblade.</jobString>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_LongWristblade</ThingDef>
+			<HediffDef>ABYautja_LongWristblade</HediffDef>
+		</descriptionHyperlinks>
+		<removesHediff>ABYautja_LongWristblade</removesHediff>
+	</RecipeDef>
+	
+<!--Scimitar Wristblade-->
+	<RecipeDef ParentName="GauntletModuleInstall">
+		<defName>ABYautja_InstallScimitarWristblade</defName>
+		<label>install scimitar wristblade</label>
+		<description>Install scimitar wristblade.</description>
+		<jobString>installing scimitar wristblade.</jobString>
+		<incompatibleWithHediffTags>
+			<li>GauntletModuleTag_Blade</li>
+		</incompatibleWithHediffTags>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_ScimitarWristblade</ThingDef>
+			<HediffDef>ABYautja_ScimitarWristblade</HediffDef>
+		</descriptionHyperlinks>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ABYautja_ScimitarWristblade</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ABYautja_ScimitarWristblade</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>ABYautja_ScimitarWristblade</addsHediff>
+		<uiIconThing>ABYautja_ScimitarWristblade</uiIconThing>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="GauntletModuleRemove">
+		<defName>ABYautja_ScimitarWristbladeRemove</defName>
+		<workerClass>ABXenotypeYautja.Recipe_RemoveGauntletModule</workerClass>
+		<label>Remove scimitar wristblade</label>
+		<description>Remove scimitar wristblade.</description>
+		<jobString>Remove scimitar wristblade.</jobString>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_ScimitarWristblade</ThingDef>
+			<HediffDef>ABYautja_ScimitarWristblade</HediffDef>
+		</descriptionHyperlinks>
+		<removesHediff>ABYautja_ScimitarWristblade</removesHediff>
+	</RecipeDef>
+	
+<!--Prehensile Wristblades-->
+	<RecipeDef ParentName="GauntletModuleInstall">
+		<defName>ABYautja_InstallPrehensileWristblades</defName>
+		<label>install prehensile wristblades</label>
+		<description>Install prehensile wristblades.</description>
+		<jobString>installing wristblades.</jobString>
+		<incompatibleWithHediffTags>
+			<li>GauntletModuleTag_Blade</li>
+		</incompatibleWithHediffTags>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_PrehensileWristblade</ThingDef>
+			<HediffDef>ABYautja_PrehensileWristblades</HediffDef>
+		</descriptionHyperlinks>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ABYautja_PrehensileWristblade</li>
+					</thingDefs>
+				</filter>
+				<count>3</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ABYautja_PrehensileWristblade</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>ABYautja_PrehensileWristblades</addsHediff>
+		<uiIconThing>ABYautja_PrehensileWristblade</uiIconThing>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="GauntletModuleRemove">
+		<defName>ABYautja_PrehensileWristbladesRemove</defName>
+		<workerClass>ABXenotypeYautja.Recipe_RemoveGauntletModule</workerClass>
+		<label>Remove prehensile wristblades</label>
+		<description>Remove prehensile wristblades.</description>
+		<jobString>Remove prehensile wristblades.</jobString>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_PrehensileWristblade</ThingDef>
+			<HediffDef>ABYautja_PrehensileWristblades</HediffDef>
+		</descriptionHyperlinks>
+		<removesHediff>ABYautja_PrehensileWristblades</removesHediff>
+	</RecipeDef>
+	
+<!--Claw Wristblades-->
+	<RecipeDef ParentName="GauntletModuleInstall">
+		<defName>ABYautja_InstallClawWristblades</defName>
+		<label>install claw wristblades</label>
+		<description>Install claw wristblades.</description>
+		<jobString>installing wristblades.</jobString>
+		<incompatibleWithHediffTags>
+			<li>GauntletModuleTag_Blade</li>
+		</incompatibleWithHediffTags>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_ClawWristblades</ThingDef>
+			<HediffDef>ABYautja_ClawWristblades</HediffDef>
+		</descriptionHyperlinks>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ABYautja_ClawWristblades</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ABYautja_ClawWristblades</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>ABYautja_ClawWristblades</addsHediff>
+		<uiIconThing>ABYautja_ClawWristblades</uiIconThing>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="GauntletModuleRemove">
+		<defName>ABYautja_ClawWristbladesRemove</defName>
+		<workerClass>ABXenotypeYautja.Recipe_RemoveGauntletModule</workerClass>
+		<label>Remove claw wristblades</label>
+		<description>Remove claw wristblades.</description>
+		<jobString>Remove claw wristblades.</jobString>
+		<descriptionHyperlinks>
+			<ThingDef>ABYautja_ClawWristblades</ThingDef>
+			<HediffDef>ABYautja_ClawWristblades</HediffDef>
+		</descriptionHyperlinks>
+		<removesHediff>ABYautja_ClawWristblades</removesHediff>
+	</RecipeDef>
+</Defs>

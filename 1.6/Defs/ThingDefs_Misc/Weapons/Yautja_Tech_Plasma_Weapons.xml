@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+<!--Ranged-->
+	<ThingDef ParentName="ABYautja_BaseMakeableGun_PlasmaEnergy">
+		<defName>ABYautja_Gun_HandheldPlasmacaster</defName>
+		<label>handheld plasmacaster</label>
+		<description>The handheld plasmacaster is a handheld version of the shoulder mounted Plasmacaster.</description>
+		<graphicData>
+			<texPath>Things/Equipment/Ranged/Handheld_PredatorPlasmacaster</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>0.9</drawSize>
+		</graphicData>
+		<equippedAngleOffset>-10</equippedAngleOffset>
+		<soundInteract>Interact_Autopistol</soundInteract>
+		<statBases>
+			<WorkToMake>20000</WorkToMake>
+			<MarketValue>800</MarketValue>
+			<Mass>2</Mass>
+			<AccuracyTouch>0.80</AccuracyTouch>
+			<AccuracyShort>0.85</AccuracyShort>
+			<AccuracyMedium>0.60</AccuracyMedium>
+			<AccuracyLong>0.35</AccuracyLong>
+			<RangedWeapon_Cooldown>1.35</RangedWeapon_Cooldown>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>ABYautja_Tech_PlasmaEnergy</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>ABBullet_Plasma</defaultProjectile>
+				<warmupTime>1</warmupTime>
+				<range>13</range>
+				<soundCast>ABShot_ShoulderCannon</soundCast>
+				<soundCastTail>GunTail_Light</soundCastTail>
+				<muzzleFlashScale>8</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>grip</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>6</power>
+				<cooldownTime>1.6</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>6</power>
+				<cooldownTime>1.6</cooldownTime>
+			</li>
+		</tools>
+		<techLevel>Spacer</techLevel>
+		<weaponTags>
+			<li>YautjaHandheldPlasmacaster</li>
+		</weaponTags>
+		<costStuffCount>40</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costList>				
+			<Plasteel>40</Plasteel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<modExtensions>
+			<li Class="VEF.Things.ThingDefExtension">
+				<weaponCarryDrawOffsets>
+					<north>
+						<drawOffset>(0, 0, -0.05)</drawOffset>
+					</north>
+					<east>
+						<drawOffset>(0, 0, -0.05)</drawOffset>
+					</east>
+					<south>
+						<drawOffset>(0, 0, -0.05)</drawOffset>
+					</south>
+					<west>
+						<drawOffset>(0, 0, -0.05)</drawOffset>
+					</west>
+				</weaponCarryDrawOffsets>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	
+	<ThingDef ParentName="ABYautja_BaseMakeableGun_PlasmaEnergy">
+		<defName>ABYautja_Gun_HandheldBlazer</defName>
+		<label>handheld blazer</label>
+		<description>The handheld blazer is a handheld version of the shoulder mounted blazer.</description>
+		<graphicData>
+			<texPath>Things/Equipment/Ranged/Handheld_PredatorBlazer</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>0.9</drawSize>
+		</graphicData>
+		<equippedAngleOffset>-10</equippedAngleOffset>
+		<soundInteract>Interact_Autopistol</soundInteract>
+		<statBases>
+			<WorkToMake>18000</WorkToMake>
+			<MarketValue>775</MarketValue>
+			<Mass>2</Mass>
+			<AccuracyTouch>0.97</AccuracyTouch>
+			<AccuracyShort>0.9</AccuracyShort>
+			<AccuracyMedium>0.86</AccuracyMedium>
+			<AccuracyLong>0.4</AccuracyLong>
+			<RangedWeapon_Cooldown>1.4</RangedWeapon_Cooldown>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>ABYautja_Tech_PlasmaEnergy</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>ABBullet_YautjaBlazer</defaultProjectile>
+				<warmupTime>0.2</warmupTime>
+				<range>35.9</range>
+				<ticksBetweenBurstShots>11</ticksBetweenBurstShots>
+				<burstShotCount>4</burstShotCount>
+				<soundCast>ABShot_ShoulderCannon</soundCast>
+				<soundCastTail>GunTail_Light</soundCastTail>
+				<muzzleFlashScale>8</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>grip</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>6</power>
+				<cooldownTime>1.6</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>6</power>
+				<cooldownTime>1.6</cooldownTime>
+			</li>
+		</tools>
+		<techLevel>Spacer</techLevel>
+		<weaponTags>
+			<li>YautjaHandheldBlazer</li>
+		</weaponTags>
+		<costStuffCount>40</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costList>				
+			<Plasteel>30</Plasteel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<modExtensions>
+			<li Class="VEF.Things.ThingDefExtension">
+				<weaponCarryDrawOffsets>
+					<north>
+						<drawOffset>(0, 0, -0.05)</drawOffset>
+					</north>
+					<east>
+						<drawOffset>(0, 0, -0.05)</drawOffset>
+					</east>
+					<south>
+						<drawOffset>(0, 0, -0.05)</drawOffset>
+					</south>
+					<west>
+						<drawOffset>(0, 0, -0.05)</drawOffset>
+					</west>
+				</weaponCarryDrawOffsets>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	
+	<ThingDef ParentName="ABYautja_BaseMakeableGun_PlasmaEnergy">
+		<defName>ABYautja_Gun_HandheldPlasmaNetGun</defName>
+		<label>handheld plasma net gun</label>
+		<description>The handheld net gun is a handheld version of the shoulder mounted net gun, but this version fires nets imbued with burning plasma.</description>
+		<graphicData>
+			<texPath>Things/Equipment/Ranged/Handheld_PredatorPlasmaNetGun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>0.9</drawSize>
+		</graphicData>
+		<equippedAngleOffset>-10</equippedAngleOffset>
+		<soundInteract>Interact_Autopistol</soundInteract>
+		<statBases>
+			<WorkToMake>8000</WorkToMake>
+			<MarketValue>850</MarketValue>
+			<Mass>2</Mass>
+			<AccuracyTouch>1</AccuracyTouch>
+			<AccuracyShort>0.87</AccuracyShort>
+			<AccuracyMedium>0.6</AccuracyMedium>
+			<AccuracyLong>0.3</AccuracyLong>
+			<RangedWeapon_Cooldown>3</RangedWeapon_Cooldown>
+		</statBases>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>ABGun_PlasmaNet</defaultProjectile>
+				<warmupTime>1</warmupTime>
+				<range>25</range>
+				<soundCast>Interact_BeatFire</soundCast>
+				<soundCastTail>GunTail_Light</soundCastTail>
+				<muzzleFlashScale>8</muzzleFlashScale>
+			</li>
+		</verbs>
+		<weaponTags>
+			<li>YautjaHandheldPlasmaNetGun</li>
+		</weaponTags>
+		<costStuffCount>75</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costList>				
+			<Cloth>40</Cloth>
+			<Plasteel>10</Plasteel>
+			<ComponentYautja>1</ComponentYautja>
+		</costList>
+		<modExtensions>
+			<li Class="VEF.Things.ThingDefExtension">
+				<weaponCarryDrawOffsets>
+					<north>
+						<drawOffset>(0, 0, -0.05)</drawOffset>
+					</north>
+					<east>
+						<drawOffset>(0, 0, -0.05)</drawOffset>
+					</east>
+					<south>
+						<drawOffset>(0, 0, -0.05)</drawOffset>
+					</south>
+					<west>
+						<drawOffset>(0, 0, -0.05)</drawOffset>
+					</west>
+				</weaponCarryDrawOffsets>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	
+	<ThingDef ParentName="ABYautja_BaseMakeableGun_PlasmaEnergy">
+		<defName>ABYautja_Gun_PlasmaSpinningBlade</defName>
+		<label>spinning plasma blade</label>
+		<description>A thrown device that is comprised of two retractable blades. The sharp edges of these blades aren't metal, but instead made of red plasma.</description>
+		<techLevel Inherit="False">Medieval</techLevel>
+		<graphicData>
+			<texPath>Things/Equipment/Ranged/Yautja_SpinningPlasmaBlade</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<soundInteract>Interact_BeatFire</soundInteract>
+		<costList>
+			<Steel>10</Steel>
+			<ComponentYautja>1</ComponentYautja>
+		</costList>
+		<costStuffCount>25</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<statBases>
+			<MarketValue>800</MarketValue>
+			<WorkToMake>3100</WorkToMake>
+			<Mass>0.7</Mass>
+			<AccuracyTouch>1</AccuracyTouch>
+			<AccuracyShort>0.85</AccuracyShort>
+			<AccuracyMedium>0.65</AccuracyMedium>
+			<AccuracyLong>0.30</AccuracyLong>
+			<RangedWeapon_Cooldown>1.4</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedAngleOffset>90</equippedAngleOffset>
+		<weaponTags>
+				<li>YautjaSpinningPlasmaBlade</li>
+		</weaponTags>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<verbs>
+			<li>
+				<verbClass>Verb_LaunchProjectile</verbClass>
+				<label>Spinning plasma Blade</label>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>ABPlasmaSpinningBlade_Thrown</defaultProjectile>
+				<warmupTime>1.45</warmupTime>
+				<range>32</range>
+				<soundCast>Interact_BeatFire</soundCast>
+				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+		<tickerType>Normal</tickerType>
+		<generateCommonality>0.15</generateCommonality>
+		<modExtensions>
+			<li Class="VEF.Things.ThingDefExtension">
+				<weaponCarryDrawOffsets>
+					<north>
+						<drawOffset>(0, 0, -0.05)</drawOffset>
+					</north>
+					<east>
+						<drawOffset>(0, 0, -0.05)</drawOffset>
+					</east>
+					<south>
+						<drawOffset>(0, 0, -0.05)</drawOffset>
+					</south>
+					<west>
+						<drawOffset>(0, 0, -0.05)</drawOffset>
+					</west>
+				</weaponCarryDrawOffsets>
+			</li>
+		</modExtensions>
+	</ThingDef>
+<!--Melee-->
+<!--Ranged+Melee-->
+</Defs>

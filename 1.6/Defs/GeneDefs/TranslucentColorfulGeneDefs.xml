@@ -1,0 +1,874 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!--Translucent Skin Base-->
+	<GeneDef Name="ABTranslucentSkinOverrideBase" ParentName="ABYautjaSkinOverrideBase" Abstract="True">
+		<canGenerateInGeneSet>false</canGenerateInGeneSet>
+		<displayCategory>ABTranslucentSkinCategory</displayCategory>
+	</GeneDef>
+<!--Translucent Core Skin tones-->
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>TranslucentSkin_Melanin1</defName>
+		<label>Translucent Melanin no.1</label>
+		<skinColorOverride>(242, 237, 224,120)</skinColorOverride>
+		<randomBrightnessFactor>0</randomBrightnessFactor>
+		<minMelanin>0</minMelanin>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>TranslucentSkin_Melanin2</defName>
+		<label>Translucent Melanin no.2</label>
+		<skinColorOverride>(255, 239, 213,120)</skinColorOverride>
+		<randomBrightnessFactor>0</randomBrightnessFactor>
+		<minMelanin>0.1</minMelanin>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>TranslucentSkin_Melanin3</defName>
+		<label>Translucent Melanin no.3</label>
+		<skinColorOverride>(255, 239, 201,120)</skinColorOverride>
+		<randomBrightnessFactor>0</randomBrightnessFactor>
+		<minMelanin>0.25</minMelanin>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>TranslucentSkin_Melanin4</defName>
+		<label>Translucent Melanin no.4</label>
+		<skinColorOverride>(255, 239, 189,120)</skinColorOverride>
+		<randomBrightnessFactor>0</randomBrightnessFactor>
+		<minMelanin>0.45</minMelanin>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>TranslucentSkin_Melanin5</defName>
+		<label>Translucent Melanin no.5</label>
+		<skinColorOverride>(249, 219, 165,120)</skinColorOverride>
+		<randomBrightnessFactor>0</randomBrightnessFactor>
+		<minMelanin>0.58</minMelanin>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>TranslucentSkin_Melanin6</defName>
+		<label>Translucent Melanin no.6</label>
+		<skinColorOverride>(242, 199, 140,120)</skinColorOverride>
+		<randomBrightnessFactor>0</randomBrightnessFactor>
+		<minMelanin>0.63</minMelanin>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>TranslucentSkin_Melanin7</defName>
+		<label>Translucent Melanin no.7</label>
+		<skinColorOverride>(228, 158, 90,120)</skinColorOverride>
+		<randomBrightnessFactor>0</randomBrightnessFactor>
+		<minMelanin>0.75</minMelanin>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>TranslucentSkin_Melanin8</defName>
+		<label>Translucent Melanin no.8</label>
+		<skinColorOverride>(130, 91, 48,120)</skinColorOverride>
+		<randomBrightnessFactor>0</randomBrightnessFactor>
+		<minMelanin>0.83</minMelanin>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>TranslucentSkin_Melanin9</defName>
+		<label>Translucent Melanin no.9</label>
+		<skinColorOverride>(99, 70, 36,120)</skinColorOverride>
+		<randomBrightnessFactor>0</randomBrightnessFactor>
+		<minMelanin>0.9</minMelanin>
+	</GeneDef>
+<!--Translucent Biotech skin tones-->
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>TranslucentSkin_InkBlack</defName>
+		<label>Translucent Ink Black Skin</label>
+		<skinColorOverride>(55, 55, 55,120)</skinColorOverride>
+		<randomBrightnessFactor>0</randomBrightnessFactor>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>TranslucentSkin_SlateGray</defName>
+		<label>Translucent Slate Gray Skin</label>
+		<skinColorOverride>(90, 90, 90,120)</skinColorOverride>
+		<randomBrightnessFactor>0</randomBrightnessFactor>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>TranslucentSkin_LightGray</defName>
+		<label>Translucent Light Gray Skin</label>
+		<skinColorOverride>(200, 200, 200,120)</skinColorOverride>
+		<randomBrightnessFactor>0</randomBrightnessFactor>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>TranslucentSkin_SheerWhite</defName>
+		<label>Translucent Sheer White Skin</label>
+		<skinColorOverride>(250, 240, 240,120)</skinColorOverride>
+		<randomBrightnessFactor>0</randomBrightnessFactor>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>TranslucentSkin_Blue</defName>
+		<label>Translucent Blue Skin</label>
+		<skinColorOverride>(100, 165, 193,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>TranslucentSkin_Purple</defName>
+		<label>Translucent Purple Skin</label>
+		<skinColorOverride>(97, 87, 195,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>TranslucentSkin_PaleRed</defName>
+		<label>Translucent Pale Red Skin</label>
+		<skinColorOverride>(222, 106, 106,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>TranslucentSkin_DarkRed</defName>
+		<label>Translucent Dark Red Skin</label>
+		<skinColorOverride>(150, 62, 62,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>TranslucentSkin_PaleYellow</defName>
+		<label>Translucent Pale Yellow Skin</label>
+		<skinColorOverride>(193, 165, 99,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>TranslucentSkin_DeepYellow</defName>
+		<label>Translucent Deep Yellow Skin</label>
+		<skinColorOverride>(204, 199, 65,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>TranslucentSkin_Orange</defName>
+		<label>Translucent Orange Skin</label>
+		<skinColorOverride>(210, 114, 63,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>TranslucentSkin_Green</defName>
+		<label>Translucent Green Skin</label>
+		<skinColorOverride>(169,182,108,120)</skinColorOverride>
+	</GeneDef>
+<!--Transparrent Yautja skin tones-->
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Misty</defName>
+		<label>Translucent Misty Skin</label>
+		<skinColorOverride>(211,214,210,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Highlighter</defName>
+		<label>Translucent Highlighter Skin</label>
+		<skinColorOverride>(84,202,56,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_YautjaBlood</defName>
+		<label>Yautja Blood Skin</label>
+		<skinColorOverride>(60,209,15,120)</skinColorOverride>
+	</GeneDef>
+<!--Translucent Natural Yautja skin tones-->
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Graphite</defName>
+		<label>Translucent Graphite Skin</label>
+		<skinColorOverride>(54, 52, 51,120)</skinColorOverride>
+		<randomBrightnessFactor>0</randomBrightnessFactor>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Smoke</defName>
+		<label>Translucent Smoke Skin</label>
+		<skinColorOverride>(71, 68, 67,120)</skinColorOverride>
+		<randomBrightnessFactor>0</randomBrightnessFactor>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Gloom</defName>
+		<label>Translucent Gloom Skin</label>
+		<skinColorOverride>(145, 142, 141,120)</skinColorOverride>
+		<randomBrightnessFactor>0</randomBrightnessFactor>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Dust</defName>
+		<label>Translucent Dust Skin</label>
+		<skinColorOverride>(182, 178, 176,120)</skinColorOverride>
+		<randomBrightnessFactor>0</randomBrightnessFactor>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Cloud</defName>
+		<label>Translucent Cloud Skin</label>
+		<skinColorOverride>(218, 212, 210,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Silver</defName>
+		<label>Translucent Silver Skin</label>
+		<skinColorOverride>(161, 166, 181,120)</skinColorOverride>
+		<randomBrightnessFactor>0</randomBrightnessFactor>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Flint</defName>
+		<label>Translucent Flint Skin</label>
+		<skinColorOverride>(134, 142, 160,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Scale</defName>
+		<label>Translucent Scale Skin</label>
+		<skinColorOverride>(125, 140, 179,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Jean</defName>
+		<label>Translucent Jean Skin</label>
+		<skinColorOverride>(91, 101, 128,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Mermaid</defName>
+		<label>Translucent Mermaid Skin</label>
+		<skinColorOverride>(81, 99, 147,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Independence</defName>
+		<label>Translucent Independence Skin</label>
+		<skinColorOverride>(53, 58, 73,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Denim</defName>
+		<label>Translucent Denim Skin</label>
+		<skinColorOverride>(42, 51, 73,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Sea</defName>
+		<label>Translucent Sea Skin</label>
+		<skinColorOverride>(39, 53, 91,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Pewter</defName>
+		<label>Translucent Pewter Skin</label>
+		<skinColorOverride>(157, 178, 196,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Coin</defName>
+		<label>Translucent Coin Skin</label>
+		<skinColorOverride>(136, 160, 181,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Cornflower</defName>
+		<label>Translucent Cornflower Skin</label>
+		<skinColorOverride>(130, 178, 218,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Steel</defName>
+		<label>Translucent Steel Skin</label>
+		<skinColorOverride>(81, 122, 155,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Sky</defName>
+		<label>Translucent Sky Skin</label>
+		<skinColorOverride>(69, 132, 184,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_GreyAegean</defName>
+		<label>Translucent Grey Aegean Skin</label>
+		<skinColorOverride>(58, 87, 110,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Aegean</defName>
+		<label>Translucent Aegean Skin</label>
+		<skinColorOverride>(33, 58, 78,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Grave</defName>
+		<label>Translucent Grave Skin</label>
+		<skinColorOverride>(156, 184, 188,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Waterlogged</defName>
+		<label>Translucent Waterlogged Skin</label>
+		<skinColorOverride>(130, 158, 162,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Kitchen</defName>
+		<label>Translucent Kitchen Skin</label>
+		<skinColorOverride>(141, 181, 188,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Maya</defName>
+		<label>Translucent Maya Skin</label>
+		<skinColorOverride>(120, 185, 196,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Tort</defName>
+		<label>Translucent Tort Skin</label>
+		<skinColorOverride>(95, 137, 144,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_ExplorerBlue</defName>
+		<label>Translucent Explorer Blue Skin</label>
+		<skinColorOverride>(85, 164, 177,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_TempeStar</defName>
+		<label>Translucent Tempe Star Skin</label>
+		<skinColorOverride>(69, 101, 106,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Peacock</defName>
+		<label>Translucent Peacock Skin</label>
+		<skinColorOverride>(39, 69, 74,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_GrandRapids</defName>
+		<label>Translucent Grand Rapids Skin</label>
+		<skinColorOverride>(54, 113, 123,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Hammock</defName>
+		<label>Translucent Hammock Skin</label>
+		<skinColorOverride>(134, 157, 155,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_MorningGreen</defName>
+		<label>Translucent Morning Green Skin</label>
+		<skinColorOverride>(140, 182, 178,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Turkish</defName>
+		<label>Translucent Turkish Skin</label>
+		<skinColorOverride>(110, 142, 138,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Aqua</defName>
+		<label>Translucent Aqua Skin</label>
+		<skinColorOverride>(101, 169, 161,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_GreenMallard</defName>
+		<label>Translucent Green Mallard Skin</label>
+		<skinColorOverride>(71, 96, 94,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Westhaven</defName>
+		<label>Translucent Westhaven Skin</label>
+		<skinColorOverride>(41, 69, 66,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_BlueSurf</defName>
+		<label>Translucent Blue Surf Skin</label>
+		<skinColorOverride>(132, 157, 152,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_SilicateGreen</defName>
+		<label>Translucent Silicate Green Skin</label>
+		<skinColorOverride>(135, 177, 168,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_AloeVera</defName>
+		<label>Translucent Aloe Vera Skin</label>
+		<skinColorOverride>(102, 132, 125,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Seafoam</defName>
+		<label>Translucent Seafoam Skin</label>
+		<skinColorOverride>(96, 155, 142,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_ForestGreenery</defName>
+		<label>Translucent Forest Greenery Skin</label>
+		<skinColorOverride>(63, 98, 90,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_KorainandoGreen</defName>
+		<label>Translucent Korainando Green Skin</label>
+		<skinColorOverride>(32, 57, 51,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_PlantainGreen</defName>
+		<label>Translucent Plantain Green Skin</label>
+		<skinColorOverride>(54, 100, 89,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Wintessa</defName>
+		<label>Translucent Wintessa Skin</label>
+		<skinColorOverride>(139, 162, 150,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_CoventGarden</defName>
+		<label>Translucent CoventGarden Skin</label>
+		<skinColorOverride>(135, 176, 155,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Burleigh</defName>
+		<label>Translucent Burleigh Skin</label>
+		<skinColorOverride>(90, 117, 103,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Jungle</defName>
+		<label>Translucent Jungle Skin</label>
+		<skinColorOverride>(97, 145, 121,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Hunter</defName>
+		<label>Translucent Hunter Skin</label>
+		<skinColorOverride>(65, 91, 78,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_MushiaoGreen</defName>
+		<label>Translucent Mushiao Green Skin</label>
+		<skinColorOverride>(42, 67, 55,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Emerald</defName>
+		<label>Translucent Emerald Skin</label>
+		<skinColorOverride>(58, 96, 77,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_BalsamFir</defName>
+		<label>Translucent Balsam Fir Skin</label>
+		<skinColorOverride>(144, 157, 147,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_LilyPad</defName>
+		<label>Translucent Lily Pad Skin</label>
+		<skinColorOverride>(127, 140, 131,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Swanndri</defName>
+		<label>Translucent Swanndri Skin</label>
+		<skinColorOverride>(98, 120, 104,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Shamrock</defName>
+		<label>Translucent Shamrock Skin</label>
+		<skinColorOverride>(94, 135, 105,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Pine</defName>
+		<label>Translucent Pine Skin</label>
+		<skinColorOverride>(59, 79, 64,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Moss</defName>
+		<label>Translucent Moss Skin</label>
+		<skinColorOverride>(35, 52, 40,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Forest</defName>
+		<label>Translucent Forest Skin</label>
+		<skinColorOverride>(51, 83, 59,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Drizzle</defName>
+		<label>Translucent Drizzle Skin</label>
+		<skinColorOverride>(160, 176, 157,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_GreenClay</defName>
+		<label>Translucent Green Clay Skin</label>
+		<skinColorOverride>(136, 152, 133,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Pistachio</defName>
+		<label>Translucent Pistachio Skin</label>
+		<skinColorOverride>(160, 186, 155,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Chlorosis</defName>
+		<label>Translucent Chlorosis Skin</label>
+		<skinColorOverride>(115, 135, 111,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Pear</defName>
+		<label>Translucent Pear Skin</label>
+		<skinColorOverride>(121, 164, 114,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Sage</defName>
+		<label>Translucent Sage Skin</label>
+		<skinColorOverride>(82, 105, 78,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Fern</defName>
+		<label>Translucent Fern Skin</label>
+		<skinColorOverride>(55, 81, 50,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Jade</defName>
+		<label>Translucent Jade Skin</label>
+		<skinColorOverride>(73, 111, 67,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_SycamoreStand</defName>
+		<label>Translucent Sycamore Stand Skin</label>
+		<skinColorOverride>(150, 159, 142,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Drab</defName>
+		<label>Translucent Drab Skin</label>
+		<skinColorOverride>(128, 138, 120,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_FreshSod</defName>
+		<label>Translucent Fresh Sod Skin</label>
+		<skinColorOverride>(144, 164, 128,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_WildAxolotl</defName>
+		<label>Translucent Wild Axolotl Skin</label>
+		<skinColorOverride>(101, 117, 88,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Pickle</defName>
+		<label>Translucent Pickle Skin</label>
+		<skinColorOverride>(62, 76, 51,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Basil</defName>
+		<label>Translucent Basil Skin</label>
+		<skinColorOverride>(48, 62, 36,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Seaweed</defName>
+		<label>Translucent Seaweed Skin</label>
+		<skinColorOverride>(60, 79, 45,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Artichoke</defName>
+		<label>Translucent Artichoke Skin</label>
+		<skinColorOverride>(150, 154, 138,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Rejuvenation</defName>
+		<label>Translucent Rejuvenation Skin</label>
+		<skinColorOverride>(160, 169, 130,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_KoiPond</defName>
+		<label>Translucent Koi Pond Skin</label>
+		<skinColorOverride>(122, 130, 97,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_PalmLeaf</defName>
+		<label>Translucent Palm Leaf Skin</label>
+		<skinColorOverride>(141, 155, 96,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Monstera</defName>
+		<label>Translucent Monstera Skin</label>
+		<skinColorOverride>(99, 106, 76,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Juniper</defName>
+		<label>Translucent Juniper Skin</label>
+		<skinColorOverride>(67, 74, 44,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Crocodile</defName>
+		<label>Translucent Crocodile Skin</label>
+		<skinColorOverride>(98, 108, 65,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Oyster</defName>
+		<label>Translucent Oyster Skin</label>
+		<skinColorOverride>(159, 157, 122,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Mink</defName>
+		<label>Translucent Mink Skin</label>
+		<skinColorOverride>(132, 131, 115,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Beige</defName>
+		<label>Translucent Beige Skin</label>
+		<skinColorOverride>(149, 146, 94,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_HazelWood</defName>
+		<label>Translucent Hazel Wood Skin</label>
+		<skinColorOverride>(120, 118, 80,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Olive</defName>
+		<label>Translucent Olive Skin</label>
+		<skinColorOverride>(135, 132, 74,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_EasternBamboo</defName>
+		<label>Translucent Eastern Bamboo Skin</label>
+		<skinColorOverride>(93, 91, 62,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_LisbonBrown</defName>
+		<label>Translucent Lisbon Brown Skin</label>
+		<skinColorOverride>(61, 59, 32,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_ReptileRevenge</defName>
+		<label>Translucent Reptile Revenge Skin</label>
+		<skinColorOverride>(93, 91, 48,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Tortilla</defName>
+		<label>Translucent Tortilla Skin</label>
+		<skinColorOverride>(147, 140, 120,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Ash</defName>
+		<label>Translucent Ash Skin</label>
+		<skinColorOverride>(111, 110, 105,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Shadow</defName>
+		<label>Translucent Shadow Skin</label>
+		<skinColorOverride>(89, 88, 84,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Flaxen</defName>
+		<label>Translucent Flaxen Skin</label>
+		<skinColorOverride>(130, 117, 79,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_IvyTopiary</defName>
+		<label>Translucent Ivy Topiary Skin</label>
+		<skinColorOverride>(103, 96, 77,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Sepia</defName>
+		<label>Translucent Sepia Skin</label>
+		<skinColorOverride>(111, 98, 61,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_BlackishBrown</defName>
+		<label>Translucent Blackish Brown Skin</label>
+		<skinColorOverride>(64, 59, 45,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_CocoaBrown</defName>
+		<label>Translucent Cocoa Brown Skin</label>
+		<skinColorOverride>(47, 41, 24,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Madras</defName>
+		<label>Translucent Madras Skin</label>
+		<skinColorOverride>(71, 61, 34,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Sand</defName>
+		<label>Translucent Sand Skin</label>
+		<skinColorOverride>(140, 130, 120,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Almond</defName>
+		<label>Translucent Almond Skin</label>
+		<skinColorOverride>(174, 152, 129,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Khaki</defName>
+		<label>Translucent Khaki Skin</label>
+		<skinColorOverride>(135, 117, 98,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Makara</defName>
+		<label>Translucent Makara Skin</label>
+		<skinColorOverride>(106, 94, 80,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Tan</defName>
+		<label>Translucent Tan Skin</label>
+		<skinColorOverride>(111, 94, 75,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_PeppercornRent</defName>
+		<label>Translucent Peppercorn Rent Skin</label>
+		<skinColorOverride>(79, 69, 58,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Bear</defName>
+		<label>Translucent Bear Skin</label>
+		<skinColorOverride>(67, 51, 33,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Espresso</defName>
+		<label>Translucent Espresso Skin</label>
+		<skinColorOverride>(84, 67, 49,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_MilkBrownieDough</defName>
+		<label>Translucent Milk Brownie Dough Skin</label>
+		<skinColorOverride>(144, 111, 95,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_BradfordBrown</defName>
+		<label>Translucent Bradford Brown Skin</label>
+		<skinColorOverride>(132, 113, 105,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Squid</defName>
+		<label>Translucent Squid Skin</label>
+		<skinColorOverride>(132, 100, 85,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_BargeboardBrown</defName>
+		<label>Translucent Bargeboard Brown Skin</label>
+		<skinColorOverride>(101, 83, 74,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_MoroccanHenna</defName>
+		<label>Translucent Moroccan Hena Skin</label>
+		<skinColorOverride>(110, 80, 65,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_BrownBeauty</defName>
+		<label>Translucent Brown Beauty Skin</label>
+		<skinColorOverride>(74, 58, 49,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Penny</defName>
+		<label>Translucent Penny Skin</label>
+		<skinColorOverride>(61, 38, 27,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Rust</defName>
+		<label>Translucent Rust Skin</label>
+		<skinColorOverride>(78, 52, 39,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Salmon</defName>
+		<label>Translucent Salmon Skin</label>
+		<skinColorOverride>(139, 140, 128,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_CafeOle</defName>
+		<label>Translucent Cafe Ole Skin</label>
+		<skinColorOverride>(157, 129, 123,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Redwood</defName>
+		<label>Translucent Redwood Skin</label>
+		<skinColorOverride>(135, 92, 82,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_TerraceBrown</defName>
+		<label>Translucent Terrace Brown Skin</label>
+		<skinColorOverride>(115, 83, 75,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_FireRoasted</defName>
+		<label>Translucent Fire Roasted Skin</label>
+		<skinColorOverride>(118, 72, 61,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Mahogany</defName>
+		<label>Translucent Mahogany Skin</label>
+		<skinColorOverride>(95, 53, 43,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Pecan</defName>
+		<label>Translucent Pecan Skin</label>
+		<skinColorOverride>(69, 44, 38,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_DarkSienna</defName>
+		<label>Translucent Dark Sienna Skin</label>
+		<skinColorOverride>(59, 27, 19,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Syrup</defName>
+		<label>Translucent Syrup Skin</label>
+		<skinColorOverride>(69, 35, 27,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Gum</defName>
+		<label>Translucent Gum Skin</label>
+		<skinColorOverride>(198, 108, 112,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_HorizonGlow</defName>
+		<label>Translucent Horizon Glow Skin</label>
+		<skinColorOverride>(174, 113, 106,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_ClayRidge</defName>
+		<label>Translucent ClayRidge Skin</label>
+		<skinColorOverride>(147, 106, 101,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Coral</defName>
+		<label>Translucent Coral Skin</label>
+		<skinColorOverride>(154, 78, 69,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_RockyMountain</defName>
+		<label>Translucent Rocky Mountain Skin</label>
+		<skinColorOverride>(118, 68, 62,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Fireside</defName>
+		<label>Translucent Fireside Skin</label>
+		<skinColorOverride>(111, 74, 69,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Carmine</defName>
+		<label>Translucent Carmine Skin</label>
+		<skinColorOverride>(118, 54, 46,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_SealBrown</defName>
+		<label>Translucent Seal Brown Skin</label>
+		<skinColorOverride>(67, 36, 33,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Currant</defName>
+		<label>Translucent Currant Skin</label>
+		<skinColorOverride>(49, 21, 18,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Wine</defName>
+		<label>Translucent Wine Skin</label>
+		<skinColorOverride>(78, 32, 27,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_BurntTile</defName>
+		<label>Translucent Burnt Tile Skin</label>
+		<skinColorOverride>(117, 70, 69,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Lipstick</defName>
+		<label>Translucent Lipstick Skin</label>
+		<skinColorOverride>(123, 57, 55,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_ArrestingAubunr</defName>
+		<label>Translucent Arresting Auburn Skin</label>
+		<skinColorOverride>(89, 50, 49,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Berry</defName>
+		<label>Translucent Berry Skin</label>
+		<skinColorOverride>(96, 39, 37,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Merlot</defName>
+		<label>Translucent Merlot Skin</label>
+		<skinColorOverride>(61, 33, 32,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Jam</defName>
+		<label>Translucent Jam Skin</label>
+		<skinColorOverride>(46, 15, 14,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Raspberry</defName>
+		<label>Translucent Raspberry Skin</label>
+		<skinColorOverride>(66, 25, 23,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Sandstone</defName>
+		<label>Translucent Sandstone Skin</label>
+		<skinColorOverride>(132, 91, 60,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Bronze</defName>
+		<label>Translucent Bronze Skin</label>
+		<skinColorOverride>(120, 76, 43,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Clay</defName>
+		<label>Translucent Clay Skin</label>
+		<skinColorOverride>(83, 48, 22,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_ClayPlay</defName>
+		<label>Translucent Clay Play Skin</label>
+		<skinColorOverride>(118, 69, 52,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Brick</defName>
+		<label>Translucent Brick Skin</label>
+		<skinColorOverride>(100, 50, 32,120)</skinColorOverride>
+	</GeneDef>
+	<GeneDef ParentName="ABTranslucentSkinOverrideBase">
+		<defName>YautjaSkin_Transparent_Amber</defName>
+		<label>Translucent Amber Skin</label>
+		<skinColorOverride>(69, 37, 25,120)</skinColorOverride>
+	</GeneDef>
+</Defs>

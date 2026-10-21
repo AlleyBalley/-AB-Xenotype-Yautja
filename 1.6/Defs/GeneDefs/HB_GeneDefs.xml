@@ -3,28 +3,34 @@
 
     <GeneDef ParentName="ABYautjaMandibles_Base">
         <defName>HBBiohazardMandibles</defName>
-        <label>Biohazard Mandibles</label>
+        <label>Yautja Biohazard Mandibles</label>
         <description>A finger-like digit that sprouts from the cheekbone and possesses a sharp tooth. This array appears in a set of three with a mandible anchored to each cheekbone and a single, larger mandible placed in the center of the jawbone.</description>
-        <iconPath>UI/Icons/Genes/HBBiohazardMandiblesIcon</iconPath>
+        <iconPath>UI/Icons/Genes/Mandibles/HBBiohazardMandiblesIcon</iconPath>
         <renderNodeProperties>
 			<li>
 				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
 				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
 				<texPath>Things/Pawn/Humanlike/HeadAttachments/ComboMandibles/HBBiohazardMandibles</texPath>
 				<parentTagDef>Head</parentTagDef>
+				<overrideMeshSize>(0.6, 0.6)</overrideMeshSize>
+				<drawSize>0.85</drawSize>
 				<color>(255, 255, 255)</color>
 				<visibleFacing>
 					<li>East</li>
 					<li>South</li>
 					<li>West</li>
 				</visibleFacing>
-				<baseLayer>56</baseLayer>
+				<drawData>
+					<defaultData>
+						<layer>56</layer>
+					</defaultData>
+				</drawData>
 			</li>
         </renderNodeProperties>
 		<exclusionTags>
 		<!-- No clipping with regular upper, regular lower, superior upper, superior lower -->
-			<li>HBSpotlightMandible</li> <!-- Uses same lower mandible -->
-			<li></li>
+			<li>HBTriadMandibles</li> <!-- Spotlight mandible exclusion tag-->
+			<li>ABUpperMandibles</li> <!-- Upper mandible exclusion tag-->
 			<li></li>
 		</exclusionTags>
 		<modExtensions MayRequire="oskarpotocki.vanillafactionsexpanded.core">
@@ -46,27 +52,33 @@
 
     <GeneDef ParentName="ABYautjaMandibles_Base">
         <defName>HBSpotlightMandible</defName>
-        <label>Spotlight Mandible</label>
+        <label>Yautja Spotlight Mandible</label>
         <description>A finger-like digit that usually sprouts from the cheekbone, possessing a sharp tooth. This lonely apprendage is anchored to the jawbone. While it certainly is large and pointy, it admittedly looks kind of silly by itself. One is the loneliest number, after all.</description>
-        <iconPath>UI/Icons/Genes/HBSpotlightMandibleIcon</iconPath>
+        <iconPath>UI/Icons/Genes/Mandibles/HBSpotlightMandibleIcon</iconPath>
         <renderNodeProperties>
 			<li>
 				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
 				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
 				<texPath>Things/Pawn/Humanlike/HeadAttachments/SpotlightMandible/HBSpotlightMandible</texPath>
 				<parentTagDef>Head</parentTagDef>
+				<overrideMeshSize>(0.6, 0.6)</overrideMeshSize>
+				<drawSize>0.85</drawSize>
 				<color>(255, 255, 255)</color>
 				<visibleFacing>
 					<li>East</li>
 					<li>South</li>
 					<li>West</li>
 				</visibleFacing>
-				<baseLayer>54</baseLayer>
+				<drawData>
+					<defaultData>
+						<layer>54</layer>
+					</defaultData>
+				</drawData>
 			</li>
         </renderNodeProperties>
 		<exclusionTags>
 		<!-- No clipping with regular upper, regular lower, superior upper, superior lower -->
-			<li>HBBiohazardMandibles</li> <!-- Uses same lower mandible -->
+			<li>HBTriadMandibles</li> <!-- Biohazard mandible exclusion tag-->
 			<li></li>
 			<li></li>
 		</exclusionTags>

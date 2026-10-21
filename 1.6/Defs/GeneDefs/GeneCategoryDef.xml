@@ -3,16 +3,23 @@
 	<GeneCategoryDef>
 		<defName>ABYautjaCategory</defName>
 		<label>Yautja</label>
-		<displayPriorityInXenotype>3678</displayPriorityInXenotype>
+		<displayPriorityInXenotype>4300</displayPriorityInXenotype>
 	</GeneCategoryDef>
 	<GeneCategoryDef>
 		<defName>ABYautjaHairCategory</defName>
 		<label>Yautja Hair Colors</label>
-		<displayPriorityInXenotype>3679</displayPriorityInXenotype>
+		<displayPriorityInXenotype>4285</displayPriorityInXenotype>
 	</GeneCategoryDef>
 	<GeneCategoryDef>
 		<defName>ABYautjaSkinCategory</defName>
 		<label>Yautja Skin Colors</label>
-		<displayPriorityInXenotype>3680</displayPriorityInXenotype>
+		<displayPriorityInXenotype>4281</displayPriorityInXenotype>
+		<displayPriorityInGenepack>-4111</displayPriorityInGenepack>
+	</GeneCategoryDef>
+	<GeneCategoryDef>
+		<defName>ABTranslucentSkinCategory</defName>
+		<label>Translucent Skin Colors</label>
+		<displayPriorityInXenotype>4282</displayPriorityInXenotype>
+		<displayPriorityInGenepack>-4112</displayPriorityInGenepack>
 	</GeneCategoryDef>
 </Defs>

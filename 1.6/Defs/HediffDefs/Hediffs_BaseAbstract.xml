@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<HediffDef Name="ABSpecialBadHediff" Abstract="True">
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.8, 0.8, 0.35)</defaultLabelColor>
+		<isBad>false</isBad>
+		<makesAlert>false</makesAlert>
+		<makesSickThought>false</makesSickThought>
+		<maxSeverity>1.0</maxSeverity>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
+	</HediffDef>
+	
+	<HediffDef Name="ABSpecialGoodHediff" Abstract="True">
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.5, 0.5, 0.9)</defaultLabelColor>
+		<isBad>false</isBad>
+		<makesAlert>false</makesAlert>
+		<makesSickThought>false</makesSickThought>
+	</HediffDef>
+</Defs>

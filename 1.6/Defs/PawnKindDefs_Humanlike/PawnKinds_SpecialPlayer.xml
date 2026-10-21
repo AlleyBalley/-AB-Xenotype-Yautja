@@ -39,7 +39,7 @@
 	
 	<PawnKindDef ParentName="BaseYautjaPawnKind" MayRequire="OskarPotocki.VanillaFactionsExpanded.SettlersModule">
 		<defName>Colonist_ABYautja_Settler</defName>
-		<label>settler Yautja</label>
+		<label>Yautja settler</label>
 		<defaultFactionType>VFES_PlayerSettlement</defaultFactionType>
 		<chemicalAddictionChance>0.1</chemicalAddictionChance>
 		<apparelMoney>
@@ -68,7 +68,7 @@
 	
 	<PawnKindDef ParentName="BaseYautjaPawnKind" MayRequire="OskarPotocki.VFE.Vikings">
 		<defName>Colonist_ABYautja_Viking</defName>
-		<label>viking Yautja</label>
+		<label>Yautja viking</label>
 		<defaultFactionType>VFEV_PlayerClan</defaultFactionType>
 		<chemicalAddictionChance>0.05</chemicalAddictionChance>
 		<apparelMoney>
@@ -93,7 +93,7 @@
 	
 	<PawnKindDef ParentName="BaseYautjaPawnKind" MayRequire="OskarPotocki.VFE.Pirates">
 		<defName>Colonist_ABYautja_Pirate</defName>
-		<label>pirate Yautja</label>
+		<label>Yautja pirate</label>
 		<defaultFactionType>VFEP_PlayerPirate</defaultFactionType>
 		<chemicalAddictionChance>0.06</chemicalAddictionChance>
 		<apparelMoney>
@@ -126,7 +126,7 @@
 	
 	<PawnKindDef ParentName="BaseYautjaPawnKind" MayRequire="OskarPotocki.VFE.Classical">
 		<defName>Colonist_ABYautja_Classical</defName>
-		<label>classical Yautja</label>
+		<label>Classical yautja</label>
 		<defaultFactionType>VFEC_NewEmpire</defaultFactionType>
 		<chemicalAddictionChance>0.05</chemicalAddictionChance>
 		<apparelMoney>
@@ -154,7 +154,7 @@
 	
 	<PawnKindDef ParentName="BaseYautjaPawnKind" MayRequire="Trickity.Samurai.Faction">
 		<defName>Colonist_ABYautja_Ronin</defName>
-		<label>samurai Yautja</label>
+		<label>Yautja samurai</label>
 		<defaultFactionType>TSF_PlayerRonin</defaultFactionType>
 		<chemicalAddictionChance>0.05</chemicalAddictionChance>
 		<apparelMoney>
@@ -183,7 +183,7 @@
 	
 	<PawnKindDef ParentName="BaseYautjaPawnKind" MayRequire="Heis.Edo.Themed.Expansion">
 		<defName>Colonist_ABYautja_Edo</defName>
-		<label>edo Yautja</label>
+		<label>Edo yautja</label>
 		<defaultFactionType>HS_PlayerEdoClan</defaultFactionType>
 		<chemicalAddictionChance>0.05</chemicalAddictionChance>
 		<apparelMoney>
